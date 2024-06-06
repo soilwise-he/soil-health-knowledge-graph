@@ -11,7 +11,7 @@
 
 ### To-do:
 - Replace the custom namespace "ex:autoSubject" with a more elegant approach to mark AI-generated keywords, such as (singleton) Named Graphs / N-QUADs;
-- Find / Develop better evaluation matrices for semantic matching;
+- Find and/or develop better evaluation matrices for semantic matching;
 - Introduce domain-specific ontologies, such as GloSIS, in post-processing;
 - Try Retrieval-Augmented Generation (RAG) technique to customize prompts according to the input text;
 - Try multi-step pipeline extraction and conversion from text to RDF for comparison;
