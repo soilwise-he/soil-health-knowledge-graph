@@ -6,7 +6,7 @@ This demo of soil health knowledge graph currently contains:
 - Evaluating different conversion strategies using the F1 score and Exact Match;
 - Merging and post-processing knowledge graphs to detect duplicates and conflicts;
 - Interlinking to external databases using metadata extracted from Zenodo;
-  - Filling in keywords extracted from titles and descriptions for metadata entries missing keywords and storing them under the custom namespace "ex:autoSubject".
+  - Filling in keywords extracted from titles and descriptions for metadata entries missing keywords and storing them under the custom namespace "ex:autoSubject".
 - Validating the (extended) knowledge graph by question-answering using NLQ.
 
 To-do:
