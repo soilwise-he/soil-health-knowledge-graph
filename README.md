@@ -1,5 +1,5 @@
 # Soil health knowledge graph: A demo
-This demo of soil health knowledge graph currently contains:
+## This demo of soil health knowledge graph currently contains:
 - A simple "ground-truth" example of converting text to RDF statements;
 - Zero-shot and few-shot (one-shot) examples of converting text to RDF with LLMs (OpenAI GPT);
 - Visualizing RDF knowledge graphs;
@@ -9,7 +9,7 @@ This demo of soil health knowledge graph currently contains:
   - Filling in keywords extracted from titles and descriptions for metadata entries missing keywords and storing them under the custom namespace "ex:autoSubject".
 - Validating the (extended) knowledge graph by question-answering using NLQ.
 
-To-do:
+## To-do:
 - Replace the custom namespace "ex:autoSubject" with a more elegant approach to mark AI-generated keywords, such as (singleton) Named Graphs / N-QUADs;
 - Find / Develop better evaluation matrices for semantic matching;
 - Introduce domain-specific ontologies, such as GloSIS, in post-processing;
