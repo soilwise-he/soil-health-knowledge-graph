@@ -2,7 +2,7 @@
 ### This demo of soil health knowledge graph currently contains:
 - A simple "ground-truth" example of converting text to RDF statements;
 - Zero-shot and few-shot (one-shot) examples of converting text to RDF with LLMs (OpenAI GPT);
-- Visualizing RDF knowledge graphs;
+- Visualizing the knowledge graph;
 - Evaluating different conversion strategies using the F1 score and Exact Match;
 - Merging and post-processing knowledge graphs to detect duplicates and conflicts;
 - Interlinking to external databases using metadata extracted from Zenodo;
@@ -16,3 +16,4 @@
 - Try Retrieval-Augmented Generation (RAG) technique to customize prompts according to the input text;
 - Try multi-step pipeline extraction and conversion from text to RDF for comparison;
 - Convert tables and figures in the report to RDF statements with multimodel LLMs.
+- Better visualization strategies, such as visualizing only concepts and their relations.
