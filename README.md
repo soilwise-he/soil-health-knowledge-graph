@@ -10,4 +10,5 @@ This demo of soil health knowledge graph currently contains:
 - Validating the (extended) knowledge graph by question answering using NLQ.
 
 To-do:
+- Replace the custom namespace "ex:autoSubject" with more elegant approach, such as (singleton) Named Graphs / N-QUADs;
 - 
