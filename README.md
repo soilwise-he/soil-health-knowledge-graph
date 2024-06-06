@@ -11,4 +11,7 @@ This demo of soil health knowledge graph currently contains:
 
 To-do:
 - Replace the custom namespace "ex:autoSubject" with more elegant approach, such as (singleton) Named Graphs / N-QUADs;
-- 
+- Find / Develop better evaluation matrics for semantic matching;
+- Try Retrieval-Augmented Generation (RAG) technique for ;
+- Try multi-step pipeline extraction and conversion from text to RDF for comparison;
+- Also convert tables & figures to RDF statements with multimodel LLMs;
