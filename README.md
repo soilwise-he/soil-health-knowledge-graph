@@ -6,6 +6,6 @@ This demo of soil health knowledge graph currently contains:
 - Evaluating different conversion strategies using F1 score and Exact Match;
 - Merging and post-processing knowledge graphs to detect duplicates and conflicts;
 - Interlinking to external databases using metadata extracted from Zenodo;
-- Validating the (extended) knowledge graph by question answering (with NLQ).
+- Validating the (extended) knowledge graph by question answering using NLQ.
 
 To-do:
