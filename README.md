@@ -15,5 +15,5 @@
 - Introduce domain-specific ontologies, such as GloSIS, in post-processing;
 - Try Retrieval-Augmented Generation (RAG) technique to customize prompts according to the input text;
 - Try multi-step pipeline extraction and conversion from text to RDF for comparison;
-- Convert tables and figures in the report to RDF statements with multimodel LLMs.
+- Convert tables and figures in the report to RDF statements with multimodel LLMs;
 - Better visualization strategies, such as visualizing only concepts and their relations.
