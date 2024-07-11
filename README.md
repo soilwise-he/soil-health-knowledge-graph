@@ -6,7 +6,7 @@
 - Evaluating different conversion strategies using the F1 score and exact match;
 - Merging and post-processing knowledge graphs to detect duplicates and conflicts;
 - Interlinking to external databases such as soil-related metadata records harvested from Zenodo by keyword matching;
-  - Filling in keywords extracted from titles and descriptions for metadata entries missing keywords and storing them under the custom namespace "ex:autoSubject".
+  - Filling in keywords extracted from titles and descriptions for metadata records missing keywords ~~and storing them under the custom namespace "ex:autoSubject"~~.
 - Validating the (expanded) knowledge graph by question-answering using NLQ.
 
 ### To-do:
