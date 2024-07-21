@@ -1,0 +1,2235 @@
+@prefix agrovoc: <http://aims.fao.org/aos/agrovoc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+ex:metadata {
+    <https://doi.org/10.1007/s11119-021-09805-y> a dcterms:BibliographicResource ;
+        dcterms:creator "Blagojević, Dragana",
+            "Dedović, Nebojša",
+            "Ivošević, Bojana",
+            "Kostić, Marko",
+            "Ljubičić, Nataša",
+            "Radulović, Mirjana",
+            "Rajković, Miloš" ;
+        dcterms:date "2021-04-11" ;
+        dcterms:identifier <https://doi.org/10.1007/s11119-021-09805-y> ;
+        dcterms:subject "Central composite design",
+            "On-the-go measurement",
+            "Sensors",
+            "Soil properties" ;
+        dcterms:title "Georeferenced tractor wheel slip data for prediction of spatial variability in soil physical properties" .
+
+    <https://doi.org/10.1016/j.foreco.2022.120637> a dcterms:BibliographicResource ;
+        dcterms:creator "Abramoff, Rose",
+            "Adamczyk, Bartosz",
+            "Baldy, Virginie",
+            "Biryol, Charlotte",
+            "Bosela, Michal",
+            "Casals, Pere",
+            "Curiel Yuste, Jorge",
+            "Dondini, Marta",
+            "Filipek, Sara",
+            "Garcia-Pausas, Jordi",
+            "Gros, Raphael",
+            "Gömöryová, Erika",
+            "Hashimoto, Shoji",
+            "Hassegawa, Mariana",
+            "Immonen, Peter",
+            "Laiho, Raija",
+            "Lehtonen, Aleksi",
+            "Li, Honghong",
+            "Li, Qian",
+            "Luyssaert, Sebastiaan",
+            "Menival, Claire",
+            "Mori, Taiki",
+            "Mäkipää, Raisa",
+            "Naudts, Kim",
+            "Santonja, Mathieu",
+            "Smolander, Aino",
+            "Toriyama, Jumpei",
+            "Tupek, Boris",
+            "Ubeda, Xavi",
+            "Verkerk, Pieter Johannes" ;
+        dcterms:date "2022-11-24" ;
+        dcterms:identifier <https://doi.org/10.1016/j.foreco.2022.120637> ;
+        dcterms:subject "Forest fertilization",
+            "Forest fire management",
+            "Forest soil carbon management",
+            "Greenhouse gas",
+            "Harvesting practices",
+            "Peatland hydrology management" ;
+        dcterms:title "How does management affect soil C sequestration and greenhouse gas fluxes in boreal and temperate forests? – A review" .
+
+    <https://doi.org/10.1016/j.wasman.2013.01.015> a dcterms:BibliographicResource ;
+        dcterms:creator "Claypool, Joshua T.",
+            "Guo, Hongyun",
+            "Marshall, Megan N.",
+            "Perano, Kristen M.",
+            "Simmons, Christopher W.",
+            "Stapleton, James J.",
+            "VanderGheynst, Jean S." ;
+        dcterms:date "2013-05-01" ;
+        dcterms:identifier <https://doi.org/10.1016/j.wasman.2013.01.015> ;
+        dcterms:title "Managing compost stability and amendment to soil to enhance soil heating during soil solarization" .
+
+    <https://doi.org/10.15587/1729-4061.2021.245533> a dcterms:BibliographicResource ;
+        dcterms:creator "Agus Tugas Sudjianto",
+            "Aji Suraji",
+            "Sugeng Hadi Susilo" ;
+        dcterms:date "2021-12-21" ;
+        dcterms:identifier <https://doi.org/10.15587/1729-4061.2021.245533> ;
+        dcterms:subject "disturbed soil",
+            "expansive clay",
+            "shell ash",
+            "soil stabilization",
+            "swelling 3D",
+            "undisturbed soil" ;
+        dcterms:title "Analysis of soil characteristics on expansive clay stabilization using shell ash" .
+
+    <https://doi.org/10.31142/ijtsrd23537> a dcterms:BibliographicResource ;
+        dcterms:creator "Pratiksha Malviya",
+            "Wankhade Ashutosh Purushottam" ;
+        dcterms:date "2019-02-14" ;
+        dcterms:identifier <https://doi.org/10.31142/ijtsrd23537> ;
+        dcterms:subject "Civil Engineering" ;
+        dcterms:title "Review Paper on Study on Properties of Black Cotton Soil using Stone Dust and Sisal Fiber" .
+
+    <https://doi.org/10.3897/BDJ.8.e51586> a dcterms:BibliographicResource ;
+        dcterms:creator "Claverie, Jean-Michel",
+            "Malavin, Stas",
+            "Rivkina, Elizaveta",
+            "Shmakova, Lyubov" ;
+        dcterms:date "2020-07-10" ;
+        dcterms:identifier <https://doi.org/10.3897/BDJ.8.e51586> ;
+        dcterms:subject "Permafrost",
+            "giant viruses",
+            "microbiology collection",
+            "protists" ;
+        dcterms:title "Frozen Zoo: a collection of permafrost samples containing viable protists and their viruses" .
+
+    <https://doi.org/10.3897/BDJ.8.e51586.figure1a> a dcterms:BibliographicResource ;
+        dcterms:creator "Claverie, Jean-Michel",
+            "Malavin, Stas",
+            "Rivkina, Elizaveta",
+            "Shmakova, Lyubov" ;
+        dcterms:date "2020-07-18" ;
+        dcterms:identifier <https://doi.org/10.3897/BDJ.8.e51586.figure1a> ;
+        dcterms:subject "Permafrost",
+            "giant viruses",
+            "microbiology collection",
+            "protists" ;
+        dcterms:title "Figure 1a from: Malavin S, Shmakova L, Claverie J-M, Rivkina E (2020) Frozen Zoo: a collection of permafrost samples containing viable protists and their viruses. Biodiversity Data Journal 8: e51586. https://doi.org/10.3897/BDJ.8.e51586" .
+
+    <https://doi.org/10.3897/BDJ.8.e51586.figure1b> a dcterms:BibliographicResource ;
+        dcterms:creator "Claverie, Jean-Michel",
+            "Malavin, Stas",
+            "Rivkina, Elizaveta",
+            "Shmakova, Lyubov" ;
+        dcterms:date "2020-07-18" ;
+        dcterms:identifier <https://doi.org/10.3897/BDJ.8.e51586.figure1b> ;
+        dcterms:subject "Permafrost",
+            "giant viruses",
+            "microbiology collection",
+            "protists" ;
+        dcterms:title "Figure 1b from: Malavin S, Shmakova L, Claverie J-M, Rivkina E (2020) Frozen Zoo: a collection of permafrost samples containing viable protists and their viruses. Biodiversity Data Journal 8: e51586. https://doi.org/10.3897/BDJ.8.e51586" .
+
+    <https://doi.org/10.3897/BDJ.8.e51586.figure2> a dcterms:BibliographicResource ;
+        dcterms:creator "Claverie, Jean-Michel",
+            "Malavin, Stas",
+            "Rivkina, Elizaveta",
+            "Shmakova, Lyubov" ;
+        dcterms:date "2020-07-18" ;
+        dcterms:identifier <https://doi.org/10.3897/BDJ.8.e51586.figure2> ;
+        dcterms:subject "Permafrost",
+            "giant viruses",
+            "microbiology collection",
+            "protists" ;
+        dcterms:title "Figure 2 from: Malavin S, Shmakova L, Claverie J-M, Rivkina E (2020) Frozen Zoo: a collection of permafrost samples containing viable protists and their viruses. Biodiversity Data Journal 8: e51586. https://doi.org/10.3897/BDJ.8.e51586" .
+
+    <https://doi.org/10.3897/BDJ.8.e51586.figure3a> a dcterms:BibliographicResource ;
+        dcterms:creator "Claverie, Jean-Michel",
+            "Malavin, Stas",
+            "Rivkina, Elizaveta",
+            "Shmakova, Lyubov" ;
+        dcterms:date "2020-07-18" ;
+        dcterms:identifier <https://doi.org/10.3897/BDJ.8.e51586.figure3a> ;
+        dcterms:subject "Permafrost",
+            "giant viruses",
+            "microbiology collection",
+            "protists" ;
+        dcterms:title "Figure 3a from: Malavin S, Shmakova L, Claverie J-M, Rivkina E (2020) Frozen Zoo: a collection of permafrost samples containing viable protists and their viruses. Biodiversity Data Journal 8: e51586. https://doi.org/10.3897/BDJ.8.e51586" .
+
+    <https://doi.org/10.3897/BDJ.8.e51586.figure3b> a dcterms:BibliographicResource ;
+        dcterms:creator "Claverie, Jean-Michel",
+            "Malavin, Stas",
+            "Rivkina, Elizaveta",
+            "Shmakova, Lyubov" ;
+        dcterms:date "2020-07-18" ;
+        dcterms:identifier <https://doi.org/10.3897/BDJ.8.e51586.figure3b> ;
+        dcterms:subject "Permafrost",
+            "giant viruses",
+            "microbiology collection",
+            "protists" ;
+        dcterms:title "Figure 3b from: Malavin S, Shmakova L, Claverie J-M, Rivkina E (2020) Frozen Zoo: a collection of permafrost samples containing viable protists and their viruses. Biodiversity Data Journal 8: e51586. https://doi.org/10.3897/BDJ.8.e51586" .
+
+    <https://doi.org/10.3897/BDJ.8.e51586.figure4> a dcterms:BibliographicResource ;
+        dcterms:creator "Claverie, Jean-Michel",
+            "Malavin, Stas",
+            "Rivkina, Elizaveta",
+            "Shmakova, Lyubov" ;
+        dcterms:date "2020-07-18" ;
+        dcterms:identifier <https://doi.org/10.3897/BDJ.8.e51586.figure4> ;
+        dcterms:subject "Permafrost",
+            "giant viruses",
+            "microbiology collection",
+            "protists" ;
+        dcterms:title "Figure 4 from: Malavin S, Shmakova L, Claverie J-M, Rivkina E (2020) Frozen Zoo: a collection of permafrost samples containing viable protists and their viruses. Biodiversity Data Journal 8: e51586. https://doi.org/10.3897/BDJ.8.e51586" .
+
+    <https://doi.org/10.3897/natureconservation.53.97873> a dcterms:BibliographicResource ;
+        dcterms:creator "Deja, Patrick Tyler",
+            "Dong, Shengming",
+            "Guan, Yanmei",
+            "Li, Gang",
+            "Nie, Wei",
+            "Wang, Hao" ;
+        dcterms:date "2023-06-16" ;
+        dcterms:identifier <https://doi.org/10.3897/natureconservation.53.97873> ;
+        dcterms:subject "ecological engineer",
+            "nitrogen and phosphorus stocks",
+            "plantation",
+            "slope",
+            "soil water content",
+            "wetlands" ;
+        dcterms:title "Effect of ecological restoration on topsoil phosphorus following afforestation on abandoned ponds in northern Chaohu Lake, China" .
+
+    <https://doi.org/10.3897/zookeys.510.9020> a dcterms:BibliographicResource ;
+        dcterms:creator "Chmelík, Vojtěch",
+            "Dobroruka, Igor",
+            "Hudcová, Petra",
+            "Hábová, Lucie",
+            "Stašiov, Slavomír",
+            "Tuf, Ivan H.",
+            "Šipoš, Jan" ;
+        dcterms:date "2015-06-30" ;
+        dcterms:identifier <https://doi.org/10.3897/zookeys.510.9020> ;
+        dcterms:subject "Chilopoda",
+            "Diplopoda",
+            "agroecosystem",
+            "soil fauna",
+            "soil sampling" ;
+        dcterms:title "Hay-bait traps are a useful tool for sampling of soil dwelling millipedes and centipedes" .
+
+    <https://doi.org/10.5061/dryad.2280gb5rk> a dcterms:BibliographicResource ;
+        dcterms:creator "Adams, Jonathan M.",
+            "Cheng, Liang",
+            "Chu, Haiyan",
+            "Fu, Xiao",
+            "Gao, Guifeng",
+            "Liu, Xu",
+            "Tedersoo, Leho",
+            "Yang, Teng",
+            "Zhao, Chang" ;
+        dcterms:date "2021-09-20" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.2280gb5rk> ;
+        dcterms:title "Saprotrophic fungal diversity predicts ectomycorrhizal fungal diversity along the timberline in the framework of island biogeography theory" .
+
+    <https://doi.org/10.5061/dryad.3vj3d> a dcterms:BibliographicResource ;
+        dcterms:creator "Amossé, Joël",
+            "Boros, Gergely",
+            "Dózsa-Farkas, Klára",
+            "Fournier, Bertrand",
+            "Le Bayon, Renée-Claire",
+            "Mitchell, Edward A.D.",
+            "Rochat, Guy",
+            "Sandoz, Gauthier" ;
+        dcterms:date "2017-06-15" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.3vj3d> ;
+        dcterms:subject "Enchytraeids",
+            "Physicochemical",
+            "Soil ecology",
+            "Soil fauna",
+            "bioindication",
+            "earthworms",
+            "nematodes" ;
+        dcterms:title "Data from: Patterns of earthworm, enchytraeid and nematode diversity and community structure in urban soils of different ages" .
+
+    <https://doi.org/10.5061/dryad.41sk145> a dcterms:BibliographicResource ;
+        dcterms:creator "Bujalský, Luděk",
+            "Frouz, Jan" ;
+        dcterms:date "2019-06-26" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.41sk145> ;
+        dcterms:subject "Holocene",
+            "Jan Frouz",
+            "n/a",
+            "soil respiration" ;
+        dcterms:title "Data from: Flow of CO2 from soil may not correspond with CO2 concentration in soil" .
+
+    <https://doi.org/10.5061/dryad.420p7> a dcterms:BibliographicResource ;
+        dcterms:creator "Brown, Charlotte",
+            "Cahill, James F.",
+            "Chagnon, Pierre-Luc",
+            "Stotz, Gisela C." ;
+        dcterms:date "2020-04-16" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.420p7> ;
+        dcterms:subject "Mutualisms",
+            "Plant-soil feedbacks",
+            "Root foraging behaviour",
+            "Soil biota",
+            "Soil microorganisms",
+            "plant coexistence" ;
+        dcterms:title "Data from: Soil biotic quality lacks spatial structure and is positively associated with fertility in a northern grassland" .
+
+    <https://doi.org/10.5061/dryad.4tmpg4fb4> a dcterms:BibliographicResource ;
+        dcterms:creator "Butler, David",
+            "Gwinn, Kimberly",
+            "Ownley, Bonnie",
+            "Shrestha, Utsala",
+            "Swilling, Keagan" ;
+        dcterms:date "2021-09-24" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.4tmpg4fb4> ;
+        dcterms:subject "Athelia rolfsii",
+            "Sclerotium rolfsii",
+            "anaerobic soil disinfestation",
+            "biological soil disinfestation",
+            "soil disinfestation",
+            "volatile fatty acids" ;
+        dcterms:title "Data from: Volatile fatty acid concentration, soil pH and soil texture during anaerobic soil conditions affect germination of Athelia (Sclerotium) rolfsii sclerotia" .
+
+    <https://doi.org/10.5061/dryad.4xgxd257b> a dcterms:BibliographicResource ;
+        dcterms:creator "Bruelheide, Helge",
+            "Dieskau, Julia",
+            "Erfmeier, Alexandra",
+            "Gutknecht, Jessica" ;
+        dcterms:date "2021-09-23" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.4xgxd257b> ;
+        dcterms:subject "Reciprocal transplant experiment",
+            "alien / exotic / non-native species",
+            "common mullein",
+            "exotic soil biota exlusion",
+            "home-away effect",
+            "plant-soil feedback",
+            "soil sterilization" ;
+        dcterms:title "Biogeographic differences in plant-soil biota relationships contribute to the invasion exotic range expansion of Verbascum thapsus" .
+
+    <https://doi.org/10.5061/dryad.66t1g1k53> a dcterms:BibliographicResource ;
+        dcterms:creator "Liang, Cunzhu",
+            "Liu, Guofang",
+            "Lv, Yixia",
+            "Ma, Linna",
+            "Wang, Chengjie",
+            "Wang, Congwen",
+            "Wang, Renzhong",
+            "Xu, Xiaofeng",
+            "Zhang, Chaoxue",
+            "Zuo, Xiaoan" ;
+        dcterms:date "2022-10-20" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.66t1g1k53> ;
+        dcterms:subject "Microbial data",
+            "R-code",
+            "environmental factors" ;
+        dcterms:title "Different facets of bacterial and fungal communities drive soil multifunctionality in grasslands spanning a 3,500 km transect" .
+
+    <https://doi.org/10.5061/dryad.6f774> a dcterms:BibliographicResource ;
+        dcterms:creator "Fitzpatrick, Connor R.",
+            "Gehant, Laura",
+            "Johnson, Marc T. J.",
+            "Kotanen, Peter M." ;
+        dcterms:date "2017-11-11" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.6f774> ;
+        dcterms:subject "Aboveground-belowground interactions",
+            "Plant Ecology",
+            "phylogenetic relatedness",
+            "plant coexistence",
+            "plant-soil feedback" ;
+        dcterms:title "Data from: Phylogenetic relatedness, phenotypic similarity, and plant-soil feedbacks" .
+
+    <https://doi.org/10.5061/dryad.6hj0824> a dcterms:BibliographicResource ;
+        dcterms:creator "Decker, Orsi",
+            "Eldridge, David J.",
+            "Gibb, Heloise" ;
+        dcterms:date "2019-03-15" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.6hj0824> ;
+        dcterms:subject "context-dependency",
+            "extinctions",
+            "rainfall gradient",
+            "soil functioning",
+            "soil-disturbing mammals" ;
+        dcterms:title "Data from: Restoration potential of threatened ecosystem engineers increases with aridity: broad scale effects on soil nutrients and function" .
+
+    <https://doi.org/10.5061/dryad.76hdr7svc> a dcterms:BibliographicResource ;
+        dcterms:creator "Frouz, Jan",
+            "Fujii, Kazumichi",
+            "Hayakawa, Chie",
+            "Inagaki, Yoshiyuki",
+            "Kosaki, Takashi" ;
+        dcterms:date "2023-08-09" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.76hdr7svc> ;
+        dcterms:subject "Soil water retention curve",
+            "pF curve",
+            "soil moisture characteristics curve" ;
+        dcterms:title "Soil water retention curves and soil physicochemical properties" .
+
+    <https://doi.org/10.5061/dryad.7k6502b> a dcterms:BibliographicResource ;
+        dcterms:creator "Brinkman, Pella",
+            "Geisen, Stefan",
+            "Manrubia, Marta",
+            "Martens, Henk",
+            "Ramirez, Kelly",
+            "Veen, Ciska",
+            "Weser, Carolin",
+            "ten Hooven, Freddy",
+            "van der Putten, Wim" ;
+        dcterms:date "2020-09-10" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.7k6502b> ;
+        dcterms:subject "litter mass loss",
+            "plant range-expansion",
+            "saprophytic soil fungi",
+            "soil functioning",
+            "soil rewetting",
+            "summer drought" ;
+        dcterms:title "Data from: Soil functional responses to drought under range-expanding and native plant communities" .
+
+    <https://doi.org/10.5061/dryad.8cz8w9gpg> a dcterms:BibliographicResource ;
+        dcterms:creator "Chu, Haiyan",
+            "Fu, Chengxin",
+            "Gilbert, Jack",
+            "Ma, Yuying",
+            "Ni, Yingying",
+            "Soltis, Douglas",
+            "Soltis, Pamela",
+            "Yang, Teng",
+            "Zhang, Kaoping",
+            "Zhao, Yunpeng" ;
+        dcterms:date "2022-08-12" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.8cz8w9gpg> ;
+        dcterms:title "Data from : Soil pH determines bacterial distribution and assembly processes in natural mountain forests of eastern China" .
+
+    <https://doi.org/10.5061/dryad.b2rbnzsjs> a dcterms:BibliographicResource ;
+        dcterms:creator "Bowker, Matthew A.",
+            "Li, Shenglong",
+            "Xiao, Bo" ;
+        dcterms:date "2022-09-01" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.b2rbnzsjs> ;
+        dcterms:title "Biocrust impacts on dryland soil water balance: A path towards the whole picture" .
+
+    <https://doi.org/10.5061/dryad.c2fqz61cf> a dcterms:BibliographicResource ;
+        dcterms:creator "Castellano, Michael J.",
+            "Chen, Ji",
+            "Chen, Zengming",
+            "Ding, Weixin",
+            "Li, Junjie",
+            "Li, Ye",
+            "Miao, Yuncai",
+            "Ye, Chenglong",
+            "Zhang, Nan",
+            "Zheng, Huijie" ;
+        dcterms:date "2022-10-23" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.c2fqz61cf> ;
+        dcterms:subject "biodegradation",
+            "dissolved organic matter",
+            "enzymatic stoichiometry",
+            "iron cycling",
+            "oxygen availability",
+            "soil organic carbon" ;
+        dcterms:title "Oxygen availability regulates the quality of soil dissolved organic matter by mediating microbial metabolism and iron oxidation" .
+
+    <https://doi.org/10.5061/dryad.cb7tp6m> a dcterms:BibliographicResource ;
+        dcterms:creator "Bai, Yongfei",
+            "Chen, Dima",
+            "Cheng, Junhui",
+            "Chu, Pengfei",
+            "Hu, Shuijin",
+            "Mi, Jia",
+            "Saleem, Muhammad",
+            "Tuvshintogtokh, Indree" ;
+        dcterms:date "2020-05-14" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.cb7tp6m> ;
+        dcterms:subject "biogeographical patterns",
+            "depth profile",
+            "microbial community structure",
+            "semi-arid grasslands",
+            "soil carbon mineralization",
+            "soil nitrogen mineralization" ;
+        dcterms:title "Data from: Effects of aridity on soil microbial communities and functions across soil depths on the Mongolian Plateau" .
+
+    <https://doi.org/10.5061/dryad.k98sf7m4k> a dcterms:BibliographicResource ;
+        dcterms:creator "Allek, Adriana",
+            "Crouzeilles, Renato" ;
+        dcterms:date "2021-08-24" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.k98sf7m4k> ;
+        dcterms:title "Data from: Soil dynamics in forest restoration: a data set for temperate and tropical regions" .
+
+    <https://doi.org/10.5061/dryad.m37pvmczk> a dcterms:BibliographicResource ;
+        dcterms:creator "Ding, Guodong",
+            "Gao, Guanglei",
+            "He, Yingying",
+            "Wang, Genzhu",
+            "Yu, Minghan",
+            "Zhou, Ziyuan" ;
+        dcterms:date "2021-08-19" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.m37pvmczk> ;
+        dcterms:title "Effects of Hedysarum leguminous plants on soil bacterial microbiome in the Mu Us desert, northwest China" .
+
+    <https://doi.org/10.5061/dryad.m5j1rs3> a dcterms:BibliographicResource ;
+        dcterms:creator "Yan, Shen" ;
+        dcterms:date "2019-06-03" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.m5j1rs3> ;
+        dcterms:subject "ithaca" ;
+        dcterms:title "Data from: Biochar application on paddy and purple soils in southern China: soil carbon and biotic activity" .
+
+    <https://doi.org/10.5061/dryad.mj38033> a dcterms:BibliographicResource ;
+        dcterms:creator "Carrillo, Juli",
+            "Ingwell, Laura L.",
+            "Kaplan, Ian",
+            "Li, Xiaohong" ;
+        dcterms:date "2019-02-15" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.mj38033> ;
+        dcterms:subject "Cotestia congregata",
+            "Manduca sexta",
+            "Multi-trophic interactions",
+            "crop-wild relatives",
+            "herbivore-induced plant volatiles",
+            "indirect defense",
+            "plant–herbivore interactions" ;
+        dcterms:title "Data from: Domesticated tomatoes are more vulnerable to negative plant-soil feedbacks than their wild relatives" .
+
+    <https://doi.org/10.5061/dryad.p0jn1> a dcterms:BibliographicResource ;
+        dcterms:creator "Hart, Stephen C.",
+            "Hungate, Bruce A.",
+            "Nasto, Megan K.",
+            "Sullivan, Benjamin W." ;
+        dcterms:date "2017-12-08" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.p0jn1> ;
+        dcterms:title "Data from: Proximate controls on semiarid soil greenhouse gas fluxes across 3 million years of soil development" .
+
+    <https://doi.org/10.5061/dryad.p8t61> a dcterms:BibliographicResource ;
+        dcterms:creator "De Deyn, Gerlinde B.",
+            "Jiang, Bin",
+            "Luo, Shan",
+            "Yu, Shixiao" ;
+        dcterms:date "2017-03-22" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.p8t61> ;
+        dcterms:subject "16 months",
+            "individual",
+            "plant diversity-productivity relationship",
+            "plant-microbe interactions",
+            "soil fertility",
+            "subtropical forest" ;
+        dcterms:title "Data from: Soil biota suppress positive plant diversity effects on productivity at high but not low soil fertility" .
+
+    <https://doi.org/10.5061/dryad.pnvx0k6q0> a dcterms:BibliographicResource ;
+        dcterms:creator "Bai, Yongfei",
+            "Chen, Dima",
+            "Chen, Xiang",
+            "Liu, Shengen",
+            "Wang, Bing",
+            "Wang, Yang",
+            "Wu, Liji",
+            "Wu, Ying",
+            "Yue, Linyan",
+            "Zhu, Yuhe" ;
+        dcterms:date "2022-04-28" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.pnvx0k6q0> ;
+        dcterms:subject "Functional groups",
+            "Soil food webs",
+            "bottom-up effect",
+            "degradation intensity",
+            "degraded grasslands",
+            "multiple trophic levels",
+            "plant-soil Interactions",
+            "revegetation measures" ;
+        dcterms:title "Even short-term revegetation complicates soil food webs and strengths their links with ecosystem functions" .
+
+    <https://doi.org/10.5061/dryad.pvmcvdnqc> a dcterms:BibliographicResource ;
+        dcterms:creator "Beugnon, Rémy",
+            "Bruelheide, Helge",
+            "Bu, Wensheng",
+            "Cesarz, Simone",
+            "Davrinche, Andréa",
+            "Du, Jianqing",
+            "Eisenhauer, Nico",
+            "Haider, Sylvia",
+            "Kunz, Matthias",
+            "Perles-Garcia, Maria",
+            "Saadani, Mariem",
+            "Scholten, Thomas",
+            "Seitz, Steffen",
+            "Singavarapu, Bala",
+            "Trogisch, Stefan",
+            "Wang, Yanfen",
+            "Wubet, Tesfaye",
+            "Xue, Kai",
+            "Yang, Bo",
+            "von Oheimb, Goddert" ;
+        dcterms:date "2022-12-06" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.pvmcvdnqc> ;
+        dcterms:subject "BEF-China",
+            "Microbial community",
+            "biotic conditions",
+            "micro-environment",
+            "microclimate",
+            "productivity",
+            "root morphology",
+            "soil carbon stock",
+            "soil quality",
+            "subtropical forest",
+            "tree diversity" ;
+        dcterms:title "Abiotic and biotic drivers of tree trait effects on soil microbial biomass and soil carbon concentration" .
+
+    <https://doi.org/10.5061/dryad.r43d0> a dcterms:BibliographicResource ;
+        dcterms:creator "Bauer, Jonathan T.",
+            "Blumenthal, Noah",
+            "Ferguson, Julia K.",
+            "Miller, Anna J.",
+            "Reynolds, Heather L." ;
+        dcterms:date "2018-05-01" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.r43d0> ;
+        dcterms:subject "legacy effects",
+            "mycorrhizae",
+            "priority effects" ;
+        dcterms:title "Data from:  Effects of between-site variation in soil microbial communities and plant-soil feedbacks on the productivity and composition of plant communities" .
+
+    <https://doi.org/10.5061/dryad.r7sqv9s8n> a dcterms:BibliographicResource ;
+        dcterms:creator "Hoekstra, Nyncke J.",
+            "Smit-Tiekstra, Annemiek E.",
+            "Visser, Eric J.W.",
+            "Wagemaker, Cornelis A.M.",
+            "de Caluwe, Hannie",
+            "de Kroon, Hans",
+            "in 't Zandt, Dina" ;
+        dcterms:date "2020-07-09" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.r7sqv9s8n> ;
+        dcterms:subject "nutrient availability",
+            "plant species co-existence",
+            "plant-soil feedback",
+            "root placement",
+            "soil legacy",
+            "structural equation modelling",
+            "tracer uptake" ;
+        dcterms:title "Data from: Local soil legacy effects in a multi-species grassland community are underlain by root foraging and soil nutrient availability" .
+
+    <https://doi.org/10.5061/dryad.rk37b> a dcterms:BibliographicResource ;
+        dcterms:creator "Bezemer, T. Martijn",
+            "Duyts, Henk",
+            "Hol, W. H. Gera",
+            "Vestergård, Mette",
+            "ten Hooven, Freddy",
+            "van de Voorde, Tess F. J." ;
+        dcterms:date "2018-09-08" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.rk37b> ;
+        dcterms:subject "Medicago sativa",
+            "Meloidogyne spp.",
+            "Pratylenchus spp.",
+            "Protozoa",
+            "Vicia villosa",
+            "biochar",
+            "dilution-to-extinction",
+            "nematodes",
+            "plant biomass",
+            "serial dilution",
+            "soil inoculation" ;
+        dcterms:title "Data from: Transient negative biochar effects on plant growth are strongest after microbial species loss" .
+
+    <https://doi.org/10.5061/dryad.v1c28> a dcterms:BibliographicResource ;
+        dcterms:creator "Aguirrebengoa, Martin",
+            "Camara, Mariama",
+            "Eisenhauer, Nico",
+            "Ferlian, Olga",
+            "Ramirez-Rojas, Irene",
+            "Santos, Fabio",
+            "Tanalgo, Krizler",
+            "Thakur, Madhav P." ;
+        dcterms:date "2018-08-09" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.v1c28> ;
+        dcterms:subject "Soil microorganisms",
+            "soil invertebrates" ;
+        dcterms:title "Data from: Invasive earthworms erode soil biodiversity: a meta-analysis" .
+
+    <https://doi.org/10.5061/dryad.wm37pvmnn> a dcterms:BibliographicResource ;
+        dcterms:creator "Cesarz, Simone" ;
+        dcterms:date "2023-01-24" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.wm37pvmnn> ;
+        dcterms:subject "Biodiversity-ecosystem functioing" ;
+        dcterms:title "Tree diversity effects on soil microbial biomass and respiration are context-dependent across forest diversity experiments" .
+
+    <https://doi.org/10.5061/dryad.xpnvx0kh2> a dcterms:BibliographicResource ;
+        dcterms:creator "Ducey, Thomas",
+            "Myers, William",
+            "Novak, Jeffrey",
+            "Rushmiller, Hannah",
+            "Sigua, Gilbert",
+            "Watts, Donald" ;
+        dcterms:date "2021-12-23" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.xpnvx0kh2> ;
+        dcterms:title "Digital research data from: Biochar stability in a highly weathered sandy soil under four years of continuous corn production" .
+
+    <https://doi.org/10.5194/soil-6-453-2020> a dcterms:BibliographicResource ;
+        dcterms:creator "Basile, Angelo",
+            "Bonfante, Antonello",
+            "Bouma, Johan" ;
+        dcterms:date "2020-10-05" ;
+        dcterms:identifier <https://doi.org/10.5194/soil-6-453-2020> ;
+        dcterms:subject ex:SoilHealth,
+            "EU Green Deal",
+            "Soil ecosystem services",
+            "Soil quality",
+            "UN Sustainable Development Goals" ;
+        dcterms:title "Targeting the soil quality and soil health concepts when aiming for the United Nations Sustainable Development Goals and the EU Green Deal" .
+
+    <https://doi.org/10.5281/zenodo.10043045> a dcterms:BibliographicResource ;
+        dcterms:creator "Algunde S. M" ;
+        dcterms:date "2023-09-30" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.10043045> ;
+        dcterms:subject "Nutrients",
+            "PH",
+            "Physico-chemical parameters",
+            "industrialization." ;
+        dcterms:title "The Physicochemical Analysis of Soil from N. Solapur Region, Maharashtra" .
+
+    <https://doi.org/10.5281/zenodo.10076359> a dcterms:BibliographicResource ;
+        dcterms:creator "Alice Csermák",
+            "András Makó",
+            "Erzsébet Aradvári-Tóth",
+            "Gábor Szatmári",
+            "Kálmán Csermák",
+            "László Pásztor",
+            "Mihály Kocsis",
+            "Piroska Kassai" ;
+        dcterms:date "2003" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.10076359> ;
+        dcterms:subject "Lake Balaton",
+            "eutrophication",
+            "nutrient load",
+            "sediment survey",
+            "spatial modelling" ;
+        dcterms:title "Lake Balaton sediment database" .
+
+    <https://doi.org/10.5281/zenodo.10079906> a dcterms:BibliographicResource ;
+        dcterms:creator "Abbas, Salam A." ;
+        dcterms:date "2023-11-07" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.10079906> ;
+        dcterms:title "Supplementary Material for \"Assessing the Impact of Groundwater Saturation Excess Runoff on Hydrologic Features and Processes in a Watershed Modeling Setting\"" .
+
+    <https://doi.org/10.5281/zenodo.10150209> a dcterms:BibliographicResource ;
+        dcterms:creator "Beverly, Daniel" ;
+        dcterms:date "2023-11-14" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.10150209> ;
+        dcterms:subject "Soil Moisture",
+            "Soil Respiration",
+            "Soil Temperature" ;
+        dcterms:title "The forest, the cicadas, and the holey fluxes: Chamber and Cicada Hole Data" .
+
+    <https://doi.org/10.5281/zenodo.10369342> a dcterms:BibliographicResource ;
+        dcterms:creator "J. Jency",
+            "K. Dhivya",
+            "S. Rajeshkumar" ;
+        dcterms:date "2023-08-30" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.10369342> ;
+        dcterms:subject "Erode District",
+            "Physico-chemical parameters",
+            "Soil Colour",
+            "Soil Moisture",
+            "Soil samples" ;
+        dcterms:title "Studies on physico-chemical parameters in different soil samples from Erode District, Tamil Nadu, India" .
+
+    <https://doi.org/10.5281/zenodo.10401745> a dcterms:BibliographicResource ;
+        dcterms:creator "Mészáros, János",
+            "Szabó, Brigitta" ;
+        dcterms:date "2023-12-18" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.10401745> ;
+        dcterms:title "Derivation of soil physical and hydraulic properties" .
+
+    <https://doi.org/10.5281/zenodo.10555187> a dcterms:BibliographicResource ;
+        dcterms:creator "Chae, Kyu-Seok",
+            "Min, Gi-Sik",
+            "Park, Kyung-Min" ;
+        dcterms:date "2023-01-05" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.10555187> ;
+        dcterms:subject "Biodiversity",
+            "Chromista",
+            "Ciliophora",
+            "Hypotrichea",
+            "Stichotrichida",
+            "Strongylidiidae",
+            "Strongylidium",
+            "Strongylidium koreanum",
+            "Taxonomy" ;
+        dcterms:title "Strongylidium koreanum Chae & Park & Min 2023, n. sp." .
+
+    <https://doi.org/10.5281/zenodo.10605462> a dcterms:BibliographicResource ;
+        dcterms:creator "*Abhinav Kumar1 and Abarna.V" ;
+        dcterms:date "2024-02-01" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.10605462> ;
+        dcterms:title "Insect Indicators of Soil Quality: Unveiling the Underground Tapestry" .
+
+    <https://doi.org/10.5281/zenodo.1065954> a dcterms:BibliographicResource ;
+        dcterms:creator "Alexandre Wadoux",
+            "Gerard Heuvelink",
+            "Kasia Sawicka" ;
+        dcterms:date "2017-11-23" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.1065954> ;
+        dcterms:title "Sample design optimisation techniques and associated software" .
+
+    <https://doi.org/10.5281/zenodo.10700217> a dcterms:BibliographicResource ;
+        dcterms:creator "Jai Krishna Kumar",
+            "Rahul Ranjan" ;
+        dcterms:date "2016-12-30" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.10700217> ;
+        dcterms:subject "Germination percentage",
+            "plain soil",
+            "vermicompost" ;
+        dcterms:title "STUDY ON GERMINATION OF RAJMA (PHASEOLUS VULGARIS.L) IN AMENDED SOIL" .
+
+    <https://doi.org/10.5281/zenodo.10842922> a dcterms:BibliographicResource ;
+        dcterms:creator "Ahmad, Wasim",
+            "Islam, Md Niraul" ;
+        dcterms:date "2024-03-20" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.10842922> ;
+        dcterms:subject "Animalia",
+            "Biodiversity",
+            "Dorylaimida",
+            "Enoplea",
+            "Lawtonema",
+            "Lawtonema indicum",
+            "Nematoda",
+            "Taxonomy",
+            "Tylencholaimidae" ;
+        dcterms:title "Lawtonema indicum Islam & Ahmad 2024, sp. n." .
+
+    <https://doi.org/10.5281/zenodo.10950814> a dcterms:BibliographicResource ;
+        dcterms:creator "Arantes, Carolina",
+            "Dias-Neto, Olavo Custódio",
+            "Gusson, André Eduardo",
+            "Júnior, Jamir Afonso",
+            "Lopes, Sérgio",
+            "Nascimento, Diego Raymundo",
+            "Santos, Lilian Cristina",
+            "Schiavini, Ivan",
+            "do Vale, Vagner Santiago" ;
+        dcterms:date "2018-12-31" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.10950814> ;
+        dcterms:subject "Biodiversity",
+            "Taxonomy" ;
+        dcterms:title "Fig. 2 in Changes in soil moisture and riparian forest structure after a dam construction" .
+
+    <https://doi.org/10.5281/zenodo.11098609> a dcterms:BibliographicResource ;
+        dcterms:creator "Adkins, Jaron" ;
+        dcterms:date "2024-05-01" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.11098609> ;
+        dcterms:title "Bacterial Community Weighted rrn Operon Copy Numbers and Enzyme Activity in Costa Rica and Alaska Soils." .
+
+    <https://doi.org/10.5281/zenodo.11183001> a dcterms:BibliographicResource ;
+        dcterms:creator "Abdul Ghaffar",
+            "Abdul Waheed",
+            "Hafiz Riaz Ahmad",
+            "Muhammad Nadeem Iqbal",
+            "Muhammad Rashid",
+            "Muhmmad Shakir",
+            "Samina Hamid",
+            "Sarosh Alvi" ;
+        dcterms:date "2024-10-03" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.11183001> ;
+        dcterms:subject "Fertilizer Recommendations",
+            "Fine Varities",
+            "Punjab",
+            "Rice",
+            "Soil Fertility" ;
+        dcterms:title "Economically Most Efficient Doses of NPK for Fine Rice (Oryza sativa L.) of Punjab, Pakistan" .
+
+    <https://doi.org/10.5281/zenodo.1131349> a dcterms:BibliographicResource ;
+        dcterms:creator "Kuzyakov, Yakov",
+            "Mason-Jones, Kyle",
+            "Schmücker,  Niklas" ;
+        dcterms:date "2018-06-09" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.1131349> ;
+        dcterms:subject ex:Soil,
+            "Alanine",
+            "Amino acids",
+            "Carbon and nitrogen interactions",
+            "Low molecular weight organic substances",
+            "Priming effect",
+            "Sugars" ;
+        dcterms:title "Dataset for \"Contrasting Effects of Organic and Mineral Nitrogen Challenge the N-Mining Hypothesis for Soil Organic Matter Priming\"" .
+
+    <https://doi.org/10.5281/zenodo.11379270> a dcterms:BibliographicResource ;
+        dcterms:creator "Jabbarov Zafarjon Abdukarimovich, Fakhrutdinova Mashkura Fazliddinovna, Imomov Otamurod Normamatovich" ;
+        dcterms:date "2024-05-29" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.11379270> ;
+        dcterms:title "DESCRIPTION OF SOIL UNDER THE INFLUENCE OF CHEMICAL POLLUTION AND CHANGES TO THE SOIL" .
+
+    <https://doi.org/10.5281/zenodo.11399291> a dcterms:BibliographicResource ;
+        dcterms:creator "Hemavathi.M",
+            "Premanand Kumbar",
+            "Sathyanarayana.A" ;
+        dcterms:date "2018-08-23" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.11399291> ;
+        dcterms:title "Various researchers opinion about   lime fixation point on Non-expansive and expansive soil-an over view" .
+
+    <https://doi.org/10.5281/zenodo.1146786> a dcterms:BibliographicResource ;
+        dcterms:creator "Kuzyakov, Yakov",
+            "Mason-Jones, Kyle" ;
+        dcterms:date "2017-01-05" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.1146786> ;
+        dcterms:subject "Apparent priming",
+            "Carbon cycle",
+            "Chemosensory triggering",
+            "Microbial activation",
+            "Microbial metabolism",
+            "Soil organic matter" ;
+        dcterms:title "Data from: \"Non-metabolizable\" glucose analogue shines new light on priming mechanisms: Triggering of microbial metabolism" .
+
+    <https://doi.org/10.5281/zenodo.12672748> a dcterms:BibliographicResource ;
+        dcterms:creator "Dr. Bahadur Lal" ;
+        dcterms:date "2018-12-30" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.12672748> ;
+        dcterms:subject "Bio pores",
+            "Inhibitory Bacteria",
+            "Root signal",
+            "Soil Structure",
+            "Water Potential" ;
+        dcterms:title "A REVIEW ON \"SOIL CONDITION AND PLANT GROWTH" .
+
+    <https://doi.org/10.5281/zenodo.1422970> a dcterms:BibliographicResource ;
+        dcterms:creator "STRI Soil Lab",
+            "grahamscode" ;
+        dcterms:date "2018-09-21" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.1422970> ;
+        dcterms:title "SoilLabAtSTRI/Soil-drivers-of-tree-growth: Ecology Article Code" .
+
+    <https://doi.org/10.5281/zenodo.2574468> a dcterms:BibliographicResource ;
+        dcterms:creator "Douglas Zilli",
+            "Geiseana Pohlmann",
+            "Guilherme Brandelero",
+            "Rafael Goulart Machado",
+            "Romeu Cezar Deon" ;
+        dcterms:date "2017-08-31" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.2574468> ;
+        dcterms:subject "Rain water runoff",
+            "Soil erosion",
+            "Vegetation cover",
+            "rain simulation" ;
+        dcterms:title "Soil Model: Tool to Demonstrate the Effect of Different Cropping Systems on Soil Conservation" .
+
+    <https://doi.org/10.5281/zenodo.2578238> a dcterms:BibliographicResource ;
+        dcterms:creator "Kasmerchak, C.S.",
+            "Schaetzl, R." ;
+        dcterms:date "2018-12-14" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.2578238> ;
+        dcterms:subject "geomorphology",
+            "pedon",
+            "soil characterization",
+            "soil horizon",
+            "soil profile",
+            "soil taxonomy",
+            "soil type" ;
+        dcterms:title "Soils of the GLBRC Marginal Land Expeirment (MLE) Sites" .
+
+    <https://doi.org/10.5281/zenodo.2586011> a dcterms:BibliographicResource ;
+        dcterms:creator "Dimitrov, Dimitar",
+            "Ilinkin, Vladimir",
+            "Zhelev, Peter" ;
+        dcterms:date "2017-10-05" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.2586011> ;
+        dcterms:subject "Fluvisols",
+            "Physicochemical properties",
+            "gravel quarry",
+            "statistical assessment" ;
+        dcterms:title "Statistical Assessment of Fluvisols in \"Gladino\" Gravel Quarry, Chelopechene, Bulgaria" .
+
+    <https://doi.org/10.5281/zenodo.2629921> a dcterms:BibliographicResource ;
+        dcterms:creator "David Scott Howlett",
+            "Gerardo Moreno",
+            "Maria Rosa Mosquera Losada",
+            "P. K. Ramachandran Naira and Vimala D. Nair" ;
+        dcterms:date "2011-05-03" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.2629921> ;
+        dcterms:subject "Carbon storage",
+            "silvopastoral systems",
+            "soil fractions" ;
+        dcterms:title "Soil carbon storage as influenced by tree cover in the Dehesa cork oak silvopasture of central-western Spain" .
+
+    <https://doi.org/10.5281/zenodo.3249064> a dcterms:BibliographicResource ;
+        dcterms:creator "Jhatial, Ashfaque Ahmed",
+            "Karira, Hemu",
+            "Rind, Touqeer Ali",
+            "Sandhu, Abdul Razzaque",
+            "Sohu, Samiullah" ;
+        dcterms:date "2019-06-10" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.3249064> ;
+        dcterms:subject "bearing capacity",
+            "crushing load",
+            "permeability",
+            "shear box test",
+            "shear strength" ;
+        dcterms:title "Particle Crushing Effect on The Geotechnical Properties of Soil" .
+
+    <https://doi.org/10.5281/zenodo.3460264> a dcterms:BibliographicResource ;
+        dcterms:creator "A.S.M. Fahad Hossain",
+            "Ayesha Binta Ali",
+            "Fatema Rahman",
+            "Saffat Rabby Munayem",
+            "Saptershi Chakma" ;
+        dcterms:date "2019-09-25" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.3460264> ;
+        dcterms:subject "angle of internal friction",
+            "organic soil",
+            "shear stress" ;
+        dcterms:title "Observation of the Behavior of Organic Soil by Adding Lime, Fly Ash and Cement" .
+
+    <https://doi.org/10.5281/zenodo.3484259> a dcterms:BibliographicResource ;
+        dcterms:creator "Bounthong Pialuang",
+            "Danish Ali",
+            "Sadam Hussain",
+            "Sarwan Khan",
+            "Yousaf Yahya Ali Sewar" ;
+        dcterms:date "2019-06-30" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.3484259> ;
+        dcterms:subject "Soil Contamination-Soil Degradation- Soil Remediation- Case Study" ;
+        dcterms:title "A Review of Soil Contamination and Remediation on Basis of Case Studies" .
+
+    <https://doi.org/10.5281/zenodo.3515862> a dcterms:BibliographicResource ;
+        dcterms:creator "Felix Dittrich",
+            "Sören Thiele-Bruhn" ;
+        dcterms:date "2019-10-22" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.3515862> ;
+        dcterms:subject "Aromatic herbs",
+            "Crop diversification",
+            "Soil biodiversity",
+            "Soil functioning",
+            "Viticulture" ;
+        dcterms:title "Aromatic plants as intercrops in viticulture - Consequences for soil biology" .
+
+    <https://doi.org/10.5281/zenodo.3555492> a dcterms:BibliographicResource ;
+        dcterms:creator "Le Quang Tri",
+            "Le Van Khoa",
+            "Pham Thanh Vu",
+            "Thai Thanh Du",
+            "Vo Quang Minh" ;
+        dcterms:date "2019-11-27" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.3555492> ;
+        dcterms:subject "Correlation",
+            "Munsell",
+            "Organic carbon",
+            "Pedotransfer function",
+            "Soil colour" ;
+        dcterms:title "Pedotransfer Function for Predicting Orchard Organic Carbon Soil in Haugiang Province, Vietnam" .
+
+    <https://doi.org/10.5281/zenodo.3590817> a dcterms:BibliographicResource ;
+        dcterms:creator "Nyein Nyein Thant",
+            "Soe Soe War" ;
+        dcterms:date "2019-07-15" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.3590817> ;
+        dcterms:subject "Civil Engineering",
+            "Dispersive Soil",
+            "Lime",
+            "Stabilization" ;
+        dcterms:title "Experiential Investigation on the Stabilization of Dispersive Soil with Lime" .
+
+    <https://doi.org/10.5281/zenodo.3633568> a dcterms:BibliographicResource ;
+        dcterms:creator "Abdul Baset Egrira Salama" ;
+        dcterms:date "2020-01-31" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.3633568> ;
+        dcterms:subject "GIS",
+            "Soil Suitability",
+            "Sustainable Agriculture",
+            "Tolerant Crops",
+            "agriculture journal" ;
+        dcterms:title "GIS-Based Soil Properties Analysis for Sustainable Agriculture in Bani Waleed (Libya)" .
+
+    <https://doi.org/10.5281/zenodo.4050555> a dcterms:BibliographicResource ;
+        dcterms:creator "Changa",
+            "Jane Okalebo" ;
+        dcterms:date "2020-09-25" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.4050555> ;
+        dcterms:title "Supplementary Materials LTAR Pasture Soil Characteristics" .
+
+    <https://doi.org/10.5281/zenodo.4052198> a dcterms:BibliographicResource ;
+        dcterms:creator "KSU Soil Testing Lab" ;
+        dcterms:date "2020-09-26" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.4052198> ;
+        dcterms:title "KSUSTL/IrrigationRecs: Interpretation of Irrigation Water Tests for Kansas Agricultural Production" .
+
+    <https://doi.org/10.5281/zenodo.4065111> a dcterms:BibliographicResource ;
+        dcterms:creator "M. Cuneyt Bagdatli",
+            "Yigitcan Balli" ;
+        dcterms:date "2020-10-02" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.4065111> ;
+        dcterms:subject ": Soil Temperature",
+            "Niğde Province",
+            "Trend Analysis",
+            "Turkey",
+            "Ulukışla District" ;
+        dcterms:title "Soil Temperature Changes (1970-2019) in Ulukışla District in Turkey by Trend Analysis Methods" .
+
+    <https://doi.org/10.5281/zenodo.4425112> a dcterms:BibliographicResource ;
+        dcterms:creator "Jahan, Rehmat",
+            "Khan, Rahmat",
+            "Mahboob, Mohammad",
+            "Tahseen, Qudsia" ;
+        dcterms:date "2020-11-10" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.4425112> ;
+        dcterms:subject "Adenophorea",
+            "Anaplectus",
+            "Anaplectus sudhausi",
+            "Animalia",
+            "Araeolaimida",
+            "Biodiversity",
+            "Nematoda",
+            "Plectidae",
+            "Taxonomy" ;
+        dcterms:title "Anaplectus sudhausi Jahan & Khan & Mahboob & Tahseen 2020, sp. nov." .
+
+    <https://doi.org/10.5281/zenodo.4477712> a dcterms:BibliographicResource ;
+        dcterms:creator "Andrew Bissett",
+            "Cristina Aponte",
+            "Fiona Ede",
+            "Rebecca E Miller",
+            "Sabine Kasel",
+            "Vicky Waymouth" ;
+        dcterms:date "2020-12-30" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.4477712> ;
+        dcterms:subject "Ecoplates",
+            "Restoration",
+            "bacterial community composition",
+            "community-level physiological profiles",
+            "microbial diversity",
+            "plant - soil interactions",
+            "revegetation",
+            "riparian ecosystems",
+            "soil microbiome" ;
+        dcterms:title "Soil bacterial community responds to land-use change in riparian ecosystems" .
+
+    <https://doi.org/10.5281/zenodo.4616058> a dcterms:BibliographicResource ;
+        dcterms:creator "Emer Tucay Quezon",
+            "Temesgen Ayna",
+            "Tsion Mindaye" ;
+        dcterms:date "2021-02-28" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.4616058> ;
+        dcterms:subject "'Fino'",
+            "Expansive Soil",
+            "Index Properties",
+            "Subgrade Strength." ;
+        dcterms:title "Investigation on the performance of 'Fino' materials to stabilize expansive soil: A case study in Yeka Sub-City, Addis Ababa, Ethiopia" .
+
+    <https://doi.org/10.5281/zenodo.4646891> a dcterms:BibliographicResource ;
+        dcterms:creator "Soil Survey of Scotland Staff" ;
+        dcterms:date "1981-03-31" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.4646891> ;
+        dcterms:subject "Scotland",
+            "Soils" ;
+        dcterms:title "National Soil Map of Scotland" .
+
+    <https://doi.org/10.5281/zenodo.4697136> a dcterms:BibliographicResource ;
+        dcterms:creator "Darbemamieh, M.",
+            "Gwiazdowicz, D. J.",
+            "Hajiqanbar, H.",
+            "Kazmierski, A.",
+            "Khanjani, M." ;
+        dcterms:date "2016-10-21" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.4697136> ;
+        dcterms:subject "Animalia",
+            "Arachnida",
+            "Arthropoda",
+            "Biodiversity",
+            "Prostigmata",
+            "Taxonomy",
+            "Tydeidae",
+            "Tydeus",
+            "Tydeus electus" ;
+        dcterms:title "Tydeus electus Kuznetzov 1973" .
+
+    <https://doi.org/10.5281/zenodo.4745479> a dcterms:BibliographicResource ;
+        dcterms:creator "Andreas Richter",
+            "Bertrand Guenet",
+            "Bjarni D. Sigurdsson",
+            "Chao Fang",
+            "Christopher Poeplau",
+            "Cristina Ariza-Carricondo",
+            "Edda S. Oddsdóttir",
+            "Erik Verbruggen",
+            "Gunnhildur E. Gunnarsdóttir",
+            "Håkan Wallander",
+            "Ivan A. Janssens",
+            "Ivika Ostonen",
+            "James T. Weedon",
+            "Jennifer L. Soong",
+            "Jordi Sardans",
+            "Josep Peũelas",
+            "Kathiravan Meeran",
+            "Lucia Fuchslueger",
+            "Marja Maljanen",
+            "Michael Bahn",
+            "Niel Verbrigghe",
+            "Niki I. W. Leblans",
+            "Per Gundersen",
+            "Peter M. Van Bodegom",
+            "Páll Sigurðsson",
+            "Sara Marañón-Jiménez",
+            "Sara Vicca",
+            "Thomas Kätterer",
+            "Tom W. N. Walker",
+            "Zhanfeng Liu" ;
+        dcterms:date "2021-05-10" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.4745479> ;
+        dcterms:title "Soil carbon loss in warmed subarctic grasslands is rapid and restricted to topsoil" .
+
+    <https://doi.org/10.5281/zenodo.4748500> a dcterms:BibliographicResource ;
+        dcterms:creator "Hengl, T." ;
+        dcterms:date "2021-05-11" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.4748500> ;
+        dcterms:subject "soil mapping",
+            "soil profiles",
+            "soil samples",
+            "soil spectroscopy" ;
+        dcterms:title "An Open Compendium of Soil Datasets: Soil Observations and Measurements" .
+
+    <https://doi.org/10.5281/zenodo.5040380> a dcterms:BibliographicResource ;
+        dcterms:creator "Peng, Yuxuan",
+            "Xie, Enze",
+            "Zhang, Xiu",
+            "Zhao, Yongcun" ;
+        dcterms:date "2021-06-29" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.5040380> ;
+        dcterms:subject "Digital soil mapping",
+            "Long-time series",
+            "Process-based SOC model",
+            "Soil organic carbon",
+            "Space-for-time substitution" ;
+        dcterms:title "Global topsoil SOC stock from 1981 to 2018 estimated by combining process-based model and space-for-time digital soil mapping" .
+
+    <https://doi.org/10.5281/zenodo.5076279> a dcterms:BibliographicResource ;
+        dcterms:creator "M. H. Safi",
+            "Md. Monir Hossain",
+            "Ripon Chandra Malo" ;
+        dcterms:date "2021-07-06" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.5076279> ;
+        dcterms:subject "Lime stabilization",
+            "Polypropylene fibers",
+            "Soil improvement",
+            "Unconfined Compressive Strength" ;
+        dcterms:title "SOIL IMPROVEMENT USING LIME AND POLYPROPYLENE FIBERS" .
+
+    <https://doi.org/10.5281/zenodo.5094729> a dcterms:BibliographicResource ;
+        dcterms:creator "Garcia-Puerta, Blanca",
+            "Lago, Carmen",
+            "Millan, Rocio",
+            "Montero, Milagros",
+            "Schimd, Thomas",
+            "Trueba, Cristina" ;
+        dcterms:date "2020-11-19" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.5094729> ;
+        dcterms:subject "soil datasets",
+            "soil profiles",
+            "soil properties" ;
+        dcterms:title "Georeferenced Spanish Soil Profile Database (SODES)-Metadata" .
+
+    <https://doi.org/10.5281/zenodo.5094759> a dcterms:BibliographicResource ;
+        dcterms:creator "Garcia-Puerta, Blanca",
+            "Lago, Carmen",
+            "Millan, Rocio",
+            "Montero, Milagros",
+            "Schmid, Thomas",
+            "Trueba, Cristina" ;
+        dcterms:date "2020-11-19" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.5094759> ;
+        dcterms:subject "soil datasets",
+            "soil profiles",
+            "soil properties" ;
+        dcterms:title "Georeferenced Spanish Soil Profile Database (SODES)" .
+
+    <https://doi.org/10.5281/zenodo.5153126> a dcterms:BibliographicResource ;
+        dcterms:creator "Jingyu Fan",
+            "Muhammad Haseeb",
+            "Qilin Ren",
+            "Runzhi Zhang",
+            "Tianqi Tian" ;
+        dcterms:date "2021-08-02" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.5153126> ;
+        dcterms:subject "IPM",
+            "Spodoptera frugiperda",
+            "larval pupation",
+            "soil moisture" ;
+        dcterms:title "Too dry or too wet soils have a negative impact on larval pupation of fall armyworm" .
+
+    <https://doi.org/10.5281/zenodo.5159133> a dcterms:BibliographicResource ;
+        dcterms:creator "Soil Survey Staff" ;
+        dcterms:date "2021-08-04" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.5159133> ;
+        dcterms:subject ex:Soil,
+            "1:25000 scale",
+            "Scotland",
+            "map" ;
+        dcterms:title "Soil Survey of Scotland Staff (1970-1987). Soil maps of Scotland (partial coverage) at a scale of 1:25 000. Digital phase 8 release." .
+
+    <https://doi.org/10.5281/zenodo.545670> a dcterms:BibliographicResource ;
+        dcterms:creator "NZ Soil Science Society" ;
+        dcterms:date "2015-11-27" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.545670> ;
+        dcterms:title "Celebrating Soils in the Hub: Workshop" .
+
+    <https://doi.org/10.5281/zenodo.545671> a dcterms:BibliographicResource ;
+        dcterms:creator "NZ Soil Science Society" ;
+        dcterms:date "2015-11-27" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.545671> ;
+        dcterms:title "Celebrating Soils in the Hub: Abstracts" .
+
+    <https://doi.org/10.5281/zenodo.5564387> a dcterms:BibliographicResource ;
+        dcterms:creator "Ali Zar",
+            "Azhar Abbas",
+            "Muhammad Gul Nawaz",
+            "Muhammad Yousaf",
+            "Xie Xiongyao" ;
+        dcterms:date "2021-10-12" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.5564387> ;
+        dcterms:subject "ATTERBERG'S LIMIT TEST",
+            "BEARING CAPACITY",
+            "CALIFORNIA BEARING RATION (CBR) TEST",
+            "EXPENSIVE SOILS",
+            "STABILIZING AGENT",
+            "TREACLE",
+            "UNCONFINED COMPRESSIVE STRENGTH (UCS) TEST",
+            "WORKABILITY" ;
+        dcterms:title "Investigation of Treacle's Effects for Cohesive Soil Stabilization" .
+
+    <https://doi.org/10.5281/zenodo.5786877> a dcterms:BibliographicResource ;
+        dcterms:creator "Soil Survey of Scotland Staff" ;
+        dcterms:date "2014-04-01" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.5786877> ;
+        dcterms:subject "Scotland",
+            "map",
+            "soil texture" ;
+        dcterms:title "National topsoil texture map of Scotland" .
+
+    <https://doi.org/10.5281/zenodo.581417> a dcterms:BibliographicResource ;
+        dcterms:creator "Isberg, Kristina" ;
+        dcterms:date "2017-05-19" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.581417> ;
+        dcterms:subject "Soil type" ;
+        dcterms:title "Level A Pan Europe Soils, E-HYPE 2.5" .
+
+    <https://doi.org/10.5281/zenodo.5840245> a dcterms:BibliographicResource ;
+        dcterms:creator "A systematic review of biochar as a soil amendment and bioremediation tool in agricultural management",
+            "Shazia Iram" ;
+        dcterms:date "2020-07-30" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.5840245> ;
+        dcterms:subject "Adsorbant",
+            "Biochar",
+            "Bioremediation",
+            "Nano-composites",
+            "Soils" ;
+        dcterms:title "A systematic review of biochar as a soil amendment and bioremediation tool in agricultural management | JBES 2020" .
+
+    <https://doi.org/10.5281/zenodo.5986078> a dcterms:BibliographicResource ;
+        dcterms:creator "Ahad, Sumaya",
+            "Ahmad, Wasim" ;
+        dcterms:date "2018-01-25" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.5986078> ;
+        dcterms:subject "Adenophorea",
+            "Animalia",
+            "Biodiversity",
+            "Dorylaimida",
+            "Nematoda",
+            "Taxonomy",
+            "Tylencholaimellidae",
+            "Tylencholaimellus",
+            "Tylencholaimellus arabicus" ;
+        dcterms:title "Tylencholaimellus arabicus Ahmad & Ahad 2018, sp. n." .
+
+    <https://doi.org/10.5281/zenodo.6130983> a dcterms:BibliographicResource ;
+        dcterms:creator "He, Chansheng",
+            "Tian, Jie",
+            "Wang, Xuejing",
+            "Wang, Yibo",
+            "Zhang, Baoqing",
+            "Zhang, Lanhui" ;
+        dcterms:date "2022-01-08" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6130983> ;
+        dcterms:subject "Qinghai-Tibet Plateau",
+            "mountainous area",
+            "soil hydraulic properties",
+            "soil moisture" ;
+        dcterms:title "An in situ observation datset of soil hydraulic properties and soil moisture in a high and cold mountainous area on the northeastern Qinghai-Tibet Plateau" .
+
+    <https://doi.org/10.5281/zenodo.6322608> a dcterms:BibliographicResource ;
+        dcterms:creator "Soil Survey of Scotland Staff" ;
+        dcterms:date "1988-03-01" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6322608> ;
+        dcterms:subject "Forestry",
+            "Land capability",
+            "Scotland" ;
+        dcterms:title "Land Capability for Forestry (LCF)" .
+
+    <https://doi.org/10.5281/zenodo.6322683> a dcterms:BibliographicResource ;
+        dcterms:creator "Soil Survey of Scotland Staff" ;
+        dcterms:date "1983-03-01" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6322683> ;
+        dcterms:subject "Agriculture",
+            "Land Capability",
+            "Scotland" ;
+        dcterms:title "Land Capability for Agriculture (LCA)" .
+
+    <https://doi.org/10.5281/zenodo.6322760> a dcterms:BibliographicResource ;
+        dcterms:creator "Soil Survey of Scotland Staff" ;
+        dcterms:date "1987-03-01" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6322760> ;
+        dcterms:subject "Agriculture",
+            "Land Capability",
+            "Scotland" ;
+        dcterms:title "Land capability for agriculture (partial cover)" .
+
+    <https://doi.org/10.5281/zenodo.6463186> a dcterms:BibliographicResource ;
+        dcterms:creator "Helen Aldis",
+            "Liz Bowles" ;
+        dcterms:date "2022-04-15" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6463186> ;
+        dcterms:subject "co-creation",
+            "innovation",
+            "multi-actor" ;
+        dcterms:title "LIAISON Innovative Case Studies: Farming Connect" .
+
+    <https://doi.org/10.5281/zenodo.6463214> a dcterms:BibliographicResource ;
+        dcterms:creator "Helen Aldis",
+            "Paul Flynn" ;
+        dcterms:date "2022-04-15" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6463214> ;
+        dcterms:subject "co-creation",
+            "innovation",
+            "multi-actor" ;
+        dcterms:title "LIAISON Innovative Case Studies: Living Laboratories Initiative" .
+
+    <https://doi.org/10.5281/zenodo.6474713> a dcterms:BibliographicResource ;
+        dcterms:creator "Ana Allamand",
+            "Helen Aldis",
+            "Simone Osborn" ;
+        dcterms:date "2022-04-21" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6474713> ;
+        dcterms:subject "co-innovation",
+            "how-to-guide",
+            "multi-actor" ;
+        dcterms:title "Coming together: How to Guide" .
+
+    <https://doi.org/10.5281/zenodo.6474897> a dcterms:BibliographicResource ;
+        dcterms:creator "Ana Allamand",
+            "Helen Aldis",
+            "Simone Osborn" ;
+        dcterms:date "2022-04-21" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6474897> ;
+        dcterms:subject "co-innovation",
+            "how-to-guide",
+            "multi-actor" ;
+        dcterms:title "Good Planning: How to Guide" .
+
+    <https://doi.org/10.5281/zenodo.6474941> a dcterms:BibliographicResource ;
+        dcterms:creator "Ana Allamand",
+            "Helen Aldis",
+            "Simone Osborn" ;
+        dcterms:date "2022-04-21" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6474941> ;
+        dcterms:subject "co-innovation",
+            "how-to-guide",
+            "multi-actor" ;
+        dcterms:title "Healthy Partnerships: How to Guide" .
+
+    <https://doi.org/10.5281/zenodo.6474946> a dcterms:BibliographicResource ;
+        dcterms:creator "Ana Allamand",
+            "Helen Aldis",
+            "Simone Osborn" ;
+        dcterms:date "2022-04-21" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6474946> ;
+        dcterms:subject "co-innovation",
+            "how-to-guide",
+            "multi-actor" ;
+        dcterms:title "Connected Partnerships: How to Guide" .
+
+    <https://doi.org/10.5281/zenodo.6474958> a dcterms:BibliographicResource ;
+        dcterms:creator "Ana Allamand",
+            "Helen Aldis",
+            "Simone Osborn" ;
+        dcterms:date "2022-04-21" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6474958> ;
+        dcterms:subject "co-innovation",
+            "how-to-guide",
+            "multi-actor" ;
+        dcterms:title "Achieving Impact: How to Guide" .
+
+    <https://doi.org/10.5281/zenodo.6475540> a dcterms:BibliographicResource ;
+        dcterms:creator "Aldis, Helen",
+            "Allamand, Ana",
+            "Osborn, Simone" ;
+        dcterms:date "2022-04-21" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6475540> ;
+        dcterms:subject "co-creation",
+            "innovation systems",
+            "multi-actor",
+            "participatory innovation" ;
+        dcterms:title "LIAISON \"How to\" Training Course. 12 hour / 4 module course" .
+
+    <https://doi.org/10.5281/zenodo.6514191> a dcterms:BibliographicResource ;
+        dcterms:creator "He, Chansheng",
+            "Tian, Jie",
+            "Wang, Xuejing",
+            "Wang, Yibo",
+            "Zhang, Baoqing",
+            "Zhang, Lanhui" ;
+        dcterms:date "2022-01-08" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6514191> ;
+        dcterms:title "An in situ observation dataset of soil hydraulic properties and soil moisture in a high and cold mountainous area on the northeastern Qinghai-Tibet Plateau" .
+
+    <https://doi.org/10.5281/zenodo.6536275> a dcterms:BibliographicResource ;
+        dcterms:creator "Ana Allamand",
+            "Helen Aldis",
+            "Simone Osborn" ;
+        dcterms:date "2022-05-10" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6536275> ;
+        dcterms:title "Partenariats connectés: Guide pratique" .
+
+    <https://doi.org/10.5281/zenodo.6566740> a dcterms:BibliographicResource ;
+        dcterms:creator "Aldis, Helen",
+            "Allamand, Ana",
+            "Osborn, Simone" ;
+        dcterms:date "2022-04-29" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6566740> ;
+        dcterms:subject "innovation systems",
+            "multi-actor",
+            "participatory innovation" ;
+        dcterms:title "LIAISON training modules" .
+
+    <https://doi.org/10.5281/zenodo.6674960> a dcterms:BibliographicResource ;
+        dcterms:creator "Shulga P.S.",
+            "Stepanov A.",
+            "Yakimenko O.S." ;
+        dcterms:date "2022-06-21" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6674960> ;
+        dcterms:subject "artificial soils",
+            "biopolymers",
+            "humic substances",
+            "soil aggregate composition" ;
+        dcterms:title "CREATION OF FERTILE SOIL MIXTURES USING SOIL MODIFIERS BASED ON HUMIC SUBSTANCES" .
+
+    <https://doi.org/10.5281/zenodo.6700122> a dcterms:BibliographicResource ;
+        dcterms:creator "Mészáros, János",
+            "Szabó, Brigitta" ;
+        dcterms:date "2022-06-20" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6700122> ;
+        dcterms:subject "Sentinel-1",
+            "cropmap",
+            "machine learning" ;
+        dcterms:title "Script to derive and apply crop classification based on Sentinel 1 satellite radar images in Google Earth Engine platform" .
+
+    <https://doi.org/10.5281/zenodo.6758370> a dcterms:BibliographicResource ;
+        dcterms:creator "Ahmad, Wasim",
+            "Islam, Md Niraul" ;
+        dcterms:date "2022-06-13" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6758370> ;
+        dcterms:subject "Adenophorea",
+            "Animalia",
+            "Biodiversity",
+            "Dorylaimida",
+            "Dorylaimoides",
+            "Dorylaimoides teres",
+            "Leptonchidae",
+            "Nematoda",
+            "Taxonomy" ;
+        dcterms:title "Dorylaimoides teres Thorne and Swanger 1936" .
+
+    <https://doi.org/10.5281/zenodo.6758378> a dcterms:BibliographicResource ;
+        dcterms:creator "Ahmad, Wasim",
+            "Islam, Md Niraul" ;
+        dcterms:date "2022-06-13" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6758378> ;
+        dcterms:subject "Adenophorea",
+            "Animalia",
+            "Biodiversity",
+            "Dorylaimida",
+            "Dorylaimoides",
+            "Dorylaimoides micoletzkyi",
+            "Leptonchidae",
+            "Nematoda",
+            "Taxonomy" ;
+        dcterms:title "Dorylaimoides micoletzkyi Thorne and Swanger 1936" .
+
+    <https://doi.org/10.5281/zenodo.6758382> a dcterms:BibliographicResource ;
+        dcterms:creator "Ahmad, Wasim",
+            "Islam, Md Niraul" ;
+        dcterms:date "2022-06-13" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6758382> ;
+        dcterms:subject "Adenophorea",
+            "Animalia",
+            "Biodiversity",
+            "Dorylaimida",
+            "Dorylaimoides",
+            "Dorylaimoides parvus",
+            "Leptonchidae",
+            "Nematoda",
+            "Taxonomy" ;
+        dcterms:title "Dorylaimoides parvus Thorne and Swanger 1936" .
+
+    <https://doi.org/10.5281/zenodo.6772048> a dcterms:BibliographicResource ;
+        dcterms:creator "Ahmad, Wasim",
+            "Islam, Md Niraul" ;
+        dcterms:date "2022-06-13" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6772048> ;
+        dcterms:subject "Adenophorea",
+            "Animalia",
+            "Biodiversity",
+            "Dorylaimida",
+            "Dorylaimoides",
+            "Dorylaimoides leptura",
+            "Leptonchidae",
+            "Nematoda",
+            "Taxonomy" ;
+        dcterms:title "Dorylaimoides leptura Siddiqi 1965" .
+
+    <https://doi.org/10.5281/zenodo.6908156> a dcterms:BibliographicResource ;
+        dcterms:creator "Soil survey staff" ;
+        dcterms:date "2022-07-27" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6908156> ;
+        dcterms:subject "Scotland",
+            "Soil Survey of Scotland",
+            "soil map" ;
+        dcterms:title "Soil Survey of Scotland Staff (1970-1987). Soil maps of Scotland (partial coverage). Digital phase 10 release." .
+
+    <https://doi.org/10.5281/zenodo.6921102> a dcterms:BibliographicResource ;
+        dcterms:creator "Annely Kuu" ;
+        dcterms:date "2022-06-29" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6921102> ;
+        dcterms:subject ex:Soil,
+            ex:SoilManagement,
+            "Soil earthworm" ;
+        dcterms:title "Impact of soil management practices on the abundance and diversity of the soil earthworm community" .
+
+    <https://doi.org/10.5281/zenodo.6944794> a dcterms:BibliographicResource ;
+        dcterms:creator "Zulkarnain" ;
+        dcterms:date "2022-07-31" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6944794> ;
+        dcterms:subject "Earthworms",
+            "Soil Chemical Properties",
+            "Ultisols" ;
+        dcterms:title "Study of some Chemical Properties of Ultisols Soils Based on the Existence of Earth Worms" .
+
+    <https://doi.org/10.5281/zenodo.6948345> a dcterms:BibliographicResource ;
+        dcterms:creator "González-SanJosé, María Luisa",
+            "Gómez-Miguel, Vicente",
+            "Lázaro-López, Alberto" ;
+        dcterms:date "2022-08-01" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.6948345> ;
+        dcterms:subject ex:Soil,
+            "Soil Mapping" ;
+        dcterms:title "Map legend of the conventional soil map of the Designation of Origin Campo de Borja" .
+
+    <https://doi.org/10.5281/zenodo.7085005> a dcterms:BibliographicResource ;
+        dcterms:creator "Edoardo A.C. Costantini",
+            "Giovanni L'Abate",
+            "Maria Fantappiè",
+            "Roberto Barbetti",
+            "Simona Magini" ;
+        dcterms:date "2022-09-16" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7085005> ;
+        dcterms:subject "Database",
+            "Soil System",
+            "Soil derived profile",
+            "Soil region" ;
+        dcterms:title "Italian Soil Information System" .
+
+    <https://doi.org/10.5281/zenodo.7105023> a dcterms:BibliographicResource ;
+        dcterms:creator "Edoardo Antonio Costantini Costantini",
+            "Giovanni L'Abate",
+            "Maria Fantappiè" ;
+        dcterms:date "2019-06-29" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7105023> ;
+        dcterms:subject "Database",
+            "Particle-Size Class",
+            "Soil Subsystem",
+            "Soil derived profile",
+            "Soil region",
+            "USDA soil texture",
+            "WRB Qualifiers",
+            "WRB Reference Soil Group (RSG)" ;
+        dcterms:title "500-meter grid of Derived Soil Profiles (DSP) for Italy - SuoliCella500" .
+
+    <https://doi.org/10.5281/zenodo.7227952> a dcterms:BibliographicResource ;
+        dcterms:creator "Liang, Cunzhu",
+            "Liu, Guofang",
+            "Lv, Yixia",
+            "Ma, Linna",
+            "Wang, Chengjie",
+            "Wang, Congwen",
+            "Wang, Renzhong",
+            "Xu, Xiaofeng",
+            "Zhang, Chaoxue",
+            "Zuo, Xiaoan" ;
+        dcterms:date "2022-10-20" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7227952> ;
+        dcterms:subject "Microbial data",
+            "R-code",
+            "environmental factors" ;
+        dcterms:title "Different facets of bacterial and fungal communities drive soil multifunctionality in grasslands spanning a 3,500 km transect" .
+
+    <https://doi.org/10.5281/zenodo.7277797> a dcterms:BibliographicResource ;
+        dcterms:creator "Soil Survey of Scotland Staff" ;
+        dcterms:date "2018-10-13" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7277797> ;
+        dcterms:subject "SSKIB",
+            "Scotland",
+            "soil chemical properties" ;
+        dcterms:title "Scottish Soils Knowledge and Information Base (SSKIB) V1.2" .
+
+    <https://doi.org/10.5281/zenodo.7298671> a dcterms:BibliographicResource ;
+        dcterms:creator "Hurley, Rachel",
+            "Rehman, Hafeez Ur",
+            "Reid, Malcolm" ;
+        dcterms:date "2022-11-07" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7298671> ;
+        dcterms:subject ex:SoilDegradation,
+            "microplastics",
+            "soil resilience",
+            "sustainability" ;
+        dcterms:title "Assessing the role of microplastics as a disturbance to soil resilience" .
+
+    <https://doi.org/10.5281/zenodo.7307202> a dcterms:BibliographicResource ;
+        dcterms:creator "Geng, Xiaoyuan",
+            "He, Juanxia" ;
+        dcterms:date "2022-09-30" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7307202> ;
+        dcterms:subject "GMN",
+            "GTN",
+            "R-scripts",
+            "global marine network",
+            "global terrestrial network",
+            "random sampling points" ;
+        dcterms:title "R-scripts for Generation of 5, 8 and 16 Random Sampling Points Within Predefined Rectangles" .
+
+    <https://doi.org/10.5281/zenodo.7456117> a dcterms:BibliographicResource ;
+        dcterms:creator "Gajanan Dongare and Shivani Deshmukh" ;
+        dcterms:date "2020-10-05" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7456117> ;
+        dcterms:title "PHYSICO-CHEMICAL ANALYSIS OF SOME MACRONUTRIENTS FROM SOIL IN SELECTED VILLAGES OF ANJANGAON SURJI TALUKA OF AMRAVATI DISTRICT, MAHARASHTRA STATE" .
+
+    <https://doi.org/10.5281/zenodo.7476560> a dcterms:BibliographicResource ;
+        dcterms:creator "Petridis, Christos",
+            "Pitilakis, Dimitris" ;
+        dcterms:date "2022-12-23" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7476560> ;
+        dcterms:subject "Earthquake engineering",
+            "fragility",
+            "seismic risk",
+            "soil–structure interaction",
+            "vulnerability" ;
+        dcterms:title "Fragility curve modifiers for RC dual buildings 2 including nonlinear site effects and SSI" .
+
+    <https://doi.org/10.5281/zenodo.7533168> a dcterms:BibliographicResource ;
+        dcterms:creator "Adarsh Kumar Meena1, Sampat Ram Meena2 and Chandrasekhar Mourya1" ;
+        dcterms:date "2023-01-13" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7533168> ;
+        dcterms:subject "veterinary science" ;
+        dcterms:title "Soil organic carbon as a source of soil fertility and productivity Breed" .
+
+    <https://doi.org/10.5281/zenodo.7576882> a dcterms:BibliographicResource ;
+        dcterms:creator "Tian, Xuemeng" ;
+        dcterms:date "2023-01-18" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7576882> ;
+        dcterms:subject ex:SoilHealth,
+            "open data",
+            "soil carbon cycle",
+            "soil monitoring" ;
+        dcterms:title "Mapping soil health indicators with EU soil database" .
+
+    <https://doi.org/10.5281/zenodo.7709206> a dcterms:BibliographicResource ;
+        dcterms:creator "Open Soil Atlas team" ;
+        dcterms:date "2021-10-01" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7709206> ;
+        dcterms:subject ex:Soil,
+            "open source",
+            "soil erosion",
+            "soil profile",
+            "soil regeneration",
+            "soil texture",
+            "urban soil" ;
+        dcterms:title "Open Soil Atlas (OSA) - Raw data from Phase I (Mar-Aug 2021, Berlin)" .
+
+    <https://doi.org/10.5281/zenodo.7720703> a dcterms:BibliographicResource ;
+        dcterms:creator "Gao, Qiang",
+            "He, Chengdan",
+            "Li, Yasheng",
+            "Wei, Yanjing",
+            "Wen, Zhi" ;
+        dcterms:date "2022-10-22" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7720703> ;
+        dcterms:title "Supporting data and code for The Mechanism for the Barrier of Lunar Regolith on the Migration of Water Molecules" .
+
+    <https://doi.org/10.5281/zenodo.7760321> a dcterms:BibliographicResource ;
+        dcterms:creator "Anna Barclay",
+            "David Boldrin",
+            "Kenneth Loades",
+            "Mark Hanlon" ;
+        dcterms:date "2023-03-22" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7760321> ;
+        dcterms:subject ex:Soil,
+            ex:SoilHealth,
+            "Compost",
+            "Soil structure" ;
+        dcterms:title "Soil health and function - Physical characteristics, function, and soil health status of compost amended soil" .
+
+    <https://doi.org/10.5281/zenodo.7892002> a dcterms:BibliographicResource ;
+        dcterms:creator "Abdul Ghafar Khan",
+            "Fareeha Habib",
+            "Farhat Bashir",
+            "Ghulam Murtaza",
+            "Javed Iqbal",
+            "Muhammad Akram Qazi",
+            "Muhammad Bilal",
+            "Rehmat Ullah",
+            "Saba Naz",
+            "Safdar Bashir",
+            "Saqib Bashir",
+            "Sobia Noor",
+            "Zafar Abbas" ;
+        dcterms:date "2023-05-04" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7892002> ;
+        dcterms:subject "Atomic Absorption",
+            "Uncertanity",
+            "Validation",
+            "Zinc" ;
+        dcterms:title "Method Development/ Validation and Uncertainty Measurement for Determination of Zinc (Zn) Using Atomic Absorption Spectrophotometry Technique" .
+
+    <https://doi.org/10.5281/zenodo.7892150> a dcterms:BibliographicResource ;
+        dcterms:creator "Abdur Rauf",
+            "Ahmad Nadeem",
+            "Faiz Karim",
+            "Iftikhar Ahmad",
+            "Javed Iqbal",
+            "Muhammad Awais Piracha",
+            "Muhammad Bilal",
+            "Muhammad Sharif Uddin",
+            "Muhammad Tahir Akbar",
+            "Rehmat Ullah",
+            "Sehrish Jamil",
+            "Zafar Abbas" ;
+        dcterms:date "2023-05-04" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7892150> ;
+        dcterms:subject "Kharif",
+            "Okra",
+            "RCBD",
+            "Yield" ;
+        dcterms:title "Demonstration and Evaluation of Impact of Nitrogen Fertilizer on Growth and Yield Attributes of Okra (Abelmoschus esculentus L.) in Local Field Conditions of Dera Ghazi Khan" .
+
+    <https://doi.org/10.5281/zenodo.7892160> a dcterms:BibliographicResource ;
+        dcterms:creator "Abdul Ghaffar Khan",
+            "Ahmad Nadeem",
+            "Fareeha Habib",
+            "Farhat Bashir",
+            "Iftikhar Ahmed",
+            "Javed Iqbal",
+            "Muhammad Abdul Qayyum",
+            "Muhammad Akram Qazi",
+            "Muhammad Arif",
+            "Muhammad Awais Piracha",
+            "Muhammad Bilal",
+            "Rehmat Ullah",
+            "Saeed-Ur Rehman",
+            "Sehrish Jameel",
+            "Sobia Noor",
+            "Waqar Illahi",
+            "Zafar Abbas" ;
+        dcterms:date "2023-05-04" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7892160> ;
+        dcterms:subject "Climate Change",
+            "Indexing Fertility",
+            "Nutrients",
+            "Scenario" ;
+        dcterms:title "Indexation of Soil Physico-Chemical Parameters and Fertility Status of Soils of D.G. Khan, South Punjab (Pakistan) in the Light of Climate Change Scenario" .
+
+    <https://doi.org/10.5281/zenodo.7973756> a dcterms:BibliographicResource ;
+        dcterms:creator "Dr.Amit Gupta",
+            "Er.Ajay Singh Thakur",
+            "Nikhil Verma" ;
+        dcterms:date "2023-05-26" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.7973756> ;
+        dcterms:subject ex:Soil,
+            "Glass fibers",
+            "construction",
+            "modulus",
+            "reinforcement etc." ;
+        dcterms:title "Study on Impact of Using Glass Fibers on the Soil's Shear Strength" .
+
+    <https://doi.org/10.5281/zenodo.8012910> a dcterms:BibliographicResource ;
+        dcterms:creator "Soil & Water Resources Institute" ;
+        dcterms:date "2023-03-17" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.8012910> ;
+        dcterms:subject "Agios Germanos",
+            "flow rate",
+            "hydrology",
+            "river" ;
+        dcterms:title "Ag Germanos River Flow" .
+
+    <https://doi.org/10.5281/zenodo.8024181> a dcterms:BibliographicResource ;
+        dcterms:creator "Mulkamalova Ozoda" ;
+        dcterms:date "2023-06-10" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.8024181> ;
+        dcterms:subject "Anthropogenic",
+            "Erosion",
+            "autotroph",
+            "osmotroph." ;
+        dcterms:title "THE IMPACT OF ECOLOGY ON THE SOIL" .
+
+    <https://doi.org/10.5281/zenodo.8045930> a dcterms:BibliographicResource ;
+        dcterms:creator "Khasanov U.I., Jurayev A.A.,  Mamedov.A.N." ;
+        dcterms:date "2023-06-16" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.8045930> ;
+        dcterms:title "PROCESSES OF IMPROVING SOIL WITH METAL AND SOIL WITH SOIL DURING MAIN SOIL WORKING." .
+
+    <https://doi.org/10.5281/zenodo.8091190> a dcterms:BibliographicResource ;
+        dcterms:creator "Kening Wu",
+            "Rui Zhao" ;
+        dcterms:date "2021-06-24" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.8091190> ;
+        dcterms:subject ex:SoilHealth,
+            "soil ecosystem services",
+            "soil multifunctionality",
+            "soil obstacles",
+            "sustainable soil management" ;
+        dcterms:title "Soil Health Evaluation of Farmland Based on Functional Soil Management—A Case Study of Yixing City, Jiangsu Province, China" .
+
+    <https://doi.org/10.5281/zenodo.8115838> a dcterms:BibliographicResource ;
+        dcterms:creator "Mohammad Amirun Afiq Romzi" ;
+        dcterms:date "2023-07-15" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.8115838> ;
+        dcterms:subject "NOR-V SOIL BIOCARE SET",
+            "organic matter",
+            "soil organisms",
+            "soil problems",
+            "synthetic fertilizer" ;
+        dcterms:title "NOR-V SOIL BIOCARE SET" .
+
+    <https://doi.org/10.5281/zenodo.8157837> a dcterms:BibliographicResource ;
+        dcterms:creator "Basant Tamang",
+            "Deepak Kumar Dwivedi",
+            "Gayatri Prahlad Turkar",
+            "Jyotim Gogoi",
+            "Sanjay Swami",
+            "Santanu Kaushik Borah",
+            "Shubham SIngh" ;
+        dcterms:date "2023-04-19" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.8157837> ;
+        dcterms:subject "Biochar",
+            "crop performance",
+            "heavy metals",
+            "mechanism",
+            "soil acidity",
+            "soil properties" ;
+        dcterms:title "Effect of biochar-mediated treatments on the enhancement of soil acidity, crop performance and soil properties" .
+
+    <https://doi.org/10.5281/zenodo.8217592> a dcterms:BibliographicResource ;
+        dcterms:creator "Abdul Waheed",
+            "Muhammad Nadeem Iqbal",
+            "Muhammad Rashid",
+            "Nadeem Hussain",
+            "Nadeem Raza",
+            "Nafeesa Muslim",
+            "Saftain Ullah Khan",
+            "Sarosh Alvil",
+            "Zia Chishti" ;
+        dcterms:date "2023-07-05" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.8217592> ;
+        dcterms:subject "Cost-Benefit Ratio",
+            "Economics",
+            "Fertilizer",
+            "Fodder",
+            "Maize" ;
+        dcterms:title "Economically Optimal Rate of N-P-K Fertilizers of Fodder Maize for Central Punjab, Pakistan" .
+
+    <https://doi.org/10.5281/zenodo.8247894> a dcterms:BibliographicResource ;
+        dcterms:creator "zhoylman" ;
+        dcterms:date "2023-08-14" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.8247894> ;
+        dcterms:title "zhoylman/soil-moisture-validation: Optimizing Drought Assessment for Soil Moisture Deficits" .
+
+    <https://doi.org/10.5281/zenodo.8260773> a dcterms:BibliographicResource ;
+        dcterms:creator "Attia El Gayar" ;
+        dcterms:date "2020-05-05" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.8260773> ;
+        dcterms:subject "Infiltration",
+            "Organic Matter",
+            "Soil Erosion",
+            "Soil Moisture Content",
+            "Soil Organisms",
+            "Soil Structure",
+            "Soil Texture",
+            "Water Quality" ;
+        dcterms:title "Study on soil characteristics and water infiltration rates" .
+
+    <https://doi.org/10.5281/zenodo.826569> a dcterms:BibliographicResource ;
+        dcterms:creator "Ilieva, Zhenya",
+            "Karadjova, Olia",
+            "Krumov, Vladimir",
+            "Petrova, Elena" ;
+        dcterms:date "2014-01-13" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.826569> ;
+        dcterms:subject "Bulgaria",
+            "Heterodera zeae",
+            "Opinion",
+            "maize",
+            "spread" ;
+        dcterms:title "Scientific opinion on the risks of introduction and spread of the cyst nematode Heterodera zeae on maize and other representatives of the family Poaceae in Bulgaria" .
+
+    <https://doi.org/10.5281/zenodo.8321372> a dcterms:BibliographicResource ;
+        dcterms:creator "Mike O. Ikponmwen and Cosmas C. Oyibo" ;
+        dcterms:date "2023-09-06" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.8321372> ;
+        dcterms:subject "GIS",
+            "LST",
+            "Landsat-8",
+            "NDVI",
+            "Soil moisture" ;
+        dcterms:title "Remote Sensing Application in Soil Moisture Content Estimation" .
+
+    <https://doi.org/10.5281/zenodo.8330919> a dcterms:BibliographicResource ;
+        dcterms:creator "ANIKET SUNIL GAIKWAD",
+            "NIHAL SHRIDHAR TITIRMARE",
+            "PRASAD BALASAHEB MARGAL" ;
+        dcterms:date "2023-08-01" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.8330919> ;
+        dcterms:subject ex:SoilDegradation,
+            "Agroforestry",
+            "Conservation agriculture",
+            "Nutrient management",
+            "Soil erosion",
+            "Soil resilience",
+            "Sustainable crop intensification" ;
+        dcterms:title "Soil Degradation and Remediation: Strategies for  Restoring Soil Quality" .
+
+    <https://doi.org/10.5281/zenodo.8331094> a dcterms:BibliographicResource ;
+        dcterms:creator "ANIKET SUNIL GAIKWAD",
+            "NIHAL SHRIDHAR TITIRMARE",
+            "PRASAD BALASAHEB MARGAL" ;
+        dcterms:date "2023-08-01" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.8331094> ;
+        dcterms:subject "Soil pollution",
+            "contamination",
+            "ecosystem disruption",
+            "environment",
+            "health",
+            "pollutant",
+            "soil fertility" ;
+        dcterms:title "Soil Pollution and Environmental Health" .
+
+    <https://doi.org/10.5281/zenodo.8373128> a dcterms:BibliographicResource ;
+        dcterms:creator "Agustín Robles-Morua",
+            "Bruno Chávez-Vergara",
+            "Dulce Flores-Rentería",
+            "Enrico A. Yepez",
+            "Jaime Garatuza-Payan",
+            "Maritza Sandoval-Aguilar",
+            "Martha L. Vargas Terminel",
+            "Nidia E. Rojas-Roblesa",
+            "Zulia M. Sánchez-Mejía" ;
+        dcterms:date "2023-09-23" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.8373128> ;
+        dcterms:subject "MexFlux",
+            "biogeosciences",
+            "infrarred gas analyser",
+            "soil CO2 emission",
+            "static chambers",
+            "tropical dry forest" ;
+        dcterms:title "Chronological dataset of soil respiration fluxes from a seasonally dry forest in Northwest México" .
+
+    <https://doi.org/10.5281/zenodo.839634> a dcterms:BibliographicResource ;
+        dcterms:creator "Chinedu Anyika",
+            "K.O. Oluwasemire",
+            "R.N. Edoga" ;
+        dcterms:date "2009-08-07" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.839634> ;
+        dcterms:subject "Sorghum",
+            "potential evapotranspiration and management practices",
+            "water loss" ;
+        dcterms:title "EFFECT OF SOIL MANAGEMENT PRACTICES ON EVAPORANSPIRATION OF SORGHUM PLOT" .
+
+    <https://doi.org/10.54536/ajaset.v7i1.1296> a dcterms:BibliographicResource ;
+        dcterms:creator "Alam, Faridul",
+            "Ali, Mohammad Eyakub",
+            "Farid Ahammed Anik, Md.",
+            "Islam, Md. Nazrul",
+            "Rahman, Mominur" ;
+        dcterms:date "2023-03-12" ;
+        dcterms:identifier <https://doi.org/10.54536/ajaset.v7i1.1296> ;
+        dcterms:subject "Biocontrol",
+            "Biomass",
+            "Nodulation",
+            "Nut Yield",
+            "Nutrient Uptake" ;
+        dcterms:title "Biocontrol of Foot and Root Rot Disease of Groundnut (Arachis hypogaea) by Dual Inoculation with Rhizobium and Arbuscular Mycorrhiza" .
+}
+
+ex:generated {
+    <https://doi.org/10.1016/j.wasman.2013.01.015> dcterms:subject "compost green",
+            "soil organic",
+            "soil phytotoxic",
+            "soil solarization" .
+
+    <https://doi.org/10.5061/dryad.2280gb5rk> dcterms:subject "elevation soil",
+            "fungal diversity" .
+
+    <https://doi.org/10.5061/dryad.8cz8w9gpg> dcterms:subject "soil microbial" .
+
+    <https://doi.org/10.5061/dryad.b2rbnzsjs> dcterms:subject "soil moisture" .
+
+    <https://doi.org/10.5061/dryad.k98sf7m4k> dcterms:subject "forest ecosystems",
+            "restoration soil",
+            "soil attributes" .
+
+    <https://doi.org/10.5061/dryad.m37pvmczk> dcterms:subject "rhizocompartments soil",
+            "soil microbial" .
+
+    <https://doi.org/10.5061/dryad.p0jn1> dcterms:subject "ecosystems soil" .
+
+    <https://doi.org/10.5061/dryad.xpnvx0kh2> dcterms:subject "soil biochar",
+            "soil organic" .
+
+    <https://doi.org/10.5281/zenodo.10079906> dcterms:subject "excess runoff",
+            "groundwater saturation",
+            "watershed modeling" .
+
+    <https://doi.org/10.5281/zenodo.10401745> dcterms:subject "soil hydraulic",
+            "soil properties" .
+
+    <https://doi.org/10.5281/zenodo.10605462> dcterms:subject "soil arthropods",
+            "soil quality",
+            "soildwelling insects" .
+
+    <https://doi.org/10.5281/zenodo.1065954> dcterms:subject "rainfall mapping" .
+
+    <https://doi.org/10.5281/zenodo.11098609> dcterms:subject "gram soil" .
+
+    <https://doi.org/10.5281/zenodo.11379270> dcterms:subject ex:SoilDegradation,
+            "soil chemical",
+            "soil pollution" .
+
+    <https://doi.org/10.5281/zenodo.11399291> dcterms:subject "expansive soil",
+            "soil lime",
+            "soil stabilization" .
+
+    <https://doi.org/10.5281/zenodo.1422970> dcterms:subject "soillabatstri soil",
+            "tree growth" .
+
+    <https://doi.org/10.5281/zenodo.4050555> dcterms:subject "soil biota",
+            "soil physical" .
+
+    <https://doi.org/10.5281/zenodo.4052198> dcterms:subject "irrigationrecs interpretation",
+            "kansas agricultural",
+            "ksustl irrigationrecs" .
+
+    <https://doi.org/10.5281/zenodo.4745479> dcterms:subject "c_perc soil",
+            "grassland amf_cnew",
+            "soil warming" .
+
+    <https://doi.org/10.5281/zenodo.545670> dcterms:subject "celebrating soils",
+            "soils" .
+
+    <https://doi.org/10.5281/zenodo.545671> dcterms:subject "celebrating soils",
+            "soils" .
+
+    <https://doi.org/10.5281/zenodo.6514191> dcterms:subject "soil data",
+            "soil hydraulic",
+            "soil saturated" .
+
+    <https://doi.org/10.5281/zenodo.6536275> dcterms:subject "agriculture et",
+            "rural liaison" .
+
+    <https://doi.org/10.5281/zenodo.7456117> dcterms:subject "analysis micronutrients",
+            "soil analysis",
+            "soil ph" .
+
+    <https://doi.org/10.5281/zenodo.7720703> dcterms:subject "lunar regolith" .
+
+    <https://doi.org/10.5281/zenodo.8045930> dcterms:subject ex:Soil,
+            "ploughing hardness" .
+
+    <https://doi.org/10.5281/zenodo.8247894> dcterms:subject "drought metrics",
+            "predicting soil",
+            "soil moisture" .
+}
+
+ex:concept {
+    ex:SoilFunctions a skos:Concept ;
+        dcterms:isReferencedBy ex:EC2020a,
+            ex:JRC2012 ;
+        skos:exactMatch agrovoc:c_e5629cbd ;
+        skos:note "Land cultivation and urbanisation have altered many soil properties, causing reduced soil functioning.",
+            "Soil provides multiple functions that support the delivery of ecosystem services, including life support functions." ;
+        skos:prefLabel "Soil Functions" .
+
+    ex:SoilSealing a skos:Concept ;
+        skos:broader ex:SoilDegradation ;
+        skos:exactMatch agrovoc:c_f9554e7c ;
+        skos:note "Soil sealing causes the largely and irreversible loss of soil functions." ;
+        skos:prefLabel "Soil Sealing" .
+
+    ex:SoilVariability a skos:Concept ;
+        skos:note "Soil varies naturally in both space and time over a range of scales." ;
+        skos:prefLabel "Soil Variability" .
+
+    ex:EC2020a a dcterms:BibliographicResource ;
+        dcterms:creator "European Commission" ;
+        dcterms:date "2020" ;
+        dcterms:identifier "https://op.europa.eu/en/web/eu-law-and-publications/publication-detail/-/publication/32d5d312-b689-11ea-bb7a-01aa75ed71a1" ;
+        dcterms:title "Caring for soil is caring for life" .
+
+    ex:JRC2012 a dcterms:BibliographicResource ;
+        dcterms:creator "Joint Research Centre" ;
+        dcterms:date "2012" ;
+        dcterms:identifier "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC68418/lbna25186enn.pdf" ;
+        dcterms:title "The state of soil in Europe" .
+
+    ex:SoilManagement a skos:Concept ;
+        dcterms:isReferencedBy <https://doi.org/10.5281/zenodo.6921102> ;
+        skos:exactMatch agrovoc:c_7176 ;
+        skos:note "Knowledge is needed about the state of soil and how it develops under current and future management and climatic conditions.",
+            "Managing soil sustainably and protecting it where necessary." ;
+        skos:prefLabel "Soil Management" .
+
+    ex:YoungCrawford2004 a dcterms:BibliographicResource ;
+        dcterms:creator "Crawford, J.",
+            "Young, I." ;
+        dcterms:date "2004" ;
+        dcterms:extent "Pages 1634-7" ;
+        dcterms:identifier "10.1126/science.1097394" ;
+        dcterms:isPartOf "Science (New York, N.Y.)" ;
+        dcterms:publisher "American Association for the Advancement of Science" ;
+        dcterms:title "Interactions and Self-Organization in the Soil-Microbe Complex" .
+
+    ex:SoilDegradation a skos:Concept ;
+        dcterms:isReferencedBy <https://doi.org/10.5281/zenodo.11379270>,
+            <https://doi.org/10.5281/zenodo.7298671>,
+            <https://doi.org/10.5281/zenodo.8330919> ;
+        skos:definition "Reducing soil function" ;
+        skos:exactMatch agrovoc:c_7168 ;
+        skos:note "Degraded soils harm ecosystems and their life support functions" ;
+        skos:prefLabel "Soil Degradation" .
+
+    ex:SoilHealth a skos:Concept ;
+        dcterms:isReferencedBy <https://doi.org/10.5194/soil-6-453-2020>,
+            <https://doi.org/10.5281/zenodo.7576882>,
+            <https://doi.org/10.5281/zenodo.7760321>,
+            <https://doi.org/10.5281/zenodo.8091190> ;
+        skos:closeMatch agrovoc:c_a9645d28 ;
+        skos:definition "Healthy soils deliver ecosystem services to the best of their capacity." ;
+        skos:prefLabel "Soil Health" .
+
+    ex:Soil a skos:Concept ;
+        dcterms:isReferencedBy ex:YoungCrawford2004,
+            <https://doi.org/10.5281/zenodo.1131349>,
+            <https://doi.org/10.5281/zenodo.5159133>,
+            <https://doi.org/10.5281/zenodo.6921102>,
+            <https://doi.org/10.5281/zenodo.6948345>,
+            <https://doi.org/10.5281/zenodo.7709206>,
+            <https://doi.org/10.5281/zenodo.7760321>,
+            <https://doi.org/10.5281/zenodo.7973756>,
+            <https://doi.org/10.5281/zenodo.8045930> ;
+        skos:definition "The top terrestrial layer of the Earth." ;
+        skos:exactMatch agrovoc:c_7156 ;
+        skos:note "Soil is composed of a mixture of mineral and organic compounds, water, air, and living organisms.",
+            "Soil is one of the most complex biomaterials on earth." ;
+        skos:prefLabel "Soil" .
+}
+
