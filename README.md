@@ -5,8 +5,9 @@
 - Visualizing the knowledge graph;
 - Evaluating different conversion strategies using the F1 score and exact match;
 - Merging and post-processing knowledge graphs to detect duplicates and conflicts;
-- Interlinking to external databases such as soil-related metadata records harvested from Zenodo by keyword matching;
-  - Filling in keywords extracted from titles and descriptions for metadata records missing keywords ~~and storing them under the custom namespace "ex:autoSubject"~~.
+- Interlinking to external databases, such as soil-related metadata records harvested from Zenodo, by keyword matching;
+  - Filling in keywords extracted from the title and description for metadata records that are missing keywords.
+- Interlinking concepts from the soil health knowledge graph with the AGROVOC Thesaurus;
 - Validating the (expanded) knowledge graph by question-answering using NLQ.
 
 ### To-do:
@@ -20,4 +21,4 @@ Once we establish this soil health knowledge graph, we aim to enhance it by inte
 Building this knowledge repository in a top-down manner, guided by the structure of the knowledge graph, offers several advantages. The top-down approach provides a more controllable and orderly construction process compared to bottom-up methods, enhancing the ease of knowledge sharing, including improved reuse of information. Furthermore, because the repository structurally aligns with the knowledge graph, with external data directly linked to its concepts, the repository becomes more functional for applications. For example, understanding the relationships between concepts is crucial when developing a recommender system that operates over the knowledge repository.
 
 ### Ontologies:
-Currently, ontologies used for the soil health knowledge graph is a combination of the [SKOS Core](https://www.w3.org/2009/08/skos-reference/skos.html), [Dublin Core](https://www.dublincore.org/specifications/dublin-core/), and [RDF schema](https://www.w3.org/TR/rdf-schema/). When using LLMs to convert text to RDF statements, only these common standard ontologies are imported, as these are internal knowledge of LLMs. Furthermore, since the ontology for describing soils, such as [GloSIS](https://glosis-ld.github.io/glosis/), already exists, the general ontologies will be replaced by the domain-specific ontology during post-processing.
+Currently, ontologies used for the soil health knowledge graph is a combination of the [SKOS Core](https://www.w3.org/2009/08/skos-reference/skos.html) and [Dublin Core](https://www.dublincore.org/specifications/dublin-core/). When using LLMs to convert text to RDF statements, only these common standard ontologies are imported, as these are internal knowledge of LLMs. Furthermore, since domain-specific ontologies, such as [GloSIS](https://glosis-ld.github.io/glosis/) and [Agrontology](https://aims.fao.org/aos/agrontology), already exists, the generic ontologies will be partially replaced by these domain-specific ontologies.
