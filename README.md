@@ -7,7 +7,7 @@
 - Merging and post-processing knowledge graphs to detect duplicates and conflicts;
 - Interlinking to external databases, such as soil-related metadata records harvested from Zenodo, by keyword matching;
   - Filling in keywords extracted from the title and description for metadata records that are missing keywords.
-- Interlinking concepts from the soil health knowledge graph with the AGROVOC Thesaurus;
+- Interlinking concepts from the soil health knowledge graph with the [AGROVOC](https://aims.fao.org/aos/agrovoc) Thesaurus;
 - Validating the (expanded) knowledge graph by question-answering using NLQ.
 
 ### To-do:
