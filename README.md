@@ -2,12 +2,14 @@
 ### This demo of soil health knowledge graph currently contains:
 - A simple "ground-truth" example of converting text to RDF statements;
 - Zero-shot and few-shot (one-shot) examples of converting text to RDF with LLMs (OpenAI GPT);
+- Interlinking concepts from the soil health knowledge graph with the [AGROVOC](https://aims.fao.org/aos/agrovoc) Thesaurus;
 - Visualizing the knowledge graph;
 - Evaluating different conversion strategies using the F1 score and exact match;
 - Merging and post-processing knowledge graphs to detect duplicates and conflicts;
 - Interlinking to external databases, such as soil-related metadata records harvested from Zenodo, by keyword matching;
-  - Filling in keywords extracted from the title and description for metadata records that are missing keywords.
-- Interlinking concepts from the soil health knowledge graph with the [AGROVOC](https://aims.fao.org/aos/agrovoc) Thesaurus;
+  - Filling in keywords generated from the title and description for metadata records that are missing keywords;
+  - Introducing a quad-store with named graphs to store generated keywords in the named graph called "generated";
+  - Storing concepts from the soil health knowledge graph in the named graph "concept" and raw metadata records in the named graph "metadata".
 - Validating the (expanded) knowledge graph by question-answering using NLQ.
 
 ### To-do:
