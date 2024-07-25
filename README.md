@@ -2,7 +2,7 @@
 ### This demo of soil health knowledge graph currently contains:
 - A simple "ground-truth" example of converting text to RDF statements;
 - Zero-shot and few-shot (one-shot) examples of converting text to RDF with LLMs (OpenAI GPT);
-- Interlinking concepts from the soil health knowledge graph with the [AGROVOC](https://aims.fao.org/aos/agrovoc) thesaurus, provided they also appear in the thesaurus;
+- Defining concepts in the soil health knowledge graph using the same concepts from the [AGROVOC](https://aims.fao.org/aos/agrovoc) thesaurus by directly importing their URIs from AGROVOC;
 - Visualizing the knowledge graph;
 - Evaluating different conversion strategies using the F1 score and exact match;
 - Merging and post-processing knowledge graphs to detect duplicates and conflicts;
