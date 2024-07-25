@@ -9,7 +9,7 @@
 - Interlinking to external databases, such as soil-related metadata records harvested from Zenodo, by keyword matching;
   - Filling in keywords generated from the title and description for metadata records that are missing keywords;
   - Introducing a quad store with named graphs to store generated keywords in the named graph called "generated";
-  - Storing concepts from the soil health knowledge graph in the named graph "concept" and raw metadata records in the named graph "metadata".
+  - Storing the soil health knowledge graph as the default graph and raw metadata records in the named graph "metadata".
 - Validating the (expanded) knowledge graph by question-answering using NLQ.
 
 ### To-do:
