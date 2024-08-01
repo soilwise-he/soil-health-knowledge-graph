@@ -4,7 +4,7 @@
 - Zero-shot and few-shot (one-shot) examples of converting text to RDF with LLMs (OpenAI GPT);
 - Defining concepts in the soil health knowledge graph by importing the [AGROVOC](https://aims.fao.org/aos/agrovoc) thesaurus;
   - When a concept matches the "prefLabel" of a concept in the AGROVOC, the URI defined by the AGROVOC is used directly;
-  - When a concept matches the "altLabel" of a concept in the AGROVOC, using "closeMatch" to interlink with the AGROVOC;
+  - When a concept matches the "altLabel" of a concept in the AGROVOC, using "closeMatch" to interlink with the AGROVOC.
 - Visualizing the knowledge graph;
 - Evaluating different conversion strategies using the F1 score and exact match;
 - Merging and post-processing knowledge graphs to detect duplicates and conflicts;
