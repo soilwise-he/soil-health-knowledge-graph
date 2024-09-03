@@ -1,0 +1,235 @@
+@prefix agrovoc: <http://aims.fao.org/aos/agrovoc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix glosis_lh: <http://w3id.org/glosis/model/layerhorizon/> .
+@prefix ns0: <http://soilwise-he.github.io/soil-health/> .
+@prefix ns1: <http://aims.fao.org/aos/agrontology#> .
+@prefix ns2: <http://qudt.org/schema/qudt/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+agrovoc:c_1348040570280 a skos:Concept ;
+    ns1:isInfluencedBy ns0:SoilHealth ;
+    ns1:makeUseOf agrovoc:c_e5629cbd ;
+    skos:prefLabel "Ecosystem Services" .
+
+agrovoc:c_2482 a skos:Concept ;
+    ns1:isAffectedBy agrovoc:c_7168 ;
+    skos:prefLabel "Ecosystems" .
+
+agrovoc:c_25398 a skos:Concept ;
+    ns1:benefitsFrom agrovoc:c_a9645d28,
+        ns0:SoilHealth ;
+    skos:prefLabel "Plant Health" .
+
+agrovoc:c_330883 a skos:Concept ;
+    ns1:isAffectedBy agrovoc:c_8088,
+        ns0:LandCultivation ;
+    dcterms:source ns0:EC2020a,
+        ns0:JRC2012 ;
+    skos:prefLabel "Soil Properties" .
+
+agrovoc:c_389fe908 a skos:Concept ;
+    ns1:hasAbbreviation "SOC" ;
+    skos:broader agrovoc:c_35657 ;
+    skos:prefLabel "Soil Organic Carbon" ;
+    skos:scopeNote "A measurable proxy for Soil Organic Matter (SOM) due to the difficulty of measuring SOM directly." .
+
+agrovoc:c_431 a skos:Concept ;
+    ns1:benefitsFrom agrovoc:c_a9645d28,
+        ns0:SoilHealth ;
+    skos:prefLabel "Animal Health" .
+
+agrovoc:c_6210 a skos:Concept ;
+    ns1:benefitsFrom agrovoc:c_a9645d28,
+        ns0:SoilHealth ;
+    skos:prefLabel "Productivity" .
+
+agrovoc:c_c722a312 a skos:Concept ;
+    ns1:benefitsFrom agrovoc:c_a9645d28,
+        ns0:SoilHealth ;
+    skos:prefLabel "Human Health" .
+
+ns0:ConversionFactor1724 a ns2:QuantityValue ;
+    rdfs:label "Conversion Factor 1.724" ;
+    ns2:numericValue 1.724 ;
+    skos:definition "A factor historically used to convert Soil Organic Carbon (SOC) to Soil Organic Matter (SOM) based on the assumption that organic matter is 58% carbon." ;
+    skos:scopeNote "To avoid uncertainties related to conversion factors, it is recommended to use Soil Organic Carbon (SOC) as measured without converting to Soil Organic Matter (SOM)." .
+
+ns0:ConversionFactor2 a ns2:QuantityValue ;
+    rdfs:label "Conversion Factor 2.0" ;
+    dcterms:source ns0:Pribyl2010 ;
+    ns2:numericValue 2.0 ;
+    skos:definition "A more accurate factor for converting Soil Organic Carbon (SOC) to Soil Organic Matter (SOM), especially for soil layers rich in organic matter." ;
+    skos:scopeNote "To avoid uncertainties related to conversion factors, it is recommended to use Soil Organic Carbon (SOC) as measured without converting to Soil Organic Matter (SOM)." .
+
+ns0:EnvironmentalQuality a skos:Concept ;
+    ns1:benefitsFrom agrovoc:c_a9645d28,
+        ns0:SoilHealth ;
+    skos:prefLabel "Environmental Quality" .
+
+ns0:SoilAttributes a skos:Concept ;
+    skos:prefLabel "Soil Attributes" ;
+    skos:related agrovoc:c_a9645d28 .
+
+ns0:SoilCapability a skos:Concept ;
+    dcterms:source ns0:Schwilch2016 ;
+    skos:definition "The intrinsic capacity of soil to contribute to ecosystem services based on inherent (static) and manageable (dynamic) attributes" ;
+    skos:prefLabel "Soil Capability" ;
+    skos:related agrovoc:c_a9645d28 .
+
+ns0:SoilPotential a skos:Concept ;
+    ns1:isInfluencedBy ns0:SoilState ;
+    dcterms:source ns0:Vogel2020 ;
+    skos:definition "The maximum functionality a soil can offer based on its inherent properties." ;
+    skos:prefLabel "Soil Potential" ;
+    skos:related agrovoc:c_a9645d28 .
+
+ns0:SoilVariability a skos:Concept ;
+    skos:definition "Soil varies naturally in both space and time over a range of scales." ;
+    skos:prefLabel "Soil Variability" .
+
+agrovoc:c_1301 a skos:Concept ;
+    skos:prefLabel "Carbon" .
+
+agrovoc:c_1665 a skos:Concept ;
+    skos:prefLabel "Climate" .
+
+agrovoc:c_224 a skos:Concept ;
+    skos:prefLabel "Air" .
+
+agrovoc:c_35657 a skos:Concept ;
+    ns1:hasAbbreviation "SOM" ;
+    ns1:isMadeFrom agrovoc:c_1301,
+        agrovoc:c_3724,
+        agrovoc:c_5192,
+        agrovoc:c_5477,
+        ns0:AnimalResidues,
+        ns0:MicrobialBiomass,
+        ns0:PlantResidues ;
+    skos:definition "Some definitions include undecayed plant and animal residues as well as microbial biomass.",
+        "The sum of all dead organic components at various stages of decomposition in a soil, which are made from basic elements including carbon, nitrogen, oxygen, hydrogen and an array of attached cations and ions." ;
+    skos:exactMatch glosis_lh:organicMatterProperty ;
+    skos:prefLabel "Soil Organic Matter" .
+
+agrovoc:c_3724 a skos:Concept ;
+    skos:prefLabel "Hydrogen" .
+
+agrovoc:c_4857 a skos:Concept ;
+    skos:prefLabel "Minerals" .
+
+agrovoc:c_49904 a skos:Concept ;
+    skos:altLabel "Living Organisms" ;
+    skos:prefLabel "Organisms" .
+
+agrovoc:c_5192 a skos:Concept ;
+    skos:prefLabel "Nitrogen" .
+
+agrovoc:c_5384 a skos:Concept ;
+    skos:prefLabel "Organic Compounds" .
+
+agrovoc:c_5477 a skos:Concept ;
+    skos:prefLabel "Oxygen" .
+
+agrovoc:c_7156 a skos:Concept ;
+    ns1:isComposedOf agrovoc:c_224,
+        agrovoc:c_4857,
+        agrovoc:c_49904,
+        agrovoc:c_5384,
+        agrovoc:c_8309 ;
+    dcterms:source ns0:YoungCrawford2004 ;
+    skos:broader ns0:Biomaterials ;
+    skos:definition "The top terrestrial layer of the Earth." ;
+    skos:prefLabel "Soil" .
+
+agrovoc:c_8309 a skos:Concept ;
+    skos:prefLabel "Water" .
+
+agrovoc:c_e5629cbd a skos:Concept ;
+    ns1:isAffectedBy agrovoc:c_8088,
+        agrovoc:c_f9554e7c,
+        ns0:LandCultivation ;
+    ns1:isDerivedFrom agrovoc:c_7156 ;
+    dcterms:source ns0:EC2020a,
+        ns0:JRC2012 ;
+    skos:prefLabel "Soil Functions" .
+
+agrovoc:c_f9554e7c a skos:Concept ;
+    skos:broader agrovoc:c_7168 ;
+    skos:prefLabel "Soil Sealing" .
+
+ns0:AnimalResidues a skos:Concept ;
+    skos:prefLabel "Animal Residues" .
+
+ns0:Biomaterials a skos:Concept ;
+    skos:prefLabel "Biomaterials" .
+
+ns0:MicrobialBiomass a skos:Concept ;
+    skos:prefLabel "Microbial Biomass" .
+
+ns0:PlantResidues a skos:Concept ;
+    skos:closeMatch agrovoc:c_16118 ;
+    skos:prefLabel "Plant Residues" .
+
+ns0:Pribyl2010 a dcterms:BibliographicResource ;
+    dcterms:date "2010" .
+
+ns0:Schwilch2016 a dcterms:BibliographicResource ;
+    dcterms:date "2016" .
+
+ns0:SoilState a skos:Concept ;
+    ns1:isAffectedBy agrovoc:c_7176 ;
+    ns1:isInfluencedBy agrovoc:c_1665,
+        agrovoc:c_7176 ;
+    skos:altLabel "Soil Condition" ;
+    skos:prefLabel "Soil State" ;
+    skos:related agrovoc:c_a9645d28 .
+
+ns0:YoungCrawford2004 a dcterms:BibliographicResource ;
+    dcterms:date "2004" .
+
+agrovoc:c_7168 a skos:Concept ;
+    skos:prefLabel "Soil Degradation" .
+
+agrovoc:c_7176 a skos:Concept ;
+    skos:prefLabel "Soil Management" .
+
+agrovoc:c_8088 a skos:Concept ;
+    skos:prefLabel "Urbanization" .
+
+ns0:Bonfante2020 a dcterms:BibliographicResource ;
+    dcterms:date "2020" .
+
+ns0:Bunemann2018 a dcterms:BibliographicResource ;
+    dcterms:date "2018" .
+
+ns0:EC2020a a dcterms:BibliographicResource ;
+    dcterms:date "2020" .
+
+ns0:JRC2012 a dcterms:BibliographicResource ;
+    dcterms:date "2012" .
+
+ns0:LandCultivation a skos:Concept ;
+    skos:closeMatch agrovoc:c_2018 ;
+    skos:prefLabel "Land Cultivation" .
+
+ns0:Vogel2020 a dcterms:BibliographicResource ;
+    dcterms:date "2020" .
+
+ns0:SoilHealth a skos:Concept ;
+    dcterms:source ns0:Bonfante2020,
+        ns0:Bunemann2018,
+        ns0:Vogel2020 ;
+    skos:closeMatch agrovoc:c_a9645d28 ;
+    skos:definition "The capacity of a soil to function within ecosystems and land-use boundaries to sustain biological productivity, maintain environmental quality, and promote plant and animal health" ;
+    skos:prefLabel "Soil Health" ;
+    skos:scopeNote "The actual capacity of a soil to perform its core functions and to provide ecosystem services." .
+
+agrovoc:c_a9645d28 a skos:Concept ;
+    dcterms:source ns0:Bonfante2020,
+        ns0:Bunemann2018,
+        ns0:Vogel2020 ;
+    skos:definition "The capacity of a soil to function within ecosystems and land-use boundaries to sustain biological productivity, maintain environmental quality, and promote plant and animal health" ;
+    skos:prefLabel "Soil Quality" ;
+    skos:scopeNote "The inherent capacity which provides the basic frame within which a soil evolves." .
+
