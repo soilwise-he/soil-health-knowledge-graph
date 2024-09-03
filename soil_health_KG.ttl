@@ -232,4 +232,3 @@ agrovoc:c_a9645d28 a skos:Concept ;
     skos:definition "The capacity of a soil to function within ecosystems and land-use boundaries to sustain biological productivity, maintain environmental quality, and promote plant and animal health" ;
     skos:prefLabel "Soil Quality" ;
     skos:scopeNote "The inherent capacity which provides the basic frame within which a soil evolves." .
-
