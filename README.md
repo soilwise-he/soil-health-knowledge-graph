@@ -25,9 +25,9 @@ Once we establish this soil health knowledge graph, we aim to enhance it by inte
 Building this knowledge repository in a top-down manner, guided by the structure of the knowledge graph, offers several advantages. The top-down approach provides a more controllable and orderly construction process compared to bottom-up methods, enhancing the ease of knowledge sharing, including improved reuse of knowledge. Furthermore, because the repository structurally aligns with the knowledge graph, with external data directly linked to its concepts, the repository becomes more functional for applications. For example, understanding the relationships between concepts is crucial when developing a recommender system that operates over the knowledge repository.
 
 ### Ontologies/Vocabularies/Schemas:
-- [SKOS Core](https://www.w3.org/2009/08/skos-reference/skos.html);
-- [Dublin Core](https://www.dublincore.org/specifications/dublin-core/);
-- [AGROVOC](https://aims.fao.org/aos/agrovoc);
-- [GloSIS](https://glosis-ld.github.io/glosis/);
-- [Agrontology](https://aims.fao.org/aos/agrontology);
-- [QUDT](https://qudt.org/).
+- [SKOS Core](https://www.w3.org/2009/08/skos-reference/skos.html)
+- [Dublin Core](https://www.dublincore.org/specifications/dublin-core/)
+- [AGROVOC](https://aims.fao.org/aos/agrovoc)
+- [GloSIS](https://glosis-ld.github.io/glosis/)
+- [Agrontology](https://aims.fao.org/aos/agrontology)
+- [QUDT](https://qudt.org/)
