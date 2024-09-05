@@ -1,0 +1,178 @@
+"prop","label","com"
+"http://aims.fao.org/aos/agrontology#isObjectOfActivity","Is object of activity","Y <is object of activity> X. Y is the focus of activity X.  E.g. "wool" <is object of activity> "shearing", "treaties" <is object of activity> "ratification"."
+"http://aims.fao.org/aos/agrontology#isPropagationProcessOf","Is propagation process of",
+"http://aims.fao.org/aos/agrontology#valueUsedIn","Value used in","A measure or other value used in a specific activity or methods or for any purpose."
+"http://aims.fao.org/aos/agrontology#hasCodeFaoterm","Has FAO term code",
+"http://aims.fao.org/aos/agrontology#isSourceOf","Is source of","Y <is source of> X. E.g. "almonds" <is source of> "almond oil", "sweet oranges"<is source of> "orange juice". Use to relate an organism with a derived product: "sheep" <is source of> "mutton".  (But "honey" <is produced by> "honey bees", "silage effluents" <product of> "silage".)"
+"http://aims.fao.org/aos/agrontology#hasChemicalFormula","Has chemical formula",
+"http://aims.fao.org/aos/agrontology#hasCodeTaxonomic","Has taxonomic code",
+"http://aims.fao.org/aos/agrontology#isPostProductionPracticeFor","Is post-production practice for",
+"http://aims.fao.org/aos/agrontology#hasScientificName","Has scientific name","X <has scientific name> Y. E.g. "sea trout" <has scientific name> "Salmo trutta". Label-to-label relationship for use within a concept. Use when common name and scientific name are not separate concepts, or when a separate relation between scientific and common name is needed for a specific language. When common name and scientific name are separate concepts, use concept-to-concept relation <has taxonomic concept/has common name concept>."
+"http://aims.fao.org/aos/agrontology#usesProcess","Uses process","X <uses process> Y. X uses one or more actions, activities, methods Y as a process. E.g. "winter crops" <uses process> "vernalization", "canning" <uses process> "sterilizing"."
+"http://aims.fao.org/aos/agrontology#hasCodeAsc","Has ASC code",
+"http://aims.fao.org/aos/agrontology#hasType","Has type","X <has type> Y. Concept X has types Y. <type of> is broader and quite similar to <skos:broader>, but  it is not exclusive.  E.g. "horse gaits" <has type> "gallop", but also elephants and camels can gallop."
+"http://aims.fao.org/aos/agrontology#includes","Includes","X <includes> Y. X is an entity that includes the element Y. For example: "animal husbandry methods" <includes> "dehorning", "water analysis" <includes> "microbiological analysis"."
+"http://aims.fao.org/aos/agrontology#prevents","Prevents","Y <prevents> X. Y is an element which prevents, interrupts or reduces harm or damage X. E.g. "hand hygiene" <prevents> "disease transmission", "safety at work"<prevents> "occupational hazards"."
+"http://aims.fao.org/aos/agrontology#hasNaturalEnemy","Has natural enemy",
+"http://aims.fao.org/aos/agrontology#isLocalNameOf","Is a local name of",
+"http://aims.fao.org/aos/agrontology#isWeedOf","Is weed of",
+"http://aims.fao.org/aos/agrontology#makeUseOf","Make use of","Y <make use of> X. Activity Y makes use of process or input X. E.g. "navigation" <make use of> "navigational aids", "precision agriculture" <make use of> "geographical information systems", "rail transport" <make use of> "trains"."
+"http://aims.fao.org/aos/agrontology#hasSynonym","Has synonym","X <has synonym> Y. Y <has synonym> X. "Bulgaria"<has synonym>"Republic of Bulgaria". Used to distinguish an exact and current synonym from obsolete terms which might have been used in the past (for that, use <has old name>). Use only between labels for the same concept in a specific language."
+"http://aims.fao.org/aos/agrontology#hasSymbol","Has symbol","X <has symbol> Y. "iron" has symbol "Fe (symbol)". Use for disambiguation of chemical element symbols from other similar abbreviations."
+"http://aims.fao.org/aos/agrontology#isDerivedFrom","Is derived from","X <is derived from> Y. A substance or product X obtained exclusively from source Y without any additional substance or product. E.g. "almond oil" <is derived from> "almonds", "orange juice" <is derived from> "sweet oranges". Use to relate an organism with a derived product: "mutton" <is derived from> "sheep". "
+"http://aims.fao.org/aos/agrontology#formerlyIncludes","Formerly includes",
+"http://aims.fao.org/aos/agrontology#hasPropagationProcess","Has Propagation process",
+"http://aims.fao.org/aos/agrontology#hasSingular","Has singular",
+"http://aims.fao.org/aos/agrontology#hasOldName","Has old name","X <has old name> Y. Use for obsolete labels, such as old names of countries. E.g. "Bulgaria"<has old name>"People's Republic of Bulgaria". Use only between labels for the same concept in a specific language."
+"http://aims.fao.org/aos/agrontology#developsInto","Develops into",
+"http://aims.fao.org/aos/agrontology#formerlyIncludedIn","Formerly included in","An inclusion that was valid in the past but currently is not valid anymore."
+"http://aims.fao.org/aos/agrontology#hasBreedingMethod","Has breeding method",
+"http://aims.fao.org/aos/agrontology#isAGrowthEnvironmentFor","Is a growth environment for","Y <isAGrowthEnvironmentFor> X. An environment Y favorable to a taxon X. This is used as the inverse relationship of <growsIn>. Use this in a plant and related domain (e.g. fungi). E.g. "isarn region" <isAGrowthEnvironmentFor> "jasmine rice"; "moist soil" <isAGrowthEnvironmentFor> "rice";"
+"http://aims.fao.org/aos/agrontology#isSpatiallyIncludedIn","Is spatially included in","Y <is spatially included in> X. Spatial region Y is an inalienable spatial part of spatial region X. E.g. "African inland waters" <is spatially included in> "Africa", "Peru" <is spatially included in> "Andean region"."
+"http://aims.fao.org/aos/agrontology#benefitsFrom","Benefits from","Y <benefitsFrom> X. A result Y  that is advantageous to some beneficiary, produced by the behaviour of an agent X. A consequence Y achieved through a means X. E.g. "biological control" <benefitsFrom> "biological control arthropods"; "plant health" <benefitsFrom> "pest control";"
+"http://aims.fao.org/aos/agrontology#hasInfectionPart","Has infection part",
+"http://aims.fao.org/aos/agrontology#isPartOfSubvocabulary","Is part of subvocabulary",
+"http://aims.fao.org/aos/agrontology#isTransliterationOf","Is a transliteration of",
+"http://aims.fao.org/aos/agrontology#affects","Affects","X <affects> Y. Action of agent X changes the state or location of Y. E.g. "water depletion" <affects> "groundwater table", "mechanical damage" <affects> "transporting quality". Do not use for diseases or disorders; for those, use <afflicts/is afflicted by>. "
+"http://aims.fao.org/aos/agrontology#causativeRelationship","Causative relationship","Super-property for causative relationships"
+"http://aims.fao.org/aos/agrontology#study","Study","Y <study> X. Field, science or group Y studies concept X. E.g. "sedimentology" <study> "sediment",
+"wood anatomy" <study> "heartwood"."
+"http://aims.fao.org/aos/agrontology#isAbbreviationOf","Is abbreviation of",
+"http://aims.fao.org/aos/agrontology#isControlMethodOf","Is control method of",
+"http://aims.fao.org/aos/agrontology#greaterThan","Greater than",
+"http://aims.fao.org/aos/agrontology#isOldNameOf","Is old name of","Y <is old name of> X. Use for obsolete labels , like old names of countries. E.g. "People's Republic of Bulgaria" <is old name of> "Bulgaria". Use only for labels for the same concept in a specific language."
+"http://aims.fao.org/aos/agrontology#isAffectedBy","Is affected by","Y <is affected by> X. An object Y changes state or location because of an action of an agent X. E.g. "trees" <is affected by> "arboricides", "transporting quality" <is affected by> "mechanical damage". Do not use for diseases or disorders; for those, use <afflicts/is afflicted by>. "
+"http://aims.fao.org/aos/agrontology#hasGoalOrProcess","Has goal or process","X <has goal or process> Y. X has intended goal or  process Y. E.g. "veterinary services" <has goal or process> "animal health", "coppicing" <has goal or process> "natural regeneration". 
+"
+"http://aims.fao.org/aos/agrontology#afflicts","Afflicts","X <afflicts> Y. The disease or disorder X could have negative effects in Y, such as adversely affect the health of an organism or body part Y. E.g. "scrapie" <afflicts> "sheep", "glossitis" <afflicts> "tongue"."
+"http://aims.fao.org/aos/agrontology#scientificNameOf","Scientific name of","Y <scientific name of> X. E.g. "Salmo trutta" <scientific name of> "sea trout". Label-to-label relationship for use within a concept. Use when common name and scientific name are not separate concepts, or when a separate relation between scientific and common name is needed for a specific language. When common name and scientific name are separate concepts, use concept-to-concept relation <has taxonomic concept/has common name concept>."
+"http://aims.fao.org/aos/agrontology#isUseOf","Is use of","Y <is use of> X.  For example, "sweeteners" <is use of> '"sorbitol",  "fuels" <is use of> "ethanol"."
+"http://aims.fao.org/aos/agrontology#isProcessFor","Is process for","Y <is process for> X. One or more actions, activities, methods Y that produce a change or development for X. E.g. "sterilization" <is process for> "sterile insect release", "alcoholic fermentation" <is process for> "winemaking"."
+"http://aims.fao.org/aos/agrontology#isCropingSystemOf","Is cropping system of",
+"http://aims.fao.org/aos/agrontology#pestOf","Is a pest of","X <pest of> Y. Pest X causes harm to organism Y. E.g. "Varroa destructor" <pest of> "Apis mellifera"."
+"http://aims.fao.org/aos/agrontology#hasProduct","Has product","X <has product> Y. X is the source of product Y, with a processing element. E.g. "logging"<has product> "logging wastes", "Spain" <has product> "sherry"."
+"http://aims.fao.org/aos/agrontology#isComposedOf","Is composed of","X <is composed of> Y. X is composed of material or substance Y . E.g. "soil flora" <is composed of> "microbial flora", "tuff"<is composed of> "volcanic materials"."
+"http://aims.fao.org/aos/agrontology#includesSubprocess","Includes subprocess","X <includesSubprocess> Y. Process X naturally or conventionally realized at the minimum through process Y. Equivalent to <stageOf>. E.g. "milk production" <includesSubprocess> "pasteurization";"
+"http://aims.fao.org/aos/agrontology#isSubstituteFor","Is substitute for",
+"http://aims.fao.org/aos/agrontology#hasTermType","Has term type",
+"http://aims.fao.org/aos/agrontology#isPropertyOf","Is property of","Y <is property of> X. A property might be a quality or trait. E.g. "seed viability" <is property of> "seed", "medicinal properties" <is property of> "medicinal plants"."
+"http://aims.fao.org/aos/agrontology#isAcronymOf","Is acronym of","Y <is acronym of> X. An acronym is an abbreviation formed from the initial letters of other words, often pronounced as a word.  "AIDS" <is acronym of>"acquired immunodeficiency syndrome"."
+"http://aims.fao.org/aos/agrontology#hasTransliteration","Has transliteration",
+"http://aims.fao.org/aos/agrontology#isSpatiallyIncludedInState","Is spatially included in state",
+"http://aims.fao.org/aos/agrontology#hasPlural","Has plural",
+"http://aims.fao.org/aos/agrontology#isInfectedPartOf","Is infected part of",
+"http://aims.fao.org/aos/agrontology#isBreedingMethodOf","Is breeding method of",
+"http://aims.fao.org/aos/agrontology#isBeneficialFor","Is beneficial for","X <isBeneficialFor> Y. Agent X behaves in a way that produces some result Y that is advantageous to some beneficiary. A means X through which a consequence Y can be achieved. E.g. "biological control arthropods" <isBeneficialFor> "biological control"; "pest control" <isBeneficialFor> "plant health";"
+"http://aims.fao.org/aos/agrontology#isMadeFrom","Is made from"," X <is made from> Y.  Product X is mainly made from substance or a product Y. E.g. "sheep cheese" <is made from> "ewe milk", "concrete" <is made from> "cement", "bacon" <is made from> "pork". Stronger processing element than <is source of>."
+"http://aims.fao.org/aos/agrontology#spatialRelationship","Spatial relationship","Super-property for spatial relationships"
+"http://aims.fao.org/aos/agrontology#hasComposition","Has composition",
+"http://aims.fao.org/aos/agrontology#hasCodeAsfa","Has ASFA code",
+"http://aims.fao.org/aos/agrontology#isHostFor","Is vector or host for","Y <Is vector or host for> X. Organism Y is host or vector for X.  E.g. "Anopheles" <is vector or host for> "Plasmodium". 
+"
+"http://aims.fao.org/aos/agrontology#isCompositionOf","Is composition of",
+"http://aims.fao.org/aos/agrontology#isPerformedByMeansOf","Is performed by means of","Y <isPerformedByMeansOf> X. An object or process X mainly used to perform a process Y. See also <usedAs>. E.g. "curry paste grinding" <isPerformedByMeansOf> "curry paste grinding machine"; "weapon" <meansFor> "killing"; "fishing pole" <meansFor> "fishing"; "alcohol" <meansFor> "cleaning"; but NOT "knives" <meansFor> "felling" (because knives are not primarily used for cutting down trees);"
+"http://aims.fao.org/aos/agrontology#hasTradeName","Has trade name, has commercial name",
+"http://aims.fao.org/aos/agrontology#actsUpon","Acts upon",
+"http://aims.fao.org/aos/agrontology#hasTaxonomicRank","Has taxonomic rank","X <has taxonomic rank> Y. Describes taxonomic rank Y of organism X. "Spodoptera frugiperda" <has taxonomic rank> "species (taxa)". "
+"http://aims.fao.org/aos/agrontology#hasTheme","Has theme","From CWR ontology."
+"http://aims.fao.org/aos/agrontology#isUsedToMake","Is used to make","Y <is used to make> X. A substance or a product Y is used to make product X. E.g. "ewe milk" <is used to make> "sheep cheese", "cement" <is used to make> "concrete", "pork" <is used to make> "bacon". Stronger processing element than <is source of>."
+"http://aims.fao.org/aos/agrontology#hasProperty","Has property","X <has property> Y. A property might be a quality or trait. E.g. "seed" <has property> "seed size", "medicinal plants" <has property> "medicinal properties"."
+"http://aims.fao.org/aos/agrontology#isCausedBy","Is caused by","Y <is caused by> X. A result Y occurred because of an agent X (animate or inanimate). E.g. "spongiform encephalopathy" <is caused by> "prions", "soil moisture deficit" <is caused by> "wilting"."
+"http://aims.fao.org/aos/agrontology#hasComponent","Has component","Y <has component> X. An object X that is a part of a whole Y and also has an existence independently from Y. E.g. "trees" <has component> "leaves",  "vehicle systems" <has component> "engines"."
+"http://aims.fao.org/aos/agrontology#spellingVariant","Has spelling variant",
+"http://aims.fao.org/aos/agrontology#surroundedBy","Surrounded by","X <surrounded by> Y. The object X is physically surrounded by object Y. E.g. "pupae" <surrounded by> "cocoons", "endosperm" <surrounded by> "aleurone cells". Use only for the terms that are physically immediately adjacent to each other. For geography use <is spatially included in>."
+"http://aims.fao.org/aos/agrontology#performs","Performs",
+"http://aims.fao.org/aos/agrontology#hasBroaderSynonym","Has broader synonym",
+"http://aims.fao.org/aos/agrontology#isPartOf","Is part of"," Y <is part of> X. X is composed of one or more parts, where Y is one part. E.g. "cortex" <is part of> "stems", "root nodules" <is part of> "roots". Use this relationship when none of the other lower partitive relations (<is composed of>, <has member>) apply. "
+"http://aims.fao.org/aos/agrontology#hasCodeFaoPa","Has code in the schema FAO Priority Area",
+"http://aims.fao.org/aos/agrontology#isOutputFrom","Is output from",
+"http://aims.fao.org/aos/agrontology#isThemeOf","Is theme of","From CWR ontology."
+"http://aims.fao.org/aos/agrontology#compose","Compose","Y <compose> X. Y is the material or substance of which X is composed. E.g. "microbial flora" <compose> "soil flora", "volcanic materials" <compose> "tuff"."
+"http://aims.fao.org/aos/agrontology#hasNearSynonym","Has near synonym",
+"http://aims.fao.org/aos/agrontology#isAchievedByMeansOf","Is achieved by means of","Y <is achieved by means of> X. Y is an objective or process used by X, without Y necessarily being part of X. E.g. "mating disruption" <is achieved by means of> "pheromone analogues", "decision making" <is achieved by means of> "decision support systems"."
+"http://aims.fao.org/aos/agrontology#isPathogenOf","Is pathogen of","Y <is pathogen of> X . Y is pathogen of organism X. E.g. "Xylella fastidiosa" <is pathogen of> "Olea europaea"."
+"http://aims.fao.org/aos/agrontology#isComponentOf","Is component of"," X <is component of> Y. An object X that is a part of a whole Y, also has an existence independently from Y. E.g. "leaves" <is component of> "trees", "engines" <is component of> "vehicle systems"."
+"http://aims.fao.org/aos/agrontology#isMeansFor","Is means for","X <isMeansFor> Y. An object or process X mainly used to perform a process Y. See also <usedAs>. E.g. "curry paste grinding" <performedWithInstrument> "curry paste grinding machine"; "weapon" <instrumentFor> "killing"; "fishing pole" <instrumentFor> "fishing"; "alcohol" <instrumentFor> "cleaning"; Ploughs <isMeansFor> Ploughing ;but NOT "knives" <instrumentFor> "felling" (because knives are not primarily used for cutting down trees);"
+"http://aims.fao.org/aos/agrontology#isDisorderOf","Is disorder of",
+"http://aims.fao.org/aos/agrontology#hasNarrowerSynonym","Has narrower synonym",
+"http://aims.fao.org/aos/agrontology#hasVariety","Has variety","Simmetric relationship indicating that two concepts are variety each other."
+"http://aims.fao.org/aos/agrontology#isStudiedBy","Is studied by
+","X <is studied by> Y. Concept X is studied by field, science or group Y. E.g. "palaeontology"<is studied by> "palaeontologists", "working conditions" <is studied by> "ergonomics"."
+"http://aims.fao.org/aos/agrontology#isUsedIn","Is used in","X <is used in> Y. X is habitually used in Y, it is normal to use X in the practice of Y. E.g. "casings" <is used in> "sausages", "trains" <is used in> "rail transport"."
+"http://aims.fao.org/aos/agrontology#hasPathogen","Has pathogen","X <has pathogen> Y. Organism X has pathogen Y. Pathogens are pathogenic microorganism such as viruses, bacteria and fungi. E.g. "Olea europaea" <has pathogen> "Xylella fastidiosa"."
+"http://aims.fao.org/aos/agrontology#developsFrom","Develops from",
+"http://aims.fao.org/aos/agrontology#hasObjectOfActivity","Has object of activity","X <has object of activity> Y. Activity X focuses on Y. E.g. "shearing" <has object of activity> "wool", "ratification" <has object of activity> "treaties".
+"
+"http://aims.fao.org/aos/agrontology#isPropagationMaterialOf","Is propagation material of",
+"http://aims.fao.org/aos/agrontology#isMemberOf","Is member of","X <is member of> Y. A social or political unit (group or individual) X belongs to a social or political group Y. E.g. "Benin" <is member of> "Francophone Africa", "worker bees" <is member of> "bee colonies". Limit use to geographical or socio-political units, do not use for grouping organisms (e.g. by use, climate, or taxonomic rank). Use <includes/included in> if describing spatial or temporal relation, but more loose than <is part of.>"
+"http://aims.fao.org/aos/agrontology#hasCropingSystem","Has cropping system",
+"http://aims.fao.org/aos/agrontology#temporalRelationship","Temporal relations",
+"http://aims.fao.org/aos/agrontology#partitiveRelationship","Partitive relationship","Super-property for partitive relationships"
+"http://aims.fao.org/aos/agrontology#hasCommonNameConcept","Has common name concept","Y <has common name concept> X. Y is a scientifically defined concept for an organism or a group of organisms with scientific name as labels, having a specific taxonomic rank. "Apis mellifera" <has common name concept> "honey bees". Use at concept level when common name and scientific name are separate concepts. For label-to-label relationship for use within a concept, use <has scientific name / scientific name of>. 
+"
+"http://aims.fao.org/aos/agrontology#isSymbolFor","Is symbol for","Y <is symbol for> X. "Fe (symbol)" <is symbol for> "iron". Use for disambiguation of chemical element symbols from other similar abbreviations."
+"http://aims.fao.org/aos/agrontology#hasPart","Has part","X <has part> Y. A composite entity X that can be identified as being composed of one or more parts, between which Y. E.g. "stems" <has part> "cortex", "roots" <has part>"root nodules". Use this relationship when none of the other lower partitive relations (<has component>, <is composed of>, <member>) apply. "
+"http://aims.fao.org/aos/agrontology#causes","Causes","X <causes> Y. Agent X (animate or inanimate) brings about a result Y. E.g. "prions" <causes> "spongiform encephalopathy", "soil moisture deficit" <causes> "wilting"."
+"http://aims.fao.org/aos/agrontology#hasWeed","Has weed",
+"http://aims.fao.org/aos/agrontology#influences","Influences",
+"http://aims.fao.org/aos/agrontology#hasPractice","Has practice",
+"http://aims.fao.org/aos/agrontology#hasControlMethod","Has control method",
+"http://aims.fao.org/aos/agrontology#isTaxonomicRankOf","Is taxonomic rank of"," Y <is taxonomic rank of> X. Describes taxonomic rank Y of organism X. E.g. "species (taxa)" <is taxonomic rank of> "Spodoptera frugiperda"."
+"http://aims.fao.org/aos/agrontology#hasPhysiologicalFunction","Has physiological function",
+"http://aims.fao.org/aos/agrontology#hasCodeISO3Country","Has ISO 3 country code","The International Standard for country codes and codes for their subdivisions. Alpha-3 code – a three-letter code that represents a country name, which is usually more closely related to the country name"
+"http://aims.fao.org/aos/agrontology#processRelationship","Process relationships","Super-property for process relationships"
+"http://aims.fao.org/aos/agrontology#hasSubstitute","Has substitute",
+"http://aims.fao.org/aos/agrontology#m49Code","M49 code","UN M49 or the Standard Country or Area Codes for Statistical Use (Series M, No. 49) is a standard for area codes used by the United Nations for statistical purposes, developed and maintained by the United Nations Statistics Division."
+"http://aims.fao.org/aos/agrontology#hasAbbreviation","Has abbreviation",
+"http://aims.fao.org/aos/agrontology#isInfluencedBy","Is influenced by or Depends on",
+"http://aims.fao.org/aos/agrontology#quantitativeRelationship","Quantitative relationship","Super-property for quantitative relationships. All relationships involving a quantity or a measure."
+"http://aims.fao.org/aos/agrontology#isPhysiologicalFunctionOf","Is physiological function of",
+"http://aims.fao.org/aos/agrontology#isNaturalEnemyOf","Is natural enemy of",
+"http://aims.fao.org/aos/agrontology#hasPropagationMaterial","Has propagation material",
+"http://aims.fao.org/aos/agrontology#productOf","Product of","Y <product of> X, with a processing element. Y is produced or manufactured as a result or consequence of X. E.g. "logging wastes" <product of> "logging", "sherry" <product of> "Spain". However, "honey" <is produced by> "honey bees"."
+"http://aims.fao.org/aos/agrontology#isUsedAs","Is used as","X <is used as> Y. E.g. "sorbitol" <is used as> "sweetener"; "ethanol" <is used as> "fuel"."
+"http://aims.fao.org/aos/agrontology#isSubprocessOf","Is subprocess of","Y <isSubprocessOf> X. Y is one of one or more processes naturally or conventionally associated with the realization of process X. E.g. "pasteurization" <isSubprocessOf> "milk production";"
+"http://aims.fao.org/aos/agrontology#hasPest","Has pest","Y <has pest> X. An organism Y in which the pest X causes harm. Pests are insects, nematodes and rodents that cause damage. E.g. "Apis mellifera" <has pest> "Varroa destructor", "Olea europaea" <has pest> "Bactrocera oleae"."
+"http://aims.fao.org/aos/agrontology#hasCodeFishery3Alpha","Has fishery 3 alpha code",
+"http://aims.fao.org/aos/agrontology#hasAntonym","Has antonym or Has opposite",
+"http://aims.fao.org/aos/agrontology#produces","Produces","Y <produces> X. E.g. "honey bees" <produces>"honey",  "Solanum tuberosum" <produces> "potatoes". However, "cheese-making" <has product>"cheese"."
+"http://aims.fao.org/aos/agrontology#isIncludedIn","Is included in","Y <is included in>X. X is an entity that includes the element Y. For example: "dehorning" <included in> "animal husbandry methods", "microbiological analysis" <included in> "water analysis"
+"http://aims.fao.org/aos/agrontology#growsln","Grows in","X <growsIn> Y. A taxon X grows in an environment Y. Use this in a plant and related domain (e.g. fungi). E.g. "jasmine rice" <growsIn> "isarn region"; "rice" <growsIn> "moist soil";"
+"http://aims.fao.org/aos/agrontology#isProducedBy","Is produced by","X <is produced by> Y. Restrict use to natural processes (such as fruits growing on plants, eggs, milk) - but also chemical processes. E.g. "honey" <is produced by> "honey bees", "potatoes" <is produced by> "Solanum tuberosum". However, "cheese" <product of> "cheese-making"."
+"http://aims.fao.org/aos/agrontology#isTradeNameOf","Is a trade name of",
+"http://aims.fao.org/aos/agrontology#hasLocalName","Has local name",
+"http://aims.fao.org/aos/agrontology#hasTaxonomicConcept","Has taxonomic concept","X <has taxonomic concept> Y.  X is a common name concept for an organism or organism group. Y is the scientifically defined concept name for the same organism or a group of organisms, having a specific taxonomic rank. E.g. "honey bees" <has taxonomic concept> "Apis mellifera". Use at concept level when common name and scientific name are separate concepts. For label-to-label relationship for use within a concept, use <has scientific name / scientific name of>. "
+"http://aims.fao.org/aos/agrontology#isBiologicalControlAgentOf","Is biological control agent of",
+"http://aims.fao.org/aos/agrontology#taxonomicRelationship","Taxonomic relationship","Super-property for taxonomic relationships. "
+"http://aims.fao.org/aos/agrontology#isPreventedBy","Is prevented by","X <is prevented by> Y. X can be reduced, interrupted or prevented by Y. E.g. "disease transmission" <is prevented by> "hand hygiene", "occupational hazards" <is prevented by> "safety at work"."
+"http://aims.fao.org/aos/agrontology#hasDisorder","Has disorder",
+"http://aims.fao.org/aos/agrontology#measures","Measures","Y <measures> X. Y is used to measure a quantitative property of X. For example: "thermometers" <measures> "temperature", "social indicators" <measures> "social change"."
+"http://aims.fao.org/aos/agrontology#isDiseaseFor","Is disease for","Y <is disease for> X. Disease Y is disease of organism X. E.g. "loose smut of sorghum"<is disease for> "Sorghum". Disease to organism relationship."
+"http://aims.fao.org/aos/agrontology#hasBiologicalControlAgent","Has biological control agent",
+"http://aims.fao.org/aos/agrontology#isAfflictedBy","Is afflicted by","Y <is afflicted by> X. The health or wellbeing of an organism or body part Y could adversely be affected by the disease X. E.g. "honey bees" <is afflicted by> "varoosis", "tongue" <is afflicted by> "glossitis". "
+"http://aims.fao.org/aos/agrontology#spatiallyIncludes","Spatially includes","X <spatially includes> Y. Region X spatially includes as inalienable part the spatial region Y. E.g. "Africa" <spatially includes> "African inland waters", "Andean region" <spatially includes> "Peru"."
+"http://aims.fao.org/aos/agrontology#isPracticeFor","Is practice for",
+"http://aims.fao.org/aos/agrontology#usingValue","Using value","A concept that make use of a specific value."
+"http://aims.fao.org/aos/agrontology#isChemicalFormulaOf","Is chemical formula of",
+"http://aims.fao.org/aos/agrontology#follows","Follows",
+"http://aims.fao.org/aos/agrontology#smallerThan","Smaller than",
+"http://aims.fao.org/aos/agrontology#isActedUponBy","Is acted upon by",
+"http://aims.fao.org/aos/agrontology#hasSymptom","Has symptom","X <has symptom> Y. A disease or disorder X presents disease characteristic Y in an organism. E.g. "malnutrition" <has symptom> "thinness", "septicaemia" <has symptom> "septic shock". "
+"http://aims.fao.org/aos/agrontology#typeOf","Type of","Y <type of> X. Concept Y is a type of X.  <type of> is broader and quite similar to <skos:broader>, but  it is not exclusive.  E.g. "gallop" <type of> "horse gaits", but also elephants and camels can gallop."
+"http://aims.fao.org/aos/agrontology#isCultivationProcessOf","Is cultivation process of",
+"http://aims.fao.org/aos/agrontology#hasAcronym","Has acronym","X <has acronym> Y. An acronym is an abbreviation formed from the initial letters of other words, often pronounced as a word. E.g. "acquired immunodeficiency syndrome" <has acronym>"AIDS". "
+"http://aims.fao.org/aos/agrontology#isInputFor","Is input for",
+"http://aims.fao.org/aos/agrontology#isPerformedBy","Is performed by",
+"http://aims.fao.org/aos/agrontology#hasDisease","Has disease","X <has disease> Y. Organism X can have disease Y. E.g. "Sorghum" <has disease> "loose smut of sorghum". Organism to disease relationship. 
+"
+"http://aims.fao.org/aos/agrontology#hasCultivationProcess","Has cultivation process",
+"http://aims.fao.org/aos/agrontology#isMeasuredBy","Is measured by","X <is measured by> Y. A quantitative property of X is measured by Y. For example: "temperature" <is measured by> "thermometers", "social change" <is measured by> "social indicators"."
+"http://aims.fao.org/aos/agrontology#controls","Controls",
+"http://aims.fao.org/aos/agrontology#hasMember","Has member","Y <has member> X. A social or political group Y consists of one or more subsidiary social or political units (group or individual) X. E.g. "Francophone Africa" <has member> "Benin", "bee colonies" <has member> "worker bees". Limit use to geographical or socio-political units. Do not use for grouping organisms by use, climate, or taxonomic rank. Use <includes> / <included in> if describing spatial or temporal relation, if more loose than <has part/is part of>."
+"http://aims.fao.org/aos/agrontology#hasPostProductionPractice","Has post-production practice",
+"http://aims.fao.org/aos/agrontology#isParentOf","Is parent of",
+"http://aims.fao.org/aos/agrontology#indicates","Indicates","Y <indicates> X. A disease or disorder characteristic Y in an organism indicates disease X. E.g. "septic shock" <indicates> "septicaemia". Use only for diseases. However, "acidity" <is measured by> "pH"."
+"http://aims.fao.org/aos/agrontology#isSpatiallyIncludedInCity","Is spatially included in city",
+"http://aims.fao.org/aos/agrontology#surrounds","Surrounds","Y <surrounds> X. The object Y is physically surrounding object X. E.g. "cocoons" <surrounds> "pupae", "aleurone cells" <surrounds> "endosperm". Use only for the terms that are physically immediately adjacent to each other. For geography use <spatially Includes>."
+"http://aims.fao.org/aos/agrontology#hasParent","Has parent",
+"http://aims.fao.org/aos/agrontology#hasHost","Has vector or host ","X <has vector or host> Y.  X has organism host or vector  Y.  E.g. "Plasmodium" <has host> "Anopheles"."
