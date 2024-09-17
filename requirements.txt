@@ -1,10 +1,11 @@
 ipython==8.24.0
 keybert==0.8.4
-langchain==0.2.2
-langchain_community==0.2.9
-langchain_openai==0.1.8
-openai==1.31.1
+langchain==0.3.0
+langchain_community==0.3.0
+langchain_openai==0.2.0
+numpy==1.24.3
+openai==1.46.0
 pydotplus==2.0.2
-pyvis==0.3.1
 rdflib==7.0.0
 Requests==2.32.3
+scikit_learn==1.2.2
