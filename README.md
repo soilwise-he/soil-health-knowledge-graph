@@ -5,9 +5,10 @@
 - Defining concepts in the soil health knowledge graph by importing the [AGROVOC](https://aims.fao.org/aos/agrovoc) thesaurus;
   - When a concept matches the "prefLabel" of a concept in the AGROVOC, the URI defined by the AGROVOC is used directly;
   - When a concept matches the "altLabel" of a concept in the AGROVOC, using "closeMatch" to interlink with the AGROVOC.
+- Introducing [Agrontology](https://aims.fao.org/aos/agrontology) to better express relationships between concepts;
 - Visualizing the knowledge graph;
 - Evaluating different conversion strategies using the F1 score and exact match;
-- Merging and post-processing knowledge graphs to detect duplicates and conflicts;
+- Post-processing the knowledge graph to eliminate misuse of ontologies;
 - Interlinking to external databases, such as soil-related metadata records harvested from Zenodo, by keyword matching;
   - Filling in keywords extracted from the title and description for metadata records that are missing keywords;
   - Introducing a quad store with named graphs to store extracted keywords in the named graph called "augmented";
@@ -24,7 +25,7 @@ Once we establish this soil health knowledge graph, we aim to enhance it by inte
 
 Building this knowledge repository in a top-down manner, guided by the structure of the knowledge graph, offers several advantages. The top-down approach provides a more controllable and orderly construction process compared to bottom-up methods, enhancing the ease of knowledge sharing, including improved reuse of knowledge. Furthermore, because the repository structurally aligns with the knowledge graph, with external data directly linked to its concepts, the repository becomes more functional for applications. For example, understanding the relationships between concepts is crucial when developing a recommender system that operates over the knowledge repository.
 
-### Ontologies/Vocabularies/Schemas:
+### Ontologies/Vocabularies/Schemas used:
 - [SKOS Core](https://www.w3.org/2009/08/skos-reference/skos.html)
 - [Dublin Core](https://www.dublincore.org/specifications/dublin-core/)
 - [AGROVOC](https://aims.fao.org/aos/agrovoc)
