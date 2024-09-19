@@ -1,0 +1,5 @@
+# ignore ALL files in directory named report
+report/
+
+# ignore config file
+config.json
