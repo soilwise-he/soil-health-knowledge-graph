@@ -3,3 +3,6 @@ report/
 
 # ignore config file
 config.json
+
+# ignore the dataset
+text_RDF_gt.json
