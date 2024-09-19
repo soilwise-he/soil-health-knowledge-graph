@@ -1,8 +1,5 @@
-# ignore ALL files in directory named report
-report/
-
 # ignore config file
-config.json
+config
 
-# ignore the dataset
-text_RDF_gt.json
+# ignore ALL files in directory named dataset
+dataset/
