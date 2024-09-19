@@ -341,78 +341,31 @@
     },
     {
         "type": "text",
-        "text": "SOC content as an indicator is commonly expressed as concentration or stock (syn. pool size, density), and its quantification refers to a specific depth of soil. In this section, key references have been selected from the vast literature base on SOC measurement and monitoring: "
+        "text": "SOC content as an indicator is commonly expressed as concentration or stock (syn. pool size, density), and its quantification refers to a specific depth of soil. In this section, key references have been selected from the vast literature base on SOC measurement and monitoring:\n•\treference literature on SOC to address policy needs, including greenhouse gas inventories: Bispo et al. (2017), FAO (2019a), IPCC (2019b);\n•\treference literature on SOC analysis: Nelson and Sommers (1996), standard operating procedures of the Global Soil Laboratory Network (Glosolan) (FAO, 2022);\n•\treference literature on SOC monitoring: Goidts et al. (2009), Schrumpf et al. (2011), Poeplau et al. (2017), Arrouays et al. (2018);\n•\treference literature on SOC monitoring from remote sensing: Angelopoulou et al. (2019), Chabrillat et al. (2019),"
     },
     {
         "type": "text",
-        "text": "•\treference literature on SOC to address policy needs, including greenhouse gas inventories: Bispo et al. (2017), FAO (2019a), IPCC (2019b); "
+        "text": "In the context of assessing soil degradation, the following functional soil carbon indicator is proposed, based on the spatial quantification of soil carbon concentrations (or soil carbon stocks) in a given depth:\nLand area_SOC_degraded = Land area_SOC_content < threshold\nSOC_content is expressed as the concentration of organic carbon in fine soil (fractions <2mm), per mass of soil (expressed as grams C/kg soil, or a percentage), from a sample representing a certain soil layer or soil horizon of a specific depth. Organic soil residues are not included in this estimate when they do not pass through a 2-mm sieve."
     },
     {
         "type": "text",
-        "text": "•\treference literature on SOC analysis: Nelson and Sommers (1996), standard operating procedures of the Global Soil Laboratory Network (Glosolan) (FAO, 2022); "
+        "text": "While the existing thresholds presented below focus on the SOC content (or SOC concentration), they could be converted to SOC stocks assuming a specific depth and bulk density, although this conversion would be highly error prone. However, in future, the development of thresholds related to SOC stocks may be advisable, since SOC stocks could be more indicative for cropland soils in the case of changes in tillage depth (in particular, using reference and benchmark values from soil monitoring as thresholds; see Table 2.3)."
     },
     {
         "type": "text",
-        "text": "•\treference literature on SOC monitoring: Goidts et al. (2009), Schrumpf et al. (2011), Poeplau et al. (2017), Arrouays et al. (2018); "
+        "text": "SOC_stock represents the pool of organic carbon for a specific layer of soil. The quantification of this pool relies on SOC_content, bulk density, coarse mineral fragment content and layer thickness, expressed in tonnes C/ha, and calculated as:\nSOC_stock = d * C * (1 - CM) * BD / 100\nwhere SOC is the stock in tonnes C/ha, d is the depth (m), C is the content of organic carbon (grams C/kg), CM is the fraction of coarse material or rock fragments, by mass, and BD is the bulk density (kg/m\u00b2) (see also Poeplau et al. (2019) about the coarse fraction for calculating SOC stocks)."
     },
     {
         "type": "text",
-        "text": "•\treference literature on SOC monitoring from remote sensing: Angelopoulou et al. (2019), Chabrillat et al. (2019), "
+        "text": "SOC_stock is the reporting unit in greenhouse gas inventories (Goulding et al., 2013). Because bulk density is not always measured, pedotransfer functions are available (e.g. Hollis et al., 2012), although this approach is error prone (Wiesmeier et al., 2012). Farm advisers usually build their recommendations on SOC_concentration . Regarding the stone content, it is often neglected in agricultural topsoils; however, following recommendations made by the Intergovernmental Panel on Climate Change (IPCC, 2006), it is good practice to quantify carbon stocks in subsoils in order to quantify the amount of carbon vertically redistributed and the part lost (or gained) in the local soil under investigation. For this reason, the weights, or volumes, of fine gravel (inside the sampling cylinders for determining bulk density), coarse gravel and stones need to be estimated, in particular for non-agricultural soils and SOC estimates at greater depths."
     },
     {
         "type": "text",
-        "text": "In the context of assessing soil degradation, the following functional soil carbon indicator is proposed, based on the spatial quantification of soil carbon concentrations (or soil carbon stocks) in a given depth: "
+        "text": "When talking about SOC thresholds, we have to distinguish between mineral soils that contain only a few per cent of SOC, but that cover more than 90% of the land surface, and organic soils that are rich in SOC, such as bogs, fens, and folic histosols, which cover only 3% of the land surface but store more than 20% of all SOC on Earth (Yu et al., 2010; Scharlemann et al., 2014; Schimmel and Amelung, 2022). The management of these two categories of soils is also very different. For organic soils, SOC stock estimations are difficult: to monitor carbon sequestration, estimations should include the full depth of the organic layer."
     },
     {
         "type": "text",
-        "text": "Land area $=$ Land area SOCdegraded SOC content $<$ threshold "
-    },
-    {
-        "type": "text",
-        "text": "$\\mathsf{S O C}_{\\mathsf{c o n t e n t}}$  is expressed as the concentration of organic carbon in fine soil (fractions ${\\tt<}2{\\tt m m}$ ), per mass of soil (expressed as grams C/kg soil, or a percentage), from a sample representing a certain soil layer or soil horizon of a specific depth. Organic soil residues are not included in this estimate when they do not pass through a $_{2\\mathrm{-mm}}$ sieve. "
-    },
-    {
-        "type": "text",
-        "text": "While the existing thresholds presented below focus on the SOC content (or SOC concentration), they could be converted to SOC stocks assuming a specific depth and bulk density, although this conversion would be highly error prone. However, in future, the development of thresholds related to SOC stocks may be advisable, since SOC stocks could be more indicative for cropland soils in the case of changes in tillage depth (in particular, using reference and benchmark values from soil monitoring as thresholds; see Table 2.3). "
-    },
-    {
-        "type": "text",
-        "text": "$\\mathsf{S O C}_{\\mathrm{st ock}}$ represents the pool of organic carbon for a specific layer of soil. The quantification of this pool relies on $\\mathsf{S O C}_{\\mathsf{c o n t e n t}},$ bulk density, coarse mineral fragment content and layer thickness, expressed in tonnes C/ha, and calculated as: "
-    },
-    {
-        "type": "equation",
-        "text": "\n$$\n\\mathsf{S O C}(\\mathsf{s t o c k})=\\Big(\\frac{{\\mathsf{d}}^{\\star}\\mathsf{C}^{\\star}\\left(1\\cdot\\mathsf{C M}\\right)^{\\star}\\mathsf{B D}}{100}\\Big)\n$$\n ",
-        "text_format": "latex"
-    },
-    {
-        "type": "text",
-        "text": "where SOC is the stock in tonnes C/ha, $d$ is the depth (m), $C$ is the content of organic carbon (grams ${\\mathsf{C}}/{\\mathsf{k g}},$ , CM is the fraction of coarse material or rock fragments, by mass, and BD is the bulk density $(\\mathsf{k g}/\\mathsf{m}^{2})$ (see also Poeplau et al. (2019) about the coarse fraction for calculating SOC stocks).\n "
-    },
-    {
-        "type": "text",
-        "text": "$\\mathsf{S O C}_{\\mathrm{st ock}}$ is the reporting unit in greenhouse gas inventories \n (Goulding et al., 2013). Because bulk density is not always measured, pedotransfer functions are available (e.g. Hollis et al., 2012), although this approach is error prone (Wiesmeier et al., 2012). Farm advisers usually build their recommendations on SOC concentration . Regarding the stone content, it is often neglected in agricultural topsoils; however, following recommendations made by the Intergovernmental Panel on Climate Change (IPCC, 2006), it is good practice to quantify carbon stocks in subsoils in order to quantify the amount of carbon vertically redistributed and the part lost (or gained) in the local soil under investigation. For this reason, the weights, or volumes, of fine gravel (inside the sampling cylinders for determining bulk density), coarse gravel and stones need to be estimated, in particular for non-agricultural soils and SOC estimates at greater depths. "
-    },
-    {
-        "type": "text",
-        "text": "When talking about SOC thresholds, we have to distinguish between mineral soils that contain only a few per cent of SOC, but that cover more than $90\\%$ of the land surface, and organic soils that are rich in SOC, such as bogs, fens, and folic histosols, which cover only $3\\%$ of the land surface but store more than $20\\%$ of all SOC on Earth (Yu et al., 2010; Scharlemann et al., $2014_{i}$ ; Schimmel and Amelung, 2022). The management of these two categories of soils is also very different. For organic soils, SOC stock estimations are difficult: to monitor carbon sequestration, estimations should include the full depth of the organic layer. "
-    },
-    {
-        "type": "text",
-        "text": "2.3 Critical limits for soil organic carbon ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "2.3.1\tOverview of approaches to determine degradation by SOC ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Basing carbon thresholds only on soil fertility hardly accounts for other needs, for example climate change mitigation and other ecosystem services, such as water infiltration and groundwater recharge or biodiversity. In addition, the available research on thresholds frequently excludes non-agricultural land uses. Nevertheless, the effects of soil management and the derivation of SOC thresholds for sustainable (arable) soil management have usually focused on the effect of the decline in SOC levels on crop yield. This focus on yield benefits means that farmers are more likely to accept changes in management practices (e.g. Amelung et al., 2020). Yet, crop yield is also the result of the interaction of many factors, in particular soil fertility, for which SOM and nutrient availability are as important as sufficient water. Hence, correlations between SOC content and yields are not always clear, and the same applies to effects of organic matter additions to yield development (Hijbeek et al., 2017a; Vonk et al., 2020). "
-    },
-    {
-        "type": "text",
-        "text": ""
+        "text": "Basing carbon thresholds only on soil fertility hardly accounts for other needs, for example climate change mitigation and other ecosystem services, such as water infiltration and groundwater recharge or biodiversity. In addition, the available research on thresholds frequently excludes non-agricultural land uses. Nevertheless, the effects of soil management and the derivation of SOC thresholds for sustainable (arable) soil management have usually focused on the effect of the decline in SOC levels on crop yield. This focus on yield benefits means that farmers are more likely to accept changes in management practices (e.g. Amelung et al., 2020). Yet, crop yield is also the result of the interaction of many factors, in particular soil fertility, for which SOM and nutrient availability are as important as sufficient water. Hence, correlations between SOC content and yields are not always clear, and the same applies to effects of organic matter additions to yield development (Hijbeek et al., 2017a; Vonk et al., 2020)."
     },
     {
         "type": "text",
