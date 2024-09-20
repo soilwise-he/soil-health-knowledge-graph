@@ -3,3 +3,6 @@ config
 
 # ignore ALL files in directory named dataset
 dataset/
+
+# ignore ALL files in directory named .vscode
+.vscode/
