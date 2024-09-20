@@ -1,8 +1,8 @@
-# ignore config file
+# Ignore the config file
 config
 
-# ignore ALL files in directory named dataset
+# Ignore the dataset
 dataset/
 
-# ignore ALL files in directory named .vscode
+# Ignore IDE specific files
 .vscode/
