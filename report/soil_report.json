@@ -525,88 +525,35 @@
     },
     {
         "type": "text",
-        "text": "The most important soil nutrients are nitrogen (N) and phosphorus (P). Together with soil pH, which is strongly related to the availability of the base cations Ca2+, $M g}^{2+}$ and $K}^{+}$ and also to the availability of micronutrients (especially iron, zinc and magnesium) and of toxic aluminium, they are the main determinants of soil fertility. These soil parameters, i.e. N, P and pH, with their related impact on other elements, are affected by inputs from fertiliser and manure application in agriculture and by atmospheric deposition — the latter being the main source of inputs in non-agricultural soil. "
+        "text": "The most important soil nutrients are nitrogen (N) and phosphorus (P). Together with soil pH, which is strongly related to the availability of the base cations Ca²⁺, Mg²⁺ and K⁺ and also to the availability of micronutrients (especially iron, zinc and magnesium) and of toxic aluminium, they are the main determinants of soil fertility. These soil parameters, i.e. N, P and pH, with their related impact on other elements, are affected by inputs from fertiliser and manure application in agriculture and by atmospheric deposition — the latter being the main source of inputs in non-agricultural soil."
     },
     {
         "type": "text",
-        "text": "This section focuses on the importance of N and P monitoring. The impact of soil N and P status and inputs are described, considering biomass production and crop growth, soil and plant biodiversity and water quality (see also Table 3.1). This is followed by an overview of indicators for soil N and P status related to those impacts. Finally, thresholds are described, below which the nutrient status should not drop to avoid a decline in crop yield ( target levels ), or above which the nutrient status should not rise to avoid adverse impacts on biodiversity and water quality ( critical levels ). In Chapter 4, the same is done for soil acidity. "
-    },
-    {
-        "type": "table",
-        "img_path": "images/b1e1a7113019c77b8c7e6f8360c97c7fbc2bba26d8a3311b4a104e369d3357b5.jpg",
-        "table_caption": "Table 3.1\tRelationship of soil nutrient status to key societal needs and soil functions "
+        "text": "This section focuses on the importance of N and P monitoring. The impact of soil N and P status and inputs are described, considering biomass production and crop growth, soil and plant biodiversity and water quality (see also Table 3.1). This is followed by an overview of indicators for soil N and P status related to those impacts. Finally, thresholds are described, below which the nutrient status should not drop to avoid a decline in crop yield (target levels), or above which the nutrient status should not rise to avoid adverse impacts on biodiversity and water quality (critical levels). In Chapter 4, the same is done for soil acidity."
     },
     {
         "type": "text",
-        "text": "3.1 Rationale: impacts of soil nitrogen and phosphorus levels on biomass production and crop growth, soil and plant diversity and water quality ",
-        "text_level": 1
+        "text": "Nutrient inputs to soils affect the soil nutrient status (contents and pools), which in turn affects the output of nutrients in vegetation (nutrient uptake due to biomass production, such as tree growth and crop growth) and to air and water (Figure 3.1). N and P are essential macronutrients, both of which widely limit primary productivity across terrestrial ecosystems (Elser et al., 2007; Vitousek et al., 2010). In non-agricultural systems (i.e. forestry), biomass growth is thus enhanced by additional inputs. At a certain level, however, this production increase will also adversely affect plant species diversity, and it may cause losses of N and P to water, where they may cause eutrophication (see Section 3.1.3), and growth may even be reduced at very high levels of inputs (see Section 3.1.2). In agricultural soils, crop growth is strongly stimulated by N and P fertiliser and manure inputs, but the risk of N and P losses to water and the related impacts of eutrophication is high. The losses of N and P to air, and N and P to water in response to their inputs, is highly variable because of the differences in soil properties and corresponding N and P dynamics, as explained below."
     },
     {
         "type": "text",
-        "text": "3.1.1\tThe fate of N and P in soil in response to N and P inputs ",
-        "text_level": 1
+        "text": "Unlike other nutrients, such as P, calcium, magnesium, potassium and sulphur, N in (agricultural) soils is only organically derived, since there are hardly any or no N-containing minerals in (agricultural) soils. Processes such as N dissolution/weathering, or inversely precipitation, thus do not occur, and there is also very limited sorption of nitrate to either clay or organic matter, although it has been found to occur on positively charged soil particles (Wong et al., 1990, 2009), while ammonium has been found to adsorb in heavy clay soils but is generally transformed into nitrate in agricultural soils. While there is usually a chemical equilibrium between available and reactive ions and those in the soil solution (a prerequisite for deriving thresholds based on simple nutrient concentration analysis), no such equilibrium exists for N. Instead, biologically mediated processes affect the availability of N to crops in agricultural soils. Important soil parameters affecting soil N availability include pH, organic matter and clay content. When N is added to soil, a part is consumed by vegetation, and the N surplus is emitted to air, as ammonia (NH₃), nitric oxide (NO), nitrous oxide (N₂O) or dinitrogen (N₂), or to groundwater and surface water, mainly as nitrate (NO₃⁻), or it accumulates in soil (Figure 3.1); however, the long-term change in the stock of organic soil N is very limited. Due to this behaviour, changes in N inputs from fertiliser and manure directly affect crop yields, even in soils with a high soil N status."
     },
     {
         "type": "text",
-        "text": "Nutrient inputs to soils affect the soil nutrient status (contents and pools), which in turn affects the output of nutrients in vegetation (nutrient uptake due to biomass production, such as tree growth and crop growth) and to air and water (Figure 3.1). N and P are essential macronutrients, both of which widely limit primary productivity across terrestrial ecosystems (Elser et al., 2007; Vitousek et al., 2010). In non-agricultural systems (i.e. forestry), biomass growth is thus enhanced by additional inputs. At a certain level, however, this production increase will also adversely affect plant species diversity, and it may cause losses of N and P to water, where they may cause eutrophication (see Section 3.1.3), and growth may even be reduced at very high levels of inputs (see Section 3.1.2). In agricultural soils, crop growth is strongly stimulated by N and P fertiliser and manure inputs, but the risk of N and P losses to water and the related impacts of eutrophication is high. The losses of N and P to air, and N and P to water in response to their inputs, is highly variable because of the differences in soil properties and corresponding N and P dynamics, as explained below. "
+        "text": "Unlike N, the concentration of P in soil solution is buffered by the stock of reactive or readily available P. Consequently, plant P uptake is strongly governed by the soil P status, and this holds also for losses of P to groundwater and surface water. Because of this, changes in P inputs from fertiliser and manure have smaller impacts on crop yields in soils with a high P content. A meta-analysis of the yield response to long-term phosphorous fertilisation from 30 field experiments in Germany and Austria showed a strong decline in the magnitude of the yield response with increasing soil P content, with no effect at high soil P status (Buczko et al., 2018). Important soil parameters affecting the availability of soil P include the aluminium and iron oxide content."
     },
     {
         "type": "text",
-        "text": ""
-    },
-    {
-        "type": "image",
-        "img_path": "images/e362baca53af55070e195bcb5ac7aa7acdf2c091b9f76f0b3b0917b9489a93fd.jpg",
-        "img_caption": "Figure 3.1\tLink between nutrient inputs and soil nutrient pools and nutrient outputs to air, vegetation  and water "
+        "text": "In unfertilised soils, crop growth is determined by the soil N status and specifically the soil P status, as described above. In case of fertilisation, however, the N status of the soil is not very relevant, as N is readily available, and N limitation due to the soil N status can be compensated for by N fertilisation. In agricultural systems, N inputs from fertiliser and manure thus mainly affect crop yield, thereby also increasing the carbon (C) input by crop residues. On the other hand, soil N input may enhance soil C decomposition, and it has been claimed that inorganic N fertiliser leads to a decline in both the organic C (Khan et al., 2007) and organic N (Mulvaney et al., 2009) content based on an analysis of soil C and N data from long-term field experiments. However, both assessments were heavily criticised in the literature (Reid, 2008; Powlson et al., 2010) and there are various data sets indicating that enhanced N inputs lead to an increase in soil C in agricultural soils with N limitation (Amelung et al., 2020)."
     },
     {
         "type": "text",
-        "text": "Nitrogen ",
-        "text_level": 1
+        "text": "The P status may highly affect long-term crop yield, and crop yield increases in response to P fertilisation until a threshold is reached, above which crop yield no longer responds to P application (Mallarino and Blackmer, 1992). For example, Jungk et al. (1993) found that 14 years of different P fertiliser application rates varying between zero and 180kg P₂O₅ per year at four equal intervals hardly affected the yield or plant P concentrations of winter wheat and sugar beet planted in rotation. They concluded that plant P demand was fully satisfied by uptake from soil P reserves accumulated from previous soil P applications in excess of plant demand. This critical P level is affected, however, by soil properties such as clay and organic matter content and also by climatic variables, such as temperature (Buczko et al., 2018; Hirte et al., 2021). In summary, N fertilisation mainly affects crop growth, but the impact of soil N status is limited, while soil P status affects crop yield up to a critical level."
     },
     {
         "type": "text",
-        "text": "Unlike other nutrients, such as P, calcium, magnesium, potassium and sulphur, N in (agricultural) soils is only organically derived, since there are hardly any or no N-containing minerals in (agricultural) soils. Processes such as N dissolution/weathering, or inversely precipitation, thus do not occur, and there is also very limited sorption of nitrate to either clay or organic matter, although it has been found to occur on positively charged soil particles (Wong et al., 1990, 2009), while ammonium has been found to adsorb in heavy clay soils but is generally transformed into nitrate in agricultural soils. While there is usually a chemical equilibrium between available and reactive ions and those in the soil solution (a prerequisite for deriving thresholds based on simple nutrient concentration analysis), no such equilibrium exists for N. Instead, biologically mediated processes affect the availability of N to crops in agricultural soils. Important soil parameters affecting soil N availability include pH, organic matter and clay content. When N is added to soil, a part is consumed by vegetation, and the N surplus is emitted to air, as ammonia $(N H}_{3})$ , nitric oxide (NO), nitrous oxide $(N}_{2}O})$ or dinitrogen $(N}_{2})$ , or to groundwater and surface water, mainly as nitrate $(N O}_{3})$ ), or it accumulates in soil (Figure 3.1); however, the long-term change in the stock of organic soil N is very limited. Due to this behaviour, changes in N inputs from fertiliser and manure directly affect crop yields, even in soils with a high soil N status. "
-    },
-    {
-        "type": "text",
-        "text": "Phosphorus ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Unlike N, the concentration of P in soil solution is buffered by the stock of reactive or readily available P. Consequently, plant P uptake is strongly governed by the soil P status, and this holds also for losses of P to groundwater and surface water. Because of this, changes in P inputs from fertiliser and manure have smaller impacts on crop yields in soils with a high P content. A meta-analysis of the yield response to long-term phosphorous fertilisation from 30 field experiments in Germany and Austria showed a strong decline in the magnitude of the yield response with increasing soil P content, with no effect at high soil P status (Buczko et al., 2018). Important soil parameters affecting the availability of soil P include the aluminium and iron oxide content. "
-    },
-    {
-        "type": "text",
-        "text": "3.1.2\tImpact of N and P on biomass production and soil carbon sequestration ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Agricultural soils and crop growth/soil carbon sequestration ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "In unfertilised soils, crop growth is determined by the soil N status and specifically the soil P status, as described above. In case of fertilisation, however, the N status of the soil is not very relevant, as N is readily available, and N limitation due to the soil N status can be compensated for by N fertilisation. In agricultural systems, N inputs from fertiliser and manure thus mainly affect crop yield, thereby also increasing the carbon (C) input by crop residues. On the other hand, soil N input may enhance soil C decomposition, and it has been claimed that inorganic N fertiliser leads to a decline in both the organic C (Khan et al., 2007) and organic N (Mulvaney et al., 2009) content based on an analysis of soil C and N data from long-term field experiments. However, both assessments were heavily criticised in the literature (Reid, 2008; Powlson et al., 2010) and there are various data sets indicating that enhanced N inputs lead to an increase in soil C in agricultural soils with N limitation (Amelung et al., 2020). "
-    },
-    {
-        "type": "text",
-        "text": ""
-    },
-    {
-        "type": "text",
-        "text": "The P status may highly affect long-term crop yield, and crop yield increases in response to P fertilisation until a threshold is reached, above which crop yield no longer responds to P application (Mallarino and Blackmer, 1992). For example, Jungk et al. (1993) found that 14 years of different P fertiliser application rates varying between zero and $180\\,\\mathrm{kg}\\,P}_{2}O}_{5}$ per year at four equal intervals hardly affected the yield or plant P concentrations of winter wheat and sugar beet planted in rotation. They concluded that plant P demand was fully satisfied by uptake from soil P reserves accumulated from previous soil P applications in excess of plant demand. This critical P level is affected, however, by soil properties such as clay and organic matter content and also by climatic variables, such as temperature (Buczko et al., 2018; Hirte et al., 2021). In summary, N fertilisation mainly affects crop growth, but the impact of soil N status is limited, while soil P status affects crop yield up to a critical level. "
-    },
-    {
-        "type": "text",
-        "text": "Forest soils and forest growth/soil carbon sequestration ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "In unfertilised soils, such as terrestrial ecosystems, biomass production is generally N and/or P limited. This holds specifically for forest ecosystems, in which tree growth is generally limited by the N availability, which in turn is affected by the soil N status (especially the soil C/N ratio and the P availability). Increased N deposition often thus stimulates forest growth and hence C sequestration (Högberg, 2007; De Vries et al., 2009; Thomas et al., 2010), considering that in forests SOC decomposition is often reduced in response to (high) N deposition (e.g. Janssens et al., 2010).The N-induced increase in growth can be diminished, however, when the accompanying P supply is deficient (Braun et al., 2010; Li et al., 2015; Lang et al., 2016). Soil P availability in terrestrial ecosystems is primarily driven by mineral weathering and atmospheric deposition (Vitousek et al., 2010). P input from atmospheric deposition is low, and this also holds for weathering, which is also generally low. Newman (1995) reviewed P deposition and weathering in global terrestrial ecosystems and estimated a range of 0.07-1.7kg/ha/year for P deposition and 0.01-1.0kg/ha/year for P weathering, indicating that both fluxes are in the same order of magnitude. "
+        "text": "In unfertilised soils, such as terrestrial ecosystems, biomass production is generally N and/or P limited. This holds specifically for forest ecosystems, in which tree growth is generally limited by the N availability, which in turn is affected by the soil N status (especially the soil C/N ratio and the P availability). Increased N deposition often thus stimulates forest growth and hence C sequestration (Högberg, 2007; De Vries et al., 2009; Thomas et al., 2010), considering that in forests SOC decomposition is often reduced in response to (high) N deposition (e.g. Janssens et al., 2010).The N-induced increase in growth can be diminished, however, when the accompanying P supply is deficient (Braun et al., 2010; Li et al., 2015; Lang et al., 2016). Soil P availability in terrestrial ecosystems is primarily driven by mineral weathering and atmospheric deposition (Vitousek et al., 2010). P input from atmospheric deposition is low, and this also holds for weathering, which is also generally low. Newman (1995) reviewed P deposition and weathering in global terrestrial ecosystems and estimated a range of 0.07-1.7kg/ha/year for P deposition and 0.01-1.0kg/ha/year for P weathering, indicating that both fluxes are in the same order of magnitude."
     },
     {
         "type": "text",
