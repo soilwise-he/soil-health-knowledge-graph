@@ -381,7 +381,7 @@
     },
     {
         "type": "text",
-        "text": "In a review study, Pawar et al. (2017) concluded that existing SOC thresholds are largely located at the levels where soil function indicators perform sufficiently well while optimal yield is achieved. Examples of such soil function indicators are degree of water-stable soil aggregation, soil stability, water-holding capacity, micronutrient availability and cation exchange capacity. When SOC levels in soil are below $\\uparrow\\%$ , soil health may be constrained and potential yields may not be achieved, while a minimum of $2\\%$ SOC is necessary to maintain structural soil stability, and, if SOC content is $1.2-1.5\\%$ , stability declines rapidly (Kay and Angers, 1999). Lopes et al. (2013) delineated a critical range of SOC for two soil orders: alfisols (corresponding largely to luvisols and lixisols in the World Reference Base for Soil Resources) with $0.5{\\cdot}0.77\\%$ SOC; and entisols (leptosols in the World Reference Base) with $1.03-1.16\\%$ SOC."
+        "text": "In a review study, Pawar et al. (2017) concluded that existing SOC thresholds are largely located at the levels where soil function indicators perform sufficiently well while optimal yield is achieved. Examples of such soil function indicators are degree of water-stable soil aggregation, soil stability, water-holding capacity, micronutrient availability and cation exchange capacity. When SOC levels in soil are below 1%, soil health may be constrained and potential yields may not be achieved, while a minimum of 2% SOC is necessary to maintain structural soil stability, and, if SOC content is 1.2-1.5%, stability declines rapidly (Kay and Angers, 1999). Lopes et al. (2013) delineated a critical range of SOC for two soil orders: alfisols (corresponding largely to luvisols and lixisols in the World Reference Base for Soil Resources) with 0.5-0.77% SOC; and entisols (leptosols in the World Reference Base) with 1.03-1.16% SOC."
     },
     {
         "type": "text",
@@ -389,18 +389,7 @@
     },
     {
         "type": "text",
-        "text": "Table 2.3 presents an overview of the thresholds for SOC discussed in this report. "
-    },
-    {
-        "type": "table",
-        "img_path": "images/5a87a25d2eae26ecb26ce478526c0602007f27082fc37c07f2906dd8ad55d7ca.jpg",
-        "table_caption": "Table 2.3\tOverview of SOC thresholds ",
-        "table_footnote": "Note:\tBenchmark sites reflect environmental and management conditions that are representative of a large area (Van Lynden et al., 2004).  Each site represents a very specific set of local conditions that are distinct from other environments. Benchmark sites are particularly  important to validate simulation models of indicators. "
-    },
-    {
-        "type": "text",
-        "text": "2.3.2\tOptimal or site-specific SOC reference values\t",
-        "text_level": 1
+        "text": "Table 2.3 presents an overview of the thresholds for SOC discussed in this report."
     },
     {
         "type": "text",
