@@ -677,119 +677,63 @@
     },
     {
         "type": "text",
-        "text": "N in soil solution: impacts on forests: 1-5mg N/l\nEmpirical data suggest that critical dissolved N concentrations for adverse impacts on fine root biomass/ root length and increased sensitivity to frost and fungal diseases vary between 1-3mg N/l and 3-5mg N/l, respectively (De Vries et al., 2007)). The critical values for impacts on fine root biomass and root length are based on Matzner and Murach (1995), who found that the total fine root biomass of Norway spruce saplings decreased significantly when the dissolved N (NO₃+NH₄) concentration was >2mg N/l. Critical dissolved N concentrations for increased sensitivity to frost and fungal diseases have been derived from a critical N concentration in the needles of 18g/kg above which sensitivity increases. De Vries et al. (2007) derived a relationship between foliar N content and dissolved annual average N concentration, based on the results from 120 intensive monitoring plots in Europe. Below $3m g}\\,N}/I},$ , the N content in foliage was always below $18\\mathrm{g/kg,}$  while above 5mg N/l, values were nearly always above this $18\\mathrm{g}/\\mathrm{kg}$ . In this range, adverse vegetation changes are also found (De Vries et al., 2007). In this context, the potentially leachable N can also be used by extraction with 0.1M KCl or $0.005M}\\,{C a C l}}_{2},$ which correlates well with dissolved N."
+        "text": "N in soil solution: impacts on forests: 1-5mg N/l\nEmpirical data suggest that critical dissolved N concentrations for adverse impacts on fine root biomass/ root length and increased sensitivity to frost and fungal diseases vary between 1-3mg N/l and 3-5mg N/l, respectively (De Vries et al., 2007)). The critical values for impacts on fine root biomass and root length are based on Matzner and Murach (1995), who found that the total fine root biomass of Norway spruce saplings decreased significantly when the dissolved N (NO₃+NH₄) concentration was >2mg N/l. Critical dissolved N concentrations for increased sensitivity to frost and fungal diseases have been derived from a critical N concentration in the needles of 18g/kg above which sensitivity increases. De Vries et al. (2007) derived a relationship between foliar N content and dissolved annual average N concentration, based on the results from 120 intensive monitoring plots in Europe. Below 3mg N/l, the N content in foliage was always below 18g/kg, while above 5mg N/l, values were nearly always above this 18g/kg. In this range, adverse vegetation changes are also found (De Vries et al., 2007). In this context, the potentially leachable N can also be used by extraction with 0.1M KCl or 0.005M CaCl₂ which correlates well with dissolved N."
     },
     {
         "type": "text",
-        "text": "•\t$N O}_{3}$ in groundwater: 50mg $N O}_{3}/|\\cdot$ - The critical $N O}_{3}$ concentration in groundwater is generally set to the World Health Organization (WHO) drinking water limit of 50mg $N O}_{3}/|$ or $11.3\\mathrm{m}\\,N O}_{3^{-}}N}/1$ . This limit is based on epidemiological evidence for met haemoglobin emi a in infants (WHO, 2011)."
+        "text": "NO₃ in groundwater: 50mg NO₃/l\nThe critical NO₃ concentration in groundwater is generally set to the World Health Organization (WHO) drinking water limit of 50mg NO₃/l or 11.3mg NO₃-N/l. This limit is based on epidemiological evidence for methaemoglobinemia in infants (WHO, 2011)."
     },
     {
         "type": "text",
-        "text": "•\tN in surface water: $1.0{\\cdot}2.5\\mathrm{m}\\mathrm{g}\\,N}/\\mathrm{l}$ Critical limits for dissolved total N in surface water, as an indicator for eutrophication of aquatic ecosystems, vary in the range $1.0{\\cdot}2.5\\mathrm{m}\\mathrm{g}\\,N}/\\mathrm{I},$ . This is based on (1) an extensive study on the ecological and toxicological effects of inorganic N pollution (Camargo and Alonso, 2006) and (2) an overview of maximum allowable N concentrations in surface waters in national surface water quality standards (Liu et al., 2011)."
+        "text": "N in surface water: 1.0-2.5mg N/l\nCritical limits for dissolved total N in surface water, as an indicator for eutrophication of aquatic ecosystems, vary in the range 1.0-2.5mg N/l. This is based on (1) an extensive study on the ecological and toxicological effects of inorganic N pollution (Camargo and Alonso, 2006) and (2) an overview of maximum allowable N concentrations in surface waters in national surface water quality standards (Liu et al., 2011)."
     },
     {
         "type": "text",
-        "text": "For comparison: critical loads refer to the critical level of deposition from the atmosphere, and can be calculated with models that make use of critical limits of N in soil solution (see De Vries et al., 2015a). In addition, critical limits for N in air, groundwater and surface water are used to assess critical N inputs in agricultural soils (e.g. De Vries and Schulte-Uebbing, 2020). "
+        "text": "For comparison: critical loads refer to the critical level of deposition from the atmosphere, and can be calculated with models that make use of critical limits of N in soil solution (see De Vries et al., 2015a). In addition, critical limits for N in air, groundwater and surface water are used to assess critical N inputs in agricultural soils (e.g. De Vries and Schulte-Uebbing, 2020)."
     },
     {
         "type": "text",
-        "text": "To avoid losses in crop production and negative environmental impacts, available soil P levels should ideally stay:\n•\tabove a target level below which crop yield is limited (Mallarino and Blackmer 1992);\n•\tbelow a critical level above which P leaching and run-off is significantly enhanced (e.g. Li et al., 2011). "
+        "text": "To avoid losses in crop production and negative environmental impacts, available soil P levels should ideally stay:\n•\tabove a target level below which crop yield is limited (Mallarino and Blackmer 1992);\n•\tbelow a critical level above which P leaching and run-off is significantly enhanced (e.g. Li et al., 2011)."
     },
     {
         "type": "text",
-        "text": "This principle is illustrated in Figure 3.2. Both crop yield, with related plant P uptake, and P leaching are affected by the soil P fertility status. The soil fertility status is approximated by an extractant that assess an available soil P level, such as P-Bray, P-Olsen, P-oxalate, P-ammonium lactate and P-Mehlich. The figure shows a critical available P level above which crop yield no longer responds (target level for crop yield in Figure 3.2), and a critical available P level above which the risk of P leaching increases (critical level for P leaching potential in Figure 3.2). The latter level is defined as the change point between available soil P and $C a C}|_{2}$ -P, where $C a C l}_{2}$ -P is indicative for dissolved P that is leached out of the system, mostly approximated by P-CaCl2 as an indicator of "
+        "text": "This principle is illustrated in Figure 3.2. Both crop yield, with related plant P uptake, and P leaching are affected by the soil P fertility status. The soil fertility status is approximated by an extractant that assess an available soil P level, such as P-Bray, P-Olsen, P-oxalate, P-ammonium lactate and P-Mehlich. The figure shows a critical available P level above which crop yield no longer responds (target level for crop yield in Figure 3.2), and a critical available P level above which the risk of P leaching increases (critical level for P leaching potential in Figure 3.2). The latter level is defined as the change point between available soil P and CaCl₂-P, where CaCl₂-P is indicative for dissolved P that is leached out of the system, mostly approximated by P-CaCl₂ as an indicator of risk (see Heckrath et al., 1995; Hesketh and Brookes, 2000). In the figure, the critical P level (or target level) for crop yield is lower that the critical P level for leaching, but the reverse may also be true. Critical limits for crop yields and water quality are given below based on this principle."
     },
     {
         "type": "text",
-        "text": "risk (see Heckrath et al., 1995; Hesketh and Brookes, 2000). In the figure, the critical P level (or target level) for crop yield is lower that the critical P level for leaching, but the reverse may also be true. Critical limits for crop yields and water quality are given below based on this principle. "
+        "text": "The concept of thresholds for P has been widely applied in fertiliser recommendations: a common practice is the 'build-up and maintenance' approach. The principle of this approach is that P application should:\n•\tnot be made in soils with available soil P levels above the change point (threshold) for P leaching;\n•\tequal the P withdrawal in harvested crops, if:\n\t•\tavailable soil P > target level for crop yield;\n\t•\tavailable soil P < critical level for P leaching;\n•\tequal the P withdrawal in harvested crop plus an additional amount of P fertiliser, to build up available soil P to the required level, if:\n\t•\tavailable soil P < critical level for crop yield (Li et al., 2011)."
     },
     {
         "type": "text",
-        "text": "Target levels for available P for crop yields in agricultural soils ",
-        "text_level": 1
+        "text": "This approach is illustrated in Figure 3.3. The objective is to move from the environmental risk level (very high P status) or P-deficient level (very low P status) to the level of ensuring stable crop yield (medium P status).The critical (target) P level for crop yield can be derived from short-term (months) pot experiments (in a laboratory greenhouse) and long- term (years) field experiments in which P fertiliser is added to soil and crop yields are recorded while taking account of differences in soil P status. The advantage of short-term (months) pot experiments is that soil P level is the only variable element, while all other circumstances are equal; the disadvantage is the difference in environmental conditions between laboratory and field. Conversely, the advantage of long-term field experiments is that the impacts are measured under field conditions, but the disadvantage is that other factors affecting crop yield, such as climatic variables, may also change over time, which should be accounted for when deriving a critical (target) P level."
     },
     {
         "type": "text",
-        "text": "The concept of thresholds for P has been widely applied in fertiliser recommendations: a common practice is the 'build-up and maintenance' approach. The principle of this approach is that P application should:\n "
+        "text": "A critical level is defined as the level determined by a soil test below which a crop yield response to additional nutrients is expected and above which crop yield does not respond to nutrient application (Voss, 1998). The critical P-Olsen is generally related to an expected yield loss of 5-10%, i.e. a crop yield that equals 90-95% of the maximum yield values (see also Figure 3.4 with results by Chen, X. et al., unpublished data for wheat). For example, Bai et al. (2013) in long-term experiments found critical Olsen-P values for maize, wheat and rice, of 18mg/kg, 14mg/kg and 11mg/kg, respectively, based on relationships between crop yield and soil Olsen-P values (Figure 3.4 left). Overall, critical Olsen-P values ranged from 7mg/kg to 18mg/kg. Critical limits vary significantly, depending on the type of analysis (extraction method), crop type and soil properties, and thus must be experimentally derived."
     },
     {
         "type": "text",
-        "text": "•\tnot be made in soils with available soil P levels above the change point (threshold) for P leaching;\n •\tequal the P withdrawal in harvested crops, if: •\tavailable soil $P}>$ target level for crop yield; •\tavailable soil $P}<$ critical level for P leaching;\n •\tequal the P withdrawal in harvested crop plus an additional amount of P fertiliser, to build up available soil P to the required level, if: •\tavailable soil $P}<$ critical level for crop yield (Li et al., 2011). "
-    },
-    {
-        "type": "image",
-        "img_path": "images/464a3e667d7101c15777b63912d06427b0c64a98681a7275c79c7a46a9d2152e.jpg",
-        "img_caption": "Figure 3.2\tRelationships between crop yield (left y-axis) and P leaching risk (right y-axis) and soil P  fertility status "
-    },
-    {
-        "type": "image",
-        "img_path": "images/b3dea4204b088b2a55654a8293169286ce4e3da518dc192523fed39f19ebf2bf.jpg",
-        "img_caption": "Figure 3.3\tPrinciple of soil P status and environmental risk "
+        "text": "Thresholds for P in the soil are also important to protect surface waters and groundwaters from eutrophication. For that purpose, the indicator 'P saturation index' was introduced above, i.e. the ratio: P_ox/(Fe+Al)_ox."
     },
     {
         "type": "text",
-        "text": "This approach is illustrated in Figure 3.3. The objective is to move from the environmental risk level (very high P status) or P-deficient level (very low P status) to the level of ensuring stable crop yield (medium P status).The critical (target) P level for crop yield can be derived from short-term (months) pot experiments (in a laboratory greenhouse) and long- term (years) field experiments in which P fertiliser is added to soil and crop yields are recorded while taking account of differences in soil P status. The advantage of short-term (months) pot experiments is that soil P level is the only variable element, while all other circumstances are equal; the disadvantage is the difference in environmental conditions between laboratory and field. Conversely, the advantage of long-term field experiments is that the impacts are measured under field conditions, but the disadvantage is that other factors affecting crop yield, such as climatic variables, may also change over time, which should be accounted for when deriving a critical (target) P level. "
+        "text": "The critical P saturation index (PSI) is mostly around 0.15, i.e. 15% (12.5-17.5%) of the concentration of (Al+Fe)_ox, based on data for the Netherlands (Schoumans and Chardon, 2015) and Canada (Beauchemin and Simard, 1999). Commonly, the critical value is expressed as 25-35% of the P sorption capacity, which in turn is calculated as 0.5*(Al+Fe)_ox for sandy soils and non-calcareous clay soils. The critical PSI can be related to a critical value for P in soil water (P_w) according to Chardon (1994):\nP_w=481*PSI¹.⁴³³\nwhere PSI=P_ox/(Fe_ox+Al_ox)."
     },
     {
         "type": "text",
-        "text": "A critical level is defined as the level determined by a soil test below which a crop yield response to additional nutrients is expected and above which crop yield does not respond to nutrient application (Voss, 1998). The critical P-Olsen is generally related to an expected yield loss of $5.10\\%$ , i.e. a crop yield that equals $90-95\\%$ of the maximum yield values (see also Figure 3.4 with results by Chen, X. et al., unpublished data for wheat). For example, Bai et al. (2013) in long-term experiments found critical Olsen-P values for maize, wheat and rice, of $18m g}/k g},\\,14m g}/k g}$ and 11mg/kg, respectively, based on relationships between crop yield and soil Olsen-P values (Figure 3.4 left). Overall, critical Olsen-P values ranged from 7mg/kg to 18mg/kg. Critical limits vary significantly, depending on the type of analysis (extraction method), crop type and soil properties, and thus must be experimentally derived. "
-    },
-    {
-        "type": "image",
-        "img_path": "images/6f48c4a22d0ca0f9ad401906000cf63f7c1b509deb1cfcfd40c3d9ecb007a517.jpg",
-        "img_caption": "Note: \tCK: control plot without nutrient additions; N additions of nitrogen, P for phosphorus, K for potassium and S for sulphur; M: addition of  animal manure; 1.5 NPKM: $50\\%$  higher addition of N, P, K and manure than in the standard treatment. "
+        "text": "Using a PSI of 0.15 would lead to a critical P_w level of nearly 20mg P/I, which is slightly higher than the agronomic optimum P_w level for crop yield found by Jungk et al. (1993) (nearly 10mg P/I) and lower than the agronomic optimum P_w of nearly 35mg P/l suggested by Ehlert et al. (2004) in the Netherlands."
     },
     {
         "type": "text",
-        "text": "Critical limits for dissolved P and soil P saturation index in agricultural soils in relation to water quality ",
-        "text_level": 1
+        "text": "For some aquatic systems, it has also been found that relatively low soil P levels may lead to P run-off that exceeds a critical threshold for P in surface water (Hart and Quin, 2004). There is thus a potential overlap between optimal P levels for crop yield and critical P levels for water quality, and this should be kept in mind when using agronomic optimum P levels as thresholds for P fertilisation."
     },
     {
         "type": "text",
-        "text": "Thresholds for P in the soil are also important to protect surface waters and groundwaters from eutrophication. For that purpose, the indicator $^{\\,T\\,P}}$ saturation index' was introduced above, i.e. the ratio: $P}_{\\mathrm{ox}}/(F}e}\\!+\\!A}|)_{\\mathrm{ox}}$ . "
+        "text": "In principle, there are no critical limits for soil P status indicators or for N/P ratios with respect to impacts on the growth or nutritional quality of forests. Instead, data are given for the P concentration and N/P ratios in foliage (needles and leaves), which indicate P limitation (P concentration) or imbalanced growth (too low N/P ratios). Critical N/P ratios vary strongly between coniferous and deciduous tree species: for conifers an N/P ratio <12 indicates N limitation and a N/P ratio >18 indicates P limitation, while for deciduous trees an N/P ratio <17 indicates N limitation and a N/P ratio >25 indicates P limitation (Mellert and Gottlein, 2012). One could use these values as indictors for the N/P ratio in the organic layer, since that layer reflects the N/P ratio in foliage, so: N/P ratio in organic layer >18 (coniferous forests) and N/P ratio in organic layer >25 (deciduous forests)."
     },
     {
         "type": "text",
-        "text": "The critical P saturation index (PSI) is mostly around 0.15, i.e. $15\\%$ ( $12.5-17.5\\%$ ) of the concentration of $(A l}\\!+\\!F e})_{\\mathrm{ox}},$ based on data for the Netherlands (Schoumans and Chardon, 2015) and Canada (Beauchemin and Simard, 1999). Commonly, the critical value is expressed as $25.35\\%$ of the P sorption capacity, "
-    },
-    {
-        "type": "text",
-        "text": "which in turn is calculated as $0.5{\\times}(A}|{+}F}e})_{\\propto x}$ for sandy soils and non-calcareous clay soils. The critical PSI can be related to a critical value for P in soil water $(P}_{w}})$ according to Chardon (1994): "
-    },
-    {
-        "type": "equation",
-        "text": "\n$$\nP_{w}}\\mathrm{{=}}481\\mathrm{{\\times}P S}|^{1.433}\n$$\n ",
-        "text_format": "latex"
-    },
-    {
-        "type": "text",
-        "text": "$w h e r e\\ P S I}\\!\\!=\\!\\!P}_{\\mathrm{ox}}/(F e}_{\\mathrm{ox}}\\!\\!+\\!A l}_{\\mathrm{ox}}).$ "
-    },
-    {
-        "type": "text",
-        "text": "Using a PSI of 0.15 would lead to a critical $P}_{w}}$ level of nearly $20m g}\\,P}/I}$ , which is slightly higher than the agronomic optimum $P}_{w}}$ level for crop yield found by Jungk et al. (1993) (nearly $10m g\\,P/I}$ ) and lower than the agronomic optimum $P}_{w}}$ of nearly 35mg P/l suggested by Ehlert et al. (2004) in the Netherlands. "
-    },
-    {
-        "type": "text",
-        "text": "For some aquatic systems, it has also been found that relatively low soil P levels may lead to P run-off that exceeds a critical threshold for P in surface water (Hart and Quin, 2004). There is thus a potential overlap between optimal P levels for crop yield and critical P levels for water quality, and this should be kept in mind when using agronomic optimum P levels as thresholds for P fertilisation. "
-    },
-    {
-        "type": "text",
-        "text": "Critical limits for N/P ratio in the organic layer of forest soils ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "In principle, there are no critical limits for soil P status indicators or for N/P ratios with respect to impacts on the growth or nutritional quality of forests. Instead, data are given for the P concentration and ${N}}/{P}}$ ratios in foliage (needles and leaves), which indicate P limitation (P concentration) or imbalanced growth (too low N/P ratios). Critical N/P ratios vary strongly between coniferous and deciduous tree species: for conifers an ${N}}/{P}}$ ratio ${<}12$ indicates N limitation and a ${N}}/{P}}$ ratio ${>}18$ indicates P limitation, while for deciduous trees an N/P ratio ${<}17$ indicates N limitation and a N/P ratio ${>}25$ indicates P limitation (Mellert and Gottlein, 2012). One could use these values as indictors for the N/P ratio in the organic layer, since that layer reflects the N/P ratio in foliage, so: N/P ratio in organic layer ${>}18$ (coniferous forests) and N/P ratio in organic layer ${>}25$ (deciduous forests). "
-    },
-    {
-        "type": "text",
-        "text": "Most likely the values should be lower, since N in foliage is retained before litterfall. Data from 150 Dutch sandy soils show, for example, that $95\\%$ of the sites had a ${N}}/{P}}$ ratio above 18, indicating P limitation in almost all coniferous sites, whereas more than $60\\%$ had a N/P ratio above 25, indicating P limitation for at least $60\\%$ of those sites with deciduous trees (De Vries and Leeters, 2001). "
-    },
-    {
-        "type": "text",
-        "text": "4\n Soil acidification ",
-        "text_level": 1
+        "text": "Most likely the values should be lower, since N in foliage is retained before litterfall. Data from 150 Dutch sandy soils show, for example, that 95% of the sites had a N/P ratio above 18, indicating P limitation in almost all coniferous sites, whereas more than 60% had a N/P ratio above 25, indicating P limitation for at least 60% of those sites with deciduous trees (De Vries and Leeters, 2001)."
     },
     {
         "type": "text",
@@ -802,20 +746,6 @@
     {
         "type": "text",
         "text": "This process negatively affects water quality, biological activity, and plant growth. The impacts of soil acidification on soil carbon pools is uncertain as it can decrease forest growth and related litterfall and thereby carbon input but simultaneously, it reduces decomposer activity. In the case of acid forest soils, low pH tends to favour the accumulation of organic matter through reduced decomposition. "
-    },
-    {
-        "type": "table",
-        "img_path": "images/26b7ec92811fe3e01c7ece37b42847fda9cb731757aa1bc966e7ab53a0aaebae.jpg",
-        "table_caption": "Table 4.1\tRelationship of soil acidification to key societal needs and soil functions "
-    },
-    {
-        "type": "text",
-        "text": "4.1 Rationale: impacts of soil acidification on soil fertility and crop growth ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "4.1.1\tImpacts of soil acidification on soil fertility and crop growth in agricultural systems "
     },
     {
         "type": "text",
