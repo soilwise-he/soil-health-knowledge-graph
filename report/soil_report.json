@@ -653,68 +653,39 @@
     },
     {
         "type": "text",
-        "text": "The N retention capacity of forest soils is strongly affected by N transformation (mineralisation and immobilisation) processes in the organic layer (litter, fermented Of and humic Oh horizon) and to a lesser extent in the mineral topsoil. At high soil C/N ratios, most incoming N is retained by microbial immobilisation and limited N is available to plants. When more N is stored, the C/N ratio declines, and more N becomes available by mineralisation for plant uptake and leaching. Based on the relationship between N leaching and the C/N ratio in the organic layer of forests, C/N ratios of around 25 (between 20 and 30) are considered critical, with a very high N retention fraction and thus limited leaching risk at a C/N ratio above 30, while the N retention fraction is low and the leaching risk is high at a C/N ratio below 20; in between, there is strong variation as shown in Table 3.2. "
+        "text": "The N retention capacity of forest soils is strongly affected by N transformation (mineralisation and immobilisation) processes in the organic layer (litter, fermented Of and humic Oh horizon) and to a lesser extent in the mineral topsoil. At high soil C/N ratios, most incoming N is retained by microbial immobilisation and limited N is available to plants. When more N is stored, the C/N ratio declines, and more N becomes available by mineralisation for plant uptake and leaching. Based on the relationship between N leaching and the C/N ratio in the organic layer of forests, C/N ratios of around 25 (between 20 and 30) are considered critical, with a very high N retention fraction and thus limited leaching risk at a C/N ratio above 30, while the N retention fraction is low and the leaching risk is high at a C/N ratio below 20; in between, there is strong variation as shown in Table 3.2."
     },
     {
         "type": "text",
-        "text": "Table 3.2 illustrates that there is very limited leaching risk at a C/N ratio of above 30, while it is high at ratios below 20 and in between there is strong variation. In more detail, De Vries et al. (2006) derived an N retention fraction based on the ammonium fraction in the N input and the C/N ratio of the organic layer. "
+        "text": "Table 3.2 illustrates that there is very limited leaching risk at a C/N ratio of above 30, while it is high at ratios below 20 and in between there is strong variation. In more detail, De Vries et al. (2006) derived an N retention fraction based on the ammonium fraction in the N input and the C/N ratio of the organic layer."
     },
     {
         "type": "text",
-        "text": "However, a C/N ratio below a value of 25 is often suggested as a threshold value for increased leaching. For example, Gundersen et al. (1998) presented a very limited C/N range in the organic layers (30-25) to distinguish sites with high N retention and thus low leaching potential (C/N ratio ${>}30$ ) from those with low N retention and thus high leaching potential (C/N ratio ${<}25$ ). Using a data set of published N budgets and C/N ratios in the organic layer, MacDonald et al. (2002) found the strongest relationships between N output and N input when the data were divided into 'N-rich' sites (C/N ratio ${\\le}25$ ) and 'C-rich' sites (C/N ratio ${>}25$ ). This was confirmed by Dise et al. (2009); however, they introduced a threshold of $C}/N}\\!\\!=\\!\\!23$ in the organic layer. Using a subset of the ICP Forests ( 17 ) level II database, Van der Salm et al. (2007) found that N leaching was best explained if the C/N ratio was further refined based on annual average temperature and N throughfall. "
-    },
-    {
-        "type": "table",
-        "img_path": "images/902c1d0994bacf20c141d059054a08939980c46356b2e83c21dd9c46bb333e14.jpg",
-        "table_caption": "Table 3.2\tN retention and related N leaching risk versus C/N ratio in the organic layer of forest soils "
+        "text": "However, a C/N ratio below a value of 25 is often suggested as a threshold value for increased leaching. For example, Gundersen et al. (1998) presented a very limited C/N range in the organic layers (30-25) to distinguish sites with high N retention and thus low leaching potential (C/N ratio >30) from those with low N retention and thus high leaching potential (C/N ratio <25). Using a data set of published N budgets and C/N ratios in the organic layer, MacDonald et al. (2002) found the strongest relationships between N output and N input when the data were divided into 'N-rich' sites (C/N ratio ≤25) and 'C-rich' sites (C/N ratio >25). This was confirmed by Dise et al. (2009); however, they introduced a threshold of C/N=23 in the organic layer. Using a subset of the ICP Forests level II database, Van der Salm et al. (2007) found that N leaching was best explained if the C/N ratio was further refined based on annual average temperature and N throughfall."
     },
     {
         "type": "text",
-        "text": "Critical limits for N concentrations in air and water ",
-        "text_level": 1
+        "text": "As stated above, N inputs in excess of N uptake, called the N surplus, cause emissions of NH₃ to air, leaching of NO₃ to groundwater, and run-off of total N to surface water, and there are critical limits for these concentrations in air and water in view of their impacts on ecosystems and health."
     },
     {
         "type": "text",
-        "text": "As stated above, N inputs in excess of N uptake, called the N surplus, cause emissions of $N H}_{3}$ to air, leaching of $N O}_{3}$ to groundwater, and run-off of total N to surface water, and there are critical limits for these concentrations in air and water in view of their impacts on ecosystems and health. "
+        "text": "NH₃ in air: 1-3mg NH₃/m³\nEvidence shows that NH₃ in air can have significant toxic impacts on plants as a result of direct uptake through the foliage above a threshold level (for an overview of direct effects of atmospheric NH₃ on terrestrial vegetation, see Krupa (2003) and Cape et al. (2009)). The sensitivity of (plant) species to NH₃ increases from lichens to higher plants: lichens > native vegetation > forests > agricultural crops. Cape et al. (2009) reviewed methods to set a critical level for NH₃ and collated the evidence available to propose an updated NH₃ critical level for different types of vegetation. Based on the evidence, a long-term (several year) average critical limit for NH₃ in air of 1mg NH₃/m³ is now proposed for lichens and bryophytes and of 3mg NH₃/m³ for higher plants, including forests."
     },
     {
         "type": "text",
-        "text": "•\t$N H}_{3}$ in air: $1.3m g}\\,N H}_{3}/m}^{3}$ ",
-        "text_level": 1
+        "text": "N in soil solution: leakage from forests: 1mg N/l\nDe Vries et al. (2007) suggest an upper limit of 1mg N/l to differentiate between undisturbed and 'leaky' N-saturated forest sites, based on the findings of Gundersen et al. (2006), who gave an overview of current water quality in forests by compiling a list of studies from the 1990s on nitrate concentrations in seepage water from temperate forests, including >500 sites in Europe. From the survey data, it is difficult to conclude at exactly what level a forest ecosystem can be considered 'leaky', but the authors suggest an annual average N concentration of 1mg N/l for seepage water and 0.5mg N/l for streams and catchments. Stoddard (1994) characterised four progressive stages of N saturation based on changes in seasonality and levels of NO₃ leaching in streams, and a value of 1mg N/l coincides with the limit for the near final stage."
     },
     {
         "type": "text",
-        "text": "Evidence shows that $N H}_{3}$ in air can have significant toxic impacts on plants as a result of direct uptake through the foliage above a threshold level (for an overview of direct effects of atmospheric $N H}_{3}$ on terrestrial vegetation, see Krupa (2003) and Cape et al. (2009)). The sensitivity of (plant) species to $N H}_{3}$ increases from lichens to higher plants: lichens $>$ native vegetation $>$ forests $>$ agricultural crops. Cape et al. (2009) reviewed methods to set a critical level for $N H}_{3}$ and collated the evidence available to propose an updated $N H}_{3}$ critical level for different types of vegetation. Based on the evidence, a long-term (several year) average critical limit for $N H}_{3}$ in air of 1mg $N H}_{3}/m}^{3}$ is now proposed for lichens and bryophytes and of 3mg ${N H}}_{3}/{M}}^{3}$ for higher plants, including forests.\n "
+        "text": "N in soil solution: impacts on forests: 1-5mg N/l\nEmpirical data suggest that critical dissolved N concentrations for adverse impacts on fine root biomass/ root length and increased sensitivity to frost and fungal diseases vary between 1-3mg N/l and 3-5mg N/l, respectively (De Vries et al., 2007)). The critical values for impacts on fine root biomass and root length are based on Matzner and Murach (1995), who found that the total fine root biomass of Norway spruce saplings decreased significantly when the dissolved N (NO₃+NH₄) concentration was >2mg N/l. Critical dissolved N concentrations for increased sensitivity to frost and fungal diseases have been derived from a critical N concentration in the needles of 18g/kg above which sensitivity increases. De Vries et al. (2007) derived a relationship between foliar N content and dissolved annual average N concentration, based on the results from 120 intensive monitoring plots in Europe. Below $3m g}\\,N}/I},$ , the N content in foliage was always below $18\\mathrm{g/kg,}$  while above 5mg N/l, values were nearly always above this $18\\mathrm{g}/\\mathrm{kg}$ . In this range, adverse vegetation changes are also found (De Vries et al., 2007). In this context, the potentially leachable N can also be used by extraction with 0.1M KCl or $0.005M}\\,{C a C l}}_{2},$ which correlates well with dissolved N."
     },
     {
         "type": "text",
-        "text": "•\tN in soil solution: leakage from forests: 1mg N/l \n De Vries et al. (2007) suggest an upper limit of $1\\,\\mathrm{mg}\\,N}/1$ to differentiate between undisturbed and 'leaky' N-saturated forest sites, based on the findings of Gundersen et al. (2006), who gave an overview of current water quality in forests by compiling a list of studies from the 1990s on nitrate concentrations in seepage water from temperate forests, including ${>}500$ sites in Europe. From the survey data, it is difficult to conclude at exactly what level a forest ecosystem can be considered 'leaky', but the authors suggest an annual average N concentration of $1\\,\\mathrm{mg}\\,N}/1$ for seepage water and $0.5\\mathrm{m}g\\,N}/\\vert$ for streams and catchments. Stoddard (1994) characterised four progressive stages of N saturation based on changes in seasonality and levels of $N O}_{3}$ leaching in streams, and a value of $1\\,\\mathrm{mg}\\,N}/1$ coincides with the limit for the near final stage.\n "
+        "text": "•\t$N O}_{3}$ in groundwater: 50mg $N O}_{3}/|\\cdot$ - The critical $N O}_{3}$ concentration in groundwater is generally set to the World Health Organization (WHO) drinking water limit of 50mg $N O}_{3}/|$ or $11.3\\mathrm{m}\\,N O}_{3^{-}}N}/1$ . This limit is based on epidemiological evidence for met haemoglobin emi a in infants (WHO, 2011)."
     },
     {
         "type": "text",
-        "text": "•\tN in soil solution: impacts on forests: 1-5mg N/l \n Empirical data suggest that critical dissolved N concentrations for adverse impacts on fine root biomass/ root length and increased sensitivity to frost and fungal diseases vary between $1.3m g}\\,N}/I}$ and $3{\\mathrm{-}}5\\mathrm{mg}\\,N}/,$ , respectively (De Vries et al., 2007)). The critical values for impacts on fine root biomass and root length are based on Matzner and Murach (1995), who found that the total fine root biomass of Norway spruce saplings decreased significantly when the dissolved N $(N O}_{3}\\mathrm{{+N H}_{4}})$ ) concentration w $_{N a S>}2m g}\\,N}/1}$ . Critical dissolved N concentrations for increased sensitivity to frost and fungal diseases have been derived from a critical N concentration in the needles of $18\\mathrm{g/kg,}$ above which sensitivity increases. De Vries et al. (2007) derived a relationship between foliar N content and dissolved annual average N concentration, based on the results from 120 intensive monitoring plots in Europe. Below $3m g}\\,N}/I},$ , the N content in foliage was always below $18\\mathrm{g/kg,}$  while above 5mg N/l, values were nearly always above this $18\\mathrm{g}/\\mathrm{kg}$ . In this range, adverse vegetation changes are also found (De Vries et al., 2007). In this context, the potentially leachable N can also be used by extraction with 0.1M KCl or $0.005M}\\,{C a C l}}_{2},$ which correlates well with dissolved N. "
-    },
-    {
-        "type": "text",
-        "text": ""
-    },
-    {
-        "type": "text",
-        "text": "•\t$N O}_{3}$ in groundwater: 50mg $N O}_{3}/|\\cdot$ - ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "The critical $N O}_{3}$ concentration in groundwater is generally set to the World Health Organization (WHO) drinking water limit of 50mg $N O}_{3}/|$ or $11.3\\mathrm{m}\\,N O}_{3^{-}}N}/1$ . This limit is based on epidemiological evidence for met haemoglobin emi a in infants (WHO, 2011). "
-    },
-    {
-        "type": "text",
-        "text": "•\tN in surface water: $1.0{\\cdot}2.5\\mathrm{m}\\mathrm{g}\\,N}/\\mathrm{l}$ ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Critical limits for dissolved total N in surface water, as an indicator for eutrophication of aquatic ecosystems, vary in the range $1.0{\\cdot}2.5\\mathrm{m}\\mathrm{g}\\,N}/\\mathrm{I},$ . This is based on (1) an extensive study on the ecological and toxicological effects of inorganic N pollution (Camargo and Alonso, 2006) and (2) an overview of maximum allowable N concentrations in surface waters in national surface water quality standards (Liu et al., 2011). "
+        "text": "•\tN in surface water: $1.0{\\cdot}2.5\\mathrm{m}\\mathrm{g}\\,N}/\\mathrm{l}$ Critical limits for dissolved total N in surface water, as an indicator for eutrophication of aquatic ecosystems, vary in the range $1.0{\\cdot}2.5\\mathrm{m}\\mathrm{g}\\,N}/\\mathrm{I},$ . This is based on (1) an extensive study on the ecological and toxicological effects of inorganic N pollution (Camargo and Alonso, 2006) and (2) an overview of maximum allowable N concentrations in surface waters in national surface water quality standards (Liu et al., 2011)."
     },
     {
         "type": "text",
@@ -722,25 +693,7 @@
     },
     {
         "type": "text",
-        "text": "3.3.2\tTarget levels and critical limits for P status indicators ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Relationships between target levels and critical levels for available P for crop yield and water quality in agricultural soils ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "To avoid losses in crop production and negative environmental impacts, available soil P levels should ideally stay:\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tabove a target level below which crop yield is limited (Mallarino and Blackmer 1992);\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tbelow a critical level above which P leaching and run-off is significantly enhanced (e.g. Li et al., 2011). "
+        "text": "To avoid losses in crop production and negative environmental impacts, available soil P levels should ideally stay:\n•\tabove a target level below which crop yield is limited (Mallarino and Blackmer 1992);\n•\tbelow a critical level above which P leaching and run-off is significantly enhanced (e.g. Li et al., 2011). "
     },
     {
         "type": "text",
