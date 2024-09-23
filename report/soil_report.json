@@ -737,207 +737,91 @@
     },
     {
         "type": "text",
-        "text": "Soil acidification occurs when the acid neutralising capacity of the soil is reduced, which leads to a decrease in pH. Acidification can be caused by acidic precipitation of sulphur dioxide, ammonia and nitric acid, and it has historically affected both forest and agricultural soils. Nowadays, the most significant effect is seen on unlimed agricultural land as a result of the application of ammonium-based fertilisers and urea, especially on naturally acidic soils such as sandy soils. This is because ammonium nitrogen is readily converted to nitrate and hydrogen ions, and its presence decreases the availability of plant nutrients, such as phosphorus, calcium and magnesium (base cations). At very low pH (<4.5) it increases the availability of elements such as aluminium and manganese, sometimes even to toxic levels. As a consequence, crop yields decline. Soil acidification can be counteracted by liming. "
+        "text": "Soil acidification occurs when the acid neutralising capacity of the soil is reduced, which leads to a decrease in pH. Acidification can be caused by acidic precipitation of sulphur dioxide, ammonia and nitric acid, and it has historically affected both forest and agricultural soils. Nowadays, the most significant effect is seen on unlimed agricultural land as a result of the application of ammonium-based fertilisers and urea, especially on naturally acidic soils such as sandy soils. This is because ammonium nitrogen is readily converted to nitrate and hydrogen ions, and its presence decreases the availability of plant nutrients, such as phosphorus, calcium and magnesium (base cations). At very low pH (<4.5) it increases the availability of elements such as aluminium and manganese, sometimes even to toxic levels. As a consequence, crop yields decline. Soil acidification can be counteracted by liming."
     },
     {
         "type": "text",
-        "text": "Table 4.1 provides an overview of the impact of soil acidification on soil functions and services. Input of acids (sulphuric and nitric acids, amino acids and nitrate) through atmospheric deposition is closely linked to the loss of base cations (e.g. calcium, magnesium, potassium, sodium) through cation exchange processes in soils (acid neutralization capacity until the soil's buffer capacity is exhausted), and subsequent leaching of mineral nutrients. "
+        "text": "Table 4.1 provides an overview of the impact of soil acidification on soil functions and services. Input of acids (sulphuric and nitric acids, amino acids and nitrate) through atmospheric deposition is closely linked to the loss of base cations (e.g. calcium, magnesium, potassium, sodium) through cation exchange processes in soils (acid neutralization capacity until the soil's buffer capacity is exhausted), and subsequent leaching of mineral nutrients."
     },
     {
         "type": "text",
-        "text": "This process negatively affects water quality, biological activity, and plant growth. The impacts of soil acidification on soil carbon pools is uncertain as it can decrease forest growth and related litterfall and thereby carbon input but simultaneously, it reduces decomposer activity. In the case of acid forest soils, low pH tends to favour the accumulation of organic matter through reduced decomposition. "
+        "text": "This process negatively affects water quality, biological activity, and plant growth. The impacts of soil acidification on soil carbon pools is uncertain as it can decrease forest growth and related litterfall and thereby carbon input but simultaneously, it reduces decomposer activity. In the case of acid forest soils, low pH tends to favour the accumulation of organic matter through reduced decomposition."
     },
     {
         "type": "text",
-        "text": "Nitrogen generally has a positive effect on soil fertility and conditions for crop growth, but the overuse of nitrogen fertiliser can also lead to significant acidification of cropland, reflected by a decline in pH (Guo et al., 2010), unless soils are properly managed (e.g. limed). In non-calcareous acidic soils (pH between \n 4.5 and 7.0), base cation nutrients, i.e. calcium $(C}a}^{2+})$ , magnesium \n $(M}g}^{2+})$ and potassium $(K}^{+}),$ , adsorbed onto soil organic matter and clay, are crucial in buffering the protons produced by elevated nitrogen inputs (De Vries et al., 2015b). During acidification, these base cations are replaced by protons and subsequently leached from the rooting zone, accompanied by nitrate (De Vries et al., 1989; Lucas et al., 2011), which decreases their availability. This is an adverse effect, since this loss of base cations implies a loss of the acid neutralisation capacity, and it may affect plant growth at low base saturation levels (i.e. the ratio of adsorbed base cations on clay and organic matter to the cation exchange capacity). At very low pH levels, there is not only more limited availability of base cation nutrients, such as calcium, magnesium and potassium, but also elevated concentrations of toxic elements, such as aluminium, manganese and toxic metals, such as cadmium, which can restrict plant and soil biota growth due to nutrient deficiency and metal toxicity (Rengel, 1992; Kochian et al., 2004; Wang et al., 2007). In addition, pH can also affect the availability of zinc with available zinc increasing at low pH $(p H}<5.5)$ ) and, conversely, a lower availability or even deficit at pH levels higher than pH 7. For phosphorus the impact of pH on availability is more complex and plant availability decreases both at low $(p}H}<5)$ ) and high $(p}H}>6-}7)$ ) due to interaction and precipitation with iron and aluminium (at low pH) and calcium at high pH (Barrow, 2017). There are indications that crop growth can be limited in acidic soils (Lucas and Davis, 1961; Baquy et al., 2017). Aluminium toxicity is a major constraint for crop production in highly acidic soils $(p H\\!<\\!4.5)}$ by damaging and stunting root systems (Delhaize and Ryan, 1995; Kochian et al., 2015) and potentially decreasing the availability of phosphate by forming aluminium-phosphorus precipitates (Hinsinger, 2001). "
+        "text": "Nitrogen generally has a positive effect on soil fertility and conditions for crop growth, but the overuse of nitrogen fertiliser can also lead to significant acidification of cropland, reflected by a decline in pH (Guo et al., 2010), unless soils are properly managed (e.g. limed). In non-calcareous acidic soils (pH between 4.5 and 7.0), base cation nutrients, i.e. calcium (Ca²⁺), magnesium (Mg²⁺) and potassium (K⁺), adsorbed onto soil organic matter and clay, are crucial in buffering the protons produced by elevated nitrogen inputs (De Vries et al., 2015b). During acidification, these base cations are replaced by protons and subsequently leached from the rooting zone, accompanied by nitrate (De Vries et al., 1989; Lucas et al., 2011), which decreases their availability. This is an adverse effect, since this loss of base cations implies a loss of the acid neutralisation capacity, and it may affect plant growth at low base saturation levels (i.e. the ratio of adsorbed base cations on clay and organic matter to the cation exchange capacity). At very low pH levels, there is not only more limited availability of base cation nutrients, such as calcium, magnesium and potassium, but also elevated concentrations of toxic elements, such as aluminium, manganese and toxic metals, such as cadmium, which can restrict plant and soil biota growth due to nutrient deficiency and metal toxicity (Rengel, 1992; Kochian et al., 2004; Wang et al., 2007). In addition, pH can also affect the availability of zinc with available zinc increasing at low pH (pH < 5.5) and, conversely, a lower availability or even deficit at pH levels higher than pH 7. For phosphorus the impact of pH on availability is more complex and plant availability decreases both at low (pH < 5) and high (pH > 6-7) due to interaction and precipitation with iron and aluminium (at low pH) and calcium at high pH (Barrow, 2017). There are indications that crop growth can be limited in acidic soils (Lucas and Davis, 1961; Baquy et al., 2017). Aluminium toxicity is a major constraint for crop production in highly acidic soils (pH<4.5) by damaging and stunting root systems (Delhaize and Ryan, 1995; Kochian et al., 2015) and potentially decreasing the availability of phosphate by forming aluminium-phosphorus precipitates (Hinsinger, 2001)."
     },
     {
         "type": "text",
-        "text": "4.1.2\tImpacts of soil acidification on soil fertility, tree vitality and biodiversity in forest ecosystems ",
-        "text_level": 1
+        "text": "In forest soils, the link between nitrogen- and sulphur-induced acid deposition and changes in soil and soil solution chemistry is well documented. In calcareous soils, the input of acidifying compounds (nitrogen and sulphur) will not change soil pH until almost all the calcium carbonate has been depleted. In these soils, protons (H⁺) are buffered by the dissolution of bicarbonate (HCO₃⁻) and calcium (Ca²⁺) from calcium carbonate, with HCO₃⁻ and Ca²⁺ ions leaching from the system, while the pH remains the same. In non-calcareous soils, buffering is taken over by the weathering of silicate minerals and by the cation exchange processes of the soil adsorption complexes. In these soils, protons are exchanged for calcium (Ca²⁺), magnesium (Mg²⁺) and potassium (K⁺), and these cations are leached from the soil together with anions (mostly nitrate or sulphate). Subsequent leaching of Ca²⁺, Mg²⁺ and K⁺ leads to loss of the soil's base cation buffering capacity and to imbalances in the nutrients needed for plant growth. Because of the restricted capacity of this buffering system, soil pH will decrease. It has been shown that acid deposition in many forested catchments has caused prolonged export of base cations, such as Ca²⁺ and Mg²⁺, from forest soils, resulting in base cation nutrient depletion (Watmough et al., 2005; Sverdrup et al., 2006; Akselsson et al., 2007). When the soil pH drops below 4.5, the acid input is also buffered by aluminium release, causing aluminium toxicity. Significant correlations between sulphur and nitrogen deposition and enhanced concentrations of Al³⁺ in soil solutions have been demonstrated in acidic forest soils in Europe (De Vries et al., 2003)."
     },
     {
         "type": "text",
-        "text": "In forest soils, the link between nitrogen- and sulphur-induced acid deposition and changes in soil and soil solution chemistry is well documented. In calcareous soils, the input of acidifying compounds (nitrogen and sulphur) will not change soil pH until almost all the calcium carbonate has been depleted. In these soils, protons (H + ) are buffered by the dissolution of bicarbonate $({H C O}}_{3})$ ) and calcium $(C}a}^{2+})$ from calcium carbonate, with $H C O}_{3}^{\\,-}$  and ${C}}{a}}^{2+}$ ions leaching from the system, while the pH remains the same. In non-calcareous soils, buffering is taken over by the weathering of silicate minerals and by the cation exchange processes of the soil adsorption complexes. In these soils, protons are exchanged for calcium $(C}a}^{2+})$ , magnesium $(M}g}^{2+})$  and potassium $(K}^{+}),$ , and these cations are leached from the soil together with anions (mostly nitrate or sulphate). Subsequent leaching of ${C}}{a}}^{2+}$ , $M}g}^{2+}$ and $K}^{+}$ leads to loss of the soil's base cation buffering capacity and to imbalances in the nutrients needed for plant growth. Because of the restricted capacity of this buffering system, soil pH will decrease. It has been shown that acid deposition in many forested catchments has caused prolonged export of base cations, such as ${C}}{a}}^{2+}$ and $M}g}^{2+}$ , from forest soils, resulting in base cation nutrient depletion (Watmough et al., 2005; Sverdrup et al., 2006; Akselsson et al., 2007). When the soil pH drops below 4.5, the acid input is also buffered by aluminium release, causing aluminium toxicity. Significant correlations between sulphur and nitrogen deposition and enhanced concentrations of $A l^{3+}}$ in soil solutions have been demonstrated in acidic forest soils in Europe (De Vries et al., 2003). "
+        "text": "Soil acidification is correlated not so much with tree growth but rather with a decline in tree vitality, disturbed tree nutrition, enhanced tree mortality and reduced plant species diversity in the forest undergrowth (De Vries et al., 2014a; Schmitz et al., 2019). This has led to liming campaigns for forest soils, which have — in combination with decreasing acid deposition — significantly increased soil pH. Exceedances of sulphur critical loads have been reduced but are still observed in forests (Forsius et al., 2021)."
     },
     {
         "type": "text",
-        "text": ""
+        "text": "There are various indicators for soil acidification, including pH, base saturation, aluminium concentration and the ratio of aluminium to base cations (De Vries et al., 2015b)."
     },
     {
         "type": "text",
-        "text": "Soil acidification is correlated not so much with tree growth but rather with a decline in tree vitality, disturbed tree nutrition, enhanced tree mortality and reduced plant species diversity in the forest undergrowth (De Vries et al., 2014a; Schmitz et al., 2019). This has led to liming campaigns for forest soils, which have — in combination with decreasing acid deposition — significantly increased soil pH. Exceedances of sulphur critical loads have been reduced but are still observed in forests (Forsius et al., 2021). "
+        "text": "Agricultural soils: pH and base saturation\nIn agricultural soils, pH and base saturation is the indicator that is used to assess the soil acidity status and the need for liming. Dissolved aluminium concentrations or the ratio of aluminium to base cations are never used as indicators, since aluminium release happens at pH values below 4.5 and a base saturation level of below 25% is considered (far) too low for agricultural soils, since crop yield is clearly affected below such values (see Section 4.3). Overall, pH is the key indicator used in agricultural soils, since it is best related to the availability of nutrients and crop yield."
     },
     {
         "type": "text",
-        "text": "4.2 Indicators for acidity status of soils ",
-        "text_level": 1
+        "text": "Forest soils: aluminium concentrations and base cation to aluminium ratios\nUlrich and co-workers (e.g. Ulrich and Matzner, 1983) were among the first to postulate that increased aluminium concentrations, specifically inorganic aluminium, and elevated Al/Ca ratios in soil solution are a major cause of forest dieback, because they damage the root systems of tree species. The effects of high concentrations of aluminium on trees were tested with seedlings, grown in water cultures, in pot trials (greenhouse), mainly in the 1980s (see Rengel (1992) and Kinraide (2003) for overviews). The hypothesised mechanisms of aluminium toxicity include hampered root growth and inhibition of the uptake of nutrients (Schulze, 1989; Sverdrup et al., 1990, 1992; Sverdrup and Warfvinge, 1993; Warfvinge et al., 1993; Matzner and Murach, 1995). Furthermore, several authors (e.g. Roelofs et al., 1985) showed that release of aluminium by soil acidification and imbalances in the ratio of ammonium to base cations, due to excessive nitrogen inputs and reduced nitrification, may cause nutrient deficiencies, which may be aggravated by a loss of mycorrhiza or plant root damage. This coincided temporally with field observations and foliage analyses in which deficiencies of magnesium and potassium caused yellowing of the needles in Norway spruce (Zöttl and Mies, 1983). In the 1980s, several authors (e.g. Ulrich and Pankrath, 1983; Hutchinson et al., 1986) considered soil acidification, especially the increase in the concentration of Al³⁺ in soil solution, responsible for forest decline, since Al³⁺ is very likely to be toxic to plant roots (Marschner, 1990; Mengel, 1991; Sverdrup and Warfvinge, 1992; Cronan and Grigal 1995). The risk from Al³⁺ to forest health in the field is considered lower, but the adverse impact of Al³⁺ on root functioning is an established fact, at least under laboratory conditions."
     },
     {
         "type": "text",
-        "text": "There are various indicators for soil acidification, including pH, base saturation, aluminium concentration and the ratio of aluminium to base cations (De Vries et al., 2015b). "
+        "text": "In forest soils, critical levels for aluminium concentrations and for the aluminium to base cation ratio have been derived, and an overview of these levels is given in De Vries et al (2015b). However, the standard indicator for soil acidity is the pH level, which is the indicator used in this study."
     },
     {
         "type": "text",
-        "text": "Agricultural soils: pH and base saturation\n ",
-        "text_level": 1
+        "text": "To avoid losses in crop production and environmental impacts, in terms of enhanced metal uptake and metal leaching, soil pH should stay above the critical level below which crop yield is limited, generally a level at which the availability of heavy metals is also limited. As with phosphorus, the critical pH level can be derived by:\n•\tShort-term manipulation experiments in which the soil pH value is manipulated by adding H⁺ or OH⁻ and then growing a crop in it (pot experiments in a laboratory or greenhouse). The advantage is that soil pH is the only variable, while all other factors, such as soil type, temperature, water availability, nutrient availability, are kept equal. The disadvantage is that differences in environmental conditions in the laboratory or greenhouse on one hand and those under field conditions on the other, may affect the response of the experiment. Furthermore, adjusting soil pH by adding acid or alkali can strongly affect the soil microorganism community, as well as nutrient availability and biomass accumulation.\n•\tLong-term field experiments on the impacts of declining soil pH on plant growth and crop yield. The advantage is that the impacts are derived in field conditions, but the disadvantage is that other (confounding) factors may change over time, including climatic variables and the occurrence of pests and diseases, which requires careful consideration of the data."
     },
     {
         "type": "text",
-        "text": "In agricultural soils, pH and base saturation is the indicator that is used to assess the soil acidity status and the need for liming. Dissolved aluminium concentrations or the ratio of aluminium to base cations are never used as indicators, since aluminium release happens at pH values below 4.5 and a base saturation level of below $25\\%$ is considered (far) too low for agricultural soils, since crop yield is clearly affected below such values (see Section 4.3). Overall, pH is the key indicator used in agricultural soils, since it is best related to the availability of nutrients and crop yield. "
+        "text": "An example of the results thus obtained is given in Figure 4.1. A significant non-linear relationship was found between soil pH and relative crop yield, defined as the current yield divided by the maximum crop yield without acidification impacts, in both short-term manipulated experiments and long-term experiments in wheat, maize and rice. The critical pH value (threshold) corresponds to the pH at an expected yield loss of 5%, i.e. a crop yield that equals 95% of the maximum yield. In short-term experiments, critical values ranged between 4.5 and 4.7 for all three cereal crops (see Table 4.3), being close to the pH value of 4.5 at which aluminium release starts to occur. In long-term observations, the critical pH values related to an expected yield loss of 5% are, however, higher (5.0-5.9)."
     },
     {
         "type": "text",
-        "text": "Forest soils: aluminium concentrations and base cation to aluminium ratios\n ",
-        "text_level": 1
+        "text": "In liming recommendations, the optimal target soil pH for a range of crops is often given with the aim of maintaining soil pH close to a level at which overall nutrient availability for crop uptake is optimal. An example of such target levels is given in Table 4.2."
     },
     {
         "type": "text",
-        "text": "Ulrich and co-workers (e.g. Ulrich and Matzner, 1983) were among the first to postulate that increased aluminium concentrations, specifically inorganic aluminium, and elevated Al/Ca ratios in soil solution are a major cause of forest dieback, because they damage the root systems of tree species. The effects of high concentrations of aluminium on trees were tested with seedlings, grown in water cultures, in pot trials (greenhouse), mainly in the 1980s (see Rengel (1992) and Kinraide (2003) for overviews). The hypothesised mechanisms of aluminium toxicity include hampered root growth and inhibition of the uptake of nutrients (Schulze, 1989; Sverdrup et al., 1990, 1992; Sverdrup and Warfvinge, 1993; Warfvinge et al., 1993; Matzner and Murach, 1995). Furthermore, several authors (e.g. Roelofs et al., 1985) showed that release of aluminium by soil acidification and imbalances in the ratio of ammonium to base cations, due to excessive nitrogen inputs and reduced nitrification, may cause nutrient deficiencies, which may be aggravated by a loss of mycorrhiza or plant root damage. This coincided temporally with field observations and foliage analyses in which deficiencies of magnesium and potassium caused yellowing of the needles in Norway spruce (Zöttl and Mies, 1983). In the 1980s, several authors (e.g. Ulrich and Pankrath, 1983; Hutchinson et al., 1986) considered soil acidification, especially the increase in the concentration of $A l^{3+}}$  in soil solution, responsible for forest decline, since $A l^{3+}}$ is very likely to be toxic to plant roots (Marschner, 1990; Mengel, 1991; Sverdrup and Warfvinge, 1992; Cronan and Grigal 1995). The risk from $A}|^{3+}$ to forest health in the field is considered lower, but the adverse impact of $A l^{3+}}$ on root functioning is an established fact, at least under laboratory conditions. "
+        "text": "Various studies indicate that crop production is already constrained at pH values below 5.5-6.0 due to the limited availability of calcium, magnesium, potassium and phosphorus (Walker et al., 2011; Holland et al., 2019). The results at least indicate that a pH value below 5 should certainly be avoided, while 4.5 is really critical in view of aluminium toxicity. Ideally, the pH should stay above 5.5 or even 6, as indicated in the examples in Table 4.3."
     },
     {
         "type": "text",
-        "text": ""
+        "text": "The sensitivity of a tree to aluminium varies as a function of solution pH, aluminium speciation, calcium concentration, overall ionic strength, the form of inorganic nitrogen (ammonium or nitrate), mycorrhiza interactions, soil moisture, etc. Consequently, a wide range of aluminium toxicity thresholds for various tree species has been reported in the literature, varying between less than 1.5mg/l and more than 30mg/l (e.g. McCormick and Steiner 1978; Steiner et al., 1980; Ryan et al., 1986a, 1986b; Smit et al., 1987; Thornton et al., 1987; Joslin and Wolfe, 1988, 1989; Cronan et al., 1989; Keltjens and van Loenen, 1989). The sensitivity to aluminium toxicity increases from red spruce, with significant biomass reductions starting to occur near 2mg/l of inorganic aluminium, through Douglas fir, spruce and European beech, to Scots pine, oak and birch, which are relatively insensitive to aluminium (Cronan et al., 1989)."
     },
     {
         "type": "text",
-        "text": "In forest soils, critical levels for aluminium concentrations and for the aluminium to base cation ratio have been derived, and an overview of these levels is given in De Vries et al (2015b). However, the standard indicator for soil acidity is the pH level, which is the indicator used in this study. "
+        "text": "The results from a variety of laboratory experiments described above showed that the Ca/Al ratio was a better indicator of root impacts than inorganic aluminium (Sverdrup et al., 1992; Sverdrup and Warfvinge 1993; Cronan and Grigal 1995). As with aluminium, a wide range of toxicity thresholds for the Al/Ca ratio has been reported. Sverdrup and Warfvinge (1993) carried out a systematic review of the impacts of aluminium on the growth of tree seedlings and plants in laboratory experiments, based on approximately 200 studies. The response in acid soils, expressed by root growth, stem growth or plant growth in experiments, has been determined for various species of coniferous and deciduous trees. Studies showed that the plant response can be described better as a function of the base cation and Al concentration in soil solution than as a function of Al alone or of the Al/Ca ratio. The critical limit was most conveniently expressed as a molar Bc/Al_tot ratio, with Al_tot being the total (inorganic and organically complexed) aluminium concentration and Bc denoting the base cations Ca²⁺, Mg²⁺ and K⁺. Many calculations of critical loads of acid deposition on forest ecosystems use either a general limit value of 1 for the Bc/Al ratio or a tree species specific value, ranging between 0.5 and 2.0."
     },
     {
         "type": "text",
-        "text": "4.3 Critical limits for pH in agricultural soils ",
-        "text_level": 1
+        "text": "The relevance of laboratory experiments addressing aluminium toxicity under field conditions has been disputed (Kreutzer, 1995; Løkke et al., 1996; Binkley and Hogberg, 1997; De Wit et al., 2001). Indeed, healthy trees have been found at sites where high soil solution aluminium concentrations were measured (Huber et al., 2004), while nutrient deficiency symptoms in trees have been found at other sites with similar conditions (Alewell et al., 2000). In addition, whole-ecosystem experiments, designed to test the effects of acid deposition on forests (Abrahamsen et al., 1993; Beier et al., 1998; Kreutzer and Weiss, 1998; Huber et al., 2004), have been inconclusive with respect to the effects of aluminium toxicity on root growth and nutrient uptake. Despite this criticism, a mean the critical Bc/Al_tot ratio of 1 is still often used in risk assessment (De Vries et al., 2015b)."
     },
     {
         "type": "text",
-        "text": "4.3.1\tCritical pH levels for agricultural (crop)land ",
-        "text_level": 1
+        "text": "Soil pollution significantly affects human health and/or ecosystem functioning. Essential soil functions, such as the production of sufficient and safe food and the provision of clean water and a suitable habitat for soil dwelling organisms, can be impaired depending on the degree of soil pollution. To be able to assess the impact of soil pollution on soil health, meaningful indicators for the current state of soils and the associated risks from pollutants, as well as information about inputs and outputs of substances, are required. Once critical concentrations are exceeded, relevant soil functions can be impaired. To derive meaningful thresholds for pollutants in soil, the entire pathway — from emissions of pollutants to exposure — needs to be considered. This includes inputs to and outputs from soil, as well as processes that regulate concentrations in soil and adjacent relevant environmental compartments (e.g. water). This chapter provides an overview of some of the existing approaches for setting such thresholds, currently developed largely at national level. Options for harmonising thresholds are discussed, also emphasising the need for improved harmonising of risk assessment tools as a basis for soil screening values and risk assessment procedures."
     },
     {
         "type": "text",
-        "text": "To avoid losses in crop production and environmental impacts, in terms of enhanced metal uptake and metal leaching, soil pH should stay above the critical level below which crop yield is limited, generally a level at which the availability of heavy metals is also limited. As with phosphorus, the critical pH level can be derived by: "
+        "text": "Soil pollution affects various societal needs, as illustrated in Table 5.1. Clearly the impact that pollution has on each of these societal needs varies depending on soil conditions, pressures, future management and protection objectives. Here, especially, biodiversity and the filter function (in relation to water quality) are directly affected by pollution, whereas the quality of soil as platform for infrastructure is barely affected by pollution. Services such as storage of water and carbon can also be affected, albeit at much higher concentrations of pollutants than those that affect biodiversity, for example."
     },
     {
         "type": "text",
-        "text": "•\tShort-term manipulation experiments in which the soil pH value is manipulated by adding $H}^{+}$ or OH - and then growing a crop in it (pot experiments in a laboratory or greenhouse). The advantage is that soil pH is the only variable, while all other factors, such as soil type, temperature, water availability, nutrient availability, are kept equal. The disadvantage is that differences in environmental conditions in the laboratory or greenhouse on one hand and those under field conditions on the other, may affect the response of the experiment. Furthermore, adjusting soil pH by adding acid or alkali can strongly affect the soil microorganism community, as well as nutrient availability and biomass accumulation.\n "
+        "text": "Considering the interaction between soil as carrier of pollutants and the functions related to them as part of societal needs, the impact of pollution decreases in the following order:\n•\thigh for biodiversity and filtering of pollutants;•\tintermediate for crop growth;•\tnegligible for infrastructure."
     },
     {
         "type": "text",
-        "text": "•\tLong-term field experiments on the impacts of declining soil pH on plant growth and crop yield. The advantage is that the impacts are derived in field conditions, but the disadvantage is that other (confounding) factors may change over time, including climatic variables and the occurrence of pests and diseases, which requires careful consideration of the data. "
+        "text": "The complexity of pollution as a soil threat lies in the fact that there are multiple interactions between relevant soil functions and even societal needs. For example, if biomass production and biological activity in soils are reduced through pollution, then it is likely that the ecosystem service 'carbon storage' will also be affected. Unravelling all these interactions is, at present, not considered fully, and most existing frameworks for soil protection consider single relationships between pollution and a specific function or need. In this chapter we will illustrate some of the underlying principles currently used by Member States. Each of these is based on data and specific scientific approaches and assumptions about acceptable risk levels."
     },
     {
         "type": "text",
-        "text": "An example of the results thus obtained is given in Figure 4.1. A significant non-linear relationship was found between soil pH and relative crop yield, defined as the current yield divided by the maximum crop yield without acidification impacts, in both short-term manipulated experiments and long-term experiments in wheat, maize and rice. The critical pH value (threshold) corresponds to the pH at an expected yield loss of $5\\%,$ , i.e. a crop yield that equals $95\\%$ of the maximum yield. In short-term experiments, critical values ranged between 4.5 and 4.7 for all three cereal crops (see Table 4.3), being close to the pH value of 4.5 at which aluminium release starts to occur. In long-term observations, the critical pH values related to an expected yield loss of $5\\%$ are, however, higher (5.0-5.9). "
-    },
-    {
-        "type": "text",
-        "text": "In liming recommendations, the optimal target soil pH for a range of crops is often given with the aim of maintaining soil pH close to a level at which overall nutrient availability for crop uptake is optimal. An example of such target levels is given in Table 4.2. "
-    },
-    {
-        "type": "table",
-        "img_path": "images/a9eaf3e312dc25682344deb961d592c2c9eb12748682ddc8f26f944bdb0d3263.jpg",
-        "table_caption": "Table 4.2\tExample of optimal pH values for different crops as given in the literature  ",
-        "table_footnote": "Source: \tTeagasc (2022). "
-    },
-    {
-        "type": "image",
-        "img_path": "images/408eb797aed2cd870b9fdac41312314a0b791eadb3feea1ec01d2ceab4e5c95d.jpg",
-        "img_caption": "Figure 4.1\tImpact of soil pH on the relative yields of wheat, maize and rice using combined short-term pH  manipulation experiments and long-term observations "
-    },
-    {
-        "type": "table",
-        "img_path": "images/edd8da97d17355b1f4394af92b2dfab7051b63778aafb6396f02496f0caef802.jpg",
-        "table_caption": "Table 4.3\tSummarised critical pH values for wheat, maize and rice derived from short-term manipulation  experiments (STE) and long-term observations (LTE) ",
-        "table_footnote": "Source:\tCompiled from Zhu et al. (2020). "
-    },
-    {
-        "type": "text",
-        "text": "Various studies indicate that crop production is already constrained at pH values below 5.5-6.0 due to the limited availability of calcium, magnesium, potassium and phosphorus (Walker et al., 2011; Holland et al., 2019). The results at least indicate that a pH value below 5 should certainly be avoided, while 4.5 is really critical in view of aluminium toxicity. Ideally, the pH should stay above 5.5 or even 6, as indicated in the examples in Table 4.3. "
-    },
-    {
-        "type": "text",
-        "text": "4.4 Critical limits for dissolved free aluminium and the molar base cation/aluminium ratio in forest soils ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "4.4.1\tFree aluminium concentration of 2mg/l ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "The sensitivity of a tree to aluminium varies as a function of solution pH, aluminium speciation, calcium concentration, overall ionic strength, the form of inorganic nitrogen (ammonium or nitrate), mycorrhiza interactions, soil moisture, etc. Consequently, a wide range of aluminium toxicity thresholds for various tree species has been reported in the literature, varying between less than 1.5mg/l and more than 30mg/l (e.g. McCormick and Steiner 1978; Steiner et al., 1980; Ryan et al., 1986a, 1986b; Smit et al., 1987; Thornton et al., 1987; Joslin and Wolfe, 1988, 1989; Cronan et al., 1989; Keltjens and van Loenen, 1989). The sensitivity to aluminium toxicity increases from red spruce, with significant biomass reductions starting to occur near 2mg/l of inorganic aluminium, through Douglas fir, spruce and European beech, to Scots pine, oak and birch, which are relatively insensitive to aluminium (Cronan et al., 1989). "
-    },
-    {
-        "type": "text",
-        "text": "4.4.2\tMolar base cation/aluminium ratio of 1 (0.5-2.0) ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "The results from a variety of laboratory experiments described above showed that the Ca/Al ratio was a better indicator of root impacts than inorganic aluminium (Sverdrup et al., 1992; Sverdrup and Warfvinge 1993; Cronan and Grigal 1995). As with aluminium, a wide range of toxicity thresholds for the Al/   Ca ratio has been reported. Sverdrup and Warfvinge (1993) carried out a systematic review of the impacts of aluminium on the growth of tree seedlings and plants in laboratory experiments, based on approximately 200 studies. The response in acid soils, expressed by root growth, stem growth or plant growth in experiments, has been determined for various species of coniferous and deciduous trees. Studies showed that the plant response can be described better as a function of the base cation and Al concentration in soil solution than as a function of Al alone or of the Al/Ca ratio. The critical limit was most conveniently expressed as a molar $B c/A l}_{\\mathrm{tot}}$ ratio, with ${A l}}_{\\mathrm{tot}}$ being the total (inorganic and organically complexed) aluminium concentration and Bc denoting the base cations $C a^{2+}}$ , $M}g}^{2+}$  and K + . Many calculations of critical loads of acid deposition on forest ecosystems use either a general limit value of 1 for the Bc/Al ratio or a tree species specific value, ranging between 0.5 and 2.0. "
-    },
-    {
-        "type": "text",
-        "text": ""
-    },
-    {
-        "type": "text",
-        "text": "The relevance of laboratory experiments addressing aluminium toxicity under field conditions has been disputed (Kreutzer, 1995; Løkke et al., 1996; Binkley and Hogberg, 1997; De Wit et al., 2001). Indeed, healthy trees have been found at sites where high soil solution aluminium concentrations were measured (Huber et al., 2004), while nutrient deficiency symptoms in trees have been found at other sites with similar conditions (Alewell et al., 2000). In addition, whole-ecosystem experiments, designed to test the effects of acid deposition on forests (Abrahamsen et al., 1993; Beier et al., 1998; Kreutzer and Weiss, 1998; Huber et al., 2004), have been inconclusive with respect to the effects of aluminium toxicity on root growth and nutrient uptake. Despite this criticism, a mean the critical Bc/Altot ratio of 1 is still often used in risk assessment (De Vries et al., 2015b). "
-    },
-    {
-        "type": "text",
-        "text": "5\n Soil pollution ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Soil pollution significantly affects human health and/or ecosystem functioning. Essential soil functions, such as the production of sufficient and safe food and the provision of clean water and a suitable habitat for soil dwelling organisms, can be impaired depending on the degree of soil pollution. To be able to assess the impact of soil pollution on soil health, meaningful indicators for the current state of soils and the associated risks from pollutants, as well as information about inputs and outputs of substances, are required. Once critical concentrations are exceeded, relevant soil functions can be impaired. To derive meaningful thresholds for pollutants in soil, the entire pathway — from emissions of pollutants to exposure — needs to be considered. This includes inputs to and outputs from soil, as well as processes that regulate concentrations in soil and adjacent relevant environmental compartments (e.g. water). This chapter provides an overview of some of the existing approaches for setting such thresholds, currently developed largely at national level. Options for harmonising thresholds are discussed, also emphasising the need for improved harmonising of risk assessment tools as a basis for soil screening values and risk assessment procedures. "
-    },
-    {
-        "type": "text",
-        "text": "Soil pollution affects various societal needs, as illustrated in Table 5.1. Clearly the impact that pollution has on each of these societal needs varies depending on soil conditions, pressures, future management and protection objectives. Here, especially, biodiversity and the filter function (in relation to water quality) are directly affected by pollution, whereas the quality of soil as platform for infrastructure is barely affected by pollution. Services such as storage of water and carbon can also be affected, albeit at much higher concentrations of pollutants than those that affect biodiversity, for example. "
-    },
-    {
-        "type": "text",
-        "text": "Considering the interaction between soil as carrier of pollutants and the functions related to them as part of societal needs, the impact of pollution decreases in the following order: "
-    },
-    {
-        "type": "text",
-        "text": "•\thigh for biodiversity and filtering of pollutants; "
-    },
-    {
-        "type": "text",
-        "text": "•\tintermediate for crop growth; ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "•\tnegligible for infrastructure. ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "The complexity of pollution as a soil threat lies in the fact that there are multiple interactions between relevant soil functions and even societal needs. For example, if biomass production and biological activity in soils are reduced through pollution, then it is likely that the ecosystem service 'carbon storage' will also be affected. Unravelling all these interactions is, at present, not considered fully, and most existing frameworks for soil protection consider single relationships between pollution and a specific function or need. In this chapter we will illustrate some of the underlying principles currently used by Member States. Each of these is based on data and specific scientific approaches and assumptions about acceptable risk levels. "
-    },
-    {
-        "type": "table",
-        "img_path": "images/1f6542149b3d66196d8c4de36bb84bf621a89cd496274d8def484d16732a1aa6.jpg",
-        "table_caption": "Table 5.1\tRelationship between soil pollution and key societal needs and soil functions "
-    },
-    {
-        "type": "text",
-        "text": "5.1 Rationale: terminology and context ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "5.1.1\tDiffuse pollution versus point source pollution ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "A distinction can be made between point source pollution and diffuse (or non-point) soil pollution (as illustrated in Figure 5.1). "
+        "text": "A distinction can be made between point source pollution and diffuse (or non-point) soil pollution (as illustrated in Figure 5.1)."
     },
     {
         "type": "text",
