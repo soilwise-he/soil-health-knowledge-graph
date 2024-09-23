@@ -557,42 +557,23 @@
     },
     {
         "type": "text",
-        "text": "The unbalanced atmospheric deposition of N and P (Peñuelas et al., 2013, Du et al., 2016) implies an increase in area of ecosystems where P is limited. Using the leaf N/P ratio of 15 dominant tree species as an indicator, the spatial variation in plot-level shifts towards N or P limitation across 163 European forest plots during the period 1995-2017 has been demonstrated. In total, $38\\%$ of the plots studied shifted towards P limitation, while only $6\\%$ of the plots shifted towards N limitation, as indicated by a significant increase and decrease in leaf N/P ratio, respectively. Forests are thus increasingly suffering from P deficiency (Talkner et al., 2020). Beech forests especially are affected by P deficiency (Lang et al., 2019). The increasing use of wood will lead to further nutrient deprivation. Liming also increases this effect. "
+        "text": "The unbalanced atmospheric deposition of N and P (Peñuelas et al., 2013, Du et al., 2016) implies an increase in area of ecosystems where P is limited. Using the leaf N/P ratio of 15 dominant tree species as an indicator, the spatial variation in plot-level shifts towards N or P limitation across 163 European forest plots during the period 1995-2017 has been demonstrated. In total, 38% of the plots studied shifted towards P limitation, while only 6% of the plots shifted towards N limitation, as indicated by a significant increase and decrease in leaf N/P ratio, respectively. Forests are thus increasingly suffering from P deficiency (Talkner et al., 2020). Beech forests especially are affected by P deficiency (Lang et al., 2019). The increasing use of wood will lead to further nutrient deprivation. Liming also increases this effect."
     },
     {
         "type": "text",
-        "text": "N is a very important driver whose impacts on C sequestration is still rather controversial. Various studies suggest that leaf litter with high N concentrations (or high N/lignin ratios) decomposes faster than litter with a lower N content, but this difference in decomposition rate reverts during the later stages of the decomposition process. N addition thus seems to accelerate decomposition of low-lignin 'easily degradable' litter but to reduce decomposition rates of high-lignin 'recalcitrant' substrates. Whether the addition of N ultimately causes an increase or decrease in soil C sequestration then depends on the ratio of low-lignin to high-lignin litter. "
+        "text": "N is a very important driver whose impacts on C sequestration is still rather controversial. Various studies suggest that leaf litter with high N concentrations (or high N/lignin ratios) decomposes faster than litter with a lower N content, but this difference in decomposition rate reverts during the later stages of the decomposition process. N addition thus seems to accelerate decomposition of low-lignin 'easily degradable' litter but to reduce decomposition rates of high-lignin 'recalcitrant' substrates. Whether the addition of N ultimately causes an increase or decrease in soil C sequestration then depends on the ratio of low-lignin to high-lignin litter."
     },
     {
         "type": "text",
-        "text": "In natural systems (especially forests), the addition of N retards below-ground C cycling, thus leading to N induced increases in (soil) C sequestration (e.g. Janssens et al., 2010). There are also conditions under which N addition accelerates decomposition and soil respiration, thus decreasing soil C sequestration, such as forests with severe N limitation or, conversely, strong N saturation, but this seems to be a minority of systems. In agricultural systems, however, the impacts of N inputs on soil C sequestration are less clear. "
+        "text": "In natural systems (especially forests), the addition of N retards below-ground C cycling, thus leading to N induced increases in (soil) C sequestration (e.g. Janssens et al., 2010). There are also conditions under which N addition accelerates decomposition and soil respiration, thus decreasing soil C sequestration, such as forests with severe N limitation or, conversely, strong N saturation, but this seems to be a minority of systems. In agricultural systems, however, the impacts of N inputs on soil C sequestration are less clear."
     },
     {
         "type": "text",
-        "text": "3.1.3\tImpact of N and P on biodiversity and water quality ",
-        "text_level": 1
+        "text": "Soil nutrient (N and P) status affects not only crop yields, but N in soil also affects the biodiversity of soil organisms, whereas the soil P content has an impact on surface water quality by affecting P accumulation and losses to surface water. Finally, both N and P affect biodiversity, especially plant species diversity, in non-agricultural ecosystems, as discussed below."
     },
     {
         "type": "text",
-        "text": "Soil nutrient (N and P) status affects not only crop yields, but N in soil also affects the biodiversity of soil organisms, whereas the soil P content has an impact on surface water quality by affecting P accumulation and losses to surface water. Finally, both N and P affect biodiversity, especially plant species diversity, in non-agricultural ecosystems, as discussed below. "
-    },
-    {
-        "type": "text",
-        "text": "N and soil biodiversity ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Ample available N, induced by increased atmospheric N deposition and, more specifically, by N fertilisation in agricultural soils, affects terrestrial ecosystems. These N "
-    },
-    {
-        "type": "text",
-        "text": "inputs reduce the abundance, activity and composition of soil fungi, saprotrophic decomposers, mycorrhizal fungi and N fixing bacteria (Streeter, 1988; Johansson et al., 2004; De Vries et al., 2006). Both plant litter and microorganisms are the food source of detritivores in the soil food webs; thus, excess N leads to bottom-up effects on the whole below-ground food web, on plants and eventually also on the above-ground food web (Wardle et al., 2004). "
-    },
-    {
-        "type": "text",
-        "text": "Agricultural systems ",
-        "text_level": 1
+        "text": "Ample available N, induced by increased atmospheric N deposition and, more specifically, by N fertilisation in agricultural soils, affects terrestrial ecosystems. These N inputs reduce the abundance, activity and composition of soil fungi, saprotrophic decomposers, mycorrhizal fungi and N fixing bacteria (Streeter, 1988; Johansson et al., 2004; De Vries et al., 2006). Both plant litter and microorganisms are the food source of detritivores in the soil food webs; thus, excess N leads to bottom-up effects on the whole below-ground food web, on plants and eventually also on the above-ground food web (Wardle et al., 2004)."
     },
     {
         "type": "text",
@@ -600,201 +581,75 @@
     },
     {
         "type": "text",
-        "text": "Terrestrial ecosystems ",
-        "text_level": 1
+        "text": "In terrestrial ecosystems, including forests, N deposition increases not only N availability but also soil acidification, thereby changing soil life, including fungi and bacteria, nematodes and springtails. N specifically reduces the occurrence and activity of certain soil fungi. For example, Van Geel et al. (2020) observed a 40% potential loss of mycorrhizal fungal species richness along an N deposition gradient in western Europe in both dry and moist heathlands. Such decreases have implications for nutrient acquisition from recalcitrant organic sources and for pathogen resistance, while plants invest less in root growth and collaborations with microorganisms, as ample N is available. Soil acidification does not so much affect soil fungi but decreases bacterial community richness and diversity, as observed in long-term N and sulphur manipulation experiments (Choma et al., 2020). Overall, nitrogen input and related soil acidification negatively affects soil life."
     },
     {
         "type": "text",
-        "text": "In terrestrial ecosystems, including forests, N deposition increases not only N availability but also soil acidification, thereby changing soil life, including fungi and bacteria, nematodes and springtails. N specifically reduces the occurrence and activity of certain soil fungi. For example, Van Geel et al. (2020) observed a $40\\%$ potential loss of mycorrhizal fungal species richness along an N deposition gradient in western Europe in both dry and moist heathlands. Such decreases have implications for nutrient acquisition from recalcitrant organic sources and for pathogen resistance, while plants invest less in root growth and collaborations with microorganisms, as ample N is available. Soil acidification does not so much affect soil fungi but decreases bacterial community richness and diversity, as observed in long-term N and sulphur manipulation experiments (Choma et al., 2020). Overall, nitrogen input and related soil acidification negatively affects soil life. "
+        "text": "Both N and, to a lesser extent P, affect biodiversity, especially plant species diversity, in non-agricultural ecosystems. In this context, forest ecosystems are the largest non-agricultural form of land use. In forests, N is generally a limiting nutrient, and deposition may first increase growth and productivity through enhanced N availability, but at a later stage it may cause eutrophication and acidification, negatively affecting nutrient balances and increasing trees' susceptibility to drought, diseases and pests (for a review of impacts, see Erisman and De Vries (2000), and for an overview of effects in European forests, see de Vries et al. (2014a)). In other ecosystems, increased growth is not a benefit but a threat, as it causes a decrease in plant species diversity, which is also a trade-off in forest ecosystems. Atmospheric N deposition thus affects various ecosystem services through its impacts on the fertility (quality) of forest soils and thereby the forests' capacity to provide services such as wood production (provision service), C sequestration (climate regulation service), buffer capacity (water quality regulation service) and pest/disease regulation (Erisman et al., 2014; De Vries et al., 2014b). In this context, the soil P status is also important, as it affects the impacts of N in situations where P is limiting growth and thereby also affects plant species diversity. With respect to N, the concept of a critical load is crucial, namely the load that affects non-agricultural ecosystems, especially through impacts on plant species diversity (e.g. De Vries et al., 2015a; UBA, 2021)."
     },
     {
         "type": "text",
-        "text": "N (and P) and plant species diversity in non-agricultural ecosystems ",
-        "text_level": 1
+        "text": "Elevated N and P concentrations in surface waters, especially rivers, and in coastal and marine waters contribute to the phenomenon of eutrophication, which has impacts on the biocoenosis of freshwater ecosystems and coastal and marine ecosystems. The enrichment of N and P in freshwater is largely due to surface run-off from agricultural soils, while the N and P loss from terrestrial ecosystems generally dilutes the concentrations of N and P in surface waters. Specifically, in marine ecosystems, where N is considered to be the most important element in limiting phytoplankton growth, the effects can be considerable and often negative."
     },
     {
         "type": "text",
-        "text": "Both N and, to a lesser extent P, affect biodiversity, especially plant species diversity, in non-agricultural ecosystems. In this context, forest ecosystems are the largest non-agricultural form of land use. In forests, N is generally a limiting nutrient, and deposition may first increase growth and productivity through enhanced N availability, but at a later stage it may cause eutrophication and acidification, negatively affecting "
+        "text": "In terrestrial ecosystems, elevated nitrate and sulphate concentrations can affect the acidity of surface waters, especially of soft water lakes, since those systems are not limed (as is the case in agriculture). In acidic soils, N- and sulphur-induced acid deposition can cause aluminium to be released from soils in the watershed, which leaches into lakes and streams. There were well-documented, large-scale effects of acid deposition on aquatic ecosystems in the early 1970s in both Scandinavia and North America, including mortality of adult fish and reproductive failure (e.g. De Vries et al., 2015a). However, there is clear evidence of chemical recovery from surface water acidification, and also biological recovery (e.g. Hesthagen et al. 2011). This aspect overlaps with the topic of soil (and surface water) acidification (see also Chapter 4)."
     },
     {
         "type": "text",
-        "text": "nutrient balances and increasing trees' susceptibility to drought, diseases and pests (for a review of impacts, see Erisman and De Vries (2000), and for an overview of effects in European forests, see de Vries et al. (2014a)). In other ecosystems, increased growth is not a benefit but a threat, as it causes a decrease in plant species diversity, which is also a trade-off in forest ecosystems. Atmospheric N deposition thus affects various ecosystem services through its impacts on the fertility (quality) of forest soils and thereby the forests' capacity to provide services such as wood production (provision service), C sequestration (climate regulation service), buffer capacity \n (water quality regulation service) and pest/disease regulation \n (Erisman et al., 2014; De Vries et al., 2014b). In this context, the soil P status is also important, as it affects the impacts of N in situations where P is limiting growth and thereby also affects plant species diversity. With respect to N, the concept of a critical load is crucial, namely the load that affects non-agricultural ecosystems, especially through impacts on plant species diversity (e.g. De Vries et al., 2015a; UBA, 2021). "
+        "text": "Indicators for soil N and P status can be given in terms of total values (total N and P content) and (plant) available N and P contents. These indicators are specifically used to gain insight into the soil fertility status and the need for N and P fertilisation to support crop growth."
     },
     {
         "type": "text",
-        "text": "N and P and water quality ",
-        "text_level": 1
+        "text": "For N in agricultural soils, target levels or critical levels are not defined, but the total concentration of mineral N (N_min, i.e. the sum of nitrate N and ammonium N) is used for N fertiliser recommendations, as it affects the N mineralisation rate and thereby soil N availability (see Section 3.2.1). There are indicators, however, for forest soils, including the C/N ratio in the organic layer and the dissolved total inorganic N concentration (see also Section 3.2.1). Critical limits for dissolved total inorganic N concentration are used to derive critical N loads by multiplying those values with a water flux, thus deriving a critical N leaching rate, and adding values for the related N uptake, N immobilisation and denitrification (e.g. Posch et al., 2015)."
     },
     {
         "type": "text",
-        "text": "Agricultural systems ",
-        "text_level": 1
+        "text": "For P, target and critical levels can be defined, making the following distinction between the two: below the target level, the soil P status should be increased because P is limiting for crop growth; above the critical level, there is an enhanced risk of negative effects on water quality because of increased run-off of P to surface waters. Details of indicators are described below."
     },
     {
         "type": "text",
-        "text": "Elevated N and P concentrations in surface waters, especially rivers, and in coastal and marine waters contribute to the phenomenon of eutrophication, which has impacts on the biocoenosis of freshwater ecosystems and coastal and marine ecosystems. The enrichment of N and P in freshwater is largely due to surface run-off from agricultural soils, while the N and P loss from terrestrial ecosystems generally dilutes the concentrations of N and P in surface waters. Specifically, in marine ecosystems, where N is considered to be the most important element in limiting phytoplankton growth, the effects can be considerable and often negative. "
+        "text": "In agricultural soils, the total concentration of mineral N (N_min), determined by extraction of 1M KCl, is the most relevant indicator of the N status of an agricultural soil in relation to crop yield. It is an indicator of potentially available N, because of its relationship with N mineralisation, which increases the sum of dissolved ammonium N and nitrate N in the soil solution. Only this fraction of N is directly available to plants. In several countries, the concentration of N_min is assessed each year in the topsoil (plough layer) by agricultural extension services, since N_min is highly variable, depending on soil and crop properties and climate."
     },
     {
         "type": "text",
-        "text": "Terrestrial ecosystems ",
-        "text_level": 1
+        "text": "Advice about N fertilisation aims to achieve 'balanced N fertilisation'. Based on a target crop yield and the N content in the harvested crop, the required N uptake in plants is derived. Then, the effective N input is calculated to achieve the required uptake, taking into account not only N fertiliser but also other N sources. This includes mineralisation of mineral soil N, as explained above, and external N inputs from manure, crop residues, N fixation and atmospheric N deposition. 'Effective' relates to the fact that the availability of N for plant uptake from other N sources is lower than from N fertilizer, since there are larger unavoidable losses of N to air and water, for example because N that is mineralised or comes in from manure and deposition becomes available partly outside the growing season. The gap between the required N uptake and the effective N input from sources other than fertiliser is then used to calculate a site-specific N fertiliser recommendation."
     },
     {
         "type": "text",
-        "text": "In terrestrial ecosystems, elevated nitrate and sulphate concentrations can affect the acidity of surface waters, especially of soft water lakes, since those systems are not limed (as is the case in agriculture). In acidic soils, N- and sulphur-induced acid deposition can cause aluminium to be released from soils in the watershed, which leaches into lakes and streams. There were well-documented, large-scale effects of acid deposition on aquatic ecosystems in the early 1970s in both Scandinavia and North America, including mortality of adult fish and reproductive failure (e.g. De Vries et al., 2015a). However, there is clear evidence of chemical recovery from surface water acidification, and also biological recovery (e.g. Hesthagen et al. 2011). This aspect overlaps with the topic of soil (and surface water) acidification (see also Chapter 4). "
+        "text": "Aber et al. (1998) published their theory of ecosystem N saturation: with a focus on forest ecosystems, they distinguished different stages in view of:\n•\timpacts on soil chemical processes such as mineralisation, immobilisation, nitrification, leaching, acidification;\n•\tplant nutrition and forest growth;\n•\tplant species diversity."
     },
     {
         "type": "text",
-        "text": "3.2 Indicators of nitrogen and phosphorus status of soils ",
-        "text_level": 1
+        "text": "Below a specific threshold, terrestrial ecosystems will react to additional N inputs by increasing biomass production. Above a physiological optimum, production remains constant or even decreases. When the ecosystem approaches 'N saturation', N leaching will increase above (nearly negligible) background levels, associated with soil acidification and elevated leaching of base cations as well as increased levels of aluminium at low pH (see Chapter 4). At this level, a decrease in plant species diversity and a shift towards more nitrophilic species are also observed (e.g. Bobbink and Hettelingh 2011)."
     },
     {
         "type": "text",
-        "text": "Indicators for soil N and P status can be given in terms of total values (total N and P content) and (plant) available N and P contents. These indicators are specifically used to gain insight into the soil fertility status and the need for N and P fertilisation to support crop growth.\n "
+        "text": "One possible indicator for the impact of N eutrophication in forests is the C/N ratio for either the highly humified organic layer (H horizon, for moderate to nutrient-poor forest soils) or the top few centimetres of mineral soils (nutrient-rich forest soils without H horizons). There are indications that N retention is reduced with a decreasing soil C/N ratio, especially in the organic layer, as shown first by Dise et al. (1998, 2009) and Gundersen et al. (1998). This allows us to derive a critical C/N ratio in these soils, as discussed below in Section 3.3."
     },
     {
         "type": "text",
-        "text": "•\tFor N in agricultural soils, target levels or critical levels are not defined, but the total concentration of mineral N $N}_{\\mathrm{min}},$ i.e. the sum of nitrate N and ammonium N) is used for N fertiliser recommendations, as it affects the N mineralisation rate and thereby soil N availability (see Section 3.2.1). There are indicators, however, for forest soils, including the C/N ratio in the organic layer and the dissolved total inorganic N concentration (see also Section 3.2.1). Critical limits for dissolved total inorganic N concentration are used to derive critical N loads by multiplying those values with a water flux, thus deriving a critical N leaching rate, and adding values for the related N uptake, N immobilisation and denitrification (e.g. Posch et al., 2015).\n "
+        "text": "Dissolved total inorganic N concentration in non-agricultural soils has been used as an indicator for various adverse impacts, including vegetation changes, nutrient imbalances, N leaching, impacts on root growth, and increased sensitivity to frost and diseases. Critical limits for those indicators are given below (Section 3.3.1) and are used to calculate critical N loads on forest ecosystems. They have thus been incorporated in the critical load mapping manual (see table V.5 on critical (acceptable) N concentrations in soil solution for calculating CL_nut(N); CLRTAP, 2017)."
     },
     {
         "type": "text",
-        "text": "•\tFor P, target and critical levels can be defined, making the following distinction between the two: below the target level, the soil P status should be increased because P is limiting for crop growth; above the critical level , there is an enhanced risk of negative effects on water quality because of increased run-off of P to surface waters. Details of indicators are described below.\n "
+        "text": "At high target crop yields and/or in soils with limited possibilities for denitrification (e.g. well-drained sandy soils), current N inputs may result in an exceedance of the critical limits for NO₃ in groundwater or total N in surface water (see Section 3.3 for critical limits). Similarly, at high manure N inputs, typical of areas with intensive livestock husbandry, NH₃ emissions may be such that they exceed critical levels for NH₃ in air or critical loads of N to ecosystems. It is thus air and water quality that limits N management rather than soil quality (apart from soil acidification, as discussed in Chapter 4, but that effect is in agricultural soils and is generally counteracted by liming). In this context, critical N inputs to soils are calculated, being those that result in concentrations of NO₃ in groundwater, total N in surface water or NH₃ in air that are equal to the critical levels of those N compounds (De Vries and Schulte-Uebbing, 2020; De Vries et al., 2021). In Europe, there are many regions where current inputs exceed those critical N inputs; this cannot be monitored by a soil N indicator but it can through air and water quality indicators. Note that there are also emissions of N₂O, but these have not been included as a criterion in the above-mentioned studies, since there is no clear limit for N₂O in the atmosphere. One could use radiative forcing as a criterion, but N₂O is only one of the greenhouse gases that affect radiative forcing (others being CO₂, methane, ozone, etc.), making the assessment of a critical load very difficult. Furthermore, NH₃ emissions from agricultural land also reduce radiative forcing by increasing forest growth and enhancing CO₂ uptake, thereby almost completely counteracting the warming effect of N₂O (De Vries et al., 2011)."
     },
     {
         "type": "text",
-        "text": "3.2.1\tIndicators of the N status of soils ",
-        "text_level": 1
+        "text": "The indicator used in agricultural soil is the available P concentration. The P concentration in the rooted topsoil is derived from soil P tests (extractants); these indicate the availability of P and are used to make P fertiliser recommendations, based on the relationship between P fertilisation and crop yield (Jordan-Meille et al., 2012). Many extractants are used to assess the available soil P level and all extract a different soil P pool. Examples of available soil P parameters are P-Bray (Bray and Kurtz, 1945), P-Olsen (Olsen et al., 1954), P-ammonium oxalate (Joret and Hebert, 1955), P-ammonium lactate (Egner et al., 1960), P-CAL (calcium- acetate-lactate extract; Schüller, 1969) and P-Mehlich (Mehlich, 1984). Each extraction method yields a varied amount of a given nutrient in a soil sample due to differences in extraction mechanism. For instance, 14 extraction methods in Europe were evaluated by Jordan-Meille et al. (2012), and they concluded that the extraction methods tested yielded different amounts of P from different P pools. Of the above-mentioned methods, they found that, in terms of the amount of P extracted, the extraction methods could be ranked in the following order:\nP-Olsen < P-ammonium lactate < P-Mehlich 3 < P-Bray II < P-oxalate < P-total"
     },
     {
         "type": "text",
-        "text": "Mineral N in agricultural soils ",
-        "text_level": 1
+        "text": "For thresholds, it would be advisable to use a harmonised extraction method, but unfortunately there is currently no agreement of such a method, since many countries have related the P concentration obtained from a given soil extraction method to crop yield and do prefer to keep that approach. It would be even better if a harmonised approach was taken to determining both the reactive (long-term availability) soil P pool (e.g. ammonium lactate) and the dissolved P concentration (such as P in water or 0.01M CaCl₂), as this gives information on the soil P buffering capacity, i.e. the speed with which P in solution is replenished from the available pool after P uptake or leaching."
     },
     {
         "type": "text",
-        "text": "In agricultural soils, the total concentration of mineral N $(N}_{m i n}}),$  determined by extraction of $1\\,{\\sf M M K C l},$ is the most relevant indicator of the N status of an agricultural soil in relation to crop yield. It is an indicator of potentially available N, because of its relationship with N mineralisation, which increases the sum of dissolved ammonium N and nitrate N in the soil solution. Only this fraction of N is directly available to plants. In several countries, the concentration of ${\\sf N}_{\\mathrm{min}}$ is assessed each year in the topsoil (plough layer) by agricultural extension services, since ${\\sf N}_{\\sf m i n}$ is highly variable, depending on soil and crop properties and climate. "
+        "text": "One indicator for the effect of P applications on water quality is P-CaCl₂, or P water (P_w). Both values represent the dissolved P concentration in the soil solution. Both variables can, however, be highly variable. The P status in relation to leaching is expressed by the P saturation index, which is defined as the ratio P_ox/(Fe+Al)_ox, where P_ox and (Fe+Al)_ox stand for the P, aluminium and iron extracted in ammonium oxalate."
     },
     {
         "type": "text",
-        "text": "Advice about N fertilisation aims to achieve 'balanced N fertilisation'. Based on a target crop yield and the N content in the harvested crop, the required N uptake in plants is derived. Then, the effective N input is calculated to achieve "
-    },
-    {
-        "type": "text",
-        "text": "the required uptake, taking into account not only N fertiliser but also other N sources. This includes mineralisation of mineral soil N, as explained above, and external N inputs from manure, crop residues, N fixation and atmospheric N deposition. ‘Effective’ relates to the fact that the availability of N for plant uptake from other N sources is lower than from N fertilizer, since there are larger unavoidable losses of N to air and water, for example because N that is mineralised or comes in from manure and deposition becomes available partly outside the growing season. The gap between the required N uptake and the effective N input from sources other than fertiliser is then used to calculate a site-specific N fertiliser recommendation. "
-    },
-    {
-        "type": "text",
-        "text": "C/N ratio in the organic layer of non-agricultural (forest) soils ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Aber et al. (1998) published their theory of ecosystem N saturation: with a focus on forest ecosystems, they distinguished different stages in view of:\n "
-    },
-    {
-        "type": "text",
-        "text": "•\timpacts on soil chemical processes such as mineralisation, immobilisation, nitrification, leaching, acidification;\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tplant nutrition and forest growth;\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tplant species diversity. "
-    },
-    {
-        "type": "text",
-        "text": "Below a specific threshold, terrestrial ecosystems will react to additional N inputs by increasing biomass production. Above a physiological optimum, production remains constant or even decreases. When the ecosystem approaches 'N saturation', N leaching will increase above (nearly negligible) background levels, associated with soil acidification and elevated leaching of base cations as well as increased levels of aluminium at low pH (see Chapter 4). At this level, a decrease in plant species diversity and a shift towards more nitrophilic species are also observed (e.g. Bobbink and Hettelingh 2011). "
-    },
-    {
-        "type": "text",
-        "text": "One possible indicator for the impact of N eutrophication in forests is the C/N ratio for either the highly humified organic layer (H horizon, for moderate to nutrient-poor forest soils) or the top few centimetres of mineral soils (nutrient-rich forest soils without H horizons). There are indications that N retention is reduced with a decreasing soil C/N ratio, especially in the organic layer, as shown first by Dise et al. (1998, 2009) and Gundersen et al. (1998). This allows us to derive a critical C/N ratio in these soils, as discussed below in Section 3.3. "
-    },
-    {
-        "type": "text",
-        "text": "Dissolved total inorganic N concentration in non- agricultural (forest) soils ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Dissolved total inorganic N concentration in non-agricultural soils has been used as an indicator for various adverse impacts, including vegetation changes, nutrient imbalances, N leaching, impacts on root growth, and increased sensitivity to frost and diseases. Critical limits for those indicators are given below (Section 3.3.1) and are used to calculate critical N loads on forest ecosystems. They have thus been incorporated in the critical load mapping manual (see table V.5 on critical \n (acceptable) N concentrations in soil solution for calculating \n ${C l}}_{n u t}}({N}}),$ ; CLRTAP, 2017). "
-    },
-    {
-        "type": "text",
-        "text": ""
-    },
-    {
-        "type": "text",
-        "text": "Output indicator: N concentrations in air and water linked to losses from agricultural soils ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "At high target crop yields and/or in soils with limited possibilities for denitrification (e.g. well-drained sandy soils), current N inputs may result in an exceedance of the critical limits for $N O}_{3}$ in groundwater or total N in surface water (see Section 3.3 for critical limits). Similarly, at high manure N inputs, typical of areas with intensive livestock husbandry, $N H}_{3}$ emissions may be such that they exceed critical levels for $N H}_{3}$ in air or critical loads of N to ecosystems. It is thus air and water quality that limits N management rather than soil quality (apart from soil acidification, as discussed in Chapter 4, but that effect is in agricultural soils and is generally counteracted by liming). In this context, critical N inputs to soils are calculated, being those that result in concentrations of $N O}_{3}$ in groundwater, total N in surface water or $N H}_{3}$ in air that are equal to the critical levels of those N compounds (De Vries and Schulte-Uebbing, 2020; De Vries et al., 2021). In Europe, there are many regions where current inputs exceed those critical N inputs; this cannot be monitored by a soil N indicator but it can through air and water quality indicators. Note that there are also emissions of $N}_{2}O},$ , but these have not been included as a criterion in the above-mentioned studies, since there is no clear limit for $N}_{2}O}$ in the atmosphere. One could use radiative forcing as a criterion, but $N}_{2}O}$ is only one of the greenhouse gases that affect radiative forcing (others being $C O}_{2},$ methane, ozone, etc.), making the assessment of a critical load very difficult. Furthermore, $N H}_{3}$ emissions from agricultural land also reduce radiative forcing by increasing forest growth and enhancing CO₂ uptake, thereby almost completely counteracting the warming effect of $N}_{2}O}$ (De Vries et al., 2011). "
-    },
-    {
-        "type": "text",
-        "text": "3.2.2\tIndicators of the P status of soils ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Crop yields and available soil P contents in agricultural soils ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "The indicator used in agricultural soil is the available P concentration. The P concentration in the rooted topsoil is derived from soil P tests (extractants); these indicate the availability of P and are used to make P fertiliser recommendations, based on the relationship between P fertilisation and crop yield (Jordan-Meille et al., 2012). Many extractants are used to assess the available soil P level and all extract a different soil P pool. Examples of available soil P parameters are P-Bray (Bray and Kurtz, 1945), P-Olsen (Olsen et al., 1954), P-ammonium oxalate (Joret and Hebert, 1955), P-ammonium lactate (Egner et al., 1960), P-CAL "
-    },
-    {
-        "type": "text",
-        "text": "(calcium- acetate-lactate extract; Schüller, 1969) and P-Mehlich \n (Mehlich, 1984). Each extraction method yields a varied amount of a given nutrient in a soil sample due to differences in extraction mechanism. For instance, 14 extraction methods in Europe were evaluated by Jordan-Meille et al. (2012), and they concluded that the extraction methods tested yielded different amounts of P from different P pools. Of the\n above-mentioned methods, they found that, in terms of the amount of P extracted, the extraction methods could be ranked in the following order: "
-    },
-    {
-        "type": "text",
-        "text": "P-Olsen $<$ P-ammonium lactate $<P}.$ -Mehlich $3<P}.$ -Bray II < P-oxalate $<$ P-total "
-    },
-    {
-        "type": "text",
-        "text": "For thresholds, it would be advisable to use a harmonised extraction method, but unfortunately there is currently no agreement of such a method, since many countries have related the P concentration obtained from a given soil extraction method to crop yield and do prefer to keep that approach. It would be even better if a harmonised approach was taken to determining both the reactive (long-term availability) soil P pool (e.g. ammonium lactate) and the dissolved P concentration (such as P in water or $0.01\\,M}C a C l}_{2})$ as this gives information on the soil P buffering capacity, i.e. the speed with which P in solution is replenished from the available pool after P uptake or leaching. "
-    },
-    {
-        "type": "text",
-        "text": "Water quality and soil P saturation index ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "One indicator for the effect of P applications on water quality is $P{-C a C l}_{2}},$ or P water $(P}_{\\mathrm{w}})$ . Both values represent the dissolved P concentration in the soil solution. Both variables can, however, be highly variable. The P status in relation to leaching is expressed by the P saturation index, which is defined as the ratio $P}_{\\mathrm{ox}}/(F}e}\\mathrm{+}A}|)_{\\mathrm{ox}},$ where $P}_{\\mathrm{ox}}$ and $(F e}{+}A l})_{\\mathrm{ox}}$ stand for the P, aluminium and iron extracted in ammonium oxalate. "
-    },
-    {
-        "type": "text",
-        "text": "3.3 Critical limits or target values ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "3.3.1\tCritical limits for N status indicators ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "$N_{m i n}$ in agricultural soils ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "In agricultural soils, critical limits for total N or available N (the mineral N content), related to specific soil functions, are difficult to define. Total N and available N do affect crop growth in unfertilised soils by affecting N mineralisation (see above), but there is no critical limit for it, because N fertilisation ensures a high N supply. Furthermore, excess N does not limit crop growth when the related soil acidification is properly counteracted by liming (see Chapter 4). A high ${\\sf N}_{\\sf m i n}$ content may negatively affect soil biodiversity, but limit values cannot be defined, because "
-    },
-    {
-        "type": "text",
-        "text": "impacts are not related to differences in soil N status but to the effects of adding N to the soil (via fertiliser), as described in Section 3.1. Finally, losses of N to air and water, negatively affecting air and water quality, are more related to N inputs and the soil properties affecting denitrification and thus N leaching (especially clay content and groundwater level) and N emissions, rather than the actual soil N status. Minimising the N surplus 'at the farm gate', i.e. the N input from feed and fertiliser minus the output from plant and/or animal products, is one way of minimising N losses to water and air. "
-    },
-    {
-        "type": "text",
-        "text": "Critical limits for the C/N ratio in the organic layer of forest soils (H horizon) ( 16 ) ",
-        "text_level": 1
+        "text": "In agricultural soils, critical limits for total N or available N (the mineral N content), related to specific soil functions, are difficult to define. Total N and available N do affect crop growth in unfertilised soils by affecting N mineralisation (see above), but there is no critical limit for it, because N fertilisation ensures a high N supply. Furthermore, excess N does not limit crop growth when the related soil acidification is properly counteracted by liming (see Chapter 4). A high N_min content may negatively affect soil biodiversity, but limit values cannot be defined, because impacts are not related to differences in soil N status but to the effects of adding N to the soil (via fertiliser), as described in Section 3.1. Finally, losses of N to air and water, negatively affecting air and water quality, are more related to N inputs and the soil properties affecting denitrification and thus N leaching (especially clay content and groundwater level) and N emissions, rather than the actual soil N status. Minimising the N surplus 'at the farm gate', i.e. the N input from feed and fertiliser minus the output from plant and/or animal products, is one way of minimising N losses to water and air."
     },
     {
         "type": "text",
