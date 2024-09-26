@@ -1081,374 +1081,147 @@
     },
     {
         "type": "text",
-        "text": "According to Reimann et al. (2005), the 'background value' is often used as a base value to evaluate whether a specific soil has been under the influence of anthropogenic pollution. The initial definition of background values refers only to concentrations defined by parent materials (Hawkes and Webb, 1962), which means it applies only to metals, not organic pollutants. ISO 19258 (ISO, 2018b), however, defines background concentration as 'concentration of an element or a substance characteristic of a soil type in an area or region arising from both natural sources and anthropogenic diffuse sources such as atmospheric deposition'. It thus also includes contributions from agriculture and even inputs to soils in urban areas and also relates to organic pollutants. Clearly, this distinction between a definition based on pristine, pre-industrial levels versus anthropogenic ally affected soils (agriculture, urban) can lead to large variation in what is considered background. "
+        "text": "According to Reimann et al. (2005), the 'background value' is often used as a base value to evaluate whether a specific soil has been under the influence of anthropogenic pollution. The initial definition of background values refers only to concentrations defined by parent materials (Hawkes and Webb, 1962), which means it applies only to metals, not organic pollutants. ISO 19258 (ISO, 2018b), however, defines background concentration as 'concentration of an element or a substance characteristic of a soil type in an area or region arising from both natural sources and anthropogenic diffuse sources such as atmospheric deposition'. It thus also includes contributions from agriculture and even inputs to soils in urban areas and also relates to organic pollutants. Clearly, this distinction between a definition based on pristine, pre-industrial levels versus anthropogenic ally affected soils (agriculture, urban) can lead to large variation in what is considered background."
     },
     {
         "type": "text",
-        "text": "In some countries background values are assumed to pose no risk or negligible risk and are considered suitable for any type of land use. However, in the case of the ISO 19258, risk remains even at 'background' levels. Clear examples of this are elevated levels of lead in urban soils or levels of cadmium and zinc near former smelters. In the Netherlands such soils are explicitly excluded from the sampling to derive the background values. "
+        "text": "In some countries background values are assumed to pose no risk or negligible risk and are considered suitable for any type of land use. However, in the case of the ISO 19258, risk remains even at 'background' levels. Clear examples of this are elevated levels of lead in urban soils or levels of cadmium and zinc near former smelters. In the Netherlands such soils are explicitly excluded from the sampling to derive the background values."
     },
     {
         "type": "text",
-        "text": "Regardless of whether areas with diffuse inputs are included or not in the derivation of background concentrations, there is no relation between the background level itself and any specific risk. The background value merely reflects that the concentration in the soil is controlled by the parent material (and/or some additional increment due to diffuse pollution according to ISO 19258) from which the soil is developed. In the Dutch system, for example, background values are determined as the 95th percentile of values taken from 100 sites considered to be barely influenced by anthropogenic activities. The resulting background value, corrected for soil properties (clay and organic matter) is, for practical reasons, considered an acceptable upper level, despite not having been tested for effects on soil organisms, for example. There is much variability among countries, however, in the procedure to derive background values. This includes for example the cut-off percentile used to derive the background value, the population of measuring points and the level of stratification. Because of the variability of most pollutants in the parent material from which soils are derived, differences in background values related to soil type or geographical distribution can be quite large. "
+        "text": "Regardless of whether areas with diffuse inputs are included or not in the derivation of background concentrations, there is no relation between the background level itself and any specific risk. The background value merely reflects that the concentration in the soil is controlled by the parent material (and/or some additional increment due to diffuse pollution according to ISO 19258) from which the soil is developed. In the Dutch system, for example, background values are determined as the 95th percentile of values taken from 100 sites considered to be barely influenced by anthropogenic activities. The resulting background value, corrected for soil properties (clay and organic matter) is, for practical reasons, considered an acceptable upper level, despite not having been tested for effects on soil organisms, for example. There is much variability among countries, however, in the procedure to derive background values. This includes for example the cut-off percentile used to derive the background value, the population of measuring points and the level of stratification. Because of the variability of most pollutants in the parent material from which soils are derived, differences in background values related to soil type or geographical distribution can be quite large."
     },
     {
         "type": "text",
-        "text": ""
+        "text": "The acceptable value generally reflects a negligible risk level as the protection level. The basic idea of an acceptable value is that there are no restrictions on land use, as long as the acceptable value is not exceeded. Acceptable values are sometimes also used as generic remediation targets."
     },
     {
         "type": "text",
-        "text": "Acceptable value ",
-        "text_level": 1
+        "text": "Warning values mark the lower end of the concentration range of what is considered 'intermediate risk'. Concentrations falling between the acceptable value and the warning value mark the range when (minor) restrictions on sensitive land use may be appropriate (e.g. growing 'sensitive crops' is not recommended). The value is also used as a trigger that initiates further soil or groundwater sampling to increase the reliability of the judgement on whether or not the action value is exceeded."
     },
     {
         "type": "text",
-        "text": "The acceptable value generally reflects a negligible risk level as the protection level. The basic idea of an acceptable value is that there are no restrictions on land use, as long as the acceptable value is not exceeded. Acceptable values are sometimes also used as generic remediation targets. "
+        "text": "Action values mark the lower limit of concentrations above which unacceptable risk can occur. Exceedance of the first generation of action values (mostly derived in the early 1980s) often meant 'polluted soil' and required some kind of intervention (such as remediation). Currently, most countries have more advanced procedures based on risk assessment frameworks , in which the action value acts as a trigger for further, more detailed site-specific risk assessments in one or two additional assessment steps (Swartjes, 2019). Depending on the urgency of the risk as defined by modelling or experimental testing, action is required or not. The urgency of the risk is also related to the intended land use."
     },
     {
         "type": "text",
-        "text": "Warning value ",
-        "text_level": 1
+        "text": "The EU Member States use different terminology for all four thresholds, which complicates comparability . It must also be noted that not all countries have established risk-based SSVs, as shown in Figure 5.2; however, all countries include parts of the schema, so that nationally defined SSVs do have a place in a generic risk assessment nomenclature."
     },
     {
         "type": "text",
-        "text": "Warning values mark the lower end of the concentration range of what is considered 'intermediate risk'. Concentrations falling between the acceptable value and the warning value mark the range when (minor) restrictions on sensitive land use may be appropriate (e.g. growing 'sensitive crops' is not recommended). The value is also used as a trigger that initiates further soil or groundwater sampling to increase the reliability of the judgement on whether or not the action value is exceeded. "
+        "text": "As discussed above, the data used and the concepts applied differ widely between Member States. It is therefore not surprising to find that SSVs for both metals (see below) and organic pollutants (see below) alike differ considerably. Below we summarise some of the most commonly regulated metals and organic pollutants."
     },
     {
         "type": "text",
-        "text": "Action value ",
-        "text_level": 1
+        "text": "When assessing the risk from metals in soil, the concept of deriving background, warning and action values has been applied in many EU Member States. Carlon et al. (2007) provide an overview of intermediate and critical risk levels for an array of metals in the EU. Here we present an update of these values for the most common metals considered in risk assessment (Table 5.6; the source of the data is given in Table 5.7). We selected cadmium, copper, lead and zinc and found more than 444 individual screening values, roughly 50-60 per metal and risk level. The values were initially retrieved from technical reports or policy and prescription documents at European, national or regional level and updated for Bulgaria, Czechia, Denmark and Germany. For some countries, the values might be outdated or not the most accurate available."
     },
     {
         "type": "text",
-        "text": "Action values mark the lower limit of concentrations above which unacceptable risk can occur. Exceedance of the first generation of action values (mostly derived in the early 1980s) often meant 'polluted soil' and required some kind of intervention (such as remediation). Currently, most countries have more advanced procedures based on risk assessment frameworks , in which the action value acts as a trigger for further, more detailed site-specific risk assessments in one or two additional assessment steps (Swartjes, 2019). Depending on the urgency of the risk as defined by modelling or experimental testing, action is required or not. The urgency of the risk is also related to the intended land use. "
+        "text": "The full work by Carlon et al. (2007) has been summarised and included in a database by the European Topic Centre on Urban, Land and Soil Systems (ETC/ULS). The database is currently being expanded to include arsenic, mercury, nickel and chromium before it is handed back to the Eionet Working Group on Soil Contamination for review and updating. In parallel, supplementary information is being collected to understand the differences in how the SSVs are defined and derived."
     },
     {
         "type": "text",
-        "text": "Terminology ",
-        "text_level": 1
+        "text": "The screening values presented in Table 5.6 reveal large ranges, which represent different stratifications:\n•\tprotection targets considered (human health (exposure), ecosystem health, arable crop quality);\n•\tunderlying risk limits in endpoints;\n•\tmethodologies to convert risk limits to screening values in soil;\n•\tapproaches to correct for land use or soil type; in some cases, e.g. for Wallonia, Belgium, only critical risk levels are available (called action values in Belgium)."
     },
     {
         "type": "text",
-        "text": "The EU Member States use different terminology for all four thresholds, which complicates comparability . It must also be noted that not all countries have established risk-based SSVs, as shown in Figure 5.2; however, all countries include parts of the schema, so that nationally defined SSVs do have a place in a generic risk assessment nomenclature. "
+        "text": "Comparability between SSVs is also limited because of analytical differences between countries. In most Member States, intermediate or critical risk levels for metals are determined after extraction using strong acids (most commonly based on or equivalent to aqua regia, a mixture of concentrated nitric acid and hydrochloric acid). For these countries, the values can be quite comparable provided that the criteria listed above (risk limits used, protection target, etc.) are the same. In Germany, for example, SSVs for soils used for arable crops (called Prüfungswerte und Maßnahmenwerte , respectively; BBodSchV) are based on extraction using concentrated ammonium nitrate (DIN 19730: 06.97) which is believed to extract the amounts of metal (for arsenic, cadmium, lead, mercury and titanium only) that are available to plants. For grassland on the other hand, SSVs are based on extraction with aqua regia. This means that SSVs derived to protect arable crop quality are not comparable due to the method of extraction alone."
     },
     {
         "type": "text",
-        "text": "5.3.2\tCurrently known soil screening values ",
-        "text_level": 1
+        "text": "Levels of SSVs between countries also differ for different soil conditions, indicated by soil organic carbon class, texture, parent material group, land use and acidity (pH). However not all countries use a similar classification system, if at all, which again hampers the direct comparability of SSVs."
     },
     {
         "type": "text",
-        "text": "As discussed above, the data used and the concepts applied differ widely between Member States. It is therefore not surprising to find that SSVs for both metals (see below) and organic pollutants (see below) alike differ considerably. Below we summarise some of the most commonly regulated metals and organic pollutants. "
+        "text": "Interpreting Table 5.6 is best illustrated with an example. For cadmium, SSVs have been retrieved for 14 European countries and three regions. In accordance with the underlying principle of risk assessment, values are specific for a certain land use and specific texture classes or parent material. Other soil properties are included, such as saturated hydraulic conductivity and soil depth, as in the case of Poland. This creates not only differences in the level of SSVs between countries but also differences in limits within countries. Across all countries, the critical risk level for cadmium ranges between 1mg/kg (protected areas, Poland) and 30mg/kg (industrial land use, Brussels and Flanders region, Belgium; Slovakia); for intermediate risk, values vary by up to a factor of 100, between 0.4mg/kg (Slovakia) and 40mg/kg (Austria)."
     },
     {
         "type": "text",
-        "text": "Heavy metals ",
-        "text_level": 1
+        "text": "For copper, the range of variation is similar for the critical risk thresholds (30-1,500mg/kg) but much more extreme for intermediate values (factor of 1,500). A similar degree of variation is reported for thresholds for both lead and zinc (the critical values vary by a factor of 50), while the variation in intermediate values is the highest for lead (factor of 4,000)."
     },
     {
         "type": "text",
-        "text": "Data sources\n ",
-        "text_level": 1
+        "text": "To correctly interpret such differences, it is therefore imperative to always consider the goal of a specific SSV and the conceptual and methodological approach used at national level. Additional aspects such as stratification (land use) or correction using specific soil properties, such as pH or organic matter, also need to be considered if such SSVs are to be used beyond the national level (see also the explanation above of value range). In the 2000s, the Heracles network was founded with the purpose of stimulating the convergence of risk assessment procedures among EU countries (see Section 5.4.3 for details)."
     },
     {
         "type": "text",
-        "text": "When assessing the risk from metals in soil, the concept of deriving background, warning and action values has been applied in many EU Member States. Carlon et al. (2007) provide an overview of intermediate and critical risk levels for an array of metals in the EU. Here we present an update of these values for the most common metals considered in risk assessment (Table 5.6; the source of the data is given in Table 5.7). We selected cadmium, copper, lead and zinc and found more than 444 individual screening values, roughly 50-60 per metal and risk level. The values were initially retrieved from technical reports or policy and prescription documents at European, national or regional level and updated for Bulgaria, Czechia, Denmark and Germany. For some countries, the values might be outdated or not the most accurate available. "
+        "text": "Organic pollutants are, more so than metals, characterised by a wide range of chemical properties and associated risks for humans and other organisms. In contrast to metals, most organic pollutants are absent from the soil parent material. Defining background levels as the levels present in raw earth materials, as for metals, would imply that the background levels of most organic pollutants are zero. For some pollutants, including certain PAHs, natural phenomena such as wildfires can result in regional increases in the concentrations of such compounds. Background levels vary depending on the definition of 'background', i.e. whether or not it includes the contribution of diffuse pollution."
     },
     {
         "type": "text",
-        "text": "The full work by Carlon et al. (2007) has been summarised and included in a database by the European Topic Centre on Urban, Land and Soil Systems (ETC/ULS). The database is currently being expanded to include arsenic, mercury, nickel and chromium before it is handed back to the Eionet Working Group on Soil Contamination for review and updating. In parallel, supplementary information is being collected to understand the differences in how the SSVs are defined and derived. "
+        "text": "Unlike for metals, the values initially compiled by Carlon et al. (2007) have not been updated. However, it can be seen in Tables 5.7 and 5.8, that SSVs differ depending on future, targeted land use."
     },
     {
         "type": "text",
-        "text": "Value ranges\n ",
-        "text_level": 1
+        "text": "Similarly to SSVs for metals, differences among Member States are considerable. This relates not only to the number of chemicals regulated but also to the absolute value for a given chemical. Differences in thresholds are particularly large for PCDD/PCDF with an apparent range from the strictest value of 1*10⁻⁵ (in Italy) to 100 (in Austria). This again illustrates how differences in assumptions, approaches and acceptable risk levels can result in extreme differences in the resulting thresholds for soil. To some extent there is more consensus on the type of model to be used in risk assessments for heavy metals than for organic pollutants. This also refers to the validation of such models, as the underlying database for metals is much larger than that for most organic pollutants."
     },
     {
         "type": "text",
-        "text": "The screening values presented in Table 5.6 reveal large ranges, which represent different stratifications:\n "
+        "text": "Within the EU, there is a wide diversity of risk assessment tools (Heracles network; Carlon et al., 2007)."
     },
     {
         "type": "text",
-        "text": "•\tprotection targets considered (human health (exposure), ecosystem health, arable crop quality);\n "
+        "text": "Table 5.9 provides examples of the factors that contribute to differences in risk assessment tools and approaches and, hence, to differences in SSVs among EU Member States."
     },
     {
         "type": "text",
-        "text": "•\tunderlying risk limits in endpoints;\n "
+        "text": "Based on the conceptual differences listed in Table 5.9, the Heracles network developed an overview of key issues and differences in SSVs and underlying principles. Here, we list a selection of relevant observations:\n•\tRisk assessment models: 11 countries developed national risk assessment models; five adopted existing models.\n•\tBackground information on SSVs: 50% of countries lack published and/or accessible technical information on national SSVs (see Goidts et al. (2018) as a recent example).\n•\tReceptors (endpoints): all participating EU countries primarily address the protection of human health, 11 out of 14 also address ecological receptors (endpoints), seven address groundwater and 3 address surface waters.\n•\tPathways considered: in total, 20 pathways of pollutants of endpoints are identified; of these only one is considered by all countries, and 11 pathways are hardly covered (by fewer than four countries).\n•\tScreening values in soil versus those in water: current screening values of most countries refer to total content of pollutants in soil; in a few cases, concentrations in soil solution for protection of groundwater or transfer into plants pathways are considered.\n•\tLand use: 12 countries adopted land use-specific SSVs (however, individual land use scenarios differ); only four countries consider soil properties (notably soil organic carbon, pH, clay content)."
     },
     {
         "type": "text",
-        "text": "•\tmethodologies to convert risk limits to screening values in soil;\n "
+        "text": "Additional examples of differences in approaches to deriving SSVs relate to the definition of a 'standard soil'. In order not to let soil variability limit the application of SSVs, the Dutch system, for example, has developed a generic SSV using a fixed set of soil properties. Such SSVs for what is called a 'standard soil' (a hypothetical soil with 25% clay and 10% organic matter) are to be used as a generic, first-tier national standard. A set of correction formulas then are to be used to convert the generic SSV to local or regional conditions (Wezenbeek et al., 2008). In other countries such as the United Kingdom, a similar approach has been established, albeit with different values to represent the standard soil. In the United Kingdom, for example, an average soil organic matter content of 3.4% is used as well as different ranges in soil parameters such as pH. In some countries, SSVs obtained for ecology are further corrected for the geochemical background (Martin et al., 2022), which results in a marked variability in the final SSV even within the country. In Wallonia, eight different soil standards are used because of the large variety of soil types encountered, including anthroposols (i.e. backfilled soils) (Goidts et al., 2018)."
     },
     {
         "type": "text",
-        "text": "•\tapproaches to correct for land use or soil type; in some cases, e.g. for Wallonia, Belgium, only critical risk levels are available (called action values in Belgium). "
+        "text": "Despite these and other observed differences in approaches and assumptions, a significant achievement of the Heracles network is the agreement on the regulatory significance of SSVs, which enforce remediation action (further investigations, remediation)."
     },
     {
         "type": "text",
-        "text": "Comparability between SSVs is also limited because of analytical differences between countries. In most Member States, intermediate or critical risk levels for metals are determined after extraction using strong acids (most "
+        "text": "Existing critical limits in endpoints can serve as starting points for developing EU-wide applicable SSVs. The following are examples:\n•\tcritical limits in water based on ecological risk, as included in the Water Framework Directive (2000/60/EC; EU, 2000);\n•\tlimits in drinking water based on the protection of human health (Drinking Water Directive 98/83/EC; EU, 1998);\n•\tmaximum levels for certain pollutants (cadmium, lead and arsenic) in foodstuffs (Food Regulation (EC) No 1881/2006; EU, 2006);\n•\tmaximum levels in products used for animal feed (Directive 2002/32/EC; EU, 2002)."
     },
     {
         "type": "text",
-        "text": "commonly based on or equivalent to aqua regia, a mixture of concentrated nitric acid and hydrochloric acid). For these countries, the values can be quite comparable provided that the criteria listed above (risk limits used, protection target, etc.) are the same. In Germany, for example, SSVs for soils used for arable crops (called Prüfungswerte und Maßnahmenwerte , respectively; BBodSchV) are based on extraction using concentrated ammonium nitrate (DIN 19730: 06.97) which is believed to extract the amounts of metal (for arsenic, cadmium, lead, mercury and titanium only) that are available to plants. For grassland on the other hand, SSVs are based on extraction with aqua regia. This means that SSVs derived to protect arable crop quality are not comparable due to the method of extraction alone. "
+        "text": "Such critical levels, in the case of human health as a protection target, are related to the broadly accessible information on TDIs. This knowledge is continuously updated, for example recently for cadmium whereby critical limits in food were reduced based on new experimental data on the long-term chronic effects of cadmium on human health. Such reductions in the TDIs are also being discussed for arsenic and lead."
     },
     {
         "type": "text",
-        "text": "Levels of SSVs between countries also differ for different soil conditions, indicated by soil organic carbon class, texture, parent material group, land use and acidity (pH). However not all countries use a similar classification system, if at all, which again hampers the direct comparability of SSVs. "
+        "text": "The clear advantage of harmonised critical levels of pollutants in soils is that soil quality can be compared across borders. Note that the term 'critical level' is chosen here as a threshold back-calculated from critical limits in the policies listed above, and that SSVs remain specific to national risk assessments and policies (Römkens et al., 2022, in preparation)."
     },
     {
         "type": "text",
-        "text": "Interpretation of SSVs in Table 5.6\n ",
-        "text_level": 1
+        "text": "The overview summarised in Table 5.11 shows that, at present, the approach to developing critical levels in soils would be applicable for a selected number of heavy metals (cadmium, copper, lead, zinc) and plant protection chemicals. For metals this relates to both human and ecological risks, as controlled by quality of food, fodder and water, whereas for plant protection chemicals the risks are largely ecological in both soils and (surface) waters."
     },
     {
         "type": "text",
-        "text": "Interpreting Table 5.6 is best illustrated with an example. For cadmium, SSVs have been retrieved for 14 European countries and three regions. In accordance with the underlying principle of risk assessment, values are specific for a certain land use and specific texture classes or parent material. Other soil properties are included, such as saturated hydraulic conductivity and soil depth, as in the case of Poland. This creates not only differences in the level of SSVs between countries but also differences in limits within countries. Across all countries, the critical risk level for cadmium ranges between 1mg/kg (protected areas, Poland) and 30mg/kg (industrial land use, Brussels and Flanders region, Belgium; Slovakia); for intermediate risk, values vary by up to a factor of 100, between $0.4\\mathrm{{mg}/\\mathrm{{kg}}}$ (Slovakia) and 40mg/kg (Austria). "
+        "text": "Risk assessment tools form the basis of risk-based land management. A risk assessment tool has been defined as 'a technical (scientific) instrument such as a model, equation, database, graph, manual or protocol that contributes to risk-based soil quality assessment' (Swartjes et al., 2009). Risk assessment tools form the basis, for example, for risk-based screening values and site-specific procedures for assessing priorities for remediation. It is widely acknowledged that many different risk assessment tools exist in the EU Member States for the same purpose. Consequently, risk assessments performed in different Member States result in widely differing risk estimates at comparable contaminated sites. The international research framework and network Heracles was active in the 2000s, in anticipation of the proposed soil framework directive (which was later called off). The purpose of Heracles was 'the improvement of the consistency of risk assessment tools for human health and ecologica risk-based soil quality assessment in the EU Member States'. Improving the consistency of risk assessment tools means that there must be neither a unique procedure for dealing with contaminated sites all over Europe nor a universal list of screening values among EU Member States. It does mean, however, that the technical part of risk-based soil health assessment should be based on a similar approach, when practically feasible."
     },
     {
         "type": "text",
-        "text": "For copper, the range of variation is similar for the critical risk thresholds (30-1,500mg/kg) but much more extreme for intermediate values (factor of 1,500). A similar degree of variation is reported for thresholds for both lead and zinc (the critical values vary by a factor of 50), while the variation in intermediate values is the highest for lead (factor of 4,000). "
+        "text": "Within Heracles, a joint approach for further developing risk assessment tools was proposed that would lead to a universal toolbox in Europe, which would allow a more consistent risk assessment approach, summarised as follows:\n•\tIdentify and harmonise risk assessment tools that must be similar throughout Europe (independent of geographical, cultural, climatic or policy factors): standardised risk assessment tools\n•\tIdentify risk assessment tools that do include geographical, cultural, climatic or policy factors: flexible risk assessment tools. Develop protocols or guidelines on how to use these risk assessments in the different Member States.\n•\tPolicy positions are determined at the national level. Examples of policy decisions include whether or not to include the soil ecosystem as a protection target (or, in more general terms, the selection of protection targets considered) and the acceptable excess cancer risk after lifelong exposure to genotoxic carcinogenic compounds."
     },
     {
         "type": "text",
-        "text": "To correctly interpret such differences, it is therefore imperative to always consider the goal of a specific SSV and the conceptual and methodological approach used at national level. Additional aspects such as stratification (land use) or correction using specific soil properties, such as pH or organic matter, also need to be considered if such SSVs are to be used beyond the national level (see also the explanation above of value range). In the 2000s, the Heracles network was founded with the purpose of stimulating the convergence of risk assessment procedures among EU countries (see Section 5.4.3 for details). "
+        "text": "It was further suggested that a repository of risk assessment tools in Europe be set up, which could lead to a toolbox with standardised and flexible tools (including guidelines for use) for EU-wide use in the future. See Swartjes et al. (2009) for details, in which 20 continuous, short term and long-term actions to create a harmonised toolbox for risk-based land management are set out. The design of such a toolbox is elaborated in Table 5.10."
     },
     {
-        "type": "table",
-        "img_path": "images/7d30846b3505430332d93d06c9ddbed0a148409b90481a0b5725649e5b2dec78.jpg",
-        "table_caption": "Table 5.6\tCurrent screening values (SSVs) for cadmium and copper in soil for intermediate and critical risk  levels (mg/kg) ",
-        "table_footnote": "Notes:\t( a ) Stratified according to: LU, land use, text., texture; SOM, soil organic matter; SHC, saturated hydraulic conductivity; $Z,$  soil depth. ( b ) Analysis based on concentrated ammonium nitrate (commonly, extraction with aqua regia is used). The references for this table are available on request from the EEA; they are contained in a database of European SSVs (EEA and Eionet  Thematic Group Soil, Working Group on Soil Contamination). "
-    },
-    {
-        "type": "text",
-        "text": "5.3.2.1\tOrganic pollutants ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Organic pollutants are, more so than metals, characterised by a wide range of chemical properties and associated risks for humans and other organisms. In contrast to metals, most organic pollutants are absent from the soil parent material. Defining background levels as the levels present in raw earth materials, as for metals, would imply that the background levels of most organic pollutants are zero. For some pollutants, including certain PAHs, "
-    },
-    {
-        "type": "text",
-        "text": "natural phenomena such as wildfires can result in regional increases in the concentrations of such compounds. Background levels vary depending on the definition of 'background', i.e. whether or not it includes the contribution of diffuse pollution. "
-    },
-    {
-        "type": "text",
-        "text": "Unlike for metals, the values initially compiled by Carlon et al. (2007) have not been updated. However, it can be seen in Tables 5.7 and 5.8, that SSVs differ depending on future, targeted land use. "
-    },
-    {
-        "type": "table",
-        "img_path": "images/6d11fa87ec95112589bc0ee907aa9bbf0fee877b5678437d3c695f382fc736ae.jpg",
-        "table_caption": "Table 5.7\tScreening values for potentially unacceptable risk (industrial soil use) for organic contaminants  (mg/kg)  ",
-        "table_footnote": "Note: \tB, Brussels; F, Flanders, W, Wallonia. For Finland, the upper guideline values are presented.\n Not presented are countries where the intended land use is not clearly stated.\n Until 2007, 13 countries had not reported any national SSVs for organic pollutants.\n The list of substances in several national guidelines is larger than represented here. "
-    },
-    {
-        "type": "table",
-        "img_path": "images/9491cfff58ca923a29e74157b1e737c7420cebaad7815a1b0bee1de8b308ea65.jpg",
-        "table_caption": "Table 5.8\tScreening values for potentially unacceptable risk (residential soil use) for organic  contaminants (mg/kg) ",
-        "table_footnote": "Note: \tB, Brussels, F, Flanders; W, Wallonia; PCDD, polychlorinated dibenzodioxins; PCDF, polychlorinated dibenzofurans.\n For countries not represented, see also note for Figure 5-7. "
-    },
-    {
-        "type": "text",
-        "text": "Similarly to SSVs for metals, differences among Member States are considerable. This relates not only to the number of chemicals regulated but also to the absolute value for a given chemical. Differences in thresholds are particularly large for PCDD/PCDF with an apparent range from the strictest value of $\\uparrow\\times\\uparrow0^{.5}$ (in Italy) to 100 (in Austria). This again illustrates how differences in assumptions, approaches and acceptable risk levels can result in extreme differences in the resulting thresholds for soil. To some extent there is more consensus on the type of model to be used in risk assessments for heavy metals than for organic pollutants. This also refers to the validation of such models, as the underlying database for metals is much larger than that for most organic pollutants. "
-    },
-    {
-        "type": "text",
-        "text": "5.4 Challenges and solutions to improve consistency of soil screening values across Europe ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "5.4.1\tFactors affecting the variability of SSVs ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Within the EU, there is a wide diversity of risk assessment tools (Heracles network ( 23 ); Carlon et al., 2007). "
-    },
-    {
-        "type": "text",
-        "text": "Table 5.9 provides examples of the factors that contribute to differences in risk assessment tools and approaches and, hence, to differences in SSVs among EU Member States. "
-    },
-    {
-        "type": "text",
-        "text": "Based on the conceptual differences listed in Table 5.9, the Heracles network developed an overview of key issues and differences in SSVs and underlying principles. Here, we list a selection of relevant observations:\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tRisk assessment models : 11 countries developed national risk assessment models; five adopted existing models.\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tBackground information on SSVs: $50\\%$ of countries lack published and/or accessible technical information on national SSVs (see Goidts et al. (2018) as a recent example).\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tReceptors (endpoints) : all participating EU countries primarily address the protection of human health, 11 out of 14 also address ecological receptors (endpoints), seven address groundwater and 3 address surface waters. "
-    },
-    {
-        "type": "text",
-        "text": "•\tPathways considered : in total, 20 pathways of pollutants of endpoints are identified; of these only one is considered by all countries, and 11 pathways are hardly covered (by fewer than four countries).\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tScreening values in soil versus those in water: current screening values of most countries refer to total content of pollutants in soil; in a few cases, concentrations in soil solution for protection of groundwater or transfer into plants pathways are considered.\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tLand use : 12 countries adopted land use-specific SSVs (however, individual land use scenarios differ); only four countries consider soil properties (notably soil organic carbon, pH, clay content). "
-    },
-    {
-        "type": "text",
-        "text": "Additional examples of differences in approaches to deriving SSVs relate to the definition of a 'standard soil'. In order not to let soil variability limit the application of SSVs, the Dutch system, for example, has developed a generic SSV using a fixed set of soil properties. Such SSVs for what is called a 'standard soil' (a hypothetical soil with $25\\%$ clay and $10\\%$  organic matter) are to be used as a generic, first-tier national standard. A set of correction formulas then are to be used to convert the generic SSV to local or regional conditions (Wezenbeek et al., 2008). In other countries such as the United Kingdom, a similar approach has been established, albeit with different values to represent the standard soil. In the United Kingdom, for example, an average soil organic matter content of $3.4\\%$ is used as well as different ranges in soil parameters such as pH. In some countries, SSVs obtained for ecology are further corrected for the geochemical background (Martin et al., 2022), which results in a marked variability in the final SSV even within the country. In Wallonia, eight different soil standards are used because of the large variety of soil types encountered, including anthroposols (i.e. backfilled soils) (Goidts et al., 2018). "
-    },
-    {
-        "type": "text",
-        "text": "Despite these and other observed differences in approaches and assumptions, a significant achievement of the Heracles network is the agreement on the regulatory significance of SSVs, which enforce remediation action (further investigations, remediation). "
-    },
-    {
-        "type": "table",
-        "img_path": "images/fe65b8f19d4c4f8e0c5c4de2367448182cb7401626b2d90fc8739d4bec8dc994.jpg",
-        "table_caption": "Table 5.9\tFactors contributing to differences in risk assessment tools and approaches, and to differences in  SSVs among EU Member states "
-    },
-    {
-        "type": "text",
-        "text": "5.4.2\tGeneric critical levels in soil through back-calculation (transfer) of critical limits in policies "
-    },
-    {
-        "type": "text",
-        "text": "Existing critical limits in endpoints can serve as starting points for developing EU-wide applicable SSVs. The following are examples: \n "
-    },
-    {
-        "type": "text",
-        "text": "•\tcritical limits in water based on ecological risk, as included in the Water Framework Directive (2000/60/EC; EU, 2000);\n •\tlimits in drinking water based on the protection of human health (Drinking Water Directive 98/83/EC; EU, 1998);\n •\tmaximum levels for certain pollutants (cadmium, lead and arsenic) in foodstuffs (Food Regulation (EC) No 1881/2006; EU, 2006);\n •\tmaximum levels in products used for animal feed (Directive 2002/32/EC; EU, 2002). "
-    },
-    {
-        "type": "text",
-        "text": "Such critical levels, in the case of human health as a protection target, are related to the broadly accessible information on TDIs. This knowledge is continuously updated, for example recently for cadmium whereby critical limits in food were reduced based on new experimental data on the long-term chronic effects of cadmium on human health. Such reductions in the TDIs are also being discussed for arsenic and lead. "
-    },
-    {
-        "type": "text",
-        "text": "The clear advantage of harmonised critical levels of pollutants in soils is that soil quality can be compared across borders. Note that the term 'critical level' is chosen here as a threshold back-calculated from critical limits in the policies listed above, and that SSVs remain specific to national risk assessments and policies (Römkens et al., 2022, in preparation). "
-    },
-    {
-        "type": "text",
-        "text": "The overview summarised in Table 5.11 shows that, at present, the approach to developing critical levels in soils would be applicable for a selected number of heavy metals (cadmium, copper, lead, zinc) and plant protection chemicals. For metals this relates to both human and ecological risks, as controlled by quality of food, fodder and water, whereas for plant protection chemicals the risks are largely ecological in both soils and (surface) waters. "
-    },
-    {
-        "type": "text",
-        "text": "5.4.3\tTowards a stronger convergence of risk-based land management procedures ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Risk assessment tools form the basis of risk-based land management. A risk assessment tool has been defined as 'a technical (scientific) instrument such as a model, equation, database, graph, manual or protocol that contributes to "
-    },
-    {
-        "type": "text",
-        "text": "risk-based soil quality assessment' (Swartjes et al., 2009). Risk assessment tools form the basis, for example, for risk-based screening values and site-specific procedures for assessing priorities for remediation. It is widely acknowledged that many different risk assessment tools exist in the EU Member States for the same purpose. Consequently, risk assessments performed in different Member States result in widely differing risk estimates at comparable contaminated sites. The international research framework and network Heracles was active in the 2000s, in anticipation of the proposed soil framework directive (which was later called off). The purpose of Heracles was 'the improvement of the consistency of risk assessment tools  for human health and ecologica\n risk-based soil quality assessment in the EU Member States'. Improving the consistency of risk assessment tools means that there must be neither a unique procedure for dealing with contaminated sites all over Europe nor a universal list of screening values among EU Member States. It does  mean, however, that the technical part  of risk-based soil health assessment should be based on a similar approach, when practically feasible. "
-    },
-    {
-        "type": "text",
-        "text": "Within Heracles, a joint approach for further developing risk assessment tools was proposed that would lead to a universal toolbox  in Europe, which would allow a more consistent risk assessment approach, summarised as follows:\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tIdentify and harmonise risk assessment tools that must be similar throughout Europe (independent of geographical, cultural, climatic or policy factors): standardised risk assessment tools\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tIdentify risk assessment tools that do include geographical, cultural, climatic or policy factors: flexible risk assessment tools. Develop protocols or guidelines on how to use these risk assessments in the different Member States.\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tPolicy positions are determined at the national level. Examples of policy decisions include whether or not to include the soil ecosystem as a protection target (or, in more general terms, the selection of protection targets considered) and the acceptable excess cancer risk after lifelong exposure to genotoxic carcinogenic compounds. "
-    },
-    {
-        "type": "text",
-        "text": "It was further suggested that a repository of risk assessment tools in Europe be set up, which could lead to a toolbox with standardised and flexible tools (including guidelines for use) for EU-wide use in the future. See Swartjes et al. (2009) for details, in which 20 continuous, short term and long-term actions to create a harmonised toolbox for risk-based land management are set out. The design of such a toolbox is elaborated in Table 5.10. "
-    },
-    {
-        "type": "table",
-        "img_path": "images/5018cb414bf342f0c5aa60ee89a6ce5869636ea543418747e9dd6253b14dc89a.jpg",
-        "table_caption": "Table 5.10\tDesign of a European toolbox for stimulating convergence in risk-based land management in the  EU Member States ",
-        "table_footnote": "Note:\t( a ) The species sensitivity distribution (SSD) is the empirical relation between soil concentration and fraction of species affected. The SSD  gives the corresponding risk limit that can be used as an ecologically based soil health standard (Swartjes et al., 2009). "
-    },
-    {
-        "type": "text",
-        "text": "An additional aspect of harmonisation is the availability of representative data  at EU level . Because of differences in monitoring approaches (e.g. analytical methods, sampling depth and frequency), results from national monitoring data may not be easily comparable. Nevertheless, for a risk-based approach across Europe, a large degree of harmonisation can be achieved if the standardised tools (Table 5.10) are agreed and made available. Regarding the comparability of SSVs, a Europe-wide assessment could be based on back-calculated generic risk limits (e.g. drinking water quality standards (see also $80\\times5.1$ ), with acceptable levels in the soil solution, while national assessments could use countries' own SSVs. There will be considerable overlap, however, and national approaches will be more accurate. "
-    },
-    {
-        "type": "text",
-        "text": ""
-    },
-    {
-        "type": "text",
-        "text": "Table 5.11 summarises some of the key elements relevant for risk assessment for several main groups of pollutants. "
-    },
-    {
-        "type": "table",
-        "img_path": "images/69e9a852d5f246ae617cf9aa2e120fb6cecda97e14d3a4f026ebb833d8735398.jpg",
-        "table_caption": "Table 5.11\tStatus of knowledge about various groups of pollutants in soil ",
-        "table_footnote": "Note: \tEFSA, European Food Safety Authority; PNEC, predicted no-effect concentration; WFD, Water Framework Directive.  "
-    },
-    {
-        "type": "text",
-        "text": "6\n Soil biodiversity loss ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Soil organisms are the 'biological engine of the Earth' and are crucial for the functioning of soils. An active microbiome and below-ground food web controls the energy transformations and nutrient turnover of ecosystems. The aim of this chapter is to describe current approaches for defining loss of soil biodiversity at the European level. Species diversity may seem, by definition, a robust indicator of the health of soil communities. However, there is a general lack of knowledge about the status of soil biodiversity and its baselines. While an enormous number of soil-dwelling species are still undescribed, experimental evidence is also lacking for the critical role of functionally relevant (flagship) species and the effects of their loss. Rather than net species numbers, research is currently focusing on the interactions between functional groups of organisms and their abiotic environment. Although it is currently impossible to measure soil biodiversity quantitatively and accurately as a whole, or to assess its health or level of degradation, it can be approximated using combinations of sub-indicators. "
-    },
-    {
-        "type": "table",
-        "img_path": "images/f59ee23b9c1eece4cf01772a005b5688463e340c5579ab85fd554363877d27aa.jpg",
-        "table_caption": "Table 6.:\tRelationship of soil biodiversity to key societal needs and soil functions "
-    },
-    {
-        "type": "text",
-        "text": "6.1 Rationale for the indicator 'loss of soil biodiversity' ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "•\tSoil biodiversity commonly includes all organisms living in the soil (including the soil surface, e.g. the litter layer): macro-, meso- and microfauna, and microorganisms (bacteria, fungi, protists, archaea and algae). According to Bloem et al. (2006b), the main functional groups of the soil food web are as follows:\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tEarthworms consume plant residues and soil including (micro)organisms. Often, they form the major part of the soil fauna biomass with up to 1,000 individuals per $m}^{2}$ , 3,000kg fresh biomass per hectare or a few hundred kilograms of carbon (C) per hectare.\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tEnchytraeids (pot worms) are relatives of earthworms with a much smaller size and a similar diet. Their densities vary between $10^{2}/{m}}^{2}$ and $10^{6}/m}^{2}$ , with a biomass of up to 1kg C/   ha.\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tMites (fungivores, bacterivores, predators) have a size of about 1mm, densities of about $10^{5}/m}^{2}$ and a biomass of up to $0.1\\,\\mathrm{kg}$ C/ha.\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tSpringtails or Collembola (fungivores, omnivores) also have a size of about 1mm. They reach densities of $10^{3}-10^{5}/m}^{2}$ and a biomass of up to 1kg C/ha.\n "
-    },
-    {
         "type": "text",
-        "text": "•\tNematodes (bacterivores, herbivores, fungivores, predators/omnivores) have a size of about $500\\upmu\\mathrm{m},$ , densities of $10/\\mathrm{g}$ to $50/\\mathrm{g}$ soil and a biomass of up to 1kg C/ha.\n "
+        "text": "An additional aspect of harmonisation is the availability of representative data at EU level. Because of differences in monitoring approaches (e.g. analytical methods, sampling depth and frequency), results from national monitoring data may not be easily comparable. Nevertheless, for a risk-based approach across Europe, a large degree of harmonisation can be achieved if the standardised tools (Table 5.10) are agreed and made available. Regarding the comparability of SSVs, a Europe-wide assessment could be based on back-calculated generic risk limits (e.g. drinking water quality standards (see also Box 5.1), with acceptable levels in the soil solution, while national assessments could use countries' own SSVs. There will be considerable overlap, however, and national approaches will be more accurate."
     },
     {
         "type": "text",
-        "text": "•\tProtists (amoebae, flagellates, ciliates) are unicellular animals with a size of $_{2-200\\upmu\\mathrm{m}}$ , densities of about 106 cells/g soil and a biomass of about 10kg C/ha.\n "
+        "text": "Table 5.11 summarises some of the key elements relevant for risk assessment for several main groups of pollutants."
     },
     {
         "type": "text",
-        "text": "•\tBacteria are usually smaller than $2\\upmu\\mathrm{m},$ , with densities of about $\\uparrow0^{9}$ cells/g soil and a biomass of 50-500kg C/   ha. Bacteria are the smallest and most numerous of the soil organisms.\n "
+        "text": "Soil organisms are the 'biological engine of the Earth' and are crucial for the functioning of soils. An active microbiome and below-ground food web controls the energy transformations and nutrient turnover of ecosystems. The aim of this chapter is to describe current approaches for defining loss of soil biodiversity at the European level. Species diversity may seem, by definition, a robust indicator of the health of soil communities. However, there is a general lack of knowledge about the status of soil biodiversity and its baselines. While an enormous number of soil-dwelling species are still undescribed, experimental evidence is also lacking for the critical role of functionally relevant (flagship) species and the effects of their loss. Rather than net species numbers, research is currently focusing on the interactions between functional groups of organisms and their abiotic environment. Although it is currently impossible to measure soil biodiversity quantitatively and accurately as a whole, or to assess its health or level of degradation, it can be approximated using combinations of sub-indicators."
     },
     {
         "type": "text",
-        "text": "•\tFungi grow as networks of threads (hyphae) which usually have diameters of $2{\\mathord{-}}10\\upmum}$ and reach total lengths of $10{\\cdot}1000\\mathrm{m/g}$ soil, and a biomass of 1-500kg C/ha. "
+        "text": "An increase in soil biodiversity has positive impacts on almost all soil-related societal needs and soil functions (Table 6.1)."
     },
     {
         "type": "text",
-        "text": "[The numbers given above vary considerably according to climatic conditions, soil properties and anthropogenic impact, especially at agricultural sites.] "
+        "text": "Soil biodiversity commonly includes all organisms living in the soil (including the soil surface, e.g. the litter layer): macro-, meso- and microfauna, and microorganisms (bacteria, fungi, protists, archaea and algae). According to Bloem et al. (2006b), the main functional groups of the soil food web are as follows:\n•\tEarthworms consume plant residues and soil including (micro)organisms. Often, they form the major part of the soil fauna biomass with up to 1,000 individuals per m², 3,000kg fresh biomass per hectare or a few hundred kilograms of carbon (C) per hectare.\n•\tEnchytraeids (pot worms) are relatives of earthworms with a much smaller size and a similar diet. Their densities vary between 100/m² and 10⁶/m², with a biomass of up to 1kg C/ha.\n•\tMites (fungivores, bacterivores, predators) have a size of about 1mm, densities of about 10⁵/m² and a biomass of up to 0.1 kg C/ha.\n•\tSpringtails or Collembola (fungivores, omnivores) also have a size of about 1mm. They reach densities of 1000-10⁵/m² and a biomass of up to 1kg C/ha.\n•\tNematodes (bacterivores, herbivores, fungivores, predators/omnivores) have a size of about 500µm, densities of 10/g to 50/g soil and a biomass of up to 1kg C/ha.\n•\tProtists (amoebae, flagellates, ciliates) are unicellular animals with a size of 2-200µm, densities of about 10⁶ cells/g soil and a biomass of about 10kg C/ha.\n•\tBacteria are usually smaller than 2µm, with densities of about 10⁹ cells/g soil and a biomass of 50-500kg C/ha. Bacteria are the smallest and most numerous of the soil organisms.\n•\tFungi grow as networks of threads (hyphae) which usually have diameters of 2-10µm and reach total lengths of 10-1000m/g soil, and a biomass of 1-500kg C/ha.\n[The numbers given above vary considerably according to climatic conditions, soil properties and anthropogenic impact, especially at agricultural sites.]"
     },
     {
         "type": "text",
