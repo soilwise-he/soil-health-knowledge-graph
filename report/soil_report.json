@@ -981,231 +981,103 @@
     },
     {
         "type": "text",
-        "text": "The role of diffuse pollution has now been recognised as a potential problem at EU level and has already resulted in targeted policies. For example, the new Fertilising Products Regulation (EU, 2019) and the quality standards therein are at least partially based on a risk-based approach with the aim of minimising the long-term deterioration of soil health. There are also proposals for end-of-waste criteria for recycled materials such as compost and digestate (Saveyn et al., 2014) and, more recently, for materials such as biochar struvite and ash (Huygens et al., 2019). These proposals, however, largely target the quality of inputs to soil rather than assessing soil health with SSVs. Nevertheless, a large part of the current maximum limits included in the Fertilising Products Regulation originate from or are close to those from the German Bundes-Bodenschutz- und Altlastenverordnung (BBodSchV) and are at least partially risk-based. "
+        "text": "The role of diffuse pollution has now been recognised as a potential problem at EU level and has already resulted in targeted policies. For example, the new Fertilising Products Regulation (EU, 2019) and the quality standards therein are at least partially based on a risk-based approach with the aim of minimising the long-term deterioration of soil health. There are also proposals for end-of-waste criteria for recycled materials such as compost and digestate (Saveyn et al., 2014) and, more recently, for materials such as biochar struvite and ash (Huygens et al., 2019). These proposals, however, largely target the quality of inputs to soil rather than assessing soil health with SSVs. Nevertheless, a large part of the current maximum limits included in the Fertilising Products Regulation originate from or are close to those from the German Bundes-Bodenschutz- und Altlastenverordnung (BBodSchV) and are at least partially risk-based."
     },
     {
         "type": "text",
-        "text": ""
+        "text": "Apart from the focus on the current condition of soils (e.g. agricultural soils), negative trends and expected future effects of soil pollution may also trigger (preventative) action, with the objective of avoiding exceeding SSVs under continuous pressure. Basically, two policy-driven approaches can be distinguished:\n1.\tFuture concentrations in soil should not exceed the defined SSV at any given point in time (or a predefined timeframe such as 2050 to establish a toxic free environment in the EU). Usually, risk-based limits are used to derive meaningful acceptable inputs to soil (e.g. in the case of Directive 86/278/EEC (EEC, 1986) on the use of sludge in agriculture). In some cases, background concentrations can also be used (except in the case of lithogenic anomalies), although this would inevitably lead to very strict (low) acceptable loads to soil.\n2.\tAvoiding any accumulation of pollutants in soil is an alternative approach currently under discussion (also referred to as the 'stand-still' scenario) and introduced as part of the zero-pollution action plan. In the case of a stand-still approach, inputs to soil are not to exceed outputs from soil in order to maintain the current concentration of pollutants (or nutrients such as phosphorus). This approach is not risk based in that the current level is considered the relevant criterion rather than the level at which effects become unacceptable. For most relevant pollutants, however, current concentrations are largely below risk levels related to food quality or ecosystem health and a stand-still approach can therefore be considered sufficiently protective."
     },
     {
         "type": "text",
-        "text": "Apart from the focus on the current condition of soils (e.g. agricultural soils), negative trends and expected future effects of soil pollution may also trigger (preventative) action, with the objective of avoiding exceeding SSVs under continuous pressure. Basically, two policy-driven approaches can be distinguished:\n "
+        "text": "The objective of an indicator for soil pollution is, in essence, to quantify the actual degree of pollution of soil or groundwater bodies by comparing the actual state (as defined by the measured concentration in soil or water) with the critical level indicated by the SSV or threshold in groundwater or surface water. The actual or intended use of the land or water body to be evaluated determines what risk level is appropriate and hence the magnitude of the respective SSV or water quality threshold. This means that, depending on the land use (as well as soil type or water quality), a site can be classified as 'at risk', whereas a similar area and similar pollutant concentration but a different land use could be classified as not at risk. It is therefore the case that SSVs for specific services such as 'nature' or food production are far lower (stricter) than those for industry."
     },
     {
         "type": "text",
-        "text": "1.\tFuture concentrations in soil should not exceed the defined SSV at any given point in time (or a predefined timeframe such as 2050 to establish a toxic free environment in the EU). Usually, risk-based limits are used to derive meaningful acceptable inputs to soil (e.g. in the case of Directive 86/278/EEC (EEC, 1986) on the use of sludge in agriculture). In some cases, background concentrations can also be used (except in the case of lithogenic anomalies), although this would inevitably lead to very strict (low) acceptable loads to soil.\n "
+        "text": "The classification of the type of indicators for both diffuse and point source pollution and various types of chemicals (metals, nitrogen, phosphorous, organic pollutants) is based on the same principle, namely the risk-based approach using SSVs. Nevertheless, different types of indicators can be distinguished, depending on the nature of the pollution (point source or diffuse). A few examples are given to illustrate this below."
     },
     {
         "type": "text",
-        "text": "2.\tAvoiding any accumulation of pollutants in soil is an alternative approach currently under discussion (also referred to as the 'stand-still' scenario) and introduced as part of the zero-pollution action plan. In the case of a stand-still approach, inputs to soil are not to exceed outputs from soil in order to maintain the current concentration of pollutants (or nutrients such as phosphorus). This approach is not risk based in that the current level is considered the relevant criterion rather than the level at which effects become unacceptable. For most relevant pollutants, however, current concentrations are largely below risk levels related to food quality or ecosystem health and a stand-still approach can therefore be considered sufficiently protective.\n "
+        "text": "With regard to the detection, management and remediation of contaminated sites, Freudenschuss et al. (2001) distinguished several sub-indicators (in this case statistical parameters), including soil polluting activity, number of contaminated sites, progress in the management of contaminated sites, expenditures on remediation and groundwater incidents. Since then, the work has been taken further by the European Environment Information and Observation Network (Eionet) Thematic Group Soil, based on questionnaires (EEA, 2022c)."
     },
     {
         "type": "text",
-        "text": "5.2 Indicators for soil pollution ",
-        "text_level": 1
+        "text": "The current indicator for contaminated land considers statistics on six site statuses representing some of the sub-indicators mentioned above (for details, see Payá Pérez and Rodríguez Eugenio, 2018). The current version of this indicator is based on the last Eionet questionnaire in 2016. Future updates may include polluting activities, dominant pollutants and spatial reference to regional administrative borders (number of sites per polluting activity and site status per NUTS 3 region; the proposal is currently under discussion and will address issues raised by Van-Camp et al. (2004b). The authors suggest the establishment of a European Point Source Assessment System (EPSAS). The development of such a register must be closely aligned with existing data collections on current industrial installations, reported to the EEA's European Pollutant Release and Transfer Register (E-PRTR), and data collections under the Mercury Regulation ((EU) 2017/852)."
     },
     {
         "type": "text",
-        "text": "5.2.1\tIndicator definitions ",
-        "text_level": 1
+        "text": "Currently, a proposal and agreement for an indicator on diffuse pollution is lacking, while placeholders for such an indicator are included in the indicator sets of the zero pollution action plan and the chemicals strategy for sustainability. Several national monitoring systems investigate the trend in metal concentrations and stocks in agricultural and forest soils; to a lesser degree, this includes organic pollutants."
     },
     {
         "type": "text",
-        "text": "The objective of an indicator for soil pollution is, in essence, to quantify the actual degree of pollution of soil or groundwater bodies by comparing the actual state (as defined by the measured concentration in soil or water) with the critical level indicated by the SSV or threshold in groundwater or surface water. The actual or intended use of the land or water body to be evaluated determines what risk level is appropriate and hence the magnitude of the respective SSV or water quality threshold. This means that, depending on the land use (as well as soil type or water quality), a site can be classified as 'at risk', whereas a similar area and similar pollutant concentration but a different land use could be classified as not at risk. It is therefore the case that SSVs for specific services such as 'nature' or food production are far lower (stricter) than those for industry. "
+        "text": "Two kinds of indicators were suggested during several Eionet workshops (Freudenschuss et al., 2001):\n•\tdirect indicators related to a specific load of contaminants, such as the average pesticide consumption per unit area of agricultural land or the amount of sewage sludge applied per unit area of agricultural land;\n•\tindicators based on a mass balance approach, such as the input-output assessment of heavy metals in arable cropping systems, and, based on this, the critical load of heavy metal content in soils related to different land uses."
     },
     {
         "type": "text",
-        "text": "The classification of the type of indicators for both diffuse and point source pollution and various types of chemicals (metals, nitrogen, phosphorous, organic pollutants) is based on the same principle, namely the risk-based approach using SSVs. Nevertheless, different types of indicators can be distinguished, depending on the nature of the pollution (point source or diffuse). A few examples are given to illustrate this below. "
+        "text": "An extended rationale for these parameters and indicators related to diffuse pollution can be found in Van-Camp et al. (2004b). They suggest that the following metals and nutrients could be realistically monitored, recommending 5- to 10-year sampling intervals:\n•\theavy metals (cadmium, copper, lead, zinc, mercury, arsenic, nickel and chromium);\n•\tnutrients (nitrogen and phosphates)."
     },
     {
         "type": "text",
-        "text": "Selected indicators for point source pollution ",
-        "text_level": 1
+        "text": "These recommendations were evaluated and synthesised by Huber et al. (2008), as a suggestion for a European soil monitoring system. Because of the lack of soil data, the definition of an indicator on diffuse soil pollution has never been realised until now. The lack of representative soil data on actual pollutant concentrations (e.g. for heavy metals) has also prevented such assessments (Bünemann et al., 2018). Various recent European monitoring activities, in particular the LUCAS Soil survey (Toth et al., 2013; Reimann et al., 2014; Ballabio et al., 2018) are collecting harmonised data about basic soil properties (e.g. pH, clay content and organic matter) as well as heavy metals."
     },
     {
         "type": "text",
-        "text": "With regard to the detection, management and remediation of contaminated sites, Freudenschuss et al. (2001) distinguished several sub-indicators (in this case statistical parameters), including soil polluting activity, number of contaminated sites, progress in the management of contaminated sites, expenditures on remediation and groundwater incidents. Since then, the work has been taken further by the European Environment Information and Observation Network (Eionet) Thematic Group Soil, based on questionnaires (EEA, 2022c). "
+        "text": "Table 5.5 provides an overview of the current set of indicators on diffuse and point source pollution."
     },
     {
         "type": "text",
-        "text": "The current indicator for contaminated land considers statistics on six site statuses representing some of the sub-indicators mentioned above (for details, see Payá Pérez and Rodríguez Eugenio, 2018). The current version of this indicator is based on the last Eionet questionnaire in 2016. Future updates may include polluting activities, dominant pollutants and spatial reference to regional administrative borders (number of sites per polluting activity and site status per NUTS 3 region ( 21 ); the proposal is currently under discussion and will address issues raised by Van-Camp et al. (2004b). The authors suggest the establishment of a European Point Source Assessment System (EPSAS). The development of such a register must be closely aligned with existing data collections on current industrial installations, reported to the EEA's European Pollutant Release and Transfer Register (E-PRTR), and data collections under the Mercury Regulation ((EU) 2017/852). "
+        "text": "All listed state and impact indicators require agreement about common criteria for the definition of thresholds (here SSVs) . It is essential that any such agreement is based on a common terminology and definitions."
     },
     {
         "type": "text",
-        "text": "Indicators for soil pollution from diffuse sources ",
-        "text_level": 1
+        "text": "Apart from the conceptual issues of what type of indicator should be used, methodological issues can often present an equally large obstacle to comparing or evaluating data from different sources. This relates to the entire chain from selection of sites to be monitored (either soil or land use monitoring) through procedural issues related to monitoring itself (e.g. sampling protocol) to analytical aspects and interpretation of data."
     },
     {
         "type": "text",
-        "text": "Currently, a proposal and agreement for an indicator on diffuse pollution is lacking, while placeholders for such an indicator are included in the indicator sets of the zero pollution action plan and the chemicals strategy for sustainability. Several national monitoring systems investigate the trend in metal concentrations and stocks in agricultural and forest soils; to a lesser degree, this includes organic pollutants. "
+        "text": "The following section considers some key methodical issues when collecting data on soil pollution:\n•\tanalyses of pollution sources and patterns (statistics, maps);\n•\tsampling procedures (e.g. depth, sampling amount, field moisture and in situ determination of dynamic properties such as pH or EH (redox potential) levels at the time of sampling);\n•\tsample transport and conservation;\n•\tsample preparation and homogenisation;\n•\tlaboratory analysis and interlaboratory quality control;\n•\tdata interpretation."
     },
     {
         "type": "text",
-        "text": ""
+        "text": "The analyses of pollution patterns and the development of a sampling protocol are different for diffuse and point source polluted sites. Since diffuse soil pollution is characterised by a homogeneous pollution pattern, a limited number of samples and analyses of composite samples are appropriate. For point source polluted sites, several options are available for sampling, depending on the pollutant pattern. In the Netherlands, a preliminary, an exploratory and a main investigation are used (Lamé, 2011). The preliminary investigation is a desk study combined with a site visit. A preliminary investigation can be performed both for sites where pollution is expected and for sites that are probably uncontaminated. The main objective of the exploratory investigation is to prove that the assumptions made in the preliminary investigation are indeed correct. The goal of the main investigation is to provide the necessary information to deal with the pollution cost-efficiently. The main investigation is an iterative process: after each step, it has to be decided if the available information is 'fit for purpose'."
     },
     {
         "type": "text",
-        "text": "Two kinds of indicators were suggested during several Eionet workshops (Freudenschuss et al., 2001):\n "
+        "text": "Sampling of soil and groundwater has also been standardised, i.e. for the sampling of soil (ISO 18400-104:2018 Soil quality — Sampling; ISO, 2018a) and groundwater (ISO 5667-11:2009 Water quality — Sampling; ISO, 2009). Depending on the country, additional national and/or regional protocols may also have been developed."
     },
     {
         "type": "text",
-        "text": "•\tdirect indicators related to a specific load of contaminants, such as the average pesticide consumption per unit area of agricultural land or the amount of sewage sludge applied per unit area of agricultural land;\n •\tindicators based on a mass balance approach, such as the input-output assessment of heavy metals in arable cropping systems, and, based on this, the critical load of heavy metal content in soils related to different land uses. "
+        "text": "To achieve comparability of data from different sources (countries, laboratories) across the EU and Europe, an international protocol with common sampling and analytical procedures is needed. Error detection and quality control procedures also demand studies on spatial variability and method comparability (including ring analysis). Since data interpretation involves the matching of actual indicators with thresholds, the national risk assessment procedures underlying such thresholds need to be described and made available across Member States."
     },
     {
         "type": "text",
-        "text": "An extended rationale for these parameters and indicators related to diffuse pollution can be found in Van-Camp et al. (2004b). They suggest that the following metals and nutrients could be realistically monitored, recommending 5- to 10-year sampling intervals:\n "
+        "text": "In addition to the indicators used to characterise the current status of soils in terms of pollution, dynamic indicators are increasingly being developed to assess future levels and risks of pollutants in soil. This is particularly relevant for diffuse pollution, considering the differences observed in the health of soils affected by point source pollution versus those affected by diffuse pollution from an active source (such as the application of pesticides, manure or sewage sludge). In the case of point source pollution, the chemical quality of soils can be such that immediate action is required or, perhaps better, assessment tools should be able to detect where action is immediately required in order to reduce the risks to human and/or ecosystem health. For soils affected by diffuse pollution, however, the current health of most soils is not yet affected to such an extent that it poses an immediate threat. However, continuing the current inputs from diffuse sources (either the atmosphere or direct inputs from land use) can lead to critical pollutant levels being exceeded. This requires a different approach from that applied for point source pollution."
     },
     {
         "type": "text",
-        "text": "•\theavy metals (cadmium, copper, lead, zinc, mercury, arsenic, nickel and chromium);\n "
+        "text": "As stated above, diffuse pollution is often ongoing but, at present, has not yet caused serious issues with soil health (apart from selected cases of proximity pollution). For example, the current soil concentrations of copper and zinc in the Netherlands in terms of ecological risks are not of concern in the majority of arable soils (De Vries et al., 2004; Groenenberg et al., 2006). However, due to the rather high concentrations of both elements in manure (Römkens and Rietra, 2008; Deltares, 2018) and high application rates of manure in the Netherlands, both copper and zinc levels in soil are expected to increase because of the positive balance in most arable cropping systems. This in turn will lead to an exceedance of the critical threshold levels (SSVs) for both metals over time in terms of ecosystem functioning (De Vries et al., 2004 Groeneberg et al., 2006). The speed at which accumulation (or depletion) occurs depends on the combination of the load to soil and removal rate from the soil, which in turn depends on soil properties such as pH and organic matter. This means that accumulation is faster in high pH soils or soils rich in organic matter or clay. On the other hand, the risk of an increase in concentrations in groundwater is higher in low pH soils. The continued use of manure in combination with inorganic fertilisers, as well as the use of PPPs, has resulted in nitrate and pesticides leaching into groundwater bodies in several EU countries, thus affecting the quality of drinking water."
     },
     {
         "type": "text",
-        "text": "•\tnutrients (nitrogen and phosphates). "
+        "text": "Since changes in the concentrations of pollutants such as metals in soils and groundwater bodies are typically small within a timeframe of a few years, the long-term impact can only be quantified using a dynamic model that includes all inputs to and outputs from soil. This approach can be used directly to assess where and when soils will be at risk, and also to calculate the maximum acceptable load to soils in order to avoid exceeding the threshold (in this case related to biodiversity). This approach is called the critical load approach and was developed for an array of pollutants, as well as nutrients and soil acidity, several decades ago by De Vries and Bakker (1996). At present, however, the resulting critical loads have not been implemented in national legislation in EU Member States."
     },
     {
         "type": "text",
-        "text": "These recommendations were evaluated and synthesised by Huber et al. (2008), as a suggestion for a European soil monitoring system. Because of the lack of soil data, the definition of an indicator on diffuse soil pollution has never been realised until now. The lack of representative soil data on actual pollutant concentrations (e.g. for heavy metals) has also prevented such assessments (Bünemann et al., 2018). Various recent European monitoring activities, in particular the LUCAS Soil survey (Toth et al., 2013; Reimann et al., 2014; Ballabio et al., 2018) are collecting harmonised data about basic soil properties (e.g. pH, clay content and organic matter) as well as heavy metals. "
+        "text": "This is partly due to the inherent high demand for data and process knowledge to enable such models to operate. Key processes such as retention in soil (controlled by sorption and degradation processes), leaching (which depends on the water fluxes through the soil in combination with retention) or changes in soil properties (e.g. pH or organic matter content) are complex to model at a regional or national scale. At present, the quality of integrated models to predict such changes over decades is still limited, and they are applied mostly for a certain metal including copper, zinc and cadmium. But even for cadmium, the uncertainties in the models used to calculate leaching, the dominant output from the soil, are large and the choice of model will affect the outcome."
     },
     {
         "type": "text",
-        "text": "Table 5.5 provides an overview of the current set of indicators on diffuse and point source pollution. "
+        "text": "This is even more relevant for most organic pollutants and an array of pollutants of emerging concern (including PFCs and microplastics) for which process-based models to predict crop uptake, leaching or degradation in soil are scarce, especially at national or even EU level."
     },
     {
         "type": "text",
-        "text": "All listed state and impact indicators require agreement about common criteria for the definition of thresholds (here SSVs) . It is essential that any such agreement is based on a common terminology and definitions. "
-    },
-    {
-        "type": "table",
-        "img_path": "images/67c58a6a7719e5e961ae2393719ada1150afb8b88267bf1dc79b32221b86fc16.jpg",
-        "table_caption": "Table 5.5\tCurrent set of indicators on diffuse and point source pollution ",
-        "table_footnote": "Notes:\t( a ) Indicator fully discussed in this chapter. \t( b ) Future refinements of this indicator may include other sub-indicators: polluting activity, (group of) polluting substance, spatial  reference (NUTS 3 and/or functional urban area) of the Copernicus Urban Atlas). \t( c )   See also Payá Pérez and Rodríguez Eugenio (2018).\n "
+        "text": "A wide range of thresholds for heavy metals and organic pollutants have been developed in many countries. As shown below, SSVs are a specific kind of threshold, generally derived from risk assessment methods (Swartjes et al., 2009). At present, most thresholds consider the critical endpoint to be protected, usually human health and/or the (soil) ecosystem. Other endpoints often used are groundwater, drinking water and surface water (Carlon and Swartjes, 2007). In some countries, wildlife, animal products or crops are considered endpoints. Current UK (soil guideline values), German (BMU, 2020) or Dutch SSVs, for example, are based on effects on humans and the ecosystem. Despite the differences in terminology used to address a risk limit or screening level in soil, the SSVs used in these countries do take a common approach in that risk assessment is at the core of the system and SSVs almost always depend on the actual land use. By relating exposure to acceptable exposure (e.g. TDI or excess lifetime cancer risk) of humans, a human health- based threshold can be derived. in the case of ecosystem protection, the potentially affected fraction of organisms as a risk-based threshold can be derived from species sensitivity distributions (Posthuma and Suter (2011) in the Netherlands; Martin et al. (2022) in the United Kingdom). In case of the Dutch approach, the minimum of the human health-based or ecology-based value serves as the final threshold for soil. Similar approaches have been adopted by other countries, but the underlying assumption in the models, and the variability in soil, climate and land use across Europe, have resulted in a wide range of SSVs (Swartjes et al., 2007)."
     },
     {
         "type": "text",
-        "text": "AEI, agri-environmental indicator; CAPRI, Common Agricultural Policy Regional Impact model; DSPIR, drivers, pressures, state, impact and response model; ETC/HE, European Topic Centre on Human Health and the Environment. "
+        "text": "'Threshold' as a general term in assessing the risks from soil pollution can be divided into background and SSVs as schematised in Figure 5.2. Not all kinds of national thresholds considered below are actually defined or applied in every country; rather, the schema in Figure 5.2 presents a generic nomenclature and guideline to which national thresholds can be referred."
     },
     {
         "type": "text",
-        "text": "5.2.2\tMethodical references relevant for soil monitoring ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Apart from the conceptual issues of what type of indicator should be used, methodological issues can often present an equally large obstacle to comparing or evaluating data from different sources. This relates to the entire chain from selection of sites to be monitored (either soil or land use monitoring) through procedural issues related to monitoring itself (e.g. sampling protocol) to analytical aspects and interpretation of data. "
-    },
-    {
-        "type": "text",
-        "text": "The following section considers some key methodical issues when collecting data on soil pollution:\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tanalyses of pollution sources and patterns (statistics, maps);\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tsampling procedures (e.g. depth, sampling amount, field moisture and in situ determination of dynamic properties such as pH or EH (redox potential) levels at the time of sampling);\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tsample transport and conservation;\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tsample preparation and homogenisation;\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tlaboratory analysis and interlaboratory quality control;\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tdata interpretation. "
-    },
-    {
-        "type": "text",
-        "text": "The analyses of pollution patterns and the development of a sampling protocol are different for diffuse and point source polluted sites. Since diffuse soil pollution is characterised by a homogeneous pollution pattern, a limited number of samples and analyses of composite samples are appropriate. For point source polluted sites, several options are available for sampling, depending on the pollutant pattern. In the Netherlands, a preliminary, an exploratory and a main investigation are used (Lamé, 2011). The preliminary investigation is a desk study combined with a site visit. A preliminary investigation can be performed both for sites where pollution is expected and for sites that are probably uncontaminated. The main objective of the exploratory investigation is to prove that the assumptions made in the preliminary investigation are indeed correct. The goal of the main investigation is to provide the necessary information to deal with the pollution cost-efficiently. The main investigation is an iterative process: after each step, it has to be decided if the available information is 'fit for purpose'. "
-    },
-    {
-        "type": "text",
-        "text": "Sampling of soil and groundwater has also been standardised, i.e. for the sampling of soil (ISO 18400-104:2018 Soil quality — Sampling; ISO, 2018a) and groundwater (ISO 5667-11:2009 Water quality — Sampling; ISO, 2009). Depending on the country, additional national and/or regional protocols may also have been developed. "
-    },
-    {
-        "type": "text",
-        "text": "To achieve comparability of data from different sources (countries, laboratories) across the EU and Europe, an international protocol with common sampling and analytical procedures is needed. Error detection and quality control procedures also demand studies on spatial variability and method comparability (including ring analysis). Since data interpretation involves the matching of actual indicators with thresholds, the national risk assessment procedures underlying such thresholds need to be described and made available across Member States . "
-    },
-    {
-        "type": "text",
-        "text": "5.2.3\tDynamic indicators to detect future risks of diffuse pollution: critical load concept ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "In addition to the indicators used to characterise the current status of soils in terms of pollution, dynamic indicators are increasingly being developed to assess future levels and risks of pollutants in soil. This is particularly relevant for diffuse pollution, considering the differences observed in the health of soils affected by point source pollution versus those affected by diffuse pollution from an active source (such as the application of pesticides, manure or sewage sludge). In the case of point source pollution, the chemical quality of soils can be such that immediate action is required or, perhaps better, assessment tools should be able to detect where action is immediately required in order to reduce the risks to human and/or ecosystem health. For soils affected by diffuse pollution, however, the current health of most soils is not yet affected to such an extent that it poses an immediate threat. However, continuing the current inputs from diffuse sources (either the atmosphere or direct inputs from land use) can lead to critical pollutant levels being exceeded. This requires a different approach from that applied for point source pollution. "
-    },
-    {
-        "type": "text",
-        "text": "As stated above, diffuse pollution is often ongoing but, at present, has not yet caused serious issues with soil health (apart from selected cases of proximity pollution). For example, the current soil concentrations of copper and zinc in the Netherlands in terms of ecological risks are not of concern in the majority of arable soils (De Vries et al., 2004; Groenenberg et al., 2006). However, due to the rather high concentrations of both elements in manure (Römkens and Rietra, 2008; Deltares, 2018) and high application rates of manure in the Netherlands, both copper and zinc levels in soil are expected to increase because of the positive balance in most arable cropping systems. This in turn will lead to an exceedance of the critical threshold levels (SSVs) for both metals over time in terms of ecosystem functioning (De Vries et al., 2004 Groeneberg et al., 2006). The speed at which accumulation (or depletion) occurs depends on the combination of the load to soil and removal rate from the soil, which in turn depends on soil properties such as pH and organic matter. This means that accumulation is faster in high pH soils or soils rich in organic matter or clay. On the other hand, the risk of an increase in concentrations in groundwater "
-    },
-    {
-        "type": "image",
-        "img_path": "images/4c04d41557ded99ace2178ed0ed220cba0ca7508561895c31f5e4a18e47c4a70.jpg"
-    },
-    {
-        "type": "text",
-        "text": "is higher in low pH soils. The continued use of manure in combination with inorganic fertilisers, as well as the use of PPPs, has resulted in nitrate and pesticides leaching into groundwater bodies in several EU countries, thus affecting the quality of drinking water. "
-    },
-    {
-        "type": "text",
-        "text": "Since changes in the concentrations of pollutants such as metals in soils and groundwater bodies are typically small within a timeframe of a few years, the long-term impact can only be quantified using a dynamic model that includes all inputs to and outputs from soil. This approach can be used directly to assess where and when soils will be at risk, and also to calculate the maximum acceptable load to soils in order to avoid exceeding the threshold (in this case related to biodiversity). This approach is called the critical load approach and was developed for an array of pollutants, as well as nutrients and soil acidity, several decades ago by De Vries and Bakker (1996). At present, however, the resulting critical loads have not been implemented in national legislation in EU Member States. "
-    },
-    {
-        "type": "text",
-        "text": "This is partly due to the inherent high demand for data and process knowledge to enable such models to operate. Key processes such as retention in soil (controlled by sorption and degradation processes), leaching (which depends on the water fluxes through the soil in combination with retention) or changes in soil properties (e.g. pH or organic matter content) are complex to model at a regional or national scale. At present, the quality of integrated models to predict such changes over decades is still limited, and they are applied mostly for a certain metal including copper, zinc and cadmium. But even for cadmium, the uncertainties in the models used to calculate leaching, the dominant output from the soil, are large and the choice of model will affect the outcome. "
-    },
-    {
-        "type": "text",
-        "text": "This is even more relevant for most organic pollutants and an array of pollutants of emerging concern (including PFCs and microplastics) for which process-based models to predict crop uptake, leaching or degradation in soil are scarce, especially at national or even EU level. "
-    },
-    {
-        "type": "text",
-        "text": "5.3 Thresholds: soil screening values for soil pollution ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "5.3.1\tKnowledge base on thresholds for soil pollution ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "A wide range of thresholds for heavy metals and organic pollutants have been developed in many countries. As shown below, SSVs are a specific kind of threshold, generally derived from risk assessment methods (Swartjes et al., 2009). At present, most thresholds consider the critical endpoint to be protected, usually human health and/or the (soil) ecosystem. Other endpoints often used are groundwater, drinking water and surface water (Carlon and Swartjes, 2007). In some countries, wildlife, animal products or crops are considered endpoints. Current UK (soil guideline values), German (BMU, 2020) or Dutch SSVs, for example, are based on effects on humans and the ecosystem. Despite the differences in terminology used to address a risk limit or screening level in soil, the SSVs used in these countries do take a common approach in that risk assessment is at the core of the system and SSVs almost always depend on the actual land use. By relating exposure to acceptable exposure (e.g. TDI or excess lifetime cancer risk) of humans $\\binom{22}{2}$ , a human health- based threshold can be derived. in the case of ecosystem protection, the potentially affected fraction of organisms as a risk-based threshold can be derived from species sensitivity distributions (Posthuma and Suter (2011) in the Netherlands; Martin et al. (2022) in the United Kingdom). In case of the Dutch approach, the minimum of the human "
-    },
-    {
-        "type": "text",
-        "text": ""
-    },
-    {
-        "type": "text",
-        "text": "health-based or ecology-based value serves as the final threshold for soil. Similar approaches have been adopted by other countries, but the underlying assumption in the models, and the variability in soil, climate and land use across Europe, have resulted in a wide range of SSVs \n (Swartjes et al., 2007).\n "
-    },
-    {
-        "type": "text",
-        "text": "'Threshold' as a general term in assessing the risks from soil pollution can be divided into background and SSVs as schematised in Figure 5.2. Not all kinds of national thresholds considered below are actually defined or applied in every country; rather, the schema in Figure 5.2 presents a generic nomenclature and guideline to which national thresholds can be referred. "
-    },
-    {
-        "type": "image",
-        "img_path": "images/70cb71edd1fa5d6d549793f26a5049d2f43f7d9d2a0fd294306b77161a0db861.jpg",
-        "img_caption": "Figure 5.2\tSchematic representation of thresholds (adopted from the Heracles network) "
-    },
-    {
-        "type": "text",
-        "text": "The specifications of the thresholds presented in Figure 5.2 are as follows. "
-    },
-    {
-        "type": "text",
-        "text": "Background values ",
-        "text_level": 1
+        "text": "The specifications of the thresholds presented in Figure 5.2 are as follows."
     },
     {
         "type": "text",
