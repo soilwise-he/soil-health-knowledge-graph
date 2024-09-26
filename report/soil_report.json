@@ -1569,50 +1569,27 @@
     },
     {
         "type": "text",
-        "text": "Soil compaction harms the physical structure of soils and thus affects important ecological and economic soil functions, by reducing pore volume and pore continuity as well as particle surface accessibility. This reduces hydraulic conductivity and rainwater infiltration, which reduces groundwater recharge, while increasing the likelihood of waterlogging. The last hampers rooting and soil biological activity. Consequently, soil biochemical processes are affected, including nutrient turnover and greenhouse gas emissions (nitrous oxide, methane). As a result, plant health, and thus food and fibre production, are adversely affected. Compaction is also known to trigger soil erosion. Operations at critical soil moisture levels, and the use of increasingly heavy machinery, cause compaction, which is particularly damaging in the subsoil. While topsoil compaction can be ameliorated through tillage and bioturbation from plants rooting and soil fauna burrowing, subsoil compaction is cumulative, often persistent and requires significant technical effort to alleviate. Therefore, subsoil compaction is often perceived as irreversible. "
+        "text": "Soil compaction harms the physical structure of soils and thus affects important ecological and economic soil functions, by reducing pore volume and pore continuity as well as particle surface accessibility. This reduces hydraulic conductivity and rainwater infiltration, which reduces groundwater recharge, while increasing the likelihood of waterlogging. The last hampers rooting and soil biological activity. Consequently, soil biochemical processes are affected, including nutrient turnover and greenhouse gas emissions (nitrous oxide, methane). As a result, plant health, and thus food and fibre production, are adversely affected. Compaction is also known to trigger soil erosion. Operations at critical soil moisture levels, and the use of increasingly heavy machinery, cause compaction, which is particularly damaging in the subsoil. While topsoil compaction can be ameliorated through tillage and bioturbation from plants rooting and soil fauna burrowing, subsoil compaction is cumulative, often persistent and requires significant technical effort to alleviate. Therefore, subsoil compaction is often perceived as irreversible."
     },
     {
         "type": "text",
-        "text": "Soil compaction is primarily related to physical soil degradation, but interactions with chemical and biological properties and functions are evident (Table 8.1). Soil compaction occurs primarily if the internal soil strength (known as actual precompression stress) is exceeded by additional stress, for example from heavy machinery, dense trafficking and driving when soil moisture content is high. This exceedance  results in plastic soil deformation, which "
+        "text": "Soil compaction is primarily related to physical soil degradation, but interactions with chemical and biological properties and functions are evident (Table 8.1). Soil compaction occurs primarily if the internal soil strength (known as actual precompression stress) is exceeded by additional stress, for example from heavy machinery, dense trafficking and driving when soil moisture content is high. This exceedance results in plastic soil deformation, which negatively affects the soil functions and the provision of ecosystem services. Precompression stress indicates the soil's site-specific natural ability to bear and recover from external mechanical forces; it represents the condition in which soils are resilient and can be sustainably managed. Monitoring focuses on specific soil physical (functional) parameters that describe the mechanical behaviour of the soil."
     },
     {
         "type": "text",
-        "text": "negatively affects the soil functions and the provision of ecosystem services. Precompression stress indicates the soil's site-specific natural ability to bear and recover from external mechanical forces; it represents the condition in which soils are resilient and can be sustainably managed.  Monitoring focuses on specific soil physical (functional) parameters that describe the mechanical behaviour of the soil. "
-    },
-    {
-        "type": "table",
-        "img_path": "images/1fe591736374568d115cbd26d318b2129bafabf61c4891585965cb2ebdab406c.jpg",
-        "table_caption": "Table 8.1\tRelationship of soil compaction to key societal needs and soil functions "
+        "text": "Soil compaction, in particular of the subsoil, is primarily induced by heavy machinery, often paralleled by increasing field size. Seasonal time constraints (e.g. independent of the current soil moisture level), but also the operational conditions and limited knowledge of service providers appear to be additional pressures. An example of the need for specific knowledge are the risks of wheeling- and shearing-induced soil deformation, which depend on the kind of machinery used. The specific damage to soil is conditioned by the machine weight and contact area with the soil, the number of passes and the area covered, but also by shearing and soil smearing from wheel slip (Horn and Peth, 2011; Keller et al., 2019; Horn, 2021; Keller and Or, 2022). It is mainly the high wheel and axle loads of transport vehicles and harvesters that cause mechanical stress on a given contact area and which can exceed the resisting forces within soil: irreversible soil deformation and permanent compaction is the consequence — especially in the subsoil. Such effects are increased when soils are wet and weak and when field traffic efficiency is low (Duttmann et al., 2014). Repeated trafficking generally results in cumulative soil compaction to deeper soil depths and induces subsoil deformation of the pores and their functions if a given soil strength is exceeded by the applied stresses."
     },
     {
         "type": "text",
-        "text": "8.1 Role and assessment of soil compaction ",
-        "text_level": 1
+        "text": "High livestock densities on pastures can also cause the exceedance of internal soil strength, particularly in the topsoil, and not only under wet soil conditions. This topsoil compaction is indicated by a less permeable platy soil structure, which in combination with shearing-induced puddling results in more intense soil deformation, initially up to about 30cm depth, but with a cumulative impact at even greater soil depths. Schroeder et al. (2022a) found that, based on the analysis of more than 500 soil profiles between 1980 and 2022, the formation of a platy structure in the subsoil increased, while the saturated hydraulic conductivity or air permeability decreased to values below a threshold. Furthermore, the vulnerability of highly fertile soil types such as luvisols during the last few decades has increased if physical soil properties such as hydraulic conductivity, air permeability or cohesion are considered."
     },
     {
         "type": "text",
-        "text": "8.1.1\tBackground and status ",
-        "text_level": 1
+        "text": "Based on the European database of soil properties — SPADE8 (Koue et al., 2008) — Schjønning et al. (2016) estimated that 23% of the total agricultural area of Europe has a critically high level of soil compaction. Graves et al. (2015) estimated the total annual cost of soil compaction in England and Wales at GBP470 million/year, corresponding to EUR540 million/year (currency rate January 2019). Hence, the per hectare costs of soil compaction amount to approximately EUR140.2/year when related to the compaction-affected area, and about EUR56.4/ha/year on the basis of the total agricultural area. Other estimates suggest that between 32% and 36% of European subsoils are highly susceptible to compaction (Jones et al., 2012). Assuming an average yield loss of 4.5% (Graves et al., 2015) and that 35% of the arable land is affected by compaction (Oldeman et al., 1991; Graves et al., 2015; Schjønning et al., 2015; Brus and van den Akker, 2018), the value of yield losses for arable crops is estimated at EUR33 million/year. Eriksson et al. (1974) assumed yield losses due to compaction of 8% for soils with >40% clay, and 4% for soils with 15-25% clay, while yield losses for lighter soils were negligible. Considering significantly higher current machinery weight, yield losses may be higher nowadays, however, proper data are only available for small regions and are missing at EU-or European level (Keller et al., 2019)."
     },
     {
         "type": "text",
-        "text": "Soil compaction, in particular of the subsoil, is primarily induced by heavy machinery, often paralleled by increasing field size. Seasonal time constraints (e.g. independent of the current soil moisture level), but also the operational conditions and limited knowledge of service providers appear to be additional pressures. An example of the need for specific knowledge are the risks of wheeling- and shearing-induced soil deformation, which depend on the kind of machinery used. The specific damage to soil is conditioned by the machine weight and contact area with the soil, the number of passes and the area covered, but also by shearing and soil smearing from wheel slip (Horn and Peth, 2011; Keller et al., 2019; Horn, 2021; Keller and Or, 2022). It is mainly the high wheel and axle loads of transport vehicles and harvesters that cause mechanical stress on a given contact area and which can exceed the resisting forces within soil: irreversible soil deformation and permanent compaction is the consequence — especially in the subsoil. Such effects are increased when soils are wet and weak and when field traffic efficiency is low (Duttmann et al., 2014). Repeated trafficking generally results in cumulative soil compaction to deeper soil depths and induces subsoil deformation of the pores and their functions if a given soil strength is exceeded by the applied stresses. "
-    },
-    {
-        "type": "text",
-        "text": "High livestock densities on pastures can also cause the exceedance of internal soil strength, particularly in the topsoil, and not only under wet soil conditions. This topsoil compaction is indicated by a less permeable platy soil structure, which in combination with shearing-induced puddling results in more intense soil deformation, initially up to about 30cm depth, but with a cumulative impact at even greater soil depths. Schroeder et al. (2022a) found that, based on the analysis of more than 500 soil profiles between 1980 and 2022, the formation of a platy structure in the subsoil increased, while the saturated hydraulic conductivity or air permeability decreased to values below a threshold. Furthermore, the vulnerability of highly fertile soil types such as luvisols during the last few decades has increased if physical soil properties such as hydraulic conductivity, air permeability or cohesion are considered. "
-    },
-    {
-        "type": "text",
-        "text": "Based on the European database of soil properties — SPADE8 (Koue et al., 2008) — Schjønning et al. (2016) estimated that $23\\%$ of the total agricultural area of Europe has a critically high level of soil compaction. Graves et al. (2015) estimated the total annual cost of soil compaction in England and Wales at GBP470 million/year, corresponding to EUR540 million/ year (currency rate January 2019). Hence, the per hectare costs of soil compaction amount to approximately EUR140.2/year when related to the compaction-affected area, and about EUR56.4/ha/year on the basis of the total agricultural area. Other estimates suggest that between $32\\%$ and $36\\%$ of European subsoils are highly susceptible to compaction (Jones et al., 2012). Assuming an average yield loss of $4.5\\%$ \n (Graves et al., 2015) and that $35\\%$ of the arable land is affected by compaction (Oldeman et al., 1991; Graves et al., 2015; Schjønning et al., 2015; Brus and van den Akker, 2018), the value of yield losses for arable crops is estimated at EUR33 million/year. Eriksson et al. (1974) assumed yield losses due to compaction of $8\\%$ for soils with ${>}40\\%$ clay, and $4\\%$ for soils with $15.25\\%$ clay, while yield losses for lighter soils were negligible. Considering significantly higher current machinery weight, yield losses may be higher nowadays, however, proper data are only available for small regions and are missing at EU-or European level (Keller et al., 2019). "
-    },
-    {
-        "type": "text",
-        "text": ""
-    },
-    {
-        "type": "text",
-        "text": "Mordhorst et al. (2020) quantified the compaction status of 342 soil profiles in northern Germany , including both natural and potentially anthropogenic compaction. Harmful subsoil compaction was determined in $20-40\\%$ of the area of (stagnic) Lluvisols and Stagnosols, of which at least $6{\\sim}10\\%$  is caused by agricultural management; such degraded soils suffer from the lowest values for air capacity and saturated hydraulic conductivity . Van den Akker et al. (2013) calculated that about $43\\%$ of subsoils in the Netherlands are overcompacted, while, for the agricultural area in central Switzerland, Widmer (2013) estimates that about one third of the area may have critically high soil densities. Hakansson (1994) stated that, based on long-term wheeling experiments, a permanent yield decline of $5.10\\%$ must be considered, plus additional effects of climate change; the latter increases the uncertainty of obtaining high or normal yields. "
+        "text": "Mordhorst et al. (2020) quantified the compaction status of 342 soil profiles in northern Germany , including both natural and potentially anthropogenic compaction. Harmful subsoil compaction was determined in 20-40% of the area of (stagnic) Lluvisols and Stagnosols, of which at least 6-10% is caused by agricultural management; such degraded soils suffer from the lowest values for air capacity and saturated hydraulic conductivity . Van den Akker et al. (2013) calculated that about 43% of subsoils in the Netherlands are overcompacted, while, for the agricultural area in central Switzerland, Widmer (2013) estimates that about one third of the area may have critically high soil densities. Hakansson (1994) stated that, based on long-term wheeling experiments, a permanent yield decline of 5-10% must be considered, plus additional effects of climate change; the latter increases the uncertainty of obtaining high or normal yields."
     },
     {
         "type": "text",
@@ -1624,29 +1601,7 @@
     },
     {
         "type": "text",
-        "text": ""
-    },
-    {
-        "type": "text",
         "text": "Without a doubt, soil compaction is a very serious problem, as it is not only associated with altered compositions of the soil phases (water, gas, solid) but it also affects the availability and accessibility of particle or pore surfaces for nutrient storage and carbon sequestration. The documentation of the soil compaction-induced decline in hydraulic conductivity or air permeability throughout the last four decades (Schroeder et al. 2022a, 2022b) is evidence for the long-term negative consequences of unsustainable soil management. The observed damage reduces the soil's resilience to climate change and enhances secondary effects, such as soil erosion and surface water pollution (Jones et al., 2003; Batey, 2009; Rogger et al., 2018; Horn, 2021). "
-    },
-    {
-        "type": "image",
-        "img_path": "images/81549140988c9be99b89a9c5221077ee5467a7e669c084bc218c5cf78dd937e5.jpg",
-        "img_caption": "Figure 8.1\tSoil compaction processes, parameters and indicators "
-    },
-    {
-        "type": "text",
-        "text": "( \\* ) Indicated by: bulk density, packing density, total porosity.​ ( 1 ) Represent ENVSSO indicators (Explained in Huber et al. 2008).\n ( 2 ) Mechanical resistence to failure under mechanical stress (soil mechanical strength): it is the maximun shear stress which soil can sustain; it increases with increasing soil bulk density, and decreases with soil-water and organic matter contents; silty texture tends to deform more easily, it is indicated by the soil's precompression strength and describes its compressibility.\n ( 3 ) Determined by saturated hydralic conductivity. "
-    },
-    {
-        "type": "text",
-        "text": "Source: \tEEA. "
-    },
-    {
-        "type": "text",
-        "text": "8.1.2\tSoil compaction processes ",
-        "text_level": 1
     },
     {
         "type": "text",
@@ -1654,36 +1609,11 @@
     },
     {
         "type": "text",
-        "text": ""
-    },
-    {
-        "type": "table",
-        "img_path": "images/1ae5d9155dc2c342ad39f20b67fed06e43c8c7fd383e10727458d3f30efba9f0.jpg",
-        "table_caption": "Table 8.2\tSoil properties for use as indicators for soil compaction "
-    },
-    {
-        "type": "text",
-        "text": "( a ) Proctor density defines the maximum bulk density at the optimal water content of the soil sample due to a given dynamic energy applied with a Proctor hammer. "
-    },
-    {
-        "type": "text",
-        "text": "( b ) Stress-strain describes the relationship between the effect of stress (machine weight and trafficking) on soil strength (syn. soil strain, 'change in size or shape'), indicated by an increase in soil particles per unit of soil volume and the change in pore structure (diameter and amount) (also called 'densification' or 'stiffness'). The comparison of soil strength and mechanical stresses (called the 'soil rigidity ratio') is used here as an indicator of soil compaction. "
-    },
-    {
-        "type": "text",
-        "text": "Sources:\tBall et al. (1988), Beylich et al. (2010), Frey et al. (2011), Hartmann et al. (2014), Horn (2021), Horn and Fleige (2003, 2009), Jones et al. (2003), Keller et al. (2019), Langmaark et al. 1999), Lebert et al. (2007), Lebert (2010), Schjønning et al. (2003, 2016), Schrader (1999), Stepniewski (1980, 1981). "
-    },
-    {
-        "type": "text",
         "text": "As primary, technically easy indicators, air and water storage can be derived and interpreted as showing the impact of soil compaction, in particular in the topsoil, while the external pressures and internal soil processes and their interrelation require more complex parameters and physical impact models, for example soil strength and/or deformation status. The strength of the soil indicates its capacity to resist stress; once that capacity is exceeded, compaction results, and this is then accompanied by visible changes in the physical, biological and physico-chemical soil properties and functions: in spring, when soils are wet, they are physically weaker and more susceptible to deformation by stress and wheeling-induced shear processes, particularly in the subsoil; during summer, soils dry out and the pore system is strengthened. "
     },
     {
         "type": "text",
-        "text": "Soils have a natural range of strength, depending on:\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tthe parent material, and its physical (bulk density, texture) and chemical properties (soil organic matter content, calcium carbonate secondary oxides);\n •\tthe quality and quantity of the soil's reactive inner surface (cation exchange places);\n •\tthe soil structure based on its natural development (pedogenesis). "
+        "text": "Soils have a natural range of strength, depending on:\n•\tthe parent material, and its physical (bulk density, texture) and chemical properties (soil organic matter content, calcium carbonate secondary oxides);\n •\tthe quality and quantity of the soil's reactive inner surface (cation exchange places);\n •\tthe soil structure based on its natural development (pedogenesis)."
     },
     {
         "type": "text",
@@ -1691,11 +1621,7 @@
     },
     {
         "type": "text",
-        "text": "Exceedance of the soil's precompression stress (i.e. the actual soil strength) can be observed not only by a loss of volume (soil subsidence) or increase in bulk density (densification) but also, and more importantly, by changes in sub-indicators that are also directly related to physical soil functions, namely: "
-    },
-    {
-        "type": "text",
-        "text": "•\tdecreasing with compaction: •\tair permeability •\tgas diffusion •\tsaturated hydraulic conductivity;\n •\tincreasing with compaction: •\tunsaturated hydraulic conductivity •\theat flux [For comparability, the matric potential ( 29 ) is considered]. "
+        "text": "Exceedance of the soil's precompression stress (i.e. the actual soil strength) can be observed not only by a loss of volume (soil subsidence) or increase in bulk density (densification) but also, and more importantly, by changes in sub-indicators that are also directly related to physical soil functions, namely:•\tdecreasing with compaction: •\tair permeability •\tgas diffusion •\tsaturated hydraulic conductivity;\n •\tincreasing with compaction: •\tunsaturated hydraulic conductivity •\theat flux [For comparability, the matric potential ( 29 ) is considered]."
     },
     {
         "type": "text",
@@ -1711,22 +1637,7 @@
     },
     {
         "type": "text",
-        "text": "8.1.3\tTopsoil and subsoil compaction ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
         "text": "When the internal soil strength (precompression stress) is exceeded during wheeling, animal trampling or continuous loading, the soil is deformed down to the depth at which an equilibration between external stress and internal strength is reached. Thus, both topsoil and subsoil are affected. The subsoil in agriculture is defined as soil below the tillage depth (usually around 20-35cm). However, while compaction in the topsoil can be mitigated through effective management \n (e.g. ploughing or chiselling) or through natural processes \n (e.g. soil biota activity, swelling and shrinkage), the damage to the subsoil is particularly relevant since, at these depths, compaction is cumulative and persistent over decades or maybe even centuries (Keller et al., 2019). Note that the often assumed 'curing' effect of freeze-thaw cycles are less effective in the subsoil (Hartge and Horn, 2016). Subsoil compaction is hence the main factor responsible for soil degradation, having a persistent impact on soil functions "
-    },
-    {
-        "type": "text",
-        "text": "8.2  Indicator specifications ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "8.2.1\tPhysical soil functional parameters and indicators ",
-        "text_level": 1
     },
     {
         "type": "text",
@@ -1734,25 +1645,11 @@
     },
     {
         "type": "text",
-        "text": "unstable and dynamic, for example the negative effects of mechanical seedbed preparation, followed by some recovery after the growing season, the use of cover crops, etc. The degree of topsoil deformation can thus be rather temporary; however, it can also be a warning sign that any continuation of current (harmful) practices is then likely to affect the subsoil. Topsoil compaction is primarily described using the parameters in set I, and can act as a warning sign that current practices do not sufficiently address the sensitivity of the soil. While topsoil compaction can be more easily alleviated, subsoil compaction must be completely avoided. "
+        "text": "The degree of topsoil compaction is difficult to clearly describe with thresholds because conditions are highly unstable and dynamic, for example the negative effects of mechanical seedbed preparation, followed by some recovery after the growing season, the use of cover crops, etc. The degree of topsoil deformation can thus be rather temporary; however, it can also be a warning sign that any continuation of current (harmful) practices is then likely to affect the subsoil. Topsoil compaction is primarily described using the parameters in set I, and can act as a warning sign that current practices do not sufficiently address the sensitivity of the soil. While topsoil compaction can be more easily alleviated, subsoil compaction must be completely avoided. "
     },
     {
         "type": "text",
-        "text": "Parameter set I ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "The following section outlines parameters that can be easily measured or which are common in many soil surveys:\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tbulk density, $D_{\\mathrm{b}};\n$ •\tair capacity, AC;\n •\tsoil texture;\n •\tvisual features of compaction such as platy structure. "
-    },
-    {
-        "type": "text",
-        "text": "Bulk density\n ",
-        "text_level": 1
+        "text": "The following section outlines parameters that can be easily measured or which are common in many soil surveys:\n•\tbulk density, $D_{\\mathrm{b}};\n$ •\tair capacity, AC;\n •\tsoil texture;\n •\tvisual features of compaction such as platy structure."
     },
     {
         "type": "text",
@@ -1760,30 +1657,11 @@
     },
     {
         "type": "text",
-        "text": "Pore volume\n ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
         "text": "The pore volume is directly related to the bulk density, given that the values for the specific density of the mineral soil components have been previously determined or estimated, depending on the parent material (texture of the weathering product), clay mineralogy and soil organic carbon content. "
     },
     {
         "type": "text",
-        "text": "The degree of topsoil compaction is difficult to clearly describe with thresholds because conditions are highly "
-    },
-    {
-        "type": "text",
-        "text": "Air capacity\n ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
         "text": "Air capacity — the air-filled pore volume $(\\%)$ — is a measure of the degree of densification, which has a strong relationship with aeration and the functioning of the root zone. It is most often determined as the difference between water content at saturation $\\acute{=}$ total pore volume) and the volumetric water content at -6kPa; if other desiccation intensities (e.g. -5kPa) are used, that needs to be documented. Air capacity depends naturally on texture, soil aggregation (structure) and soil organic carbon content, and is further modified by anthropogenic, geogenic and biogenic processes. The air capacity can be monitored by (1) comparing the current measurement with the initial measurement (as a reference value), (2) comparing the current measurement with an undisturbed site-specific value or (3) applying a threshold that can be expected for a specific soil (Wösten et al., 1999). "
-    },
-    {
-        "type": "text",
-        "text": "Visual or indirect soil evaluation\n ",
-        "text_level": 1
     },
     {
         "type": "text",
@@ -1795,25 +1673,7 @@
     },
     {
         "type": "text",
-        "text": "Parameter set II ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "This second set includes more complex soil physical parameters, which appear to have a strong dependency on the soil's actual water saturation and structure, as well as pedo-and anthropogenic processes. These indicators can be linked to the actual and dynamic gas, water and heat fluxes in soils, as they are sensitive enough to document the consequences of soil compaction and soil degradation on physical, chemical and biological functions:\n "
-    },
-    {
-        "type": "text",
-        "text": ""
-    },
-    {
-        "type": "text",
-        "text": "•\tprecompression stress $(k P a})_{\\prime}^{\\prime}\n$ •\tcontact area pressure $(k P a})_{\\imath}^{\\,\\ast}\n$ •\tsoil rigidity ratio $=$ precompression stress (kPa)/actual soil stress (kPa);\n •\tshear strength (kPa) (stiffness);\n •\thydraulic conductivity ( K ) (cm/d) and air permeability $(K_{\\mathrm{I}})$ . "
-    },
-    {
-        "type": "text",
-        "text": "Precompression stress\n ",
-        "text_level": 1
+        "text": "This second set includes more complex soil physical parameters, which appear to have a strong dependency on the soil's actual water saturation and structure, as well as pedo-and anthropogenic processes. These indicators can be linked to the actual and dynamic gas, water and heat fluxes in soils, as they are sensitive enough to document the consequences of soil compaction and soil degradation on physical, chemical and biological functions:\n•\tprecompression stress $(k P a})_{\\prime}^{\\prime}\n$ •\tcontact area pressure $(k P a})_{\\imath}^{\\,\\ast}\n$ •\tsoil rigidity ratio $=$ precompression stress (kPa)/actual soil stress (kPa);\n •\tshear strength (kPa) (stiffness);\n •\thydraulic conductivity ( K ) (cm/d) and air permeability $(K_{\\mathrm{I}})$ ."
     },
     {
         "type": "text",
@@ -1821,17 +1681,7 @@
     },
     {
         "type": "text",
-        "text": "Contact area pressure\n ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
         "text": "The contact area pressure defines the stress transmitted to the soil as a function of the load applied (e.g. of the machines, animals, etc.) and the corresponding contact area of the tyres, hooves, etc. For a given contact area pressure, the greater the contact area, the deeper stress is transmitted into the soil (Horn, 2015). "
-    },
-    {
-        "type": "text",
-        "text": "Soil rigidity ratio\n ",
-        "text_level": 1
     },
     {
         "type": "text",
@@ -1839,17 +1689,7 @@
     },
     {
         "type": "text",
-        "text": "Shear strength ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Shear strength or the stiffness of soil determines the binding forces between particles (texture) or soil aggregates that withstand rearrangement (= strain ( 32 )) due to smearing (also defined as slip). The pore functions within the soil will be affected by such particle arrangement. "
-    },
-    {
-        "type": "text",
-        "text": "Hydraulic conductivity (K) and air permeability (K l ) ",
-        "text_level": 1
+        "text": "Shear strength or the stiffness of soil determines the binding forces between particles (texture) or soil aggregates that withstand rearrangement (= strain) due to smearing (also defined as slip). The pore functions within the soil will be affected by such particle arrangement. "
     },
     {
         "type": "text",
@@ -1861,15 +1701,6 @@
     },
     {
         "type": "text",
-        "text": ""
-    },
-    {
-        "type": "text",
-        "text": "8.2.2\tSuggestions for including compaction indicators in monitoring with different sampling intensities ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
         "text": "Depending on the different sampling and analytical requirements of the indicators outlined above, different intensity levels for monitoring are recommended (Table 8.3). The latter allow the description of both topsoil and subsoil compaction, while the level of detail defines the degree of uncertainty and also the applicability of possible models or of scale-dependent pedotransfer functions. European, country-specific or local soil profile and management-dependent databases on soil strength and stress-dependent changes in physical, chemical, and biological properties and functions facilitate indexing the resilience and the performance of arable soils. "
     },
     {
@@ -1878,38 +1709,11 @@
     },
     {
         "type": "text",
-        "text": "8.3  Critical limits ",
-        "text_level": 1
+        "text": "The issue of soil degradation due to compaction and deformation needs to be addressed in two ways:•\tby evaluating the soil's state by means of stability or rigidity (precompression stress), as well as physical parameters related to soil functions (hydraulic conductivity, air permeability and air capacity);\n•\tby determining the ratio of incoming stresses to soil strength, and its effect on the physical, chemical and biological properties used to define soil degradation (Riggert et al., 2019)."
     },
     {
         "type": "text",
-        "text": "The issue of soil degradation due to compaction and deformation needs to be addressed in two ways: "
-    },
-    {
-        "type": "table",
-        "img_path": "images/a2202926c7821f37ecbb5778b3badc48b21a0ad72f589f3691f1ffe43e49a1f8.jpg",
-        "table_caption": "Table 8.3\tDesign of large-scale soil compaction monitoring ",
-        "table_footnote": "\t( a ) Precompression stress derived from PTFs for a given texture and aggregation, according to Horn and Fleige (2003): requires pore size  distribution, hydraulic conductivity, and soil chemical soil properties. In areas where this approach is not calibrated, horizon-specific  stress strain measurements of undisturbed soil samples at a given matric potential and confined shear tests are needed to determine  both the internal mechanical strength and the shear strength of a given structured soil.\n ( b ) Ratio precompression stress/actual stress imposed by field traffic (see also Duttmann et al. 2014, 2022).\n ( c ) Establish reference sites from undisturbed, uncultivated sites. "
-    },
-    {
-        "type": "text",
-        "text": "•\tby evaluating the soil's state by means of stability or rigidity (precompression stress), as well as physical parameters related to soil functions (hydraulic conductivity, air permeability and air capacity);\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tby determining the ratio of incoming stresses to soil strength, and its effect on the physical, chemical and biological properties used to define soil degradation (Riggert et al., 2019). "
-    },
-    {
-        "type": "text",
-        "text": "To achieve both objectives, we suggest using the following parameters as indicators of compaction (see also Table 8.4): "
-    },
-    {
-        "type": "text",
-        "text": "•\tprecompression stress; "
-    },
-    {
-        "type": "text",
-        "text": "•\tsaturated hydraulic conductivity. "
+        "text": "To achieve both objectives, we suggest using the following parameters as indicators of compaction (see also Table 8.4):•\tprecompression stress;•\tratio of precompression stress to actual stress applied;\n•\tair capacity;•\tsaturated hydraulic conductivity."
     },
     {
         "type": "text",
@@ -1917,31 +1721,7 @@
     },
     {
         "type": "text",
-        "text": "•\tratio of precompression stress to actual stress applied;\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tair capacity; "
-    },
-    {
-        "type": "table",
-        "img_path": "images/187a7f1bb50b14137064d6cfba5bfbd0b866c57ba280b49f0242c5a04f5582b8.jpg",
-        "table_caption": "Table 8.4\tThresholds for soil physical parameters for detecting harmful subsoil compaction ",
-        "table_footnote": "Sources:\tArah and Ball (1994), Babel et al. (1995), Ball et al. (1988), Frey et al. (2011), Huber et al. (2008), Lebert et al. (2007), Stepniewski (1980,  1981), Schjønning et al. (2003, 2016); supplemented with additional information from the review in this report. "
-    },
-    {
-        "type": "text",
-        "text": "8.4  Tools to monitor soil compaction ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
         "text": "The following monitoring methods enable the evaluation of soil compaction, its intensity and distribution in space (including depth) and time. Apart from pragmatic tools using indicators that can be determined or obtained from national and internationally available databases, the actual soil functions' behaviour in response to mechanical stresses can be best assessed using in situ and laboratory measurements or derived from pedotransfer functions, which are available at regional, national or European levels: for example German method catalogue (Ad hoc AG Boden, 2005; Schroeder et al., 2022a, 2022b); hydraulic properties of European soils (Wösten et al., 1999). They can be used as input parameters for process-based models, which include more detailed mechanical properties. "
-    },
-    {
-        "type": "text",
-        "text": "8.4.1\tSoil compaction models including pedotransfer functions ",
-        "text_level": 1
     },
     {
         "type": "text",
@@ -1949,11 +1729,7 @@
     },
     {
         "type": "text",
-        "text": "To generate meaningful and site-specific input data for models, well-defined parameters for local soil properties and in situ matric potential data need to be collected. Shear strength is then derived from pedotransfer functions based on soil texture, soil structure and the matric potential (related to the cohesion and angle of internal friction). At best, a minimum data set contains values for soils when highly sensitive (saturated with water in spring) and in drier conditions in summer (Horn and Fleige, 2003; Horn et al., 2005; Schroeder et al., 2022a, 2022b; see also www. soilcompaction.eu ). The better differentiated\n site-specific and representative input parameters are, the "
-    },
-    {
-        "type": "text",
-        "text": "more reliable modelling results become. Samples need to be taken for a representative number of sampling sites, at best more than 30 soil profiles down to 1m depth, while Schroeder et al. (2022a, 2022b) document a complete data set (level II, Table 8.3) based on more than 500 complete soil profiles including mechanical stress strain, shear stress relations and stress-dependent impacts on soil functions such as hydraulic conductivity and air permeability. This particular data set has been built over the four decades between 1980 and 2022, so that the impact on and trends in soil functions related to soil management can be predicted. "
+        "text": "To generate meaningful and site-specific input data for models, well-defined parameters for local soil properties and in situ matric potential data need to be collected. Shear strength is then derived from pedotransfer functions based on soil texture, soil structure and the matric potential (related to the cohesion and angle of internal friction). At best, a minimum data set contains values for soils when highly sensitive (saturated with water in spring) and in drier conditions in summer (Horn and Fleige, 2003; Horn et al., 2005; Schroeder et al., 2022a, 2022b; see also www. soilcompaction.eu ). The better differentiated\n site-specific and representative input parameters are, the more reliable modelling results become. Samples need to be taken for a representative number of sampling sites, at best more than 30 soil profiles down to 1m depth, while Schroeder et al. (2022a, 2022b) document a complete data set (level II, Table 8.3) based on more than 500 complete soil profiles including mechanical stress strain, shear stress relations and stress-dependent impacts on soil functions such as hydraulic conductivity and air permeability. This particular data set has been built over the four decades between 1980 and 2022, so that the impact on and trends in soil functions related to soil management can be predicted."
     },
     {
         "type": "text",
@@ -1968,27 +1744,12 @@
         "text": "The following models are all restricted to predicting soil stresses under wheel loads including three-dimensional stress propagation. However, the impact of the applied stresses on soil functions are usually not considered. Further soil compaction models with different boundary conditions (Socomo versus Terranimo) allow the prediction of stress impacts on soil properties; Terranimo includes precompression stress, is more advanced, and can also be applied for different spatial scales and for different kinds of farm machinery. "
     },
     {
-        "type": "table",
-        "img_path": "images/207a6a376fe8f11992890db4a9255283b39a20741746e4a62c02d83d286479b2.jpg",
-        "table_caption": "Table 8.5\tModels to predict subsoil compaction "
-    },
-    {
-        "type": "text",
-        "text": "8.4.2\tCompaction verification tool ",
-        "text_level": 1
-    },
-    {
         "type": "text",
         "text": "To evaluate the actual soil stability and the risk of stress-induced soil degradation, Zink et al. (2011) developed the compaction verification tool (CVT), which includes stress-dependent changes in soil functions described as indicators in Figure 8.2. The tool is based on measurements or estimates of saturated hydraulic conductivity $(K_{s})$ and air capacity (at -60hPa) as a function of actual stress applied within the virgin compression stress range (see also Tables 8.3 and 8.4). Suggestions for quantifying these sub-indicators are described in Horn and Fleige (2009) for texture classes from sand to clay and based on a large variety of soil profile data. "
     },
     {
         "type": "text",
-        "text": "The proposed minimum values of class I ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "(air capacity ${>}5\\%$ , $K_{s}\\!>\\!10c m}/d a y},$ ) represent soils that still function properly, assuming that the rigidity limits (precompression stress) are not exceeded and/or the texture, organic carbon content, etc., guarantee these values. The values in class II (air capacity ${>}5\\%$ and $K_{s}\\!<\\!10c m}/d a y})$ and class III (air capacity ${\\mathfrak{<}}5\\%$ , $K_{s}\\!>\\!10c m}/d a y})$ define the 'precaution value' indicating intermediate compaction risk (no harmful compaction yet), while values for air capacity ${<}5\\%$ and $K_{s}$  ${<\\!10c m}}/$ day in class IV are associated with a decline in yield due to lack of aeration, prevention of gas exchange and/or stagnant water problems and correspond to 'action values' (indicating unacceptable, harmful subsoil compaction). "
+        "text": "The proposed minimum values of class I (air capacity ${>}5\\%$ , $K_{s}\\!>\\!10c m}/d a y},$ ) represent soils that still function properly, assuming that the rigidity limits (precompression stress) are not exceeded and/or the texture, organic carbon content, etc., guarantee these values. The values in class II (air capacity ${>}5\\%$ and $K_{s}\\!<\\!10c m}/d a y})$ and class III (air capacity ${\\mathfrak{<}}5\\%$ , $K_{s}\\!>\\!10c m}/d a y})$ define the 'precaution value' indicating intermediate compaction risk (no harmful compaction yet), while values for air capacity ${<}5\\%$ and $K_{s}$  ${<\\!10c m}}/$ day in class IV are associated with a decline in yield due to lack of aeration, prevention of gas exchange and/or stagnant water problems and correspond to 'action values' (indicating unacceptable, harmful subsoil compaction). "
     },
     {
         "type": "text",
@@ -2000,33 +1761,11 @@
     },
     {
         "type": "text",
-        "text": ""
-    },
-    {
-        "type": "text",
         "text": "While the CVT allows mapping of harmful subsoil compaction, anthropogenic subsoil compaction still needs to be separated from natural compaction as a result of geogenic and/or pedogenic processes. Soils with stagnic or fluvic properties tend to have a high degree of natural compaction $(46-65\\%$ of the fields mapped in a German case study area, compared with ${<}13\\%$ of podsols and arenosols; Mordhorst et al., 2020). Anthropogenic compaction is found if the selected compaction-sensitive parameters — air capacity and saturated hydraulic conductivity — are larger in the subsoil than in the topsoil or if the saturated hydraulic conductivity in soil horizons with originally pedogenetically greater values now have values smaller than those in the deeper and more dense soil horizons  (e.g. in stagnic luvisols and luvisols). The successful application of this threshold thus requires a horizon-specific analysis (topsoil/subsoil), calibrated with the knowledge from a large regional pedological database (level I and/or level II in Table 8.3). "
     },
     {
         "type": "text",
         "text": "The extrapolation of site-specific properties and stress impacts on changes in soil functions (as defined above) from wheeling impact has to be validated. Duttmann et al. (2022) offer such an approach by combining a newly developed field traffic model with a spatially explicit soil compaction risk assessment model. The risk assessment is based on the CVT approach and considers changes in mechanical properties as they depend on the matric potential (Rücknagel et al., 2015). With the help of GPS (global positioning system) data recorded by all farm vehicles involved in tillage, spraying and harvesting, the data serve to map wheeling intensity, and allow the spatially explicit mapping of scenarios for different wheel loads and predicted contact area stress. These data can subsequently be used for modelling soil compaction risk. Coupling the two models, FiTraM and SaSCiA, allows estimation of the spatially distributed soil compaction risk in the topsoil and in the subsoil, and even considers single field operations; it can also spatially specify the actual soil compaction and deformation status. "
-    },
-    {
-        "type": "text",
-        "text": "COMPACTION VERIFICATION TOOL (CVT) ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Based on critical values of the soil physical parameters $\\mathbf{k}\\mathbf{s}<10\\,\\mathtt{c m}^{\\star}\\mathbf{d}{-1}$  and $\\tt A C\\,<$ 5vol% which are related to soil functions "
-    },
-    {
-        "type": "image",
-        "img_path": "images/d1ae84e7d3765ddcfe7056742ed6ce04752cdc4b873da33f3131b1925f3448ce.jpg"
-    },
-    {
-        "type": "text",
-        "text": "8.4.3\tImplications for monitoring ",
-        "text_level": 1
     },
     {
         "type": "text",
