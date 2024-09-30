@@ -489,7 +489,7 @@
     },
     {
         "type": "text",
-        "text": "It is currently difficult to apply the thresholds defined by Körschens et al. (1998) in Europe with the available Europe-wide texture data: the 'fine silt' class (6.3-2μm) cannot be isolated. Besides, no definition is given for 'sandy soils' or 'loamy soils'. Like the results in Tables 2.4 and 2.5, larger data sets are needed to improve represent at iv it y of the values for larger areas outside Germany, and to validate whether soil functions are limited below these thresholds. However, it can be concluded that thresholds must consider textural class, and that the values presented provide a guide to evaluating SOC measurements from monitoring."
+        "text": "It is currently difficult to apply the thresholds defined by Körschens et al. (1998) in Europe with the available Europe-wide texture data: the 'fine silt' class (6.3-2μm) cannot be isolated. Besides, no definition is given for 'sandy soils' or 'loamy soils'. Like the results in Tables 2.4 and 2.5, larger data sets are needed to improve representativity of the values for larger areas outside Germany, and to validate whether soil functions are limited below these thresholds. However, it can be concluded that thresholds must consider textural class, and that the values presented provide a guide to evaluating SOC measurements from monitoring."
     },
     {
         "type": "text",
@@ -2037,11 +2037,11 @@
     },
     {
         "type": "text",
-        "text": "More recent evaluations of existing monitoring systems in the EU have been conducted by Stolte et al. (2016), Van Leeuwen et al. (2017), Creamer et al. (2019), Bispo et al. (2020) and Faber et al. (2022). This work provides an extensive overview of existing national monitoring systems and concludes with minimum sets of parameters needed to describe soil quality and soil functions (in the case of the Landmark project; Creamer et al., 2019). The Landmark project concluded with the determination of optimal sampling densities to improve the represent at iv it y of the LUCAS Soil survey, which is particularly interesting for countries that lack monitoring systems."
+        "text": "More recent evaluations of existing monitoring systems in the EU have been conducted by Stolte et al. (2016), Van Leeuwen et al. (2017), Creamer et al. (2019), Bispo et al. (2020) and Faber et al. (2022). This work provides an extensive overview of existing national monitoring systems and concludes with minimum sets of parameters needed to describe soil quality and soil functions (in the case of the Landmark project; Creamer et al., 2019). The Landmark project concluded with the determination of optimal sampling densities to improve the representativity of the LUCAS Soil survey, which is particularly interesting for countries that lack monitoring systems."
     },
     {
         "type": "text",
-        "text": "Table 10.2 provides an overview of the physical, chemical and biological parameters needed to derive the soil threat indicators discussed in this report, based on threat-specific suggestions for monitoring approaches (in particular erosion, compaction, soil biodiversity). This list can easily be compared with, and combined with, knowledge about core indicator sets from the European studies mentioned above (e.g. Faber et al., 2022). "
+        "text": "Table 10.2 provides an overview of the physical, chemical and biological parameters needed to derive the soil threat indicators discussed in this report, based on threat-specific suggestions for monitoring approaches (in particular erosion, compaction, soil biodiversity). This list can easily be compared with, and combined with, knowledge about core indicator sets from the European studies mentioned above (e.g. Faber et al., 2022)."
     },
     {
         "type": "text",
@@ -2049,7 +2049,7 @@
     },
     {
         "type": "text",
-        "text": "With regard to different levels of sampling and analytical intensity, the term 'level' is preferred over 'tier', since the idea of sampling intensities largely follows the ICP Forests Expert Panel on Soil and Soil Solution (level I and level II forest soil condition monitoring). "
+        "text": "With regard to different levels of sampling and analytical intensity, the term 'level' is preferred over 'tier', since the idea of sampling intensities largely follows the ICP Forests Expert Panel on Soil and Soil Solution (level I and level II forest soil condition monitoring)."
     },
     {
         "type": "text",
@@ -2057,162 +2057,106 @@
     },
     {
         "type": "text",
-        "text": "Some soil threats such as compaction and erosion involve modelling, as well as other monitoring techniques, such as remote sensing, and more intensive sampling schemes to calibrate and validate the models while considering current land use and climate. Moreover, for monitoring SOC, remote sensing and modelling become more and more important and have the potential to better capture the variability of soil organic matter content, and to provide data at field/farm scale where the soil is managed (Castaldi et al., 2019). "
+        "text": "Some soil threats such as compaction and erosion involve modelling, as well as other monitoring techniques, such as remote sensing, and more intensive sampling schemes to calibrate and validate the models while considering current land use and climate. Moreover, for monitoring SOC, remote sensing and modelling become more and more important and have the potential to better capture the variability of soil organic matter content, and to provide data at field/farm scale where the soil is managed (Castaldi et al., 2019)."
     },
     {
         "type": "text",
-        "text": "The concept of sampling levels in soil monitoring was also discussed by the Eionet Task Force on Soil Monitoring, summarised and developed here: "
+        "text": "The concept of sampling levels in soil monitoring was also discussed by the Eionet Task Force on Soil Monitoring, summarised and developed here:\n•\tLevel I could correspond to a large-scale Europe-wide sampling network, which consists of several country-specific constellations depending on the already existing national monitoring systems:\n\t•\tSeveral countries may adopt LUCAS Soil as their national system, while in others a combination of LUCAS and the established national monitoring system would create the most dense monitoring network . In the second case, comparability can be achieved only if the LUCAS analytical protocol is maintained at the national level (national samples from sites outside LUCAS Soil could even be provided to a central laboratory). A few countries may not see the need to supplement their own monitoring with LUCAS Soil. In that case consistency and comparability need to be established so that EU-wide evaluations based on LUCAS Soil (to cover all the EU territory in one time-efficient evaluation step) do not contradict national level I evaluations.\n\t•\tAn alternative approach is to establish LUCAS Soil as the EU level I soil monitoring system, and any national activity would serve level II."
     },
     {
         "type": "text",
-        "text": "•\tLevel I could correspond to a large-scale Europe-wide sampling network, which consists of several country-specific constellations depending on the already existing national monitoring systems: "
+        "text": "National initiatives may help to fill remaining representativity gaps (e.g. as investigated by the Landmark project) by densifying the existing sampling grids. Sampling would be limited largely to the topsoil and include basic parameters, including macronutrients and metals; sampling density would be representative for all land use and soil (1:1 Mio) scale spatial combinations across Europe, based on international standards (CEN (European Committee for Standardization)/ISO (International Organization for Standardization))."
     },
     {
         "type": "text",
-        "text": "•\tSeveral countries may adopt LUCAS Soil as their national system, while in others a combination of LUCAS and the established national monitoring system would create the most dense monitoring network . In the second case, comparability can be achieved only if the LUCAS analytical protocol is maintained at the national level (national samples from sites outside LUCAS Soil could even be provided to a central laboratory). A few countries may not see the need to supplement their own monitoring with LUCAS Soil. In that case consistency and comparability need to be established so that EU-wide evaluations based on LUCAS Soil (to cover all the EU territory in one time-efficient evaluation step) do not contradict national level I evaluations. "
+        "text": "•\tLevel II could then correspond to national monitoring networks, where there is a higher density of subsamples to encompass the local variability (thus avoid sampling errors). In addition, hot spots such as organic soils could be better captured, e.g. by narrowing sampling grids in wetlands. Sampling of deeper layers and a higher number of optional parameters (e.g. organic pollutants, emerging contaminants, soil biological parameters) are additional criteria for level II. Furthermore, soil biodiversity monitoring and organic pollutant monitoring have higher requirements for sampling, transport, storage and analysis, which are difficult to apply at level I (reference to monitoring levels for soil biodiversity; See section 6.2).\n\tIf countries adopt LUCAS Soil as their national monitoring system, they would supplement the LUCAS sampling points with an intensified (level II) sampling protocol (which still needs development; the experience of countries with intensive soil monitoring systems could help with this)."
     },
     {
         "type": "text",
-        "text": "•\tAn alternative approach is to establish LUCAS Soil as the EU level I soil monitoring system, and any national activity would serve level II. "
+        "text": "Level II serves a larger set of indicators and may be more accurate for detecting trends and calibrating and validating modelling, etc. However, the exact conditions for levels I and II still need to be elaborated between the European Commission and Member States, so that an integrated 'nested' system between levels I and II can be established. Table 10.2 may support this discussion. Certainly, the existing LUCAS Soil level I is already established, allowing an EU-wide harmonised topsoil assessment."
     },
     {
         "type": "text",
-        "text": "National initiatives may help to fill remaining represent at iv it y gaps (e.g. as investigated by the Landmark project) by densifying the existing sampling grids. Sampling would be limited largely to the topsoil and include basic parameters, including macronutrients and metals; sampling density would be representative for all land use and soil (1:1 Mio) scale spatial combinations across Europe, based on international standards (CEN (European Committee for Standardization)/ISO (International Organization for Standardization)). "
+        "text": "To allow integration between all sampling levels, agreed European protocols for sampling and analysis at levels I and II are needed. Experience of a combined scheme for sampling and analysis (EU standards/national standards) was collected during the repeated ICP Forests level I survey (Biosoil project under the Forest Focus Regulation ((EC) No 2152/2003))."
     },
     {
         "type": "text",
-        "text": "•\tLevel II could then correspond to national monitoring networks, where there is a higher density of subsamples to encompass the local variability (thus avoid sampling errors). In addition, hot spots such as organic soils could be better captured, e.g. by narrowing sampling grids in wetlands. Sampling of deeper layers and a higher number of optional parameters (e.g. organic pollutants, emerging contaminants, soil biological parameters) are additional criteria for level II. Furthermore, soil biodiversity monitoring and organic pollutant monitoring have higher requirements for sampling, transport, storage and analysis, which are difficult to apply at level I (reference to monitoring levels for soil biodiversity; See section 6.2). "
+        "text": "It can be expected that the representativity of the LUCAS Soil survey will be continuously improved in order to address emerging additional needs, while national expertise and specific plot extensions are needed to cover hot spots, deeper soil layers and other non-soil aspects of soil monitoring (e.g. crop quality, groundwater quality, vegetation composition, soil fauna)."
     },
     {
         "type": "text",
-        "text": ""
+        "text": "The monitoring levels suggested here are not yet a fully operational level I and II system. This will still have to be developed. The options presented here do not fully correspond to the ICP Forests levels I and II; ICP Forests level II has much higher sampling density at the cost of reduced representativity with only about 10% of the level I plot density. The ICP Forests level II involves intensive monitoring of forest sites or forest stands with representative local sampling regimes (ecosystem monitoring) that can develop site-related element input-output balances."
     },
     {
         "type": "text",
-        "text": "If countries adopt LUCAS Soil as their national monitoring system, they would supplement the LUCAS sampling points with an intensified (level II) sampling protocol (which still needs development; the experience of countries with intensive soil monitoring systems could help with this). "
+        "text": "Recommendation 1: We recommend that the critical limits presented here are investigated and validated and that regional specifications are developed where needed."
     },
     {
         "type": "text",
-        "text": "Level II serves a larger set of indicators and may be more accurate for detecting trends and calibrating and validating modelling, etc. However, the exact conditions for levels I and II still need to be elaborated between the European Commission and Member States, so that an integrated 'nested' system between levels I and II can be established. Table 10.2 may support this discussion. Certainly, the existing LUCAS Soil level I is already established, allowing an EU-wide harmonised topsoil assessment. "
+        "text": "The risk-based approach to soil monitoring is not new, having been used for soil pollution, and thresholds have also been discussed for various indicators. However, the concept has now been expanded and elaborated for the monitoring of soil health, using critical limits for soil threat indicators and their physical, chemical and biological parameters. There are still gaps in current knowledge (for some land uses and some European regions); however, with additional validation, the approach is sufficiently well documented to serve as a methodical framework with critical limits as guidance values for Europe."
     },
     {
         "type": "text",
-        "text": "To allow integration between all sampling levels, agreed European protocols for sampling and analysis at levels I and II are needed. Experience of a combined scheme for sampling and analysis (EU standards/national standards) was collected during the repeated ICP Forests level I survey (Biosoil project under the Forest Focus Regulation ((EC) No 2152/2003)). "
+        "text": "Soil is a complex medium, with highly variable local conditions because of its properties, historical and current land use, and climate. Many pressures affect soils, while their ability to function well — particularly if productivity is the only measure — is not properly understood or secured. In order to convince landowners and land users to take measures where soils are unhealthy, clear and well-defined criteria are needed to explain why a soil is considered unhealthy in terms of the various functions and services expected from soils. This is a challenge for participatory communication and awareness raising. Critical limits offer a transparent and plausible approach to determining whether a soil is healthy or not, and substantial investment in soil monitoring and regional validation of methods will be needed to succeed in cooperation with all stakeholders."
     },
     {
         "type": "text",
-        "text": "It can be expected that the represent at iv it y of the LUCAS Soil survey will be continuously improved in order to address emerging additional needs, while national expertise and specific plot extensions are needed to cover hot spots, deeper soil layers and other non-soil aspects of soil monitoring (e.g. crop quality, groundwater quality, vegetation composition, soil fauna). "
+        "text": "Recommendation 2: We recommend the development of a European soil indicator system based on the analysis of policy needs and experience from existing soil monitoring."
     },
     {
         "type": "text",
-        "text": "The monitoring levels suggested here are not yet a fully operational level I and II system. This will still have to be developed. The options presented here do not fully correspond to the ICP Forests levels I and II; ICP Forests level II has much higher sampling density at the cost of reduced represent at iv it y with only about $\\uparrow0\\%$ of the level I plot density. The ICP Forests level II involves intensive monitoring of forest sites or forest stands with representative local sampling regimes (ecosystem monitoring) that can develop site-related element input-output balances. "
+        "text": "On that basis, level I and level II protocols for sampling and analysis can be developed, which use and integrate the experiences collected at EU and national levels."
     },
     {
         "type": "text",
-        "text": "10.3 Recommendations for soil monitoring and implementing soil-related indicators ",
-        "text_level": 1
+        "text": "Soil monitoring here is targeted to provide data on soil properties in a representative spatio-temporal approach, allowing the quantification and observation of pressure, status and impact indicators. Any soil monitoring system must be sufficiently robust and pragmatic to derive the necessary indicators. Because the different soil threats (and the underlying soil functions) require different input parameters and, in some cases, sampling approaches, not all indicators can be served by the same sampling design. However, at least for level I, the sampling requirements for a core set of parameters need to be agreed upon (see Creamer et al., 2019)."
     },
     {
         "type": "text",
-        "text": "Recommendation 1: We recommend that the critical limits presented here are investigated and validated and that regional specifications are developed where needed. "
+        "text": "The following conditions for a European soil monitoring system need to be considered when developing protocols for sampling and analysis:\n•\tCore set of soil parameters. As mentioned above, this has been widely analysed and suggested by different authors, so the list in Table 10.2 can easily be expanded for different indicators, and thus further specified. The work cited above is also based on the analysis of existing national monitoring systems and additional questionnaires (e.g. Faber et al., 2022), so that such a core parameter set is likely to find agreement and support. Table 10.2 contains some complex parameters that require evaluation functions to be derived (pedotransfer functions). There is still a need to revise, extend and further harmonise the European pedotransfer rules and functions database."
     },
     {
         "type": "text",
-        "text": "The risk-based approach to soil monitoring is not new, having been used for soil pollution, and thresholds have also been discussed for various indicators. However, the concept has now been expanded and elaborated for the monitoring of soil health, using critical limits for soil threat indicators and their physical, chemical and biological parameters. There are still gaps in current knowledge (for some land uses and some European regions); however, with additional validation, the approach is sufficiently well documented to serve as a methodical framework with critical limits as guidance values for Europe. "
+        "text": "•\tIndicators and parameters. These must be clearly defined and comparable between different monitoring systems. Currently, national systems differ in their return intervals, sampling design (number and spatial arrangement of subsamples, sampling depth, representativity). In addition, several countries have not recently revisited their sampling locations and may even have stopped their monitoring programmes. A big effort is needed to integrate the reporting of indicators generated from these systems. Completed EU projects such as GS Soil and Landmark, national projects such as the Austrian LUCASSA, and experiences from European sampling systems, such as ICP Forests and LUCAS Soil, help to develop harmonisation tools and design options for an integrated system. As well as project consortia, expert networks exist (Eionet Thematic Group on Soil, stakeholder forum of the European Soil Observatory) that can help in building, testing and applying the required methods and tools."
     },
     {
         "type": "text",
-        "text": "Soil is a complex medium, with highly variable local conditions because of its properties, historical and current land use, and climate. Many pressures affect soils, while their ability to function well — particularly if productivity is the only measure — is not properly understood or secured. In order to convince landowners and land users to take measures where soils are unhealthy, clear and well-defined criteria are needed to explain why a soil is considered unhealthy in terms of the various functions and services expected from soils. This is a challenge for participatory communication and awareness raising. Critical limits offer a transparent and plausible approach to determining whether a soil is healthy or not, and substantial investment in soil monitoring and regional validation of methods will be needed to succeed in cooperation with all stakeholders. "
+        "text": "Recommendation 3: We recommend the refinement of the soil threat approach through soil functional indicators and site- and land-use specific critical limits."
     },
     {
         "type": "text",
-        "text": "Recommendation 2: We recommend the development of a European soil indicator system based on the analysis of policy needs and experience from existing soil monitoring. ",
-        "text_level": 1
+        "text": "It has been demonstrated that the understanding of soil health requires information about how soils perform the functions expected from them. The current knowledge about soil threats enables an understanding of soil degradation by many stakeholders. However, soil functional indicators describe soil processes and their impact on ecosystem services in more detail (e.g. water dynamics in soil); a systematic hierarchy of soil functional indicators is still lacking. Investments into monitoring and research are also needed to significantly expand the knowledge base about critical limits in view of soil health."
     },
     {
         "type": "text",
-        "text": "On that basis, level I and level II protocols for sampling and analysis can be developed, which use and integrate the experiences collected at EU and national levels. "
+        "text": "•\tResearch challenge. Knowledge about the impact of soil degradation on drinking water quality, human health, food quality, soil biodiversity and the ecological condition of ecosystems is still limited. Regarding the impact of soil pollution, the existing experience of the risk assessment of localised pollution must be expanded to risk assessment of diffuse pollution. Thresholds for all degradative processes and soil threats could follow a similar risk-based approach; for this, limit values should be defined in order to protect so-called 'endpoints', and to trigger restorative action. Thresholds are often defined at the level of protection targets (limit values in food stuffs, water quality), and transfer models are needed to determine corresponding critical limits at the point of measurement in the soil. Knowledge about such thresholds must be developed for key indicators, representative for all land uses, and comparable transfer models should be elaborated. Strategic partnerships and shared research infrastructures should be expanded; the successful European Joint Programme Soil (EJP Soil) serves as a blueprint for new research cooperations."
     },
     {
         "type": "text",
-        "text": "Soil monitoring here is targeted to provide data on soil properties in a representative spatio-temporal approach, allowing the quantification and observation of pressure, status and impact indicators. Any soil monitoring system must be sufficiently robust and pragmatic to derive the necessary indicators. Because the different soil threats (and the underlying soil functions) require different input parameters and, in some cases, sampling approaches, not all indicators can be served by the same sampling design. However, at least for level I, the sampling requirements for a core set of parameters need to be agreed upon (see Creamer et al., 2019). "
+        "text": "•\tFinancial instruments. Reliable and spatially accurate soil indicators are needed for many policy processes (zero pollution, chemicals, circular economy, urban development, climate resilience, ecosystem health, biodiversity, water and food security). Active engagement and agreement between the European Commission and Member States (and their neighbours) is needed to implement the new EU Soil Strategy 2030, with the ambition of achieving healthy soils by 2050, facilitated by a soil protection policy. At best, any new EU policy would re-emphasise already existing national efforts and highlight where such national initiatives still have gaps at the present time. Ideally, such a response would enable funding and support for national soil monitoring, which strives to be regionally representative. The Forest Focus Regulation could be a model case for establishing EU soil sampling as a demonstration project for soil monitoring."
     },
     {
         "type": "text",
-        "text": ""
+        "text": "Soil degradation is indicated by a reduction in or elimination of soil functions and thus the loss of the soil's ability to support ecosystem services (FAO and ITPS, 2015). The loss of soil functions can affect the health and survival of organisms living in and from the soil, including humans, which derive food from the soil and are in daily contact with it. Thresholds, i.e. critical limits, play an important role in understanding where soil functions have been harmed to a level that needs prevention, restoration or remediation; this can be indicated by the degree to which critical limits are exceeded, as shown in Figure 1.3. The loss of soil function may be indicated by reduced plant production (e.g. yield loss), reduced soil biodiversity or loss of soil stability (soil losses through erosion and landslides). However, except for soil erosion, soil degradation is generally not visible (e.g. chemical degradation). This means that proper sampling and analysis is fundamental for monitoring soil health."
     },
     {
         "type": "text",
-        "text": "The following conditions for a European soil monitoring system need to be considered when developing protocols for sampling and analysis:\n "
+        "text": "Therefore, the approach to quantifying the degree of soil degradation by linking critical limits as thresholds and the current soil (functional) condition is a big step forward compared with the risk assessment schemes of the past. However, this method has several inherent challenges related to terminology, methodology and local conditions:\n•\tWhile various indicators for soil threats have been proposed in the recent past, specifications for monitoring and evaluation are missing.\n•\tThere is still no consensus between countries on valid regional critical limits to be used as thresholds for specific soil functions.\n•\tThe methodology to link a specific threshold (via models) to the current condition of soil, or water, may differ between countries or groups of countries (e.g. Swartjes et al., 2009 about risk assessment of contaminated sites)."
     },
     {
         "type": "text",
-        "text": "•\tCore set of soil parameters . As mentioned above, this has been widely analysed and suggested by different authors, so the list in Table 10.2 can easily be expanded for different indicators, and thus further specified. The work cited above is also based on the analysis of existing national monitoring systems and additional questionnaires (e.g. Faber et al., 2022), so that such a core parameter set is likely to find agreement and support. Table 10.2 contains some complex parameters that require evaluation functions to be derived (pedotransfer functions). There is still a need to revise, extend and further harmonise the European pedotransfer rules and functions database.\n "
+        "text": "A more general limitation is that, for some forms of soil degradation, the actual link between current soil condition and any threshold is not yet well established because of either a lack of process-based knowledge (e.g. related to the bio-geochemical behaviour in soil of 'new' contaminants) or the fact that, for a regional or national assessment, the soil data needed to feed models are simply not available or interactions are highly conditional and/or complex."
     },
     {
         "type": "text",
-        "text": "•\tIndicators and parameters .  These  must be clearly defined and comparable between different monitoring systems. Currently, national systems differ in their return intervals, sampling design (number and spatial arrangement of subsamples, sampling depth, represent at iv it y). In addition, several countries have not recently revisited their sampling locations and may even have stopped their monitoring programmes. A big effort is needed to integrate the reporting of indicators generated from these systems. Completed EU projects such as GS Soil and Landmark, national projects such as the Austrian LUCASSA, and experiences from European sampling systems, such as ICP Forests and LUCAS Soil, help to develop harmonisation tools and design options for an integrated system. As well as project consortia, expert networks exist (Eionet Thematic Group on Soil, stakeholder forum of the European Soil Observatory) that can help in building, testing and applying the required methods and tools. "
+        "text": "However, to evaluate the current soil status or the impact of relevant soil threats on the environment and human health, risk-based limit values are essential. At present, there is no consensus at EU level on unified critical limits for the listed soil threats. Although progress has been made, for example in developing effect-based critical limits for metals such as cadmium, lead, copper and zinc, national standards for soil protection within the EU still vary widely. One reason for not having a harmonised set of standards is the complicated interconnection between soil functions and site conditions (e.g. climate, soil fertility level), management measures (e.g. fertiliser management) and corresponding soil threats. In addition, views from Member States on targets or endpoints (e.g. water quality, food quality, ecosystem health) may also differ. This further complicates the quest for a harmonised generic approach. For soil contamination, this has resulted in multiple soil quality standards within the EU, ranging from non-effect-based target values (largely related to natural background levels in soils at Member State level) to effect-based critical limits (targeting, for example, human health as the endpoint)."
     },
     {
         "type": "text",
-        "text": "Recommendation 3: We recommend the refinement of the soil threat approach through soil functional indicators and site- and land-use specific critical limits. ",
-        "text_level": 1
+        "text": "Three recommendations are drawn from this review:\n•\tAvailable thresholds need to be validated (confirmed and/ or improved) and gaps in indicators and thresholds filled.\n•\tA European soil indicator system is needed including a protocol for soil sampling and analysis.\n•\tExisting soil monitoring needs to be supported and improved as a tool to inform soil protection policies."
     },
     {
         "type": "text",
-        "text": "It has been demonstrated that the understanding of soil health requires information about how soils perform the functions expected from them. The current knowledge about soil threats enables an understanding of soil degradation by many stakeholders. However, soil functional indicators describe soil processes and their impact on ecosystem services in more detail (e.g. water dynamics in soil); a systematic hierarchy of soil functional indicators is still lacking. Investments into monitoring and research are also needed to significantly expand the knowledge base about critical limits in view of soil health. "
-    },
-    {
-        "type": "text",
-        "text": "•\tResearch challenge. Knowledge about the impact of soil degradation on drinking water quality, human health, food quality, soil biodiversity and the ecological condition of ecosystems is still limited. Regarding the impact of soil pollution, the existing experience of the risk assessment of localised pollution must be expanded to risk assessment of diffuse pollution. Thresholds for all degradative processes and soil threats could follow a similar risk-based approach; for this, limit values should be defined in order to protect so-called 'endpoints', and to trigger restorative action. Thresholds are often defined at the level of protection targets (limit values in food stuffs, water quality), and transfer models are needed to determine corresponding critical limits at the point of measurement in the soil. Knowledge about such thresholds must be developed for key indicators, representative for all land uses, and comparable transfer models should be elaborated. Strategic partnerships and shared research infrastructures should be expanded; the successful European Joint Programme Soil (EJP Soil) serves as a blueprint for new research cooperations.\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tFinancial instruments. Reliable and spatially accurate soil indicators are needed for many policy processes (zero pollution, chemicals, circular economy, urban development, climate resilience, ecosystem health, biodiversity, water and food security). Active engagement and agreement between the European Commission and Member States (and their neighbours) is needed to implement the new EU Soil Strategy 2030, with the ambition of achieving healthy soils by 2050, facilitated by a soil protection policy. At best, any new EU policy would re-emphasise already existing national efforts and highlight where such national initiatives still have gaps at the present time. Ideally, such a response would enable funding and support for national soil monitoring, which strives to be regionally representative. The Forest Focus Regulation could be a model case for establishing EU soil sampling as a demonstration project for soil monitoring. "
-    },
-    {
-        "type": "text",
-        "text": "10.4 Concluding remarks ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Soil degradation is indicated by a reduction in or elimination of soil functions and thus the loss of the soil's ability to support ecosystem services (FAO and ITPS, 2015). The loss of soil functions can affect the health and survival of organisms living in and from the soil, including humans, which derive food from the soil and are in daily contact with it. Thresholds, i.e. critical limits, play an important role in understanding where soil functions have been harmed to a level that needs prevention, restoration or remediation; this can be indicated by the degree to which critical limits are exceeded, as shown in Figure 1.3. The loss of soil function may be indicated by reduced plant production (e.g. yield loss), reduced soil biodiversity or loss of soil stability (soil losses through erosion and landslides). However, except for soil erosion, soil degradation is generally not visible (e.g. chemical degradation). This means that proper sampling and analysis is fundamental for monitoring soil health. "
-    },
-    {
-        "type": "text",
-        "text": ""
-    },
-    {
-        "type": "text",
-        "text": "Therefore, the approach to quantifying the degree of soil degradation by linking critical limits as thresholds and the current soil (functional) condition is a big step forward compared with the risk assessment schemes of the past. However, this method has several inherent challenges related to terminology, methodology and local conditions:\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tWhile various indicators for soil threats have been proposed in the recent past, specifications for monitoring and evaluation are missing.\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tThere is still no consensus between countries on valid regional critical limits to be used as thresholds for specific soil functions.\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tThe methodology to link a specific threshold (via models) to the current condition of soil, or water, may differ between countries or groups of countries (e.g. Swartjes et al., 2009 about risk assessment of contaminated sites). "
-    },
-    {
-        "type": "text",
-        "text": "A more general limitation is that, for some forms of soil degradation, the actual link between current soil condition and any threshold is not yet well established because of either a lack of process-based knowledge (e.g. related to the bio-geochemical behaviour in soil of 'new' contaminants) or the fact that, for a regional or national assessment, the soil data needed to feed models are simply not available or interactions are highly conditional and/or complex. "
-    },
-    {
-        "type": "text",
-        "text": "However, to evaluate the current soil status or the impact of relevant soil threats on the environment and human health, risk-based limit values are essential. At present, there is no consensus at EU level on unified critical limits for the listed soil threats. Although progress has been made, for example in developing effect-based critical limits for metals such as cadmium, lead, copper and zinc, national standards for soil protection within the EU still vary widely. One reason for not having a harmonised set of standards is the complicated interconnection between soil functions and site conditions \n (e.g. climate, soil fertility level), management measures \n (e.g. fertiliser management) and corresponding soil threats. In addition, views from Member States on targets or endpoints (e.g. water quality, food quality, ecosystem health) may also differ. This further complicates the quest for a harmonised generic approach. For soil contamination, this has resulted in multiple soil quality standards within the EU, ranging from non-effect-based target values (largely related to natural background levels in soils at Member State level) to effect-based critical limits (targeting, for example, human health as the endpoint). "
-    },
-    {
-        "type": "text",
-        "text": "Three recommendations are drawn from this review:\n•\tAvailable thresholds need to be validated (confirmed and/ or improved) and gaps in indicators and thresholds filled.\n •\tA European soil indicator system is needed including a  protocol for soil sampling and analysis .\n •\tExisting soil monitoring needs to be supported and improved as a tool to inform soil protection policies."
-    },
-    {
-        "type": "text",
-        "text": "The corresponding maps for the test implementation of the indicators proposed in this report are available on request from the EEA. "
+        "text": "The corresponding maps for the test implementation of the indicators proposed in this report are available on request from the EEA."
     }
 ]
