@@ -1977,143 +1977,67 @@
     },
     {
         "type": "text",
-        "text": "While current national and EU-wide monitoring instruments can provide some of the soil parameters needed for monitoring soil threats in a representative manner, for example soil carbon, some others are not systematically covered (e.g. soil physical parameters measuring compaction). This leaves great gaps in our knowledge about the state of the environment, and the role soils play, and interpretations often depend on highly uncertain predictions. "
+        "text": "While current national and EU-wide monitoring instruments can provide some of the soil parameters needed for monitoring soil threats in a representative manner, for example soil carbon, some others are not systematically covered (e.g. soil physical parameters measuring compaction). This leaves great gaps in our knowledge about the state of the environment, and the role soils play, and interpretations often depend on highly uncertain predictions."
     },
     {
         "type": "text",
-        "text": "The discussions about the data requirements for the various European Green Deal environmental policies and the Eighth Environment Action Programme emphasise once more the crucial role that soils play in controlling the fate of substances released to air, land and water: soils must be properly recognised as mediators, bioreactors and buffers for many pressures affecting human health and ecosystem functioning. The information required can come only from soil monitoring — measuring accurately the inputs and outputs as well as the biological, chemical and physical transformation and transport processes in the soil. The parameters which describe these processes evolve into policy-relevant information by being aggregated into indicators and coupled to critical limits for the potential expected benefits and services soils provide for the living environment. "
+        "text": "The discussions about the data requirements for the various European Green Deal environmental policies and the Eighth Environment Action Programme emphasise once more the crucial role that soils play in controlling the fate of substances released to air, land and water: soils must be properly recognised as mediators, bioreactors and buffers for many pressures affecting human health and ecosystem functioning. The information required can come only from soil monitoring — measuring accurately the inputs and outputs as well as the biological, chemical and physical transformation and transport processes in the soil. The parameters which describe these processes evolve into policy-relevant information by being aggregated into indicators and coupled to critical limits for the potential expected benefits and services soils provide for the living environment."
     },
     {
         "type": "text",
-        "text": "This review has studied the current science on soil indicators, processes and functions. A synthesis has been developed with the aim of enabling assessment of soil health for a new EU soil protection policy. The risk-based approach taken here is well known in the context of local soil pollution, where risk assessment is used to trigger remediation. That approach has now been extended to other soil indicators (here: mostly soil threats), where critical limits are available under specific site and land use conditions. The risk-based approach builds on the concept that the harm caused by degraded soils to ecosystems and human health can be prevented, i.e. that soils can deliver the ecosystem services expected of them. Indicators and critical limits provide the necessary knowledge to enable decision-making where preventive and restorative action will be needed. The approach is presented in detail in Chapter 1. "
+        "text": "This review has studied the current science on soil indicators, processes and functions. A synthesis has been developed with the aim of enabling assessment of soil health for a new EU soil protection policy. The risk-based approach taken here is well known in the context of local soil pollution, where risk assessment is used to trigger remediation. That approach has now been extended to other soil indicators (here: mostly soil threats), where critical limits are available under specific site and land use conditions. The risk-based approach builds on the concept that the harm caused by degraded soils to ecosystems and human health can be prevented, i.e. that soils can deliver the ecosystem services expected of them. Indicators and critical limits provide the necessary knowledge to enable decision-making where preventive and restorative action will be needed. The approach is presented in detail in Chapter 1."
     },
     {
         "type": "text",
-        "text": "Thresholds are given as critical limits once a specific protection target is involved, such as ecosystems and human health. The approaches to risk and thresholds depend on the underlying soil processes, available policy targets, land use, etc. Therefore, different kinds of operational critical limits were found:\n "
+        "text": "Thresholds are given as critical limits once a specific protection target is involved, such as ecosystems and human health. The approaches to risk and thresholds depend on the underlying soil processes, available policy targets, land use, etc. Therefore, different kinds of operational critical limits were found:\n•\tcritical limits that relate to a complex soil threat indicator directly: erosion;\n•\tcritical limits that refer to measured parameters that comprise a composite indicator — soil pollution, nutrient loss, acidification, compaction and soil biodiversity — which can be derived in two ways:\n\t•\tback-calculation of policy thresholds/targets (nitrate in groundwater, drinking quality standards) into critical limits in soils (the maximum acceptable concentration at the point of sampling in the soil, so that the threshold in the groundwater or surface water is not exceeded);\n\t•\tscience-based functional limits of soil parameters (e.g. acidification, soil biodiversity);\n•\tcritical limits that refer to a single parameter that is at the same time an indicator: soil organic carbon (SOC)."
     },
     {
         "type": "text",
-        "text": "•\tcritical limits that relate to a complex soil threat indicator directly: erosion;\n "
+        "text": "Soil threats are monitored by an indicator set that is well established, easily comprehensible and of limited complexity. The indicators feed on soil physical, chemical and biological parameters from monitoring networks. By applying critical limits to soil threats (and their parameters) and focusing on specific endpoints, the impact of soil degradation on ecosystem services can be assessed (and each soil function does not necessarily need to be separately investigated). Parameters and indicators need to be responsive to management and disturbance in a measurable way."
     },
     {
         "type": "text",
-        "text": "•\tcritical limits that refer to measured parameters that comprise a composite indicator — soil pollution, nutrient loss, acidification, compaction and soil biodiversity — which can be derived in two ways: "
+        "text": "Table 10.1 provides an overview of the findings of this report. In a healthy, undegraded soil, fully capable of delivering its expected functions, none of the thresholds would be exceeded."
     },
     {
         "type": "text",
-        "text": "•\tback-calculation of policy thresholds/targets (nitrate in groundwater, drinking quality standards) into critical limits in soils (the maximum acceptable concentration at the point of sampling in the soil, so that the threshold in the groundwater or surface water is not exceeded); "
+        "text": "Based on Table 10.1 (and this review), a more complete approach can now follow, including:\n•\tfilling the remaining gaps in the approach (e.g. water storage, soil biological indicators);\n•\timproving the regional representativity of thresholds (regional validation);\n•\tcompleting indicators and thresholds for all land use types (since existing thresholds do not cover all land use types)."
     },
     {
         "type": "text",
-        "text": "•\tscience-based functional limits of soil parameters (e.g. acidification, soil biodiversity); "
+        "text": "Some of the thresholds found here can be applied across larger gradients, countries and soil types (compaction, erosion, nutrients, acidification), although they have been largely developed for agricultural land, particularly cropland. It could be argued that the thresholds presented will be barely exceeded for other semi-natural land use types. However, such types of land use are exposed to atmospheric deposition, flooding, drought, fires and erosion; thus, unwanted inputs and effects occur, and thresholds could be exceeded. The thresholds presented here thus need additional validation and, in some cases, modification. For example, conditions for soils naturally rich (boreal) or low (Mediterranean) in SOC, require further analysis, since there is little evidence in the literature."
     },
     {
         "type": "text",
-        "text": "•\tcritical limits that refer to a single parameter that is at the same time an indicator: soil organic carbon (SOC). "
+        "text": "For this reason, the values presented here serve as orientation for identifying sensitive and degraded soils in the EU. Any definition of a legally valid threshold then requires a national validation procedure, the outcome of which either confirms the values presented here or results in new, region-specific thresholds. The latter would require a coordinated process among Member States, to ensure comparability."
     },
     {
         "type": "text",
-        "text": "10.1.2\tSoil health indicators in this report ",
-        "text_level": 1
+        "text": "Salinisation is characterised by an excessive increase of water-soluble salts in the soil. There is certainly a significant area of saline soils in Europe (primary — natural, and secondary — anthropogenic). Anthropogenic causes can be irrigation, hydrological modification, chemical additions and disposal of saline waste. Várallyay (2005) lists the input data required for the character is ation and risk identification of salinisation/sodification. Várallyay (2008) presents baseline and threshold values for soil salinisation, crop tolerance to salts, and the effects of salt on relative soil fertility. Salinity risk assessment methodologies are presented in Bloem et al. (2012)."
     },
     {
         "type": "text",
-        "text": "Soil threats are monitored by an indicator set that is well established, easily comprehensible and of limited complexity. The indicators feed on soil physical, chemical and biological parameters from monitoring networks. By applying critical limits to soil threats (and their parameters) and focusing on specific endpoints, the impact of soil degradation on ecosystem services can be assessed (and each soil function does not necessarily need to be separately investigated). Parameters and indicators need to be responsive to management and disturbance in a measurable way. "
+        "text": "Thresholds for wind erosion and other forms of soil erosion (this report has primarily focused on water erosion) are based on the concept of tolerable soil loss, and such thresholds consider all forms of erosion."
     },
     {
         "type": "text",
-        "text": "Table 10.1 provides an overview of the findings of this report. In a healthy, undegraded soil, fully capable of delivering its expected functions, none of the thresholds would be exceeded. "
+        "text": "Soil functional indicators are directly linked to a specific soil function and to ecosystem services (see Table 1.1). While there is still no agreement on an exhaustive matrix of such indicators and their thresholds, soil function assessments using pedotransfer functions have a long tradition and are an excellent basis for studying parameters and processes in the context of soil functions. A recent conceptual example of such an assessment is presented by Vogel et al. (2020). In that study, the potential and actual delivery of soil functions is predicted using static and dynamic soil properties, which are then scored to compare the performance of different soils. Among other functions, Vogel et al. (2020) also include the water storage function, which is not covered in this report. This is also one of the four functions investigated by Steinhoff-Knopp et al. (2020), who studied the effect of erosion on soil functions and ecosystem services. They suggested water storage capacity (mm) as an indicator for the water flow regulation function. Their approach is particularly interesting because it offers a local, site-specific approach to quantifying thresholds. A fully elaborated example to demonstrate the concept is yet to be presented."
     },
     {
         "type": "text",
-        "text": "Based on Table 10.1 (and this review), a more complete approach can now follow, including:\n "
+        "text": "The objective of soil monitoring in the context of the EU soil strategy for 2030 is to detect healthy and unhealthy (degraded) soils so that the rate of achieving the policy target (healthy soils by 2050) can be quantified. Thus, monitoring measures the success of halting degradation from unsustainable management (and climate change) — the non-deterioration principle — and the success of restorative practices (sustainable soil management)."
     },
     {
         "type": "text",
-        "text": "•\tfilling the remaining gaps in the approach (e.g. water storage, soil biological indicators);\n •\timproving the regional represent at iv it y of thresholds (regional validation);\n •\tcompleting indicators and thresholds for all land use types (since existing thresholds do not cover all land use types). "
-    },
-    {
-        "type": "table",
-        "img_path": "images/62194de18b2ca875d37872c58add58a98542b2085384f01e740ca015121c95ff.jpg",
-        "table_caption": "Table 10.1\tOverview of soil threat indicators investigated in this report "
-    },
-    {
-        "type": "table",
-        "img_path": "images/be3ce5294876cb9218a3d2a1d667ebeaa484fd5391f8d667433f832555e96f40.jpg",
-        "table_caption": "Table 10.1\tOverview of soil threat indicators investigated in this report (cont.) "
+        "text": "In the run up to and follow on from the EU's 2006 soil thematic strategy, existing soil monitoring systems were reviewed, and the challenges for developing a common European monitoring system compiled (Van Camp et al., 2004c; Huber et al., 2008). Van Camp et al. (2004c) emphasised the need to develop a common baseline, to decide on a minimum parameter set, quality control, reporting and EU coordination. Interestingly, the parameters they suggested follow a tiered approach, covering all soil threats. This report investigates the most important soil threat indicators, offering an updated knowledge base (building on Huber et al., 2008)."
     },
     {
         "type": "text",
-        "text": "Notes:\t( a ) Loss rates lower than 2t/ha/year are mandatory on soils adjacent to water bodies and/or soils with elevated levels of pollutants; such lower limits are needed to maintain water quality.\n The current knowledge base covers a limited set of land uses and soil properties, for which thresholds are available; in the future, all relevant land uses and sites need to be covered. "
+        "text": "Huber et al. (2008) presented an overview of 290 soil indicators for all soil threats, condensed into 60 selected priority indicators, as identified in the soil thematic strategy 2006. Twenty-seven of these indicators were tested against existing soil monitoring systems, with 20 being qualified to enter the envisaged European monitoring system (see also Table 1.4). Corresponding performance criteria were provided by Arrouays et al. (2008), including minimum detectable change and baseline and indicator thresholds where available."
     },
     {
         "type": "text",
-        "text": "10.1.3\tApplication criteria for the thresholds in this report ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Some of the thresholds found here can be applied across larger gradients, countries and soil types (compaction, erosion, nutrients, acidification), although they have been largely developed for agricultural land, particularly cropland. It could be argued that the thresholds presented will be barely exceeded for other semi-natural land use types. However, such types of land use are exposed to atmospheric deposition, flooding, drought, fires and erosion; thus, unwanted inputs and effects occur, and thresholds could be exceeded. The thresholds presented here thus need additional validation and, in some cases, modification. For example, conditions for soils naturally rich (boreal) or low (Mediterranean) in SOC, require further analysis, since there is little evidence in the literature. "
-    },
-    {
-        "type": "text",
-        "text": "For this reason, the values presented here serve as orientation for identifying sensitive and degraded soils in the EU. Any definition of a legally valid threshold then requires a national validation procedure, the outcome of which either confirms the values presented here or results in new, region-specific thresholds. The latter would require a coordinated process among Member States, to ensure comparability. "
-    },
-    {
-        "type": "text",
-        "text": "10.1.4\tSoil threats not covered in this report ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Salinisation is characterised by an excessive increase of water-soluble salts in the soil. There is certainly a significant area of saline soils in Europe (primary — natural, and secondary — anthropogenic). Anthropogenic causes can be irrigation, hydrological modification, chemical additions and disposal of saline waste. Várallyay (2005) lists the input data required for the character is ation and risk identification of salinisation/sodification. Várallyay (2008) presents baseline and threshold values for soil salinisation, crop tolerance to salts, and the effects of salt on relative soil fertility. Salinity risk assessment methodologies are presented in Bloem et al. (2012). "
-    },
-    {
-        "type": "text",
-        "text": "Thresholds for wind erosion and other forms of soil erosion (this report has primarily focused on water erosion) are based on the concept of tolerable soil loss, and such thresholds consider all forms of erosion. "
-    },
-    {
-        "type": "text",
-        "text": "10.1.5\tOutlook: definition and thresholds for soil functional indicators ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Soil functional indicators are directly linked to a specific soil function and to ecosystem services (see Table 1.1). While there is still no agreement on an exhaustive matrix of such indicators and their thresholds, soil function assessments using pedotransfer functions have a long tradition and are an excellent basis for studying parameters and processes in the context of soil functions. A recent conceptual example of such an assessment is presented by Vogel et al. (2020). In that study, the potential and actual delivery of soil functions is predicted using static and dynamic soil properties, which are then scored to compare the performance of different soils. Among other functions, Vogel et al. (2020) also include the water storage function, which is not covered in this report. This is also one of the four functions investigated by Steinhoff-Knopp et al. (2020), who studied the effect of erosion on soil functions and ecosystem services. They suggested water storage capacity (mm) as an indicator for the water flow regulation function. Their approach is particularly interesting because it offers a local, site-specific approach to quantifying thresholds. A fully elaborated example to demonstrate the concept is yet to be presented. "
-    },
-    {
-        "type": "text",
-        "text": ""
-    },
-    {
-        "type": "text",
-        "text": "10.2 Soil monitoring ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "The objective of soil monitoring in the context of the EU soil strategy for 2030 is to detect healthy and unhealthy (degraded) soils so that the rate of achieving the policy target (healthy soils by 2050) can be quantified. Thus, monitoring measures the success of halting degradation from unsustainable management (and climate change) — the non-deterioration principle — and the success of restorative practices (sustainable soil management). "
-    },
-    {
-        "type": "text",
-        "text": "10.2.1\tIntensity of soil monitoring ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "In the run up to and follow on from the EU's 2006 soil thematic strategy, existing soil monitoring systems were reviewed, and the challenges for developing a common European monitoring system compiled (Van Camp et al., 2004c; Huber et al., 2008). Van Camp et al. (2004c) emphasised the need to develop a common baseline, to decide on a minimum parameter set, quality control, reporting and EU coordination. Interestingly, the parameters they suggested follow a tiered approach, covering all soil threats. This report investigates the most important soil threat indicators, offering an updated knowledge base (building on Huber et al., 2008). "
-    },
-    {
-        "type": "text",
-        "text": "Huber et al. (2008) presented an overview of 290 soil indicators for all soil threats, condensed into 60 selected priority indicators, as identified in the soil thematic strategy 2006. Twenty-seven of these indicators were tested against existing soil monitoring systems, with 20 being qualified to enter the envisaged European monitoring system (see also Table 1.4). Corresponding performance criteria were provided by Arrouays et al. (2008), including minimum detectable change and baseline and indicator thresholds where available. "
-    },
-    {
-        "type": "text",
-        "text": ""
-    },
-    {
-        "type": "text",
-        "text": "More recent evaluations of existing monitoring systems in the EU have been conducted by Stolte et al. (2016), Van Leeuwen et al. (2017), Creamer et al. (2019), Bispo et al. (2020) and Faber et al. (2022). This work provides an extensive overview of existing national monitoring systems and concludes with minimum sets of parameters needed to describe soil quality and soil functions (in the case of the Landmark project; Creamer et al., 2019). The Landmark project concluded with the determination of optimal sampling densities to improve the represent at iv it y of the LUCAS Soil survey, which is particularly interesting for countries that lack monitoring systems. "
+        "text": "More recent evaluations of existing monitoring systems in the EU have been conducted by Stolte et al. (2016), Van Leeuwen et al. (2017), Creamer et al. (2019), Bispo et al. (2020) and Faber et al. (2022). This work provides an extensive overview of existing national monitoring systems and concludes with minimum sets of parameters needed to describe soil quality and soil functions (in the case of the Landmark project; Creamer et al., 2019). The Landmark project concluded with the determination of optimal sampling densities to improve the represent at iv it y of the LUCAS Soil survey, which is particularly interesting for countries that lack monitoring systems."
     },
     {
         "type": "text",
@@ -2121,23 +2045,7 @@
     },
     {
         "type": "text",
-        "text": "Soil monitoring in Europe faces the challenge of integrating different national and EU-wide soil surveys (for details see Bispo et al., 2020). Furthermore, different sampling regimes may exist within countries, such as between forest and agricultural soil monitoring. While these differences have their justification (e.g. sampling design addressing forest floors, sampling of peatland, maintenance of time series), linkages between surveys (observing changes in land use for certain sampling sites) and comparability across borders pose challenges for adapting the design and/or future implementation of these surveys. Example of such design modifications are:\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tcommon terminology and methodologies (e.g. pedotransfer function)( 34 );\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tparallel laboratory analysis; development of conversion factors;\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tspatial integration, e.g. through standardised delimitation criteria for spatial units;\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tcommon represent at iv it y criteria (e.g. for organic soil or riparian soils). "
+        "text": "Soil monitoring in Europe faces the challenge of integrating different national and EU-wide soil surveys (for details see Bispo et al., 2020). Furthermore, different sampling regimes may exist within countries, such as between forest and agricultural soil monitoring. While these differences have their justification (e.g. sampling design addressing forest floors, sampling of peatland, maintenance of time series), linkages between surveys (observing changes in land use for certain sampling sites) and comparability across borders pose challenges for adapting the design and/or future implementation of these surveys. Example of such design modifications are:\n•\tcommon terminology and methodologies (e.g. pedotransfer function);\n•\tparallel laboratory analysis; development of conversion factors;\n•\tspatial integration, e.g. through standardised delimitation criteria for spatial units;\n•\tcommon representativity criteria (e.g. for organic soil or riparian soils)."
     },
     {
         "type": "text",
@@ -2145,34 +2053,7 @@
     },
     {
         "type": "text",
-        "text": "Three sampling intensities can be distinguished:\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tLevel I : sites where all general parameters are measured, e.g. large-scale topsoil surveys, with a central laboratory (LUCAS Soil, GEMAS (Geological Mapping of Forest Soils of Europe)) or based on a European network of closely calibrated national/regional laboratories (ICP Forests level I).\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tLevel II : investigations and monitoring of specific parameters and soil threats, e.g. types of erosion, soil biodiversity. Higher sampling densities allow improved identification of systematic errors, and higher sampling depth allows monitoring of subsoil processes. "
-    },
-    {
-        "type": "text",
-        "text": ""
-    },
-    {
-        "type": "text",
-        "text": "•\tLevel III : related to very specific problems, e.g. radionuclides, military sites, decontamination of specific industrial residues, 'hot spots' of anthropogenic or natural processes. In addition, local sampling and analytical capacity (e.g. analytics for farmers) can be involved and later integrated into larger scale surveys (involving local laboratories). "
-    },
-    {
-        "type": "table",
-        "img_path": "images/259542a9fc6e20d065b43056aba2a1c460fe0bc8d6f4ec0827b3bceddd345895.jpg",
-        "table_caption": "Table 10.2\tParameters for soil monitoring at different sampling intensity levels  "
-    },
-    {
-        "type": "table",
-        "img_path": "images/fff2a78130bfae28ff0dd5c5cd2fcf87ef5373384e82083247d9f0d89a694e04.jpg",
-        "table_caption": "Table 10.2\tParameters for soil monitoring at different sampling intensity levels (cont.) ",
-        "table_footnote": "Note:\tGHG, greenhouse gas; PTF, pedotransfer function. "
+        "text": "Three sampling intensities can be distinguished:\n•\tLevel I : sites where all general parameters are measured, e.g. large-scale topsoil surveys, with a central laboratory (LUCAS Soil, GEMAS (Geological Mapping of Forest Soils of Europe)) or based on a European network of closely calibrated national/regional laboratories (ICP Forests level I).\n•\tLevel II : investigations and monitoring of specific parameters and soil threats, e.g. types of erosion, soil biodiversity. Higher sampling densities allow improved identification of systematic errors, and higher sampling depth allows monitoring of subsoil processes.\n•\tLevel III : related to very specific problems, e.g. radionuclides, military sites, decontamination of specific industrial residues, 'hot spots' of anthropogenic or natural processes. In addition, local sampling and analytical capacity (e.g. analytics for farmers) can be involved and later integrated into larger scale surveys (involving local laboratories)."
     },
     {
         "type": "text",
@@ -2189,10 +2070,6 @@
     {
         "type": "text",
         "text": "•\tSeveral countries may adopt LUCAS Soil as their national system, while in others a combination of LUCAS and the established national monitoring system would create the most dense monitoring network . In the second case, comparability can be achieved only if the LUCAS analytical protocol is maintained at the national level (national samples from sites outside LUCAS Soil could even be provided to a central laboratory). A few countries may not see the need to supplement their own monitoring with LUCAS Soil. In that case consistency and comparability need to be established so that EU-wide evaluations based on LUCAS Soil (to cover all the EU territory in one time-efficient evaluation step) do not contradict national level I evaluations. "
-    },
-    {
-        "type": "text",
-        "text": ""
     },
     {
         "type": "text",
