@@ -1809,417 +1809,171 @@
     },
     {
         "type": "text",
-        "text": "Land take may also include parcels or surfaces that are not sealed (e.g. urban green areas, sport and leisure facilities) (Figure 9.1). Nevertheless, because both indicators estimate similar processes, there is a significant overlap in the areas affected by both land take and soil sealing. Sealing rates are usually lower in peri-urban areas with on average $10\\%$  sealing, and very high in core cities with on average $36\\%$ or more (Naumann et al., 2018). In Austria, the Federal Agency for Surveying and Mapping (BEV) found that sealing accounts for $32\\%$ of land take, and in Germany about $46\\%$ of the area consumed by land take is actually sealed (example cited from Prokop et al., 2011). "
+        "text": "Land take may also include parcels or surfaces that are not sealed (e.g. urban green areas, sport and leisure facilities) (Figure 9.1). Nevertheless, because both indicators estimate similar processes, there is a significant overlap in the areas affected by both land take and soil sealing. Sealing rates are usually lower in peri-urban areas with on average 10% sealing, and very high in core cities with on average 36% or more (Naumann et al., 2018). In Austria, the Federal Agency for Surveying and Mapping (BEV) found that sealing accounts for 32% of land take, and in Germany about 46% of the area consumed by land take is actually sealed (example cited from Prokop et al., 2011)."
     },
     {
         "type": "text",
-        "text": "For 2018, a European soil sealing layer with a precision of $10\\!\\times\\!10m}$ , based on satellite data, is available. Earlier data sets for the years 2006, 2009, 2012 and 2015 are also available but with a lower resolution of only $20\\!\\times\\!20m}$ . Therefore, the latest data set from 2018 cannot be compared with earlier data sets. "
+        "text": "For 2018, a European soil sealing layer with a precision of 10*10m, based on satellite data, is available. Earlier data sets for the years 2006, 2009, 2012 and 2015 are also available but with a lower resolution of only 20*20m. Therefore, the latest data set from 2018 cannot be compared with earlier data sets."
     },
     {
         "type": "text",
-        "text": "According to the latest and most precise data set, soil sealing in the EU and the UK amounted to an area of $97,903k m}^{2}$ in 2018 and on average $192m^{2}}$ per inhabitant (EEA dashboard, 2021a). The sealing rate in floodplains amounted to $3.2\\%$  and in coastal regions to $3.9\\%$ . EU capitals were on average $50\\%$ sealed in 2010 (EEA, 2010). New sealing most commonly affects the soils on the outskirts of urban centres. Between 2012 and 2018 about $^{1,200k}m}^{2}}$ of high and medium productive soils were lost to urbanisation (EEA, 2021a). "
+        "text": "According to the latest and most precise data set, soil sealing in the EU and the UK amounted to an area of 97,903km² in 2018 and on average 192m² per inhabitant (EEA dashboard, 2021a). The sealing rate in floodplains amounted to 3.2% and in coastal regions to 3.9%. EU capitals were on average 50% sealed in 2010 (EEA, 2010). New sealing most commonly affects the soils on the outskirts of urban centres. Between 2012 and 2018 about 1,200km² of high and medium productive soils were lost to urbanisation (EEA, 2021a)."
     },
     {
         "type": "text",
-        "text": "Results from national reporting on land take and sealing ",
-        "text_level": 1
+        "text": "In the context of the Land Use Land Use Change and Forestry (LULUCF) Regulation, all EU Member States report on conversions between different land use categories, including conversions to 'settlements', but also report on the trends in carbon pools within each category. Land cover is also reported under the United Nations Convention to Combat Desertification (UNCCD) 2018-2030 strategic framework, covering three indicators: trends in land cover, trends in land productivity or functioning of the land, and trends in carbon stocks above and below ground. Based on the UNCCD reporting for 2018 (which includes Sustainable Development Goal (SDG) indicator 15.3.1), 19 of the 27 EU Member States provide national reports, and 15 Member States have reported statistics using at least one of the three indicators. 'Artificial land cover per capita', later renamed to 'Imperviousness change rate', is also part of the EU SDG indicator set (though reported with EU-wide Copernicus data)."
     },
     {
         "type": "text",
-        "text": "In the context of the Land Use Land Use Change and Forestry (LULUCF) Regulation, all EU Member States report on conversions between different land use categories, including conversions to 'settlements', but also report on the trends in carbon pools within each category. Land cover is also reported under the United Nations Convention to Combat Desertification (UNCCD) 2018-2030 strategic framework, covering three indicators: trends in land cover, trends in land productivity or functioning of the land, and trends in carbon stocks above and below ground. Based on the UNCCD reporting for 2018 (which includes Sustainable Development Goal (SDG) indicator 15.3.1), 19 of the 27 EU Member States provide national reports, and 15 Member States have reported statistics using at least one of the three indicators. 'Artificial land cover per capita', later renamed to 'Imperviousness change rate', is also part of the EU SDG indicator set (though reported with EU-wide Copernicus data). "
+        "text": "Prokop et al. (2011) compiled national reports on land take and sealing across the EU, but the systematic reporting of national data has not yet been established. For example, in Belgium, land take increased by 30% between 1985 and 2009, and, in Brussels, the percentage of sealed soil increased from 18% (1950) to 37% (2006). In Italy, the soil sealing rate has not decelerated in recent years, despite soil sealing limits being established at the municipality level:\n•\tminimum values for the extension of permeable green areas, ranging from 15% in the town centre to 35% in residential areas (Brescia);\n•\t'surface permeability' according to land use classes, i.e. 30-40% permeability in residential areas, 70% for parking areas and 90% for green public areas (Padua);\n•\tminimum standards for 'surface permeability' are 75% for private gardens and 15-50% for commercial areas (Parma)."
     },
     {
         "type": "text",
-        "text": "Prokop et al. (2011) compiled national reports on land take and sealing across the EU, but the systematic reporting of national data has not yet been established. For example, in Belgium, land take increased by $30\\%$ between 1985 and 2009, and, in Brussels, the percentage of sealed soil increased from $\\uparrow8\\%$ (1950) to $37\\%$ (2006). In Italy, the soil sealing rate has not decelerated in recent years, despite soil sealing limits being established at the municipality level:\n "
+        "text": "BAFU (2020) presents an interesting case study for Switzerland:\n•\t7.5% of the national territory is artificialised, of which only about two thirds is officially zoned as building land.\n•\t4.7% of the national territory is actually sealed and hence devoid of biological soil functions.\n•\tThe area of sealed soils increased by 29% between 1985 and 2009, mainly accounted for by cropland and natural pastures. In the same period sealing also increased in wetland areas by 10% and in nature protected areas by 14%.\n•\tThe effect of sealing is larger than the area occupied by the actual construction, because additional adjacent terrain is affected by heavy compaction due to level infrastructure such as ramps, access roads, construction roads and agricultural barns."
     },
     {
         "type": "text",
-        "text": ""
+        "text": "Urbanisation affects soils in various ways:\n•\tSoils can be fully or partially covered. Removal of vegetated and biologically active topsoils is often the initial technical step of land take ('cut-off' soil profiles). What is often left, or imported from surface mines for construction, is the geogenic parent material, which then becomes compacted.\n•\t'Artificialised' soil in many city centres contains artefacts and debris from construction and waste (even after re-cultivation, such as in parks and green alleys). Such soils show irregular mixing, deep perturbation and sedimentation of artefacts, as well as a high degree of compaction.•\tSoils can then also be completely sealed (asphalt) or covered with more or less impenetrable surfaces."
     },
     {
         "type": "text",
-        "text": "•\tminimum values for the extension of permeable green areas, ranging from $15\\%$ in the town centre to $35\\%$ in residential areas (Brescia);\n •\t'surface permeability' according to land use classes, i.e.  $30.40\\%$ permeability in residential areas, $70\\%$ for parking areas and $90\\%$ for green public areas (Padua);\n •\tminimum standards for 'surface permeability' are $75\\%$ for private gardens and $15{-}50\\%$ for commercial areas (Parma). "
+        "text": "Based on Reto et al. (2006), urban soils can be classified as follows:\n•\tlocal natural soils, such as recent, relict and fossil soils;\n•\ttraffic route soils (e.g. railway track ballast and paving cracks, where soil is formed by dust infiltration between the stones and sand);\n•\traw soils: soil on recent backfills or covered rocky layers;\n•\tcultivated soils in gardens (hortisols), cemeteries (necrosols) and sewage farms;\n•\tsoils with gaseous or dust emissions/depositions (dry and wet deposits, dust infiltration and dust blown away);\n•\ttechnogenic substrate soils;\n•\tsoils with thick and/or deep stratification, mixtures and compaction."
     },
     {
         "type": "text",
-        "text": "BAFU (2020) presents an interesting case study for Switzerland:\n "
+        "text": "An indication of a soil consumed during land take is the change in its physical nature, i.e. the presence/mixing of artificial materials ('artefacts', such as building material, waste). Through land take and sealing, critical ecosystem services are lost or harmed, such as groundwater recharge, groundwater and surface water quality, agricultural production, biodiversity and recreation (EEA, 2021a). A detailed overview of the properties of different kinds of artificialised soils (soils affected by land consumption but not sealed) is provided by Cornu et al. (2021)."
     },
     {
         "type": "text",
-        "text": "•\t$7.5\\%$ of the national territory is artificialised, of which only about two thirds is officially zoned as building land.\n •\t$4.7\\%$ of the national territory is actually sealed and hence devoid of biological soil functions.\n •\tThe area of sealed soils increased by $29\\%$ between 1985 and 2009, mainly accounted for by cropland and natural pastures. In the same period sealing also increased in wetland areas by $10\\%$ and in nature protected areas by $14\\%$ .\n •\tThe effect of sealing is larger than the area occupied by the actual construction, because additional adjacent terrain is affected by heavy compaction due to level infrastructure such as ramps, access roads, construction roads and agricultural barns. "
+        "text": "Depending on the degree of soil sealing, the ecosystem services provided by soils are affected to various degrees. If an area is completely sealed (100% sealing rate) all ecological soil functions, including the following, cease to be available:\n•\tAvailability of nutrients. The degree of imperviousness changes the allocation and accumulation of nutrients in soils. With increasing permeability, the availability of carbon, nitrogen and phosphorus also rises (Noe and Hupp, 2005; Pouyatet al., 2006; Pickett and Cadenasso, 2009).\n•\tBelow-ground biological activity and diversity. With increasing degree of sealing, soil microbial biomass carbon and nitrogen is reduced (Zhao et al., 2012). Urban green soils are especially important: some of them can still have an active soil life (soil fauna) like that of agricultural soils or forests (Ungaro et al., 2022).\n•\tGas and water exchange. In impervious soils, the exchange of gas, water and nutrients between the soil and other environmental compartments is heavily disturbed and most inhibited when fully sealed (Zhao et al., 2012).\n•\tFlood resilience. Several authors confirm increased run-off due to increases in impervious surfaces: doubling over a 63-year period in Leipzig (Haase and Nuissl, 2007); 12% increase in run-off with a 12.6% increase in the area of sealed soil in Leeds (Perry and Nawaz, 2008). This increases the risk of flash floods following intense rain events (which are expected to become more frequent as a result of climate change).\n•\tFood security. In the period 1990-2006, 19 Member States lost a potential agricultural production capacity equivalent to 6.1 million tonnes of wheat (Gardi et al., 2015).\n•\tCarbon cycle. A large proportion of artificialised soils on allochthonous materials have very low soil organic carbon (SOC) content (especially soils related to road infrastructure and mining (Cornu et al., 2021). The importance of SOC as an ecosystem service for the city of Berlin has been demonstrated by Richter et al. (2020).\n•\tHuman health. Green urban areas with functioning soils contribute to cooling and air exchange in urban centres."
     },
     {
         "type": "text",
-        "text": "9.1.3\tImpact of urbanisation on the physical nature of soils ",
-        "text_level": 1
+        "text": "However, in reality, in a mosaic of different constructions, spatial arrangements and materials, sealed soils can still maintain some functions, for example the storage of water after infiltration from adjacent permeable fabric (Morgenroth, 2013). Porous pavements allow both higher infiltration and higher evaporation of water and have significantly cooler surfaces than fully sealed surfaces. Permeable pavements (e.g. concrete pavers with voids) and porous pavements (which are permeable over their entire surface) are increasingly used in spatial planning, as such materials help to mitigate the impact of paving on water and carbon cycles."
     },
     {
         "type": "text",
-        "text": "Urbanisation affects soils in various ways:\n "
+        "text": "Urban soils and their ecosystem services receive increasing attention in sustainable urbanisation. The urban fabric represents a small-scale patchwork of very contrasting soil features, creating high short-term spatial variability (Vasenev et al., 2014). In some regions and countries, soil function evaluation has become an obligatory part of spatial planning, in particular when natural or productive soils are converted into building land. A mature soil evaluation procedure at the municipal scale (but also larger scales) for precautionary soil protection has been developed by the TUSEC project (Technique of urban soil evaluation in city regions — implementation in planning procedures; see details in Lehmann et al., 2013). As part of the URBAN SMS project, a handbook was developed that introduces measures for enhancing soil function performance and compensation for soil loss caused by urbanisation (Siebielec et al., 2010)."
     },
     {
         "type": "text",
-        "text": "•\tSoils can be fully or partially covered. Removal of vegetated and biologically active topsoils is often the initial technical step of land take ('cut-off' soil profiles). What is often left, or imported from surface mines for construction, is the geogenic parent material, which then becomes compacted.\n "
+        "text": "Soil sealing is usually calculated as a percentage (sealed area per total area) or as sealed area per capita for a given region or country. It can also be specified as square metres of sealed area per square kilometre of total area (applying a specific stratification) (see Table 9.2). As an indicator, soil sealing change, or imperviousness change is used, since it is the change rate that is of interest for spatial planners and policy commitments targeting no net land take."
     },
     {
         "type": "text",
-        "text": "•\t'Artificialised' soil in many city centres contains artefacts and debris from construction and waste (even after re-cultivation, such as in parks and green alleys). Such soils show irregular mixing, deep perturbation and sedimentation of artefacts, as well as a high degree of compaction. "
+        "text": "Table 9.2 provides an overview of indicators relevant for monitoring soil sealing."
     },
     {
         "type": "text",
-        "text": "•\tSoils can then also be completely sealed (asphalt) or covered with more or less impenetrable surfaces. "
+        "text": "Land take in Europe is currently monitored based on Corine Land Cover (CLC) data. It looks at specific types of land cover change, i.e. the loss of agricultural, forest and other semi-natural and natural land towards urban and other artificial land use. CLC monitoring was initiated in 1985 (reference year 1990), and updates were produced in 2000, 2006, 2012 and 2018. The indicator LSI001 is part of the EEA Land and soil indicator (LSI) set. The CLC change data are produced with strong visual control of each spot, considering a 5ha minimum mapping area. While the CLC change map is very reliable, any land cover change of less than 5ha in size is not captured."
     },
     {
         "type": "text",
-        "text": "Based on Reto et al. (2006), urban soils can be classified as follows:\n "
+        "text": "The last known update of land take was provided by the EEA in 2021, amounting to 539km²/year between 2012 and 2018; data are available on the EEA's land take dashboard (EEA dashboard, 2021b) and in an indicator assessment (EEA, 2019d)."
     },
     {
         "type": "text",
-        "text": "•\tlocal natural soils, such as recent, relict and fossil soils;\n •\ttraffic route soils (e.g. railway track ballast and paving cracks, where soil is formed by dust infiltration between the stones and sand);\n •\traw soils: soil on recent backfills or covered rocky layers;\n •\tcultivated soils in gardens (hortisols), cemeteries (necrosols) and sewage farms;\n •\tsoils with gaseous or dust emissions/depositions (dry and wet deposits, dust infiltration and dust blown away);\n •\ttechnogenic substrate soils;\n•\tsoils with thick and/or deep stratification, mixtures and compaction. "
+        "text": "The indicator on imperviousness and imperviousness change (EEA, 2020) is generated mostly through automated image classification of high-resolution satellite imagery, for the years 2006, 2009, 2012, 2015 and 2018; for 2018, only a status layer was generated, while, for the trend between all other monitoring intervals, a change layer is available (EEA 2020). LSI002 has a 20m resolution which is significantly higher than that of a CLC change map; the production algorithm builds on the correlation with a vegetation index. Impurities (thus uncertainties) are caused by seasonal changes in vegetation cover and the fact that not all non-vegetated areas are fully artificially sealed."
     },
     {
         "type": "text",
-        "text": "An indication of a soil consumed during land take is the change in its physical nature, i.e. the presence/mixing of artificial materials ('artefacts', such as building material, waste). Through land take and sealing, critical ecosystem services are lost or harmed, such as groundwater recharge, groundwater and surface water quality, agricultural production, biodiversity and recreation (EEA, 2021a). A detailed overview of the properties of different kinds of artificialised soils (soils affected by land consumption but not sealed) is provided by Cornu et al. (2021). "
+        "text": "Details (interactive maps, data download, dashboard) of the Copernicus high-resolution layer on imperviousness and imperviousness change can be found on the EEA's website and in references (EEA, 2019d; EEA dashboard 2019, 2021a)."
     },
     {
         "type": "text",
-        "text": "9.1.4\tSealing and ecosystem services ",
-        "text_level": 1
+        "text": "The EEA indicator 'Imperviousness in Europe' (EEA, 2020) has been widely used as a soil sealing index (impervious soil coverage). The following sections describe the most common two methods to measure soil sealing. Both have their limitations, and it is therefore advisable to combine them."
     },
     {
         "type": "text",
-        "text": "Depending on the degree of soil sealing, the ecosystem services provided by soils are affected to various degrees. If an area is completely sealed ( $100\\%$ sealing rate) all ecological soil functions, including the following, cease to be available:\n "
+        "text": "The ratio between soil sealing and land take allows monitoring of the quality and quantity of sustainable land use and urban redevelopment. A low ratio indicates 'green' and extensive urbanisation or urban sprawl, which is currently typically happening in the urban fringes, whereas a high ratio indicates intensive, concentrated urbanisation (in urban centres), characterised by a high sealing rate."
     },
     {
         "type": "text",
-        "text": "•\tAvailability of nutrients. The degree of imperviousness changes the allocation and accumulation of nutrients in soils. With increasing permeability, the availability of carbon, nitrogen and phosphorus also rises (Noe and Hupp, 2005; Pouyatet al., 2006; Pickett and Cadenasso, 2009).\n "
+        "text": "Land recycling is based on the idea that land, once it has been artificialised and taken, must not be abandoned but should be reused as far as possible; it thus specifies that the land should return to non-artificial land categories (recultivation, or reverse land take). In order to understand the potential for land recycling, or the relationships between population growth in urban zones and sealing, i.e. in order to become land resource efficient, we need to know the share of the yet undeveloped building land ('building land stock') (see Table 9.2). Reliable measurements of the potential for land recycling in Europe are still unavailable but it is estimated to be high. Figure 9.2 depicts the three key types of land recycling: urban densification, grey recycling, and green recycling. Urban densification refers to construction on gaps between buildings and the increase of population density; grey recycling involves the construction of buildings or transport infrastructures on already developed land; green recycling is the development of green urban areas (EEA 2021a)."
     },
     {
         "type": "text",
-        "text": "•\tBelow-ground biological activity and diversity. With increasing degree of sealing, soil microbial biomass carbon and nitrogen is reduced (Zhao et al., 2012). Urban green soils are especially important: some of them can still have an active soil life (soil fauna) like that of agricultural soils or forests (Ungaro et al., 2022). "
+        "text": "A European data layer for land recycling exists for the period 2006-2012 for 662 functional urban areas (Copernicus Urban Atlas), being core cities and their surrounding commuting areas (EEA, 2018)."
     },
     {
         "type": "text",
-        "text": "•\tGas and water exchange. In impervious soils, the exchange of gas, water and nutrients between the soil and other environmental compartments is heavily disturbed and most inhibited when fully sealed (Zhao et al., 2012).\n "
+        "text": "The pattern of land use types is traditionally related to productivity classes: fertile land is cropped, while grassland and forests are managed on less fertile land or that with difficult topography. Fertile soils are very prone to land take and soil sealing, as they are situated in flat areas, where, historically, cities have emerged (EEA, 2021a)."
     },
     {
         "type": "text",
-        "text": "•\tFlood resilience. Several authors confirm increased run-off due to increases in impervious surfaces: doubling over a 63-year period in Leipzig (Haase and Nuissl, 2007); $12\\%$ increase in run-off with a $12.6\\%$ increase in the area of sealed soil in Leeds (Perry and Nawaz, 2008). This increases the risk of flash floods following intense rain events (which are expected to become more frequent as a result of climate change).\n "
+        "text": "For the first time, the EEA has assessed the loss of biomass productivity due to soil sealing in 786 European functional urban areas for the period 2012-2018 (EEA, 2021a; EEA dashboard, 2021d)."
     },
     {
         "type": "text",
-        "text": "•\tFood security. In the period 1990-2006, 19 Member States lost a potential agricultural production capacity equivalent to 6.1 million tonnes of wheat (Gardi et al., 2015).\n "
+        "text": "To investigate land use efficiency, Haase and Lathrop (2003) suggest several sub-indicators , which can be derived from land take and/or sealing:\n•\tdensity of new urbanisation;\n•\tloss of prime farmland;\n•\tloss of natural wetlands;\n•\tloss of core forest habitat;\n•\tincrease in impervious surface area."
     },
     {
         "type": "text",
-        "text": "•\tCarbon cycle. A large proportion of artificialised soils on allochthonous materials have very low soil organic carbon (SOC) content (especially soils related to road infrastructure and mining (Cornu et al., 2021). The importance of SOC as an ecosystem service for the city of Berlin has been demonstrated by Richter et al. (2020).\n "
+        "text": "The most common method of measuring soil sealing is based on the different reflective behaviour of sealed and unsealed surfaces. This NDVI method (normalised difference vegetation index) quantifies vegetation by measuring the difference between near-infrared light (which vegetation strongly reflects) and red light (which vegetation absorbs). The NDVI method is used to measure vegetation, drought and also sealed surfaces."
     },
     {
         "type": "text",
-        "text": "•\tHuman health. Green urban areas with functioning soils contribute to cooling and air exchange in urban centres. "
+        "text": "Healthy vegetation (with chlorophyll) reflects more near-infrared and green light than other wavelengths, but it absorbs more red and blue light (thus, vegetation appears green). Satellite sensors such as Landsat and Sentinel-2 both have the necessary sensors."
     },
     {
         "type": "text",
-        "text": "However, in reality, in a mosaic of different constructions, spatial arrangements and materials, sealed soils can still maintain some functions, for example the storage of water after infiltration from adjacent permeable fabric (Morgenroth, 2013). Porous pavements allow both higher infiltration and higher evaporation of water and have significantly cooler surfaces than fully sealed surfaces. Permeable pavements (e.g. concrete pavers with voids) and porous pavements (which are permeable over their entire surface) are increasingly used in spatial planning, as such materials help to mitigate the impact of paving on water and carbon cycles. "
+        "text": "Calculations of NDVI for a given pixel always result in a number that ranges from minus one (-1) to plus one (+1); however, no green leaves would provide a value close to zero, which means no vegetation. An NDVI approaching +1 (0.8-0.9) indicates the highest possible density of green leaves."
     },
     {
         "type": "text",
-        "text": "Urban soils and their ecosystem services receive increasing attention in sustainable urbanisation. The urban fabric represents a small-scale patchwork of very contrasting soil features, creating high short-term spatial variability (Vasenev et al., 2014). In some regions and countries, soil function evaluation has become an obligatory part of spatial planning, in particular when natural or productive soils are converted into building land. A mature soil evaluation procedure at the municipal scale (but also larger scales) for precautionary soil protection has been developed by the TUSEC project (Technique of urban soil evaluation in city regions — implementation in planning procedures; see details in Lehmann et al., 2013). As part of the URBAN SMS project, a handbook was developed that introduces measures for enhancing soil function performance and compensation for soil loss caused by urbanisation (Siebielec et al., 2010). "
+        "text": "At the European level, readily evaluated data on soil sealing are available through the Copernicus Land Monitoring Service. The indicator 'Degree of imperviousness' (or 'Imperviousness in Europe') describes the area sealed as defined above. It is based on counts of pixels of impermeable soil cover (thus soil sealing), which are then mapped as the degree of imperviousness (0-100%). Imperviousness change layers have been produced as the difference between the corresponding reference dates and are presented as degree of imperviousness change (-100% to +100%):\n•\tData are available on a 3-yearly basis since 2006, namely 2006, 2009, 2012, 2015 and 2018. Data have a resolution of 20*20m, and since 2018 a higher resolution of 10*10m. Change layers are available for the periods 2006-2009, 2009-2012, 2012-2015 and 2006-2012. They are, however, based on a coarser resolution of 100*100m.\n•\tThe 2018 European data set on imperviousness change cannot be compared with earlier data sets due to its high resolution. It has been published in the format of interactive dashboards in combination with other assessments, i.e.: soil sealing and ecosystem impacts (EEA dashboard, 2021a); landscape fragmentation pressure in Europe (EEA dashboard, 2021c); impact of soil sealing in functional urban areas (EEA dashboard, 2021d)."
     },
     {
         "type": "text",
-        "text": "9.2  Indicator specifications ",
-        "text_level": 1
+        "text": "Based on the abovementioned data sets from the Copernicus Land Monitoring Service, the EEA publishes regular European assessments under the title 'Imperviousness and imperviousness change in Europe' (EEA, 2020). Data are available in an interactive format as maps and tables for the abovementioned reference years as absolute values or as changes for defined time periods (EEA dashboard, 2019; see Map 9.1 with an example)."
     },
     {
         "type": "text",
-        "text": "9.2.1\tSoil sealing and land take ",
-        "text_level": 1
+        "text": "Satellite methods are useful for identifying soil sealing when it comes to detecting actually sealed sites. However, satellite methods have limitations, in particular if tall vegetation conceals sealed areas or clouds disturb the reflection."
     },
     {
         "type": "text",
-        "text": "Soil sealing is usually calculated as a percentage (sealed area per total area) or as sealed area per capita for a given region or country. It can also be specified as square metres of sealed area per square kilometre of total area (applying a specific "
+        "text": "A simpler method to measure soil sealing is to use land use data from cadastres or aerial pictures and to apply standard sealing indices for specified land use classes. Standard indices are derived by calculating average values from multiple sampling. This method can be easily used for measuring soil sealing in smaller regions or for specific projects but can also be used to perform random tests to validate satellite data for soil sealing."
     },
     {
         "type": "text",
-        "text": "stratification) (see Table 9.2). As an indicator, soil sealing change, or imperviousness change is used, since it is the change rate that is of interest for spatial planners and policy commitments targeting no net land take. "
+        "text": "Figure 9.3 shows an example of this method. On the left-hand side standard sealing indices for specified land use classes are given. The right-hand side shows a map with the same land use classes depicted as coloured polygons. The overall sealing rate can be calculated by summarising the sealing rate of each polygon."
     },
     {
         "type": "text",
-        "text": "Table 9.2 provides an overview of indicators relevant for monitoring soil sealing. "
+        "text": "Cadastre data always depend on the precision of the data collection; the data set might lag behind in time as new data entries have not been integrated. A change in the nomenclature can also make the monitoring very difficult. With regard to aerial pictures, it is often the case that area-wide pictures or regular time series are not available."
     },
     {
-        "type": "table",
-        "img_path": "images/f1a1969d01fc1e63e524c3ad421f940ebadf7d6a909d42b29d2f11936a8aedb8.jpg",
-        "table_caption": "Table 9.2\tIndicators used to assess soil sealing and land take ",
-        "table_footnote": "Note:\t( a ) Ratio between C in built-up land and organic C in soils (Cc/Co), according to Villa et al. (2018). "
-    },
-    {
-        "type": "text",
-        "text": "Land take in Europe is currently monitored based on Corine Land Cover (CLC) data. It looks at specific types of land cover change, i.e. the loss of agricultural, forest and other semi-natural and natural land towards urban and other artificial land use. CLC monitoring was initiated in 1985 (reference year 1990), and updates were produced in 2000, 2006, 2012 and 2018. The indicator LSI001 is part of the EEA Land and soil indicator (LSI) set. The CLC change data are produced with strong visual control of each spot, considering a 5ha minimum mapping area. While the CLC change map is very reliable, any land cover change of less than 5ha in size is not captured. "
-    },
-    {
-        "type": "text",
-        "text": "The last known update of land take was provided by the EEA in 2021, amounting to 539km2/year between 2012 and 2018; data are available on the EEA's land take dashboard (EEA dashboard, 2021b) and in an indicator assessment (EEA, 2019d). "
-    },
-    {
-        "type": "text",
-        "text": "The indicator on imperviousness and imperviousness change (EEA, 2020) is generated mostly through automated image classification of high-resolution satellite imagery, for the years 2006, 2009, 2012, 2015 and 2018; for 2018, only a status layer was generated, while, for the trend between all other monitoring intervals, a change layer is available (EEA 2020). LSI002 has a 20m resolution which is significantly higher than that of a CLC change map; the production algorithm builds on the correlation with a vegetation index. Impurities (thus uncertainties) are caused by seasonal changes in vegetation cover and the fact that not all non-vegetated areas are fully artificially sealed. "
-    },
-    {
-        "type": "text",
-        "text": "Details (interactive maps, data download, dashboard) of the Copernicus high-resolution layer on imperviousness and imperviousness change can be found on the EEA's website ( 33 ) and in references (EEA, 2019d; EEA dashboard 2019, 2021a). "
-    },
-    {
-        "type": "text",
-        "text": "The EEA indicator 'Imperviousness in Europe' (EEA, 2020) has been widely used as a soil sealing index (impervious soil coverage). The following sections describe the most common two methods to measure soil sealing. Both have their limitations, and it is therefore advisable to combine them. "
-    },
-    {
-        "type": "text",
-        "text": "9.2.2\tOther indicators ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "The ratio between soil sealing and land take allows monitoring of the quality and quantity of sustainable land use and urban redevelopment. A low ratio indicates 'green' and extensive urbanisation or urban sprawl, which is currently typically happening in the urban fringes, whereas a high ratio indicates intensive, concentrated urbanisation (in urban centres), characterised by a high sealing rate. "
-    },
-    {
-        "type": "text",
-        "text": "Land recycling is based on the idea that land, once it has been artificialised and taken, must not be abandoned but should be reused as far as possible; it thus specifies that the land should return to non-artificial land categories (recultivation, or reverse land take). In order to understand the potential for land recycling, or the relationships between population growth in urban zones and sealing, i.e. in order to become land resource efficient, we need to know the share of the yet undeveloped building land ('building land stock') (see Table 9.2). Reliable measurements of the potential for land recycling in Europe are still unavailable but it is estimated to be high. Figure 9.2 depicts the three key types of land recycling: urban densification, grey recycling, and green recycling. Urban densification refers to construction on gaps between buildings and the increase of population density; grey recycling involves the construction of buildings or transport infrastructures on already developed land; green recycling is the development of green urban areas (EEA 2021a). "
-    },
-    {
-        "type": "text",
-        "text": "A European data layer for land recycling exists for the period 2006-2012 for 662 functional urban areas (Copernicus Urban Atlas), being core cities and their surrounding commuting areas (EEA, 2018). "
-    },
-    {
-        "type": "text",
-        "text": "Soil sealing and loss of productivity ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "The pattern of land use types is traditionally related to productivity classes: fertile land is cropped, while grassland and forests are managed on less fertile land or that with difficult topography. Fertile soils are very prone to land take and soil sealing, as they are situated in flat areas, where, historically, cities have emerged (EEA, 2021a). "
-    },
-    {
-        "type": "text",
-        "text": "For the first time, the EEA has assessed the loss of biomass productivity due to soil sealing in 786 European functional urban areas for the period 2012-2018 (EEA, 2021a; EEA dashboard, 2021d). "
-    },
-    {
-        "type": "text",
-        "text": "To investigate land use efficiency, Haase and Lathrop (2003) suggest several sub-indicators , which can be derived from land take and/or sealing:\n "
-    },
-    {
-        "type": "text",
-        "text": "•\tdensity of new urbanisation;\n •\tloss of prime farmland;\n •\tloss of natural wetlands;\n •\tloss of core forest habitat;\n •\tincrease in impervious surface area. "
-    },
-    {
-        "type": "text",
-        "text": "land densiﬁcation $^+$ grey recycling $^+$ green recycling Land recycling (ha) $=$  land take "
-    },
-    {
-        "type": "text",
-        "text": "Source:\tEEA (2021a). "
-    },
-    {
-        "type": "text",
-        "text": "9.2.3\tSatellite methods ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "The most common method of measuring soil sealing is based on the different reflective behaviour of sealed and unsealed surfaces. This NDVI method (normalised difference vegetation index) quantifies vegetation by measuring the difference between near-infrared light (which vegetation strongly reflects) and red light (which vegetation absorbs). The NDVI method is used to measure vegetation, drought and also sealed surfaces. "
-    },
-    {
-        "type": "text",
-        "text": "Healthy vegetation (with chlorophyll) reflects more near-infrared and green light than other wavelengths, but it absorbs more red and blue light (thus, vegetation appears green). Satellite sensors such as Landsat and Sentinel-2 both have the necessary sensors. "
-    },
-    {
-        "type": "text",
-        "text": "Calculations of NDVI for a given pixel always result in a number that ranges from minus one (-1) to plus one $(+1)$ ; however, no green leaves would provide a value close to zero, which means no vegetation. An NDVI "
-    },
-    {
-        "type": "text",
-        "text": "approaching  $+1$  (0.8-0.9) indicates the highest possible density of green leaves. "
-    },
-    {
-        "type": "text",
-        "text": "At the European level, readily evaluated data on soil sealing are available through the Copernicus Land Monitoring Service. The indicator 'Degree of imperviousness' (or 'Imperviousness in Europe') describes the area sealed as defined above. It is based on counts of pixels of impermeable soil cover (thus soil sealing), which are then mapped as the degree of imperviousness $(0-100\\%)$ ). Imperviousness change layers have been produced as the difference between the corresponding reference dates and are presented as degree of imperviousness change ( $\\cdot100\\%$ to $+100\\%,$ ): "
-    },
-    {
-        "type": "text",
-        "text": "•\tData are available on a 3-yearly basis since 2006, namely 2006, 2009, 2012, 2015 and 2018.\n Data have a resolution of $20\\!\\times\\!20m}$ , and since 2018 a higher resolution of $10\\!\\times\\!10m}$ . Change layers are available for the periods 2006-2009, 2009-2012, 2012-2015 and 2006-2012. They are, however, based on a coarser resolution of  $100\\!\\times\\!100\\mathrm{m}$ . "
-    },
-    {
-        "type": "text",
-        "text": "•\tThe 2018 European data set on imperviousness change cannot be compared with earlier data sets due to its high resolution. It has been published in the format of interactive dashboards in combination with other assessments, i.e.:\n - soil sealing and ecosystem impacts (EEA dashboard, 2021a);\n - landscape fragmentation pressure in Europe (EEA dashboard, 2021c);\n - impact of soil sealing in functional urban areas (EEA dashboard, 2021d). "
-    },
-    {
-        "type": "text",
-        "text": "Based on the abovementioned data sets from the Copernicus Land Monitoring Service, the EEA publishes regular European assessments under the title 'Imperviousness "
-    },
-    {
-        "type": "text",
-        "text": "and imperviousness change in Europe' (EEA, 2020). Data are available in an interactive format as maps and tables for the abovementioned reference years as absolute values or as changes for defined time periods (EEA dashboard, 2019; see Map 9.1 with an example). "
-    },
-    {
-        "type": "text",
-        "text": "Limitations of the method ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Satellite methods are useful for identifying soil sealing when it comes to detecting actually sealed sites. However, satellite methods have limitations, in particular if tall vegetation conceals sealed areas or clouds disturb the reflection. "
-    },
-    {
-        "type": "image",
-        "img_path": "images/9a9c7a92b4dedd7c08baf7c997867035a61c1fd8f6c684aacdce29ae53a15602.jpg",
-        "img_caption": "Map 9.1\tExample from EEA's interactive data platform showing accounts of land surface sealing status in  Europe (38 EEA member and cooperation countries and the UK) for 2018 "
-    },
-    {
-        "type": "text",
-        "text": "9.2.4\tComputation based on land use data from cadastres or aerial pictures ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "A simpler method to measure soil sealing is to use land use data from cadastres or aerial pictures and to apply standard sealing indices for specified land use classes. Standard indices are derived by calculating average values from multiple sampling. This method can be easily used for measuring soil sealing in smaller regions or for specific projects but can also be used to perform random tests to validate satellite data for soil sealing. "
-    },
-    {
-        "type": "text",
-        "text": "Figure 9.3 shows an example of this method. On the left-hand side standard sealing indices for specified land use classes are given. "
-    },
-    {
-        "type": "text",
-        "text": "The right-hand side shows a map with the same land use classes depicted as coloured polygons. The overall sealing rate can be calculated by summarising the sealing rate of each polygon. "
-    },
-    {
-        "type": "text",
-        "text": "Limitations of the method ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Cadastre data always depend on the precision of the data collection; the data set might lag behind in time as new data entries have not been integrated. A change in the nomenclature can also make the monitoring very difficult. With regard to aerial pictures, it is often the case that area-wide pictures or regular time series are not available. "
-    },
-    {
-        "type": "table",
-        "img_path": "images/5122378792b8a2c1f0294162e262879e388f8a8bfd618ad6c6e9229f5a536731.jpg",
-        "table_caption": "Figure 9.3\tExample of computing soil sealing based on land use categories from the cadastre ",
-        "table_footnote": "Source:\tMonitoring of soil sealing in Austria. $\\copyright$  Enriched LISA Landcover by GeoVille 2017. "
-    },
-    {
-        "type": "text",
-        "text": "9.2.5\tComparison of national and European monitoring of soil sealing ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "While several EU countries monitor land take at the national level on a regular basis, soil sealing is determined by only very few countries through surveys other than Copernicus. Table 9.3 shows the national soil sealing data available for the year 2015. National data generally reflect higher sealing rates, which leads to the conclusion that EEA-Copernicus data do not capture smaller structures and therefore underestimate soil sealing. Figure 9.5 "
-    },
-    {
-        "type": "text",
-        "text": "shows three examples comparing the EEA-Copernicus data set with aerial pictures and indicates which structures were not captured by the EEA-Copernicus layer. "
-    },
-    {
-        "type": "text",
-        "text": "In the quality check of the 2015 high-resolution layer for soil sealing (Figure 9.4), it is obvious that smaller structures, such as dispersed single-family homes and smaller roads are not captured by this data set. However, it becomes clear that the higher resolution of the new data set (from 2018 onwards) overcomes this deficiency. "
-    },
-    {
-        "type": "table",
-        "img_path": "images/6f077c5c2e873b3a0b1b9acbbd050392cc1af0a64e692dd87cf0d64d191749ec.jpg",
-        "table_caption": "Table 9.3\tAvailable national soil sealing data compared with Copernicus data, 2015  ",
-        "table_footnote": "Note: \t( a ) Refers to the year 2018, as there are no data for 2015. "
-    },
-    {
-        "type": "text",
-        "text": "Figure 9.4\tComparison between EEA-Copernicus high resolution layers 'Degree of Imperviousness 2015-2018' ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "Small scale rural settlement and agricultural landscape in Austria (South of Obertrum am See).  "
-    },
-    {
-        "type": "text",
-        "text": "2015 imperviousness , 20m pixel size. Omission errors occur where existing buildings are not captured as sealed, and small agricultural roads are below the minimum mapping unit (MMU). "
-    },
-    {
-        "type": "text",
-        "text": "2018 imperviousness , 10m pixel size.  Buildings and settlements are much represented more consistently; some agricultural roads are still below the MMU. "
-    },
-    {
-        "type": "image",
-        "img_path": "images/2b30a31f0f016d9a8da297bb43ab0f8f99118425ceae367c7cd7fefc7ac2e9ee.jpg",
-        "img_caption": "2018 imperviousness , 10m pixel size.   Buildings, settlements and road  infrastructure are represented more  consistently and in greater detail;  more textural/structural detail in the  settlement area.  "
-    },
-    {
-        "type": "image",
-        "img_path": "images/d2f9e11744bfc2d02848978b8d56cf62dc943e6472427c221504edc42b5ef819.jpg"
-    },
-    {
         "type": "text",
-        "text": "9.3  Baselines and target values ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "9.3.1\tLand take Indicator ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "According to the current state of knowledge, baselines and thresholds for soil sealing are not soil science based but policy based. They refer to defined geographical regions and a target year. In addition, it can be observed that soil sealing is usually implicitly included in targets to reduce land take. "
-    },
-    {
-        "type": "text",
-        "text": "The baseline is usually a reference year, and the target value refers to a target year and a defined rate of soil sealing or land take for a defined region or country. The rate for soil sealing or land take is usually expressed in an annual average 'hectares per day' (see Table 9.4 for some examples). "
-    },
-    {
-        "type": "text",
-        "text": "Only a few European countries have so far set baselines and target values for land take and hence implicitly soil sealing, and in most cases these targets are less strict than the EU target of 'no net land take by 2050'. So far only Belgium (Flanders), Luxembourg and Switzerland have set targets in line with the EU objective. "
-    },
-    {
-        "type": "text",
-        "text": "Even moderate amounts of land take will result in considerable negative consequences if continued over decades. We therefore suggest that all European countries set interim targets on their way to achieving no net land take by 2050. Interim targets would help to achieve a gradual reduction in both land take and soil sealing. "
-    },
-    {
-        "type": "text",
-        "text": "According to the current state of knowledge, thresholds for soil sealing, for instance for a defined land use pattern (core city, peri-urban area, rural area), have neither been defined nor implemented. In practice soil sealing is monitored through land take: corresponding indicators are given in the second column of Table 9.4 "
-    },
-    {
-        "type": "table",
-        "img_path": "images/73e6e68eeeb61dadcc06e55c41034e00ab4986ab00605c89a0ef490be6382de2.jpg",
-        "table_caption": "Table 9.4\tCurrent targets and baselines for soil sealing/land take in selected European countries ",
-        "table_footnote": "Notes:\t( a ) EC (2011, p. 15, milestone 4.6). "
+        "text": "While several EU countries monitor land take at the national level on a regular basis, soil sealing is determined by only very few countries through surveys other than Copernicus. Table 9.3 shows the national soil sealing data available for the year 2015. National data generally reflect higher sealing rates, which leads to the conclusion that EEA-Copernicus data do not capture smaller structures and therefore underestimate soil sealing. Figure 9.5 shows three examples comparing the EEA-Copernicus data set with aerial pictures and indicates which structures were not captured by the EEA-Copernicus layer."
     },
     {
         "type": "text",
-        "text": "( b ) Strategic vision of the spatial policy plan of Flanders ( https://www.vlaanderen.be/publicaties/beleidsplan-ruimte- vlaanderen-strategische-visie-geillustreerde-versie ),  p. 36. "
+        "text": "In the quality check of the 2015 high-resolution layer for soil sealing (Figure 9.4), it is obvious that smaller structures, such as dispersed single-family homes and smaller roads are not captured by this data set. However, it becomes clear that the higher resolution of the new data set (from 2018 onwards) overcomes this deficiency."
     },
     {
         "type": "text",
-        "text": "( c ) Austrian government programme 2020-2024 ( https://www.bundeskanzler amt.gv.at/bundeskanzler amt/die- bundesregierung/regierungsdokumente.html ),  p. 104.\n "
+        "text": "According to the current state of knowledge, baselines and thresholds for soil sealing are not soil science based but policy based. They refer to defined geographical regions and a target year. In addition, it can be observed that soil sealing is usually implicitly included in targets to reduce land take."
     },
     {
         "type": "text",
-        "text": "( d ) German sustainability strategy 2016 ( https://sustainable development-deutschland.github.io/en/11-1-a ).\n "
+        "text": "The baseline is usually a reference year, and the target value refers to a target year and a defined rate of soil sealing or land take for a defined region or country. The rate for soil sealing or land take is usually expressed in an annual average 'hectares per day' (see Table 9.4 for some examples)."
     },
     {
         "type": "text",
-        "text": "( e ) Un Luxembourg durable pour une meilleure qualité de vie ( https://environnement.public.lu/dam-assets/documents/ developpement-durable/Un-Luxembourg-plus-durable-pour-une-meilleure-qualite-de-vie-2010.pdf ), p. 35. "
+        "text": "Only a few European countries have so far set baselines and target values for land take and hence implicitly soil sealing, and in most cases these targets are less strict than the EU target of 'no net land take by 2050'. So far only Belgium (Flanders), Luxembourg and Switzerland have set targets in line with the EU objective."
     },
     {
         "type": "text",
-        "text": "( f ) The law of agricultural and fishery modernization ( https://artificial is ation.bio diver site to us viv ants.fr ). "
+        "text": "Even moderate amounts of land take will result in considerable negative consequences if continued over decades. We therefore suggest that all European countries set interim targets on their way to achieving no net land take by 2050. Interim targets would help to achieve a gradual reduction in both land take and soil sealing."
     },
     {
         "type": "text",
-        "text": "10\n Operational soil indicators for the monitoring and evaluation of soil health ",
-        "text_level": 1
+        "text": "According to the current state of knowledge, thresholds for soil sealing, for instance for a defined land use pattern (core city, peri-urban area, rural area), have neither been defined nor implemented. In practice soil sealing is monitored through land take: corresponding indicators are given in the second column of Table 9.4."
     },
     {
         "type": "text",
-        "text": "This report presents a review of largely well-known indicators of soil threats, their definitions and applications, and the parameters that need to be measured so that these indicators can be derived and monitored. It also brings together scientific information about critical limits, beyond which soils are clearly unhealthy and unable to achieve the quality desired, i.e. soils that cannot perform their functions as expected. "
+        "text": "This report presents a review of largely well-known indicators of soil threats, their definitions and applications, and the parameters that need to be measured so that these indicators can be derived and monitored. It also brings together scientific information about critical limits, beyond which soils are clearly unhealthy and unable to achieve the quality desired, i.e. soils that cannot perform their functions as expected."
     },
     {
         "type": "text",
@@ -2228,16 +1982,6 @@
     {
         "type": "text",
         "text": "The discussions about the data requirements for the various European Green Deal environmental policies and the Eighth Environment Action Programme emphasise once more the crucial role that soils play in controlling the fate of substances released to air, land and water: soils must be properly recognised as mediators, bioreactors and buffers for many pressures affecting human health and ecosystem functioning. The information required can come only from soil monitoring — measuring accurately the inputs and outputs as well as the biological, chemical and physical transformation and transport processes in the soil. The parameters which describe these processes evolve into policy-relevant information by being aggregated into indicators and coupled to critical limits for the potential expected benefits and services soils provide for the living environment. "
-    },
-    {
-        "type": "text",
-        "text": "10.1 Soil health indicators ",
-        "text_level": 1
-    },
-    {
-        "type": "text",
-        "text": "10.1.1\tRisk-based soil health assessment using critical limits ",
-        "text_level": 1
     },
     {
         "type": "text",
