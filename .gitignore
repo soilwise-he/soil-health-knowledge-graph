@@ -3,3 +3,6 @@ config
 
 # Ignore IDE specific files
 .vscode/
+
+# Ignore Python caches
+__pycache__/
