@@ -42,8 +42,7 @@ isControlMethodOf,Is control method of,
 greaterThan,Greater than,
 isOldNameOf,Is old name of,"Y <is old name of> X. Use for obsolete labels , like old names of countries. E.g. 'People's Republic of Bulgaria' <is old name of> 'Bulgaria'. Use only for labels for the same concept in a specific language."
 isAffectedBy,Is affected by,"Y <is affected by> X. An object Y changes state or location because of an action of an agent X. E.g. 'trees' <is affected by> 'arboricides', 'transporting quality' <is affected by> 'mechanical damage'. Do not use for diseases or disorders; for those, use <afflicts/is afflicted by>. "
-hasGoalOrProcess,Has goal or process,"X <has goal or process> Y. X has intended goal or process Y. E.g. 'veterinary services' <has goal or process> 'animal health', 'coppicing' <has goal or process> 'natural regeneration'. 
-"
+hasGoalOrProcess,Has goal or process,"X <has goal or process> Y. X has intended goal or process Y. E.g. 'veterinary services' <has goal or process> 'animal health', 'coppicing' <has goal or process> 'natural regeneration'."
 afflicts,Afflicts,"X <afflicts> Y. The disease or disorder X could have negative effects in Y, such as adversely affect the health of an organism or body part Y. E.g. 'scrapie' <afflicts> 'sheep', 'glossitis' <afflicts> 'tongue'."
 scientificNameOf,Scientific name of,"Y <scientific name of> X. E.g. 'Salmo trutta' <scientific name of> 'sea trout'. Label-to-label relationship for use within a concept. Use when common name and scientific name are not separate concepts, or when a separate relation between scientific and common name is needed for a specific language. When common name and scientific name are separate concepts, use concept-to-concept relation <has taxonomic concept/has common name concept>."
 isUseOf,Is use of,"Y <is use of> X. For example, 'sweeteners' <is use of> ''sorbitol', 'fuels' <is use of> 'ethanol'."
@@ -67,8 +66,7 @@ isMadeFrom,Is made from," X <is made from> Y. Product X is mainly made from subs
 spatialRelationship,Spatial relationship,Super-property for spatial relationships
 hasComposition,Has composition,
 hasCodeAsfa,Has ASFA code,
-isHostFor,Is vector or host for,"Y <Is vector or host for> X. Organism Y is host or vector for X. E.g. 'Anopheles' <is vector or host for> 'Plasmodium'. 
-"
+isHostFor,Is vector or host for,"Y <Is vector or host for> X. Organism Y is host or vector for X. E.g. 'Anopheles' <is vector or host for> 'Plasmodium'."
 isCompositionOf,Is composition of,
 isPerformedByMeansOf,Is performed by means of,"Y <isPerformedByMeansOf> X. An object or process X mainly used to perform a process Y. See also <usedAs>. E.g. 'curry paste grinding' <isPerformedByMeansOf> 'curry paste grinding machine'; 'weapon' <meansFor> 'killing'; 'fishing pole' <meansFor> 'fishing'; 'alcohol' <meansFor> 'cleaning'; but NOT 'knives' <meansFor> 'felling' (because knives are not primarily used for cutting down trees);"
 hasTradeName,"Has trade name, has commercial name",
@@ -96,22 +94,19 @@ isMeansFor,Is means for,"X <isMeansFor> Y. An object or process X mainly used to
 isDisorderOf,Is disorder of,
 hasNarrowerSynonym,Has narrower synonym,
 hasVariety,Has variety,Simmetric relationship indicating that two concepts are variety each other.
-isStudiedBy,"Is studied by
-","X <is studied by> Y. Concept X is studied by field, science or group Y. E.g. 'palaeontology'<is studied by> 'palaeontologists', 'working conditions' <is studied by> 'ergonomics'."
+isStudiedBy,"Is studied by","X <is studied by> Y. Concept X is studied by field, science or group Y. E.g. 'palaeontology'<is studied by> 'palaeontologists', 'working conditions' <is studied by> 'ergonomics'."
 isUsedIn,Is used in,"X <is used in> Y. X is habitually used in Y, it is normal to use X in the practice of Y. E.g. 'casings' <is used in> 'sausages', 'trains' <is used in> 'rail transport'."
 hasPathogen,Has pathogen,"X <has pathogen> Y. Organism X has pathogen Y. Pathogens are pathogenic microorganism such as viruses, bacteria and fungi. E.g. 'Olea europaea' <has pathogen> 'Xylella fastidiosa'."
 developsFrom,Develops from,
-hasObjectOfActivity,Has object of activity,"X <has object of activity> Y. Activity X focuses on Y. E.g. 'shearing' <has object of activity> 'wool', 'ratification' <has object of activity> 'treaties'.
-"
+hasObjectOfActivity,Has object of activity,"X <has object of activity> Y. Activity X focuses on Y. E.g. 'shearing' <has object of activity> 'wool', 'ratification' <has object of activity> 'treaties'."
 isPropagationMaterialOf,Is propagation material of,
 isMemberOf,Is member of,"X <is member of> Y. A social or political unit (group or individual) X belongs to a social or political group Y. E.g. 'Benin' <is member of> 'Francophone Africa', 'worker bees' <is member of> 'bee colonies'. Limit use to geographical or socio-political units, do not use for grouping organisms (e.g. by use, climate, or taxonomic rank). Use <includes/included in> if describing spatial or temporal relation, but more loose than <is part of.>"
 hasCropingSystem,Has cropping system,
 temporalRelationship,Temporal relations,
 partitiveRelationship,Partitive relationship,Super-property for partitive relationships
-hasCommonNameConcept,Has common name concept,"Y <has common name concept> X. Y is a scientifically defined concept for an organism or a group of organisms with scientific name as labels, having a specific taxonomic rank. 'Apis mellifera' <has common name concept> 'honey bees'. Use at concept level when common name and scientific name are separate concepts. For label-to-label relationship for use within a concept, use <has scientific name / scientific name of>. 
-"
+hasCommonNameConcept,Has common name concept,"Y <has common name concept> X. Y is a scientifically defined concept for an organism or a group of organisms with scientific name as labels, having a specific taxonomic rank. 'Apis mellifera' <has common name concept> 'honey bees'. Use at concept level when common name and scientific name are separate concepts. For label-to-label relationship for use within a concept, use <has scientific name / scientific name of>."
 isSymbolFor,Is symbol for,Y <is symbol for> X. 'Fe (symbol)' <is symbol for> 'iron'. Use for disambiguation of chemical element symbols from other similar abbreviations.
-hasPart,Has part,"X <has part> Y. A composite entity X that can be identified as being composed of one or more parts, between which Y. E.g. 'stems' <has part> 'cortex', 'roots' <has part>'root nodules'. Use this relationship when none of the other lower partitive relations (<has component>, <is composed of>, <member>) apply. "
+hasPart,Has part,"X <has part> Y. A composite entity X that can be identified as being composed of one or more parts, between which Y. E.g. 'stems' <has part> 'cortex', 'roots' <has part>'root nodules'. Use this relationship when none of the other lower partitive relations (<has component>, <is composed of>, <member>) apply."
 causes,Causes,"X <causes> Y. Agent X (animate or inanimate) brings about a result Y. E.g. 'prions' <causes> 'spongiform encephalopathy', 'soil moisture deficit' <causes> 'wilting'."
 hasWeed,Has weed,
 influences,Influences,
@@ -119,7 +114,7 @@ hasPractice,Has practice,
 hasControlMethod,Has control method,
 isTaxonomicRankOf,Is taxonomic rank of, Y <is taxonomic rank of> X. Describes taxonomic rank Y of organism X. E.g. 'species (taxa)' <is taxonomic rank of> 'Spodoptera frugiperda'.
 hasPhysiologicalFunction,Has physiological function,
-hasCodeISO3Country,Has ISO 3 country code,"The International Standard for country codes and codes for their subdivisions. Alpha-3 code – a three-letter code that represents a country name, which is usually more closely related to the country name"
+hasCodeISO3Country,Has ISO 3 country code,"The International Standard for country codes and codes for their subdivisions. Alpha-3 code: a three-letter code that represents a country name, which is usually more closely related to the country name"
 processRelationship,Process relationships,Super-property for process relationships
 hasSubstitute,Has substitute,
 m49Code,M49 code,"UN M49 or the Standard Country or Area Codes for Statistical Use (Series M, No. 49) is a standard for area codes used by the United Nations for statistical purposes, developed and maintained by the United Nations Statistics Division."
@@ -157,14 +152,13 @@ isChemicalFormulaOf,Is chemical formula of,
 follows,Follows,
 smallerThan,Smaller than,
 isActedUponBy,Is acted upon by,
-hasSymptom,Has symptom,"X <has symptom> Y. A disease or disorder X presents disease characteristic Y in an organism. E.g. 'malnutrition' <has symptom> 'thinness', 'septicaemia' <has symptom> 'septic shock'. "
+hasSymptom,Has symptom,"X <has symptom> Y. A disease or disorder X presents disease characteristic Y in an organism. E.g. 'malnutrition' <has symptom> 'thinness', 'septicaemia' <has symptom> 'septic shock'."
 typeOf,Type of,"Y <type of> X. Concept Y is a type of X. <type of> is broader and quite similar to <skos:broader>, but it is not exclusive. E.g. 'gallop' <type of> 'horse gaits', but also elephants and camels can gallop."
 isCultivationProcessOf,Is cultivation process of,
 hasAcronym,Has acronym,"X <has acronym> Y. An acronym is an abbreviation formed from the initial letters of other words, often pronounced as a word. E.g. 'acquired immunodeficiency syndrome' <has acronym>'AIDS'. "
 isInputFor,Is input for,
 isPerformedBy,Is performed by,
-hasDisease,Has disease,"X <has disease> Y. Organism X can have disease Y. E.g. 'Sorghum' <has disease> 'loose smut of sorghum'. Organism to disease relationship. 
-"
+hasDisease,Has disease,"X <has disease> Y. Organism X can have disease Y. E.g. 'Sorghum' <has disease> 'loose smut of sorghum'. Organism to disease relationship."
 hasCultivationProcess,Has cultivation process,
 isMeasuredBy,Is measured by,"X <is measured by> Y. A quantitative property of X is measured by Y. For example: 'temperature' <is measured by> 'thermometers', 'social change' <is measured by> 'social indicators'."
 controls,Controls,
