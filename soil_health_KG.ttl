@@ -1,9 +1,12 @@
 @prefix agrontology: <http://aims.fao.org/aos/agrontology#> .
 @prefix agrovoc: <http://aims.fao.org/aos/agrovoc/> .
+@prefix country: <http://publications.europa.eu/resource/authority/country/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix eli: <http://data.europa.eu/eli/ontology#> .
 @prefix glosis_lh: <http://w3id.org/glosis/model/layerhorizon/> .
 @prefix glosis_sp: <http://w3id.org/glosis/model/siteplot/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix she: <http://soilwise-he.github.io/soil-health#> .
@@ -16,6 +19,7 @@ agrovoc:c_2482 a skos:Concept ;
     skos:prefLabel "ecosystems" .
 
 agrovoc:c_25304 a skos:Concept ;
+    agrontology:isAffectedBy she:SoilThreats ;
     skos:broader agrovoc:c_330883 ;
     skos:prefLabel "water holding capacity" .
 
@@ -27,13 +31,10 @@ agrovoc:c_37932 a skos:Concept ;
     agrontology:isMeasuredBy she:RiskAssessmentModels ;
     skos:prefLabel "risk assessment" .
 
-agrovoc:c_3846 a skos:Concept ;
-    skos:broader she:SoilThreats ;
-    skos:prefLabel "industrial pollutants" .
-
 agrovoc:c_389fe908 a skos:Concept ;
     agrontology:hasAbbreviation "SOC" ;
-    agrontology:isAffectedBy agrovoc:c_2018 ;
+    agrontology:isAffectedBy agrovoc:c_2018,
+        she:SOCLoss ;
     skos:broader agrovoc:c_330883,
         agrovoc:c_35657 ;
     skos:prefLabel "soil organic carbon" ;
@@ -48,6 +49,21 @@ agrovoc:c_6210 a skos:Concept ;
         she:SoilHealth ;
     agrontology:isAffectedBy agrovoc:c_7168 ;
     skos:prefLabel "productivity" .
+
+agrovoc:c_7156 a skos:Concept ;
+    agrontology:isAffectedBy she:SoilThreats ;
+    agrontology:isComposedOf agrovoc:c_224,
+        agrovoc:c_4857,
+        agrovoc:c_49904,
+        agrovoc:c_5384,
+        agrovoc:c_8309 ;
+    agrontology:isSourceOf agrovoc:c_1348040570280 ;
+    agrontology:performs agrovoc:c_e5629cbd ;
+    dcterms:source she:YoungCrawford2004 ;
+    skos:broader she:Biomaterials ;
+    skos:definition "The top terrestrial layer of the Earth." ;
+    skos:prefLabel "soil" ;
+    skos:related agrovoc:c_1348040570280 .
 
 agrovoc:c_7183 a skos:Concept ;
     agrontology:isMeasuredBy she:CLEAModel,
@@ -94,9 +110,17 @@ she:EnvironmentalQuality a skos:Concept ;
         agrovoc:c_c722a312 ;
     skos:prefLabel "environmental quality" .
 
+she:LifeSupport a skos:Concept ;
+    skos:broader agrovoc:c_e5629cbd ;
+    skos:prefLabel "life support" .
+
 she:RegulationEU13062013 a eli:LegalResource ;
     skos:prefLabel "regulation EU No 1306/2013" ;
     skos:related she:CAP .
+
+she:SoilBiologicalProperties a skos:Concept ;
+    agrontology:isAffectedBy she:SoilThreats ;
+    skos:prefLabel "soil biological properties" .
 
 she:SoilCapability a skos:Concept ;
     dcterms:source she:Schwilch2016 ;
@@ -105,9 +129,19 @@ she:SoilCapability a skos:Concept ;
     skos:related agrovoc:c_a9645d28,
         she:SoilAttributes .
 
+she:SoilChemicalProperties a skos:Concept ;
+    agrontology:isAffectedBy she:SoilThreats ;
+    skos:closeMatch agrovoc:c_7182 ;
+    skos:prefLabel "soil chemical properties" .
+
 she:SoilCondition a skos:Concept ;
     skos:prefLabel "soil condition" ;
     skos:related agrovoc:c_7168 .
+
+she:SoilPhysicalProperties a skos:Concept ;
+    agrontology:isAffectedBy she:SoilThreats ;
+    skos:closeMatch agrovoc:c_7182 ;
+    skos:prefLabel "soil physical properties" .
 
 she:SoilPotential a skos:Concept ;
     dcterms:source she:Vogel2020 ;
@@ -118,6 +152,7 @@ she:SoilPotential a skos:Concept ;
 
 she:SoilRestoration a skos:Concept ;
     agrontology:makeUseOf agrovoc:c_379bbe9f ;
+    dcterms:source she:Huber2008 ;
     skos:prefLabel "soil restoration" .
 
 she:SoilState a skos:Concept ;
@@ -139,11 +174,6 @@ she:WaterCapacity a skos:Concept ;
 
 agrovoc:c_1301 a skos:Concept ;
     skos:prefLabel "carbon" .
-
-agrovoc:c_1348040570280 a skos:Concept ;
-    agrontology:isInfluencedBy she:SoilHealth ;
-    agrontology:makeUseOf agrovoc:c_e5629cbd ;
-    skos:prefLabel "ecosystem services" .
 
 agrovoc:c_224 a skos:Concept ;
     skos:prefLabel "air" .
@@ -186,6 +216,10 @@ agrovoc:c_35657 a skos:Concept ;
 agrovoc:c_3724 a skos:Concept ;
     skos:prefLabel "hydrogen" .
 
+agrovoc:c_3846 a skos:Concept ;
+    skos:broader she:SoilThreats ;
+    skos:prefLabel "industrial pollutants" .
+
 agrovoc:c_431 a skos:Concept ;
     agrontology:benefitsFrom agrovoc:c_a9645d28,
         she:SoilHealth ;
@@ -206,20 +240,6 @@ agrovoc:c_5384 a skos:Concept ;
 
 agrovoc:c_5477 a skos:Concept ;
     skos:prefLabel "oxygen" .
-
-agrovoc:c_7156 a skos:Concept ;
-    agrontology:isAffectedBy she:SoilThreats ;
-    agrontology:isComposedOf agrovoc:c_224,
-        agrovoc:c_4857,
-        agrovoc:c_49904,
-        agrovoc:c_5384,
-        agrovoc:c_8309 ;
-    agrontology:isSourceOf agrovoc:c_1348040570280 ;
-    agrontology:performs agrovoc:c_e5629cbd ;
-    dcterms:source she:YoungCrawford2004 ;
-    skos:broader she:Biomaterials ;
-    skos:definition "The top terrestrial layer of the Earth." ;
-    skos:prefLabel "soil" .
 
 agrovoc:c_8309 a skos:Concept ;
     skos:prefLabel "water" .
@@ -246,7 +266,7 @@ she:CropType a skos:Concept ;
 she:EU2013b a dcterms:BibliographicResource ;
     dcterms:date "2013" .
 
-she:Figure1.1 a dcterms:Image .
+she:Figure1.1 a dcmitype:Image .
 
 she:GAEC5 a dcterms:Standard ;
     skos:broader she:GAEC ;
@@ -283,14 +303,6 @@ she:RiskAssessmentModels a sosa:Procedure ;
 she:Schwilch2016 a dcterms:BibliographicResource ;
     dcterms:date "2016" .
 
-she:SoilErosion a skos:Concept ;
-    agrontology:isPreventedBy agrovoc:c_24866,
-        she:GAEC4,
-        she:GAEC5,
-        she:SoilCover ;
-    skos:closeMatch agrovoc:c_2651 ;
-    skos:prefLabel "soil erosion" .
-
 she:SoilFunctionIndicators a skos:Concept ;
     skos:prefLabel "soil function indicators" .
 
@@ -314,14 +326,20 @@ she:SoilServices a skos:Concept ;
 she:YoungCrawford2004 a dcterms:BibliographicResource ;
     dcterms:date "2004" .
 
+agrovoc:c_1348040570280 a skos:Concept ;
+    agrontology:isInfluencedBy she:SoilHealth ;
+    skos:prefLabel "ecosystem services" .
+
 agrovoc:c_1665 a skos:Concept ;
     skos:prefLabel "climate" .
 
 agrovoc:c_2018 a skos:Concept ;
+    agrontology:causes she:SOCLoss ;
     skos:prefLabel "cultivation" .
 
 agrovoc:c_7176 a skos:Concept ;
     agrontology:makeUseOf agrovoc:c_379bbe9f ;
+    dcterms:source she:Huber2008 ;
     skos:prefLabel "soil management" .
 
 agrovoc:c_8088 a skos:Concept ;
@@ -342,6 +360,9 @@ she:GAEC4 a dcterms:Standard ;
     skos:definition "a cover of growing plants or other organic residues should remain on the soil surface to reduce erosion by water and wind." ;
     skos:prefLabel "GAEC 4 'Minimum soil cover'" .
 
+she:Huber2008 a dcterms:BibliographicResource ;
+    dcterms:date "2008" .
+
 she:JRC2012 a dcterms:BibliographicResource ;
     dcterms:date "2012" .
 
@@ -352,10 +373,25 @@ she:LandCultivation a skos:Concept ;
     skos:closeMatch agrovoc:c_2018 ;
     skos:prefLabel "land cultivation" .
 
+she:SOCLoss a skos:Concept ;
+    skos:altLabel "SOC loss" ;
+    skos:broader she:SoilThreats ;
+    skos:prefLabel "soil organic carbon loss" ;
+    skos:related she:SoilErosion .
+
 she:SoilCover a skos:Concept ;
     agrontology:benefitsFrom she:GAEC4 ;
     agrontology:makeUseOf agrovoc:c_2db16f96 ;
     skos:prefLabel "soil cover" .
+
+she:SoilErosion a skos:Concept ;
+    agrontology:isPreventedBy agrovoc:c_24866,
+        she:GAEC4,
+        she:GAEC5,
+        she:SoilCover ;
+    skos:broader she:SoilThreats ;
+    skos:closeMatch agrovoc:c_2651 ;
+    skos:prefLabel "soil erosion" .
 
 she:SoilIndicators a skos:Concept ;
     agrontology:isUsedIn she:CLEAModel,
@@ -372,7 +408,7 @@ she:SoilIndicators a skos:Concept ;
 she:SoilThematicStrategy2006 a dcterms:Policy ;
     skos:prefLabel "2006 EU soil thematic strategy" .
 
-agrovoc:c_379bbe9f a dcterms:Dataset,
+agrovoc:c_379bbe9f a dcmitype:Dataset,
         skos:Concept ;
     skos:prefLabel "spatial data" .
 
@@ -402,18 +438,21 @@ she:SoilAttributes a skos:Concept ;
 
 she:CLEAModel a sosa:Procedure ;
     skos:note "A risk assessment model used in the United Kingdom for assessing soil condition" ;
-    skos:prefLabel "CLEA model" .
+    skos:prefLabel "CLEA model" ;
+    prov:atLocation country:GBR .
 
 she:DutchRiskAssessmentToolbox a sosa:Procedure ;
     skos:note "A risk assessment toolbox used for soil pollution assessment" ;
-    skos:prefLabel "Dutch risk assessment toolbox" .
+    skos:prefLabel "Dutch risk assessment toolbox" ;
+    prov:atLocation country:NLD .
 
 she:SansCrit a sosa:Procedure ;
     skos:note "A risk assessment model for soil condition regarding pollution" ;
     skos:prefLabel "SansCrit model" .
 
 agrovoc:c_330883 a skos:Concept ;
-    agrontology:isAffectedBy agrovoc:c_8088,
+    agrontology:isAffectedBy agrovoc:c_3846,
+        agrovoc:c_8088,
         she:LandCultivation,
         she:SoilThreats ;
     agrontology:isUsedIn she:CLEAModel,
@@ -430,7 +469,6 @@ agrovoc:c_e5629cbd a skos:Concept ;
         agrovoc:c_f9554e7c,
         she:LandCultivation,
         she:SoilThreats ;
-    agrontology:isDerivedFrom agrovoc:c_7156 ;
     dcterms:source she:EC2020a,
         she:JRC2012 ;
     skos:prefLabel "soil functions" .
@@ -441,17 +479,8 @@ she:GAEC a dcterms:Standard ;
 
 she:SRiskModel a sosa:Procedure ;
     skos:note "A risk assessment model used in Belgium" ;
-    skos:prefLabel "S-Risk model" .
-
-she:SoilThreats a skos:Concept ;
-    agrontology:isMeasuredBy agrovoc:c_379bbe9f,
-        agrovoc:c_f9554e7c,
-        she:SoilErosion ;
-    agrontology:isPreventedBy she:SoilProtection ;
-    dcterms:source she:FaoItps2015,
-        she:SoilThematicStrategy2006 ;
-    skos:definition "Processes that damage soil and its functional properties, reducing the soil's capacity to provide ecosystem services." ;
-    skos:prefLabel "soil threats" .
+    skos:prefLabel "S-Risk model" ;
+    prov:atLocation country:BEL .
 
 she:Vogel2020 a dcterms:BibliographicResource ;
     dcterms:date "2020" .
@@ -489,3 +518,14 @@ agrovoc:c_a9645d28 a skos:Concept ;
     skos:prefLabel "soil quality" ;
     skos:related agrovoc:c_7168 ;
     skos:scopeNote "The inherent capacity which provides the basic frame within which a soil evolves." .
+
+she:SoilThreats a skos:Concept ;
+    agrontology:isMeasuredBy agrovoc:c_379bbe9f,
+        agrovoc:c_f9554e7c,
+        she:SoilErosion ;
+    agrontology:isPreventedBy she:SoilProtection ;
+    dcterms:source she:FaoItps2015,
+        she:SoilThematicStrategy2006 ;
+    skos:definition "Processes that damage soil and its functional properties, reducing the soil's capacity to provide ecosystem services." ;
+    skos:prefLabel "soil threats" .
+
