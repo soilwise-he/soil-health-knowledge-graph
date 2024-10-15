@@ -32,3 +32,4 @@ Building this knowledge repository in a top-down manner, guided by the structure
 - [GloSIS](https://glosis-ld.github.io/glosis/)
 - [Agrontology](https://aims.fao.org/aos/agrontology)
 - [QUDT](https://qudt.org/)
+- [EuroVoc](https://op.europa.eu/en/web/eu-vocabularies)
