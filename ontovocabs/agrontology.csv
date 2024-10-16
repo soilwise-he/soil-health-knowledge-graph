@@ -49,7 +49,7 @@ isUseOf,Is use of,"Y <is use of> X. For example, 'sweeteners' <is use of> ''sorb
 isProcessFor,Is process for,"Y <is process for> X. One or more actions, activities, methods Y that produce a change or development for X. E.g. 'sterilization' <is process for> 'sterile insect release', 'alcoholic fermentation' <is process for> 'winemaking'."
 isCropingSystemOf,Is cropping system of,
 pestOf,Is a pest of,"X <pest of> Y. Pest X causes harm to organism Y. E.g. 'Varroa destructor' <pest of> 'Apis mellifera'."
-hasProduct,Has product,"X <has product> Y. X is the source of product Y, with a processing element. E.g. 'logging'<has product> 'logging wastes', 'Spain' <has product> 'sherry'."
+hasProduct,Has product,"X <has product> Y. X is the source of product Y, with a processing element. E.g. 'logging' <has product> 'logging wastes', 'Spain' <has product> 'sherry'."
 isComposedOf,Is composed of,"X <is composed of> Y. X is composed of material or substance Y . E.g. 'soil flora' <is composed of> 'microbial flora', 'tuff'<is composed of> 'volcanic materials'."
 includesSubprocess,Includes subprocess,"X <includesSubprocess> Y. Process X naturally or conventionally realized at the minimum through process Y. Equivalent to <stageOf>. E.g. 'milk production' <includesSubprocess> 'pasteurization';"
 isSubstituteFor,Is substitute for,
