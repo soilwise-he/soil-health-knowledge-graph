@@ -421,11 +421,7 @@
     },
     {
         "type": "text",
-        "text": "Drexler et al. (2022) used the German inventory of agricultural soils first to define typical, site-specific SOC contents (taken from 0-30cm samples) and then to derive benchmark SOC values to guide agricultural management. Typical site-specific SOC values range from 0.89% to 2.3% for light and heavy arable soils, and from 2.2% to 6.0% for grassland soils. The data set was optimised by stratifying it into 33 strata: land use (cropland, permanent grassland and ley-arable rotation), soil texture and mean annual precipitation (see Table 2.6), C/N ratio (C_org/N_t ratio <13, 13-15, >15). Lower and upper benchmarks are defined as the 12.5% and 87.5% quartiles for each stratum, which then excludes 25% of sites with extreme SOC values (as non-site-specific). Of particular interest here are values below the lower benchmark which could be due to unsustainable management (the authors also found such sites with low mean annual carbon inputs from organic fertilisers)."
-    },
-    {
-        "type": "text",
-        "text": "The effects of soil threats were not investigated, so a clear relationship with soil degradation cannot be determined."
+        "text": "Drexler et al. (2022) used the German inventory of agricultural soils first to define typical, site-specific SOC contents (taken from 0-30cm samples) and then to derive benchmark SOC values to guide agricultural management. Typical site-specific SOC values range from 0.89% to 2.3% for light and heavy arable soils, and from 2.2% to 6.0% for grassland soils. The data set was optimised by stratifying it into 33 strata: land use (cropland, permanent grassland and ley-arable rotation), soil texture and mean annual precipitation (see Table 2.6), C/N ratio (C_org/N_t ratio <13, 13-15, >15). Lower and upper benchmarks are defined as the 12.5% and 87.5% quartiles for each stratum, which then excludes 25% of sites with extreme SOC values (as non-site-specific). Of particular interest here are values below the lower benchmark which could be due to unsustainable management (the authors also found such sites with low mean annual carbon inputs from organic fertilisers). The effects of soil threats were not investigated, so a clear relationship with soil degradation cannot be determined."
     },
     {
         "type": "text",
