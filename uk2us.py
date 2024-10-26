@@ -1,3 +1,5 @@
+# Word list originally from http://www.tysto.com/uk-us-spelling-list.html
+
 uk_us = [
     ('accessorise','accessorize'),
     ('accessorised','accessorized'),
