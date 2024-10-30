@@ -2,7 +2,7 @@
     "qa_pairs": [
       {
         "question": "What is the difference between soil health and soil quality?",
-        "sparql_query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nSELECT ?SoilHealth ?SoilQuality \nWHERE {\n    ?concept1 skos:prefLabel ?label1 .\n    ?concept2 skos:prefLabel ?label2 .\n    FILTER (lcase(?label1) = 'soil health' && lcase(?label2) = 'soil quality') .\n    ?concept1 skos:scopeNote ?SoilHealth . \n    ?concept2 skos:scopeNote ?SoilQuality . \n}",
+        "sparql_query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n\nSELECT ?SoilHealth ?SoilQuality \nWHERE {\n    ?concept1 skos:prefLabel ?label1 .\n    ?concept2 skos:prefLabel ?label2 .\n    FILTER (lcase(?label1) = 'soil health' && lcase(?label2) = 'soil quality') .\n    ?concept1 skos:scopeNote ?SoilHealth . \n    ?concept2 skos:scopeNote ?SoilQuality . \n}",
         "answer": "Soil health is defined as the actual capacity of a soil to perform its core functions and to provide ecosystem services, and soil quality as the inherent capacity which provides the basic frame within which a soil evolves."
       }
     ]
