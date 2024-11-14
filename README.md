@@ -2,7 +2,7 @@
 
 ## This demo of soil health knowledge graph currently contains
 
-- A simple "ground-truth" example of converting text from the [report](https://www.eea.europa.eu/publications/soil-monitoring-in-europe) to RDF triples;
+- A simple "good standard" example of converting text from the [report](https://www.eea.europa.eu/publications/soil-monitoring-in-europe) to RDF triples;
 - Zero-shot and few-shot (one-shot) examples of converting text to RDF triples with LLMs (OpenAI GPT);
 - Defining concepts and matching them with the [AGROVOC](https://aims.fao.org/aos/agrovoc) thesaurus;
   - When a concept matches the "prefLabel" of a concept in the AGROVOC, the URI defined by the AGROVOC is used directly;
