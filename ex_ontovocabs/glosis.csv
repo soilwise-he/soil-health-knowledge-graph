@@ -1,0 +1,155 @@
+prop,module,label
+aluminiumProperty,layerhorizon,aluminium property
+biologicalAbundanceProperty,layerhorizon,biological abundance property
+biologicalFeaturesProperty,layerhorizon,biological features property
+boundaryDistinctnessProperty,layerhorizon,boundary distinctness property
+boundaryTopographyProperty,layerhorizon,boundary topography property
+bulkDensityFineEarthProperty,layerhorizon,bulk density fine earth property
+bulkDensityMineralProperty,layerhorizon,bulk density mineral property
+bulkDensityPeatProperty,layerhorizon,bulk density peat property
+bulkDensityWholeSoilProperty,layerhorizon,bulk density whole soil property
+cadmiumProperty,layerhorizon,cadmium property
+carbonInorganicProperty,layerhorizon,carbon inorganic property
+carbonatesContentProperty,layerhorizon,carbonates content property
+carbonatesFormsProperty,layerhorizon,carbonates forms property
+cationExchangeCapacityEffectiveProperty,layerhorizon,cation exchange capacity effective property
+cationExchangeCapacityProperty,layerhorizon,cation exchange capacity property
+cationExchangeCapacitycSoilProperty,layerhorizon,cation exchange capacityc soil property
+cationsSumProperty,layerhorizon,cations sum property
+cementationContinuityProperty,layerhorizon,cementation continuity property
+cementationDegreeProperty,layerhorizon,cementation degree property
+cementationFabricProperty,layerhorizon,cementation fabric property
+cementationNatureProperty,layerhorizon,cementation nature property
+coatingAbundanceProperty,layerhorizon,coating abundance property
+coatingContrastProperty,layerhorizon,coating contrast property
+coatingFormProperty,layerhorizon,coating form property
+coatingLocationProperty,layerhorizon,coating location property
+coatingNatureProperty,layerhorizon,coating nature property
+consistenceDryProperty,layerhorizon,consistence dry property
+consistenceMoistProperty,layerhorizon,consistence moist property
+dryConsistencyProperty,layerhorizon,dry consistency property
+effectiveCecProperty,layerhorizon,effective cec property
+electricalConductivityProperty,layerhorizon,electrical conductivity property
+fragmentsClassProperty,layerhorizon,fragments class property
+gypsumContentProperty,layerhorizon,gypsum content property
+gypsumFormsProperty,layerhorizon,gypsum forms property
+gypsumProperty,layerhorizon,gypsum property
+gypsumWeightProperty,layerhorizon,gypsum weight property
+hydraulicConductivityProperty,layerhorizon,hydraulic conductivity property
+manganeseProperty,layerhorizon,manganese property
+mineralConcAbundanceProperty,layerhorizon,mineral conc abundance property
+mineralConcColourProperty,layerhorizon,mineral conc colour property
+mineralConcHardnessProperty,layerhorizon,mineral conc hardness property
+mineralConcKindProperty,layerhorizon,mineral conc kind property
+mineralConcNatureProperty,layerhorizon,mineral conc nature property
+mineralConcShapeProperty,layerhorizon,mineral conc shape property
+mineralConcSizeProperty,layerhorizon,mineral conc sizee property
+mineralConcVolumeProperty,layerhorizon,mineral conc volume property
+mineralContentProperty,layerhorizon,mineral content property
+mineralFragmentsProperty,layerhorizon,mineral fragments property
+moistConsistencyProperty,layerhorizon,moist consistency property
+moistureContentProperty,layerhorizon,moisture content property
+molybdenumProperty,layerhorizon,molybdenum property
+mottlesAbundanceProperty,layerhorizon,mottles abundance property
+mottlesBoundaryClassificationProperty,layerhorizon,mottles boundary classification property
+mottlesColourProperty,layerhorizon,mottles colour property
+mottlesContrastProperty,layerhorizon,mottles contrast property
+mottlesPresenceProperty,layerhorizon,mottles presence property
+mottlesSizeProperty,layerhorizon,mottles size property
+organicMatterProperty,layerhorizon,organic matter property
+oxalateExtractableOpticalDensityProperty,layerhorizon,oxalate extractable optical density property
+particleSizeFractionsSumProperty,layerhorizon,particle size fractions sum property
+peatDecompostionProperty,layerhorizon,peat decompostion property
+peatDrainageProperty,layerhorizon,peat drainage property
+peatVolumeProperty,layerhorizon,peat volume property
+plasticityProperty,layerhorizon,plasticity property
+poresAbundanceProperty,layerhorizon,pores abundance property
+poresSizeProperty,layerhorizon,pores size property
+porosityClassProperty,layerhorizon,porosity class property
+porosityProperty,layerhorizon,porosity property
+rootsAbundanceProperty,layerhorizon,roots abundance property
+rootsPresenceProperty,layerhorizon,roots presence property
+saltContentProperty,layerhorizon,salt content property
+saltProperty,layerhorizon,salt property
+sandyTextureProperty,layerhorizon,sandy texture property
+solubleAnionsTotalProperty,layerhorizon,soluble anions total property
+solubleCationsTotalProperty,layerhorizon,soluble cations total property
+solubleSaltsProperty,layerhorizon,soluble salts property
+stickinessProperty,layerhorizon,stickiness property
+structureGradeProperty,layerhorizon,structure grade property
+structureSizeProperty,layerhorizon,structure size property
+textureFieldClassProperty,layerhorizon,texture field class property
+textureLabClassProperty,layerhorizon,texture lab class property
+totalCarbonateEquivalentProperty,layerhorizon,total carbonate equivalent property
+voidsClassificationProperty,layerhorizon,voids classification property
+voidsDiameterProperty,layerhorizon,voids diameter property
+wetPlasticityProperty,layerhorizon,wet plasticity property
+zincProperty,layerhorizon,zinc property
+saltCoverProperty,surface,salt cover property
+saltPresenceProperty,surface,salt presence property
+saltThicknessProperty,surface,salt thickness property
+sealingConsistenceProperty,surface,sealing consistence property
+sealingThicknessProperty,surface,sealing thickness property
+bareCoverAbundanceProperty,siteplot,bare cover abundance property
+cropClassProperty,siteplot,crop class property
+erosionActivityPeriodProperty,siteplot,erosion activity period property
+erosionAreaAffectedProperty,siteplot,erosion area affected property
+erosionCategoryProperty,siteplot,erosion category property
+erosionDegreeProperty,siteplot,erosion degree property
+erosionTotalAreaAffectedProperty,siteplot,erosion total area affected property
+floodDurationProperty,siteplot,flood duration property
+floodFrequencyProperty,siteplot,flood frequency property
+geologyProperty,siteplot,geology property
+grassAbundanceProperty,siteplot,grass abundance property
+groundwaterDepthProperty,siteplot,groundwater depth property
+humanInfluenceClassProperty,siteplot,human influence class property
+koeppenClassProperty,siteplot,koeppen class property
+landUseClassProperty,siteplot,land use class property
+landformComplexProperty,siteplot,landform complex property
+lithologyProperty,siteplot,lithology property
+majorLandFormProperty,siteplot,major land form property
+parentDepositionProperty,siteplot,parent deposition property
+parentLithologyProperty,siteplot,parent lithology property
+parentTextureUnconsolidatedProperty,siteplot,parent texture unconsolidated property
+pavedAbundanceProperty,siteplot,paved abundance property
+physiographyProperty,siteplot,physiography property
+rockOutcropsCoverProperty,siteplot,rock outcrops cover property
+rockOutcropsDistanceProperty,siteplot,rock outcrops distance property
+shrubsAbundanceProperty,siteplot,shrubs abundance property
+slopeFormProperty,siteplot,slope form property
+slopeGradientClassProperty,siteplot,slope gradient class property
+slopeGradientProperty,siteplot,slope gradient property
+slopeOrientationClassProperty,siteplot,slope orientation class property
+slopeOrientationProperty,siteplot,slope orientation property
+slopePathwaysProperty,siteplot,slope pathways property
+soilCarbonDensityProperty,siteplot,soil carbon density property
+surfaceAgeProperty,siteplot,surface age property
+treeDensityProperty,siteplot,tree density property
+vegetationClassProperty,siteplot,vegetation class property
+weatherConditionsCurrentProperty,siteplot,weather conditions current property
+weatherConditionsPastProperty,siteplot,weather conditions past property
+weatheringRockProperty,siteplot,weathering rock property
+profileDescriptionStatusProperty,profile,profile description status property
+soilTypeProperty,profile,soil type property
+bleachedSandProperty,common,bleached sand property
+colourDryProperty,common,colour dry property
+colourMoistProperty,common,colour moist property
+cracksDepthProperty,common,cracks depth property
+cracksDistanceProperty,common,cracks distance property
+cracksWidthProperty,common,cracks width property
+fragmentCoverProperty,common,fragment cover property
+fragmentsSizeProperty,common,fragments size property
+infiltrationRateClassProperty,common,infiltration rate class property
+infiltrationRateNumericProperty,common,infiltration rate numeric property
+organicMatterClassProperty,common,organic matter class property
+rockAbundanceProperty,common,rock abundance property
+rockShapeProperty,common,rock shape property
+rockSizeProperty,common,rock size property
+soilDepthBedrockProperty,common,soil depth bedrock property
+soilDepthProperty,common,soil depth property
+soilDepthRootableClassProperty,common,soil depth rootable class property
+soilDepthRootableProperty,common,soil depth rootable property
+soilDepthSampledProperty,common,soil depth sampled property
+textureProperty,common,texture property
+weatheringFragmentsProperty,common,weathering fragments property
+forestAbundanceProperty,siteplot,forest abundance property
