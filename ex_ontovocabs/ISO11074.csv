@@ -1,4 +1,4 @@
-@id,skos:altLabel,skos:prefLabel
+id,altLabel,prefLabel
 <https://data.geoscience.earth/ncl/ISO11074/2.>,,'General terms and definitions'@en|'Allgemeine Begriffe'@de|'Termes et définitions généraux'@fr
 <https://data.geoscience.earth/ncl/ISO11074/2.1>,,'Terms and definitions relating to soil'@en|'Begriffe zu Böden'@de|'Termes et définitions relatifs aux sols'@fr
 <https://data.geoscience.earth/ncl/ISO11074/2.1.1>,,'aerobic'@en|'aerob'@de|'aérobie'@fr
