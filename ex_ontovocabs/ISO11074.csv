@@ -1,0 +1,540 @@
+@id,skos:altLabel,skos:prefLabel
+<https://data.geoscience.earth/ncl/ISO11074/2.>,,'General terms and definitions'@en|'Allgemeine Begriffe'@de|'Termes et définitions généraux'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1>,,'Terms and definitions relating to soil'@en|'Begriffe zu Böden'@de|'Termes et définitions relatifs aux sols'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.1>,,'aerobic'@en|'aerob'@de|'aérobie'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.10>,,'perched groundwater'@en|'schwebendes Grundwasser'@de|'eaux souterraines perchées'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.11>,,'soil'@en|'Boden'@de|'sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.12>,,'soil characterization'@en|'Bodencharakterisierung'@de|'caractérisation du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.13>,,'soil gas'@en|'Bodenluft'@de|'gaz du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.14>,,'soil pores'@en|'Bodenporen'@de|'pores du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.15>,,'soil quality'@en|'Bodenbeschaffenheit'@de|'qualité du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.16>,,'soil reaction'@en|'Bodenreaktion'@de|'réaction du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.17>,,'soil structure'@en|'Bodengefüge'@de|'structure du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.18>,,'soil texture'@en|'Bodenart'@de|'texture du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.19>,,'standard soil'@en|'Standardboden'@de|'sol standard'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.2>,,'anaerobic'@en|'anaerob'@de|'anaérobie'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.20>,,'subsoil'@en|'Unterboden'@de|'subsoil'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.21>,,'topsoil'@en|'Oberboden'@de|'horizon superficiel'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.22>,'TOC'@en|'TOC'@de|'COT'@fr,'total organic carbon'@en|'gesamter organischer Kohlenstoff'@de|'carbone organique total'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.23>,,'wilting point'@en|'Welkepunkt'@de|'point de flétrissement'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.3>,,'available water capacity'@en|'nutzbare Feldkapazität'@de|'réserve utile en eau'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.4>,'DOC'@en|'DOC'@de|'COD'@fr,'dissolved organic carbon'@en|'gelöster organischer Kohlenstoff'@de|'carbone organique dissous'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.5>,,'field capacity'@en|'Feldkapazität'@de|'capacité au champ'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.6>,,'humus'@en|'Humus'@de|'humus'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.7>,,'organic carbon'@en|'organischer Kohlenstoff'@de|'carbone organique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.8>,,'organic matter'@en|'organische Substanz'@de|'matière organique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.1.9>,,'parent material'@en|'Ausgangsgestein'@de|'roche mère'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2>,,'Terms and definitions relating to soil materials'@en|'Begriffe zu Bodenmaterialen'@de|'Termes et définitions relatifs aux matériaux du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.1>,,'anthropogenic ground'@en|'Baumaßnahmen'@de|'terre anthropique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.10>,,'made ground'@en|'natürliches Bodenmaterial'@de|'matériau de remblayage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.11>,'rehabilitation'@en|'Wiederherstellung; Rehabilitation'@de|''@fr,'reclamation'@en|'Rekultivierung'@de|'réhabilitation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.12>,,'reuse of soil material'@en|'Wiederverwertung von Bodenmaterial'@de|'réutilisation de matériau du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.13>,,'sediment'@en|'Sediment'@de|'sédiments'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.14>,''@en|'Halde'@de|''@fr,'stockpile'@en|'Haufwerk'@de|'dépôt en tas'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.15>,,'subhydric soils'@en|'subhydrische Böden'@de|'sols aquatiques'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.16>,,'treated soil'@en|'sanierter Boden'@de|'sol traité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.17>,,'shallow soil'@en|'saniertes Bodenmaterial'@de|'sol peu profond'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.2>,'degraded land'@en|'degradierte Flächen'@de|'terrain dégradé'@fr,'damaged land'@en|'geschädigte Flächen'@de|'terrain endommagé'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.3>,,'deep soils'@en|'degradierter Boden'@de|'sols profonds'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.4>,,'dredged material'@en|'Baggergut'@de|'matériau de dragage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.5>,''@en|'Erdaufschüttung'@de|''@fr,'earthwork'@en|'Erdarbeiten'@de|'terrassement'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.6>,,'excavated soil'@en|'Bodenaushub'@de|'terre excavée'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.7>,'made ground'@en|''@de|''@fr,'fill material'@en|'Verfüllmaterial'@de|'matériau de remblayage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.8>,,'harm'@en|'Schaden'@de|'danger'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.2.9>,,'fill'@en|'hergestellter Boden'@de|'remblai'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3>,,'Terms and definitions relating to land and sites'@en|'Begriffe zu Flächen und Standorten'@de|'Termes et définitions relatifs aux terrains et aux sites'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3.1>,,'abandoned hazardous site'@en|'Altlast'@de|'site dangereux abandonné'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3.10>,,'orphan site'@en|'verlassener Standort'@de|'site orphelin'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3.11>,,'site'@en|'Standort'@de|'site'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3.12>,,'site characterization'@en|'Standortbeschreibung'@de|'caractérisation du site'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3.13>,,'suspect site'@en|'Verdachtsfläche'@de|'site suspect'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3.14>,,'target site'@en|'Zielstandort'@de|'site cible'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3.15>,,'uniformly contaminated site'@en|'gleichmäßig kontaminierter Standort'@de|'site uniformément contaminé'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3.2>,,'abandoned industrial site'@en|'Altstandort'@de|'site industriel abandonné'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3.3>,,'abandoned potentially hazardous site'@en|'altlastverdächtige Fläche'@de|'site abandonné potentiellement dangereux'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3.4>,,'abandoned waste disposal site'@en|'nicht mehr betriebene Deponie'@de|'décharge abandonnée'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3.5>,''@en|'verunreinigter Standort'@de|''@fr,'contaminated site'@en|'kontaminierter Standort'@de|'site contaminé'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3.6>,''@en|'Kontamination'@de|''@fr,'contamination'@en|'Verunreinigung'@de|'contamination'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3.7>,''@en|'verfallender Standort'@de|''@fr,'derelict site'@en|'zerstörter Standort'@de|'site dégradé'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3.8>,,'donor site'@en|'Entnahmestandort'@de|'site donneur'@fr
+<https://data.geoscience.earth/ncl/ISO11074/2.3.9>,,'hazardous site'@en|'umweltgefährdender Standort'@de|'site dangereux'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.>,,'Description of soil'@en|'Beschreibung von Böden'@de|'Description du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.1>,,'Soil characteristics'@en|'Bodeneigenschaften'@de|'Caractéristiques du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.1.1>,,'bulk density'@en|'Rohdichte'@de|'masse volumique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.1.10>,'Wv'@en|'WV'@de|'Wv'@fr,'water content'@en|'Wassergehalt'@de|'teneur en eau'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.1.11>,,'water content on a dry mass basis'@en|'Wassergehalt auf der Grundlage des Gehalts an Trockenmasse'@de|'teneur en eau pondérable'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.1.2>,,'bulk volume'@en|'Gesamtvolumen'@de|'volume apparent'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.1.3>,,'clay content'@en|'Tongehalt'@de|'teneur en argile'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.1.4>,,'concentration'@en|'Konzentration'@de|'concentration'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.1.5>,'D95'@en|'D95'@de|'D95'@fr,'maximum particle size'@en|'maximale Korngröße'@de|'granulométrie maximale'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.1.6>,,'particle size distribution'@en|'Korngrößenverteilung'@de|'granulométrie'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.1.7>,,'porosity'@en|'Porenanteil'@de|'porosité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.1.8>,,'specific surface area'@en|'spezifische Oberfläche'@de|'surface spécifique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.1.9>,'Ww'@en|'WW'@de|'Ww'@fr,'water content'@en|'Wassergehalt'@de|'teneur en eau'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.2>,,'Terms and definitions relating to soil water'@en|'Begriffe zu Bodenwasser'@de|'Termes et définitions relatifs à l\'eau du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.2.1>,,'bedrock'@en|'Festgestein'@de|'socle rocheux'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.2.2>,,'capillary water'@en|'Kapillarwasser'@de|'eau capillaire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.2.3>,,'groundwater'@en|'Grundwasser'@de|'eaux souterraines'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.2.4>,'water table'@en|'Grundwasserspiegel'@de|''@fr,'groundwater surface'@en|'Grundwasseroberfläche'@de|'surface des eaux souterraines'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.2.5>,,'percolating water'@en|'Sickerwasser'@de|'eau de percolation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.2.6>,,'saturated zone'@en|'gesättigte Zone'@de|'zone saturée'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.2.7>,,'soil water'@en|'Bodenwasser'@de|'eau du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.2.8>,,'unsaturated zone'@en|'ungesättigte Zone'@de|'zone non saturée'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.2.9>,''@en|''@de|'zone vadose'@fr,'vadose zone'@en|'vadose Zone'@de|'zone non saturée en eau'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3>,,'Terms and definitions relating to processes in soils'@en|'Begriffe zu Prozessen in Böden'@de|'Termes et définitions relatifs aux processus pédologiques'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.1>,,'abiotic decomposition'@en|'abiotische Zersetzung'@de|'décomposition abiotique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.10>,,'filter characteristics'@en|'Filtereigenschaften'@de|'caractéristiques de filtration'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.11>,,'habitat function'@en|'Lebensraumfunktion'@de|'fonction d\'habitat'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.12>,,'Henry\'s coefficient'@en|'Henry-Koeffizient'@de|'coefficient de Henry'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.13>,,'humification'@en|'Humifizierung'@de|'humification'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.14>,,'immobilization'@en|'Immobilisierung'@de|'immobilisation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.15>,''@en|'Elution; Auslaugung'@de|''@fr,'leaching'@en|'Eluierung'@de|'lixiviation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.16>,,'leaching potential'@en|'Auswaschungspotenzial'@de|'potentiel de lixiviation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.17>,,'lessivage'@en|'Lessivierung'@de|'lessivage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.18>,,'limiting factor'@en|'einschränkender Faktor'@de|'facteur limitant'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.19>,,'mineralization'@en|'Mineralisation'@de|'minéralisation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.2>,,'abiotic degradation'@en|'abiotischer Abbau'@de|'dégradation abiotique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.20>,,'mobilization'@en|'Mobilisierung'@de|'mobilisation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.21>,,'non-point source input'@en|'Stoffeintrag aus nicht-punktförmiger Quelle'@de|'apport dû à une source non ponctuelle'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.22>,,'partition coefficient'@en|'Verteilungskoeffizient'@de|'coefficient de répartition'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.23>,,'partition coefficient between soil and plant'@en|'Boden/Pflanze-Verteilungskoeffizient'@de|'coefficient de répartition entre le sol et la plante'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.24>,,'partition coefficient between soil organic matter and soil water'@en|'Verteilungskoeffizient zwischen organischen Stoffen und Bodenwasser'@de|'coefficient de répartition entre la matière organique du sol et l’eau'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.25>,,'persistence'@en|'Persistenz'@de|'persistance'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.26>,,'phytoavailability'@en|'Pflanzenverfügbarkeit'@de|'phytodisponibilité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.27>,,'point source input'@en|'Stoffeintrag aus einer Punktquelle'@de|'apport dû à une source ponctuelle'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.28>,,'primary degradation'@en|'Primärabbau'@de|'dégradation primaire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.29>,,'receptor'@en|'Rezeptor'@de|'récepteur'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.3>,,'accumulation'@en|'Akkumulation'@de|'accumulation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.30>,,'retention function'@en|'Rückhaltefunktion'@de|'fonction de rétention'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.31>,,'soil functions'@en|'Bodenfunktionen'@de|'fonctions du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.32>,,'soil processes'@en|'Bodenprozesse'@de|'processus du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.33>,'Kd'@en|'Kd'@de|'Kd'@fr,'soil-water partition coefficient'@en|'Verteilungskoeffizient Boden-Wasser'@de|'coefficient de répartition sol-eau'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.34>,,'sorption'@en|'Sorption'@de|'sorption'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.35>,,'source'@en|'Quelle'@de|'source'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.36>,,'substance input'@en|'Stoffeintrag'@de|'apport de substance'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.37>,,'substance output'@en|'Stoffaustrag'@de|'exportation de substance'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.38>,,'translocation'@en|'Verlagerung'@de|'transfert'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.39>,,'ultimate biodegradation'@en|'vollständiger biologischer Abbau'@de|'biodégradation ultime'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.4>,,'aggressive soil conditions'@en|'aggressive Bodenverhältnisse'@de|'conditions de sol agressives'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.5>,'BCF'@en|'BCF'@de|'FBC'@fr,'bioconcentration factor'@en|'Biokonzentrationsfaktor'@de|'facteur de bioconcentration'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.6>,,'biodegradation'@en|'biologischer Abbau'@de|'biodégradation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.7>,,'decomposition'@en|'Zersetzung'@de|'décomposition'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.8>,,'degradation'@en|'Abbau'@de|'dégradation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.3.9>,,'diffuse source input'@en|'Stoffeintrag aus diffuser Quelle'@de|'apport dû à une source diffuse'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4>,,'Terms and definitions relating to contamination'@en|'Begriffe zur Kontamination'@de|'Termes et définitions relatifs à la contamination'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.1>,,'aliphatic hydrocarbon'@en|'aliphatischer Kohlenwasserstoff'@de|'hydrocarbure aliphatique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.10>,,'gas chromatography'@en|'Gaschromatographie'@de|'chromatographie en phase gazeuse'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.11>,,'hydrocarbon'@en|'Kohlenwasserstoffe'@de|'hydrocarbure'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.12>,,'indicator compound'@en|'Indikatorverbindung'@de|'composé indicateur'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.13>,,'limit test'@en|'Grenzwertprüfung'@de|'essai limite'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.14>,,'NSO compounds'@en|'NSO‑Verbindungen'@de|'composés NSO'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.15>,,'partitioning'@en|'Verteilung'@de|'partage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.16>,,'petroleum hydrocarbon'@en|'Erdölkohlenwasserstoffe'@de|'hydrocarbures pétroliers'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.17>,'PAH'@en|'PAK'@de|'HAP'@fr,'polycyclic aromatic hydrocarbon'@en|'polycyclischer aromatischer Kohlenwasserstoff'@de|'hydrocarbure aromatique polycyclique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.18>,,'pollutant'@en|'Schadstoff'@de|'polluant'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.19>,,'potentially harmful substance'@en|'potenziell gefährdender Stoff'@de|'substance potentiellement dangereuse'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.2>,,'aromatic hydrocarbon'@en|'aromatischer Kohlenwasserstoff'@de|'hydrocarbure aromatique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.20>,,'pseudo-total concentration'@en|'Pseudo-Gesamtkonzentation'@de|'concentration pseudo-totale'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.21>,,'residual contamination'@en|'Restkontamination'@de|'contamination résiduelle'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.22>,,'surrogate compound'@en|'Surrogatverbindung'@de|'composé de substitution'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.23>,,'total concentration'@en|'Gesamtkonzentration'@de|'concentration totale'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.24>,,'total concentration'@en|'Gesamtkonzentration'@de|'concentration totale'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.25>,,'total petroleum hydrocarbons'@en|'Gesamt-Erdölkohlenwasserstoffe'@de|'hydrocarbures pétroliers totaux'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.3>,'BP'@en|'BP'@de|'PE'@fr,'boiling point'@en|'Siedepunkt'@de|'point d\'ébullition'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.4>,,'carcinogen'@en|'Karzinogen'@de|'cancérigène'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.5>,,'compliance point'@en|'Ort der Beurteilung'@de|'point de conformité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.6>,,'contaminant'@en|'Kontaminant'@de|'contaminant'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.7>,'DNAPL'@en|''@de|'LDPNA'@fr,'dense non-aqueous phase liquid'@en|'äquivalente Kohlenstoffzahl'@de|'liquide dense en phase non aqueuse'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.8>,,'extractable fraction'@en|'extrahierbare Fraktion'@de|'fraction extractible'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.4.9>,,'fraction'@en|'Fraktion'@de|'fraction'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.5>,,'Terms and definitions relating to background content'@en|'Begriffe zum Hintergrundgehalt'@de|'Termes et définitions relatifs à la teneur de fond'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.5.1>,,'background concentration'@en|'Hintergrundkonzentration'@de|'concentration de fond'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.5.10>,,'soil salinization'@en|'Bodenversalzung'@de|'salinisation du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.5.11>,,'statistical characteristic'@en|'statistische Kenngröße'@de|'caractéristique statistique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.5.12>,,'trace element'@en|'Spurenelement'@de|'élément trace'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.5.13>,,'usual background value'@en|'üblicher Hintergrundwert'@de|'valeur de fond habituelle'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.5.14>,,'usual content'@en|'üblicher Gehalt'@de|'teneur habituelle'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.5.2>,,'background value'@en|'Hintergrundwert'@de|'valeur de fond'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.5.3>,,'critical concentration'@en|'kritische Konzentration'@de|'concentration critique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.5.4>,,'critical load'@en|'kritischer Eintrag'@de|'charge critique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.5.5>,,'essential trace element'@en|'essentielles Spurenelement'@de|'oligo-élément essentiel'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.5.6>,,'hazardous substances'@en|'bodengefährdende Stoffe'@de|'substances dangereuses'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.5.7>,,'natural background concentration'@en|'natürliche Hintergrundkonzentration'@de|'concentration de fond naturelle'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.5.8>,,'natural background value'@en|'natürlicher Hintergrundwert'@de|'valeur de fond naturelle'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.5.9>,,'pedo-geochemical background value'@en|'pedo-geochemischer Hintergrundwert'@de|'valeur de fond pédo-géochimique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6>,,'Terms and definitions relating to sampling gases'@en|'Begriffe in Zusammenhang mit der Probenahme von Gasen (Bodenluft)'@de|'Termes et définitions relatifs à l’échantillonnage des gaz'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.1>,,'active soil-gas sampling'@en|'aktive Entnahme von Bodenluft'@de|'échantillonnage actif des gaz du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.10>,,'monitoring installation'@en|'passive Entnahme von Bodenluftproben'@de|'dispositif de surveillance'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.11>,'NAPL'@en|''@de|'LPNA'@fr,'non-aqueous phase liquid'@en|'Permanentgas'@de|'liquide en phase non aqueuse'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.12>,,'soil gas monitoring installation'@en|'Bodenluftüberwachungseinrichtung'@de|'dispositif de surveillance des gaz du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.13>,''@en|'Entnahme von Bodenluftproben'@de|''@fr,'passive soil-gas sampling'@en|'Bodenluftsonde'@de|'échantillonnage passif des gaz du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.14>,'soil gas monitoring installation'@en|''@de|'installation de surveillance des gaz du sol'@fr,'soil gas monitoring device'@en|'Bodenluftabsaugversuch'@de|'dispositif de surveillance des gaz du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.15>,,'two-stage-soil-gas sampling'@en|'zweistufige Entnahme von Bodenluftproben'@de|'échantillonnage des gaz du sol en deux étapes'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.17>,,'soil gas sample volume'@en|''@de|'volume d\'échantillon de gaz du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.19>,,'sub-slab sampling location'@en|''@de|'emplacement d’échantillonnage sous dalle'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.2>,,'dead volume'@en|'Totvolumen'@de|'volume mort'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.20>,,'subsoil '@en|''@de|'sous-sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.22>,'UEL'@en|''@de|'LSE'@fr,'upper explosive limit'@en|''@de|'limite supérieure d’explosivité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.3>,'direct measuring method'@en|'direktes Messverfahren'@de|'méthode de mesurage directe'@fr,'direct method'@en|'direktes Verfahren'@de|'méthode directe'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.4>,,'direct-reading detecting tube'@en|'direktanzeigendes Prüfröhrchen'@de|'tube de détection à lecture directe'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.5>,,'gas migration'@en|'Gasmigration'@de|'migration des gaz'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.6>,,'gas monitoring well'@en|'Bodenluftmessstelle'@de|'puits de surveillance des gaz'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.7>,,'gas sampling'@en|'Gasprobenahme'@de|'échantillonnage des gaz'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.8>,'LNAPL'@en|'LEL'@de|'LLPNA'@fr,'light non-aqueous phase liquid'@en|'untere Explosionsgrenze'@de|'liquide léger en phase non aqueuse'@fr
+<https://data.geoscience.earth/ncl/ISO11074/3.6.9>,'LEL'@en|''@de|'LIE'@fr,'lower explosive limit'@en|'einstufige Entnahme von Bodenluftproben'@de|'limite inférieure d’explosivité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.>,,'Sampling'@en|'Probenahme'@de|'Échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1>,,'General terms and definitions'@en|'Allgemeine Begriffe'@de|'Termes et définitions généraux'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.1>,,'actual increment size'@en|'tatsächlicher Umfang einer Einzelprobe'@de|'taille réelle d\'un prélèvement élémentaire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.10>,,'minimum increment size'@en|'Mindestumfang einer Einzelprobe'@de|'taille minimale d\'un prélèvement élémentaire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.11>,,'minimum sample size'@en|'Mindestprobenumfang'@de|'taille minimale d\'échantillon'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.12>,,'population'@en|'Grundgesamtheit'@de|'population'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.13>,''@en|'primäres Ziel'@de|''@fr,'population'@en|'Hauptziel'@de|'population'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.14>,,'project manager'@en|'Projektmanager'@de|'chef de projet'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.15>,,'representative sample'@en|'repräsentative Probe'@de|'échantillon représentatif'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.16>,,'safety'@en|'Sicherheit'@de|'sécurité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.17>,,'sample'@en|'Probe'@de|'échantillon'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.18>,'sampling personnel'@en|'Probenahmepersonal'@de|'équipe d\'échantillonnage'@fr,'sampler'@en|'Probenehmer'@de|'échantillonneur'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.19>,,'sample volume'@en|'Probenvolumen'@de|'volume d\'échantillon'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.2>,,'actual sample size'@en|'tatsächlicher Probenumfang'@de|'taille réelle d\'un échantillon'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.20>,,'sampling'@en|'Probenahme'@de|'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.21>,,'sampling design'@en|'Probenahmeentwurf'@de|'conception de l\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.22>,,'sampling error'@en|'Probenahmefehler'@de|'erreur d\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.23>,,'sampling objective'@en|'Probenahmeziel'@de|'objectif d’échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.24>,,'sampling plan'@en|'Probenahmeplan'@de|'plan d\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.25>,,'sampling procedure'@en|'Probenahmeverfahren'@de|'procédure d\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.26>,,'sampling programme'@en|'Probenahmeprogramm'@de|'programme d\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.27>,,'sampling strategy'@en|'Probenahmestrategie'@de|'stratégie d\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.28>,,'sampling uncertainty'@en|'Unsicherheit der Probenahme'@de|'incertitude de l\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.29>,,'secondary objective(s)'@en|'Sekundärziel(e)'@de|'objectif(s) secondaire(s)'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.3>,,'analytical sample'@en|'Analysenprobe'@de|'échantillon pour analyse'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.30>,''@en|'Abschnitt'@de|''@fr,'segment'@en|'Segment'@de|'segment'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.31>,''@en|'(en:slot sample)'@de|''@fr,'slot sample'@en|'Schlitzprobe'@de|'échantillon transversal'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.32>,''@en|'Handstück'@de|''@fr,'specimen'@en|'Prüfmuster'@de|'spécimen'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.33>,,'sub-population'@en|'Teilgesamtheit'@de|'sous-population'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.34>,''@en|'(en: subsample)'@de|''@fr,'subsample'@en|'Teilprobe'@de|'sous-échantillon'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.35>,,'subsample'@en|'Unsicherheit'@de|'sous-échantillon'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.36>,'item; portion; individual'@en|'Stück; Individuum'@de|'entité; partie; individu'@fr,'unit'@en|'Einheit'@de|'unité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.4>,,'bulk sample'@en|'Sammelprobe'@de|'échantillon en vrac'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.5>,,'characteristic'@en|'Kennzeichen'@de|'caractéristique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.6>,,'heterogeneous'@en|'heterogen'@de|'hétérogène'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.7>,,'homogeneous'@en|'homogen'@de|'homogène'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.8>,,'increment'@en|'Einzelprobe'@de|'prélèvement élémentaire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.1.9>,,'measurement uncertainty'@en|'Messunsicherheit'@de|'incertitude de mesure'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2>,,'Sample types/sampling type'@en|'Probenarten/Probenahmeart'@de|'Types d\'échantillons/types d\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.1>,,'above‑ground sampling'@en|'Sammelprobe'@de|'échantillonnage en surface'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.10>,,'probabilistic sampling'@en|'probabilistische Probenahme'@de|'échantillonnage probabiliste'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.11>,,'replicate sample'@en|'Mehrfachprobe'@de|'échantillon répété'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.12>,,'sample related to mass'@en|'massenbezogene Probe'@de|'échantillon rapporté à la masse'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.13>,,'sample related to unit area'@en|'flächenbezogene Probe'@de|'échantillon rapporté à l\'unité de surface'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.14>,,'sampling network'@en|'Probenahmegitter'@de|'réseau d\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.15>,,'principal sampling situation'@en|'Probenahmemuster'@de|'situation d’échantillonnage principale'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.16>,,'probabilistic sampling'@en|'Auswahlprobe'@de|'échantillonnage probabiliste'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.17>,,'regular sampling'@en|'sequentielle Probe'@de|'échantillonnage régulier'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.18>,,'simple random sample'@en|'einfache Zufallsprobe'@de|'échantillon simple aléatoire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.19>,,'sample division'@en|'Flächenprobe'@de|'division d’échantillon'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.2>,,'in‑ground sampling'@en|'Bequemlichkeitsprobe'@de|'échantillonnage dans la terre'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.20>,,'spot sample'@en|'Punktprobe'@de|'échantillon ponctuel'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.21>,,'stratified sample'@en|'geschichtete Probe'@de|'échantillon stratifié'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.22>,,'stratified sampling'@en|'geschichtete Probenahme'@de|'échantillonnage stratifié'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.23>,,'sampling pattern'@en|'systematisches Muster'@de|'grille d’échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.24>,,'selective sample'@en|'systematische Probenahme'@de|'échantillon sélectif'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.25>,,'selective subsampling'@en|'Transekte'@de|'sous-échantillonnage sélectif'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.26>,'referee sample; reserve sample'@en|'Rückstellprobe'@de|'échantillon de référence; échantillon de réserve'@fr,'umpire sample'@en|'Schiedsprobe'@de|'échantillon d\'arbitrage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.27>,,'simple random sampling '@en|'volumenbezogene Probe'@de|'échantillonnage aléatoire simple'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.28>,'spatial sample'@en|''@de|'échantillon spatial'@fr,'spatial composite sample'@en|''@de|'échantillon composite spatial'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.29>,,'spot sample'@en|''@de|'échantillon ponctuel'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.3>,,'cluster sample'@en|'Korrelationsprobe'@de|'échantillon en grappe'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.30>,,'stratified random sampling'@en|''@de|'échantillonnage aléatoire stratifié'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.34>,,'systematic sampling'@en|''@de|'échantillonnage systématique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.35>,,'systematic unaligned sampling'@en|''@de|'échantillonnage systématique non aligné'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.4>,,'composite sample '@en|'Ermessensprobenahme'@de|'échantillon composite '@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.5>,,'mathematically combined sample'@en|'rechnerisch vereinte Probe'@de|'échantillon combiné de façon mathématique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.6>,,'convenience sampling'@en|'modifizierte Probe'@de|'échantillonnage de commodité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.7>,,'non-systematic pattern'@en|'unsystematisches Muster'@de|'grille non systématique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.8>,,'judgemental sampling'@en|'Orientierungsprobe'@de|'échantillonnage sur avis d’expert'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.2.9>,,'kubiëna tin'@en|'orientierte Probe'@de|'boîte de Kubiëna'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3>,,'Sampling stages'@en|'Probenahmestufen'@de|'Phases d\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.1>,,'aliquot'@en|'Aliquot'@de|'aliquote'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.10>,'phase 1'@en|'Untersuchungsstufe 1'@de|'phase 1'@fr,'preliminary investigation'@en|'historische Recherche'@de|'investigation préliminaire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.11>,,'primary sample'@en|'Ausgangsprobe'@de|'échantillon primaire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.12>,,'single sample'@en|'Einzelprobe'@de|'échantillon unitaire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.13>,,'soil sampler'@en|'Bodenprobenehmer'@de|'échantillonneur'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.14>,'phase 4'@en|'Untersuchungsstufe 4'@de|'phase 4'@fr,'supplementary investigation'@en|'ergänzende Untersuchung'@de|'investigation complémentaire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.15>,'analytical portion'@en|''@de|'partie analysée'@fr,'test portion'@en|'Prüfmenge'@de|'prise d\'essai'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.16>,''@en|'Analysenprobe'@de|''@fr,'test sample'@en|'Untersuchungsprobe'@de|'échantillon pour essai'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.17>,'analytical solution'@en|'Analysenlösung'@de|'solution pour analyse'@fr,'test solution'@en|'Prüflösung'@de|'solution pour essai'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.2>,,'composite extract'@en|'Mischextrakt'@de|'extrait composite'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.3>,'average sample; aggregated sample'@en|'Durchschnittsprobe; aggregierte (zusammengestellte) Probe'@de|'échantillon moyen; échantillon d\'ensemble'@fr,'composite sample'@en|'Mischprobe'@de|'échantillon composite'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.4>,'adsorption method'@en|''@de|'méthode d’adsorption'@fr,'concentration method'@en|'Anreicherungs‑/Adsorptionsverfahren'@de|'méthode de concentration'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.5>,'phase 2'@en|'Untersuchungsstufe 2'@de|'phase 2'@fr,'exploratory investigation'@en|'orientierende Untersuchung'@de|'investigation exploratoire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.6>,,'final sample'@en|'Endprobe'@de|'échantillon final'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.7>,,'laboratory sample'@en|'Laborprobe'@de|'échantillon pour laboratoire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.8>,'phase 3'@en|'Untersuchungsstufe 3'@de|'phase 3'@fr,'main investigation'@en|'Hauptuntersuchung'@de|'investigation approfondie'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.3.9>,'nested sampling'@en|''@de|'échantillonnage emboîté'@fr,'multi-stage sampling'@en|'mehrstufige Probenahme'@de|'échantillonnage à plusieurs degrés'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4>,,'Execution of sampling'@en|'Durchführung der Probenahme'@de|'Exécution de l\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.1>,,'analytical and testing strategy'@en|'Analysen- und Prüfstrategie'@de|'stratégie d’analyse et d’essai'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.10>,,'exposure'@en|'Aufschluss'@de|'affleurement'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.11>,,'fresh sample'@en|'frische Probe'@de|'échantillon frais'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.12>,,'horizon related sample'@en|'horizontbezogene Probe'@de|'échantillon lié à l\'horizon'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.13>,,'involved parties'@en|'beteiligte Parteien'@de|'parties impliquées'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.14>,,'log'@en|'Bohrlochprofil'@de|'coupe'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.15>,,'logging'@en|'Protokollierung'@de|'réalisation d\'une coupe'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.16>,,'mud sample'@en|'Spülprobe'@de|'échantillon de boue'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.17>,,'profile description'@en|'Profilbeschreibung'@de|'description du profil'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.18>,,'quartering'@en|'Probenviertelung'@de|'quartage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.19>,,'profile description'@en|'Probenbehälter'@de|'description du profil'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.2>,'borehole; bore'@en|'Bohrloch'@de|''@fr,'boring'@en|'Bohrung'@de|'sondage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.20>,,'sample preservation'@en|'Probenkonservierung'@de|'conservation d\'un échantillon'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.21>,''@en|'Probenumfang'@de|''@fr,'sample size'@en|'Probenmenge'@de|'taille de l\'échantillon'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.22>,,'sample storage'@en|'Probenlagerung'@de|'stockage d\'un échantillon'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.23>,,'sample transportation'@en|'Probentransport'@de|'transport d\'un échantillon'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.24>,,'sampling device'@en|'Probenahmegerät'@de|'dispositif d\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.25>,,'sampling point'@en|'Probenahmepunkt'@de|'point d\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.26>,,'sampling record'@en|'Probenahmeprotokoll'@de|'enregistrement d\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.27>,,'sampling report'@en|'Probenahmebericht'@de|'rapport d\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.28>,,'sampling site'@en|'Ort der Probenahme'@de|'site d\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.29>,,'sampling technique'@en|'Probenahmetechnik'@de|'technique d\'échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.3>,,'channel sample'@en|'Schlitzprobe'@de|'échantillon en bande'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.30>,'test pit; trench'@en|'Schurf'@de|'tranchée'@fr,'trial pit'@en|'Profilgrube'@de|'fosse'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.31>,''@en|'ungestörte Probe'@de|''@fr,'undisturbed sample'@en|'Probe in ungestörter Lagerung'@de|'échantillon non remanié'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.33>,,'undisturbed sample'@en|''@de|'échantillon non remanié'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.4>,,'core'@en|'Bohrkern'@de|'carotte'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.5>,,'core sample'@en|'Kernprobe'@de|'échantillon de carotte'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.6>,,'cross contamination'@en|'Verschleppung von Verunreinigungen'@de|'contamination croisée'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.7>,''@en|'metrische Probe'@de|''@fr,'cutting cylinder'@en|'tiefenbezogene Probe'@de|'cylindre coupant'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.8>,''@en|'gestörte Probe'@de|''@fr,'disturbed sample'@en|'Probe in gestörter Lagerung'@de|'échantillon remanié'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.4.9>,,'disturbed sample'@en|'Bohren'@de|'échantillon remanié'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.5>,,'Quality control samples'@en|'Qualitätskontrollproben'@de|'Échantillons de contrôle qualité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.5.1>,'CRM'@en|'ZRM'@de|'MRC'@fr,'certified reference material'@en|'zertifiziertes Referenzmaterial'@de|'matériau de référence certifié'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.5.2>,,'chain-of-custody procedure'@en|'Beweisketteverfahren'@de|'procédure de chaîne de conservation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.5.3>,,'field blank'@en|'Feldblindwertprobe'@de|'blanc de terrain'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.5.4>,,'field spike'@en|'dotierte Geländeprobe'@de|'échantillon de terrain dopé'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.5.5>,,'quality control sample'@en|'Qualitätskontrollprobe'@de|'échantillon de contrôle qualité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.5.6>,'RM'@en|'RM'@de|'MR'@fr,'reference material'@en|'Referenzmaterial'@de|'matériau de référence'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.5.7>,,'reference site'@en|'Referenzstandort'@de|'site de référence'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.5.8>,,'split sample'@en|'Teilprobe'@de|'échantillon fractionné'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.5.9>,''@en|'Rückverfolgbarkeit'@de|''@fr,'traceability'@en|'Rückführbarkeit'@de|'traçabilité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.6>,,'Sample pretreatment'@en|'Probenvorbehandlung'@de|'Prétraitement de l\'échantillon'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.6.1>,,'drying'@en|'Trocknung'@de|'séchage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.6.2>,'grinding; crushing'@en|'Zerkleinerung; Brechung'@de|'concassage; écrasement'@fr,'milling'@en|'Mahlung'@de|'broyage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.6.3>,,'mixing'@en|'Mischung'@de|'mélange'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.6.4>,,'particle size reduction'@en|'Verringerung der Korngröße'@de|'réduction granulométrique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.6.5>,,'reducing'@en|'Verringerung'@de|'réduction'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.6.6>,,'riffling'@en|'Teilung mit Riffelteiler'@de|'division d\'un échantillon par répartiteur'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.6.7>,,'sample pretreatment'@en|'Probenvorbehandlung'@de|'prétraitement de l\'échantillon'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.6.8>,''@en|'Entnahme von Teilproben'@de|''@fr,'subsampling'@en|'Probenteilung'@de|'sous-échantillonnage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.7>,,'Terms and definitions relating to geostatistics'@en|'Begriffe zur Geostatistik'@de|'Termes et définitions relatifs à la géostatistique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.7.1>,,'anisotropy'@en|'Anisotropie'@de|'anisotropie'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.7.2>,,'geostatistics'@en|'Geostatistik'@de|'géostatistique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.7.3>,,'kriging'@en|'Kriging'@de|'krigeage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.7.4>,,'prediction'@en|'Prognose'@de|'prédiction'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.7.5>,'drift'@en|'Drift'@de|'dérive'@fr,'trend'@en|'Trend'@de|'tendance'@fr
+<https://data.geoscience.earth/ncl/ISO11074/4.7.6>,'semi-variogram'@en|'Semi-Variogramm'@de|'semi-variogramme'@fr,'variogram'@en|'Variogramm'@de|'variogramme'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.>,,'Terms and definitions relating to the assessment of soils'@en|'Begriffe zur Beurteilung von Böden'@de|'Termes et définitions relatifs à l\'évaluation des sols'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.1>,,'Terms and definitions relating to quality'@en|'Begriffe der Bodenbeschaffenheit'@de|'Termes et définitions relatifs à la qualité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.1.1>,,'anthropogenic change'@en|'anthropogene Veränderung'@de|'changement de nature anthropique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.1.10>,,'soil productivity'@en|'landwirtschaftliche Ertragsfähigkeit'@de|'productivité du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.1.11>,,'soil specimen bank'@en|'Bodenprobenbank'@de|'banque d\'échantillons de sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.1.2>,,'data quality objectives'@en|'Datenqualitätsziele'@de|'objectifs de qualité des données'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.1.3>,,'investigation objectives'@en|'Untersuchungsziele'@de|'objectifs d’investigation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.1.4>,,'monitoring'@en|'Monitoring'@de|'surveillance'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.1.5>,,'monitoring site'@en|'Monitoringstandort'@de|'site de surveillance'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.1.6>,,'permanent monitoring areas'@en|'Dauerbeobachtungsflächen'@de|'observatoires permanents'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.1.7>,,'potential soil productivity'@en|'potenzielle landwirtschaftliche Ertragsfähigkeit'@de|'productivité potentielle du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.1.8>,,'soil damage'@en|'Bodenschädigung'@de|'dégradation du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.1.9>,,'soil fertility'@en|'Bodenfruchtbarkeit'@de|'fertilité du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2>,,"'Terms and definitions relating to assessment of soil and sites with respect to risk, hazard, and exposure'@en|'Begriffe zur Beurteilung von Böden und Standorten unter Beachtung von Risiken, Gefährdungen und Exposition'@de|'Termes et définitions relatifs à l\'évaluation du sol et des sites quant au risque, à la dangerosité et à l\'exposition'@fr"
+<https://data.geoscience.earth/ncl/ISO11074/5.2.1>,,'assessment criteria'@en|'Beurteilungskriterien'@de|'critères d\'évaluation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.10>,,'exposed population investigation'@en|'Bevölkerungsexpositionsuntersuchung'@de|'analyse de la population exposée'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.11>,,'exposure assessment'@en|'Expositionsbeurteilung'@de|'évaluation du degré d\'exposition'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.12>,'exposure routes'@en|''@de|'trajet d\'exposition'@fr,'exposure pathway'@en|'Expositionspfad'@de|'voie d\'exposition'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.13>,,'general exposure pattern'@en|'allgemeines Expositionsmuster'@de|'schéma général d\'exposition'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.14>,,'harmlessness'@en|'Unschädlichkeit'@de|'innocuité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.15>,,'hazard'@en|'Gefährdung'@de|'dangerosité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.16>,,'hypothesis of soil contamination'@en|'Hypothese der Bodenkontamination'@de|'hypothèse de contamination du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.17>,,'indicator substance'@en|'Leitsubstanz'@de|'substance indicatrice'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.18>,,'ingestion exposure'@en|'Exposition durch Ingestion'@de|'exposition par ingestion'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.19>,,'inhalation exposure'@en|'Exposition durch Inhalation'@de|'exposition par inhalation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.2>,,'bioavailability'@en|'Bioverfügbarkeit'@de|'biodisponibilité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.20>,,'pathway analysis'@en|'Pfadanalyse'@de|'analyse des voies d\'exposition'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.21>,,'pathway'@en|'Pfad'@de|'voie'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.22>,,'preliminary assessment'@en|'Vorbeurteilung'@de|'évaluation préliminaire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.23>,,'quantitative risk assessment'@en|'quantitative Risikobeurteilung'@de|'appréciation quantitative du risque'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.24>,,'risk'@en|'Risiko'@de|'risque'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.25>,,'risk analysis'@en|'Risikoanalyse'@de|'analyse du risque'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.26>,,'risk assessment'@en|'Gefährdungseinschätzung'@de|'appréciation du risque'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.27>,,'scenario'@en|'Szenario'@de|'scénario'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.28>,,'soil restoration'@en|'Bodensanierung'@de|'réhabilitation du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.29>,,'study area'@en|'Untersuchungsgebiet'@de|'zone d\'étude'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.3>,'ranking system'@en|''@de|'système de classement'@fr,'classification system'@en|'Klassifizierungssystem'@de|'système de classification'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.30>,,'uncertainty analysis'@en|'Unsicherheitsanalyse'@de|'analyse d\'incertitude'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.4>,,'contaminant release assessment'@en|'Kontaminanten-Freisetzungsbeurteilung'@de|'évaluation relative à la libération de contaminants'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.5>,,'decontamination'@en|'Bodenreinigung'@de|'décontamination'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.6>,,'dermal exposure'@en|'dermale Exposition'@de|'exposition dermique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.7>,,'dose'@en|'Dosis'@de|'dose'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.8>,,'dose-response relationship'@en|'Dosis-Wirkungs-Beziehung'@de|'relation dose-effet'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.2.9>,,'environmental fate analysis'@en|'Umweltverträglichkeitsanalyse'@de|'analyse de l\'évolution dans l\'environnement'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.3>,,'Terms and definitions relating to soil protection'@en|'Begriffe des Bodenschutzes'@de|'Termes et définitions relatifs à la protection du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.3.1>,,'guideline value'@en|'Richtwert'@de|'valeur guide'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.3.2>,,'locally contaminated site'@en|'lokal verunreinigter Standort'@de|'site localement contaminé'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.3.3>,,'sensitive site'@en|'empfindlicher Standort'@de|'site sensible'@fr
+<https://data.geoscience.earth/ncl/ISO11074/5.3.4>,,'soil protection'@en|'Bodenschutz'@de|'protection du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.>,,'Remediation'@en|'Sanierung'@de|'Remédiation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1>,,'General terms and definitions'@en|'Allgemeine Begriffe'@de|'Termes et définitions généraux'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.1>,,'active protective measure'@en|'aktive Sicherungsmaßnahme'@de|'mesure de protection active'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.10>,,'landfill gas'@en|'Deponiegas'@de|'gaz de décharge'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.11>,,'natural attenuation'@en|'natürliche Konzentrationsabnahme'@de|'atténuation naturelle'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.12>,,'passive protective measure'@en|'passive Sicherungsmaßnahme'@de|'mesure de protection passive'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.13>,,'protective measure'@en|'Sicherungsmaßnahme'@de|'mesure de protection'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.14>,,'public health protection plan'@en|'Gesundheitsschutzplan'@de|'plan de protection de la santé publique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.15>,,'remedial design'@en|'Sanierungsentwurf'@de|'projet de remédiation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.16>,,'remedial investigation'@en|'Sanierungsuntersuchung'@de|'étude de remédiation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.17>,,'remediation'@en|'Sanierung'@de|'remédiation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.18>,,'remediation monitoring plan'@en|'Plan zur Sanierungsüberwachung'@de|'plan de surveillance de la remédiation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.19>,,'remediation objective'@en|'Sanierungsziel'@de|'objectif de remédiation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.2>,,'aftercare management'@en|'Nachsorge-Management'@de|'gestion post-traitement'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.20>,,'remediation strategy'@en|'Sanierungsplan'@de|'stratégie de remédiation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.21>,,'remediation target value'@en|'Sanierungszielwert'@de|'valeur cible de remédiation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.22>,,'remediation technology'@en|'Bodensanierung'@de|'technologie de remédiation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.23>,,'validation plan'@en|'Validierungsplan'@de|'plan de validation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.24>,'VOC'@en|'VOC'@de|'COV'@fr,'volatile organic compound'@en|'flüchtige organische Verbindung'@de|'composé organique volatil'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.25>,'VOC'@en|''@de|'COV'@fr,'volatile organic compound'@en|''@de|'composé organique volatil'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.3>,,'community relations'@en|'Öffentlichkeitsarbeit'@de|'concertation publique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.4>,,'community relations plan'@en|'Öffentlichkeitsarbeitsplan'@de|'plan de concertation publique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.5>,,'compliance or performance control'@en|'Sanierungsziel- oder Sanierungsleistungsuntersuchung'@de|'diagnostic de conformité ou de performance'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.6>,,'effectiveness'@en|'Wirksamkeit'@de|'efficacité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.7>,,'environmental protection plan'@en|'Umweltschutzplan'@de|'plan de protection de l\'environnement'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.8>,,'immediate measure'@en|'Sofortmaßnahme'@de|'mesure d\'urgence'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.1.9>,,'landfill'@en|'Deponie'@de|'décharge'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.2>,,'Principal remediation types'@en|'Grundsätzliche Sanierungsarten'@de|'Principaux types de remédiation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.2.1>,,'engineering-based methods'@en|'ingenieurtechnisch-orientiertes Verfahren'@de|'méthodes de génie civil'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.2.2>,,'ex situ treatment method'@en|'Ex-situ-Behandlungsverfahren'@de|'méthode de traitement ex situ'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.2.3>,,'in situ treatment method'@en|'In-situ-Behandlungsverfahren'@de|'méthode de traitement in situ'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.2.4>,,'off-site treatment'@en|'Off-site-Behandlung'@de|'traitement hors site'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.2.5>,,'on-site treatment'@en|'On-site-Behandlung'@de|'traitement sur site'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.2.6>,,'preventive measure'@en|'Vorsorgemaßnahme'@de|'mesure préventive'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3>,,'Engineering-based methods'@en|'Ingenieurtechnische Verfahren'@de|'Méthodes de génie civil'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.1>,,'bottom barrier system'@en|'Sohlenbarrieren-System'@de|'barrière inférieure'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.10>,,'geomembrane'@en|'Dichtungsbahn'@de|'géomembrane'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.11>,,'geoproducts'@en|'Geoprodukte'@de|'géoproduits'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.12>,,'geosynthetics'@en|'Geokunststoff'@de|'géosynthétiques'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.13>,,'geotextile'@en|'Geotextilien'@de|'géotextiles'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.14>,,'groundwater extraction'@en|'Grundwasserentnahme'@de|'extraction des eaux souterraines'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.15>,,'hydraulic measures'@en|'hydraulische Maßnahme'@de|'mesures hydrauliques'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.16>,,'injected barrier'@en|'Injektionsbarriere'@de|'paroi injectée'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.17>,,'pump and treat system'@en|'Abpump- und Behandlungssystem'@de|'système de pompage et de traitement'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.18>,,'reactive barrier'@en|'aktive Barriere'@de|'barrière réactive'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.19>,,'surface liner system'@en|'Oberflächenabdeckungssystem'@de|'système d\'isolement superficiel'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.2>,,'break layer'@en|'Sperrschicht'@de|'couche de rupture'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.20>,,'vertical barrier'@en|'vertikale Barriere'@de|'barrière verticale'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.3>,'isolation'@en|'Einkapselung'@de|'isolation'@fr,'containment'@en|'Einschluss'@de|'confinement'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.4>,,'cover system'@en|'Abdeckungssystem'@de|'couverture'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.5>,,'displacement barrier'@en|'Bodenverdrängungssystem'@de|'barrière de déplacement'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.6>,,'excavated barrier'@en|'Barriere'@de|'barrière excavée'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.7>,''@en|'Aushub'@de|''@fr,'excavation'@en|'Auskofferung'@de|'excavation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.8>,,'geocomposite'@en|'Geoverbundstoff'@de|'géocomposite'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.3.9>,'geomesh'@en|''@de|'géomaille'@fr,'geogrid'@en|'Geogitter'@de|'géogrille'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4>,,'Process-based treatment methods'@en|'Prozessorientierte Behandlungsverfahren'@de|'Méthodes de traitement technologiques'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.1>,,'aerobic biological treatment'@en|'aerobe biologische Behandlung'@de|'traitement biologique aérobie'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.10>,,'chemico-physical treatment'@en|'chemophysikalische Behandlung'@de|'traitement physico-chimique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.11>,,'composting'@en|'Kompostierung'@de|'compostage'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.12>,,'dechlorination'@en|'Entchlorung'@de|'déchloration'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.13>,,'direct thermal desorption'@en|'direkte thermische Desorption'@de|'désorption thermique directe'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.14>,,'electrokinetic remediation'@en|'elektrokinetische Sanierung'@de|'remédiation électrocinétique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.15>,,'enzyme'@en|'Enzym'@de|'enzyme'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.16>,,'fungal treatment'@en|'Behandlung mit Pilzen'@de|'traitement fongique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.17>,,'gas control system'@en|'Gasüberwachungssystem'@de|'système de contrôle des gaz'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.18>,,'gas protection measures'@en|'Schutzmaßnahme gegen Gas'@de|'mesures de protection contre les gaz'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.19>,,'hydrolysis'@en|'Hydrolyse'@de|'hydrolyse'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.2>,,'air-sparging'@en|'Grundwasserbelüftung'@de|'purge à l\'air'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.20>,'thermal destruction'@en|'thermische Zerstörung'@de|'destruction thermique'@fr,'incineration'@en|'Verbrennung'@de|'incinération'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.21>,''@en|'einheimisch'@de|''@fr,'indigenous'@en|'endemisch'@de|'indigène'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.22>,,'indirect thermal desorption'@en|'indirekte thermische Desorption'@de|'désorption thermique indirecte'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.23>,,'intrinsic bioremediation'@en|'biologische Selbstreinigung'@de|'bioremédiation intrinsèque'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.24>,''@en|''@de|'épandage contrôlé'@fr,'landfarming'@en|'Landfarming'@de|'biorégénération du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.25>,,'mobile treatment system'@en|'mobiles Behandlungssystem'@de|'système de traitement mobile'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.26>,,'oxidation'@en|'Oxidation'@de|'oxydation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.27>,,'physical treatment'@en|'physikalische Behandlung'@de|'traitement physique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.28>,,'phytoremediation'@en|'Phytosanierung'@de|'phytoremédiation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.29>,,'post-treatment measures'@en|'Nachsorgemaßnahme'@de|'mesures de post-traitement'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.3>,,'anaerobic biological treatment'@en|'anaerobe biologische Behandlung'@de|'traitement biologique anaérobie'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.30>,,'precipitation'@en|'Niederschlag'@de|'précipitation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.31>,,'pretreatment measures'@en|'Vorbehandlungsmaßnahme'@de|'mesures de prétraitement'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.32>,''@en|'Erste Reinigungsstufe'@de|''@fr,'primary treatment'@en|'Vorklärung'@de|'traitement primaire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.33>,,'pyrolysis'@en|'Pyrolyse'@de|'pyrolyse'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.34>,,'reduction'@en|'Reduktion'@de|'réduction'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.35>,''@en|'zweite Reinigungsstufe'@de|''@fr,'secondary treatment'@en|'sekundäre Behandlung'@de|'traitement secondaire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.36>,,'slurry bioreactor'@en|'Schlamm-Bioreaktor'@de|'bioréacteur de traitement en phase hétérogène'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.37>,'in situ soil washing'@en|'In-situ-Bodenwaschverfahren'@de|'lavage du sol sur site'@fr,'soil flushing'@en|'Bodenspülverfahren'@de|'rinçage du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.38>,,'soil vapour extraction'@en|'Bodenluftabsaugung'@de|'extraction de la vapeur du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.39>,,'soil washing'@en|'Bodenwäsche'@de|'lavage du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.4>,,'biological treatment'@en|'biologische Behandlung'@de|'traitement biologique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.40>,,'solidification'@en|'Verfestigung'@de|'solidification'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.41>,,'solvent extraction'@en|'Lösemittelextraktion'@de|'extraction aux solvants'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.42>,,'stabilization/solidification'@en|'Stabilisierung/Verfestigung'@de|'stabilisation/solidification'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.43>,,'stabilization'@en|'Stabilisierung'@de|'stabilisation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.44>,''@en|'dritte Reinigungsstufe'@de|''@fr,'tertiary treatment'@en|'tertiäre Behandlung'@de|'traitement tertiaire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.45>,,'thermal desorption'@en|'thermische Desorption'@de|'désorption thermique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.46>,,'thermal treatment'@en|'thermische Behandlung'@de|'traitement thermique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.47>,,'treatment line'@en|'Behandlungskette'@de|'chaîne de traitement'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.48>,,'treatment system'@en|'Behandlungssystem'@de|'système de traitement'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.49>,,'vitrification'@en|'Verglasung'@de|'vitrification'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.5>,,'bioreactor'@en|'Bioreaktor'@de|'bioréacteur'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.6>,,'bioremediation'@en|'biologische Sanierung'@de|'bioremédiation'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.7>,,'(bio) treatment bed'@en|'Behandlungsbett'@de|'lit de traitement (biologique)'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.8>,,'bioventing'@en|'biologische Belüftung'@de|'bioaération'@fr
+<https://data.geoscience.earth/ncl/ISO11074/6.4.9>,,'chemical treatment'@en|'chemische Behandlung'@de|'traitement chimique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.>,,'Soil ecotoxicology'@en|'Bodenökotoxikologie'@de|'Écotoxicologie du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1>,,'Biodegradability'@en|'Biologische Abbaubarkeit'@de|'Biodégradabilité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.1>,,'anaerobic transformation'@en|'anaerobe Transformation'@de|'transformation anaérobie'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.10>,'NOEC'@en|'NOEC'@de|'CSEO'@fr,"'no observed effect concentration'@en|'Konzentration, bei der keine Wirkung zu beobachten ist'@de|'concentration sans effet observé'@fr"
+<https://data.geoscience.earth/ncl/ISO11074/7.1.11>,,'persistence'@en|'Persistenz'@de|'persistance'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.12>,,'primary biodegradation'@en|'primärer biologischer Abbau'@de|'biodégradation primaire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.13>,,'reference soil'@en|'Referenzboden'@de|'sol de référence'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.14>,,'saturated soil'@en|'gesättigter Boden'@de|'sol saturé'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.15>,,'test material'@en|'Prüfmaterial'@de|'matériau d’essai'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.16>,,'test mixture'@en|'Prüfmischung'@de|'mélange d’essai'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.17>,,'test mixture ratio'@en|'Prüfmischungsverhältnis'@de|'rapport du mélange d’essai'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.18>,,'test substance'@en|'Prüfsubstanz'@de|'substance d’essai'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.2>,,'biodiversity'@en|'Biodiversität'@de|'biodiversité'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.3>,,'biomass'@en|'Biomasse'@de|'biomasse'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.4>,,'biosolid'@en|'Biofeststoff'@de|'biosolide'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.5>,'ECx'@en|'ECx'@de|'CEx'@fr,'effect concentration for x % effect'@en|'Wirkungskonzentration für eine Wirkung von x %'@de|'concentration efficace à x %'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.6>,'ID'@en|'ID'@de|'DI'@fr,'inhibitory dose'@en|'hemmende Dosis'@de|'dose d’inhibition'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.7>,'LCx'@en|'LCx'@de|'CLx'@fr,'lethal concentration x'@en|'letale Konzentration x'@de|'concentration létale x'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.1.8>,'LOEC'@en|'LOEC'@de|'CMEO'@fr,"'lowest observed effect concentration'@en|'geringste Konzentration, bei der eine Wirkung zu beobachten ist'@de|'concentration minimale avec effet observé'@fr"
+<https://data.geoscience.earth/ncl/ISO11074/7.1.9>,'LC50'@en|'LC50'@de|'CL50'@fr,'median lethal concentration'@en|'mittlere letale Konzentration'@de|'concentration létale médiane'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.2>,,'Soil fauna'@en|'Bodenfauna'@de|'Faune du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.2.1>,,'avoidance behaviour'@en|'Vermeidungsverhalten'@de|'comportement d’évitement'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.2.2>,,'diapause'@en|'Diapause'@de|'diapause'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.2.3>,,'growth'@en|'Wachstum'@de|'croissance'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.2.4>,,'test substrate'@en|'Prüfsubstrat'@de|'substrat d’essai'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.3>,,'Soil flora'@en|'Bodenflora'@de|'Flore du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.3.1>,'non-extractable residues'@en|'nichtextrahierbare Rückstände'@de|'résidus non extractibles'@fr,'bound residues '@en|'gebundene Rückstände'@de|'résidus liés '@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.3.2>,,'control soil'@en|'Kontrollboden'@de|'sol témoin'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.3.3>,,'germination'@en|'Keimung'@de|'germination'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.3.4>,,'hormesis'@en|'Hormesis'@de|'hormèse'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.3.5>,,'seedling emergence'@en|'Saatauflauf'@de|'émergence de la plantule'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.3.6>,,'soil mixture ratio'@en|'Bodenmischungsverhältnis'@de|'rapport de mélange de sols'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4>,,'Soil microorganisms'@en|'Bodenmikroorganismen'@de|'Micro-organismes du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.1>,,'ammonification'@en|'Ammonifizierung'@de|'ammonification'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.10>,,'mycelium'@en|'Myzel'@de|'mycélium'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.11>,,'mycorrhizal fungus'@en|'Mykorrhizapilz'@de|'champignon mycorhizogène'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.12>,,'nitrification'@en|'Nitrifikation'@de|'nitrification'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.13>,'N-mineralization'@en|'N-Mineralisierung'@de|''@fr,'nitrogen mineralization'@en|'Stickstoff-Mineralisierung'@de|'minéralisation de l\'azote'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.14>,,'rate of CO2 formation [O2 consumption]'@en|'Rate der CO2‑Bildung'@de|'taux de production de CO2 [consommation d’O2]'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.15>,'QR'@en|'QR'@de|'QR'@fr,'respiratory activation quotient'@en|'Atmungsaktivierungsquotient'@de|'quotient d\'activation respiratoire'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.16>,,'soil material'@en|'Bodenmaterial'@de|'matériau du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.17>,,'soil microbial biomass'@en|'mikrobielle Biomasse des Bodens'@de|'biomasse microbienne du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.18>,,'soil respiration rate'@en|'Atmungsrate des Bodens'@de|'taux de respiration du sol'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.19>,'ų'@en|'µ'@de|'ų'@fr,'specific growth rate'@en|'spezifische Wachstumsrate'@de|'taux de croissance spécifique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.2>,,'basal respiration'@en|'Basalatmung'@de|'respiration basale'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.20>,'SIR'@en|'SIR'@de|'SIR'@fr,'substrate-induced respiration'@en|'substratinduzierte Atmung'@de|'respiration induite par le substrat'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.21>,'tpeakmax'@en|'tpeakmax'@de|'tpeakmax'@fr,'time to the peak maximum'@en|'Zeit bis zum Peakmaximum'@de|'temps jusqu\'au pic maximum'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.3>,'RB'@en|'RB'@de|'RB'@fr,'basal respiration rate'@en|'Basalatmungsrate'@de|'taux de respiration basale'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.4>,,'control substrate'@en|'Kontrollsubstrat'@de|'substrat témoin'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.5>,'CR'@en|'CR'@de|'CR'@fr,'cumulative CO2 evolution or O2 consumption'@en|'kumulative CO2‑Entwicklung oder kumulativer O2‑Verbrauch'@de|'dégagement de CO2 ou consommation d’O2 cumulé(e)'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.6>,,'hyphae'@en|'Hyphen'@de|'hyphes'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.7>,'qCO2'@en|'qCO2'@de|'qCO2'@fr,'metabolic quotient'@en|'metabolischer Quotient'@de|'quotient métabolique'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.8>,,'microbial activity'@en|'mikrobielle Aktivität'@de|'activité microbienne'@fr
+<https://data.geoscience.earth/ncl/ISO11074/7.4.9>,,'microorganisms'@en|'Mikroorganismen'@de|'micro-organismes'@fr
