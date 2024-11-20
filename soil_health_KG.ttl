@@ -3,15 +3,15 @@
 @prefix dcmitype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix eli: <http://data.europa.eu/eli/ontology#> .
-@prefix ns1: <http://qudt.org/schema/qudt#> .
-@prefix ns2: <http://qudt.org/vocab/unit/> .
-@prefix ns3: <http://semanticscience.org/resource/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix she: <http://soilwise-he.github.io/soil-health#> .
+@prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 she:AggregateStability a skos:Concept ;
@@ -223,7 +223,7 @@ she:SDG a dcterms:Policy ;
 she:SOCContent a skos:Concept ;
     agrontology:indicates she:OrganicCarbon ;
     agrontology:isMeasuredBy she:FineSoilFraction ;
-    ns1:unit ns2:GM-PER-KiloGM ;
+    qudt:unit unit:GM-PER-KiloGM ;
     skos:prefLabel "SOC content" .
 
 she:SOCToFoodProduction a qudt:SystemOfQuantityKinds ;
@@ -246,8 +246,8 @@ she:SocStock a skos:Concept ;
         she:CoarseMineralFragmentContent,
         she:LayerThickness,
         she:SocContent ;
-    ns1:unit ns2:TONNE-PER-HA ;
-    ns3:SIO_000420 she:CalculationSOCStock ;
+    qudt:unit unit:TONNE-PER-HA ;
+    sio:SIO_000420 she:CalculationSOCStock ;
     skos:prefLabel "soc stock" .
 
 she:Society a skos:Concept ;
@@ -517,8 +517,8 @@ she:Biomaterials a skos:Concept ;
     skos:prefLabel "biomaterials" .
 
 she:BulkDensity a skos:Concept ;
-    ns1:quantityKind <http://qudt.org/vocab/quantitykind/Density> ;
-    ns1:unit ns2:KiloGM-PER-M2 ;
+    qudt:quantityKind quantitykind:Density ;
+    qudt:unit unit:KiloGM-PER-M2 ;
     skos:prefLabel "bulk density" .
 
 she:CAP2013 a dcterms:Policy ;
@@ -533,8 +533,8 @@ she:CAP20232027 a dcterms:Policy ;
 she:CalciumDeficiency a skos:Concept ;
     skos:prefLabel "calcium deficiency" .
 
-she:CalculationSOCStock a ns3:SIO_000368 ;
-    ns3:SIO_000420 "d * C * (1 - CM) * BD / 100" .
+she:CalculationSOCStock a sio:SIO_000368 ;
+    sio:SIO_000420 "d * C * (1 - CM) * BD / 100" .
 
 she:Carbon a skos:Concept ;
     skos:prefLabel "carbon" .
@@ -551,7 +551,7 @@ she:ClimaticConditions a skos:Concept ;
 
 she:CoarseMineralFragmentContent a skos:Concept ;
     dcterms:source she:Poeplau2019 ;
-    ns1:quantityKind <http://qudt.org/vocab/quantitykind/MassFraction> ;
+    qudt:quantityKind quantitykind:MassFraction ;
     skos:prefLabel "coarse mineral fragment content" .
 
 she:Compaction a skos:Concept ;
@@ -605,7 +605,7 @@ she:FineSoilFraction a skos:Concept ;
     skos:prefLabel "fine soil fraction" .
 
 she:FoodProductionIncrease a qudt:QuantityKind ;
-    qudt:unit ns2:TONNE-PER-YR .
+    qudt:unit unit:TONNE-PER-YR .
 
 she:FoodSecurity a skos:Concept ;
     agrontology:benefitsFrom she:SoilOrganicCarbon,
@@ -697,8 +697,8 @@ she:LandProductivity a skos:Concept ;
     skos:prefLabel "land productivity" .
 
 she:LayerThickness a skos:Concept ;
-    ns1:quantityKind <http://qudt.org/vocab/quantitykind/Length> ;
-    ns1:unit ns2:M ;
+    qudt:quantityKind quantitykind:Length ;
+    qudt:unit unit:M ;
     skos:prefLabel "layer thickness" .
 
 she:LeachingOfNutrients a skos:Concept ;
@@ -828,7 +828,7 @@ she:RuralDevelopmentMeasures a eli:LegalResource ;
     skos:prefLabel "rural development measures" .
 
 she:SOCIncrease a qudt:QuantityKind ;
-    qudt:unit ns2:TONNE-PER-HA .
+    qudt:unit unit:TONNE-PER-HA .
 
 she:SOCStabilisation a skos:Concept ;
     skos:prefLabel "stabilisation" .
@@ -839,8 +839,8 @@ she:SOC_0_5_0_77_Alfisols a skos:Concept ;
     skos:prefLabel "soc for alfisols" .
 
 she:SOC_0_5_0_77_Percent a skos:Concept ;
-    she:hasValue [ a ns2:PercentageUnit ;
-            ns2:numericValue 0.5,
+    she:hasValue [ a unit:PercentageUnit ;
+            unit:numericValue 0.5,
                 0.77 ] ;
     skos:prefLabel "0.5-0.77% soc for alfisols" .
 
@@ -850,8 +850,8 @@ she:SOC_1_03_1_16_Entisols a skos:Concept ;
     skos:prefLabel "soc for entisols" .
 
 she:SOC_1_03_1_16_Percent a skos:Concept ;
-    she:hasValue [ a ns2:PercentageUnit ;
-            ns2:numericValue 1.03,
+    she:hasValue [ a unit:PercentageUnit ;
+            unit:numericValue 1.03,
                 1.16 ] ;
     skos:prefLabel "1.03-1.16% soc for entisols" .
 
@@ -874,8 +874,8 @@ she:SewageSludge a skos:Concept ;
     skos:prefLabel "sewage sludge" .
 
 she:SocContent a skos:Concept ;
-    ns1:quantityKind <http://qudt.org/vocab/quantitykind/MassFraction> ;
-    ns1:unit ns2:GM-PER-GM ;
+    qudt:quantityKind quantitykind:MassFraction ;
+    qudt:unit unit:GM-PER-GM ;
     skos:prefLabel "soc content" .
 
 she:SocContentThreshold a skos:Concept ;
@@ -916,8 +916,8 @@ she:SoilBiologicalDegradation a skos:Concept ;
     skos:prefLabel "soil biological degradation" .
 
 she:SoilCarbonStock a skos:Concept ;
-    qudt:unit ns2:KiloGM-PER-M2,
-        ns2:TONNE-PER-HA ;
+    qudt:unit unit:KiloGM-PER-M2,
+        unit:TONNE-PER-HA ;
     skos:prefLabel "soil carbon stock" .
 
 she:SoilChemicalDegradation a skos:Concept ;
@@ -1359,7 +1359,7 @@ she:Reference_Lal2015 a dcterms:BibliographicResource ;
 
 she:SoilSealing a skos:Concept ;
     dcterms:source she:Maes2020 ;
-    qudt:unit ns2:PERCENT ;
+    qudt:unit unit:PERCENT ;
     skos:prefLabel "soil sealing" .
 
 she:CLEAModel a sosa:Procedure ;
