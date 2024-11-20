@@ -1,1 +1,7 @@
 class,uri,label
+skos:Concept,http://www.w3.org/2004/02/skos/core#Concept,Concept
+dcterms:BibliographicResource,http://purl.org/dc/terms/BibliographicResource,Bibliographic Resource
+dcterms:Policy,http://purl.org/dc/terms/Policy,Policy
+dcterms:Standard,http://purl.org/dc/terms/Standard,Standard
+dcmitype:Dataset,http://purl.org/dc/dcmitype/Dataset,Dataset
+dcmitype:Image,http://purl.org/dc/dcmitype/Image,Image
