@@ -5,3 +5,7 @@ dcterms:Policy,http://purl.org/dc/terms/Policy,Policy
 dcterms:Standard,http://purl.org/dc/terms/Standard,Standard
 dcmitype:Dataset,http://purl.org/dc/dcmitype/Dataset,Dataset
 dcmitype:Image,http://purl.org/dc/dcmitype/Image,Image
+qudt:QuantityValue,http://qudt.org/schema/qudt/QuantityValue,Quantity Value
+qudt:SystemOfQuantityKinds,http://qudt.org/schema/qudt/SystemOfQuantityKinds,System Of Quantity Kinds
+qudt:Unit,http://qudt.org/schema/qudt/Unit,Unit
+eli:LegalResource,http://data.europa.eu/eli/ontology#LegalResource,Legal Resource
