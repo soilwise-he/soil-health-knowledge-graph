@@ -20,35 +20,32 @@ agrontology:benefitsFrom,http://aims.fao.org/aos/agrontology#benefitsFrom,benefi
 agrontology:isPreventedBy,http://aims.fao.org/aos/agrontology#isPreventedBy,is prevented by
 agrontology:isMeasuredBy,http://aims.fao.org/aos/agrontology#isMeasuredBy,is measured by
 prov:atLocation,http://www.w3.org/ns/prov#atLocation,at location
-,http://www.w3.org/2004/02/skos/core#scopeNote,scope Note
-,http://aims.fao.org/aos/agrontology#compose,compose
-,http://aims.fao.org/aos/agrontology#isMadeFrom,is Made From
-,http://aims.fao.org/aos/agrontology#causes,causes
-,http://qudt.org/schema/qudt/unit,unit
-,http://www.w3.org/2000/01/rdf-schema#label,label
-,http://qudt.org/schema/qudt/expression,expression
-,http://aims.fao.org/aos/agrontology#makeUseOf,make Use Of
-,http://qudt.org/schema/qudt/quantityKind,quantity Kind
-,http://www.w3.org/2004/02/skos/core#altLabel,alt Label
-,http://aims.fao.org/aos/agrontology#influences,influences
-,http://aims.fao.org/aos/agrontology#isUsedIn,is Used In
-,http://aims.fao.org/aos/agrontology#smallerThan,smaller Than
-,http://aims.fao.org/aos/agrontology#isProcessFor,is Process For
-,http://aims.fao.org/aos/agrontology#hasComponent,has Component
-,http://aims.fao.org/aos/agrontology#hasPart,has Part
-,http://aims.fao.org/aos/agrontology#follows,follows
-,http://aims.fao.org/aos/agrontology#hasComposition,has Composition
-,http://aims.fao.org/aos/agrontology#isOutputFrom,is Output From
-,http://aims.fao.org/aos/agrontology#isAchievedByMeansOf,is Achieved By Means Of
-,http://aims.fao.org/aos/agrontology#usingValue,using Value
-,http://semanticscience.org/resource/SIO_000420,SIO_000420
-,http://qudt.org/vocab/unit/numericValue,numeric Value
-,http://qudt.org/schema/qudt/numericValue,numeric Value
-,http://aims.fao.org/aos/agrontology#isUsedAs,is Used As
-,http://aims.fao.org/aos/agrontology#indicates,indicates
-,http://qudt.org/schema/qudt/symbol,symbol
-,http://aims.fao.org/aos/agrontology#performs,performs
-,http://aims.fao.org/aos/agrontology#isIncludedIn,is Included In
-,http://aims.fao.org/aos/agrontology#isDerivedFrom,is Derived From
-,http://aims.fao.org/aos/agrontology#isUseOf,is Use Of
-,http://aims.fao.org/aos/agrontology#isProducedBy,is Produced By
+skos:scopeNote,http://www.w3.org/2004/02/skos/core#scopeNote,scope note
+agrontology:compose,http://aims.fao.org/aos/agrontology#compose,compose
+agrontology:isMadeFrom,http://aims.fao.org/aos/agrontology#isMadeFrom,is made from
+agrontology:causes,http://aims.fao.org/aos/agrontology#causes,causes
+qudt:unit,http://qudt.org/schema/qudt/unit,unit
+rdfs:label,http://www.w3.org/2000/01/rdf-schema#label,label
+qudt:expression,http://qudt.org/schema/qudt/expression,expression
+agrontology:makeUseOf,http://aims.fao.org/aos/agrontology#makeUseOf,make use of
+skos:altLabel,http://www.w3.org/2004/02/skos/core#altLabel,alternative label
+agrontology:influences,http://aims.fao.org/aos/agrontology#influences,influences
+agrontology:isUsedIn,http://aims.fao.org/aos/agrontology#isUsedIn,is used in
+agrontology:smallerThan,http://aims.fao.org/aos/agrontology#smallerThan,smaller than
+agrontology:isProcessFor,http://aims.fao.org/aos/agrontology#isProcessFor,is process for
+agrontology:hasComponent,http://aims.fao.org/aos/agrontology#hasComponent,has component
+agrontology:hasPart,http://aims.fao.org/aos/agrontology#hasPart,has part
+agrontology:follows,http://aims.fao.org/aos/agrontology#follows,follows
+agrontology:hasComposition,http://aims.fao.org/aos/agrontology#hasComposition,has composition
+agrontology:isOutputFrom,http://aims.fao.org/aos/agrontology#isOutputFrom,is output from
+agrontology:isAchievedByMeansOf,http://aims.fao.org/aos/agrontology#isAchievedByMeansOf,is achieved by means of
+agrontology:usingValue,http://aims.fao.org/aos/agrontology#usingValue,using value
+qudt:numericValue,http://qudt.org/schema/qudt/numericValue,numeric value
+agrontology:isUsedAs,http://aims.fao.org/aos/agrontology#isUsedAs,is used as
+agrontology:indicates,http://aims.fao.org/aos/agrontology#indicates,indicates
+qudt:symbol,http://qudt.org/schema/qudt/symbol,symbol
+agrontology:performs,http://aims.fao.org/aos/agrontology#performs,performs
+agrontology:isIncludedIn,http://aims.fao.org/aos/agrontology#isIncludedIn,is included in
+agrontology:isDerivedFrom,http://aims.fao.org/aos/agrontology#isDerivedFrom,is derived from
+agrontology:isUseOf,http://aims.fao.org/aos/agrontology#isUseOf,is use of
+agrontology:isProducedBy,http://aims.fao.org/aos/agrontology#isProducedBy,is produced by
