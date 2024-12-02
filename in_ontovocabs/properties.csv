@@ -1,7 +1,7 @@
 prop,uri,label
-skos:broader,http://www.w3.org/2004/02/skos/core#broader,broader
-skos:narrower,http://www.w3.org/2004/02/skos/core#narrower,narrower
-skos:related,http://www.w3.org/2004/02/skos/core#related,related
+skos:broader,http://www.w3.org/2004/02/skos/core#broader,has broader
+skos:narrower,http://www.w3.org/2004/02/skos/core#narrower,has narrower
+skos:related,http://www.w3.org/2004/02/skos/core#related,has related
 dcterms:date,http://purl.org/dc/terms/date,date
 dcterms:source,http://purl.org/dc/terms/source,source
 she:provides,http://soilwise-he.github.io/soil-health#provides,provides
@@ -9,3 +9,46 @@ she:variesIn,http://soilwise-he.github.io/soil-health#variesIn,varies in
 agrontology:isComposedOf,http://aims.fao.org/aos/agrontology#isComposedOf,is composed of
 agrontology:isPartOf,http://aims.fao.org/aos/agrontology#isPartOf,is part of
 agrontology:includes,http://aims.fao.org/aos/agrontology#includes,includes
+skos:definition,http://www.w3.org/2004/02/skos/core#definition,definition
+skos:prefLabel,http://www.w3.org/2004/02/skos/core#prefLabel,preferred label
+agrontology:affects,http://aims.fao.org/aos/agrontology#affects,affects
+agrontology:hasAbbreviation,http://aims.fao.org/aos/agrontology#hasAbbreviation,has abbreviation
+agrontology:measures,http://aims.fao.org/aos/agrontology#measures,measures
+dcterms:replaces,http://purl.org/dc/terms/replaces,replaces
+agrontology:isAffectedBy,http://aims.fao.org/aos/agrontology#isAffectedBy,is affected by
+agrontology:benefitsFrom,http://aims.fao.org/aos/agrontology#benefitsFrom,benefits from
+agrontology:isPreventedBy,http://aims.fao.org/aos/agrontology#isPreventedBy,is prevented by
+agrontology:isMeasuredBy,http://aims.fao.org/aos/agrontology#isMeasuredBy,is measured by
+prov:atLocation,http://www.w3.org/ns/prov#atLocation,at location
+,http://www.w3.org/2004/02/skos/core#scopeNote,scope Note
+,http://aims.fao.org/aos/agrontology#compose,compose
+,http://aims.fao.org/aos/agrontology#isMadeFrom,is Made From
+,http://aims.fao.org/aos/agrontology#causes,causes
+,http://qudt.org/schema/qudt/unit,unit
+,http://www.w3.org/2000/01/rdf-schema#label,label
+,http://qudt.org/schema/qudt/expression,expression
+,http://aims.fao.org/aos/agrontology#makeUseOf,make Use Of
+,http://qudt.org/schema/qudt/quantityKind,quantity Kind
+,http://www.w3.org/2004/02/skos/core#altLabel,alt Label
+,http://aims.fao.org/aos/agrontology#influences,influences
+,http://aims.fao.org/aos/agrontology#isUsedIn,is Used In
+,http://aims.fao.org/aos/agrontology#smallerThan,smaller Than
+,http://aims.fao.org/aos/agrontology#isProcessFor,is Process For
+,http://aims.fao.org/aos/agrontology#hasComponent,has Component
+,http://aims.fao.org/aos/agrontology#hasPart,has Part
+,http://aims.fao.org/aos/agrontology#follows,follows
+,http://aims.fao.org/aos/agrontology#hasComposition,has Composition
+,http://aims.fao.org/aos/agrontology#isOutputFrom,is Output From
+,http://aims.fao.org/aos/agrontology#isAchievedByMeansOf,is Achieved By Means Of
+,http://aims.fao.org/aos/agrontology#usingValue,using Value
+,http://semanticscience.org/resource/SIO_000420,SIO_000420
+,http://qudt.org/vocab/unit/numericValue,numeric Value
+,http://qudt.org/schema/qudt/numericValue,numeric Value
+,http://aims.fao.org/aos/agrontology#isUsedAs,is Used As
+,http://aims.fao.org/aos/agrontology#indicates,indicates
+,http://qudt.org/schema/qudt/symbol,symbol
+,http://aims.fao.org/aos/agrontology#performs,performs
+,http://aims.fao.org/aos/agrontology#isIncludedIn,is Included In
+,http://aims.fao.org/aos/agrontology#isDerivedFrom,is Derived From
+,http://aims.fao.org/aos/agrontology#isUseOf,is Use Of
+,http://aims.fao.org/aos/agrontology#isProducedBy,is Produced By

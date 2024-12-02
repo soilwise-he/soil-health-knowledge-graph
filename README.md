@@ -16,6 +16,7 @@ See [Issues](https://github.com/soilwise-he/soil-health-knowledge-graph/issues).
 - [GloSIS](https://glosis-ld.github.io/glosis/)
 - [Agrontology](https://aims.fao.org/aos/agrontology)
 - [QUDT](https://qudt.org/)
+- [PROV-O](https://www.w3.org/TR/prov-o/)
 - [EuroVoc](https://op.europa.eu/en/web/eu-vocabularies)
 - [Semanticscience Integrated Ontology](https://sio.semanticscience.org/)
 - [ISO11074](https://data.geoscience.earth/ncl/ISO11074")
