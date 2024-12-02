@@ -2,20 +2,7 @@
 
 ## This demo of soil health knowledge graph currently contains
 
-- A simple "gold standard" example of converting text from the [report](https://www.eea.europa.eu/publications/soil-monitoring-in-europe) to RDF triples;
-- Zero-shot and few-shot (one-shot) examples of converting text to RDF triples with LLMs (OpenAI GPT);
-- Defining concepts and matching them with the [AGROVOC](https://aims.fao.org/aos/agrovoc) thesaurus;
-  - When a concept matches the "prefLabel" of a concept in the AGROVOC, the URI defined by the AGROVOC is used directly;
-  - When a concept matches the "altLabel" of a concept in the AGROVOC, using "closeMatch" to interlink with the AGROVOC.
-- Importing [Agrontology](https://aims.fao.org/aos/agrontology) to better express relationships between concepts;
-- Visualizing the knowledge graph;
-- Evaluating different conversion strategies using the F1 score and exact match;
-- Post-processing the knowledge graph to eliminate misuse of ontologies;
-- Interlinking to external databases, such as soil-related metadata records harvested from Zenodo, by keyword matching;
-  - Filling in keywords extracted from the title and description for metadata records that are missing keywords;
-  - Introducing a quad store with named graphs to store extracted keywords in the named graph called "augmented";
-  - Storing the soil health knowledge graph as the default graph and raw metadata records in the named graph "metadata".
-- Validating the (expanded) knowledge graph by question-answering using NLQ.
+![image](https://github.com/soilwise-he/soil-health-knowledge-graph/blob/main/LLM4KG.svg)
 
 ## To-do
 
