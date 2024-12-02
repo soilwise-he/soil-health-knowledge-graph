@@ -1,6 +1,6 @@
 # Soil health knowledge graph: A demo
 
-## This demo of soil health knowledge graph currently contains
+## Workflow of the demo
 
 ![image](https://github.com/soilwise-he/soil-health-knowledge-graph/blob/main/LLM4KG.svg)
 
@@ -17,3 +17,5 @@ See [Issues](https://github.com/soilwise-he/soil-health-knowledge-graph/issues).
 - [Agrontology](https://aims.fao.org/aos/agrontology)
 - [QUDT](https://qudt.org/)
 - [EuroVoc](https://op.europa.eu/en/web/eu-vocabularies)
+- [Semanticscience Integrated Ontology]("http://semanticscience.org/resource/")
+- [ISO11074](https://data.geoscience.earth/ncl/ISO11074/")

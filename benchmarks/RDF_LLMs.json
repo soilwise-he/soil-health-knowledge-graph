@@ -69,6 +69,104 @@
             "step_by_step": "@prefix agrontology: <http://aims.fao.org/aos/agrontology#> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix she: <https://soilwise-he.github.io/soil-health#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n\nshe:clearConceptualMechanisticRelationships a skos:Concept ;\n    skos:prefLabel \"clear conceptual mechanistic relationships\" ;\n    she:isScarce \"true\" .\n\nshe:knowledgeRecommendations a skos:Concept ;\n    skos:prefLabel \"knowledge recommendations\" ;\n    she:isScarce \"true\" .\n\nshe:parameter a skos:Concept ;\n    skos:prefLabel \"parameter\" .\n\nshe:soilAttributes a skos:Concept ;\n    skos:prefLabel \"soil attributes\" ;\n    she:is she:measurableSoilProperties ;\n    she:providesInformationOn she:soilFunctions,\n        she:waterCapacity .\n\nshe:soilQualityAssessment a skos:Concept ;\n    agrontology:isInfluencedBy she:sensitiveSoilAttributes ;\n    dcterms:source she:bibliographicResourceBunemann2018 ;\n    skos:prefLabel \"soil quality assessment\" .\n\nshe:bibliographicResourceBunemann2018 a dcterms:BibliographicResource ;\n    dcterms:creator \"B\u00fcnemann et al.\" ;\n    dcterms:date \"2018\" .\n\nshe:bibliographicResourceVogel2020 a dcterms:BibliographicResource ;\n    dcterms:creator \"Vogel et al.\" ;\n    dcterms:date \"2020\" .\n\nshe:indicators a skos:Concept ;\n    dcterms:source she:bibliographicResourceVogel2020 ;\n    skos:prefLabel \"indicators\" ;\n    she:hasMeaningBeyondMeasure \"true\" ;\n    she:interpretedBy she:interpretativeFramework .\n\nshe:interpretativeFramework a skos:Concept ;\n    skos:prefLabel \"interpretative framework\" ;\n    she:embeddedIn she:indicators .\n\nshe:measurableSoilProperties a skos:Concept ;\n    skos:prefLabel \"measurable soil properties\" .\n\nshe:sensitiveSoilAttributes a skos:Concept ;\n    skos:prefLabel \"sensitive soil attributes\" ;\n    she:reflectsCapacity she:soilToFunction .\n\nshe:soilFunctions a skos:Concept ;\n    skos:prefLabel \"soil functions\" .\n\nshe:waterCapacity a skos:Concept ;\n    skos:prefLabel \"water capacity\" .\n\n",
             "ontology_aware": "@prefix agrontology: <http://aims.fao.org/aos/agrontology#> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix she: <https://soilwise-he.github.io/soil-health#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n\nshe:ConceptualRelationships a skos:Concept ;\n    agrontology:isCauseOf she:LackOfKnowledge ;\n    skos:prefLabel \"conceptual relationships\" .\n\nshe:MechanisticRelationships a skos:Concept ;\n    agrontology:isCauseOf she:LackOfKnowledge ;\n    skos:prefLabel \"mechanistic relationships\" .\n\nshe:B\u00fcnemann2018 a dcterms:BibliographicResource ;\n    dcterms:creator \"B\u00fcnemann et al.\" ;\n    dcterms:date \"2018\" .\n\nshe:Indicators a skos:Concept ;\n    agrontology:hasGoalOrProcess she:InterpretativeFramework ;\n    agrontology:isMadeFrom she:SoilAttributes ;\n    dcterms:source she:Vogel2020 ;\n    skos:definition \"embedded in a well-developed interpretative framework and has meaning beyond the measure it represents\" ;\n    skos:prefLabel \"indicators\" .\n\nshe:InterpretativeFramework a skos:Concept ;\n    skos:prefLabel \"interpretative framework\" .\n\nshe:ScarcityOfRecommendations a skos:Concept ;\n    skos:prefLabel \"scarcity of recommendations\" .\n\nshe:SensitiveSoilAttributes a skos:Concept ;\n    skos:prefLabel \"sensitive soil attributes\" .\n\nshe:SoilAttributes a skos:Concept ;\n    agrontology:isUsedIn she:SoilQualityAssessment ;\n    agrontology:scientificNameOf she:Indicators ;\n    dcterms:source she:Vogel2020 ;\n    skos:definition \"soil attributes being measurable soil properties\" ;\n    skos:prefLabel \"soil attributes\" .\n\nshe:SoilQualityAssessment a skos:Concept ;\n    agrontology:usesProcess she:SensitiveSoilAttributes ;\n    dcterms:source she:B\u00fcnemann2018 ;\n    skos:prefLabel \"soil quality assessment\" .\n\nshe:LackOfKnowledge a skos:Concept ;\n    agrontology:isCauseOf she:ScarcityOfRecommendations ;\n    skos:prefLabel \"lack of knowledge\" .\n\nshe:Vogel2020 a dcterms:BibliographicResource ;\n    dcterms:creator \"Vogel et al.\" ;\n    dcterms:date \"2020\" .\n\n",
             "few_shot": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix she: <https://soilwise-he.github.io/soil-health#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n\nshe:ConceptualMechanisticRelationships a skos:Concept ;\n    skos:definition \"Clear relationships between indicators and soil functions.\" ;\n    skos:prefLabel \"conceptual or mechanistic relationships\" .\n\nshe:Indicators a skos:Concept ;\n    skos:definition \"Indicators are soil attributes that provide substantial information on soil functions.\" ;\n    skos:prefLabel \"indicators\" ;\n    skos:related she:InterpretativeFramework .\n\nshe:Parameters a skos:Concept ;\n    skos:prefLabel \"parameters\" .\n\nshe:SensitiveSoilAttributes a skos:Concept ;\n    skos:definition \"Attributes that reflect the capacity of a soil to function.\" ;\n    skos:prefLabel \"sensitive soil attributes\" ;\n    skos:related she:SoilFunctions .\n\nshe:SoilQualityAssessment a skos:Concept ;\n    dcterms:source she:BunemannEtAl2018 ;\n    skos:definition \"Relies on a set of sensitive soil attributes that reflect the capacity of a soil to function.\" ;\n    skos:prefLabel \"soil quality assessment\" .\n\nshe:WaterCapacity a skos:Concept ;\n    skos:broader she:SoilAttributes ;\n    skos:prefLabel \"water capacity\" .\n\nshe:BunemannEtAl2018 a dcterms:BibliographicResource ;\n    dcterms:date \"2018\" .\n\nshe:InterpretativeFramework a skos:Concept ;\n    skos:definition \"A framework where an indicator has meaning beyond the measure it represents.\" ;\n    skos:prefLabel \"interpretative framework\" .\n\nshe:SoilAttributes a skos:Concept ;\n    dcterms:source she:VogelEtAl2020 ;\n    skos:definition \"Measurable soil properties that provide substantial information on soil functions.\" ;\n    skos:prefLabel \"soil attributes\" .\n\nshe:SoilFunctions a skos:Concept ;\n    skos:prefLabel \"soil functions\" .\n\nshe:VogelEtAl2020 a dcterms:BibliographicResource ;\n    dcterms:date \"2020\" .\n\n"
+        },
+        {
+            "id": 11,
+            "zero_shot": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix she: <https://soilwise-he.github.io/soil-health#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n\nshe:BasicSoilParameters a skos:Concept ;\n    dcterms:source she:VanCampEtAl2004 ;\n    skos:definition \"Parameters that are required for the typological classification of soil.\" ;\n    skos:prefLabel \"basic soil parameters\" .\n\nshe:ComplexSoilParameters a skos:Concept ;\n    dcterms:source she:VogelEtAl2020 ;\n    skos:definition \"Parameters that are difficult to measure and are derived from basic parameters using models.\" ;\n    skos:prefLabel \"complex soil parameters\" .\n\nshe:DynamicSoilParameters a skos:Concept ;\n    dcterms:source she:VogelEtAl2020 ;\n    skos:definition \"Parameters which are sensitive to management and disturbance.\" ;\n    skos:prefLabel \"dynamic soil parameters\" .\n\nshe:GeneralSoilParameters a skos:Concept ;\n    dcterms:source she:VanCampEtAl2004 ;\n    skos:definition \"Basic parameters characterise the soil as required for its typological classification (mainly morphological and physical soil parameters).\" ;\n    skos:prefLabel \"general soil parameters\" .\n\nshe:PedoTransferFunctions a skos:Concept ;\n    skos:prefLabel \"pedo-transfer functions\" .\n\nshe:SpecificSoilParameters a skos:Concept ;\n    dcterms:source she:VanCampEtAl2004 ;\n    skos:definition \"Specific soil parameters address specific threats, hot spots and functions (obligatory and facultative parameters).\" ;\n    skos:prefLabel \"specific soil parameters\" .\n\nshe:StaticSoilParameters a skos:Concept ;\n    dcterms:source she:VogelEtAl2020 ;\n    skos:definition \"Parameters which characterise intrinsic soil properties that do not depend on management.\" ;\n    skos:prefLabel \"static soil parameters\" .\n\nshe:VanCampEtAl2004 a dcterms:BibliographicResource ;\n    dcterms:creator \"Van-Camp et al.\" ;\n    dcterms:date \"2004\" .\n\nshe:VogelEtAl2020 a dcterms:BibliographicResource ;\n    dcterms:creator \"Vogel et al.\" ;\n    dcterms:date \"2020\" .\n\n",
+            "step_by_step": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix she: <https://soilwise-he.github.io/soil-health#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n\nshe:ComplexParameters a skos:Concept ;\n    skos:prefLabel \"complex parameters\" ;\n    she:derivedFrom she:BasicSoilParameters ;\n    she:uses she:PedoTransferFunctions .\n\nshe:DynamicParameters a skos:Concept ;\n    dcterms:source she:Literature2 ;\n    skos:prefLabel \"dynamic parameters\" ;\n    she:sensitiveTo she:Management .\n\nshe:GeneralSoilParameters a skos:Concept ;\n    dcterms:source she:Literature1 ;\n    skos:prefLabel \"general soil parameters\" ;\n    she:characterises she:TypologicalClassification .\n\nshe:SpecificSoilParameters a skos:Concept ;\n    dcterms:source she:Literature1 ;\n    skos:prefLabel \"specific soil parameters\" ;\n    she:addresses she:Functions,\n        she:HotSpots,\n        she:Threats ;\n    she:includes she:FacultativeParameters,\n        she:ObligatoryParameters .\n\nshe:StaticParameters a skos:Concept ;\n    dcterms:source she:Literature2 ;\n    skos:prefLabel \"static parameters\" ;\n    she:characterises she:IntrinsicSoilProperties .\n\nshe:BasicSoilParameters a skos:Concept ;\n    skos:prefLabel \"basic parameters\" ;\n    she:includes she:MorphologicalSoilParameters,\n        she:PhysicalSoilParameters .\n\nshe:FacultativeParameters a skos:Concept ;\n    skos:prefLabel \"facultative parameters\" .\n\nshe:Functions a skos:Concept ;\n    skos:prefLabel \"functions\" .\n\nshe:HotSpots a skos:Concept ;\n    skos:prefLabel \"hot spots\" .\n\nshe:IntrinsicSoilProperties a skos:Concept ;\n    skos:prefLabel \"intrinsic soil properties\" .\n\nshe:MorphologicalSoilParameters a skos:Concept ;\n    skos:prefLabel \"morphological soil parameters\" .\n\nshe:ObligatoryParameters a skos:Concept ;\n    skos:prefLabel \"obligatory parameters\" .\n\nshe:PedoTransferFunctions a skos:Concept ;\n    skos:prefLabel \"pedo-transfer functions\" .\n\nshe:PhysicalSoilParameters a skos:Concept ;\n    skos:prefLabel \"physical soil parameters\" .\n\nshe:Threats a skos:Concept ;\n    skos:prefLabel \"threats\" .\n\nshe:TypologicalClassification a skos:Concept ;\n    skos:prefLabel \"typological classification\" .\n\nshe:Literature1 a dcterms:BibliographicResource ;\n    dcterms:creator \"Van-Camp et al.\" ;\n    dcterms:date \"2004\" ;\n    dcterms:identifier \"Van-Camp et al. (2004c)\" .\n\nshe:Literature2 a dcterms:BibliographicResource ;\n    dcterms:creator \"Vogel et al.\" ;\n    dcterms:date \"2020\" .\n\n",
+            "ontology_aware": "@prefix agrontology: <http://aims.fao.org/aos/agrontology#> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix she: <https://soilwise-he.github.io/soil-health#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n\nshe:ComplexParameters a skos:Concept ;\n    agrontology:isDerivedFrom she:BasicParameters ;\n    agrontology:usingValue she:PedotransferFunctions ;\n    skos:prefLabel \"complex parameters\" .\n\nshe:FacultativeParameters a skos:Concept ;\n    skos:prefLabel \"facultative parameters\" .\n\nshe:GeneralSoilParameters a skos:Concept ;\n    dcterms:source dcterms:BibliographicResource ;\n    skos:prefLabel \"general soil parameters\" .\n\nshe:HotSpots a skos:Concept ;\n    skos:prefLabel \"hot spots\" .\n\nshe:ObligatoryParameters a skos:Concept ;\n    skos:prefLabel \"obligatory parameters\" .\n\nshe:SoilAttributes a skos:Concept ;\n    agrontology:isClassifiedInto she:DynamicParameters,\n        she:StaticParameters ;\n    dcterms:source dcterms:BibliographicResource_Vogel ;\n    skos:prefLabel \"soil attributes\" .\n\nshe:SoilFunctions a skos:Concept ;\n    skos:prefLabel \"soil functions\" .\n\nshe:SpecificSoilParameters a skos:Concept ;\n    dcterms:source dcterms:BibliographicResource ;\n    skos:prefLabel \"specific soil parameters\" .\n\nshe:SpecificThreats a skos:Concept ;\n    skos:prefLabel \"specific threats\" .\n\ndcterms:BibliographicResource_Vogel a dcterms:BibliographicResource ;\n    dcterms:creator \"Vogel et al.\" ;\n    dcterms:date \"2020\" ;\n    dcterms:identifier \"Vogel et al. (2020)\" .\n\nshe:BasicParameters a skos:Concept ;\n    agrontology:characterises she:Soil ;\n    agrontology:includes she:MorphologicalSoilParameters,\n        she:PhysicalSoilParameters ;\n    skos:prefLabel \"basic parameters\" .\n\nshe:Disturbance a skos:Concept ;\n    skos:prefLabel \"disturbance\" .\n\nshe:DynamicParameters a skos:Concept ;\n    agrontology:isSensitiveTo she:Disturbance,\n        she:SoilManagement ;\n    skos:prefLabel \"dynamic parameters\" .\n\nshe:IntrinsicSoilProperties a skos:Concept ;\n    skos:prefLabel \"intrinsic soil properties\" .\n\nshe:MorphologicalSoilParameters a skos:Concept ;\n    skos:prefLabel \"morphological soil parameters\" .\n\nshe:PedotransferFunctions a skos:Concept ;\n    skos:prefLabel \"pedo-transfer functions\" .\n\nshe:PhysicalSoilParameters a skos:Concept ;\n    skos:prefLabel \"physical soil parameters\" .\n\nshe:Soil a skos:Concept ;\n    skos:prefLabel \"soil\" .\n\nshe:SoilManagement a skos:Concept ;\n    skos:prefLabel \"management\" .\n\nshe:StaticParameters a skos:Concept ;\n    agrontology:characterises she:IntrinsicSoilProperties ;\n    skos:prefLabel \"static parameters\" .\n\ndcterms:BibliographicResource a dcterms:BibliographicResource ;\n    dcterms:creator \"Van-Camp et al.\" ;\n    dcterms:date \"2004\" ;\n    dcterms:identifier \"Van-Camp et al. (2004c)\" .\n\n",
+            "few_shot": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix she: <https://soilwise-he.github.io/soil-health#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n\nshe:BasicSoilParameters a skos:Concept ;\n    skos:definition \"Parameters that characterize the soil as required for its typological classification, mainly morphological and physical soil parameters.\" ;\n    skos:narrower she:MorphologicalSoilParameters,\n        she:PhysicalSoilParameters ;\n    skos:prefLabel \"basic soil parameters\" .\n\nshe:ComplexParameters a skos:Concept ;\n    skos:definition \"Parameters difficult to measure, derived from basic parameters using models such as pedo-transfer functions.\" ;\n    skos:prefLabel \"complex parameters\" .\n\nshe:PedoTransferFunctions a skos:Concept ;\n    skos:prefLabel \"pedo-transfer functions\" .\n\nshe:SpecificSoilParameters a skos:Concept ;\n    skos:definition \"Parameters used to address specific threats, hot spots, and functions, including obligatory and facultative parameters.\" ;\n    skos:narrower she:FacultativeParameters,\n        she:ObligatoryParameters ;\n    skos:prefLabel \"specific soil parameters\" .\n\nshe:VanCampEtAl2004c a dcterms:BibliographicResource ;\n    dcterms:date \"2004\" ;\n    dcterms:source she:SoilParameters .\n\nshe:VogelEtAl2020 a dcterms:BibliographicResource ;\n    dcterms:date \"2020\" ;\n    dcterms:source she:SoilAttributes .\n\nshe:DynamicParameters a skos:Concept ;\n    skos:definition \"Parameters sensitive to management and disturbance.\" ;\n    skos:prefLabel \"dynamic parameters\" .\n\nshe:FacultativeParameters a skos:Concept ;\n    skos:prefLabel \"facultative parameters\" .\n\nshe:MorphologicalSoilParameters a skos:Concept ;\n    skos:prefLabel \"morphological soil parameters\" .\n\nshe:ObligatoryParameters a skos:Concept ;\n    skos:prefLabel \"obligatory parameters\" .\n\nshe:PhysicalSoilParameters a skos:Concept ;\n    skos:prefLabel \"physical soil parameters\" .\n\nshe:SoilAttributes a skos:Concept ;\n    skos:definition \"Measured soil parameters identified and classified by Vogel et al. (2020), including dynamic and static parameters.\" ;\n    skos:narrower she:DynamicParameters,\n        she:StaticParameters ;\n    skos:prefLabel \"soil attributes\" .\n\nshe:SoilParameters a skos:Concept ;\n    skos:definition \"General and specific soil parameters; basic parameters characterize the soil for typological classification, whereas specific soil parameters address specific threats, hot spots and functions.\" ;\n    skos:prefLabel \"soil parameters\" .\n\nshe:StaticParameters a skos:Concept ;\n    skos:definition \"Parameters that characterize intrinsic soil properties not dependent on management.\" ;\n    skos:prefLabel \"static parameters\" .\n\n"
+        },
+        {
+            "id": 12,
+            "zero_shot": "",
+            "step_by_step": "",
+            "ontology_aware": "",
+            "few_shot": ""
+        },
+        {
+            "id": 13,
+            "zero_shot": "",
+            "step_by_step": "",
+            "ontology_aware": "",
+            "few_shot": ""
+        },
+        {
+            "id": 14,
+            "zero_shot": "",
+            "step_by_step": "",
+            "ontology_aware": "",
+            "few_shot": ""
+        },
+        {
+            "id": 15,
+            "zero_shot": "",
+            "step_by_step": "",
+            "ontology_aware": "",
+            "few_shot": ""
+        },
+        {
+            "id": 16,
+            "zero_shot": "",
+            "step_by_step": "",
+            "ontology_aware": "",
+            "few_shot": ""
+        },
+        {
+            "id": 17,
+            "zero_shot": "",
+            "step_by_step": "",
+            "ontology_aware": "",
+            "few_shot": ""
+        },
+        {
+            "id": 18,
+            "zero_shot": "",
+            "step_by_step": "",
+            "ontology_aware": "",
+            "few_shot": ""
+        },
+        {
+            "id": 19,
+            "zero_shot": "",
+            "step_by_step": "",
+            "ontology_aware": "",
+            "few_shot": ""
+        },
+        {
+            "id": 20,
+            "zero_shot": "",
+            "step_by_step": "",
+            "ontology_aware": "",
+            "few_shot": ""
+        },
+        {
+            "id": 21,
+            "zero_shot": "",
+            "step_by_step": "",
+            "ontology_aware": "",
+            "few_shot": ""
+        },
+        {
+            "id": 22,
+            "zero_shot": "",
+            "step_by_step": "",
+            "ontology_aware": "",
+            "few_shot": ""
+        },
+        {
+            "id": 23,
+            "zero_shot": "",
+            "step_by_step": "",
+            "ontology_aware": "",
+            "few_shot": ""
+        },
+        {
+            "id": 24,
+            "zero_shot": "",
+            "step_by_step": "",
+            "ontology_aware": "",
+            "few_shot": ""
         }
     ]
 }
