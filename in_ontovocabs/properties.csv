@@ -48,3 +48,6 @@ agrontology:isIncludedIn,http://aims.fao.org/aos/agrontology#isIncludedIn,is inc
 agrontology:isDerivedFrom,http://aims.fao.org/aos/agrontology#isDerivedFrom,is derived from
 agrontology:isUseOf,http://aims.fao.org/aos/agrontology#isUseOf,is use of
 agrontology:isProducedBy,http://aims.fao.org/aos/agrontology#isProducedBy,is produced by
+rdf:type,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,type
+dcterms:title,http://purl.org/dc/terms/title,title
+dcterms:creator,http://purl.org/dc/terms/creator,creator
