@@ -42,7 +42,6 @@ agrontology:isAchievedByMeansOf,http://aims.fao.org/aos/agrontology#isAchievedBy
 agrontology:usingValue,http://aims.fao.org/aos/agrontology#usingValue,using value
 qudt:numericValue,http://qudt.org/schema/qudt/numericValue,numeric value
 agrontology:isUsedAs,http://aims.fao.org/aos/agrontology#isUsedAs,is used as
-agrontology:indicates,http://aims.fao.org/aos/agrontology#indicates,indicates
 qudt:symbol,http://qudt.org/schema/qudt/symbol,symbol
 agrontology:performs,http://aims.fao.org/aos/agrontology#performs,performs
 agrontology:isIncludedIn,http://aims.fao.org/aos/agrontology#isIncludedIn,is included in
