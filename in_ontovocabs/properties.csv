@@ -4,8 +4,8 @@ skos:narrower,http://www.w3.org/2004/02/skos/core#narrower,has narrower
 skos:related,http://www.w3.org/2004/02/skos/core#related,has related
 dcterms:date,http://purl.org/dc/terms/date,date
 dcterms:source,http://purl.org/dc/terms/source,source
-she:provides,http://soilwise-he.github.io/soil-health#provides,provides
-she:variesIn,http://soilwise-he.github.io/soil-health#variesIn,varies in
+she:provides,https://soilwise-he.github.io/soil-health#provides,provides
+she:variesIn,https://soilwise-he.github.io/soil-health#variesIn,varies in
 agrontology:isComposedOf,http://aims.fao.org/aos/agrontology#isComposedOf,is composed of
 agrontology:isPartOf,http://aims.fao.org/aos/agrontology#isPartOf,is part of
 agrontology:includes,http://aims.fao.org/aos/agrontology#includes,includes
