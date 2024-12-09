@@ -25,3 +25,5 @@ http://aims.fao.org/aos/agrontology#isUsedAs,http://aims.fao.org/aos/agrontology
 http://aims.fao.org/aos/agrontology#performs,http://aims.fao.org/aos/agrontology#isPerformedBy
 http://aims.fao.org/aos/agrontology#isDerivedFrom,http://aims.fao.org/aos/agrontology#isSourceOf
 http://aims.fao.org/aos/agrontology#isProducedBy,http://aims.fao.org/aos/agrontology#produces
+http://purl.obolibrary.org/obo/RO_0002212,http://purl.obolibrary.org/obo/RO_0002335
+https://soilwise-he.github.io/soil-health#alters,https://soilwise-he.github.io/soil-health#isAlteredBy

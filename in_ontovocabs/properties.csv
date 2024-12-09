@@ -5,6 +5,7 @@ skos:related,http://www.w3.org/2004/02/skos/core#related,has related
 dcterms:date,http://purl.org/dc/terms/date,date
 dcterms:source,http://purl.org/dc/terms/source,source
 she:provides,https://soilwise-he.github.io/soil-health#provides,provides
+she:isProvidedBy,https://soilwise-he.github.io/soil-health#isProvidedBy,is provided by
 she:variesIn,https://soilwise-he.github.io/soil-health#variesIn,varies in
 agrontology:isComposedOf,http://aims.fao.org/aos/agrontology#isComposedOf,is composed of
 agrontology:isPartOf,http://aims.fao.org/aos/agrontology#isPartOf,is part of
@@ -67,3 +68,9 @@ agrontology:produces,http://aims.fao.org/aos/agrontology#produces,produces
 rdf:type,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,type
 dcterms:title,http://purl.org/dc/terms/title,title
 dcterms:creator,http://purl.org/dc/terms/creator,creator
+t4fs:0000577,http://purl.obolibrary.org/obo/T4FS_0000577,requires knowledge about
+ro:0002212,http://purl.obolibrary.org/obo/RO_0002212,negatively regulates
+ro:0002335,http://purl.obolibrary.org/obo/RO_0002335,negatively regulated by
+she:alters,https://soilwise-he.github.io/soil-health#alters,alters
+she:isAlteredBy,https://soilwise-he.github.io/soil-health#isAlteredBy,is altered by
+ro:0002326,http://purl.obolibrary.org/obo/RO_0002326,contributes to
