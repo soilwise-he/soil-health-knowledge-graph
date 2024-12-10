@@ -74,3 +74,4 @@ ro:0002335,http://purl.obolibrary.org/obo/RO_0002335,negatively regulated by
 she:alters,https://soilwise-he.github.io/soil-health#alters,alters
 she:isAlteredBy,https://soilwise-he.github.io/soil-health#isAlteredBy,is altered by
 ro:0002326,http://purl.obolibrary.org/obo/RO_0002326,contributes to
+schema:isBasedOn,https://schema.org/isBasedOn,is based on
