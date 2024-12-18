@@ -1,3 +1,5 @@
+# Originally from https://github.com/ChristopheCruz/LLM4KGC/blob/main/Evaluate_graphs/graph_matching.py
+
 import numpy as np
 from rouge_score import rouge_scorer
 from bert_score import score as score_bert
@@ -439,4 +441,3 @@ def calculate_omission(lst):
     if omiss>0:
         return True
     #return omiss  # We can do this if we want to return the number exact of omissions in each graph
-

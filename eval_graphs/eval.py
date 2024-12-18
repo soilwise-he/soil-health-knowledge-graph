@@ -1,3 +1,5 @@
+# Originally from https://github.com/ChristopheCruz/LLM4KGC/blob/main/Evaluate_graphs/eval.py
+
 import ast
 import argparse
 from graph_matching import split_to_edges, get_tokens, get_bleu_rouge, get_bert_score, get_ged, get_triple_match_f1, get_graph_match_accuracy, calculate_hallucination, calculate_omission, get_oep
