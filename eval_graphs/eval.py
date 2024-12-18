@@ -65,6 +65,7 @@ if __name__ == '__main__':
     print(f'G-BertScore Recall Score: {recalls_BS.sum() / len(gold_graphs):.4f}')
     print(f'G-BertScore F1 Score: {f1s_BS.sum() / len(gold_graphs):.4f}\n')
 
+'''
     #Compute OEP (hallucination and omission)
     all_oep = []
     hall = 0
@@ -88,3 +89,4 @@ if __name__ == '__main__':
         overall_ged += ged
 
     print(f'Graph Edit Distance (GED): {overall_ged / len(gold_graphs):.4f}\n')
+'''

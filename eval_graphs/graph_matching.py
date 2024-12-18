@@ -347,11 +347,11 @@ def get_ged(gold_graph, pred_graph=None):
     g1 = g1.to_undirected
     g2 = g2.to_undirected
 
-    nx.is_weighted(g1)
-    nx.is_weighted(g2)
+    G1 = nx.Graph()
+    G2 = nx.Graph()
 
-    print(nx.is_weighted(g1))
-    print(nx.is_weighted(g2))
+    G1.add_edges_from((u, v) for u, v, _ in g1.edges(data=True))
+    G2.add_edges_from((u, v) for u, v, _ in g2.edges(data=True))
 
     ged = nx.graph_edit_distance(g1, g2, node_match=return_eq_node, edge_match=return_eq_edge)
 
