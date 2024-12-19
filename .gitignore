@@ -6,3 +6,6 @@ config
 
 # Ignore Python caches
 __pycache__/
+
+# Ignore drawio image
+imgs/LLM4KG.drawio
