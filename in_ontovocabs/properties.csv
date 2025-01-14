@@ -75,3 +75,7 @@ she:alters,https://soilwise-he.github.io/soil-health#alters,alters
 she:isAlteredBy,https://soilwise-he.github.io/soil-health#isAlteredBy,is altered by
 ro:0002326,http://purl.obolibrary.org/obo/RO_0002326,contributes to
 schema:isBasedOn,https://schema.org/isBasedOn,is based on
+she:isIndicatedBy,https://soilwise-he.github.io/soil-health#isIndicatedBy,is indicated by
+she:indicates,https://soilwise-he.github.io/soil-health#indicates,indicates
+oae:0000186,http://purl.obolibrary.org/obo/OAE_0000186,induces
+oae:0000025,http://purl.obolibrary.org/obo/OAE_0000025,induced by
