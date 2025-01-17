@@ -345,7 +345,7 @@ def get_ged(gold_graph, pred_graph=None):
         g2.add_node(str(edge[2]).lower().strip(), label=str(edge[2]).lower().strip())
         g2.add_edge(str(edge[0]).lower().strip(), str(edge[2]).lower().strip(), label=str(edge[1]).lower().strip())
 
-    ged = nx.graph_edit_distance(g1, g2, node_match=return_eq_node, edge_match=return_eq_edge, timeout=5)
+    ged = nx.graph_edit_distance(g1, g2, node_match=return_eq_node, edge_match=return_eq_edge, timeout=100)
 
     normalizing_constant = g1.number_of_nodes() + g1.number_of_edges() + g2.number_of_nodes() + g2.number_of_edges()
 
