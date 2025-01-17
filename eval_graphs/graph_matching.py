@@ -290,7 +290,6 @@ def return_eq_node(node1, node2):
     - Equality of nodes based on label
     """
     return node1['label'] == node2['label']
-    return node1['label'] == node2['label']
 
 
 def return_eq_edge(edge1, edge2):
@@ -331,7 +330,7 @@ def get_ged(gold_graph, pred_graph=None):
     # In such a case, for GED to be the worst, we assume that all nodes and edges of the predicted graph are deleted and
     # then all nodes and edges of the gold graph are added.
     # Note that a stricter upper bound can be computed by considering some replacement operations but we ignore that for convenience
-    normalizing_constant = g1.number_of_nodes() + g1.number_of_edges() + 30
+    
 
     if pred_graph is None:
         return 1
@@ -346,16 +345,9 @@ def get_ged(gold_graph, pred_graph=None):
         g2.add_node(str(edge[2]).lower().strip(), label=str(edge[2]).lower().strip())
         g2.add_edge(str(edge[0]).lower().strip(), str(edge[2]).lower().strip(), label=str(edge[1]).lower().strip())
 
-    g1 = g1.to_undirected
-    g2 = g2.to_undirected
+    ged = nx.graph_edit_distance(g1, g2, node_match=return_eq_node, edge_match=return_eq_edge, timeout=5)
 
-    G1 = nx.Graph()
-    G2 = nx.Graph()
-
-    G1.add_edges_from((u, v) for u, v, _ in g1.edges(data=True))
-    G2.add_edges_from((u, v) for u, v, _ in g2.edges(data=True))
-
-    ged = nx.graph_edit_distance(g1, g2, node_match=return_eq_node, edge_match=return_eq_edge)
+    normalizing_constant = g1.number_of_nodes() + g1.number_of_edges() + g2.number_of_nodes() + g2.number_of_edges()
 
     assert ged <= normalizing_constant
 
