@@ -79,3 +79,5 @@ she:isIndicatedBy,https://soilwise-he.github.io/soil-health#isIndicatedBy,is ind
 she:indicates,https://soilwise-he.github.io/soil-health#indicates,indicates
 oae:0000186,http://purl.obolibrary.org/obo/OAE_0000186,induces
 oae:0000025,http://purl.obolibrary.org/obo/OAE_0000025,induced by
+ro:0002327,http://purl.obolibrary.org/obo/RO_0002327,enables
+ro:0002333,http://purl.obolibrary.org/obo/RO_0002333,enabled by
