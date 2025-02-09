@@ -81,3 +81,5 @@ oae:0000186,http://purl.obolibrary.org/obo/OAE_0000186,induces
 oae:0000025,http://purl.obolibrary.org/obo/OAE_0000025,induced by
 ro:0002327,http://purl.obolibrary.org/obo/RO_0002327,enables
 ro:0002333,http://purl.obolibrary.org/obo/RO_0002333,enabled by
+afop:AFX_0002806,http://purl.allotrope.org/ontologies/property#AFX_0002806,classifies
+afop:AFX_0001154,http://purl.allotrope.org/ontologies/property#AFX_0001154,has classification
