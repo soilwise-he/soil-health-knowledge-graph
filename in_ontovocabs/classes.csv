@@ -4,9 +4,9 @@ dcterms:BibliographicResource,http://purl.org/dc/terms/BibliographicResource,Bib
 dcterms:Policy,http://purl.org/dc/terms/Policy,Policy
 dcterms:Standard,http://purl.org/dc/terms/Standard,Standard
 dcmitype:Dataset,http://purl.org/dc/dcmitype/Dataset,Dataset
-sio:SIO_000080,http://semanticscience.org/resource/SIO_000080,Figure
 qudt:QuantityValue,http://qudt.org/schema/qudt/QuantityValue,Quantity Value
 qudt:SystemOfQuantityKinds,http://qudt.org/schema/qudt/SystemOfQuantityKinds,System Of Quantity Kinds
 qudt:Unit,http://qudt.org/schema/qudt/Unit,Unit
 eli:LegalResource,http://data.europa.eu/eli/ontology#LegalResource,Legal Resource
 afor:AFR_0000916,http://purl.allotrope.org/ontologies/result#AFR_0000916,Classification
+sio:SIO_000510,http://semanticscience.org/resource/SIO_000510,Model
