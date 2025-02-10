@@ -83,3 +83,5 @@ ro:0002327,http://purl.obolibrary.org/obo/RO_0002327,enables
 ro:0002333,http://purl.obolibrary.org/obo/RO_0002333,enabled by
 afop:AFX_0002806,http://purl.allotrope.org/ontologies/property#AFX_0002806,classifies
 afop:AFX_0001154,http://purl.allotrope.org/ontologies/property#AFX_0001154,has classification
+wikip:P1889,https://www.wikidata.org/wiki/Property:P1889,different from
+ro:0002502,http://purl.obolibrary.org/obo/RO_0002502,depends on

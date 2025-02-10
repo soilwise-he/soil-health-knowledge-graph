@@ -4,7 +4,7 @@ dcterms:BibliographicResource,http://purl.org/dc/terms/BibliographicResource,Bib
 dcterms:Policy,http://purl.org/dc/terms/Policy,Policy
 dcterms:Standard,http://purl.org/dc/terms/Standard,Standard
 dcmitype:Dataset,http://purl.org/dc/dcmitype/Dataset,Dataset
-dcmitype:Image,http://purl.org/dc/dcmitype/Image,Image
+sio:SIO_000080,http://semanticscience.org/resource/SIO_000080,Figure
 qudt:QuantityValue,http://qudt.org/schema/qudt/QuantityValue,Quantity Value
 qudt:SystemOfQuantityKinds,http://qudt.org/schema/qudt/SystemOfQuantityKinds,System Of Quantity Kinds
 qudt:Unit,http://qudt.org/schema/qudt/Unit,Unit
