@@ -88,3 +88,5 @@ ro:0002502,http://purl.obolibrary.org/obo/RO_0002502,depends on
 she:characterises,https://soilwise-he.github.io/soil-health#characterizes,characterises
 she:isCharacterisedBy,https://soilwise-he.github.io/soil-health#isCharacterisedBy,is characterised by
 schema:assesses,https://schema.org/assesses,assesses
+ro:0002213,http://purl.obolibrary.org/obo/RO_0002213,positively regulates
+ro:0002336,http://purl.obolibrary.org/obo/RO_0002336,positively regulated by
