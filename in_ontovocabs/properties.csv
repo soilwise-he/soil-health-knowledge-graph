@@ -91,3 +91,7 @@ schema:assesses,https://schema.org/assesses,assesses
 ro:0002213,http://purl.obolibrary.org/obo/RO_0002213,positively regulates
 ro:0002336,http://purl.obolibrary.org/obo/RO_0002336,positively regulated by
 she:inputsFrom,https://soilwise-he.github.io/soil-health#inputsFrom,inputs from
+sweets:hasImpactOn,http://sweetontology.net/relaSci/hasImpactOn,has impact on
+ino:0000082,http://purl.obolibrary.org/obo/INO_0000082,controls
+sweetp:wasControlledBy,http://sweetontology.net/relaProvenance/wasControlledBy,was controlled by
+ro:0002434,http://purl.obolibrary.org/obo/RO_0002434,interacts with
