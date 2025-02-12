@@ -35,3 +35,4 @@ https://www.wikidata.org/wiki/Property:P1889,https://www.wikidata.org/wiki/Prope
 https://soilwise-he.github.io/soil-health#characterizes,https://soilwise-he.github.io/soil-health#isCharacterizedBy
 http://purl.obolibrary.org/obo/RO_0002213,http://purl.obolibrary.org/obo/RO_0002336
 http://sweetontology.net/relaProvenance/wasControlledBy,http://purl.obolibrary.org/obo/INO_0000082
+https://w3id.org/biolink/consumed_by,https://w3id.org/biolink/consumes
