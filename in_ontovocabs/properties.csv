@@ -68,32 +68,32 @@ agrontology:produces,http://aims.fao.org/aos/agrontology#produces,produces
 rdf:type,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,type
 dcterms:title,http://purl.org/dc/terms/title,title
 dcterms:creator,http://purl.org/dc/terms/creator,creator
-t4fs:0000577,http://purl.obolibrary.org/obo/T4FS_0000577,requires knowledge about
-ro:0002212,http://purl.obolibrary.org/obo/RO_0002212,negatively regulates
-ro:0002335,http://purl.obolibrary.org/obo/RO_0002335,negatively regulated by
+obo:T4FS_0000577,http://purl.obolibrary.org/obo/T4FS_0000577,requires knowledge about
+obo:RO_0002212,http://purl.obolibrary.org/obo/RO_0002212,negatively regulates
+obo:RO_0002335,http://purl.obolibrary.org/obo/RO_0002335,negatively regulated by
 she:alters,https://soilwise-he.github.io/soil-health#alters,alters
 she:isAlteredBy,https://soilwise-he.github.io/soil-health#isAlteredBy,is altered by
-ro:0002326,http://purl.obolibrary.org/obo/RO_0002326,contributes to
+obo:RO_0002326,http://purl.obolibrary.org/obo/RO_0002326,contributes to
 schema:isBasedOn,https://schema.org/isBasedOn,is based on
 she:isIndicatedBy,https://soilwise-he.github.io/soil-health#isIndicatedBy,is indicated by
 she:indicates,https://soilwise-he.github.io/soil-health#indicates,indicates
-oae:0000186,http://purl.obolibrary.org/obo/OAE_0000186,induces
-oae:0000025,http://purl.obolibrary.org/obo/OAE_0000025,induced by
-ro:0002327,http://purl.obolibrary.org/obo/RO_0002327,enables
-ro:0002333,http://purl.obolibrary.org/obo/RO_0002333,enabled by
+obo:OAE_0000186,http://purl.obolibrary.org/obo/OAE_0000186,induces
+obo:OAE_0000025,http://purl.obolibrary.org/obo/OAE_0000025,induced by
+obo:RO_0002327,http://purl.obolibrary.org/obo/RO_0002327,enables
+obo:RO_0002333,http://purl.obolibrary.org/obo/RO_0002333,enabled by
 afop:AFX_0002806,http://purl.allotrope.org/ontologies/property#AFX_0002806,classifies
 afop:AFX_0001154,http://purl.allotrope.org/ontologies/property#AFX_0001154,has classification
 wikip:P1889,https://www.wikidata.org/wiki/Property:P1889,different from
-ro:0002502,http://purl.obolibrary.org/obo/RO_0002502,depends on
+obo:RO_0002502,http://purl.obolibrary.org/obo/RO_0002502,depends on
 she:characterises,https://soilwise-he.github.io/soil-health#characterizes,characterises
 she:isCharacterisedBy,https://soilwise-he.github.io/soil-health#isCharacterisedBy,is characterised by
 schema:assesses,https://schema.org/assesses,assesses
-ro:0002213,http://purl.obolibrary.org/obo/RO_0002213,positively regulates
-ro:0002336,http://purl.obolibrary.org/obo/RO_0002336,positively regulated by
+obo:RO_0002213,http://purl.obolibrary.org/obo/RO_0002213,positively regulates
+obo:RO_0002336,http://purl.obolibrary.org/obo/RO_0002336,positively regulated by
 she:inputsFrom,https://soilwise-he.github.io/soil-health#inputsFrom,inputs from
 sweets:hasImpactOn,http://sweetontology.net/relaSci/hasImpactOn,has impact on
-ino:0000082,http://purl.obolibrary.org/obo/INO_0000082,controls
+obo:INO_0000082,http://purl.obolibrary.org/obo/INO_0000082,controls
 sweetp:wasControlledBy,http://sweetontology.net/relaProvenance/wasControlledBy,was controlled by
-ro:0002434,http://purl.obolibrary.org/obo/RO_0002434,interacts with
+obo:RO_0002434,http://purl.obolibrary.org/obo/RO_0002434,interacts with
 biolink:consumed_by,https://w3id.org/biolink/consumed_by,consumed by
 biolink:consumes,https://w3id.org/biolink/consumes,consumes
