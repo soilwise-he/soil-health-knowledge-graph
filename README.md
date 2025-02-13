@@ -19,8 +19,8 @@ See [Issues](https://github.com/soilwise-he/soil-health-knowledge-graph/issues).
 - [Semanticscience Integrated Ontology](https://sio.semanticscience.org/)
 - [Open Biological and Biomedical Ontology](https://obofoundry.org/)
 - [Schema.org](https://schema.org/)
-- [wikidata](https://www.wikidata.org/)
-- [biolink](https://biolink.github.io/biolink-model/)
+- [Wikidata](https://www.wikidata.org/)
+- [Biolink](https://biolink.github.io/biolink-model/)
 - [SWEET ontology](http://sweetontology.net/)
 - [Allotrope Foundation Ontology](https://www.allotrope.org/ontologies)
 
