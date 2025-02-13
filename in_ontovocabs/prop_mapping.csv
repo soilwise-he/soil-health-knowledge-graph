@@ -34,5 +34,5 @@ http://purl.allotrope.org/ontologies/property#AFX_0001154,http://purl.allotrope.
 https://www.wikidata.org/wiki/Property:P1889,https://www.wikidata.org/wiki/Property:P1889
 https://soilwise-he.github.io/soil-health#characterizes,https://soilwise-he.github.io/soil-health#isCharacterizedBy
 http://purl.obolibrary.org/obo/RO_0002213,http://purl.obolibrary.org/obo/RO_0002336
-http://sweetontology.net/relaProvenance/wasControlledBy,http://purl.obolibrary.org/obo/INO_0000082
+http://purl.obolibrary.org/obo/INO_0000082,http://sweetontology.net/relaProvenance/wasControlledBy
 https://w3id.org/biolink/consumed_by,https://w3id.org/biolink/consumes
