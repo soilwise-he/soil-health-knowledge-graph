@@ -31,8 +31,8 @@ https://soilwise-he.github.io/soil-health#isIndicatedBy,https://soilwise-he.gith
 http://purl.obolibrary.org/obo/OAE_0000025,http://purl.obolibrary.org/obo/OAE_0000186
 http://purl.obolibrary.org/obo/RO_0002327,http://purl.obolibrary.org/obo/RO_0002333
 http://purl.allotrope.org/ontologies/property#AFX_0001154,http://purl.allotrope.org/ontologies/property#AFX_0002806
-https://www.wikidata.org/wiki/Property:P1889,https://www.wikidata.org/wiki/Property:P1889
+http://www.wikidata.org/prop/direct/P1889,http://www.wikidata.org/prop/direct/P1889
 https://soilwise-he.github.io/soil-health#characterizes,https://soilwise-he.github.io/soil-health#isCharacterizedBy
 http://purl.obolibrary.org/obo/RO_0002213,http://purl.obolibrary.org/obo/RO_0002336
 http://purl.obolibrary.org/obo/INO_0000082,http://sweetontology.net/relaProvenance/wasControlledBy
-https://w3id.org/biolink/consumed_by,https://w3id.org/biolink/consumes
+https://w3id.org/biolink/vocab/consumed_by,https://w3id.org/biolink/vocab/consumes
