@@ -14,6 +14,7 @@ skos:definition,http://www.w3.org/2004/02/skos/core#definition,definition
 skos:prefLabel,http://www.w3.org/2004/02/skos/core#prefLabel,preferred label
 agrontology:affects,http://aims.fao.org/aos/agrontology#affects,affects
 agrontology:hasAbbreviation,http://aims.fao.org/aos/agrontology#hasAbbreviation,has abbreviation
+agrontology:isAbbreviationOf,http://aims.fao.org/aos/agrontology#isAbbreviationOf,is abbreviation of
 agrontology:measures,http://aims.fao.org/aos/agrontology#measures,measures
 dcterms:replaces,http://purl.org/dc/terms/replaces,replaces
 agrontology:isAffectedBy,http://aims.fao.org/aos/agrontology#isAffectedBy,is affected by
@@ -41,19 +42,9 @@ agrontology:smallerThan,http://aims.fao.org/aos/agrontology#smallerThan,smaller 
 agrontology:greaterThan,http://aims.fao.org/aos/agrontology#greaterThan,greater than
 agrontology:isProcessFor,http://aims.fao.org/aos/agrontology#isProcessFor,is process for
 agrontology:usesProcess,http://aims.fao.org/aos/agrontology#usesProcess,uses process
-agrontology:hasComponent,http://aims.fao.org/aos/agrontology#hasComponent,has component
-agrontology:isComponentOf,http://aims.fao.org/aos/agrontology#isComponentOf,is component of
 agrontology:hasPart,http://aims.fao.org/aos/agrontology#hasPart,has part
 agrontology:follows,http://aims.fao.org/aos/agrontology#follows,follows
 agrontology:precedes,http://aims.fao.org/aos/agrontology#precedes,precedes
-agrontology:hasComposition,http://aims.fao.org/aos/agrontology#hasComposition,has composition
-agrontology:isCompositionOf,http://aims.fao.org/aos/agrontology#isCompositionOf,is composition of
-agrontology:isOutputFrom,http://aims.fao.org/aos/agrontology#isOutputFrom,is output from
-agrontology:isInputFor,http://aims.fao.org/aos/agrontology#isInputFor,is input for
-agrontology:isAchievedByMeansOf,http://aims.fao.org/aos/agrontology#isAchievedByMeansOf,is achieved by means of
-agrontology:hasGoalOrProcess,http://aims.fao.org/aos/agrontology#hasGoalOrProcess,has goal or process
-agrontology:usingValue,http://aims.fao.org/aos/agrontology#usingValue,using value
-agrontology:valueUsedIn,http://aims.fao.org/aos/agrontology#valueUsedIn,value used in
 qudt:numericValue,http://qudt.org/schema/qudt/numericValue,numeric value
 agrontology:isUsedAs,http://aims.fao.org/aos/agrontology#isUsedAs,is used as
 qudt:symbol,http://qudt.org/schema/qudt/symbol,symbol
@@ -63,8 +54,6 @@ agrontology:isIncludedIn,http://aims.fao.org/aos/agrontology#isIncludedIn,is inc
 agrontology:isDerivedFrom,http://aims.fao.org/aos/agrontology#isDerivedFrom,is derived from
 agrontology:isSourceOf,http://aims.fao.org/aos/agrontology#isSourceOf,is source of
 agrontology:isUseOf,http://aims.fao.org/aos/agrontology#isUseOf,is use of
-agrontology:isProducedBy,http://aims.fao.org/aos/agrontology#isProducedBy,is produced by
-agrontology:produces,http://aims.fao.org/aos/agrontology#produces,produces
 rdf:type,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,type
 dcterms:title,http://purl.org/dc/terms/title,title
 dcterms:creator,http://purl.org/dc/terms/creator,creator

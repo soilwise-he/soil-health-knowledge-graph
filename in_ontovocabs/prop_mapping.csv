@@ -15,16 +15,11 @@ http://aims.fao.org/aos/agrontology#makeUseOf,http://aims.fao.org/aos/agrontolog
 http://aims.fao.org/aos/agrontology#influences,http://aims.fao.org/aos/agrontology#isInfluencedBy
 http://aims.fao.org/aos/agrontology#smallerThan,http://aims.fao.org/aos/agrontology#greaterThan
 http://aims.fao.org/aos/agrontology#isProcessFor,http://aims.fao.org/aos/agrontology#usesProcess
-http://aims.fao.org/aos/agrontology#hasComponent,http://aims.fao.org/aos/agrontology#isComponentOf
 http://aims.fao.org/aos/agrontology#follows,http://aims.fao.org/aos/agrontology#precedes
-http://aims.fao.org/aos/agrontology#hasComposition,http://aims.fao.org/aos/agrontology#isCompositionOf
-http://aims.fao.org/aos/agrontology#isOutputFrom,http://aims.fao.org/aos/agrontology#isInputFor
-http://aims.fao.org/aos/agrontology#isAchievedByMeansOf,http://aims.fao.org/aos/agrontology#hasGoalOrProcess
-http://aims.fao.org/aos/agrontology#usingValue,http://aims.fao.org/aos/agrontology#valueUsedIn
 http://aims.fao.org/aos/agrontology#isUsedAs,http://aims.fao.org/aos/agrontology#isUseOf
 http://aims.fao.org/aos/agrontology#performs,http://aims.fao.org/aos/agrontology#isPerformedBy
 http://aims.fao.org/aos/agrontology#isDerivedFrom,http://aims.fao.org/aos/agrontology#isSourceOf
-http://aims.fao.org/aos/agrontology#isProducedBy,http://aims.fao.org/aos/agrontology#produces
+http://aims.fao.org/aos/agrontology#hasAbbreviation,http://aims.fao.org/aos/agrontology#isAbbreviationOf
 http://purl.obolibrary.org/obo/RO_0002212,http://purl.obolibrary.org/obo/RO_0002335
 https://soilwise-he.github.io/soil-health#alters,https://soilwise-he.github.io/soil-health#isAlteredBy
 https://soilwise-he.github.io/soil-health#isIndicatedBy,https://soilwise-he.github.io/soil-health#indicates
