@@ -14,7 +14,6 @@ skos:definition,http://www.w3.org/2004/02/skos/core#definition,definition
 skos:prefLabel,http://www.w3.org/2004/02/skos/core#prefLabel,preferred label
 agrontology:affects,http://aims.fao.org/aos/agrontology#affects,affects
 agrontology:hasAbbreviation,http://aims.fao.org/aos/agrontology#hasAbbreviation,has abbreviation
-agrontology:isAbbreviationOf,http://aims.fao.org/aos/agrontology#isAbbreviationOf,is abbreviation of
 agrontology:measures,http://aims.fao.org/aos/agrontology#measures,measures
 dcterms:replaces,http://purl.org/dc/terms/replaces,replaces
 agrontology:isAffectedBy,http://aims.fao.org/aos/agrontology#isAffectedBy,is affected by
@@ -86,3 +85,4 @@ sorelpr:wasControlledBy,http://sweetontology.net/relaProvenance/wasControlledBy,
 obo:RO_0002434,http://purl.obolibrary.org/obo/RO_0002434,interacts with
 biolink:consumed_by,https://w3id.org/biolink/vocab/consumed_by,consumed by
 biolink:consumes,https://w3id.org/biolink/vocab/consumes,consumes
+agrontology:hasSymbol,http://aims.fao.org/aos/agrontology#hasSymbol,has symbol

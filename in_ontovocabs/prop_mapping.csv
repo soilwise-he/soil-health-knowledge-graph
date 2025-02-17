@@ -19,7 +19,6 @@ http://aims.fao.org/aos/agrontology#follows,http://aims.fao.org/aos/agrontology#
 http://aims.fao.org/aos/agrontology#isUsedAs,http://aims.fao.org/aos/agrontology#isUseOf
 http://aims.fao.org/aos/agrontology#performs,http://aims.fao.org/aos/agrontology#isPerformedBy
 http://aims.fao.org/aos/agrontology#isDerivedFrom,http://aims.fao.org/aos/agrontology#isSourceOf
-http://aims.fao.org/aos/agrontology#hasAbbreviation,http://aims.fao.org/aos/agrontology#isAbbreviationOf
 http://purl.obolibrary.org/obo/RO_0002212,http://purl.obolibrary.org/obo/RO_0002335
 https://soilwise-he.github.io/soil-health#alters,https://soilwise-he.github.io/soil-health#isAlteredBy
 https://soilwise-he.github.io/soil-health#isIndicatedBy,https://soilwise-he.github.io/soil-health#indicates
