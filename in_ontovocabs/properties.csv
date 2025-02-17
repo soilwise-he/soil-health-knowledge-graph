@@ -86,3 +86,8 @@ obo:RO_0002434,http://purl.obolibrary.org/obo/RO_0002434,interacts with
 biolink:consumed_by,https://w3id.org/biolink/vocab/consumed_by,consumed by
 biolink:consumes,https://w3id.org/biolink/vocab/consumes,consumes
 agrontology:hasSymbol,http://aims.fao.org/aos/agrontology#hasSymbol,has symbol
+sio:equivalentTo,http://semanticscience.org/resource/equivalentTo,equivalent to
+she:requires,https://soilwise-he.github.io/soil-health#requires,requires
+she:isRequiredBy,https://soilwise-he.github.io/soil-health#isRequiredBy,is required by
+sio:SIO_000563,http://semanticscience.org/resource/SIO_000563,describes
+sio:SIO_000557,http://semanticscience.org/resource/SIO_000557,is described by

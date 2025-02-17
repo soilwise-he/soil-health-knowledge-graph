@@ -30,3 +30,6 @@ https://soilwise-he.github.io/soil-health#characterizes,https://soilwise-he.gith
 http://purl.obolibrary.org/obo/RO_0002213,http://purl.obolibrary.org/obo/RO_0002336
 http://purl.obolibrary.org/obo/INO_0000082,http://sweetontology.net/relaProvenance/wasControlledBy
 https://w3id.org/biolink/vocab/consumed_by,https://w3id.org/biolink/vocab/consumes
+http://semanticscience.org/resource/equivalentTo,http://semanticscience.org/resource/equivalentTo
+https://soilwise-he.github.io/soil-health#requires,https://soilwise-he.github.io/soil-health#isRequiredBy
+http://semanticscience.org/resource/SIO_000563,http://semanticscience.org/resource/SIO_000557
