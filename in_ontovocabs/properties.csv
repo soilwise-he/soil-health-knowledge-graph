@@ -91,3 +91,4 @@ she:requires,https://soilwise-he.github.io/soil-health#requires,requires
 she:isRequiredBy,https://soilwise-he.github.io/soil-health#isRequiredBy,is required by
 sio:SIO_000563,http://semanticscience.org/resource/SIO_000563,describes
 sio:SIO_000557,http://semanticscience.org/resource/SIO_000557,is described by
+schema:inSupportOf,https://schema.org/inSupportOf,in support of
