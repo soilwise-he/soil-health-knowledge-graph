@@ -33,3 +33,4 @@ https://w3id.org/biolink/vocab/consumed_by,https://w3id.org/biolink/vocab/consum
 http://semanticscience.org/resource/equivalentTo,http://semanticscience.org/resource/equivalentTo
 https://soilwise-he.github.io/soil-health#requires,https://soilwise-he.github.io/soil-health#isRequiredBy
 http://semanticscience.org/resource/SIO_000563,http://semanticscience.org/resource/SIO_000557
+http://semanticscience.org/resource/SIO_000202,http://semanticscience.org/resource/SIO_000128

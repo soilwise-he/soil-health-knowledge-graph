@@ -28,4 +28,4 @@ See [Issues](https://github.com/soilwise-he/soil-health-knowledge-graph/issues).
 
 - [AGROVOC](https://aims.fao.org/aos/agrovoc)
 - [ISO11074](https://data.geoscience.earth/ncl/ISO11074")
-- [GloSIS](https://glosis-ld.github.io/glosis/)
+- [GloSIS ontology](https://glosis-ld.github.io/glosis/)

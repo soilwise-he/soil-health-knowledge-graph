@@ -92,3 +92,6 @@ she:isRequiredBy,https://soilwise-he.github.io/soil-health#isRequiredBy,is requi
 sio:SIO_000563,http://semanticscience.org/resource/SIO_000563,describes
 sio:SIO_000557,http://semanticscience.org/resource/SIO_000557,is described by
 schema:inSupportOf,https://schema.org/inSupportOf,in support of
+she:sumOf,https://soilwise-he.github.io/soil-health#sumOf,sum of
+sio:SIO_000202,http://semanticscience.org/resource/SIO_000202,contains
+sio:SIO_000128,http://semanticscience.org/resource/SIO_000128,is contained in
