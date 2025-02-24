@@ -1,10 +1,504 @@
 {
     "qa_pairs": [
       {
+        "question": "What are the components of soil, and how does soil contribute to its functions that support the delivery of ecosystem services?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "What knowledge is needed in order to manage soil sustainably and protect it?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "What are the two types of soil attributes and what is based on these two attributes?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
         "question": "What is the difference between soil health and soil quality?",
         "sparql_query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n\nSELECT DISTINCT ?concept ?uniqueDefinition\nWHERE {\n  ?concept skos:prefLabel ?label ;\n           skos:definition ?uniqueDefinition .\n  FILTER(?label = \"soil health\"@en || ?label = \"soil quality\"@en)\n  \n  FILTER NOT EXISTS {\n    ?otherConcept skos:prefLabel ?otherLabel ;\n                  skos:definition ?uniqueDefinition .\n    FILTER(?otherLabel != ?label && \n           (?otherLabel = \"soil health\"@en || ?otherLabel = \"soil quality\"@en))\n  }\n}",
         "answer": "Soil health is defined as the actual capacity of a soil to perform its core functions and to provide ecosystem services, and soil quality as the inherent capacity which provides the basic frame within which a soil evolves."
+      },
+      {
+        "question": "What are soil threats and what factors indicate the existence of soil threats?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "What is soil degradation and what factors indicate the presence of soil degradation?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "What are the information that thresholds should provide in the context of soil protection?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
       }
     ]
   }
-  
