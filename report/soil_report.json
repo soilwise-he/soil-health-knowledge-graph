@@ -605,15 +605,7 @@
     },
     {
         "type": "text",
-        "text": "Indicators for soil N and P status can be given in terms of total values (total N and P content) and (plant) available N and P contents. These indicators are specifically used to gain insight into the soil fertility status and the need for N and P fertilisation to support crop growth."
-    },
-    {
-        "type": "text",
-        "text": "For N in agricultural soils, target levels or critical levels are not defined, but the total concentration of mineral N (N_min, i.e. the sum of nitrate N and ammonium N) is used for N fertiliser recommendations, as it affects the N mineralisation rate and thereby soil N availability (see Section 3.2.1). There are indicators, however, for forest soils, including the C/N ratio in the organic layer and the dissolved total inorganic N concentration (see also Section 3.2.1). Critical limits for dissolved total inorganic N concentration are used to derive critical N loads by multiplying those values with a water flux, thus deriving a critical N leaching rate, and adding values for the related N uptake, N immobilisation and denitrification (e.g. Posch et al., 2015)."
-    },
-    {
-        "type": "text",
-        "text": "For P, target and critical levels can be defined, making the following distinction between the two: below the target level, the soil P status should be increased because P is limiting for crop growth; above the critical level, there is an enhanced risk of negative effects on water quality because of increased run-off of P to surface waters. Details of indicators are described below."
+        "text": "Indicators for soil N and P status can be given in terms of total values (total N and P content) and (plant) available N and P contents. These indicators are specifically used to gain insight into the soil fertility status and the need for N and P fertilisation to support crop growth.\n•\tFor N in agricultural soils, target levels or critical levels are not defined, but the total concentration of mineral N (N_min, i.e. the sum of nitrate N and ammonium N) is used for N fertiliser recommendations, as it affects the N mineralisation rate and thereby soil N availability (see Section 3.2.1). There are indicators, however, for forest soils, including the C/N ratio in the organic layer and the dissolved total inorganic N concentration (see also Section 3.2.1). Critical limits for dissolved total inorganic N concentration are used to derive critical N loads by multiplying those values with a water flux, thus deriving a critical N leaching rate, and adding values for the related N uptake, N immobilisation and denitrification (e.g. Posch et al., 2015).\n•\tFor P, target and critical levels can be defined, making the following distinction between the two: below the target level, the soil P status should be increased because P is limiting for crop growth; above the critical level, there is an enhanced risk of negative effects on water quality because of increased run-off of P to surface waters. Details of indicators are described below."
     },
     {
         "type": "text",
@@ -749,11 +741,7 @@
     },
     {
         "type": "text",
-        "text": "Table 4.1 provides an overview of the impact of soil acidification on soil functions and services. Input of acids (sulphuric and nitric acids, amino acids and nitrate) through atmospheric deposition is closely linked to the loss of base cations (e.g. calcium, magnesium, potassium, sodium) through cation exchange processes in soils (acid neutralization capacity until the soil's buffer capacity is exhausted), and subsequent leaching of mineral nutrients."
-    },
-    {
-        "type": "text",
-        "text": "This process negatively affects water quality, biological activity, and plant growth. The impacts of soil acidification on soil carbon pools is uncertain as it can decrease forest growth and related litterfall and thereby carbon input but simultaneously, it reduces decomposer activity. In the case of acid forest soils, low pH tends to favour the accumulation of organic matter through reduced decomposition."
+        "text": "Table 4.1 provides an overview of the impact of soil acidification on soil functions and services. Input of acids (sulphuric and nitric acids, amino acids and nitrate) through atmospheric deposition is closely linked to the loss of base cations (e.g. calcium, magnesium, potassium, sodium) through cation exchange processes in soils (acid neutralization capacity until the soil's buffer capacity is exhausted), and subsequent leaching of mineral nutrients. This process negatively affects water quality, biological activity, and plant growth. The impacts of soil acidification on soil carbon pools is uncertain as it can decrease forest growth and related litterfall and thereby carbon input but simultaneously, it reduces decomposer activity. In the case of acid forest soils, low pH tends to favour the accumulation of organic matter through reduced decomposition."
     },
     {
         "type": "text",
@@ -829,11 +817,7 @@
     },
     {
         "type": "text",
-        "text": "A distinction can be made between point source pollution and diffuse (or non-point) soil pollution (as illustrated in Figure 5.1)."
-    },
-    {
-        "type": "text",
-        "text": "In both cases, affected land suffers from the widespread application and distribution of pollutants (see Figure 5.1). Diffuse pollution commonly originates from a range of sources, including those related to management of agricultural land and atmospheric deposition (mostly from industry and traffic). It usually affects larger areas than those affected by point source pollution and is characterised by a relatively homogeneous pollution pattern. For atmospheric deposition, the link between the source of pollution and its destination often is not clear (with the exception of proximity pollution; see below). Former or ongoing deposition of polluted sediments in river floodplain soils is also a form of diffuse pollution, although the affected area is often confined to the area between dikes. According to the EEA, diffuse pollution is defined as 'Pollution from widespread activities with no one discrete source'."
+        "text": "A distinction can be made between point source pollution and diffuse (or non-point) soil pollution (as illustrated in Figure 5.1). In both cases, affected land suffers from the widespread application and distribution of pollutants (see Figure 5.1). Diffuse pollution commonly originates from a range of sources, including those related to management of agricultural land and atmospheric deposition (mostly from industry and traffic). It usually affects larger areas than those affected by point source pollution and is characterised by a relatively homogeneous pollution pattern. For atmospheric deposition, the link between the source of pollution and its destination often is not clear (with the exception of proximity pollution; see below). Former or ongoing deposition of polluted sediments in river floodplain soils is also a form of diffuse pollution, although the affected area is often confined to the area between dikes. According to the EEA, diffuse pollution is defined as 'Pollution from widespread activities with no one discrete source'."
     },
     {
         "type": "text",
@@ -1017,11 +1001,7 @@
     },
     {
         "type": "text",
-        "text": "Two kinds of indicators were suggested during several Eionet workshops (Freudenschuss et al., 2001):\n•\tdirect indicators related to a specific load of contaminants, such as the average pesticide consumption per unit area of agricultural land or the amount of sewage sludge applied per unit area of agricultural land;\n•\tindicators based on a mass balance approach, such as the input-output assessment of heavy metals in arable cropping systems, and, based on this, the critical load of heavy metal content in soils related to different land uses."
-    },
-    {
-        "type": "text",
-        "text": "An extended rationale for these parameters and indicators related to diffuse pollution can be found in Van-Camp et al. (2004b). They suggest that the following metals and nutrients could be realistically monitored, recommending 5- to 10-year sampling intervals:\n•\theavy metals (cadmium, copper, lead, zinc, mercury, arsenic, nickel and chromium);\n•\tnutrients (nitrogen and phosphates)."
+        "text": "Two kinds of indicators were suggested during several Eionet workshops (Freudenschuss et al., 2001):\n•\tdirect indicators related to a specific load of contaminants, such as the average pesticide consumption per unit area of agricultural land or the amount of sewage sludge applied per unit area of agricultural land;\n•\tindicators based on a mass balance approach, such as the input-output assessment of heavy metals in arable cropping systems, and, based on this, the critical load of heavy metal content in soils related to different land uses. An extended rationale for these parameters and indicators related to diffuse pollution can be found in Van-Camp et al. (2004b). They suggest that the following metals and nutrients could be realistically monitored, recommending 5- to 10-year sampling intervals:\n•\theavy metals (cadmium, copper, lead, zinc, mercury, arsenic, nickel and chromium);\n•\tnutrients (nitrogen and phosphates)."
     },
     {
         "type": "text",
