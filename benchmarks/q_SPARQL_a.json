@@ -36,7 +36,67 @@
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are soil functions and what is the relationship between soil functions, soil processes, and ecosystem services?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "What are ecosystem services and what are the four types of ecosystem services?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "What are soil indicators and what is the relationship between soil indicators and soil parameters?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "How are soil parameters distinguished and classified, and how are complex parameters derived?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "What risk assessment models are currently in use and what soil properties (or indicators) do they use?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "What are the main types of soil degradation and where does soil sealing fall into this category?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "What is soil chemical degradation and what characteristics does it include?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "How is soil biological degradation defined and how does it manifest in different soil types?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "How is soil ecological degradation defined, what does it reflect, and how does it affect ecosystem functions?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "What are the main soil indicators and what are their units, if any?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "According to the 2020 MAES assessment, what are the main soil indicators?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "What are the current sub-indicators of Sustainable Development Goal (SDG) indicator 15.3.1 and what do these land degradation indicators represent?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "Which GAEC standards are relevant to soils, and what are their respective topics?",
         "sparql_query": "",
         "answer": ""
       },
@@ -51,67 +111,7 @@
         "answer": ""
       },
       {
-        "question": "",
-        "sparql_query": "",
-        "answer": ""
-      },
-      {
-        "question": "",
-        "sparql_query": "",
-        "answer": ""
-      },
-      {
-        "question": "",
-        "sparql_query": "",
-        "answer": ""
-      },
-      {
-        "question": "",
-        "sparql_query": "",
-        "answer": ""
-      },
-      {
-        "question": "",
-        "sparql_query": "",
-        "answer": ""
-      },
-      {
-        "question": "",
-        "sparql_query": "",
-        "answer": ""
-      },
-      {
-        "question": "",
-        "sparql_query": "",
-        "answer": ""
-      },
-      {
-        "question": "",
-        "sparql_query": "",
-        "answer": ""
-      },
-      {
-        "question": "",
-        "sparql_query": "",
-        "answer": ""
-      },
-      {
-        "question": "",
-        "sparql_query": "",
-        "answer": ""
-      },
-      {
-        "question": "",
-        "sparql_query": "",
-        "answer": ""
-      },
-      {
-        "question": "",
-        "sparql_query": "",
-        "answer": ""
-      },
-      {
-        "question": "",
+        "question": "How to convert measured SOC to SOM?",
         "sparql_query": "",
         "answer": ""
       },
