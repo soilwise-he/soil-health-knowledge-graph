@@ -96,17 +96,27 @@
         "answer": ""
       },
       {
+        "question": "",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
         "question": "Which GAEC standards are relevant to soils, and what are their respective topics?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What factors make it challenging to define optimal or critical thresholds for soil organic carbon (SOC) content in relation to soil health?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "How does soil organic matter (SOM) content influence various soil functions and environmental processes?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "How are soil organic carbon (SOC) dynamics and nitrogen dynamics related, and what implications does this relationship have for agricultural practices and environmental pollution?",
         "sparql_query": "",
         "answer": ""
       },
@@ -116,42 +126,37 @@
         "answer": ""
       },
       {
-        "question": "",
+        "question": "How to calculate SOC stock from SOC content, and what the other parameters in the equation represent?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the critical levels or thresholds of soil organic carbon (SOC) for maintaining soil health, structural stability, and optimal crop yield, and how do these thresholds vary across different soil types?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are examples of national estimations for site-typical soil organic carbon (SOC) contents in European countries, and how do these values vary based on environmental factors and land use?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "How are different SOC/clay ratio thresholds or intervals used to classify land as degraded, transitional, or favourable in Wallonia?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is carbon sequestration and what factors contribute to soils' potential for carbon sequestration?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "How does clay content influence the limits for soil organic matter (SOM) content in relation to crop production?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
-        "sparql_query": "",
-        "answer": ""
-      },
-      {
-        "question": "",
+        "question": "What are the two types of soil nutrients and what substances do they contain?",
         "sparql_query": "",
         "answer": ""
       },
