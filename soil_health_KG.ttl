@@ -24,7 +24,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 she:AcidNeutralisingCapacity a skos:Concept ;
-    skos:prefLabel "Acid neutralising capacity"@en .
+    skos:prefLabel "acid neutralising capacity"@en .
 
 she:AlfisolsCriticalSOCRange a skos:Concept ;
     skos:prefLabel "0.5-0.77% SOC"@en ;
@@ -32,15 +32,15 @@ she:AlfisolsCriticalSOCRange a skos:Concept ;
 
 she:AmmoniumNitrogen a skos:Concept ;
     skos:exactMatch agrovoc:c_37457 ;
-    skos:prefLabel "Ammonium nitrogen"@en ;
+    skos:prefLabel "ammonium nitrogen"@en ;
     she:isConvertedTo she:HydrogenIons,
         she:Nitrate .
 
 she:AssociatedRisksFromPollutants a skos:Concept ;
-    skos:prefLabel "Associated risks from pollutants"@en .
+    skos:prefLabel "associated risks from pollutants"@en .
 
 she:BaseCations a skos:Concept ;
-    skos:prefLabel "Base cations"@en .
+    skos:prefLabel "base cations"@en .
 
 she:ConversionFactor1724 a qudt:QuantityValue ;
     rdfs:label "conversion factor 1.724"@en ;
@@ -57,10 +57,10 @@ she:ConversionFactor2 a qudt:QuantityValue ;
 
 she:CriticalConcentrations a skos:Concept ;
     skos:definition "Once critical concentrations are exceeded, relevant soil functions can be impaired."@en ;
-    skos:prefLabel "Critical concentrations"@en .
+    skos:prefLabel "critical concentrations"@en .
 
 she:CurrentStateOfSoils a skos:Concept ;
-    skos:prefLabel "Current state of soils"@en .
+    skos:prefLabel "current state of soils"@en .
 
 she:EntisolsCriticalSOCRange a skos:Concept ;
     skos:prefLabel "1.03-1.16% SOC"@en ;
@@ -68,26 +68,26 @@ she:EntisolsCriticalSOCRange a skos:Concept ;
 
 she:FunctionalGroups a skos:Concept ;
     obo:RO_0002434 she:AbioticEnvironment ;
-    skos:prefLabel "Functional groups"@en .
+    skos:prefLabel "functional groups"@en .
 
 she:HarmonisingThresholds a skos:Concept ;
     skos:definition "Options for harmonising thresholds are discussed, also emphasising the need for improved harmonising of risk assessment tools as a basis for soil screening values and risk assessment procedures."@en ;
-    skos:prefLabel "Harmonising thresholds"@en ;
+    skos:prefLabel "harmonising thresholds"@en ;
     she:emphasise she:RiskAssessmentTools .
 
 she:ImpactOfSoilPollution a skos:Concept ;
-    skos:prefLabel "Impact of soil pollution"@en ;
+    skos:prefLabel "impact of soil pollution"@en ;
     she:requires she:Indicators .
 
 she:InputsAndOutputsOfSubstances a skos:Concept ;
-    skos:prefLabel "Inputs and outputs of substances"@en .
+    skos:prefLabel "inputs and outputs of substances"@en .
 
 she:Lal2011 a dcterms:BibliographicResource ;
     dcterms:date "2011" .
 
 she:LowPH a skos:Concept ;
     agrontology:smallerThan "4.5"@en ;
-    skos:prefLabel "Low pH"@en ;
+    skos:prefLabel "low pH"@en ;
     she:increasesAvailabilityOf she:Aluminium,
         she:Manganese .
 
@@ -103,13 +103,13 @@ she:MinimumSOC2Percent a skos:Concept ;
     she:isNecessaryToMaintain she:StructuralSoilStability .
 
 she:ProductionOfFood a skos:Concept ;
-    skos:prefLabel "Production of food"@en .
+    skos:prefLabel "production of food"@en .
 
 she:ProvisionOfCleanWater a skos:Concept ;
-    skos:prefLabel "Provision of clean water"@en .
+    skos:prefLabel "provision of clean water"@en .
 
 she:RiskAssessmentProcedures a skos:Concept ;
-    skos:prefLabel "Risk assessment procedures"@en .
+    skos:prefLabel "risk assessment procedures"@en .
 
 she:SOC1_2To1_5Percent a skos:Concept ;
     dcterms:source she:KayAngers1999 ;
@@ -143,7 +143,7 @@ she:SoilQualityAssessment a skos:Concept ;
     skos:prefLabel "soil quality assessment"@en .
 
 she:SoilScreeningValues a skos:Concept ;
-    skos:prefLabel "Soil screening values"@en .
+    skos:prefLabel "soil screening values"@en .
 
 she:SoilTypologicalClassification a skos:Concept ;
     obo:T4FS_0000577 she:BasicSoilParameters ;
@@ -156,11 +156,11 @@ she:SoilVariability a skos:Concept ;
 
 she:SpeciesDiversity a skos:Concept ;
     skos:exactMatch agrovoc:c_00ba8c53 ;
-    skos:prefLabel "Species diversity"@en ;
+    skos:prefLabel "species diversity"@en ;
     she:relatedTo she:SoilCommunities .
 
 she:SuitableHabitatForSoilDwellingOrganisms a skos:Concept ;
-    skos:prefLabel "Suitable habitat for soil dwelling organisms"@en .
+    skos:prefLabel "suitable habitat for soil dwelling organisms"@en .
 
 she:UndisturbedConditionsBeingRare a skos:Concept ;
     skos:prefLabel "undisturbed conditions being rare"@en .
@@ -170,10 +170,10 @@ she:pH a skos:Concept ;
     skos:prefLabel "pH"@en .
 
 she:AbioticEnvironment a skos:Concept ;
-    skos:prefLabel "Abiotic environment"@en .
+    skos:prefLabel "abiotic environment"@en .
 
 she:AcidPrecipitation a skos:Concept ;
-    skos:prefLabel "Acidic precipitation"@en ;
+    skos:prefLabel "acidic precipitation"@en ;
     she:contains she:Ammonia,
         she:NitricAcid,
         she:SulphurDioxide .
@@ -217,7 +217,7 @@ she:Alfisols a skos:Concept ;
 
 she:Aluminium a skos:Concept ;
     skos:closeMatch agrovoc:c_317 ;
-    skos:prefLabel "Aluminium"@en .
+    skos:prefLabel "aluminium"@en .
 
 she:AluminiumToxicity a skos:Concept ;
     obo:RO_0002336 she:SoilChemicalDegradation ;
@@ -225,10 +225,10 @@ she:AluminiumToxicity a skos:Concept ;
 
 she:Ammonia a skos:Concept ;
     skos:exactMatch agrovoc:c_349 ;
-    skos:prefLabel "Ammonia"@en .
+    skos:prefLabel "ammonia"@en .
 
 she:AmmoniumBasedFertilizers a skos:Concept ;
-    skos:prefLabel "Ammonium-based fertilisers"@en .
+    skos:prefLabel "ammonium-based fertilisers"@en .
 
 she:AnimalManure a skos:Concept ;
     skos:broader she:AgriculturalSoilManagement ;
@@ -382,7 +382,7 @@ she:Earth a skos:Concept ;
 
 she:EcosystemFunctioning a skos:Concept ;
     agrontology:isAffectedBy she:SoilPollution ;
-    skos:prefLabel "Ecosystem functioning"@en .
+    skos:prefLabel "ecosystem functioning"@en .
 
 she:ElementCycling a skos:Concept ;
     skos:broader she:EcosystemFunctions ;
@@ -395,7 +395,7 @@ she:Entisols a skos:Concept ;
     skos:prefLabel "entisols"@en .
 
 she:EnvironmentalCompartments a skos:Concept ;
-    skos:prefLabel "Environmental compartments"@en .
+    skos:prefLabel "environmental compartments"@en .
 
 she:EnvironmentalDegradation a skos:Concept ;
     dcterms:source she:Johnson1997 ;
@@ -406,7 +406,7 @@ she:EnvironmentalDegradation a skos:Concept ;
 she:EphemeralGullyErosion a skos:Concept ;
     dcterms:source she:Poesen2018 ;
     skos:broader she:WaterErosion ;
-    skos:prefLabel "Ephemeral gully erosion"@en .
+    skos:prefLabel "ephemeral gully erosion"@en .
 
 she:ExtentOfOrganicSoils a skos:Concept ;
     dcterms:source she:Maes2020 ;
@@ -442,7 +442,7 @@ she:ForestFloors a skos:Concept ;
 
 she:ForestSoils a skos:Concept ;
     skos:exactMatch agrovoc:c_3051 ;
-    skos:prefLabel "Forest soils"@en .
+    skos:prefLabel "forest soils"@en .
 
 she:Greenland1975 a dcterms:BibliographicResource ;
     dcterms:date "1975" .
@@ -458,18 +458,18 @@ she:GullyErosion a skos:Concept ;
     skos:broader she:WaterErosion ;
     skos:definition "A special and very intense form of water erosion in areas with concentrated run-off leading to large gullies as the typical landform."@en ;
     skos:exactMatch agrovoc:c_25010 ;
-    skos:prefLabel "Gully erosion"@en .
+    skos:prefLabel "gully erosion"@en .
 
 she:HarvestingErosion a skos:Concept ;
     dcterms:source she:Huber2008,
         she:Poesen2018 ;
     skos:broader she:AnthropogenicErosion ;
     skos:definition "Offsite losses of soil adhering to the crop during harvest, mainly of root and tuber crops."@en ;
-    skos:prefLabel "Harvesting erosion"@en .
+    skos:prefLabel "harvesting erosion"@en .
 
 she:HeavyMachinery a skos:Concept ;
     agrontology:causes she:SoilCompaction ;
-    skos:prefLabel "Heavy machinery"@en .
+    skos:prefLabel "heavy machinery"@en .
 
 she:HotSpots a skos:Concept ;
     dcterms:source she:VanCamp2004c ;
@@ -482,7 +482,7 @@ she:HumanWellbeing a skos:Concept ;
 she:HydraulicConductivity a skos:Concept ;
     obo:RO_0002335 she:SoilCompaction ;
     skos:exactMatch agrovoc:c_25579 ;
-    skos:prefLabel "Hydraulic conductivity"@en .
+    skos:prefLabel "hydraulic conductivity"@en .
 
 she:Hydrogen a skos:Concept ;
     agrontology:isUsedToMake she:SoilOrganicMatter ;
@@ -490,7 +490,7 @@ she:Hydrogen a skos:Concept ;
     skos:prefLabel "hydrogen"@en .
 
 she:HydrogenIons a skos:Concept ;
-    skos:prefLabel "Hydrogen ions"@en .
+    skos:prefLabel "hydrogen ions"@en .
 
 she:HydrologicalCycle a skos:Concept ;
     obo:RO_0002335 she:SoilEcologicalDegradation ;
@@ -512,7 +512,7 @@ she:InterrillErosion a skos:Concept ;
     dcterms:source she:Poesen2018 ;
     skos:broader she:WaterErosion ;
     skos:exactMatch agrovoc:c_dc754417 ;
-    skos:prefLabel "Interrill erosion"@en .
+    skos:prefLabel "interrill erosion"@en .
 
 she:IntrinsicSoilProperties a skos:Concept ;
     dcterms:source she:Vogel2020 ;
@@ -534,7 +534,7 @@ she:LabileFractionOfSoc a skos:Concept ;
     skos:prefLabel "labile fraction of SOC"@en .
 
 she:LandAreaSOCContent a skos:Concept ;
-    skos:prefLabel "Land area SOC content"@en ;
+    skos:prefLabel "land area SOC content"@en ;
     skos:related she:LandAreaSOCDegraded .
 
 she:LandCultivation a skos:Concept ;
@@ -555,7 +555,7 @@ she:LandManagementChanges a skos:Concept ;
 she:LandTake a skos:Concept ;
     skos:exactMatch agrovoc:c_03e78242 ;
     skos:narrower she:SealedLand ;
-    skos:prefLabel "Land take"@en .
+    skos:prefLabel "land take"@en .
 
 she:LayerThickness a skos:Concept ;
     agrontology:isInfluencedBy she:SOCStock ;
@@ -565,14 +565,14 @@ she:LayerThickness a skos:Concept ;
 
 she:Liming a skos:Concept ;
     skos:exactMatch agrovoc:c_25206 ;
-    skos:prefLabel "Liming"@en .
+    skos:prefLabel "liming"@en .
 
 she:LivestockTramplingErosion a skos:Concept ;
     dcterms:source she:Huber2008,
         she:Poesen2018 ;
     skos:broader she:AnthropogenicErosion ;
     skos:definition "Onsite soil loss occurring after soil compaction, overgrazing and removal or reduction of vegetation cover."@en ;
-    skos:prefLabel "Erosion caused by livestock trampling"@en .
+    skos:prefLabel "erosion caused by livestock trampling"@en .
 
 she:LivingOrganisms a skos:Concept ;
     agrontology:compose she:Soil ;
@@ -592,7 +592,7 @@ she:ManganeseToxicity a skos:Concept ;
 she:Methane a skos:Concept ;
     agrontology:isIncludedIn she:GreenhouseGasEmissions ;
     skos:exactMatch agrovoc:c_4784 ;
-    skos:prefLabel "Methane"@en .
+    skos:prefLabel "methane"@en .
 
 she:MicrobialBiomass a skos:Concept ;
     agrontology:isUsedToMake she:SoilOrganicMatter ;
@@ -637,7 +637,7 @@ she:NaturalSoils a skos:Concept ;
     skos:prefLabel "natural soils"@en .
 
 she:NaturallyAcidicSoils a skos:Concept ;
-    skos:prefLabel "Naturally acidic soils"@en .
+    skos:prefLabel "naturally acidic soils"@en .
 
 she:Necromass a skos:Concept ;
     obo:RO_0002336 she:SoilBiologicalDegradation ;
@@ -649,7 +649,7 @@ she:NetBiomeProductivity a skos:Concept ;
     skos:prefLabel "net biome productivity"@en .
 
 she:Nitrate a skos:Concept ;
-    skos:prefLabel "Nitrate"@en .
+    skos:prefLabel "nitrate"@en .
 
 she:NitrateNitrogen a skos:Concept ;
     obo:RO_0002335 she:SoilChemicalDegradation ;
@@ -657,12 +657,12 @@ she:NitrateNitrogen a skos:Concept ;
 
 she:NitricAcid a skos:Concept ;
     skos:exactMatch agrovoc:c_5188 ;
-    skos:prefLabel "Nitric acid"@en .
+    skos:prefLabel "nitric acid"@en .
 
 she:NitrousOxide a skos:Concept ;
     agrontology:isIncludedIn she:GreenhouseGasEmissions ;
     skos:exactMatch agrovoc:c_12838 ;
-    skos:prefLabel "Nitrous oxide"@en .
+    skos:prefLabel "nitrous oxide"@en .
 
 she:NutrientAvailability a skos:Concept ;
     obo:RO_0002335 she:SoilBiologicalDegradation ;
@@ -685,7 +685,7 @@ she:OnePointFivePercentSOC a skos:Concept ;
 
 she:OperationsAtCriticalSoilMoistureLevels a skos:Concept ;
     agrontology:causes she:SoilCompaction ;
-    skos:prefLabel "Operations at critical soil moisture levels"@en .
+    skos:prefLabel "operations at critical soil moisture levels"@en .
 
 she:OrganicCompounds a skos:Concept ;
     agrontology:compose she:Soil ;
@@ -707,7 +707,7 @@ she:Oxygen a skos:Concept ;
 
 she:ParticleSurfaceAccessibility a skos:Concept ;
     obo:RO_0002335 she:SoilCompaction ;
-    skos:prefLabel "Particle surface accessibility"@en .
+    skos:prefLabel "particle surface accessibility"@en .
 
 she:Pawar2017 a dcterms:BibliographicResource ;
     dcterms:date "2017" .
@@ -732,7 +732,7 @@ she:PhysicalSoilParameters a skos:Concept ;
 she:PipingErosion a skos:Concept ;
     dcterms:source she:Poesen2018 ;
     skos:broader she:WaterErosion ;
-    skos:prefLabel "Piping erosion"@en .
+    skos:prefLabel "piping erosion"@en .
 
 she:PlantResidues a skos:Concept ;
     agrontology:isUsedToMake she:SoilOrganicMatter ;
@@ -748,7 +748,7 @@ she:Poeplau2019 a dcterms:BibliographicResource ;
     dcterms:date "2019" .
 
 she:PollutantsInSoil a skos:Concept ;
-    skos:prefLabel "Pollutants in soil"@en ;
+    skos:prefLabel "pollutants in soil"@en ;
     she:impair she:RelevantSoilFunctions .
 
 she:PoreGeometry a skos:Concept ;
@@ -757,7 +757,7 @@ she:PoreGeometry a skos:Concept ;
 
 she:PoreVolume a skos:Concept ;
     obo:RO_0002335 she:SoilCompaction ;
-    skos:prefLabel "Pore volume"@en .
+    skos:prefLabel "pore volume"@en .
 
 she:PotentialYields a skos:Concept ;
     skos:prefLabel "potential yields"@en .
@@ -770,13 +770,13 @@ she:Prokop2011 a dcterms:BibliographicResource ;
 
 she:RainwaterInfiltration a skos:Concept ;
     obo:RO_0002335 she:SoilCompaction ;
-    skos:prefLabel "Rainwater infiltration"@en .
+    skos:prefLabel "rainwater infiltration"@en .
 
 she:RapidDeclineInStability a skos:Concept ;
     skos:prefLabel "rapid decline in stability"@en .
 
 she:RelevantSoilFunctions a skos:Concept ;
-    skos:prefLabel "Relevant soil functions"@en .
+    skos:prefLabel "relevant soil functions"@en .
 
 she:Respiration a skos:Concept ;
     obo:RO_0002335 she:SoilBiologicalDegradation ;
@@ -790,15 +790,15 @@ she:RillErosion a skos:Concept ;
     dcterms:source she:Poesen2018 ;
     skos:broader she:WaterErosion ;
     skos:exactMatch agrovoc:c_27001 ;
-    skos:prefLabel "Rill erosion"@en .
+    skos:prefLabel "rill erosion"@en .
 
 she:RiskAssessmentTools a skos:Concept ;
-    skos:prefLabel "Risk assessment tools"@en .
+    skos:prefLabel "risk assessment tools"@en .
 
 she:Rooting a skos:Concept ;
     agrontology:isAffectedBy she:SoilCompaction ;
     skos:exactMatch agrovoc:c_6649 ;
-    skos:prefLabel "Rooting"@en .
+    skos:prefLabel "rooting"@en .
 
 she:RuralDevelopmentMeasures a sohuj:Regulation ;
     agrontology:isBeneficialFor she:SoilQuality ;
@@ -833,7 +833,7 @@ she:Salinisation a skos:Concept ;
 
 she:SandySoils a skos:Concept ;
     skos:exactMatch agrovoc:c_6781 ;
-    skos:prefLabel "Sandy soils"@en .
+    skos:prefLabel "sandy soils"@en .
 
 she:SewageSludge a skos:Concept ;
     skos:broader she:AgriculturalSoilManagement ;
@@ -867,8 +867,7 @@ she:SoilAndEnvironmentalConditions a skos:Concept ;
 
 she:SoilBiodiversity a skos:Concept ;
     obo:RO_0002335 she:SoilBiologicalDegradation ;
-    skos:prefLabel "Soil biodiversity"@en,
-        "soil biodiversity"@en ;
+    skos:prefLabel "soil biodiversity"@en ;
     she:canBeApproximatedBy she:SubIndicators ;
     she:relatedTo she:SoilOrganisms .
 
@@ -889,7 +888,7 @@ she:SoilCarbonConcentrations a skos:Concept ;
     skos:related she:SpatialQuantification .
 
 she:SoilCommunities a skos:Concept ;
-    skos:prefLabel "Soil communities"@en .
+    skos:prefLabel "soil communities"@en .
 
 she:SoilCondition a skos:Concept ;
     skos:prefLabel "soil condition"@en .
@@ -989,13 +988,13 @@ she:StructuralStabilityOfSoils a skos:Concept ;
     skos:prefLabel "structural stability of soils"@en .
 
 she:SubIndicators a skos:Concept ;
-    skos:prefLabel "Sub-indicators"@en .
+    skos:prefLabel "sub-indicators"@en .
 
 she:Subsoil a skos:Concept ;
     obo:RO_0002335 she:SoilCompaction ;
     skos:exactMatch agrovoc:c_7486,
         iso11074:2.1.20 ;
-    skos:prefLabel "Subsoil"@en .
+    skos:prefLabel "subsoil"@en .
 
 she:Sulphur a skos:Concept ;
     skos:broader she:Macronutrients ;
@@ -1004,7 +1003,7 @@ she:Sulphur a skos:Concept ;
 
 she:SulphurDioxide a skos:Concept ;
     skos:exactMatch agrovoc:c_7515 ;
-    skos:prefLabel "Sulphur dioxide"@en .
+    skos:prefLabel "sulphur dioxide"@en .
 
 she:SurfaceRunoff a skos:Concept ;
     obo:RO_0002336 she:SoilPhysicalDegradation ;
@@ -1024,7 +1023,7 @@ she:TillageErosion a skos:Concept ;
     skos:broader she:AnthropogenicErosion ;
     skos:definition "Onsite soil loss after tillage of sloping land."@en ;
     skos:exactMatch agrovoc:c_924f2195 ;
-    skos:prefLabel "Tillage erosion"@en .
+    skos:prefLabel "tillage erosion"@en .
 
 she:Time a skos:Concept ;
     skos:exactMatch agrovoc:c_7778 ;
@@ -1050,7 +1049,7 @@ she:TwoMmSieve a skos:Concept ;
     skos:related she:OrganicSoilResidues .
 
 she:UnlimedAgriculturalLand a skos:Concept ;
-    skos:prefLabel "Unlimed agricultural land"@en ;
+    skos:prefLabel "unlimed agricultural land"@en ;
     she:locatedIn she:NaturallyAcidicSoils,
         she:SandySoils .
 
@@ -1063,7 +1062,7 @@ she:Urbanisation a skos:Concept ;
 
 she:Urea a skos:Concept ;
     skos:exactMatch agrovoc:c_8090 ;
-    skos:prefLabel "Urea"@en .
+    skos:prefLabel "urea"@en .
 
 she:VanLynden2004 a dcterms:BibliographicResource ;
     dcterms:date "2004" .
@@ -1103,7 +1102,7 @@ she:WaterStableSoilAggregation a skos:Concept ;
 she:Waterlogging a skos:Concept ;
     obo:RO_0002336 she:SoilCompaction ;
     skos:exactMatch agrovoc:c_8333 ;
-    skos:prefLabel "Waterlogging"@en .
+    skos:prefLabel "waterlogging"@en .
 
 she:WindErosionRate a skos:Concept ;
     dcterms:source she:Maes2020 ;
@@ -1112,8 +1111,7 @@ she:WindErosionRate a skos:Concept ;
 
 she:AgriculturalSoils a skos:Concept ;
     skos:exactMatch agrovoc:c_33934 ;
-    skos:prefLabel "Agricultural soils"@en,
-        "agricultural soils"@en .
+    skos:prefLabel "agricultural soils"@en .
 
 she:BelowGroundFoodWeb a skos:Concept ;
     obo:INO_0000082 she:EnergyTransformations,
@@ -1146,8 +1144,7 @@ she:Calcium a skos:Concept ;
     obo:RO_0002335 she:SoilChemicalDegradation ;
     skos:broader she:Macronutrients ;
     skos:exactMatch agrovoc:c_1196 ;
-    skos:prefLabel "Calcium"@en,
-        "calcium"@en .
+    skos:prefLabel "calcium"@en .
 
 she:CarbonStocks a skos:Concept ;
     agrontology:isPartOf she:SDG ;
@@ -1160,7 +1157,7 @@ she:CationExchangeCapacity a skos:Concept ;
     skos:prefLabel "cation exchange capacity"@en .
 
 she:CommercialArea a skos:Concept ;
-    skos:prefLabel "Commercial area"@en ;
+    skos:prefLabel "commercial area"@en ;
     skos:related she:SealedLand ;
     biolink:consumes she:Land .
 
@@ -1203,8 +1200,7 @@ she:CropYieldResponse a skos:Concept ;
 
 she:CropYields a skos:Concept ;
     agrontology:isAffectedBy she:SoilNutrientStatus ;
-    skos:prefLabel "Crop yields"@en,
-        "crop yields"@en .
+    skos:prefLabel "crop yields"@en .
 
 she:CulturalServices a skos:Concept ;
     skos:broader she:EcosystemServices ;
@@ -1239,14 +1235,13 @@ she:EUSoilThematicStrategy2006 a dcterms:Policy ;
 she:EnergyTransformations a skos:Concept ;
     sorelpr:wasControlledBy she:BelowGroundFoodWeb,
         she:Microbiome ;
-    skos:prefLabel "Energy transformations"@en .
+    skos:prefLabel "energy transformations"@en .
 
 she:FoodProduction a skos:Concept ;
     agrontology:isMeasuredBy she:FoodProductionIncrease ;
     obo:RO_0002335 she:SoilCompaction ;
     skos:exactMatch agrovoc:c_3025 ;
-    skos:prefLabel "Food production"@en,
-        "food production"@en .
+    skos:prefLabel "food production"@en .
 
 she:FunctionalSoilCarbonIndicator a skos:Concept ;
     skos:prefLabel "functional soil carbon indicator"@en ;
@@ -1275,19 +1270,19 @@ she:HighPhosphorusStatus a skos:Concept ;
     skos:prefLabel "high phosphorus status"@en .
 
 she:IndustrialArea a skos:Concept ;
-    skos:prefLabel "Industrial area"@en ;
+    skos:prefLabel "industrial area"@en ;
     skos:related she:SealedLand ;
     biolink:consumes she:Land .
 
 she:Infrastructure a skos:Concept ;
     skos:exactMatch agrovoc:c_26790 ;
-    skos:prefLabel "Infrastructure"@en ;
+    skos:prefLabel "infrastructure"@en ;
     skos:related she:SealedLand ;
     biolink:consumes she:Land .
 
 she:LandAreaSOCDegraded a skos:Concept ;
     skos:definition "Land area_SOC_degraded = Land area_SOC_content < threshold"@en ;
-    skos:prefLabel "Land area SOC degraded"@en ;
+    skos:prefLabel "land area SOC degraded"@en ;
     skos:related she:LandAreaSOCContent,
         she:Threshold .
 
@@ -1313,8 +1308,7 @@ she:Magnesium a skos:Concept ;
     obo:RO_0002335 she:SoilChemicalDegradation ;
     skos:broader she:Macronutrients ;
     skos:exactMatch agrovoc:c_4517 ;
-    skos:prefLabel "Magnesium"@en,
-        "magnesium"@en .
+    skos:prefLabel "magnesium"@en .
 
 she:ManageableSoilAttributes a skos:Concept ;
     dcterms:source she:Schwilch2016 ;
@@ -1324,13 +1318,12 @@ she:ManageableSoilAttributes a skos:Concept ;
 she:Manganese a skos:Concept ;
     skos:broader she:Micronutrients ;
     skos:exactMatch agrovoc:c_4570 ;
-    skos:prefLabel "Manganese"@en,
-        "manganese"@en .
+    skos:prefLabel "manganese"@en .
 
 she:Microbiome a skos:Concept ;
     obo:INO_0000082 she:EnergyTransformations,
         she:NutrientTurnover ;
-    skos:prefLabel "Microbiome"@en .
+    skos:prefLabel "microbiome"@en .
 
 she:Mineralisation a skos:Concept ;
     agrontology:isIncludedIn she:SoilOrganicCarbon ;
@@ -1353,13 +1346,11 @@ she:Phosphorus a skos:Concept ;
     skos:broader she:Macronutrients,
         she:Nutrients ;
     skos:exactMatch agrovoc:c_5804 ;
-    skos:prefLabel "Phosphorus"@en,
-        "phosphorus"@en .
+    skos:prefLabel "phosphorus"@en .
 
 she:PlantNutrients a skos:Concept ;
     obo:RO_0002335 she:SoilChemicalDegradation ;
-    skos:prefLabel "Plant nutrients"@en,
-        "plant nutrients"@en .
+    skos:prefLabel "plant nutrients"@en .
 
 she:PlantSpeciesDiversity a skos:Concept ;
     agrontology:isAffectedBy she:SoilNutrientStatus ;
@@ -1369,8 +1360,7 @@ she:PlantSpeciesDiversity a skos:Concept ;
 she:PoreContinuity a skos:Concept ;
     agrontology:isIncludedIn she:SoilStructuralAttributes ;
     obo:RO_0002335 she:SoilCompaction ;
-    skos:prefLabel "Pore continuity"@en,
-        "pore continuity"@en .
+    skos:prefLabel "pore continuity"@en .
 
 she:Potassium a skos:Concept ;
     agrontology:hasSymbol "K"@en ;
@@ -1401,7 +1391,7 @@ she:Sedimentation a skos:Concept ;
     skos:prefLabel "sedimentation"@en .
 
 she:Settlement a skos:Concept ;
-    skos:prefLabel "Settlement"@en ;
+    skos:prefLabel "settlement"@en ;
     skos:related she:SealedLand ;
     biolink:consumes she:Land .
 
@@ -1522,8 +1512,7 @@ she:Thresholds a skos:Concept ;
 she:WaterHoldingCapacity a skos:Concept ;
     skos:broader she:SoilProperties ;
     skos:exactMatch agrovoc:c_25304 ;
-    skos:prefLabel "water holding capacity"@en,
-        "water-holding capacity"@en .
+    skos:prefLabel "water holding capacity"@en .
 
 she:WaterInfiltration a skos:Concept ;
     obo:RO_0002335 she:SoilPhysicalDegradation ;
@@ -1597,7 +1586,7 @@ she:GreenhouseGasEmissions a skos:Concept ;
         she:NitrousOxide ;
     agrontology:isIncludedIn she:SoilBiochemicalProcesses ;
     skos:exactMatch agrovoc:c_36198c2c ;
-    skos:prefLabel "Greenhouse gas emissions"@en .
+    skos:prefLabel "greenhouse gas emissions"@en .
 
 she:HainesYoungPotschin2018 a dcterms:BibliographicResource ;
     dcterms:date "2018" .
@@ -1638,7 +1627,7 @@ she:NutrientTurnover a skos:Concept ;
     agrontology:isIncludedIn she:SoilBiochemicalProcesses ;
     sorelpr:wasControlledBy she:BelowGroundFoodWeb,
         she:Microbiome ;
-    skos:prefLabel "Nutrient turnover"@en .
+    skos:prefLabel "nutrient turnover"@en .
 
 she:Paul2020 a dcterms:BibliographicResource ;
     dcterms:date "2020" .
@@ -1671,8 +1660,8 @@ she:SOMLoss a skos:Concept ;
     agrontology:affects she:SoilFertility,
         she:SoilStability ;
     agrontology:causes she:SoilDegradation ;
-    skos:altLabel "soil organic matter loss"@en ;
-    skos:prefLabel "SOM loss"@en .
+    skos:prefLabel "soil organic matter loss"@en ;
+    skos:altLabel "SOM loss"@en .
 
 she:SRiskModel a sio:SIO_000510 ;
     agrontology:makeUseOf she:GeneralSoilIndicators,
@@ -1691,7 +1680,7 @@ she:SoilBiochemicalProcesses a skos:Concept ;
     agrontology:includes she:GreenhouseGasEmissions,
         she:NutrientTurnover ;
     agrontology:isAffectedBy she:SoilCompaction ;
-    skos:prefLabel "Soil biochemical processes"@en .
+    skos:prefLabel "soil biochemical processes"@en .
 
 she:SoilEcologicalDegradation a skos:Concept ;
     obo:RO_0002212 she:EcosystemFunctions,
@@ -1705,8 +1694,7 @@ she:SoilFunctioning a skos:Concept ;
     obo:RO_0002335 she:SoilDegradation ;
     dcterms:source she:EC2020a,
         she:JRC2012 ;
-    skos:prefLabel "Soil functioning"@en,
-        "soil functioning"@en ;
+    skos:prefLabel "soil functioning"@en ;
     skos:related she:SoilOrganisms .
 
 she:SoilParameters a skos:Concept ;
@@ -1790,7 +1778,7 @@ she:AnthropogenicErosion a skos:Concept ;
     skos:narrower she:HarvestingErosion,
         she:LivestockTramplingErosion,
         she:TillageErosion ;
-    skos:prefLabel "Anthropogenic erosion"@en .
+    skos:prefLabel "anthropogenic erosion"@en .
 
 she:Cices5.1 a af-r:AFR_0000916,
         dcterms:BibliographicResource ;
@@ -1823,7 +1811,7 @@ she:Korschens2005 a dcterms:BibliographicResource ;
 
 she:Land a skos:Concept ;
     skos:exactMatch agrovoc:c_4172 ;
-    skos:prefLabel "Land"@en ;
+    skos:prefLabel "land"@en ;
     biolink:consumed_by she:CommercialArea,
         she:IndustrialArea,
         she:Infrastructure,
@@ -1859,8 +1847,7 @@ she:SoilPollution a skos:Concept ;
     obo:RO_0002212 she:SoilFunctions ;
     skos:definition "Soil pollution significantly affects human health and/or ecosystem functioning."@en ;
     skos:exactMatch agrovoc:c_7183 ;
-    skos:prefLabel "Soil pollution"@en,
-        "soil pollution"@en .
+    skos:prefLabel "soil pollution"@en .
 
 she:StateOfSoil a skos:Concept ;
     agrontology:isAffectedBy she:ClimaticConditions,
@@ -1876,8 +1863,7 @@ she:WindErosion a skos:Concept ;
     skos:broader she:SoilErosion ;
     skos:definition "Strong air movements displacing loose soil particles."@en ;
     skos:exactMatch agrovoc:c_8393 ;
-    skos:prefLabel "Wind erosion"@en,
-        "wind erosion"@en .
+    skos:prefLabel "wind erosion"@en .
 
 she:BasicSoilParameters a skos:Concept ;
     agrontology:isSourceOf she:ComplexSoilParameters ;
@@ -1933,8 +1919,7 @@ she:HumanHealth a skos:Concept ;
     agrontology:isAffectedBy she:SoilPollution ;
     agrontology:isIncludedIn she:EnvironmentalQuality ;
     skos:exactMatch agrovoc:c_c722a312 ;
-    skos:prefLabel "Human health"@en,
-        "human health"@en .
+    skos:prefLabel "human health"@en .
 
 she:Nutrients a skos:Concept ;
     agrontology:isSourceOf she:NutrientInputs ;
@@ -1955,13 +1940,12 @@ she:PlantHealth a skos:Concept ;
     obo:RO_0002335 she:SoilCompaction ;
     dcterms:source she:Bunemann2018 ;
     skos:exactMatch agrovoc:c_25398 ;
-    skos:prefLabel "Plant health"@en,
-        "plant health"@en .
+    skos:prefLabel "plant health"@en .
 
 she:SealedLand a skos:Concept ;
     skos:broader she:LandTake ;
     skos:definition "Sealed land is a subset of land take, i.e. land consumed by the development of settlements, infrastructure, and commercial and industrial areas."@en ;
-    skos:prefLabel "Sealed land"@en ;
+    skos:prefLabel "sealed land"@en ;
     skos:related she:CommercialArea,
         she:IndustrialArea,
         she:Infrastructure,
@@ -1996,8 +1980,7 @@ she:SoilSealing a skos:Concept ;
     skos:broader she:SoilIndicators ;
     skos:definition "Soil sealing refers to the destruction or covering of soil by buildings, other constructions and layers of impermeable artificial material (asphalt, concrete, etc.)."@en ;
     skos:exactMatch agrovoc:c_f9554e7c ;
-    skos:prefLabel "Soil sealing"@en,
-        "soil sealing"@en ;
+    skos:prefLabel "soil sealing"@en ;
     she:indicates she:SoilThreats .
 
 she:EnvironmentalQuality a skos:Concept ;
@@ -2097,8 +2080,7 @@ she:Ecosystems a skos:Concept ;
     obo:RO_0002335 she:DegradedSoils ;
     skos:exactMatch agrovoc:c_2482 ;
     skos:narrower she:LifeSupportFunctions ;
-    skos:prefLabel "Ecosystems"@en,
-        "ecosystems"@en ;
+    skos:prefLabel "ecosystems"@en ;
     she:provides she:CulturalServices,
         she:ProvisioningServices,
         she:RegulatingServices,
@@ -2177,8 +2159,7 @@ she:SoilErosion a skos:Concept ;
     skos:narrower she:AnthropogenicErosion,
         she:WaterErosion,
         she:WindErosion ;
-    skos:prefLabel "Soil erosion"@en,
-        "soil erosion"@en ;
+    skos:prefLabel "soil erosion"@en ;
     she:indicates she:SoilThreats .
 
 she:SoilPhysicalDegradation a skos:Concept ;
@@ -2210,8 +2191,7 @@ she:WaterErosion a skos:Concept ;
         she:InterrillErosion,
         she:PipingErosion,
         she:RillErosion ;
-    skos:prefLabel "Water erosion"@en,
-        "water erosion"@en .
+    skos:prefLabel "water erosion"@en .
 
 she:Poesen2018 a dcterms:BibliographicResource ;
     dcterms:date "2018" .
@@ -2432,8 +2412,7 @@ she:SoilCompaction a skos:Concept ;
     obo:RO_0002213 she:Waterlogging ;
     skos:definition "Soil compaction harms the physical structure of soils and thus affects important ecological and economic soil functions, by reducing pore volume and pore continuity as well as particle surface accessibility."@en ;
     skos:exactMatch agrovoc:c_7163 ;
-    skos:prefLabel "Soil compaction"@en,
-        "soil compaction"@en ;
+    skos:prefLabel "soil compaction"@en ;
     she:causes she:SoilErosion .
 
 she:EcosystemServices a skos:Concept ;
@@ -2477,6 +2456,10 @@ she:SoilDegradation a skos:Concept ;
         she:Johnson1997,
         she:Stolte2016 ;
     skos:broader she:LandDegradation ;
+    skos:narrower she:SoilBiologicalDegradation,
+        she:SoilChemicalDegradation,
+        she:SoilPhysicalDegradation,
+        she:SoilEcologicalDegradation ;
     skos:definition "Soil degradation can be defined as a decline in soil quality, resulting in the reduced functioning of the soil."@en ;
     skos:exactMatch agrovoc:c_7168 ;
     skos:prefLabel "soil degradation"@en ;
