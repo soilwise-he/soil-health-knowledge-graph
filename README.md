@@ -1,6 +1,6 @@
-# Soil health knowledge graph: A demo
+# Soil health knowledge graph
 
-## Workflow of the demo
+## Pipeline of constructing knowledge graph
 
 ![image](https://github.com/soilwise-he/soil-health-knowledge-graph/blob/main/imgs/LLM4KG.svg)
 
