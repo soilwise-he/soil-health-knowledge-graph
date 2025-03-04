@@ -1761,11 +1761,7 @@
     },
     {
         "type": "text",
-        "text": "Imperviousness describes the covering of the soil surface with impermeable materials. Such areas are then incapable of being penetrated by air and water; thus, it describes by definition 100% sealing. In practice, soil sealing and imperviousness are used synonymously."
-    },
-    {
-        "type": "text",
-        "text": "Soil sealing refers to the destruction or covering of soil by buildings, other constructions and layers of impermeable artificial material (asphalt, concrete, etc.). Sealed land is a subset of land take, i.e. land consumed by the development of settlements, infrastructure, and commercial and industrial areas. It is the most intense form of land take and is essentially an irreversible process (Prokop et al., 2011)."
+        "text": "Imperviousness describes the covering of the soil surface with impermeable materials. Such areas are then incapable of being penetrated by air and water; thus, it describes by definition 100% sealing. In practice, soil sealing and imperviousness are used synonymously. Soil sealing refers to the destruction or covering of soil by buildings, other constructions and layers of impermeable artificial material (asphalt, concrete, etc.). Sealed land is a subset of land take, i.e. land consumed by the development of settlements, infrastructure, and commercial and industrial areas. It is the most intense form of land take and is essentially an irreversible process (Prokop et al., 2011)."
     },
     {
         "type": "text",
@@ -1889,11 +1885,7 @@
     },
     {
         "type": "text",
-        "text": "The most common method of measuring soil sealing is based on the different reflective behaviour of sealed and unsealed surfaces. This NDVI method (normalised difference vegetation index) quantifies vegetation by measuring the difference between near-infrared light (which vegetation strongly reflects) and red light (which vegetation absorbs). The NDVI method is used to measure vegetation, drought and also sealed surfaces."
-    },
-    {
-        "type": "text",
-        "text": "Healthy vegetation (with chlorophyll) reflects more near-infrared and green light than other wavelengths, but it absorbs more red and blue light (thus, vegetation appears green). Satellite sensors such as Landsat and Sentinel-2 both have the necessary sensors."
+        "text": "The most common method of measuring soil sealing is based on the different reflective behaviour of sealed and unsealed surfaces. This NDVI method (normalised difference vegetation index) quantifies vegetation by measuring the difference between near-infrared light (which vegetation strongly reflects) and red light (which vegetation absorbs). The NDVI method is used to measure vegetation, drought and also sealed surfaces. Healthy vegetation (with chlorophyll) reflects more near-infrared and green light than other wavelengths, but it absorbs more red and blue light (thus, vegetation appears green). Satellite sensors such as Landsat and Sentinel-2 both have the necessary sensors."
     },
     {
         "type": "text",
