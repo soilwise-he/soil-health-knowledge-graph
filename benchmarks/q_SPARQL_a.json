@@ -81,7 +81,7 @@
         "answer": ""
       },
       {
-        "question": "What are the main soil indicators and what are their units, if any?",
+        "question": "What are the essential soil indicators proposed by MAES and what are their units, if any?",
         "sparql_query": "",
         "answer": ""
       },
@@ -96,27 +96,22 @@
         "answer": ""
       },
       {
-        "question": "",
-        "sparql_query": "",
-        "answer": ""
-      },
-      {
         "question": "Which GAEC standards are relevant to soils, and what are their respective topics?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "What factors make it challenging to define optimal or critical thresholds for soil organic carbon (SOC) content in relation to soil health?",
+        "question": "What factors make it challenging to define thresholds for optimal or critical SOC content in relation to soil health?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "How does soil organic matter (SOM) content influence various soil functions and environmental processes?",
+        "question": "How does SOM content influence various soil functions and environmental processes?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "How are soil organic carbon (SOC) dynamics and nitrogen dynamics related, and what implications does this relationship have for agricultural practices and environmental pollution?",
+        "question": "How are SOC dynamics and nitrogen dynamics related, and what implications does this relationship have for agricultural practices and environmental pollution?",
         "sparql_query": "",
         "answer": ""
       },
@@ -131,12 +126,17 @@
         "answer": ""
       },
       {
-        "question": "What are the critical levels or thresholds of soil organic carbon (SOC) for maintaining soil health, structural stability, and optimal crop yield, and how do these thresholds vary across different soil types?",
+        "question": "what is the primary focus of most research concerning the derivation of SOC thresholds for sustainable arable soil management, and are there any other factors influencing this focus?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "What are examples of national estimations for site-typical soil organic carbon (SOC) contents in European countries, and how do these values vary based on environmental factors and land use?",
+        "question": "What are the critical levels or thresholds of SOC for maintaining soil health, structural stability, and optimal crop yield, and how do these thresholds vary across different soil types?",
+        "sparql_query": "",
+        "answer": ""
+      },
+      {
+        "question": "What are examples of national estimations for site-typical SOC contents in European countries, and how do these values vary based on environmental factors and land use?",
         "sparql_query": "",
         "answer": ""
       },
@@ -151,17 +151,12 @@
         "answer": ""
       },
       {
-        "question": "How does clay content influence the limits for soil organic matter (SOM) content in relation to crop production?",
+        "question": "How does clay content influence the limits for SOM content in relation to crop production?",
         "sparql_query": "",
         "answer": ""
       },
       {
         "question": "What are the two types of soil nutrients and what substances do they contain?",
-        "sparql_query": "",
-        "answer": ""
-      },
-      {
-        "question": "",
         "sparql_query": "",
         "answer": ""
       },
