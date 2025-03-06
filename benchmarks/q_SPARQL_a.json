@@ -161,342 +161,342 @@
         "answer": ""
       },
       {
-        "question": "",
+        "question": "what are the main soil parameters that are identified as key determinants of soil fertility, and what are the primary sources of influence on these parameters in agricultural and non-agricultural soils?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "How do nutrient inputs, specifically nitrogen and phosphorus, affect soil nutrient status, and what are the impacts of these inputs on biomass/crop growth and potential environmental consequences in non-agricultural and agricultural ecosystems?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the unique origin of nitrogen (N) in agricultural soils compared to other nutrients, what are the soil parameters that affect soil N availability and how is input N consumed?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "How does the concentration of phosphorus (P) in the soil solution differ from that of nitrogen, and what are the implications of this difference for plant uptake and the impact of fertilizer and manure inputs on crop yields, particularly in soils with high P content?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the typical nutrient limitations for biomass production in unfertilised terrestrial ecosystems, and what specifically limits tree growth in forest ecosystems, along with the primary factors influencing the availability of this limiting nutrient?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "How does soil nutrient (nitrogen and phosphorus) status affect ecosystems in addition to crop yields?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "How are indicators defined for assessing nitrogen and phosphorus status in agricultural soils, and what specific types of indicators are mentioned for nitrogen assessment in forest soils?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "How does the carbon to nitrogen (C/N) ratio in the organic layer of forest soils affect the soil's capacity to retain nitrogen and the risk of nitrogen leaching, and what C/N ratio ranges are identified as critical in relation to these processes?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What N/P ratio in the organic layer of coniferous and deciduous forests indicate phosphorus limitation according to the foliage N/P ratio?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "Under what conditions does soil acidification occur, and what are the primary anthropogenic causes of soil acidification in unlimed agricultural land?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are negatively affected by soil acidification and what is the effect on soil organic carbon in acid forest soils?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "what are the main indicators employed in agricultural soils to evaluate soil acidity and determine the necessity for liming, and what are their critical limits?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What range of critical pH values, associated with a 5% expected yield loss, was observed in short-term and long-term experiments involving wheat, maize, and rice?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What key elements need to be considered when establishing meaningful thresholds for pollutants in soil to assess the impact of soil pollution on soil health?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "Which societal needs are described as being affected by soil pollution?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the two types of soil pollution, what are the characteristics of diffuse soil pollution and what are it typical origins?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are some examples of pollutants found in arable soils, and what are their mentioned sources within arable farming practices?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are some characteristics that typically distinguish point source pollution from diffuse pollution in terms of scale and pollution pattern?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is the primary determinant of background concentrations for heavy metals in soil and what is the common background value for human-made organic pollutants?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the two highest-level protection targets distinguished in the context of soil pollution, and what are the specific sub-targets for them?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are soil screening levels (SSVs) and what determines the range of SSVs?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the commonly regulated heavy metals and which of them are highlighted as being potentially toxic to both human beings and soil organisms even at low concentrations?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "How plant protection products (PPPs) was introduced to the soil, what is the main component, and what other places can be found?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "In addition to PPPs, what other organic pollutants can be found in the soil and what are identified as primary sources of them?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is the overarching goal of soil protection regulations and procedures, and what is a soil represents a risk?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are some of the key soil services or functions through which the protection of human health and ecosystems can be related, and what are the main entities that are distinguished for soil protection in this context?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are some of the immediate indicators and direct human health risks often associated with sites affected by point source pollution, and where are such risks particularly evident?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is the fundamental goal of a soil pollution indicator, and what influence the assessment of risk and the associated SSV or threshold?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are some of the sub-indicators identified in the context of detecting, managing, and remediating contaminated sites?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the two types of indicators suggested during Eionet workshops for diffuse pollution, along with examples of each, and what specific heavy metals and nutrients are monitored with a 5- to 10-year sampling interval?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "How do the approaches to analyzing pollution patterns and developing sampling protocols differ between diffuse and point source polluted sites, and what are the distinct stages of investigation used for point source pollution?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the observed ranges of critical and intermediate risk SSVs for cadmium and copper across the European countries and regions, and what factors contribute to the variability of these SSV levels?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are some of the key aspects contributing to the considerable differences in thresholds of SSVs for organic pollutants among EU Member States, as exemplified by PCDD/PCDF?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is the described role of soil organisms in ecosystems, and what are some of the stated limitations regarding the use of species diversity as an indicator of soil health?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the main functional groups of soil organisms that constitute soil biodiversity, and what are some of the described characteristics for each group, including their feeding habits and approximate ranges for size, density, and biomass?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is the main factor affecting soil biota and what are some of the effects of agricultural intensification on soil food webs and soil biodiversity?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the specific soil biodiversity indicators proposed by Huber et al. (2008) and Breure (2004), and what reasons are given in this paragraph for selecting the indicators proposed by Breure (2004)?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "According to the case study on forest soils in the Flanders region, what were identified as the most useful parameters for indicating microbial biomass, and what specific information does each of these parameters provide about soil microbial activity or soil organic carbon?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "According to Ritz et al. (2009), what are the main categories of biological indicators they identified, and for each category, list the specific examples of indicators provided along with the general methods mentioned for their determination?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "According to Guerra et al. (2021), what are the specific ecological indicators that can be derived from the proposed essential biodiversity variables, and what analytical methodologies do they recommend for assessing the condition of soil biodiversity and functions?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "According to Creamer et al. (2019), what are the specific soil attributes that were analysed to determine soil biodiversity in their proposed and tested monitoring scheme for five soil functions?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "Beyond standard documentation of the soil sampling site, what specific categories of additional information are recommended for collection?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is soil erosion, what are the main forms of soil erosion, and what is identified as the main indicator used to quantify soil erosion?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the primary agents responsible for soil erosion, and what are some of the on-site and off-site consequences of soil erosion?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "According to Huber et al. (2008) and Poesen (2018), what are the main categories of soil erosion distinguished by their agent, and what specific types of erosion are included within each of these categories?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is the primary on-site consequence of soil erosion, and what are the specific examples of off-site impacts resulting from the transport and deposition of eroded material?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is the primary indicator used to quantify soil erosion by water, and what are proxy or impact sub-indicators that can be used to estimate soil erosion severity or potential when direct measurements of the soil loss rate are lacking?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the key differences in the methodologies and objectives of Level 1 and Level 2 monitoring for soil erosion by water in Europe, and what is the specific role of Level 1 in relation to Level 2 monitoring as described here?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the range of natural soil formation rates reported from several studies and what range of tolerable soil loss for Europe did Verheijen et al. (2009) calculate based on European soil formation data, including the corresponding reduction in soil depth per year?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "How did Smith (1941) define tolerable soil loss in relation to soil fertility and crop productivity, what range of tolerable loss rates was identified in stakeholder workshops in the United States in the late 1950s and early 1960s, and what two specific tolerable soil loss thresholds are mentioned for different soil depths in Switzerland?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are main specific ways in which soil compaction negatively impacts soil functions and what are primary causes of soil compaction?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is the primary condition under which soil compaction occurs, what type of soil deformation results from this condition, and what specific term is used to describe the soil's natural ability to withstand external mechanical forces, which is a key focus of soil compaction monitoring?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are soil properties or processes that are affected by soil compaction, and what does the extent of these effects depend on?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is a key difference in the reversibility of compaction between topsoil and subsoil in agricultural settings, and what are the reasons given for this difference?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the main indicators that describe topsoil compaction and what are their symbols, if any?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is a primary characteristic that distinguishes the second set of soil physical parameters from potentially simpler ones in terms of what they strongly depend on?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is precompression stress, and what are the main factors that influence its value?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What does the soil rigidity ratio indicate, and what range of values suggests that a soil structure is irreversibly deformed?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What combination of air capacity and saturated hydraulic conductivity values defines 'action values' (class IV), and what soil conditions and consequences are associated with this class?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is soil sealing and what are key consequences of it, and what is a characteristic feature of how baselines and thresholds for soil sealing are determined?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is the relationship described between imperviousness and soil sealing, and how is sealed land related to land take?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "How is land take defined, and what type of land is it usually at the expense of?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the main ways in which urbanization is described as affecting soils?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the different types of urban soils and artificial surfaces as classified in the given sources?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "If an area is completely sealed (100% sealing), which ecological soil functions will be unavailable?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What are the sub-indicators suggested by Haase and Lathrop (2003) for assessing land use efficiency in relation to soil sealing?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "What is the idea behind land recycling, what are the main key types of land recycling, and what do they involve?",
         "sparql_query": "",
         "answer": ""
       },
       {
-        "question": "",
+        "question": "How does the NDVI method differentiate between sealed and unsealed surfaces?",
         "sparql_query": "",
         "answer": ""
       }
