@@ -857,6 +857,30 @@
     },
     {
         "type": "text",
+        "text": "Background level: Level of pollutants in soil that can be found in the absence of human interference. Heavy metals, for example, are present in almost all soils as part of the soil matrix, composed of clay minerals, oxides and/or organic matter. Background concentrations of most metals vary depending on parent material (rock type from which the soil developed). For a large number of human-made organic pollutants, background values are zero or close to zero, since they are not part of any soil forming mineral (e.g. microplastics, PFAS, most PAHs and dioxins). In some cases, background levels of selected organic compounds are not zero, e.g. in the case of some PAHs present in soils subject to forest fires, although these are exceptions."
+    },
+    {
+        "type": "text",
+        "text": "Protection target (endpoint): Here we refer to endpoints as the entity to be protected. At the highest level, two protection targets are distinguished, i.e. human health and ecosystem health (see Table 5.2) but specific sub-targets include water quality (for consumption or other uses, e.g. showers, swimming) and food quality (for specific products or groups of products). Common endpoints considered here include arable (food or fodder) crops, animal products, water quality, and terrestrial or aquatic ecosystems represented by a number of key species. In the case of human health, exposure models are used to convert intake from polluted soils via different pathways (food, water, air or soil) to a resulting total exposure that can be matched with a critical exposure value such as a tolerable daily intake."
+    },
+    {
+        "type": "text",
+        "text": "Critical limit: These values specify exceedance limits for specific pollutants in endpoints (not in soil). Examples: water quality guidelines for drinking water; ecological thresholds to protect aquatic organisms in surface water bodies. Usually, such limits or thresholds are set at EU and/or national level. To convert critical limits in endpoints to corresponding screening levels in soil, transfer models are required."
+    },
+    {
+        "type": "text",
+        "text": "Risk limit: A critical concentration in soil or groundwater, related to a specific protection target, without a formal position in legislation. Risk limits are often derived as abasis for thresholds (the latter may refer to, or be a part of, a legal framework)."
+    },
+    {
+        "type": "text",
+        "text": "Soil screening value: Soil screening values (SSVs) are the levels of pollutants in soil at which the corresponding concentrations in endpoints (e.g. quality standard for food or drinking water) are equal to the critical limits. SSVs therefore depend on the function considered and also depend on the soil type considered if the pathway between critical limit in the endpoint and the corresponding concentration in soil is affected by one or more soil properties (e.g. soil pH, which affects the transfer of most metals from soil to crops). Depending on the degree of protection desired, screening levels range from low to medium (acceptable risk, no immediate action required) to high levels (beyond which the risk is deemed unacceptable and further research or soil remediation would be required). SSVs are, in contrast to risk limits, part of a legislative framework (however, there may be differences among Member States)."
+    },
+    {
+        "type": "text",
+        "text": "Transfer models: To convert critical limits in endpoints to corresponding risk limits or SSVs in soil, transfer models are needed. Examples include soil to crop models that can predict concentrations in crops based on the corresponding levels in the soil; this transfer depends on relevant soil properties such as acidity (pH) and/or organic matter. Other relevant pathway models are those used to predict the solution concentration of chemicals (nutrients, organic pollutants and metals) influenced by specific soil properties. These models differ from exposure models used to calculate human exposure in that transfer models consider only specific pathways (e.g. the transfer of pollutants from soil to food)."
+    },
+    {
+        "type": "text",
         "text": "Several soil pollutants, such as most metals, are naturally found in soils, but the levels are often increased by anthropogenic activities. Other pollutants are synthesised and brought into soils by a range of human activities. The types of pollutants found in soil, and how they affect soil health, is described below. Because of the large variety of substances applied to soil, a generic grouping is applied here that follows established principles of soil monitoring and risk assessment (FAO and UNEP, 2021). A more refined description of soil pollutants and their properties can be found in Van Gestel et al. (2022)."
     },
     {
