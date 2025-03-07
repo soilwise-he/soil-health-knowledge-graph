@@ -1,4 +1,4 @@
-# Ignore the config file
+# Ignore config file
 config
 
 # Ignore IDE specific files
@@ -7,5 +7,5 @@ config
 # Ignore Python caches
 __pycache__/
 
-# Ignore drawio image
+# Ignore .drawio figure
 imgs/LLM4KG.drawio
