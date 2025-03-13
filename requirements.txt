@@ -6,7 +6,7 @@ langchain==0.3.20
 langchain_community==0.3.19
 langchain_openai==0.3.8
 networkx==3.3
-nltk==3.8.1
+nltk==3.9
 numpy==1.24.3
 openai==1.65.5
 Pillow==11.1.0
