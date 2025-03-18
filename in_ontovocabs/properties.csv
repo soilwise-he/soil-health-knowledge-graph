@@ -101,3 +101,9 @@ obo:RO_0002331,http://purl.obolibrary.org/obo/RO_0002331,involved in
 sorelm:hasThreshold,http://sweetontology.net/relaMath/hasThreshold,has threshold
 obo:RO_0002434,http://purl.obolibrary.org/obo/RO_0002434,interacts with
 obo:RO_0000087,http://purl.obolibrary.org/obo/RO_0000087,has role
+af-x:AFX_0000408,http://purl.allotrope.org/ontologies/property#AFX_0000408,has condition
+af-x:AFX_0000355,http://purl.allotrope.org/ontologies/property#AFX_0000355,is condition for
+repr:storedAt,https://w3id.org/reproduceme#storedAt,stored at
+she:bindsWith,https://soilwise-he.github.io/soil-health#bindsWith,binds with
+she:respondsTo,https://soilwise-he.github.io/soil-health#respondsTo,responds to
+she:sequesters,https://soilwise-he.github.io/soil-health#sequesters,sequesters

@@ -9,3 +9,6 @@ __pycache__/
 
 # Ignore .drawio figure
 imgs/LLM4KG.drawio
+
+# Ignore entity similarity file
+entity_similarity.csv
