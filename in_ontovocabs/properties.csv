@@ -92,7 +92,6 @@ she:isRequiredBy,https://soilwise-he.github.io/soil-health#isRequiredBy,is requi
 sio:SIO_000563,http://semanticscience.org/resource/SIO_000563,describes
 sio:SIO_000557,http://semanticscience.org/resource/SIO_000557,is described by
 schema:inSupportOf,https://schema.org/inSupportOf,in support of
-she:sumOf,https://soilwise-he.github.io/soil-health#sumOf,sum of
 sio:SIO_000202,http://semanticscience.org/resource/SIO_000202,contains
 sio:SIO_000128,http://semanticscience.org/resource/SIO_000128,is contained in
 obo:BFO_0000066,http://purl.obolibrary.org/obo/BFO_0000066,occurs in
@@ -107,3 +106,5 @@ repr:storedAt,https://w3id.org/reproduceme#storedAt,stored at
 she:bindsWith,https://soilwise-he.github.io/soil-health#bindsWith,binds with
 she:respondsTo,https://soilwise-he.github.io/soil-health#respondsTo,responds to
 she:sequesters,https://soilwise-he.github.io/soil-health#sequesters,sequesters
+obo:RO_0017003,http://purl.obolibrary.org/obo/RO_0017003,positively correlated with
+rdf:object,http://www.w3.org/1999/02/22-rdf-syntax-ns#object,object
