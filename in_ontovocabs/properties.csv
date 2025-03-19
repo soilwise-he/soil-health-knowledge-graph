@@ -108,3 +108,6 @@ she:respondsTo,https://soilwise-he.github.io/soil-health#respondsTo,responds to
 she:sequesters,https://soilwise-he.github.io/soil-health#sequesters,sequesters
 obo:RO_0017003,http://purl.obolibrary.org/obo/RO_0017003,positively correlated with
 rdf:object,http://www.w3.org/1999/02/22-rdf-syntax-ns#object,object
+sorelsc:hasInterval,http://sweetontology.net/relaSci/hasInterval,has interval
+agrontology:valueUsedIn,http://aims.fao.org/aos/agrontology#valueUsedIn,value used in
+biolink:has_percentage,https://w3id.org/biolink/vocab/has_percentage,has percentage
