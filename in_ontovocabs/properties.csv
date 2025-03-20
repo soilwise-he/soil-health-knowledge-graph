@@ -116,3 +116,4 @@ she:isConvertedTo,https://soilwise-he.github.io/soil-health#isConvertedTo,is con
 she:converts,https://soilwise-he.github.io/soil-health#converts,converts
 bao:BAO_0095002,http://www.bioassayontology.org/bao#BAO_0095002,has indicator
 bao:BAO_0002586,http://www.bioassayontology.org/bao#BAO_0002586,is indicator of
+sio:SIO_000635,http://semanticscience.org/resource/SIO_000635,has trigger
