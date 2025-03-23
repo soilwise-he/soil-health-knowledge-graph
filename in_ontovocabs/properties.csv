@@ -30,7 +30,6 @@ agrontology:isUsedToMake,http://aims.fao.org/aos/agrontology#isUsedToMake,is use
 agrontology:causes,http://aims.fao.org/aos/agrontology#causes,causes
 agrontology:isCausedBy,http://aims.fao.org/aos/agrontology#isCausedBy,is caused by
 qudt:unit,http://qudt.org/schema/qudt/unit,unit
-rdfs:label,http://www.w3.org/2000/01/rdf-schema#label,label
 qudt:expression,http://qudt.org/schema/qudt/expression,expression
 agrontology:makeUseOf,http://aims.fao.org/aos/agrontology#makeUseOf,make use of
 skos:altLabel,http://www.w3.org/2004/02/skos/core#altLabel,alternative label
@@ -111,9 +110,11 @@ obo:RO_0017004,http://purl.obolibrary.org/obo/RO_0017004,negatively correlated w
 rdf:object,http://www.w3.org/1999/02/22-rdf-syntax-ns#object,object
 sorelsc:hasInterval,http://sweetontology.net/relaSci/hasInterval,has interval
 agrontology:valueUsedIn,http://aims.fao.org/aos/agrontology#valueUsedIn,value used in
+agrontology:usingValue,http://aims.fao.org/aos/agrontology#usingValue,using value
 biolink:has_percentage,https://w3id.org/biolink/vocab/has_percentage,has percentage
 she:isConvertedTo,https://soilwise-he.github.io/soil-health#isConvertedTo,is converted to
 she:converts,https://soilwise-he.github.io/soil-health#converts,converts
 bao:BAO_0095002,http://www.bioassayontology.org/bao#BAO_0095002,has indicator
 bao:BAO_0002586,http://www.bioassayontology.org/bao#BAO_0002586,is indicator of
 sio:SIO_000635,http://semanticscience.org/resource/SIO_000635,has trigger
+sio:SIO_000636,http://semanticscience.org/resource/SIO_000636,is trigger for
