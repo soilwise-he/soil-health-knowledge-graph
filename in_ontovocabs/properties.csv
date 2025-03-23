@@ -118,3 +118,8 @@ bao:BAO_0095002,http://www.bioassayontology.org/bao#BAO_0095002,has indicator
 bao:BAO_0002586,http://www.bioassayontology.org/bao#BAO_0002586,is indicator of
 sio:SIO_000635,http://semanticscience.org/resource/SIO_000635,has trigger
 sio:SIO_000636,http://semanticscience.org/resource/SIO_000636,is trigger for
+time:hasDuration,http://www.w3.org/2006/time#hasDuration,has duration
+obo:RO_0002610,http://purl.obolibrary.org/obo/RO_0002610,correlated with
+she:focusesOn,https://soilwise-he.github.io/soil-health#focusesOn,focuses on
+she:isAcceptedBy,https://soilwise-he.github.io/soil-health#isAcceptedBy,is accepted by
+she:accepts,https://soilwise-he.github.io/soil-health#accepts,accepts
