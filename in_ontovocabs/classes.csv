@@ -4,9 +4,7 @@ dcterms:BibliographicResource,http://purl.org/dc/terms/BibliographicResource,Bib
 dcterms:Policy,http://purl.org/dc/terms/Policy,Policy
 dcterms:Standard,http://purl.org/dc/terms/Standard,Standard
 dcmitype:Dataset,http://purl.org/dc/dcmitype/Dataset,Dataset
-qudt:QuantityValue,http://qudt.org/schema/qudt/QuantityValue,Quantity Value
 qudt:QuantityKind,http://qudt.org/schema/qudt/QuantityKind,Quantity Kind
-qudt:SystemOfQuantityKinds,http://qudt.org/schema/qudt/SystemOfQuantityKinds,System Of Quantity Kinds
 qudt:Unit,http://qudt.org/schema/qudt/Unit,Unit
 af-r:AFR_0000916,http://purl.allotrope.org/ontologies/result#AFR_0000916,Classification
 sio:SIO_000510,http://semanticscience.org/resource/SIO_000510,Model
@@ -15,3 +13,4 @@ sohuj:Regulation,http://sweetontology.net/humanJurisdiction/Regulation,Regulatio
 sio:SIO_010423,http://semanticscience.org/resource/SIO_010423,Target
 schema:Continent,https://schema.org/Continent,Continent
 schema:Country,https://schema.org/Country,Country
+sorepsg:Region,http://sweetontology.net/reprSpaceGeometry/Region,Region

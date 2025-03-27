@@ -36,8 +36,6 @@ skos:altLabel,http://www.w3.org/2004/02/skos/core#altLabel,alternative label
 agrontology:influences,http://aims.fao.org/aos/agrontology#influences,influences
 agrontology:isInfluencedBy,http://aims.fao.org/aos/agrontology#isInfluencedBy,is influenced by
 agrontology:isUsedIn,http://aims.fao.org/aos/agrontology#isUsedIn,is used in
-agrontology:smallerThan,http://aims.fao.org/aos/agrontology#smallerThan,smaller than
-agrontology:greaterThan,http://aims.fao.org/aos/agrontology#greaterThan,greater than
 agrontology:isProcessFor,http://aims.fao.org/aos/agrontology#isProcessFor,is process for
 agrontology:usesProcess,http://aims.fao.org/aos/agrontology#usesProcess,uses process
 agrontology:hasPart,http://aims.fao.org/aos/agrontology#hasPart,has part
@@ -78,7 +76,6 @@ schema:assesses,https://schema.org/assesses,assesses
 obo:RO_0002213,http://purl.obolibrary.org/obo/RO_0002213,positively regulates
 obo:RO_0002336,http://purl.obolibrary.org/obo/RO_0002336,positively regulated by
 she:inputsFrom,https://soilwise-he.github.io/soil-health#inputsFrom,inputs from
-sorelsc:hasImpactOn,http://sweetontology.net/relaSci/hasImpactOn,has impact on
 obo:INO_0000082,http://purl.obolibrary.org/obo/INO_0000082,controls
 sorelpr:wasControlledBy,http://sweetontology.net/relaProvenance/wasControlledBy,was controlled by
 obo:RO_0002434,http://purl.obolibrary.org/obo/RO_0002434,interacts with
@@ -108,12 +105,12 @@ she:sequesters,https://soilwise-he.github.io/soil-health#sequesters,sequesters
 obo:RO_0017003,http://purl.obolibrary.org/obo/RO_0017003,positively correlated with
 obo:RO_0017004,http://purl.obolibrary.org/obo/RO_0017004,negatively correlated with
 rdf:object,http://www.w3.org/1999/02/22-rdf-syntax-ns#object,object
-sorelsc:hasInterval,http://sweetontology.net/relaSci/hasInterval,has interval
+sorelm:hasInterval,http://sweetontology.net/relaMath/hasInterval,has interval
 agrontology:valueUsedIn,http://aims.fao.org/aos/agrontology#valueUsedIn,value used in
 agrontology:usingValue,http://aims.fao.org/aos/agrontology#usingValue,using value
 biolink:has_percentage,https://w3id.org/biolink/vocab/has_percentage,has percentage
 she:isConvertedTo,https://soilwise-he.github.io/soil-health#isConvertedTo,is converted to
-she:converts,https://soilwise-he.github.io/soil-health#converts,converts
+she:isConvertedFrom,https://soilwise-he.github.io/soil-health#isConvertedFrom,is converted from
 bao:BAO_0095002,http://www.bioassayontology.org/bao#BAO_0095002,has indicator
 bao:BAO_0002586,http://www.bioassayontology.org/bao#BAO_0002586,is indicator of
 sio:SIO_000635,http://semanticscience.org/resource/SIO_000635,has trigger
@@ -123,3 +120,11 @@ obo:RO_0002610,http://purl.obolibrary.org/obo/RO_0002610,correlated with
 she:focusesOn,https://soilwise-he.github.io/soil-health#focusesOn,focuses on
 she:isAcceptedBy,https://soilwise-he.github.io/soil-health#isAcceptedBy,is accepted by
 she:accepts,https://soilwise-he.github.io/soil-health#accepts,accepts
+af-x:AFX_0002696,http://purl.allotrope.org/ontologies/property#AFX_0002696,has range
+agrontology:hasType,http://aims.fao.org/aos/agrontology#hasType,has type
+agrontology:typeOf,http://aims.fao.org/aos/agrontology#typeOf,type of
+she:appliesTo,https://soilwise-he.github.io/soil-health#appliesTo,applies to
+obo:RO_0002552,http://purl.obolibrary.org/obo/RO_0002552,results in ending of
+qudt:conversionMultiplier,http://qudt.org/schema/qudt/conversionMultiplier,conversion multiplier
+sorelm:hasUpperBound,http://sweetontology.net/relaMath/hasUpperBound,has upper bound
+sorelm:hasLowerBound,http://sweetontology.net/relaMath/hasLowerBound,has lower bound

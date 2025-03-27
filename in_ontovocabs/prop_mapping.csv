@@ -13,7 +13,6 @@ http://aims.fao.org/aos/agrontology#isMadeFrom,http://aims.fao.org/aos/agrontolo
 http://aims.fao.org/aos/agrontology#causes,http://aims.fao.org/aos/agrontology#isCausedBy
 http://aims.fao.org/aos/agrontology#makeUseOf,http://aims.fao.org/aos/agrontology#isUsedIn
 http://aims.fao.org/aos/agrontology#influences,http://aims.fao.org/aos/agrontology#isInfluencedBy
-http://aims.fao.org/aos/agrontology#smallerThan,http://aims.fao.org/aos/agrontology#greaterThan
 http://aims.fao.org/aos/agrontology#isProcessFor,http://aims.fao.org/aos/agrontology#usesProcess
 http://aims.fao.org/aos/agrontology#follows,http://aims.fao.org/aos/agrontology#precedes
 http://aims.fao.org/aos/agrontology#isUsedAs,http://aims.fao.org/aos/agrontology#isUseOf
@@ -35,7 +34,7 @@ https://soilwise-he.github.io/soil-health#requires,https://soilwise-he.github.io
 http://semanticscience.org/resource/SIO_000563,http://semanticscience.org/resource/SIO_000557
 http://semanticscience.org/resource/SIO_000202,http://semanticscience.org/resource/SIO_000128
 http://purl.allotrope.org/ontologies/property#AFX_0000408,http://purl.allotrope.org/ontologies/property#AFX_0000355
-https://soilwise-he.github.io/soil-health#isConvertedTo,https://soilwise-he.github.io/soil-health#converts
+https://soilwise-he.github.io/soil-health#isConvertedTo,https://soilwise-he.github.io/soil-health#isConvertedFrom
 http://www.bioassayontology.org/bao#BAO_0095002,http://www.bioassayontology.org/bao#BAO_0002586
 http://aims.fao.org/aos/agrontology#usingValue,http://aims.fao.org/aos/agrontology#valueUsedIn
 http://semanticscience.org/resource/SIO_000635,http://semanticscience.org/resource/SIO_000636
