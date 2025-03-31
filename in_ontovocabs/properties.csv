@@ -23,7 +23,7 @@ agrontology:isPreventedBy,http://aims.fao.org/aos/agrontology#isPreventedBy,is p
 agrontology:prevents,http://aims.fao.org/aos/agrontology#prevents,prevents
 agrontology:isMeasuredBy,http://aims.fao.org/aos/agrontology#isMeasuredBy,is measured by
 prov:atLocation,http://www.w3.org/ns/prov#atLocation,at location
-skos:scopeNote,http://www.w3.org/2004/02/skos/core#scopeNote,scope note
+skos:note,http://www.w3.org/2004/02/skos/core#note,note
 agrontology:compose,http://aims.fao.org/aos/agrontology#compose,compose
 agrontology:isMadeFrom,http://aims.fao.org/aos/agrontology#isMadeFrom,is made from
 agrontology:isUsedToMake,http://aims.fao.org/aos/agrontology#isUsedToMake,is used to make
@@ -128,3 +128,7 @@ obo:RO_0002552,http://purl.obolibrary.org/obo/RO_0002552,results in ending of
 qudt:conversionMultiplier,http://qudt.org/schema/qudt/conversionMultiplier,conversion multiplier
 sorelm:hasUpperBound,http://sweetontology.net/relaMath/hasUpperBound,has upper bound
 sorelm:hasLowerBound,http://sweetontology.net/relaMath/hasLowerBound,has lower bound
+agrontology:greaterThan,http://aims.fao.org/aos/agrontology#greaterThan,greater than
+agrontology:smallerThan,http://aims.fao.org/aos/agrontology#smallerThan,smaller than
+obo:RO_0002508,http://purl.obolibrary.org/obo/RO_0002508,determines
+obo:RO_0002507,http://purl.obolibrary.org/obo/RO_0002507,determined by
