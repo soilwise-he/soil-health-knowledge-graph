@@ -40,3 +40,4 @@ http://aims.fao.org/aos/agrontology#usingValue,http://aims.fao.org/aos/agrontolo
 http://semanticscience.org/resource/SIO_000635,http://semanticscience.org/resource/SIO_000636
 https://soilwise-he.github.io/soil-health#isAcceptedBy,https://soilwise-he.github.io/soil-health#accepts
 http://aims.fao.org/aos/agrontology#smallerThan,http://aims.fao.org/aos/agrontology#greaterThan
+https://soilwise-he.github.io/soil-health#hasEquilibriumWith,https://soilwise-he.github.io/soil-health#hasEquilibriumWith

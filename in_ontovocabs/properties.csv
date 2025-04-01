@@ -132,3 +132,6 @@ agrontology:greaterThan,http://aims.fao.org/aos/agrontology#greaterThan,greater 
 agrontology:smallerThan,http://aims.fao.org/aos/agrontology#smallerThan,smaller than
 obo:RO_0002508,http://purl.obolibrary.org/obo/RO_0002508,determines
 obo:RO_0002507,http://purl.obolibrary.org/obo/RO_0002507,determined by
+she:hasEquilibriumWith,https://soilwise-he.github.io/soil-health#hasEquilibriumWith,has equilibrium with
+af-x:AFX_0002727,http://purl.allotrope.org/ontologies/property#AFX_0002727,lacks
+she:isEmittedTo,https://soilwise-he.github.io/soil-health#isEmittedTo,is emitted to
