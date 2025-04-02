@@ -41,3 +41,5 @@ http://semanticscience.org/resource/SIO_000635,http://semanticscience.org/resour
 https://soilwise-he.github.io/soil-health#isAcceptedBy,https://soilwise-he.github.io/soil-health#accepts
 http://aims.fao.org/aos/agrontology#smallerThan,http://aims.fao.org/aos/agrontology#greaterThan
 https://soilwise-he.github.io/soil-health#hasEquilibriumWith,https://soilwise-he.github.io/soil-health#hasEquilibriumWith
+https://soilwise-he.github.io/soil-health#isLimitedBy,https://soilwise-he.github.io/soil-health#limits
+http://aims.fao.org/aos/agrontology#isComponentOf,http://aims.fao.org/aos/agrontology#hasComponent

@@ -135,3 +135,9 @@ obo:RO_0002507,http://purl.obolibrary.org/obo/RO_0002507,determined by
 she:hasEquilibriumWith,https://soilwise-he.github.io/soil-health#hasEquilibriumWith,has equilibrium with
 af-x:AFX_0002727,http://purl.allotrope.org/ontologies/property#AFX_0002727,lacks
 she:isEmittedTo,https://soilwise-he.github.io/soil-health#isEmittedTo,is emitted to
+obo:RO_0002334,http://purl.obolibrary.org/obo/RO_0002334,regulated by
+obo:RO_0002211,http://purl.obolibrary.org/obo/RO_0002211,regulates
+she:isLimitedBy,https://soilwise-he.github.io/soil-health#isLimitedBy,is limited by
+she:limits,https://soilwise-he.github.io/soil-health#limits,limits
+agrontology:hasComponent,http://aims.fao.org/aos/agrontology#hasComponent,has component
+agrontology:isComponentOf,http://aims.fao.org/aos/agrontology#isComponentOf,is component of
