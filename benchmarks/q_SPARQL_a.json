@@ -2,8 +2,8 @@
     "qa_pairs": [
       {
         "question": "What are the components of soil, and how does soil contribute to its functions that support the delivery of ecosystem services?",
-        "sparql_query": "",
-        "answer": ""
+        "sparql_query": "PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX she: <https://soilwise-he.github.io/soil-health#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n\nSELECT ?category ?value\nWHERE {\n  {\n    ?componentURI skos:prefLabel ?value .\n    she:Soil agrontology:isComposedOf ?componentURI .\n    BIND(\"Soil component\" AS ?category)\n  }\n  UNION\n  {\n    she:Soil ?category she:SoilFunctions .\n    BIND(\"Soil functions\" AS ?value)\n  }\n}\nORDER BY ?category ?value",
+        "answer": "Soil is composed of a mixture of mineral and organic compounds, water, air and living organisms, and soil provides soil functions that support the delivery of ecosystem services."
       },
       {
         "question": "What knowledge is needed in order to manage soil sustainably and protect it?",

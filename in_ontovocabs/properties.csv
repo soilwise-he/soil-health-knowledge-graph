@@ -33,8 +33,6 @@ qudt:unit,http://qudt.org/schema/qudt/unit,unit
 qudt:expression,http://qudt.org/schema/qudt/expression,expression
 agrontology:makeUseOf,http://aims.fao.org/aos/agrontology#makeUseOf,make use of
 skos:altLabel,http://www.w3.org/2004/02/skos/core#altLabel,alternative label
-agrontology:influences,http://aims.fao.org/aos/agrontology#influences,influences
-agrontology:isInfluencedBy,http://aims.fao.org/aos/agrontology#isInfluencedBy,is influenced by
 agrontology:isUsedIn,http://aims.fao.org/aos/agrontology#isUsedIn,is used in
 agrontology:isProcessFor,http://aims.fao.org/aos/agrontology#isProcessFor,is process for
 agrontology:usesProcess,http://aims.fao.org/aos/agrontology#usesProcess,uses process
