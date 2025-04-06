@@ -23,6 +23,51 @@
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix citedcat: <https://w3id.org/citedcat-ap/> .
+
+<https://soilwise-he.github.io/soil-health>
+        owl:versionInfo  "v0.2.0" ;
+        dcterms:creator [ schema:affiliation [ foaf:name "Wageningen University & Research" ;
+                                               rdfs:seeAlso <https://www.wur.nl/> ] ;
+                      rdfs:seeAlso <https://orcid.org/0009-0008-5213-5114> ;
+                      foaf:name "Beichen Wang"
+                    ] ;
+        dcterms:contributor [ schema:affiliation [ foaf:name "Wageningen University & Research" ;
+                                               rdfs:seeAlso <https://www.wur.nl/> ] ;
+                      rdfs:seeAlso <https://orcid.org/0000-0002-1391-7104> ;
+                      foaf:name "Anna Fensel"                        
+                    ],
+                    [ schema:affiliation [ foaf:name "Instituto Superior Técnico" ;
+                                           rdfs:seeAlso <https://tecnico.ulisboa.pt/> ] ;
+                      rdfs:seeAlso <https://orcid.org/0000-0002-5851-2071/> ;
+                      foaf:name "Luís Moreira de Sousa"
+                    ] ;
+        dcterms:title "Soil health knowledge graph"@en ;
+        dcterms:abstract "This repository hosts an open-source soil health knowledge graph (KG) alongside its supporting ontologies. The KG is designed to unify fragmented interpretations of soil health—a concept variably defined across research, policymaking, and agriculture—by structuring insights from the European Environment Agency's 2023 report Soil Monitoring in Europe: Indicators and Thresholds for Soil Health Assessments. The KG leverages SKOS (Simple Knowledge Organization System) as its core framework to model soil health concepts, soil threat indicators and their critical thresholds, while Dublin Core standardizes metadata for references in the report. Relationships between entities are semantically defined using existing ontologies like Agrontology and OBO Relation Ontology. The KG is linked to external vocabularies such as AGROVOC and ISO 11074 (soil quality standard)."@en ;
+        dcterms:source <https://data.europa.eu/doi/10.2800/956606> ;
+        dcterms:rights "This knowledge graph is distributed under Creative Commons Attribution 4.0 International - https://creativecommons.org/licenses/by/4.0/"@en ;
+        citedcat:isFundedBy <https://doi.org/10.3030/101112838> ;
+        dcterms:isReferencedBy <https://doi.org/10.5281/zenodo.14936020> .
+
+<https://doi.org/10.3030/101112838>
+        a foaf:Project ;
+        dcterms:title "An open access knowledge and data repository to safeguard soils"@en ;
+        citedcat:isAwardedBy [ foaf:Organization "European Commission" ] .
+
+<https://doi.org/10.5281/zenodo.14936020>
+        a dcat:Dataset ;
+        dcterms:title "Soil health knowledge graph"@en ;
+        foaf:primaryTopic <https://soilwise-he.github.io/soil-health> .
+
+<https://data.europa.eu/doi/10.2800/956606>
+        a dcterms:BibliographicResource ;
+        dcterms:title "Soil monitoring in Europe – Indicators and thresholds for soil quality assessments"@en ;
+        dcterms:date "2023" ;
+        dcterms:creator "European Environment Agency" .
 
 she:Ammonia a skos:Concept ;
     obo:RO_0002331 she:AcidPrecipitation ;
