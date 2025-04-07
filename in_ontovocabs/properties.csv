@@ -138,3 +138,7 @@ she:isLimitedBy,https://soilwise-he.github.io/soil-health#isLimitedBy,is limited
 she:limits,https://soilwise-he.github.io/soil-health#limits,limits
 agrontology:hasComponent,http://aims.fao.org/aos/agrontology#hasComponent,has component
 agrontology:isComponentOf,http://aims.fao.org/aos/agrontology#isComponentOf,is component of
+she:isRetainedBy,https://soilwise-he.github.io/soil-health#isRetainedBy,is retained by
+she:retains,https://soilwise-he.github.io/soil-health#retains,retains
+she:reflects,https://soilwise-he.github.io/soil-health#reflects,reflects
+she:isReflectedBy,https://soilwise-he.github.io/soil-health#isReflectedBy,is reflected by

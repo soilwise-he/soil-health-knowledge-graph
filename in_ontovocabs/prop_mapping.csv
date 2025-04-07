@@ -43,3 +43,5 @@ https://soilwise-he.github.io/soil-health#hasEquilibriumWith,https://soilwise-he
 https://soilwise-he.github.io/soil-health#isLimitedBy,https://soilwise-he.github.io/soil-health#limits
 http://aims.fao.org/aos/agrontology#isComponentOf,http://aims.fao.org/aos/agrontology#hasComponent
 http://purl.obolibrary.org/obo/RO_0002434,http://purl.obolibrary.org/obo/RO_0002434
+https://soilwise-he.github.io/soil-health#isRetainedBy,https://soilwise-he.github.io/soil-health#retains
+https://soilwise-he.github.io/soil-health#reflects,https://soilwise-he.github.io/soil-health#isReflectedBy
