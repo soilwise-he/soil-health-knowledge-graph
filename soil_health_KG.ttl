@@ -28,6 +28,9 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix citedcat: <https://w3id.org/citedcat-ap/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix sorepsg: <http://sweetontology.net/reprSpaceGeometry/> .
+@prefix sorelpr: <http://sweetontology.net/relaProvenance/> .
 
 <https://soilwise-he.github.io/soil-health>
         owl:versionInfo  "v0.2.0" ;
@@ -2907,4 +2910,472 @@ she:SoilIndicators a skos:Concept ;
     skos:related she:SoilAttributes ;
     wdt:P1889 she:SoilParameters ;
     schema:assesses she:SoilDegradation .
+
+skos:Concept a rdfs:Class ;
+    skos:prefLabel "Concept" .
+
+dcterms:BibliographicResource a rdfs:Class ;
+    skos:prefLabel "Bibliographic Resource" .
+
+dcterms:Policy a rdfs:Class ;
+    skos:prefLabel "Policy" .
+
+dcterms:Standard a rdfs:Class ;
+    skos:prefLabel "Standard" .
+
+dcmitype:Dataset a rdfs:Class ;
+    skos:prefLabel "Dataset" .
+
+af-r:AFR_0000916 a rdfs:Class ;
+    skos:prefLabel "Classification" .
+
+sio:SIO_000510 a rdfs:Class ;
+    skos:prefLabel "Model" .
+
+sio:SIO_000368 a rdfs:Class ;
+    skos:prefLabel "Equation" .
+
+sohuj:Regulation a rdfs:Class ;
+    skos:prefLabel "Regulation" .
+
+sio:SIO_010423 a rdfs:Class ;
+    skos:prefLabel "Target" .
+
+schema:Continent a rdfs:Class ;
+    skos:prefLabel "Continent" .
+
+schema:Country a rdfs:Class ;
+    skos:prefLabel "Country" .
+
+sorepsg:Region a rdfs:Class ;
+    skos:prefLabel "Region" .
+
+skos:broader a rdf:Property ;
+    skos:prefLabel "has broader" .
+
+skos:narrower a rdf:Property ;
+    skos:prefLabel "has narrower" .
+
+skos:related a rdf:Property ;
+    skos:prefLabel "has related" .
+
+dcterms:date a rdf:Property ;
+    skos:prefLabel "date" .
+
+dcterms:source a rdf:Property ;
+    skos:prefLabel "source" .
+
+she:provides a rdf:Property ;
+    skos:prefLabel "provides" .
+
+she:isProvidedBy a rdf:Property ;
+    skos:prefLabel "is provided by" .
+
+she:variesIn a rdf:Property ;
+    skos:prefLabel "varies in" .
+
+agrontology:isComposedOf a rdf:Property ;
+    skos:prefLabel "is composed of" .
+
+agrontology:isPartOf a rdf:Property ;
+    skos:prefLabel "is part of" .
+
+agrontology:includes a rdf:Property ;
+    skos:prefLabel "includes" .
+
+skos:definition a rdf:Property ;
+    skos:prefLabel "definition" .
+
+skos:prefLabel a rdf:Property ;
+    skos:prefLabel "preferred label" .
+
+agrontology:affects a rdf:Property ;
+    skos:prefLabel "affects" .
+
+agrontology:hasAbbreviation a rdf:Property ;
+    skos:prefLabel "has abbreviation" .
+
+agrontology:measures a rdf:Property ;
+    skos:prefLabel "measures" .
+
+dcterms:replaces a rdf:Property ;
+    skos:prefLabel "replaces" .
+
+agrontology:isAffectedBy a rdf:Property ;
+    skos:prefLabel "is affected by" .
+
+agrontology:benefitsFrom a rdf:Property ;
+    skos:prefLabel "benefits from" .
+
+agrontology:isBeneficialFor a rdf:Property ;
+    skos:prefLabel "is beneficial for" .
+
+agrontology:isPreventedBy a rdf:Property ;
+    skos:prefLabel "is prevented by" .
+
+agrontology:prevents a rdf:Property ;
+    skos:prefLabel "prevents" .
+
+agrontology:isMeasuredBy a rdf:Property ;
+    skos:prefLabel "is measured by" .
+
+prov:atLocation a rdf:Property ;
+    skos:prefLabel "at location" .
+
+skos:note a rdf:Property ;
+    skos:prefLabel "note" .
+
+agrontology:compose a rdf:Property ;
+    skos:prefLabel "compose" .
+
+agrontology:isMadeFrom a rdf:Property ;
+    skos:prefLabel "is made from" .
+
+agrontology:isUsedToMake a rdf:Property ;
+    skos:prefLabel "is used to make" .
+
+agrontology:causes a rdf:Property ;
+    skos:prefLabel "causes" .
+
+agrontology:isCausedBy a rdf:Property ;
+    skos:prefLabel "is caused by" .
+
+qudt:unit a rdf:Property ;
+    skos:prefLabel "unit" .
+
+qudt:expression a rdf:Property ;
+    skos:prefLabel "expression" .
+
+agrontology:makeUseOf a rdf:Property ;
+    skos:prefLabel "make use of" .
+
+skos:altLabel a rdf:Property ;
+    skos:prefLabel "alternative label" .
+
+agrontology:isUsedIn a rdf:Property ;
+    skos:prefLabel "is used in" .
+
+agrontology:isProcessFor a rdf:Property ;
+    skos:prefLabel "is process for" .
+
+agrontology:usesProcess a rdf:Property ;
+    skos:prefLabel "uses process" .
+
+agrontology:hasPart a rdf:Property ;
+    skos:prefLabel "has part" .
+
+agrontology:follows a rdf:Property ;
+    skos:prefLabel "follows" .
+
+agrontology:precedes a rdf:Property ;
+    skos:prefLabel "precedes" .
+
+qudt:numericValue a rdf:Property ;
+    skos:prefLabel "numeric value" .
+
+agrontology:isUsedAs a rdf:Property ;
+    skos:prefLabel "is used as" .
+
+qudt:symbol a rdf:Property ;
+    skos:prefLabel "symbol" .
+
+agrontology:performs a rdf:Property ;
+    skos:prefLabel "performs" .
+
+agrontology:isPerformedBy a rdf:Property ;
+    skos:prefLabel "is performed by" .
+
+agrontology:isIncludedIn a rdf:Property ;
+    skos:prefLabel "is included in" .
+
+agrontology:isDerivedFrom a rdf:Property ;
+    skos:prefLabel "is derived from" .
+
+agrontology:isSourceOf a rdf:Property ;
+    skos:prefLabel "is source of" .
+
+agrontology:isUseOf a rdf:Property ;
+    skos:prefLabel "is use of" .
+
+rdf:type a rdf:Property ;
+    skos:prefLabel "type" .
+
+dcterms:title a rdf:Property ;
+    skos:prefLabel "title" .
+
+dcterms:creator a rdf:Property ;
+    skos:prefLabel "creator" .
+
+obo:T4FS_0000577 a rdf:Property ;
+    skos:prefLabel "requires knowledge about" .
+
+obo:RO_0002212 a rdf:Property ;
+    skos:prefLabel "negatively regulates" .
+
+obo:RO_0002335 a rdf:Property ;
+    skos:prefLabel "negatively regulated by" .
+
+she:alters a rdf:Property ;
+    skos:prefLabel "alters" .
+
+she:isAlteredBy a rdf:Property ;
+    skos:prefLabel "is altered by" .
+
+obo:RO_0002326 a rdf:Property ;
+    skos:prefLabel "contributes to" .
+
+schema:isBasedOn a rdf:Property ;
+    skos:prefLabel "is based on" .
+
+she:isIndicatedBy a rdf:Property ;
+    skos:prefLabel "is indicated by" .
+
+she:indicates a rdf:Property ;
+    skos:prefLabel "indicates" .
+
+obo:OAE_0000186 a rdf:Property ;
+    skos:prefLabel "induces" .
+
+obo:OAE_0000025 a rdf:Property ;
+    skos:prefLabel "induced by" .
+
+obo:RO_0002327 a rdf:Property ;
+    skos:prefLabel "enables" .
+
+obo:RO_0002333 a rdf:Property ;
+    skos:prefLabel "enabled by" .
+
+af-x:AFX_0002806 a rdf:Property ;
+    skos:prefLabel "classifies" .
+
+af-x:AFX_0001154 a rdf:Property ;
+    skos:prefLabel "has classification" .
+
+wdt:P1889 a rdf:Property ;
+    skos:prefLabel "different from" .
+
+obo:RO_0002502 a rdf:Property ;
+    skos:prefLabel "depends on" .
+
+she:characterises a rdf:Property ;
+    skos:prefLabel "characterises" .
+
+she:isCharacterisedBy a rdf:Property ;
+    skos:prefLabel "is characterised by" .
+
+schema:assesses a rdf:Property ;
+    skos:prefLabel "assesses" .
+
+obo:RO_0002213 a rdf:Property ;
+    skos:prefLabel "positively regulates" .
+
+obo:RO_0002336 a rdf:Property ;
+    skos:prefLabel "positively regulated by" .
+
+she:inputsFrom a rdf:Property ;
+    skos:prefLabel "inputs from" .
+
+obo:INO_0000082 a rdf:Property ;
+    skos:prefLabel "controls" .
+
+sorelpr:wasControlledBy a rdf:Property ;
+    skos:prefLabel "was controlled by" .
+
+obo:RO_0002434 a rdf:Property ;
+    skos:prefLabel "interacts with" .
+
+biolink:consumed_by a rdf:Property ;
+    skos:prefLabel "consumed by" .
+
+biolink:consumes a rdf:Property ;
+    skos:prefLabel "consumes" .
+
+agrontology:hasSymbol a rdf:Property ;
+    skos:prefLabel "has symbol" .
+
+sio:equivalentTo a rdf:Property ;
+    skos:prefLabel "equivalent to" .
+
+she:requires a rdf:Property ;
+    skos:prefLabel "requires" .
+
+she:isRequiredBy a rdf:Property ;
+    skos:prefLabel "is required by" .
+
+sio:SIO_000563 a rdf:Property ;
+    skos:prefLabel "describes" .
+
+sio:SIO_000557 a rdf:Property ;
+    skos:prefLabel "is described by" .
+
+schema:inSupportOf a rdf:Property ;
+    skos:prefLabel "in support of" .
+
+sio:SIO_000202 a rdf:Property ;
+    skos:prefLabel "contains" .
+
+sio:SIO_000128 a rdf:Property ;
+    skos:prefLabel "is contained in" .
+
+obo:BFO_0000066 a rdf:Property ;
+    skos:prefLabel "occurs in" .
+
+sorelph:from a rdf:Property ;
+    skos:prefLabel "from" .
+
+obo:RO_0002331 a rdf:Property ;
+    skos:prefLabel "involved in" .
+
+sorelm:hasThreshold a rdf:Property ;
+    skos:prefLabel "has threshold" .
+
+obo:RO_0000087 a rdf:Property ;
+    skos:prefLabel "has role" .
+
+af-x:AFX_0000408 a rdf:Property ;
+    skos:prefLabel "has condition" .
+
+af-x:AFX_0000355 a rdf:Property ;
+    skos:prefLabel "is condition for" .
+
+repr:storedAt a rdf:Property ;
+    skos:prefLabel "stored at" .
+
+she:bindsWith a rdf:Property ;
+    skos:prefLabel "binds with" .
+
+she:respondsTo a rdf:Property ;
+    skos:prefLabel "responds to" .
+
+she:sequesters a rdf:Property ;
+    skos:prefLabel "sequesters" .
+
+obo:RO_0017003 a rdf:Property ;
+    skos:prefLabel "positively correlated with" .
+
+obo:RO_0017004 a rdf:Property ;
+    skos:prefLabel "negatively correlated with" .
+
+rdf:object a rdf:Property ;
+    skos:prefLabel "object" .
+
+sorelm:hasInterval a rdf:Property ;
+    skos:prefLabel "has interval" .
+
+agrontology:valueUsedIn a rdf:Property ;
+    skos:prefLabel "value used in" .
+
+agrontology:usingValue a rdf:Property ;
+    skos:prefLabel "using value" .
+
+biolink:has_percentage a rdf:Property ;
+    skos:prefLabel "has percentage" .
+
+she:isConvertedTo a rdf:Property ;
+    skos:prefLabel "is converted to" .
+
+she:isConvertedFrom a rdf:Property ;
+    skos:prefLabel "is converted from" .
+
+bao:BAO_0095002 a rdf:Property ;
+    skos:prefLabel "has indicator" .
+
+bao:BAO_0002586 a rdf:Property ;
+    skos:prefLabel "is indicator of" .
+
+sio:SIO_000635 a rdf:Property ;
+    skos:prefLabel "has trigger" .
+
+sio:SIO_000636 a rdf:Property ;
+    skos:prefLabel "is trigger for" .
+
+time:hasDuration a rdf:Property ;
+    skos:prefLabel "has duration" .
+
+obo:RO_0002610 a rdf:Property ;
+    skos:prefLabel "correlated with" .
+
+she:focusesOn a rdf:Property ;
+    skos:prefLabel "focuses on" .
+
+she:isAcceptedBy a rdf:Property ;
+    skos:prefLabel "is accepted by" .
+
+she:accepts a rdf:Property ;
+    skos:prefLabel "accepts" .
+
+af-x:AFX_0002696 a rdf:Property ;
+    skos:prefLabel "has range" .
+
+agrontology:hasType a rdf:Property ;
+    skos:prefLabel "has type" .
+
+agrontology:typeOf a rdf:Property ;
+    skos:prefLabel "type of" .
+
+she:appliesTo a rdf:Property ;
+    skos:prefLabel "applies to" .
+
+obo:RO_0002552 a rdf:Property ;
+    skos:prefLabel "results in ending of" .
+
+qudt:conversionMultiplier a rdf:Property ;
+    skos:prefLabel "conversion multiplier" .
+
+sorelm:hasUpperBound a rdf:Property ;
+    skos:prefLabel "has upper bound" .
+
+sorelm:hasLowerBound a rdf:Property ;
+    skos:prefLabel "has lower bound" .
+
+agrontology:greaterThan a rdf:Property ;
+    skos:prefLabel "greater than" .
+
+agrontology:smallerThan a rdf:Property ;
+    skos:prefLabel "smaller than" .
+
+obo:RO_0002508 a rdf:Property ;
+    skos:prefLabel "determines" .
+
+obo:RO_0002507 a rdf:Property ;
+    skos:prefLabel "determined by" .
+
+she:hasEquilibriumWith a rdf:Property ;
+    skos:prefLabel "has equilibrium with" .
+
+af-x:AFX_0002727 a rdf:Property ;
+    skos:prefLabel "lacks" .
+
+she:isEmittedTo a rdf:Property ;
+    skos:prefLabel "is emitted to" .
+
+obo:RO_0002334 a rdf:Property ;
+    skos:prefLabel "regulated by" .
+
+obo:RO_0002211 a rdf:Property ;
+    skos:prefLabel "regulates" .
+
+she:isLimitedBy a rdf:Property ;
+    skos:prefLabel "is limited by" .
+
+she:limits a rdf:Property ;
+    skos:prefLabel "limits" .
+
+agrontology:hasComponent a rdf:Property ;
+    skos:prefLabel "has component" .
+
+agrontology:isComponentOf a rdf:Property ;
+    skos:prefLabel "is component of" .
+
+she:isRetainedBy a rdf:Property ;
+    skos:prefLabel "is retained by" .
+
+she:retains a rdf:Property ;
+    skos:prefLabel "retains" .
+
+she:reflects a rdf:Property ;
+    skos:prefLabel "reflects" .
+
+she:isReflectedBy a rdf:Property ;
+    skos:prefLabel "is reflected by" .
 

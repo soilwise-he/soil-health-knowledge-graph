@@ -4,8 +4,6 @@ dcterms:BibliographicResource,http://purl.org/dc/terms/BibliographicResource,Bib
 dcterms:Policy,http://purl.org/dc/terms/Policy,Policy
 dcterms:Standard,http://purl.org/dc/terms/Standard,Standard
 dcmitype:Dataset,http://purl.org/dc/dcmitype/Dataset,Dataset
-qudt:QuantityKind,http://qudt.org/schema/qudt/QuantityKind,Quantity Kind
-qudt:Unit,http://qudt.org/schema/qudt/Unit,Unit
 af-r:AFR_0000916,http://purl.allotrope.org/ontologies/result#AFR_0000916,Classification
 sio:SIO_000510,http://semanticscience.org/resource/SIO_000510,Model
 sio:SIO_000368,http://semanticscience.org/resource/SIO_000368,Equation
