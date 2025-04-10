@@ -142,3 +142,5 @@ she:isRetainedBy,https://soilwise-he.github.io/soil-health#isRetainedBy,is retai
 she:retains,https://soilwise-he.github.io/soil-health#retains,retains
 she:reflects,https://soilwise-he.github.io/soil-health#reflects,reflects
 she:isReflectedBy,https://soilwise-he.github.io/soil-health#isReflectedBy,is reflected by
+she:suffersFrom,https://soilwise-he.github.io/soil-health#suffersFrom,suffers from
+sio:SIO_000738,http://semanticscience.org/resource/SIO_000738,is equal to
