@@ -144,3 +144,7 @@ she:reflects,https://soilwise-he.github.io/soil-health#reflects,reflects
 she:isReflectedBy,https://soilwise-he.github.io/soil-health#isReflectedBy,is reflected by
 she:suffersFrom,https://soilwise-he.github.io/soil-health#suffersFrom,suffers from
 sio:SIO_000738,http://semanticscience.org/resource/SIO_000738,is equal to
+af-x:AFX_0000388,http://purl.allotrope.org/ontologies/property#AFX_0000388,has scope
+sio:SIO_000205,http://semanticscience.org/resource/SIO_000205,is represented by
+sio:SIO_000210,http://semanticscience.org/resource/SIO_000210,represents
+sio:SIO_000736,http://semanticscience.org/resource/SIO_000736,is comparable to

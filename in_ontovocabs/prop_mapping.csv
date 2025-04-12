@@ -45,3 +45,4 @@ http://aims.fao.org/aos/agrontology#isComponentOf,http://aims.fao.org/aos/agront
 http://purl.obolibrary.org/obo/RO_0002434,http://purl.obolibrary.org/obo/RO_0002434
 https://soilwise-he.github.io/soil-health#isRetainedBy,https://soilwise-he.github.io/soil-health#retains
 https://soilwise-he.github.io/soil-health#reflects,https://soilwise-he.github.io/soil-health#isReflectedBy
+http://semanticscience.org/resource/SIO_000205,http://semanticscience.org/resource/SIO_000210
