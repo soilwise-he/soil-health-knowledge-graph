@@ -160,3 +160,6 @@ she:bioaccumulatesIn,https://soilwise-he.github.io/soil-health#bioaccumulatesIn,
 sio:SIO_000291,http://semanticscience.org/resource/SIO_000291,has target
 sio:SIO_000292,http://semanticscience.org/resource/SIO_000292,is target in
 she:isComparedWith,https://soilwise-he.github.io/soil-health#isComparedWith,is compared with
+sorelph:to,http://sweetontology.net/relaPhysical/to,to
+sorelch:hasMedium,http://sweetontology.net/relaChemical/hasMedium,has medium
+obo:TXPO_0003500,http://purl.obolibrary.org/obo/TXPO_0003500,observed in
