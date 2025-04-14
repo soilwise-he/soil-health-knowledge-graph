@@ -148,3 +148,15 @@ af-x:AFX_0000388,http://purl.allotrope.org/ontologies/property#AFX_0000388,has s
 sio:SIO_000205,http://semanticscience.org/resource/SIO_000205,is represented by
 sio:SIO_000210,http://semanticscience.org/resource/SIO_000210,represents
 sio:SIO_000736,http://semanticscience.org/resource/SIO_000736,is comparable to
+she:isEssentialFor,https://soilwise-he.github.io/soil-health#isEssentialFor,is essential for
+she:isToxicTo,https://soilwise-he.github.io/soil-health#isToxicTo,is toxic to
+she:isDevelopedFor,https://soilwise-he.github.io/soil-health#isDevelopedFor,is developed for
+she:isAvailableFor,https://soilwise-he.github.io/soil-health#isAvailableFor,is available for
+obo:RO_0000053,http://purl.obolibrary.org/obo/RO_0000053,has characteristic
+obo:RO_0000052,http://purl.obolibrary.org/obo/RO_0000052,characteristic of
+sio:SIO_000223,http://semanticscience.org/resource/SIO_000223,has property
+sio:SIO_000224,http://semanticscience.org/resource/SIO_000224,is property of
+she:bioaccumulatesIn,https://soilwise-he.github.io/soil-health#bioaccumulatesIn,bioaccumulates in
+sio:SIO_000291,http://semanticscience.org/resource/SIO_000291,has target
+sio:SIO_000292,http://semanticscience.org/resource/SIO_000292,is target in
+she:isComparedWith,https://soilwise-he.github.io/soil-health#isComparedWith,is compared with

@@ -46,3 +46,6 @@ http://purl.obolibrary.org/obo/RO_0002434,http://purl.obolibrary.org/obo/RO_0002
 https://soilwise-he.github.io/soil-health#isRetainedBy,https://soilwise-he.github.io/soil-health#retains
 https://soilwise-he.github.io/soil-health#reflects,https://soilwise-he.github.io/soil-health#isReflectedBy
 http://semanticscience.org/resource/SIO_000205,http://semanticscience.org/resource/SIO_000210
+http://purl.obolibrary.org/obo/RO_0000053,http://purl.obolibrary.org/obo/RO_0000052
+http://semanticscience.org/resource/SIO_000223,http://semanticscience.org/resource/SIO_000224
+http://semanticscience.org/resource/SIO_000291,http://semanticscience.org/resource/SIO_000292

@@ -12,3 +12,4 @@ sio:SIO_010423,http://semanticscience.org/resource/SIO_010423,Target
 schema:Continent,https://schema.org/Continent,Continent
 schema:Country,https://schema.org/Country,Country
 sorepsg:Region,http://sweetontology.net/reprSpaceGeometry/Region,Region
+sio:SIO_000999,http://semanticscience.org/resource/SIO_000999,Procedure
