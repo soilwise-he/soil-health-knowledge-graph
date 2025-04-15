@@ -163,3 +163,9 @@ she:isComparedWith,https://soilwise-he.github.io/soil-health#isComparedWith,is c
 sorelph:to,http://sweetontology.net/relaPhysical/to,to
 sorelch:hasMedium,http://sweetontology.net/relaChemical/hasMedium,has medium
 obo:TXPO_0003500,http://purl.obolibrary.org/obo/TXPO_0003500,observed in
+af-x:AFX_0002843,http://purl.allotrope.org/ontologies/property#AFX_0002843,has definition
+af-x:AFX_0002842,http://purl.allotrope.org/ontologies/property#AFX_0002842,defines
+obo:SEPIO_0000151,http://purl.obolibrary.org/obo/SEPIO_0000151,validated by
+om:hasFactor,http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor,has factor
+sio:SIO_000283,http://semanticscience.org/resource/SIO_000283,is similar to
+qudt:valueSN,http://qudt.org/schema/qudt/valueSN,value scientific

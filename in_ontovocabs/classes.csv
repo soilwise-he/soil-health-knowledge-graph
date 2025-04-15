@@ -13,3 +13,7 @@ schema:Continent,https://schema.org/Continent,Continent
 schema:Country,https://schema.org/Country,Country
 sorepsg:Region,http://sweetontology.net/reprSpaceGeometry/Region,Region
 sio:SIO_000999,http://semanticscience.org/resource/SIO_000999,Procedure
+obo:NCIT_C61419,http://purl.obolibrary.org/obo/NCIT_C61419,Working Group
+obo:NCIT_C180602,http://purl.obolibrary.org/obo/NCIT_C180602,Workshop
+sio:SIO_001246,http://semanticscience.org/resource/SIO_001246,Interval
+schema:City,https://schema.org/City,City
