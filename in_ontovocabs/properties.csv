@@ -169,3 +169,8 @@ obo:SEPIO_0000151,http://purl.obolibrary.org/obo/SEPIO_0000151,validated by
 om:hasFactor,http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor,has factor
 sio:SIO_000283,http://semanticscience.org/resource/SIO_000283,is similar to
 qudt:valueSN,http://qudt.org/schema/qudt/valueSN,value scientific
+obo:OMO_0003011,http://purl.obolibrary.org/obo/OMO_0003011,latin term
+obo:SLSO_0001065,http://purl.obolibrary.org/obo/SLSO_0001065,common name
+obo:MICRO_0000105,http://purl.obolibrary.org/obo/MICRO_0000105,has size
+sorelsp:hasLength,http://sweetontology.net/relaSpace/hasLength,has length
+sorelsp:diameter,http://sweetontology.net/relaSpace/diameter,diameter
