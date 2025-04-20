@@ -50,7 +50,6 @@ agrontology:isSourceOf,http://aims.fao.org/aos/agrontology#isSourceOf,is source 
 agrontology:isUseOf,http://aims.fao.org/aos/agrontology#isUseOf,is use of
 rdf:type,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,type
 dcterms:title,http://purl.org/dc/terms/title,title
-dcterms:creator,http://purl.org/dc/terms/creator,creator
 obo:T4FS_0000577,http://purl.obolibrary.org/obo/T4FS_0000577,requires knowledge about
 obo:RO_0002212,http://purl.obolibrary.org/obo/RO_0002212,negatively regulates
 obo:RO_0002335,http://purl.obolibrary.org/obo/RO_0002335,negatively regulated by
@@ -175,3 +174,4 @@ obo:MICRO_0000105,http://purl.obolibrary.org/obo/MICRO_0000105,has size
 sorelsp:hasLength,http://sweetontology.net/relaSpace/hasLength,has length
 sorelsp:diameter,http://sweetontology.net/relaSpace/diameter,diameter
 she:calculates,https://soilwise-he.github.io/soil-health#calculates,calculates
+sorelm:hasAverage,http://sweetontology.net/relaMath/hasAverage,has average
