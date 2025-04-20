@@ -174,3 +174,4 @@ obo:SLSO_0001065,http://purl.obolibrary.org/obo/SLSO_0001065,common name
 obo:MICRO_0000105,http://purl.obolibrary.org/obo/MICRO_0000105,has size
 sorelsp:hasLength,http://sweetontology.net/relaSpace/hasLength,has length
 sorelsp:diameter,http://sweetontology.net/relaSpace/diameter,diameter
+she:calculates,https://soilwise-he.github.io/soil-health#calculates,calculates
