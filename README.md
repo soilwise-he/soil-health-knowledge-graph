@@ -2,7 +2,7 @@
 
 ## Pipeline of constructing knowledge graph
 
-![image](https://github.com/soilwise-he/soil-health-knowledge-graph/blob/main/imgs/LLM4KG.svg)
+![image](https://github.com/soilwise-he/soil-health-knowledge-graph/blob/main/imgs/text2KG.svg)
 
 ## To-do
 
