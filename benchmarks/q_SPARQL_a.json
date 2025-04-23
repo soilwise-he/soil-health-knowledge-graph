@@ -58,7 +58,7 @@
       {
         "question": "What risk assessment models are currently in use and what soil properties (or indicators) do they use?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "The risk assessment model SansCrit and the Dutch risk assessment toolbox; the CLEA model used in the United Kingdom; and the S-Risk model used in Belgium."
       },
       {
         "question": "What are the main types of soil degradation and where does soil sealing fall into this category?",
