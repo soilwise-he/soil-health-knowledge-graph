@@ -56,64 +56,64 @@
         "expected_answer": "Soil parameters are distinguished as basic and specific soil parameters. Soil attributes (measured soil parameters) are classified as dynamic and static soil parameters. Complex parameters are difficult to measure and derived from basic parameters using models."
       },
       {
-        "question": "What risk assessment models are currently in use and what soil properties (or indicators) do they use?",
+        "question": "What risk assessment models are currently in use and in which countries, if any, are they used?",
         "sparql_query": "",
-        "expected_answer": "The risk assessment model SansCrit and the Dutch risk assessment toolbox; the CLEA model used in the United Kingdom; and the S-Risk model used in Belgium."
+        "expected_answer": "The risk assessment model SansCrit and the Dutch risk assessment toolbox used in the Netherlands; the CLEA model used in the United Kingdom; and the S-Risk model and regional versions of the S-Risk model used in Belgium."
       },
       {
         "question": "What are the main types of soil degradation and where does soil sealing fall into this category?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "The main types of soil degradation are physical, chemical, biological, and ecological degradation. Soil sealing is a form of physical degradation."
       },
       {
         "question": "What is soil chemical degradation and what characteristics does it include?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Soil chemical degradation is characterised by changes in soil processes, including nutrient depletion, acidification, salinisation and contamination."
       },
       {
-        "question": "How is soil biological degradation defined and how does it manifest in different soil types?",
+        "question": "How is soil biological degradation defined and what it leads to?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Soil biological degradation refers to reduced soil biological activity, which can be accompanied by a loss of soil biodiversity. This leads to lower levels of mineralisation and respiration and an accumulation of incompletely decomposed dead organic matter (necromass)."
       },
       {
         "question": "How is soil ecological degradation defined, what does it reflect, and how does it affect ecosystem functions?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Soil ecological degradation reflects a combination of the other three types of degradation, including physical, chemical, and biological degradation. This leads to a disruption in ecosystem functions."
       },
       {
         "question": "What are the essential soil indicators proposed by MAES and what are their units, if any?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Essential soil indicators proposed by MAES are:\n•\tsoil erosion (unit: kg/ha/year)\n•\tsoil sealing (unit: % area)\n•\tsoil contamination or pollution (from point or diffuse sources)\n•\tavailable water capacity\n•\tsoil nutrient availability\n•\tsoil carbon stock (unit: t/ha or kg/m²)\n•\tsoil biodiversity potential."
       },
       {
         "question": "According to the 2020 MAES assessment, what are the main soil indicators?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "According to the 2020 MAES assessment, the main soil indicators are:\n•\tbased on modelling: erosion by water, agricultural area under severe erosion, soil erosion rates per unit of land cover, wind erosion rate;\n•\tbased on Eurostat indicators: gross nutrient balance;\n•\tbased on LUCAS soil measurements: topsoil nitrogen and phosphorous concentrations, trends in SOC stocks in cropland;\n•\tbased on EU research: extent (area) of organic soils, susceptibility to compaction;\n•\tbased on EEA indicators: soil sealing, contaminated sites."
       },
       {
         "question": "What are the current land degradation indicators from Sustainable Development Goal (SDG) indicator 15.3.1 and what do these land degradation indicators represent?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Land degradation indicators from Sustainable Development Goal (SDG) indicator 15.3.1 are land productivity, land cover change and carbon stocks. Land degradation indicators in this context represent 'key processes which underpin land-based natural capital'."
       },
       {
         "question": "Which GAEC standards are relevant to soils, and what are their respective topics?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Three GAEC standards refer directly to soil, namely GAEC 4 'Minimum soil cover', GAEC 5 'Minimum land management reflecting site specific conditions to limit erosion', and GAEC 6 'Maintain soil organic matter through appropriate practices'."
       },
       {
-        "question": "What factors make it challenging to define thresholds for optimal or critical SOC content in relation to soil health?",
+        "question": "What does soil organic carbon (SOC) affect, and what happens when SOC content is below certain thresholds?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Soil organic carbon (SOC) affects the quality of water, air, biodiversity, food and water security. Soil functions are hampered when SOC content is below thresholds for optimal or critical SOC content."
       },
       {
-        "question": "How does SOM content influence various soil functions and environmental processes?",
+        "question": "How does soil organic matter (SOM) content influence various soil functions and environmental processes?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Soil organic matter (SOM) content is a source of energy and carbon for soil organisms and affects the temperature and hydrology of soil, soil aggregation, soil erodibility, pore volume, the total reactive soil micro-surface, and biochemical processes including mineralisation rate and cation exchange, also nitrogen losses and greenhouse gas emissions."
       },
       {
-        "question": "How are SOC dynamics and nitrogen dynamics related, and what implications does this relationship have for agricultural practices and environmental pollution?",
+        "question": "How are SOC and soil nitrogen related, and what implications does this relationship have for agricultural practices and environmental pollution?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "SOC is positively correlated with soil nitrogen, and losing SOC entails a loss of soil nitrogen. "
       },
       {
         "question": "How to convert measured SOC to SOM?",
