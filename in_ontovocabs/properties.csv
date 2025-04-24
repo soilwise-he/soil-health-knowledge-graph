@@ -179,3 +179,8 @@ she:isAccompaniedBy,https://soilwise-he.github.io/soil-health#isAccompaniedBy,is
 obo:RO_0002020,http://purl.obolibrary.org/obo/RO_0002020,transports
 obo:RO_0002339,http://purl.obolibrary.org/obo/RO_0002339,has target end location
 obo:RO_0002341,http://purl.obolibrary.org/obo/RO_0002341,results in transport along
+sio:SIO_000365,http://semanticscience.org/resource/SIO_000365,is creator of
+sio:SIO_000364,http://semanticscience.org/resource/SIO_000364,has creator
+af-x:AFX_0002717,http://purl.allotrope.org/ontologies/property#AFX_0002717,identifies
+af-x:AFX_0002716,http://purl.allotrope.org/ontologies/property#AFX_0002716,has identifier
+om:hasValue,http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue,has value
