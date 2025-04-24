@@ -111,144 +111,144 @@
         "expected_answer": "Soil organic matter (SOM) content is a source of energy and carbon for soil organisms and affects the temperature and hydrology of soil, soil aggregation, soil erodibility, pore volume, the total reactive soil micro-surface, and biochemical processes including mineralisation rate and cation exchange, also nitrogen losses and greenhouse gas emissions."
       },
       {
-        "question": "How are SOC and soil nitrogen related, and what implications does this relationship have for agricultural practices and environmental pollution?",
+        "question": "How is SOC related to soil nitrogen, and what does soil nitrogen affect, including SOM?",
         "sparql_query": "",
-        "expected_answer": "SOC is positively correlated with soil nitrogen, and losing SOC entails a loss of soil nitrogen. "
+        "expected_answer": "SOC is positively correlated with soil nitrogen, and losing SOC entails a loss of soil nitrogen. Soil nitrogen affects the composition of microbial communities (e.g. proportion of fungi and bacteria), root turnover and the chemical composition of SOM."
       },
       {
-        "question": "How to convert measured SOC to SOM?",
+        "question": "What is SOM and what is it made from, and how to convert measured SOC to SOM?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "SOM is the sum of all dead organic components at various stages of decomposition in a soil, which are made from basic elements including carbon, nitrogen, oxygen, hydrogen and an array of attached cations and ions. Some definitions also include undecayed plant and animal residues as well as microbial biomass. Factors of 1.724 and 2 are used convert SOC to SOM."
       },
       {
         "question": "How to calculate SOC stock from SOC content, and what the other parameters in the equation represent?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "The equation to calculate SOC stock from SOC content is: SOC_stock = d * C * (1 - CM) * BD / 100, where SOC is the stock in tonnes C/ha, d is the depth (m), C is the content of organic carbon (grams C/kg), CM is the fraction of coarse material or rock fragments, by mass, and BD is the bulk density (kg/m²)."
       },
       {
         "question": "what is the primary focus of most research concerning the derivation of SOC thresholds for sustainable arable soil management, and are there any other factors influencing this focus?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "The effects of soil management and the derivation of SOC thresholds for sustainable (arable) soil management have usually focused on the effect of the decline in SOC levels on crop yield. Crop yield is affected by soil fertility."
       },
       {
         "question": "What are the critical levels or thresholds of SOC for maintaining soil health, structural stability, and optimal crop yield, and how do these thresholds vary across different soil types?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "When SOC levels in soil are below 1%, soil health may be constrained and potential yields may not be achieved, while a minimum of 2% SOC is necessary to maintain structural soil stability, and, if SOC content is 1.2-1.5%, stability declines rapidly. A critical range of SOC for two soil orders: alfisols (luvisols and lixisols in the World Reference Base for Soil Resources) with 0.5-0.77% SOC; and entisols (leptosols in the World Reference Base) with 1.03-1.16% SOC."
       },
       {
         "question": "What are examples of national estimations for site-typical SOC contents in European countries, and how do these values vary based on environmental factors and land use?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "For the United Kingdom, 1.1% SOC for drier conditions and low clay content and up to 4% for wetter conditions and high clay content. For the Mediterranean region, 1.5% SOC for cropland."
       },
       {
         "question": "How are different SOC/clay ratio thresholds or intervals used to classify land as degraded, transitional, or favourable in Wallonia?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "For Wallonia, indicating degraded land with a SOC/clay ratio of 0.08, transitional land with SOC/clay ratios of between 0.08 and 0.1, and favourable and highly favourable land with SOC/clay ratios above 0.1 and 0.12, respectively."
       },
       {
         "question": "What is carbon sequestration and what factors contribute to soils' potential for carbon sequestration?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Carbon sequestration is 'the process of transferring CO₂ from the atmosphere into the soil of a land unit, through plants, plant residues and other organic solids which are stored or retained in the unit as part of the soil organic matter with a long residence time'. Soils' potential to sequester carbon arises because historical and current management has depleted the carbon pool of many soils."
       },
       {
         "question": "How does clay content influence the limits for SOM content in relation to crop production?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Limits for SOM content increase with increasing clay content, from 1% SOM at 4% clay up to 3.5% SOM at 38% clay. Even with the addition of fertiliser, below 1% SOM, mineralisable nitrogen is so low that potential optimal yields can no longer be achieved."
       },
       {
         "question": "What are the two types of soil nutrients and what substances do they contain?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "The two types of soil nutrients are macronutrients, i.e. nitrogen, phosphorus, calcium, magnesium, potassium and sulphur, and micronutrients, i.e. boron, zinc, manganese, iron, copper and molybdenum."
       },
       {
-        "question": "what are the main soil parameters that are identified as key determinants of soil fertility, and what are the primary sources of influence on these parameters in agricultural and non-agricultural soils?",
+        "question": "What are the main soil parameters that are identified as key determinants of soil fertility, and what are the primary sources of influence on these parameters in agricultural and non-agricultural soils?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Nitrogen (N), phosphorus (P) and soil pH are the main determinants of soil fertility. These soil parameters are affected by inputs from fertiliser and manure application in agriculture and by atmospheric deposition."
       },
       {
         "question": "How do nutrient inputs, specifically nitrogen and phosphorus, affect soil nutrient status, and what are the impacts of these inputs on biomass/crop growth and potential environmental consequences in non-agricultural and agricultural ecosystems?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Nutrient inputs affect the soil nutrient status (contents and pools), and the output of nutrients in vegetation and to air and water. In non-agricultural systems, biomass growth is enhanced by additional inputs, but may be reduced at very high levels of inputs. In agricultural soils, crop growth is strongly stimulated by N and P fertiliser and manure inputs."
       },
       {
         "question": "What are the unique origin of nitrogen (N) in agricultural soils compared to other nutrients, what are the soil parameters that affect soil N availability and how is input N consumed?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Unlike other nutrients, N in (agricultural) soils is derived from organic matter. Soil parameters affecting soil N availability include pH, organic matter and clay content. A part of input N is consumed by vegetation, and the N surplus is emitted to air, as ammonia (NH₃), nitric oxide (NO), nitrous oxide (N₂O) or dinitrogen (N₂), or to groundwater and surface water, mainly as nitrate (NO₃⁻), or it accumulates in soil."
       },
       {
-        "question": "How does the concentration of phosphorus (P) in the soil solution differ from that of nitrogen, and what are the implications of this difference for plant uptake and the impact of fertilizer and manure inputs on crop yields, particularly in soils with high P content?",
+        "question": "How does the concentration of phosphorus (P) in the soil solution differ from that of nitrogen, and what are the soil parameters that affect soil P availability?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Unlike N, the concentration of P in soil solution is buffered by the stock of reactive or readily available P. Soil parameters affecting the availability of soil P include the aluminium and iron oxide content."
       },
       {
         "question": "What are the typical nutrient limitations for biomass production in unfertilised terrestrial ecosystems, and what specifically limits tree growth in forest ecosystems, along with the primary factors influencing the availability of this limiting nutrient?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "In unfertilised soils, such as terrestrial ecosystems, biomass production is N and P limited. For forest ecosystems, tree growth is limited by the N availability, which in turn is affected by the soil N status (especially the soil C/N ratio and the P availability)."
       },
       {
         "question": "How does soil nutrient (nitrogen and phosphorus) status affect ecosystems in addition to crop yields?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "N in soil affects the biodiversity of soil organisms, whereas the soil P content has an impact on surface water quality by affecting P accumulation and losses to surface water. Both N and P affect biodiversity, especially plant species diversity, in non-agricultural ecosystems."
       },
       {
         "question": "How are indicators defined for assessing nitrogen and phosphorus status in agricultural soils, and what specific types of indicators are mentioned for nitrogen assessment in forest soils?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Indicators for soil N and P status can be given in terms of total values (total N and P content) and (plant) available N and P contents. For forest soils, indicators include the C/N ratio in the organic layer and the dissolved total inorganic N concentration."
       },
       {
         "question": "How does the carbon to nitrogen (C/N) ratio in the organic layer of forest soils affect the soil's capacity to retain nitrogen and the risk of nitrogen leaching, and what C/N ratio ranges are identified as critical in relation to these processes?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "At high soil C/N ratios, most incoming N is retained by microbial immobilisation and limited N is available to plants. When more N is stored, the C/N ratio declines, and more N becomes available by mineralisation for plant uptake and leaching. In the organic layer of forests, C/N ratios of around 25 (between 20 and 30) are considered critical, with a very high N retention fraction and thus limited leaching risk at a C/N ratio above 30, while the N retention fraction is low and the leaching risk is high at a C/N ratio below 20."
       },
       {
         "question": "What N/P ratio in the organic layer of coniferous and deciduous forests indicate phosphorus limitation according to the foliage N/P ratio?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "For conifers an N/P ratio <12 indicates N limitation and a N/P ratio >18 indicates P limitation, while for deciduous trees an N/P ratio <17 indicates N limitation and a N/P ratio >25 indicates P limitation. N/P ratio in organic layer >18 (coniferous forests) and N/P ratio in organic layer >25 (deciduous forests)."
       },
       {
         "question": "Under what conditions does soil acidification occur, and what are the primary anthropogenic causes of soil acidification in unlimed agricultural land?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Soil acidification occurs when the acid neutralising capacity of the soil is reduced, which leads to a decrease in pH. The most significant effect is seen on unlimed agricultural land as a result of the application of ammonium-based fertilisers and urea."
       },
       {
         "question": "What are negatively affected by soil acidification and what is the effect on soil organic carbon in acid forest soils?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Soil acidification negatively affects water quality, biological activity, and plant growth. In acid forest soils, low pH tends to favour the accumulation of organic matter through reduced decomposition."
       },
       {
-        "question": "what are the main indicators employed in agricultural soils to evaluate soil acidity and determine the necessity for liming, and what are their critical limits?",
+        "question": "what are the main indicators employed in agricultural soils to evaluate soil acidity and determine the necessity for liming, and under what conditions does aluminium release occur?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "In agricultural soils, pH and base saturation is the indicator that is used to assess the soil acidity status and the need for liming. Aluminium release happens at pH values below 4.5."
       },
       {
-        "question": "What is the soil pH range that can constrain crop production and what is the critical pH value in view of aluminium toxicity?",
+        "question": "What is the soil pH range that can constrain crop production and what are the critical and optimal pH value?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Crop production is already constrained at pH values below 5.5-6.0. A pH value below 5 should certainly be avoided. Ideally, the pH should stay above 5.5 or even 6."
       },
       {
         "question": "What key elements need to be considered when establishing meaningful thresholds for pollutants in soil to assess the impact of soil pollution on soil health?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "To be able to assess the impact of soil pollution on soil health, meaningful indicators for the current state of soils and the associated risks from pollutants, as well as information about inputs and outputs of substances, are required."
       },
       {
         "question": "Which societal needs are described as being affected by soil pollution?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "soil pollution affects various societal needs such as soil conditions, pressures, future management and protection objectives. Biodiversity and the filter function (in relation to water quality) are directly affected by pollution, services such as storage of water and carbon can also be affected."
       },
       {
         "question": "What are the two types of soil pollution, what are the characteristics of diffuse soil pollution and what are it typical origins?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "The two types of soil pollution are point source pollution and diffuse (or non-point) soil pollution. Diffuse pollution commonly originates from a range of sources, including those related to management of agricultural land and atmospheric deposition (mostly from industry and traffic). It is characterised by a relatively homogeneous pollution pattern."
       },
       {
         "question": "What are some examples of pollutants found in arable soils, and what are their mentioned sources within arable farming practices?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Metals such as cadmium, copper and zinc, which are present in mineral fertilisers (cadmium), animal manure (copper, zinc), compost or sludges (mostly metals). Medicinal residues (from both human and animal medicines, such as antibiotics and hormonal residues), nanoparticles or polyfluorinated compounds (PFCs, such as perfluorooctanoic acid, or PFOA) from sewage sludge, or microplastics present in some organic soil improvers."
       },
       {
         "question": "What are some characteristics that typically distinguish point source pollution from diffuse pollution in terms of scale and pollution pattern?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "In contrast to diffuse pollution, point source pollution (also called local pollution) usually occurs at a smaller scale and often in a heterogeneous pattern."
       },
       {
         "question": "What is the primary determinant of background concentrations for heavy metals in soil and what is the common background value for human-made organic pollutants?",

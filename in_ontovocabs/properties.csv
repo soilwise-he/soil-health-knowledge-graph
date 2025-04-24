@@ -175,3 +175,7 @@ sorelsp:hasLength,http://sweetontology.net/relaSpace/hasLength,has length
 sorelsp:diameter,http://sweetontology.net/relaSpace/diameter,diameter
 she:calculates,https://soilwise-he.github.io/soil-health#calculates,calculates
 sorelm:hasAverage,http://sweetontology.net/relaMath/hasAverage,has average
+she:isAccompaniedBy,https://soilwise-he.github.io/soil-health#isAccompaniedBy,is accompanied by
+obo:RO_0002020,http://purl.obolibrary.org/obo/RO_0002020,transports
+obo:RO_0002339,http://purl.obolibrary.org/obo/RO_0002339,has target end location
+obo:RO_0002341,http://purl.obolibrary.org/obo/RO_0002341,results in transport along
