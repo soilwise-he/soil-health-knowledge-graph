@@ -184,3 +184,6 @@ sio:SIO_000364,http://semanticscience.org/resource/SIO_000364,has creator
 af-x:AFX_0002717,http://purl.allotrope.org/ontologies/property#AFX_0002717,identifies
 af-x:AFX_0002716,http://purl.allotrope.org/ontologies/property#AFX_0002716,has identifier
 om:hasValue,http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue,has value
+time:years,http://www.w3.org/2006/time#years,years duration
+af-x:AFX_0002821,http://purl.allotrope.org/ontologies/property#AFX_0002821,proxy for
+sorelsp:hasMaximumDepth,http://sweetontology.net/relaSpace/hasMaximumDepth,has maximum depth
