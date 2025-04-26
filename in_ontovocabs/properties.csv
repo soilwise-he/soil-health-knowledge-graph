@@ -187,3 +187,5 @@ om:hasValue,http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue,h
 time:years,http://www.w3.org/2006/time#years,years duration
 af-x:AFX_0002821,http://purl.allotrope.org/ontologies/property#AFX_0002821,proxy for
 sorelsp:hasMaximumDepth,http://sweetontology.net/relaSpace/hasMaximumDepth,has maximum depth
+she:isExceeded,https://soilwise-he.github.io/soil-health#isExceeded,is exceeded
+sorelsp:below,http://sweetontology.net/relaSpace/below,below
