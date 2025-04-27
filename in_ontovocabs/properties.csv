@@ -189,3 +189,6 @@ af-x:AFX_0002821,http://purl.allotrope.org/ontologies/property#AFX_0002821,proxy
 sorelsp:hasMaximumDepth,http://sweetontology.net/relaSpace/hasMaximumDepth,has maximum depth
 she:isExceeded,https://soilwise-he.github.io/soil-health#isExceeded,is exceeded
 sorelsp:below,http://sweetontology.net/relaSpace/below,below
+obo:RO_0020202,http://purl.obolibrary.org/obo/RO_0020202,has numerator
+obo:RO_0020203,http://purl.obolibrary.org/obo/RO_0020203,has denominator
+sorelm:hasScale,http://sweetontology.net/relaMath/hasScale,has scale
