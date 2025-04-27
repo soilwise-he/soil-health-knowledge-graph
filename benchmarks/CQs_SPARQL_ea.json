@@ -1,0 +1,504 @@
+{
+    "qa_pairs": [
+      {
+        "competency_question": "What are the components of soil, and what are the relationships between soil and its functions?",
+        "sparql_query": "PREFIX she: <https://soilwise-he.github.io/soil-health#>\nPREFIX agrontology: <http://aims.fao.org/aos/agrontology#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n\nSELECT ?soilLabel ?predicate ?objectLabel\nWHERE {\n  ?soil skos:prefLabel \"soil\"@en ;\n        skos:prefLabel ?soilLabel . \n  FILTER(LANG(?soilLabel) = \"en\") \n\n  {\n    ?soil agrontology:isComposedOf ?object .\n    BIND(agrontology:isComposedOf AS ?predicate)\n    ?object skos:prefLabel ?objectLabel .\n    FILTER(LANG(?objectLabel) = \"en\")\n  }\n  UNION\n  {\n    ?soilFunctions skos:prefLabel \"soil functions\"@en ;\n                   skos:prefLabel ?objectLabel . \n    FILTER(LANG(?objectLabel) = \"en\") \n    ?soil ?predicate ?soilFunctions .\n  }\n}\n\nORDER BY ?predicate ?objectLabel",
+        "expected_answer": "Soil is composed of a mixture of mineral and organic compounds, water, air and living organisms, and soil provides and performs soil functions."
+      },
+      {
+        "competency_question": "What knowledge is needed in order to manage soil sustainably and protect it?",
+        "sparql_query": "",
+        "expected_answer": "In order to manage soil sustainably and protect it, knowledge is needed about the state of soil and how it develops under current and future management and climatic conditions."
+      },
+      {
+        "competency_question": "What is the common definition of soil quality and soil health?",
+        "sparql_query": "",
+        "expected_answer": "Soil quality and soil health are defined as 'the capacity of a soil to function within ecosystems and land-use boundaries to sustain biological productivity, maintain environmental quality, and promote plant and animal health'."
+      },
+      {
+        "competency_question": "What is the difference between soil health and soil quality?",
+        "sparql_query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n\nSELECT DISTINCT ?concept ?uniqueDefinition\nWHERE {\n  ?concept skos:prefLabel ?label ;\n           skos:definition ?uniqueDefinition .\n  FILTER(?label = \"soil health\"@en || ?label = \"soil quality\"@en)\n  \n  FILTER NOT EXISTS {\n    ?otherConcept skos:prefLabel ?otherLabel ;\n                  skos:definition ?uniqueDefinition .\n    FILTER(?otherLabel != ?label && \n           (?otherLabel = \"soil health\"@en || ?otherLabel = \"soil quality\"@en))\n  }\n}",
+        "expected_answer": "Soil health is defined as the actual capacity of a soil to perform its core functions and to provide ecosystem services, and soil quality as the inherent capacity which provides the basic frame within which a soil evolves."
+      },
+      {
+        "competency_question": "What are soil threats and what factors indicate the existence of soil threats?",
+        "sparql_query": "",
+        "expected_answer": "Soil threats are processes that damage soil and its functional properties, reducing the soil's capacity to provide ecosystem services. Soil threats are characterised by a negative trend in one or several soil properties, or are indicated directly by features observed in the field, such as soil erosion and soil sealing."
+      },
+      {
+        "competency_question": "What is soil degradation and what factors indicate the presence of soil degradation?",
+        "sparql_query": "",
+        "expected_answer": "Soil degradation can be defined as a decline in soil quality, resulting in the reduced functioning of the soil. Soil degradation is indicated by soil threats or declining soil function indicators."
+      },
+      {
+        "competency_question": "What are thresholds and what information do the thresholds provide in the context of soil protection?",
+        "sparql_query": "",
+        "expected_answer": "Thresholds are values above or below which a significant shift or rapid negative change takes place. This can be a single critical value or the critical limits of a range of values. Thresholds provide the information of critical level at soil functions and critical level at preventive or restorative activity."
+      },
+      {
+        "competency_question": "What are soil functions and what is the relationship between soil functions, soil processes, and ecosystem services?",
+        "sparql_query": "",
+        "expected_answer": "Soil functions describe the soil's capacity to support the ecosystem services essential for human well-being. Soil processes enable the provision of ecosystem services. Soil functions are defined as bundles of soil processes that underpin the delivery of ecosystem services."
+      },
+      {
+        "competency_question": "What are ecosystem services and what are the four types of ecosystem services?",
+        "sparql_query": "",
+        "expected_answer": "Ecosystem services can be summarised as the goods and benefits people and societies receive from ecosystems. The four types of ecosystem services are provisioning services, regulating services, cultural services, and supporting services."
+      },
+      {
+        "competency_question": "What are soil indicators and what is the relationship between soil indicators and soil attributes?",
+        "sparql_query": "",
+        "expected_answer": "Soil indicators are soil attributes that provide substantial information on soil functions. An indicator is embedded in a well-developed interpretative framework and has meaning beyond the measure it represents. Soil attributes are measurable soil properties. Sensitive soil attributes reflect the capacity of a soil to function."
+      },
+      {
+        "competency_question": "How are soil parameters distinguished and classified, and how are complex parameters derived?",
+        "sparql_query": "",
+        "expected_answer": "Soil parameters are distinguished as basic and specific soil parameters. Soil attributes (measured soil parameters) are classified as dynamic and static soil parameters. Complex parameters are difficult to measure and derived from basic parameters using models."
+      },
+      {
+        "competency_question": "What risk assessment models are currently in use and in which countries, if any, are they used?",
+        "sparql_query": "",
+        "expected_answer": "The risk assessment model SansCrit and the Dutch risk assessment toolbox used in the Netherlands; the CLEA model used in the United Kingdom; and the S-Risk model and regional versions of the S-Risk model used in Belgium."
+      },
+      {
+        "competency_question": "What are the main types of soil degradation and where does soil sealing fall into this category?",
+        "sparql_query": "",
+        "expected_answer": "The main types of soil degradation are physical, chemical, biological, and ecological degradation. Soil sealing is a form of physical degradation."
+      },
+      {
+        "competency_question": "What is soil chemical degradation and what characteristics does it include?",
+        "sparql_query": "",
+        "expected_answer": "Soil chemical degradation is characterised by changes in soil processes, including nutrient depletion, acidification, salinisation and contamination."
+      },
+      {
+        "competency_question": "How is soil biological degradation defined and what it leads to?",
+        "sparql_query": "",
+        "expected_answer": "Soil biological degradation refers to reduced soil biological activity, which can be accompanied by a loss of soil biodiversity. This leads to lower levels of mineralisation and respiration and an accumulation of incompletely decomposed dead organic matter (necromass)."
+      },
+      {
+        "competency_question": "How is soil ecological degradation defined, what does it reflect, and how does it affect ecosystem functions?",
+        "sparql_query": "",
+        "expected_answer": "Soil ecological degradation reflects a combination of the other three types of degradation, including physical, chemical, and biological degradation. This leads to a disruption in ecosystem functions."
+      },
+      {
+        "competency_question": "What are the essential soil indicators proposed by MAES and what are their units, if any?",
+        "sparql_query": "",
+        "expected_answer": "Essential soil indicators proposed by MAES are:\n•\tsoil erosion (unit: kg/ha/year)\n•\tsoil sealing (unit: % area)\n•\tsoil contamination or pollution (from point or diffuse sources)\n•\tavailable water capacity\n•\tsoil nutrient availability\n•\tsoil carbon stock (unit: t/ha or kg/m²)\n•\tsoil biodiversity potential."
+      },
+      {
+        "competency_question": "According to the 2020 MAES assessment, what are the main soil indicators?",
+        "sparql_query": "",
+        "expected_answer": "According to the 2020 MAES assessment, the main soil indicators are:\n•\tbased on modelling: erosion by water, agricultural area under severe erosion, soil erosion rates per unit of land cover, wind erosion rate;\n•\tbased on Eurostat indicators: gross nutrient balance;\n•\tbased on LUCAS soil measurements: topsoil nitrogen and phosphorous concentrations, trends in SOC stocks in cropland;\n•\tbased on EU research: extent (area) of organic soils, susceptibility to compaction;\n•\tbased on EEA indicators: soil sealing, contaminated sites."
+      },
+      {
+        "competency_question": "What are the current land degradation indicators from Sustainable Development Goal (SDG) indicator 15.3.1 and what do these land degradation indicators represent?",
+        "sparql_query": "",
+        "expected_answer": "Land degradation indicators from Sustainable Development Goal (SDG) indicator 15.3.1 are land productivity, land cover change and carbon stocks. Land degradation indicators in this context represent 'key processes which underpin land-based natural capital'."
+      },
+      {
+        "competency_question": "Which GAEC standards are relevant to soils, and what are their respective topics?",
+        "sparql_query": "",
+        "expected_answer": "Three GAEC standards refer directly to soil, namely GAEC 4 'Minimum soil cover', GAEC 5 'Minimum land management reflecting site specific conditions to limit erosion', and GAEC 6 'Maintain soil organic matter through appropriate practices'."
+      },
+      {
+        "competency_question": "What does soil organic carbon (SOC) affect, and what happens when SOC content is below certain thresholds?",
+        "sparql_query": "",
+        "expected_answer": "Soil organic carbon (SOC) affects the quality of water, air, biodiversity, food and water security. Soil functions are hampered when SOC content is below thresholds for optimal or critical SOC content."
+      },
+      {
+        "competency_question": "How does soil organic matter (SOM) content influence various soil functions and environmental processes?",
+        "sparql_query": "",
+        "expected_answer": "Soil organic matter (SOM) content is a source of energy and carbon for soil organisms and affects the temperature and hydrology of soil, soil aggregation, soil erodibility, pore volume, the total reactive soil micro-surface, and biochemical processes including mineralisation rate and cation exchange, also nitrogen losses and greenhouse gas emissions."
+      },
+      {
+        "competency_question": "How is SOC related to soil nitrogen, and what does soil nitrogen affect, including SOM?",
+        "sparql_query": "",
+        "expected_answer": "SOC is positively correlated with soil nitrogen, and losing SOC entails a loss of soil nitrogen. Soil nitrogen affects the composition of microbial communities (e.g. proportion of fungi and bacteria), root turnover and the chemical composition of SOM."
+      },
+      {
+        "competency_question": "What is SOM and what is it made from, and how to convert measured SOC to SOM?",
+        "sparql_query": "",
+        "expected_answer": "SOM is the sum of all dead organic components at various stages of decomposition in a soil, which are made from basic elements including carbon, nitrogen, oxygen, hydrogen and an array of attached cations and ions. Some definitions also include undecayed plant and animal residues as well as microbial biomass. Factors of 1.724 and 2 are used convert SOC to SOM."
+      },
+      {
+        "competency_question": "How to calculate SOC stock from SOC content, and what the other parameters in the equation represent?",
+        "sparql_query": "",
+        "expected_answer": "The equation to calculate SOC stock from SOC content is: SOC_stock = d * C * (1 - CM) * BD / 100, where SOC is the stock in tonnes C/ha, d is the depth (m), C is the content of organic carbon (grams C/kg), CM is the fraction of coarse material or rock fragments, by mass, and BD is the bulk density (kg/m²)."
+      },
+      {
+        "competency_question": "what is the primary focus of most research concerning the derivation of SOC thresholds for sustainable arable soil management, and are there any other factors influencing this focus?",
+        "sparql_query": "",
+        "expected_answer": "The effects of soil management and the derivation of SOC thresholds for sustainable (arable) soil management have usually focused on the effect of the decline in SOC levels on crop yield. Crop yield is affected by soil fertility."
+      },
+      {
+        "competency_question": "What are the critical levels or thresholds of SOC for maintaining soil health, structural stability, and optimal crop yield, and how do these thresholds vary across different soil types?",
+        "sparql_query": "",
+        "expected_answer": "When SOC levels in soil are below 1%, soil health may be constrained and potential yields may not be achieved, while a minimum of 2% SOC is necessary to maintain structural soil stability, and, if SOC content is 1.2-1.5%, stability declines rapidly. A critical range of SOC for two soil orders: alfisols (luvisols and lixisols in the World Reference Base for Soil Resources) with 0.5-0.77% SOC; and entisols (leptosols in the World Reference Base) with 1.03-1.16% SOC."
+      },
+      {
+        "competency_question": "What are examples of national estimations for site-typical SOC contents in European countries, and how do these values vary based on environmental factors and land use?",
+        "sparql_query": "",
+        "expected_answer": "For the United Kingdom, 1.1% SOC for drier conditions and low clay content and up to 4% for wetter conditions and high clay content. For the Mediterranean region, 1.5% SOC for cropland."
+      },
+      {
+        "competency_question": "How are different SOC/clay ratio thresholds or intervals used to classify land as degraded, transitional, or favourable in Wallonia?",
+        "sparql_query": "",
+        "expected_answer": "For Wallonia, indicating degraded land with a SOC/clay ratio of 0.08, transitional land with SOC/clay ratios of between 0.08 and 0.1, and favourable and highly favourable land with SOC/clay ratios above 0.1 and 0.12, respectively."
+      },
+      {
+        "competency_question": "What is carbon sequestration and what factors contribute to soils' potential for carbon sequestration?",
+        "sparql_query": "",
+        "expected_answer": "Carbon sequestration is 'the process of transferring CO₂ from the atmosphere into the soil of a land unit, through plants, plant residues and other organic solids which are stored or retained in the unit as part of the soil organic matter with a long residence time'. Soils' potential to sequester carbon arises because historical and current management has depleted the carbon pool of many soils."
+      },
+      {
+        "competency_question": "How does clay content influence the limits for SOM content in relation to crop production?",
+        "sparql_query": "",
+        "expected_answer": "Limits for SOM content increase with increasing clay content, from 1% SOM at 4% clay up to 3.5% SOM at 38% clay. Even with the addition of fertiliser, below 1% SOM, mineralisable nitrogen is so low that potential optimal yields can no longer be achieved."
+      },
+      {
+        "competency_question": "What are the two types of soil nutrients and what substances do they contain?",
+        "sparql_query": "",
+        "expected_answer": "The two types of soil nutrients are macronutrients, i.e. nitrogen, phosphorus, calcium, magnesium, potassium and sulphur, and micronutrients, i.e. boron, zinc, manganese, iron, copper and molybdenum."
+      },
+      {
+        "competency_question": "What are the main soil parameters that are identified as key determinants of soil fertility, and what are the primary sources of influence on these parameters in agricultural and non-agricultural soils?",
+        "sparql_query": "",
+        "expected_answer": "Nitrogen (N), phosphorus (P) and soil pH are the main determinants of soil fertility. These soil parameters are affected by inputs from fertiliser and manure application in agriculture and by atmospheric deposition."
+      },
+      {
+        "competency_question": "How do nutrient inputs, specifically nitrogen and phosphorus, affect soil nutrient status, and what are the impacts of these inputs on biomass/crop growth and potential environmental consequences in non-agricultural and agricultural ecosystems?",
+        "sparql_query": "",
+        "expected_answer": "Nutrient inputs affect the soil nutrient status (contents and pools), and the output of nutrients in vegetation and to air and water. In non-agricultural systems, biomass growth is enhanced by additional inputs, but may be reduced at very high levels of inputs. In agricultural soils, crop growth is strongly stimulated by N and P fertiliser and manure inputs."
+      },
+      {
+        "competency_question": "What are the unique origin of nitrogen (N) in agricultural soils compared to other nutrients, what are the soil parameters that affect soil N availability and how is input N consumed?",
+        "sparql_query": "",
+        "expected_answer": "Unlike other nutrients, N in (agricultural) soils is derived from organic matter. Soil parameters affecting soil N availability include pH, organic matter and clay content. A part of input N is consumed by vegetation, and the N surplus is emitted to air, as ammonia (NH₃), nitric oxide (NO), nitrous oxide (N₂O) or dinitrogen (N₂), or to groundwater and surface water, mainly as nitrate (NO₃⁻), or it accumulates in soil."
+      },
+      {
+        "competency_question": "How does the concentration of phosphorus (P) in the soil solution differ from that of nitrogen, and what are the soil parameters that affect soil P availability?",
+        "sparql_query": "",
+        "expected_answer": "Unlike N, the concentration of P in soil solution is buffered by the stock of reactive or readily available P. Soil parameters affecting the availability of soil P include the aluminium and iron oxide content."
+      },
+      {
+        "competency_question": "What are the typical nutrient limitations for biomass production in unfertilised terrestrial ecosystems, and what specifically limits tree growth in forest ecosystems, along with the primary factors influencing the availability of this limiting nutrient?",
+        "sparql_query": "",
+        "expected_answer": "In unfertilised soils, such as terrestrial ecosystems, biomass production is N and P limited. For forest ecosystems, tree growth is limited by the N availability, which in turn is affected by the soil N status (especially the soil C/N ratio and the P availability)."
+      },
+      {
+        "competency_question": "How does soil nutrient (nitrogen and phosphorus) status affect ecosystems in addition to crop yields?",
+        "sparql_query": "",
+        "expected_answer": "N in soil affects the biodiversity of soil organisms, whereas the soil P content has an impact on surface water quality by affecting P accumulation and losses to surface water. Both N and P affect biodiversity, especially plant species diversity, in non-agricultural ecosystems."
+      },
+      {
+        "competency_question": "How are indicators defined for assessing nitrogen and phosphorus status in agricultural soils, and what specific types of indicators are mentioned for nitrogen assessment in forest soils?",
+        "sparql_query": "",
+        "expected_answer": "Indicators for soil N and P status can be given in terms of total values (total N and P content) and (plant) available N and P contents. For forest soils, indicators include the C/N ratio in the organic layer and the dissolved total inorganic N concentration."
+      },
+      {
+        "competency_question": "How does the carbon to nitrogen (C/N) ratio in the organic layer of forest soils affect the soil's capacity to retain nitrogen and the risk of nitrogen leaching, and what C/N ratio ranges are identified as critical in relation to these processes?",
+        "sparql_query": "",
+        "expected_answer": "At high soil C/N ratios, most incoming N is retained by microbial immobilisation and limited N is available to plants. When more N is stored, the C/N ratio declines, and more N becomes available by mineralisation for plant uptake and leaching. In the organic layer of forests, C/N ratios of around 25 (between 20 and 30) are considered critical, with a very high N retention fraction and thus limited leaching risk at a C/N ratio above 30, while the N retention fraction is low and the leaching risk is high at a C/N ratio below 20."
+      },
+      {
+        "competency_question": "What N/P ratio in the organic layer of coniferous and deciduous forests indicate phosphorus limitation according to the foliage N/P ratio?",
+        "sparql_query": "",
+        "expected_answer": "For conifers an N/P ratio <12 indicates N limitation and a N/P ratio >18 indicates P limitation, while for deciduous trees an N/P ratio <17 indicates N limitation and a N/P ratio >25 indicates P limitation. N/P ratio in organic layer >18 (coniferous forests) and N/P ratio in organic layer >25 (deciduous forests)."
+      },
+      {
+        "competency_question": "Under what conditions does soil acidification occur, and what are the primary anthropogenic causes of soil acidification in unlimed agricultural land?",
+        "sparql_query": "",
+        "expected_answer": "Soil acidification occurs when the acid neutralising capacity of the soil is reduced, which leads to a decrease in pH. The most significant effect is seen on unlimed agricultural land as a result of the application of ammonium-based fertilisers and urea."
+      },
+      {
+        "competency_question": "What are negatively affected by soil acidification and what is the effect on soil organic carbon in acid forest soils?",
+        "sparql_query": "",
+        "expected_answer": "Soil acidification negatively affects water quality, biological activity, and plant growth. In acid forest soils, low pH tends to favour the accumulation of organic matter through reduced decomposition."
+      },
+      {
+        "competency_question": "what are the main indicators employed in agricultural soils to evaluate soil acidity and determine the necessity for liming, and under what conditions does aluminium release occur?",
+        "sparql_query": "",
+        "expected_answer": "In agricultural soils, pH and base saturation is the indicator that is used to assess the soil acidity status and the need for liming. Aluminium release happens at pH values below 4.5."
+      },
+      {
+        "competency_question": "What is the soil pH range that can constrain crop production and what are the critical and optimal pH value?",
+        "sparql_query": "",
+        "expected_answer": "Crop production is already constrained at pH values below 5.5-6.0. A pH value below 5 should certainly be avoided. Ideally, the pH should stay above 5.5 or even 6."
+      },
+      {
+        "competency_question": "What key elements need to be considered when establishing meaningful thresholds for pollutants in soil to assess the impact of soil pollution on soil health?",
+        "sparql_query": "",
+        "expected_answer": "To be able to assess the impact of soil pollution on soil health, meaningful indicators for the current state of soils and the associated risks from pollutants, as well as information about inputs and outputs of substances, are required."
+      },
+      {
+        "competency_question": "Which societal needs are described as being affected by soil pollution?",
+        "sparql_query": "",
+        "expected_answer": "soil pollution affects various societal needs such as soil conditions, pressures, future management and protection objectives. Biodiversity and the filter function (in relation to water quality) are directly affected by pollution, services such as storage of water and carbon can also be affected."
+      },
+      {
+        "competency_question": "What are the two types of soil pollution, what are the characteristics of diffuse soil pollution and what are it typical origins?",
+        "sparql_query": "",
+        "expected_answer": "The two types of soil pollution are point source pollution and diffuse (or non-point) soil pollution. Diffuse pollution commonly originates from a range of sources, including those related to management of agricultural land and atmospheric deposition (mostly from industry and traffic). It is characterised by a relatively homogeneous pollution pattern."
+      },
+      {
+        "competency_question": "What are some examples of pollutants found in arable soils, and what are their mentioned sources within arable farming practices?",
+        "sparql_query": "",
+        "expected_answer": "Metals such as cadmium, copper and zinc, which are present in mineral fertilisers (cadmium), animal manure (copper, zinc), compost or sludges (mostly metals). Medicinal residues (from both human and animal medicines, such as antibiotics and hormonal residues), nanoparticles or polyfluorinated compounds (PFCs, such as perfluorooctanoic acid, or PFOA) from sewage sludge, or microplastics present in some organic soil improvers."
+      },
+      {
+        "competency_question": "What are some characteristics that typically distinguish point source pollution from diffuse pollution in terms of scale and pollution pattern?",
+        "sparql_query": "",
+        "expected_answer": "In contrast to diffuse pollution, point source pollution (also called local pollution) usually occurs at a smaller scale and often in a heterogeneous pattern."
+      },
+      {
+        "competency_question": "What is the primary determinant of background concentrations for heavy metals in soil and what is the common background value for human-made organic pollutants?",
+        "sparql_query": "",
+        "expected_answer": "Background concentrations of most metals vary depending on parent material (rock type from which the soil developed). For a large number of human-made organic pollutants, background values are zero or close to zero. In the case of some PAHs present in soils subject to forest fires, background levels of which are not zero."
+      },
+      {
+        "competency_question": "What are the two highest-level protection targets distinguished in the context of soil pollution, and what are the specific sub-targets for them?",
+        "sparql_query": "",
+        "expected_answer": "At the highest level, two protection targets are distinguished: human health and ecosystem health. And specific sub-targets include water quality (for consumption or other uses, e.g. showers, swimming) and food quality (for specific products or groups of products)."
+      },
+      {
+        "competency_question": "What are soil screening levels (SSVs) and what do SSVs depend on?",
+        "sparql_query": "",
+        "expected_answer": "Soil screening values (SSVs) are the levels of pollutants in soil at which the corresponding concentrations in endpoints (e.g. quality standard for food or drinking water) are equal to the critical limits. SSVs depend on the function considered and also depend on the soil type considered."
+      },
+      {
+        "competency_question": "What are the commonly regulated heavy metals and which of them are highlighted as being potentially toxic to both human beings and soil organisms even at low concentrations?",
+        "sparql_query": "",
+        "expected_answer": "Commonly regulated heavy metals include metals and metalloids such as arsenic (As), chromium (Cr), cobalt (Co), nickel (Ni), copper (Cu), zinc (Zn), cadmium (Cd), lead (Pb) and mercury (Hg). Hg and Pb can be toxic to either human beings or soil organisms even at low concentrations."
+      },
+      {
+        "competency_question": "How plant protection products (PPPs) was introduced to the soil, what is the main component, and what other places can be found?",
+        "sparql_query": "",
+        "expected_answer": "Plant protection products (PPPs) are largely introduced to soil as part of common agricultural practices. PPPs, mainly herbicides, can be found in soil, groundwater and drinking water."
+      },
+      {
+        "competency_question": "In addition to PPPs, what other organic pollutants can be found in the soil and what are identified as primary sources of them?",
+        "sparql_query": "",
+        "expected_answer": "In agriculture, the use of sewage sludge (and to a lesser extent compost), is considered a prime source of organic compounds including PFAS, plastics and antimicrobials. PAHs are naturally occurring, Polychlorinated biphenyls (PCBs) are result from industrial processes, and organochlorine pesticides such as DDT, dieldrin and hexachlorobenzene). BTEX (benzene, toluene, ethylbenzene and xylenes) is frequently found in urban soils and groundwater at or near large-scale cleaning facilities. Volatile organic compounds (VOCs), including trichloroethylene, tetrachloroethylene, 1,1,1-trichloroethane and vinyl chloride enter soils through several industrial activities, including dry cleaning."
+      },
+      {
+        "competency_question": "What is the overarching goal of soil protection regulations and procedures, and what is a soil represents a risk?",
+        "sparql_query": "",
+        "expected_answer": "The overarching goal of soil protection regulations and procedures is to protect human health and the natural environment, i.e. terrestrial ecosystems. A soil represents a risk means specific functions or services attributed to the soil are affected by the pollutant present."
+      },
+      {
+        "competency_question": "What are some of the key soil services or functions through which the protection of human health and ecosystems can be related, and what are the main entities that are distinguished for soil protection in this context?",
+        "sparql_query": "",
+        "expected_answer": "Protection of both human health and ecosystems can be related to various soil services or functions. Here, the production service (growth and quality of crops), filter function (water quality) and habitat for soil dwelling organisms are the key services considered. These are part of four main entities that can be distinguished for soil protection: arable cropping systems, urban soils, natural areas, and groundwater and surface water bodies."
+      },
+      {
+        "competency_question": "What are some of the effects and human health threats often associated with sites affected by point source pollution, and where are such risks particularly evident?",
+        "sparql_query": "",
+        "expected_answer": "The effects of point source pollution are, such as degraded soil surfaces, visual impact on vegetation (or a lack of it), as is the case in many former mining areas. Point source pollution often pose a direct threat to human health resulting from soil ingestion by children, pollution of drinking water, heavily polluted dust particles blowing into nearby housing areas or transfer into the food chain if the soil is used for local crop production, as is the case in or near city areas."
+      },
+      {
+        "competency_question": "What is the fundamental goal of a soil pollution indicator, and what influence the assessment of risk and the associated SSV or threshold?",
+        "sparql_query": "",
+        "expected_answer": "The objective of an indicator for soil pollution is to quantify the actual degree of pollution of soil or groundwater bodies by comparing the actual state with the critical level. The actual or intended use of the land or water body to be evaluated determines what risk level is appropriate and hence the magnitude of the respective SSV or water quality threshold."
+      },
+      {
+        "competency_question": "What are some of the sub-indicators identified in the context of detecting, managing, and remediating contaminated sites?",
+        "sparql_query": "",
+        "expected_answer": "Sub-indicators include soil polluting activity, number of contaminated sites, progress in the management of contaminated sites, expenditures on remediation and groundwater incidents."
+      },
+      {
+        "competency_question": "What are the two types of indicators suggested during Eionet workshops for diffuse pollution, along with examples of each, and what specific heavy metals and nutrients are monitored with a 5- to 10-year sampling interval?",
+        "sparql_query": "",
+        "expected_answer": "Direct indicators related to a specific load of contaminants, such as the average pesticide consumption per unit area of agricultural land or the amount of sewage sludge applied per unit area of agricultural land; indicators based on a mass balance approach, such as the input-output assessment of heavy metals in arable cropping systems, and, based on this, the critical load of heavy metal content in soils related to different land uses. The following metals and nutrients are monitored with 5- to 10-year sampling intervals: heavy metals (cadmium, copper, lead, zinc, mercury, arsenic, nickel and chromium); nutrients (nitrogen and phosphates)."
+      },
+      {
+        "competency_question": "How do the approaches to analyzing pollution patterns and developing sampling protocols differ diffuse polluted sites from point source, and what are the distinct stages of investigation used for point source pollution?",
+        "sparql_query": "",
+        "expected_answer": "Since diffuse soil pollution is characterised by a homogeneous pollution pattern, a limited number of samples and analyses of composite samples are appropriate for diffuse polluted sites. A preliminary, an exploratory and a main investigation are used for investigating point source pollution."
+      },
+      {
+        "competency_question": "What are the observed ranges of critical and intermediate risk SSVs for cadmium and copper across the European countries and regions, and what factors contribute to the variability of these SSV levels?",
+        "sparql_query": "",
+        "expected_answer": "The critical risk level for cadmium ranges between 1mg/kg (protected areas, Poland) and 30mg/kg (industrial land use, Brussels and Flanders region, Belgium; Slovakia); for intermediate risk, values vary by up to a factor of 100, between 0.4mg/kg (Slovakia) and 40mg/kg (Austria). For copper, the range of variation is similar for the critical risk thresholds (30-1,500mg/kg) but much more extreme for intermediate values (factor of 1,500). Values are specific for a certain land use and specific texture classes or parent material. Other soil properties are included, such as saturated hydraulic conductivity and soil depth, as in the case of Poland."
+      },
+      {
+        "competency_question": "What are the range of SSV thresholds for PCDD/PCDF among EU Member States, and what factors contribute to the differences of the SSV thresholds?",
+        "sparql_query": "",
+        "expected_answer": "SSV thresholds for PCDD/PCDF with an apparent range are from the strictest value of 1*10⁻⁵ (in Italy) to 100 (in Austria). This relates not only to the number of chemicals regulated but also to the absolute value for a given chemical."
+      },
+      {
+        "competency_question": "What is the described role of soil organisms in ecosystems, and what are some of the stated limitations regarding the use of species diversity as an indicator of the health of soil communities?",
+        "sparql_query": "",
+        "expected_answer": "Soil organisms are the 'biological engine of the Earth' and are crucial for the functioning of soils. Species diversity may seem a robust indicator of the health of soil communities. However, there is a general lack of knowledge about the status of soil biodiversity and its baselines."
+      },
+      {
+        "competency_question": "What are the main functional groups of the soil food web, and what are some of the described characteristics for each group, including their feeding habits and approximate ranges for size, density, and biomass?",
+        "sparql_query": "",
+        "expected_answer": "The main functional groups of the soil food web are as follows:\n•\tEarthworms consume plant residues and soil including (micro)organisms. Often, they form the major part of the soil fauna biomass with up to 1,000 individuals per m², 3,000kg fresh biomass per hectare or a few hundred kilograms of carbon (C) per hectare.\n•\tEnchytraeids (pot worms) are relatives of earthworms with a much smaller size and a similar diet. Their densities vary between 100/m² and 10⁶/m², with a biomass of up to 1kg C/ha.\n•\tMites (fungivores, bacterivores, predators) have a size of about 1mm, densities of about 10⁵/m² and a biomass of up to 0.1 kg C/ha.\n•\tSpringtails or Collembola (fungivores, omnivores) also have a size of about 1mm. They reach densities of 1000-10⁵/m² and a biomass of up to 1kg C/ha.\n•\tNematodes (bacterivores, herbivores, fungivores, predators/omnivores) have a size of about 500µm, densities of 10/g to 50/g soil and a biomass of up to 1kg C/ha.\n•\tProtists (amoebae, flagellates, ciliates) are unicellular animals with a size of 2-200µm, densities of about 10⁶ cells/g soil and a biomass of about 10kg C/ha.\n•\tBacteria are usually smaller than 2µm, with densities of about 10⁹ cells/g soil and a biomass of 50-500kg C/ha. Bacteria are the smallest and most numerous of the soil organisms.\n•\tFungi grow as networks of threads (hyphae) which usually have diameters of 2-10µm and reach total lengths of 10-1000m/g soil, and a biomass of 1-500kg C/ha."
+      },
+      {
+        "competency_question": "What is the main factor affecting soil biota and what are some of the effects of agricultural intensification on soil food webs and soil biodiversity?",
+        "sparql_query": "",
+        "expected_answer": "The soil biota is primarily affected by land use (which determines the degree of physical disturbance, input of chemicals, and amount and quality of organic material such as litter). Agricultural intensification not only changes the diversity of individual groups of soil biota, it also reduces the complexity of soil food webs and the community-related biomass of soil fauna and the interaction network between soil bacteria."
+      },
+      {
+        "competency_question": "What are the specific soil biodiversity indicators proposed by Huber et al. (2008) and Breure (2004), and what reasons are given in this paragraph for selecting the indicators proposed by Breure (2004)?",
+        "sparql_query": "",
+        "expected_answer": "Huber et al. (2008) proposed three key indicators: (1) diversity of earthworms; (2) diversity of collembolans; and (3) soil microbial respiration. Breure (2004) proposed the following indicators: (1) microbial biomass (bacteria and fungi); (2) nematodes (family level and feeding types), the relative and absolute abundance of nematodes; and (3) earthworms."
+      },
+      {
+        "competency_question": "According to the case study on forest soils in the Flanders region, what were identified as the most useful parameters for indicating microbial biomass, and what specific information does each of these parameters provide about soil microbial activity?",
+        "sparql_query": "",
+        "expected_answer": "The most useful parameters for indicating microbial biomass are: Hot water extractable carbon (HWC): this represents the labile fraction of the total soil organic carbon (SOC) pool and thus includes microbial carbon and carbon and nitrogen sources that are readily available to microbes. A depletion in HWC indicates a deterioration of or decline in SOC. Amount of cultivable bacteria: this is greater in deciduous than in coniferous forest stands; mull humus form seems a good indicator of the amount of colony forming units."
+      },
+      {
+        "competency_question": "According to Ritz et al. (2009), what are the main categories of biological indicators they identified, and for each category, list the specific examples of indicators provided along with the general methods mentioned for their determination?",
+        "sparql_query": "",
+        "expected_answer": "Ritz et al. (2009) identified the following biological indicators: Indicators based on genotypic methods (most common among the selected indicators due to recent advances in molecular (sequencing) techniques): presence and amount of actinomycetes; ammonia oxidisers; archaea; de-nitrifiers; eubacteria; and fungi. These indicators are related to the structure of the microbial community and are determined using DNA yield (e.g. ISO, 2016). Indicators based on phenotypic methods, such as extractions, visual recordings or catches (pitfall traps): total abundance and functional groups involved with N cycling; presence and amount of microarthropods and nematodes; all soil fauna and flora, in particular ground-dwelling organisms and macro soil invertebrates (e.g. ISO 2006a, 2006b, 2007). Indicators based on 'functional' methods: substrate-induced respiration; potential enzyme activity (microbial biomass and total community activity) from the feeding activity of soil invertebrates."
+      },
+      {
+        "competency_question": "According to Guerra et al. (2021), what are the specific ecological indicators that can be derived from the proposed essential biodiversity variables, and what analytical methodologies do they recommend for assessing the condition of soil biodiversity and functions?",
+        "sparql_query": "",
+        "expected_answer": "Based on the essential biodiversity variables, ecological indicators can be derived: soil health, soil biodiversity, soil carbon stocks, ecological vulnerability of soils, soil conservation value. Guerra at al. (2021) recommend specific analytical methodologies: intraspecific genetic diversity (DNA extraction); abundance of species populations (DNA-based bacteria, fungi and nematode extraction); community traits of roots (fine root weight, length and diameter distributions); taxonomic community composition (DNA-based soil archaea, bacteria, fungi, protists and invertebrates); functional diversity (microscopic analysis of functional groups of nematodes; functional diversity of bacteria, archaea, fungi and selected invertebrates); soil biomass (substrate-induced respiration method); litter decomposition (litter bags, combined with incubation); soil respiration (oxygen consumed by microbial respiration); feeding activities of soil invertebrates (e.g. by the bait-lamina method); enzymatic activity (incubation followed by fluorescence measurements); soil aggregation (soil aggregate resistance index); nutrient cycling (amount and availability of nitrogen, carbon and phosphorus); habitat extent (bulk density and soil structure)."
+      },
+      {
+        "competency_question": "According to Creamer et al. (2019), what are the specific soil attributes that were analysed to determine soil biodiversity in their proposed and tested monitoring scheme for soil functions?",
+        "sparql_query": "",
+        "expected_answer": "The following soil attributes are analysed to determine soil biodiversity: soil texture, bulk density, groundwater table depth, pH, C:N ratio, N:P ratio, soil organic matter, organic carbon content, earthworm abundance and richness, nematode abundance and richness, bacterial biomass and fungal biomass."
+      },
+      {
+        "competency_question": "Beyond standard documentation of the soil sampling site, what specific categories of additional information are recommended to be collected?",
+        "sparql_query": "",
+        "expected_answer": "The following additional information are recommended to be collected: fabric of organic horizons (i.e. peat, forest floor): nature and arrangement of humus constituents (structure, consistency, character) (see Green et al., 1993); type of litter: plant species of origin, plant part (wood, leaf or needle, root), decomposition status; fungal mycelia and faunal droppings: distribution and abundance; roots: abundance and size; presence/abundance of common soil fauna, particularly earthworms, separating them into the functional groups endogeics (dwellers in the mineral layer), epigeics (dwellers in the litter layer) and anecics (vertical burrowers); horizon boundaries: shape and width."
+      },
+      {
+        "competency_question": "What is soil erosion, what is identified as the main indicator used to quantify soil erosion and what is its unit?",
+        "sparql_query": "",
+        "expected_answer": "Soil erosion refers to the loss of fertile topsoil after erosive rain events on sensitive soils, largely in the absence of sufficient vegetation cover. The main indicator for soil erosion is the rate of loss of topsoil mass, which is usually expressed in tonnes per hectare per year."
+      },
+      {
+        "competency_question": "What are the primary agents responsible for soil erosion, and what are some of the on-site and off-site consequences of soil erosion?",
+        "sparql_query": "",
+        "expected_answer": "While weather, and in particular heavy rainfall, is the trigger for soil erosion by water, in modern times agriculture, overgrazing, mining and infrastructure are the drivers of severe soil erosion due to unsustainable soil management. Onsite effects of erosion often include crop yield losses. Large erosion events are often accompanied by substantial offsite damage (river and dam sedimentation, including offsite pollution)."
+      },
+      {
+        "competency_question": "According to Huber et al. (2008) and Poesen (2018), what are the main categories of soil erosion, and what specific types of erosion are included within each of these categories?",
+        "sparql_query": "",
+        "expected_answer": "Based on Huber et al. (2008) and Poesen (2018) various types of erosion can be distinguished: water erosion: interrill (sheetwash), rill, ephemeral gully, gully and piping (subsurface) erosion, gully erosion; wind erosion; anthropogenic (technic) erosion: including tillage erosion, harvesting erosion, erosion caused by livestock trampling."
+      },
+      {
+        "competency_question": "What is the primary on-site consequence of soil erosion, and what are the specific examples of off-site impacts resulting from the transport and deposition of eroded material?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What is the primary indicator used to quantify soil erosion by water, and what are proxy or impact sub-indicators that can be used to estimate soil erosion severity or potential when direct measurements of the soil loss rate are lacking?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What are the key differences in the methodologies and objectives of Level 1 and Level 2 monitoring for soil erosion by water in Europe, and what is the specific role of Level 1 in relation to Level 2 monitoring as described here?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What are the range of natural soil formation rates reported from several studies and what range of tolerable soil loss for Europe did Verheijen et al. (2009) calculate based on European soil formation data, including the corresponding reduction in soil depth per year?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "How did Smith (1941) define tolerable soil loss in relation to soil fertility and crop productivity, what range of tolerable loss rates was identified in stakeholder workshops in the United States in the late 1950s and early 1960s, and what two specific tolerable soil loss thresholds are mentioned for different soil depths in Switzerland?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What are main specific ways in which soil compaction negatively impacts soil functions and what are primary causes of soil compaction?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What is the primary condition under which soil compaction occurs, what type of soil deformation results from this condition, and what specific term is used to describe the soil's natural ability to withstand external mechanical forces, which is a key focus of soil compaction monitoring?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What are soil properties or processes that are affected by soil compaction, and what does the extent of these effects depend on?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What is a key difference in the reversibility of compaction between topsoil and subsoil in agricultural settings, and what are the reasons given for this difference?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What are the main indicators that describe topsoil compaction and what are their symbols, if any?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What is a primary characteristic that distinguishes the second set of soil physical parameters from potentially simpler ones in terms of what they strongly depend on?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What is precompression stress, and what are the main factors that influence its value?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What does the soil rigidity ratio indicate, and what range of values suggests that a soil structure is irreversibly deformed?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What combination of air capacity and saturated hydraulic conductivity values defines 'action values' (class IV), and what soil conditions and consequences are associated with this class?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What is soil sealing and what are key consequences of it, and what is a characteristic feature of how baselines and thresholds for soil sealing are determined?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What is the relationship described between imperviousness and soil sealing, and how is sealed land related to land take?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "How is land take defined, and what type of land is it usually at the expense of?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What are the main ways in which urbanization is described as affecting soils?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What are the different types of urban soils and artificial surfaces as classified in the given sources?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "If an area is completely sealed (100% sealing), which ecological soil functions will be unavailable?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What are the sub-indicators suggested by Haase and Lathrop (2003) for assessing land use efficiency in relation to soil sealing?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "What is the idea behind land recycling, what are the main key types of land recycling, and what do they involve?",
+        "sparql_query": "",
+        "expected_answer": ""
+      },
+      {
+        "competency_question": "How does the NDVI method differentiate between sealed and unsealed surfaces?",
+        "sparql_query": "",
+        "expected_answer": ""
+      }
+    ]
+  }
