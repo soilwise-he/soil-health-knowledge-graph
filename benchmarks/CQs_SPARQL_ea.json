@@ -83,12 +83,12 @@
       {
         "competency_question": "What are the essential soil indicators proposed by MAES and what are their units, if any?",
         "sparql_query": "",
-        "expected_answer": "Essential soil indicators proposed by MAES are:\n•\tsoil erosion (unit: kg/ha/year)\n•\tsoil sealing (unit: % area)\n•\tsoil contamination or pollution (from point or diffuse sources)\n•\tavailable water capacity\n•\tsoil nutrient availability\n•\tsoil carbon stock (unit: t/ha or kg/m²)\n•\tsoil biodiversity potential."
+        "expected_answer": "Essential soil indicators proposed by MAES are: soil erosion (unit: kg/ha/year); soil sealing (unit: % area); soil contamination or pollution (from point or diffuse sources); available water capacity; soil nutrient availability; soil carbon stock (unit: t/ha or kg/m²); soil biodiversity potential."
       },
       {
         "competency_question": "According to the 2020 MAES assessment, what are the main soil indicators?",
         "sparql_query": "",
-        "expected_answer": "According to the 2020 MAES assessment, the main soil indicators are:\n•\tbased on modelling: erosion by water, agricultural area under severe erosion, soil erosion rates per unit of land cover, wind erosion rate;\n•\tbased on Eurostat indicators: gross nutrient balance;\n•\tbased on LUCAS soil measurements: topsoil nitrogen and phosphorous concentrations, trends in SOC stocks in cropland;\n•\tbased on EU research: extent (area) of organic soils, susceptibility to compaction;\n•\tbased on EEA indicators: soil sealing, contaminated sites."
+        "expected_answer": "According to the 2020 MAES assessment, the main soil indicators are: based on modelling: erosion by water, agricultural area under severe erosion, soil erosion rates per unit of land cover, wind erosion rate; based on Eurostat indicators: gross nutrient balance; based on LUCAS soil measurements: topsoil nitrogen and phosphorous concentrations, trends in SOC stocks in cropland; based on EU research: extent (area) of organic soils, susceptibility to compaction; based on EEA indicators: soil sealing, contaminated sites."
       },
       {
         "competency_question": "What are the current land degradation indicators from Sustainable Development Goal (SDG) indicator 15.3.1 and what do these land degradation indicators represent?",
@@ -333,7 +333,7 @@
       {
         "competency_question": "What are the main functional groups of the soil food web, and what are some of the described characteristics for each group, including their feeding habits and approximate ranges for size, density, and biomass?",
         "sparql_query": "",
-        "expected_answer": "The main functional groups of the soil food web are as follows:\n•\tEarthworms consume plant residues and soil including (micro)organisms. Often, they form the major part of the soil fauna biomass with up to 1,000 individuals per m², 3,000kg fresh biomass per hectare or a few hundred kilograms of carbon (C) per hectare.\n•\tEnchytraeids (pot worms) are relatives of earthworms with a much smaller size and a similar diet. Their densities vary between 100/m² and 10⁶/m², with a biomass of up to 1kg C/ha.\n•\tMites (fungivores, bacterivores, predators) have a size of about 1mm, densities of about 10⁵/m² and a biomass of up to 0.1 kg C/ha.\n•\tSpringtails or Collembola (fungivores, omnivores) also have a size of about 1mm. They reach densities of 1000-10⁵/m² and a biomass of up to 1kg C/ha.\n•\tNematodes (bacterivores, herbivores, fungivores, predators/omnivores) have a size of about 500µm, densities of 10/g to 50/g soil and a biomass of up to 1kg C/ha.\n•\tProtists (amoebae, flagellates, ciliates) are unicellular animals with a size of 2-200µm, densities of about 10⁶ cells/g soil and a biomass of about 10kg C/ha.\n•\tBacteria are usually smaller than 2µm, with densities of about 10⁹ cells/g soil and a biomass of 50-500kg C/ha. Bacteria are the smallest and most numerous of the soil organisms.\n•\tFungi grow as networks of threads (hyphae) which usually have diameters of 2-10µm and reach total lengths of 10-1000m/g soil, and a biomass of 1-500kg C/ha."
+        "expected_answer": "The main functional groups of the soil food web are as follows: Earthworms consume plant residues and soil including (micro)organisms. Often, they form the major part of the soil fauna biomass with up to 1,000 individuals per m², 3,000kg fresh biomass per hectare or a few hundred kilograms of carbon (C) per hectare; Enchytraeids (pot worms) are relatives of earthworms with a much smaller size and a similar diet. Their densities vary between 100/m² and 10⁶/m², with a biomass of up to 1kg C/ha; Mites (fungivores, bacterivores, predators) have a size of about 1mm, densities of about 10⁵/m² and a biomass of up to 0.1 kg C/ha; Springtails or Collembola (fungivores, omnivores) also have a size of about 1mm. They reach densities of 1000-10⁵/m² and a biomass of up to 1kg C/ha; Nematodes (bacterivores, herbivores, fungivores, predators/omnivores) have a size of about 500µm, densities of 10/g to 50/g soil and a biomass of up to 1kg C/ha; Protists (amoebae, flagellates, ciliates) are unicellular animals with a size of 2-200µm, densities of about 10⁶ cells/g soil and a biomass of about 10kg C/ha; Bacteria are usually smaller than 2µm, with densities of about 10⁹ cells/g soil and a biomass of 50-500kg C/ha. Bacteria are the smallest and most numerous of the soil organisms; Fungi grow as networks of threads (hyphae) which usually have diameters of 2-10µm and reach total lengths of 10-1000m/g soil, and a biomass of 1-500kg C/ha."
       },
       {
         "competency_question": "What is the main factor affecting soil biota and what are some of the effects of agricultural intensification on soil food webs and soil biodiversity?",
@@ -388,117 +388,117 @@
       {
         "competency_question": "What is the primary on-site consequence of soil erosion, and what are the specific examples of off-site impacts resulting from the transport and deposition of eroded material?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "The main onsite effect of soil erosion is the reduction in soil quality, induced by the loss of fertile topsoil, and this includes soil carbon. The eroded material is damaging buildings, adjacent properties and other infrastructure. Eroded soil is also known to clog up drainage systems, which could result in overflow and wash-out and subsequently their failure. If coupled with poor drainage maintenance, soil erosion can affect the lifetime of pavements (e.g. deformation, frost heave)."
       },
       {
-        "competency_question": "What is the primary indicator used to quantify soil erosion by water, and what are proxy or impact sub-indicators that can be used to estimate soil erosion severity or potential when direct measurements of the soil loss rate are lacking?",
+        "competency_question": "What is the primary indicator used to quantify soil erosion by water, and what are proxy or impact sub-indicators that can be used to estimate soil erosion severity and potential when direct measurements of the soil loss rate are lacking?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "The main indicator for soil erosion by water is the soil loss rate. Various proxy or impact (sub-)indicators are used to estimate the severity of erosion and a potential soil erosion rate. These include land use information, dimensions of erosion features, increased turbidity in run-off, amount of deposition and exposure of subsoil, amount of sediments or other indirect parameters such as changes in soil depth, reduced organic matter content, exposure of plant roots, and changes in soil texture."
       },
       {
         "competency_question": "What are the key differences in the methodologies and objectives of Level 1 and Level 2 monitoring for soil erosion by water in Europe, and what is the specific role of Level 1 in relation to Level 2 monitoring as described here?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Level 1 includes large-scale modelling to estimate the rates of soil loss by water and the impact of management on soil erosion. Level 1 identifies hot spots of soil erosion that should be monitored at level 2. Level 2 includes monitoring approaches (mapping, measurements) to create ground-truth data on soil erosion by water using standardised methods at the field to landscape scale focusing on agricultural parcels of land."
       },
       {
         "competency_question": "What are the range of natural soil formation rates reported from several studies and what range of tolerable soil loss for Europe did Verheijen et al. (2009) calculate based on European soil formation data, including the corresponding reduction in soil depth per year?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Soil formation rates found in the literature vary quite significantly, as early studies report rates of 0.05-0.5mm per year (≈1t/ha/year) (Wakatsuki et al., 1992) or 1.4-2t/ha/year (Verheijen et al., 2009), while recent ones suggest that soil production can be 3.2-4.5t/ha/year (Egli et al., 2014). According to Montgomery (2007), the soil naturally develops at an average rate of 0.173mm/year resulting in an increase of 2.2t/ha/year. Verheijen et al. (2009) used European data on soil formation to calculate a tolerable soil loss for Europe of 0.3-1.4t/ha/year (a reduction in depth of 0.02-0.11mm/year)."
       },
       {
         "competency_question": "How did Smith (1941) define tolerable soil loss in relation to soil fertility and crop productivity, what range of tolerable loss rates was identified in stakeholder workshops in the United States in the late 1950s and early 1960s, and what two specific tolerable soil loss thresholds are mentioned for different soil depths in Switzerland?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Smith (1941) defined tolerable soil loss as 'the amount of soil that could be lost without a decline of fertility, thereby maintaining crop productivity indefinitely'. The range of tolerable loss rates identified in stakeholder workshops in the United States in 1959 and 1962 is 2.24-11.21t/ha/year (converted from 1-5 t/acre/year). In Switzerland, the maximum tolerable soil loss is 2t/ha/year for shallow soils of less than 70cm depth. For deeply developed soils, the threshold is 4t/ha/year."
       },
       {
         "competency_question": "What are main specific ways in which soil compaction negatively impacts soil functions and what are primary causes of soil compaction?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Soil compaction harms the physical structure of soils and thus affects important ecological and economic soil functions, by reducing pore volume and pore continuity as well as particle surface accessibility. This reduces hydraulic conductivity and rainwater infiltration, which reduces groundwater recharge, while increasing the likelihood of waterlogging. Consequently, soil biochemical processes are affected, including nutrient turnover and greenhouse gas emissions (nitrous oxide, methane). As a result, plant health, and thus food and fibre production, are adversely affected. Operations at critical soil moisture levels, and the use of increasingly heavy machinery, cause compaction."
       },
       {
-        "competency_question": "What is the primary condition under which soil compaction occurs, what type of soil deformation results from this condition, and what specific term is used to describe the soil's natural ability to withstand external mechanical forces, which is a key focus of soil compaction monitoring?",
+        "competency_question": "What is the primary condition under which soil compaction occurs, what are the causes of such conditions, and what specific term is used to describe the soil's natural ability to withstand external mechanical forces?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": " Soil compaction occurs primarily if the internal soil strength (known as actual precompression stress) is exceeded by additional stress, for example from heavy machinery, dense trafficking and driving when soil moisture content is high. Precompression stress indicates the soil's site-specific natural ability to bear and recover from external mechanical forces."
       },
       {
         "competency_question": "What are soil properties or processes that are affected by soil compaction, and what does the extent of these effects depend on?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Compaction increases the penetration resistance of the soil, while root growth and biological activity, like the frequency of earthworms, nematodes or collembolans, are reduced. The extent to which these changes occur depends on the stress intensity and duration as well as the kind of stress applied (static or cyclic stress due to wheeling and induced shear effects). In addition, physico-chemical processes are affected, such as redox potential, mobility of ions and related effects on the pH value of the soil."
       },
       {
         "competency_question": "What is a key difference in the reversibility of compaction between topsoil and subsoil in agricultural settings, and what are the reasons given for this difference?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "While compaction in the topsoil can be mitigated through effective management (e.g. ploughing or chiselling) or through natural processes (e.g. soil biota activity, swelling and shrinkage), the damage to the subsoil is particularly relevant since, at these depths, compaction is cumulative and persistent over decades or maybe even centuries. Note that the often assumed 'curing' effect of freeze-thaw cycles are less effective in the subsoil."
       },
       {
         "competency_question": "What are the main indicators that describe topsoil compaction and what are their symbols, if any?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "The main indicators that describe topsoil compaction are: bulk density, D_b; air capacity, AC; soil texture; visual features of compaction such as platy structure."
       },
       {
-        "competency_question": "What is a primary characteristic that distinguishes the second set of soil physical parameters from potentially simpler ones in terms of what they strongly depend on?",
+        "competency_question": "What is a set of complex soil physical parameters that can document the consequences of soil compaction and soil degradation on physical, chemical and biological functions and what are their symbols and units, if any?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "The set of complex soil physical parameters are: precompression stress (kPa); contact area pressure (kPa); soil rigidity ratio = precompression stress (kPa)/actual soil stress (kPa); shear strength (kPa) (stiffness); hydraulic conductivity (K) (cm/d) and air permeability (K_l)."
       },
       {
-        "competency_question": "What is precompression stress, and what are the main factors that influence its value?",
+        "competency_question": "What soil threats and properties are indicated by the precompression stress and how is its value derived?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "The precompression stress indicates the current state of compaction. The higher the soil strength, the lower the likelihood that it will suffer additional mechanical stress and long-term degradation of soil structure. The values for the precompression stress are determined under laboratory conditions and often quantified when the soil is most sensitive (usually in early spring at matric potential values of pF1.8 = -60hPa, or when drying due to evapotranspiration reduces the soil water content (pF2.5 or -300hPa matric potential)."
       },
       {
-        "competency_question": "What does the soil rigidity ratio indicate, and what range of values suggests that a soil structure is irreversibly deformed?",
+        "competency_question": "How soil rigidity ratio is defined/calculated, and what range of values suggests that a soil structure is irreversibly deformed?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Soil rigidity ratio is the ratio between the actual precompression stress (= internal soil strength) and the actual soil stress. Values above 1.2 define rigid soil structure conditions with no compaction processes, while values below 0.8 define structure as irreversibly deformed. Values in between classify soil properties and functions as very susceptible to further soil deformation."
       },
       {
-        "competency_question": "What combination of air capacity and saturated hydraulic conductivity values defines 'action values' (class IV), and what soil conditions and consequences are associated with this class?",
+        "competency_question": "What soil properties are represented by hydraulic conductivity and air permeability, what do they depend on, and what can they be used to determine?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "The saturated or unsaturated hydraulic conductivity and the air permeability represent the functional quality of soil structure and pore continuity, depending on the matric potential. Both air permeability and hydraulic conductivity can be used to determine trafficability. The saturated hydraulic conductivity (K_s) primarily depends on all saturated macro-pores, while the unsaturated hydraulic conductivity and the air permeability also quantify the fluxes within the various pore diameters."
       },
       {
         "competency_question": "What is soil sealing and what are key consequences of it, and what is a characteristic feature of how baselines and thresholds for soil sealing are determined?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Soil sealing is the destruction or covering of the soil by an impermeable material; this corresponds to an irreversible loss of soil and its biological functions and a loss of biodiversity. Baselines and thresholds for soil sealing are not soil science based but rather policy based."
       },
       {
         "competency_question": "What is the relationship described between imperviousness and soil sealing, and how is sealed land related to land take?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Imperviousness describes the covering of the soil surface with impermeable materials. Such areas are then incapable of being penetrated by air and water; thus, it describes by definition 100% sealing. In practice, soil sealing and imperviousness are used synonymously. Sealed land is a subset of land take, i.e. land consumed by the development of settlements, infrastructure, and commercial and industrial areas."
       },
       {
         "competency_question": "How is land take defined, and what type of land is it usually at the expense of?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Land take can be defined as the increase in artificial areas over time and represents an increase in settlement areas (or artificial surfaces), usually at the expense of rural areas."
       },
       {
         "competency_question": "What are the main ways in which urbanization is described as affecting soils?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Soils can be fully or partially covered. Removal of vegetated and biologically active topsoils is often the initial technical step of land take ('cut-off' soil profiles). 'Artificialised' soil in many city centres contains artefacts and debris from construction and waste (even after re-cultivation, such as in parks and green alleys). Soils can then also be completely sealed (asphalt) or covered with more or less impenetrable surfaces."
       },
       {
         "competency_question": "What are the different types of urban soils and artificial surfaces as classified in the given sources?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Artificial surface includes: urban fabric (continuous and discontinuous); industrial, commercial and transport areas; mines, dumps and construction sites; artificial non-agricultural vegetated areas (urban leisure parks, sport and leisure facilities). Urban soils can be classified as follows: local natural soils; traffic route soils; raw soils; cultivated soils; soils with gaseous or dust emissions/depositions; technogenic substrate soils; soils with thick and/or deep stratification, mixtures and compaction."
       },
       {
-        "competency_question": "If an area is completely sealed (100% sealing), which ecological soil functions will be unavailable?",
+        "competency_question": "If an area is completely sealed, which ecological soil functions will be unavailable?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Following ecological soil functions cease to be available if an area is completely sealed: Availability of nutrients; Below-ground biological activity and diversity; Gas and water exchange; Flood resilience; Food security; Carbon cycle; Human health."
       },
       {
         "competency_question": "What are the sub-indicators suggested by Haase and Lathrop (2003) for assessing land use efficiency in relation to soil sealing?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Haase and Lathrop (2003) suggest several sub-indicators: density of new urbanisation; loss of prime farmland; loss of natural wetlands; loss of core forest habitat; increase in impervious surface area."
       },
       {
         "competency_question": "What is the idea behind land recycling, what are the main key types of land recycling, and what do they involve?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Land recycling is based on the idea that land, once it has been artificialised and taken, must not be abandoned but should be reused as far as possible. There are three key types of land recycling: urban densification, grey recycling, and green recycling. Urban densification refers to construction on gaps between buildings and the increase of population density; grey recycling involves the construction of buildings or transport infrastructures on already developed land; green recycling is the development of green urban areas."
       },
       {
         "competency_question": "How does the NDVI method differentiate between sealed and unsealed surfaces?",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "The NDVI method quantifies vegetation by measuring the difference between near-infrared light (which vegetation strongly reflects) and red light (which vegetation absorbs)."
       }
     ]
   }
