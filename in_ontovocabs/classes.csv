@@ -19,3 +19,4 @@ sio:SIO_001246,http://semanticscience.org/resource/SIO_001246,Interval
 schema:City,https://schema.org/City,City
 qudt:Unit,http://qudt.org/schema/qudt/Unit,Unit
 af-p:AFP_0003730,http://purl.allotrope.org/ontologies/process#AFP_0003730,Project
+obo:NCIT_C80234,http://purl.obolibrary.org/obo/NCIT_C80234,Municipality

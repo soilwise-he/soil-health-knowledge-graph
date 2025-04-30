@@ -192,3 +192,6 @@ sorelsp:below,http://sweetontology.net/relaSpace/below,below
 obo:RO_0020202,http://purl.obolibrary.org/obo/RO_0020202,has numerator
 obo:RO_0020203,http://purl.obolibrary.org/obo/RO_0020203,has denominator
 sorelm:hasScale,http://sweetontology.net/relaMath/hasScale,has scale
+time:year,http://www.w3.org/2006/time#year,year
+sorelm:hasMinimum,http://sweetontology.net/relaMath/hasMinimum,has minimum
+she:isFormedBy,https://soilwise-he.github.io/soil-health#isFormedBy,is formed by

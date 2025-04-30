@@ -471,9 +471,9 @@
         "expected_answer": "Land take can be defined as the increase in artificial areas over time and represents an increase in settlement areas (or artificial surfaces), usually at the expense of rural areas."
       },
       {
-        "competency_question": "What are the main ways in which urbanization is described as affecting soils?",
+        "competency_question": "In Belgium, what is the percentage of increase in land take and sealed soil, and in Italian municipalities, what are the values of the extension of permeable green areas and surface permeability?",
         "sparql_query": "",
-        "expected_answer": "Soils can be fully or partially covered. Removal of vegetated and biologically active topsoils is often the initial technical step of land take ('cut-off' soil profiles). 'Artificialised' soil in many city centres contains artefacts and debris from construction and waste (even after re-cultivation, such as in parks and green alleys). Soils can then also be completely sealed (asphalt) or covered with more or less impenetrable surfaces."
+        "expected_answer": "In Belgium, land take increased by 30% between 1985 and 2009, and, in Brussels, the percentage of sealed soil increased from 18% (1950) to 37% (2006). In Italy, minimum values for the extension of permeable green areas, ranging from 15% in the town centre to 35% in residential areas (Brescia); 'surface permeability' are 30-40% for residential areas, 70% for parking areas and 90% for green public areas (Padua); minimum standards for 'surface permeability' are 75% for private gardens and 15-50% for commercial areas (Parma)."
       },
       {
         "competency_question": "What are the different types of urban soils and artificial surfaces as classified in the given sources?",
