@@ -197,3 +197,4 @@ time:year,http://www.w3.org/2006/time#year,year
 sorelm:hasMinimum,http://sweetontology.net/relaMath/hasMinimum,has minimum
 she:isFormedBy,https://soilwise-he.github.io/soil-health#isFormedBy,is formed by
 sorelm:hasWeight,http://sweetontology.net/relaMath/hasWeight,has weight
+she:absorbs,https://soilwise-he.github.io/soil-health#absorbs,absorbs
