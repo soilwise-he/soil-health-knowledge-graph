@@ -3,7 +3,6 @@ skos:Concept,http://www.w3.org/2004/02/skos/core#Concept,Concept
 dcterms:BibliographicResource,http://purl.org/dc/terms/BibliographicResource,Bibliographic Resource
 dcterms:Policy,http://purl.org/dc/terms/Policy,Policy
 dcterms:Standard,http://purl.org/dc/terms/Standard,Standard
-dcmitype:Dataset,http://purl.org/dc/dcmitype/Dataset,Dataset
 af-r:AFR_0000916,http://purl.allotrope.org/ontologies/result#AFR_0000916,Classification
 sio:SIO_000510,http://semanticscience.org/resource/SIO_000510,Model
 sio:SIO_000368,http://semanticscience.org/resource/SIO_000368,Equation

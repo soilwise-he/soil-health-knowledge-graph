@@ -22,12 +22,12 @@
       },
       {
         "competency_question": "What are soil threats and what factors indicate the existence of soil threats?",
-        "sparql_query": "",
+        "sparql_query": "PREFIX she: <https://soilwise-he.github.io/soil-health#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX dcterms: <http://purl.org/dc/terms/>\n\nSELECT ?resultType ?value\nWHERE {\n  ?threat skos:prefLabel \"soil threats\"@en .\n\n  {\n    ?threat skos:definition ?value .\n    BIND(\"Definition\" AS ?resultType)\n  }\n  UNION\n  {\n    ?threat she:isIndicatedBy ?indicator .\n    ?indicator skos:prefLabel ?value .\n    BIND(\"Indicator\" AS ?resultType)\n  }\n}\nORDER BY ?resultType",
         "expected_answer": "Soil threats are processes that damage soil and its functional properties, reducing the soil's capacity to provide ecosystem services. Soil threats are characterised by a negative trend in one or several soil properties, or are indicated directly by features observed in the field, such as soil erosion and soil sealing."
       },
       {
         "competency_question": "What is soil degradation and what factors indicate the presence of soil degradation?",
-        "sparql_query": "",
+        "sparql_query": "PREFIX she: <https://soilwise-he.github.io/soil-health#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX agrontology: <http://aims.fao.org/aos/agrontology#>\nPREFIX obo: <http://purl.obolibrary.org/obo/>\nPREFIX sio: <http://semanticscience.org/resource/>\n\n# SELECT a type identifier and the corresponding value (definition or indicator label)\nSELECT ?resultType ?value\nWHERE {\n  ?degradation skos:prefLabel \"soil degradation\"@en .\n\n  {\n    ?degradation skos:definition ?value .\n    BIND(\"Definition\" AS ?resultType)\n  }\n  UNION\n  {\n    ?degradation she:isIndicatedBy ?indicator .\n    ?indicator skos:prefLabel ?value .\n    BIND(\"Indicator\" AS ?resultType)\n  }\n}\n\nORDER BY ?resultType",
         "expected_answer": "Soil degradation can be defined as a decline in soil quality, resulting in the reduced functioning of the soil. Soil degradation is indicated by soil threats or declining soil function indicators."
       },
       {

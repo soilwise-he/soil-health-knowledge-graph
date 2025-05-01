@@ -1,7 +1,6 @@
 prop,inverse
 http://www.w3.org/2004/02/skos/core#broader,http://www.w3.org/2004/02/skos/core#narrower
 http://www.w3.org/2004/02/skos/core#related,http://www.w3.org/2004/02/skos/core#related
-https://soilwise-he.github.io/soil-health#provides,https://soilwise-he.github.io/soil-health#isProvidedBy
 http://aims.fao.org/aos/agrontology#isComposedOf,http://aims.fao.org/aos/agrontology#compose
 http://aims.fao.org/aos/agrontology#isPartOf,http://aims.fao.org/aos/agrontology#hasPart
 http://aims.fao.org/aos/agrontology#includes,http://aims.fao.org/aos/agrontology#isIncludedIn
@@ -55,3 +54,4 @@ http://purl.obolibrary.org/obo/OMO_0003011,http://purl.obolibrary.org/obo/SLSO_0
 http://semanticscience.org/resource/SIO_000364,http://semanticscience.org/resource/SIO_000365
 http://purl.allotrope.org/ontologies/property#AFX_0002716,http://purl.allotrope.org/ontologies/property#AFX_0002717
 https://soilwise-he.github.io/soil-health#calculates,https://soilwise-he.github.io/soil-health#isCalculatedBy
+http://semanticscience.org/resource/SIO_000066,http://semanticscience.org/resource/SIO_000064

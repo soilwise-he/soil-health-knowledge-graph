@@ -4,8 +4,8 @@ skos:narrower,http://www.w3.org/2004/02/skos/core#narrower,has narrower
 skos:related,http://www.w3.org/2004/02/skos/core#related,has related
 dcterms:date,http://purl.org/dc/terms/date,date
 dcterms:source,http://purl.org/dc/terms/source,source
-she:provides,https://soilwise-he.github.io/soil-health#provides,provides
-she:isProvidedBy,https://soilwise-he.github.io/soil-health#isProvidedBy,is provided by
+sio:SIO_000064,http://semanticscience.org/resource/SIO_000064,is provider of
+sio:SIO_000066,http://semanticscience.org/resource/SIO_000066,has provider
 she:variesIn,https://soilwise-he.github.io/soil-health#variesIn,varies in
 agrontology:isComposedOf,http://aims.fao.org/aos/agrontology#isComposedOf,is composed of
 agrontology:isPartOf,http://aims.fao.org/aos/agrontology#isPartOf,is part of
@@ -198,3 +198,4 @@ sorelm:hasMinimum,http://sweetontology.net/relaMath/hasMinimum,has minimum
 she:isFormedBy,https://soilwise-he.github.io/soil-health#isFormedBy,is formed by
 sorelm:hasWeight,http://sweetontology.net/relaMath/hasWeight,has weight
 she:absorbs,https://soilwise-he.github.io/soil-health#absorbs,absorbs
+obo:T4FS_0000560,http://purl.obolibrary.org/obo/T4FS_0000560,supports implementation of
