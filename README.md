@@ -1,5 +1,9 @@
 # Soil health knowledge graph
 
+## Overview of the core concepts and their relationships in the soil health knowledge graph
+
+![image](https://github.com/soilwise-he/soil-health-knowledge-graph/blob/main/imgs/soil_health_KG.svg)
+
 ## Pipeline of constructing knowledge graph
 
 ![image](https://github.com/soilwise-he/soil-health-knowledge-graph/blob/main/imgs/text2KG.svg)
