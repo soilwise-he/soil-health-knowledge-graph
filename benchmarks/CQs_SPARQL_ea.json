@@ -57,12 +57,12 @@
       },
       {
         "competency_question": "What risk assessment models are currently in use and in which countries, if any, are they used?",
-        "sparql_query": "",
+        "sparql_query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX prov: <http://www.w3.org/ns/prov#>\n\nSELECT ?modelLabel ?countryLabel\nWHERE {\n  ?riskAssessmentModelsCategory skos:prefLabel \"risk assessment models\"@en .\n  ?riskAssessmentModelsCategory skos:narrower ?model .\n  ?model skos:prefLabel ?modelLabel .\n\n  OPTIONAL {\n    ?model prov:atLocation ?countryURI .\n    ?countryURI skos:prefLabel ?countryLabel .\n  }\n}\nORDER BY ?modelLabel ?countryLabel",
         "expected_answer": "The risk assessment model SansCrit and the Dutch risk assessment toolbox used in the Netherlands; the CLEA model used in the United Kingdom; and the S-Risk model and regional versions of the S-Risk model used in Belgium."
       },
       {
         "competency_question": "What are the main types of soil degradation and where does soil sealing fall into this category?",
-        "sparql_query": "",
+        "sparql_query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX agrontology: <http://aims.fao.org/aos/agrontology#>\n\nSELECT ?subjectLabel ?predicate ?objectLabel\nWHERE {\n  {\n    ?soilDegradationConcept skos:prefLabel \"soil degradation\"@en .\n    ?soilDegradationConcept agrontology:includes ?typeOfDegradation .\n\n    ?soilDegradationConcept skos:prefLabel ?subjectLabel .\n    BIND(agrontology:includes AS ?predicate)\n    ?typeOfDegradation skos:prefLabel ?objectLabel .\n  }\n  UNION\n  {\n    ?soilPhysicalDegradationConcept skos:prefLabel \"soil physical degradation\"@en .\n    ?soilSealingConcept skos:prefLabel \"soil sealing\"@en .\n\n    ?soilPhysicalDegradationConcept agrontology:includes ?soilSealingConcept .\n\n    ?soilPhysicalDegradationConcept skos:prefLabel ?subjectLabel .\n    BIND(agrontology:includes AS ?predicate)\n    ?soilSealingConcept skos:prefLabel ?objectLabel .\n  }\n}\nORDER BY ?subjectLabel ?predicate ?objectLabel",
         "expected_answer": "The main types of soil degradation are physical, chemical, biological, and ecological degradation. Soil sealing is a form of physical degradation."
       },
       {

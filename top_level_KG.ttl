@@ -6,7 +6,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 she:EcosystemServices a skos:Concept ;
-    skos:narrower she:CulturalServices,
+    agrontology:includes she:CulturalServices,
         she:ProvisioningServices,
         she:RegulatingServices,
         she:SupportingServices ;
@@ -18,7 +18,7 @@ she:NonsoilIndicators a skos:Concept ;
     skos:prefLabel "non-soil indicators" .
 
 she:SoilDegradation a skos:Concept ;
-    skos:narrower she:SoilBiologicalDegradation,
+    agrontology:includes she:SoilBiologicalDegradation,
         she:SoilChemicalDegradation,
         she:SoilEcologicalDegradation,
         she:SoilPhysicalDegradation ;
