@@ -67,7 +67,7 @@
       },
       {
         "competency_question": "What is soil chemical degradation and what characteristics does it include?",
-        "sparql_query": "",
+        "sparql_query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX she: <https://soilwise-he.github.io/soil-health#>\nPREFIX agrontology: <http://aims.fao.org/aos/agrontology#>\n\nSELECT DISTINCT ?subject ?predicate ?object ?objectLabel\nWHERE {\n  ?scdConcept skos:prefLabel \"soil chemical degradation\"@en .\n\n  {\n    ?scdConcept skos:definition ?definitionText .\n    BIND(?scdConcept AS ?subject)\n    BIND(skos:definition AS ?predicate)\n    BIND(?definitionText AS ?object)\n    BIND(\"\" AS ?objectLabel)\n  }\n  UNION\n  {\n    ?scdConcept agrontology:includes ?includedConcept .\n    ?includedConcept skos:prefLabel ?includedConceptLabel .\n    BIND(?scdConcept AS ?subject)\n    BIND(agrontology:includes AS ?predicate)\n    BIND(?includedConcept AS ?object)\n    BIND(?includedConceptLabel AS ?objectLabel)\n  }\n  UNION\n  {\n    ?scdConcept she:isCharacterisedBy ?characteristicConcept .\n    ?characteristicConcept skos:prefLabel ?characteristicConceptLabel .\n    BIND(?scdConcept AS ?subject)\n    BIND(she:isCharacterisedBy AS ?predicate)\n    BIND(?characteristicConcept AS ?object)\n    BIND(?characteristicConceptLabel AS ?objectLabel)\n  }\n}\nORDER BY ?subject ?predicate ?objectLabel",
         "expected_answer": "Soil chemical degradation is characterised by changes in soil processes, including nutrient depletion, acidification, salinisation and contamination."
       },
       {
