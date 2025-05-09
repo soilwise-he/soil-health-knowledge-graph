@@ -4,7 +4,7 @@
 
 ![image](https://github.com/soilwise-he/soil-health-knowledge-graph/blob/main/imgs/soil_health_KG.svg)
 
-## Pipeline of constructing knowledge graph
+## Pipeline of constructing the knowledge graph
 
 ![image](https://github.com/soilwise-he/soil-health-knowledge-graph/blob/main/imgs/text2KG.svg)
 
