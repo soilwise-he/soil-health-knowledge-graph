@@ -142,7 +142,6 @@ she:retains,https://soilwise-he.github.io/soil-health#retains,retains
 she:reflects,https://soilwise-he.github.io/soil-health#reflects,reflects
 she:isReflectedBy,https://soilwise-he.github.io/soil-health#isReflectedBy,is reflected by
 she:suffersFrom,https://soilwise-he.github.io/soil-health#suffersFrom,suffers from
-sio:SIO_000738,http://semanticscience.org/resource/SIO_000738,is equal to
 af-x:AFX_0000388,http://purl.allotrope.org/ontologies/property#AFX_0000388,has scope
 sio:SIO_000205,http://semanticscience.org/resource/SIO_000205,is represented by
 sio:SIO_000210,http://semanticscience.org/resource/SIO_000210,represents
@@ -155,6 +154,8 @@ obo:RO_0000053,http://purl.obolibrary.org/obo/RO_0000053,has characteristic
 obo:RO_0000052,http://purl.obolibrary.org/obo/RO_0000052,characteristic of
 sio:SIO_000223,http://semanticscience.org/resource/SIO_000223,has property
 sio:SIO_000224,http://semanticscience.org/resource/SIO_000224,is property of
+agrontology:hasProperty,http://aims.fao.org/aos/agrontology#hasProperty,has property
+agrontology:isPropertyOf,http://aims.fao.org/aos/agrontology#isPropertyOf,is property of
 she:bioaccumulatesIn,https://soilwise-he.github.io/soil-health#bioaccumulatesIn,bioaccumulates in
 sio:SIO_000291,http://semanticscience.org/resource/SIO_000291,has target
 sio:SIO_000292,http://semanticscience.org/resource/SIO_000292,is target in

@@ -48,10 +48,10 @@ http://semanticscience.org/resource/SIO_000205,http://semanticscience.org/resour
 http://purl.obolibrary.org/obo/RO_0000053,http://purl.obolibrary.org/obo/RO_0000052
 http://semanticscience.org/resource/SIO_000223,http://semanticscience.org/resource/SIO_000224
 http://semanticscience.org/resource/SIO_000291,http://semanticscience.org/resource/SIO_000292
-http://sweetontology.net/relaPhysical/to,http://sweetontology.net/relaPhysical/from
 http://purl.allotrope.org/ontologies/property#AFX_0002843,http://purl.allotrope.org/ontologies/property#AFX_0002842
 http://purl.obolibrary.org/obo/OMO_0003011,http://purl.obolibrary.org/obo/SLSO_0001065
 http://semanticscience.org/resource/SIO_000364,http://semanticscience.org/resource/SIO_000365
 http://purl.allotrope.org/ontologies/property#AFX_0002716,http://purl.allotrope.org/ontologies/property#AFX_0002717
 https://soilwise-he.github.io/soil-health#calculates,https://soilwise-he.github.io/soil-health#isCalculatedBy
 http://semanticscience.org/resource/SIO_000066,http://semanticscience.org/resource/SIO_000064
+http://aims.fao.org/aos/agrontology#isPropertyOf,http://aims.fao.org/aos/agrontology#hasProperty
