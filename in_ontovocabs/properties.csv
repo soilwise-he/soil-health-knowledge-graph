@@ -202,3 +202,4 @@ she:absorbs,https://soilwise-he.github.io/soil-health#absorbs,absorbs
 obo:T4FS_0000560,http://purl.obolibrary.org/obo/T4FS_0000560,supports implementation of
 she:hasDensity,https://soilwise-he.github.io/soil-health#hasDensity,has density
 she:hasBiomass,https://soilwise-he.github.io/soil-health#hasBiomass,has biomass
+sio:SIO_000272,http://semanticscience.org/resource/SIO_000272,is variant of
