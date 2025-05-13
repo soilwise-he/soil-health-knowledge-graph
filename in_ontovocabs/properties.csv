@@ -91,7 +91,6 @@ obo:BFO_0000066,http://purl.obolibrary.org/obo/BFO_0000066,occurs in
 sorelph:from,http://sweetontology.net/relaPhysical/from,from
 obo:RO_0002331,http://purl.obolibrary.org/obo/RO_0002331,involved in
 sorelm:hasThreshold,http://sweetontology.net/relaMath/hasThreshold,has threshold
-obo:RO_0000087,http://purl.obolibrary.org/obo/RO_0000087,has role
 af-x:AFX_0000408,http://purl.allotrope.org/ontologies/property#AFX_0000408,has condition
 af-x:AFX_0000355,http://purl.allotrope.org/ontologies/property#AFX_0000355,is condition for
 repr:storedAt,https://w3id.org/reproduceme#storedAt,stored at
@@ -102,8 +101,6 @@ obo:RO_0017003,http://purl.obolibrary.org/obo/RO_0017003,positively correlated w
 obo:RO_0017004,http://purl.obolibrary.org/obo/RO_0017004,negatively correlated with
 rdf:object,http://www.w3.org/1999/02/22-rdf-syntax-ns#object,object
 sorelm:hasInterval,http://sweetontology.net/relaMath/hasInterval,has interval
-agrontology:valueUsedIn,http://aims.fao.org/aos/agrontology#valueUsedIn,value used in
-agrontology:usingValue,http://aims.fao.org/aos/agrontology#usingValue,using value
 biolink:has_percentage,https://w3id.org/biolink/vocab/has_percentage,has percentage
 she:isConvertedTo,https://soilwise-he.github.io/soil-health#isConvertedTo,is converted to
 she:isConvertedFrom,https://soilwise-he.github.io/soil-health#isConvertedFrom,is converted from
@@ -152,8 +149,6 @@ she:isDevelopedFor,https://soilwise-he.github.io/soil-health#isDevelopedFor,is d
 she:isAvailableFor,https://soilwise-he.github.io/soil-health#isAvailableFor,is available for
 obo:RO_0000053,http://purl.obolibrary.org/obo/RO_0000053,has characteristic
 obo:RO_0000052,http://purl.obolibrary.org/obo/RO_0000052,characteristic of
-sio:SIO_000223,http://semanticscience.org/resource/SIO_000223,has property
-sio:SIO_000224,http://semanticscience.org/resource/SIO_000224,is property of
 agrontology:hasProperty,http://aims.fao.org/aos/agrontology#hasProperty,has property
 agrontology:isPropertyOf,http://aims.fao.org/aos/agrontology#isPropertyOf,is property of
 she:bioaccumulatesIn,https://soilwise-he.github.io/soil-health#bioaccumulatesIn,bioaccumulates in
@@ -169,8 +164,6 @@ obo:SEPIO_0000151,http://purl.obolibrary.org/obo/SEPIO_0000151,validated by
 om:hasFactor,http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor,has factor
 sio:SIO_000283,http://semanticscience.org/resource/SIO_000283,is similar to
 qudt:valueSN,http://qudt.org/schema/qudt/valueSN,value scientific
-obo:OMO_0003011,http://purl.obolibrary.org/obo/OMO_0003011,latin term
-obo:SLSO_0001065,http://purl.obolibrary.org/obo/SLSO_0001065,common name
 agrontology:hasTaxonomicConcept,http://aims.fao.org/aos/agrontology#hasTaxonomicConcept,has taxonomic concept
 agrontology:hasCommonNameConcept,http://aims.fao.org/aos/agrontology#hasCommonNameConcept,has common name concept
 obo:MICRO_0000105,http://purl.obolibrary.org/obo/MICRO_0000105,has size
