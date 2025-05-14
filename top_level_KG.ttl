@@ -25,9 +25,9 @@ she:SoilDegradation a skos:Concept ;
     skos:prefLabel "soil degradation" .
 
 she:SoilFunctions a skos:Concept ;
-    agrontology:includes she:BiologicalSoilFunctions,
-        she:ChemicalSoilFunctions,
-        she:PhysicalSoilFunctions ;
+    agrontology:includes she:SoilBiologicalFunctions,
+        she:SoilChemicalFunctions,
+        she:SoilPhysicalFunctions ;
     bao:BAO_0095002 she:SoilFunctionIndicators ;
     skos:narrower she:CarbonPool,
         she:ClimateRegulation,
@@ -57,8 +57,8 @@ she:SoilThreats a skos:Concept ;
 she:Adsorption a skos:Concept ;
     skos:prefLabel "adsorption" .
 
-she:BiologicalSoilFunctions a skos:Concept ;
-    skos:prefLabel "biological soil functions" .
+she:SoilBiologicalFunctions a skos:Concept ;
+    skos:prefLabel "soil biological functions" .
 
 she:BiomassProductivity a skos:Concept ;
     skos:prefLabel "biomass productivity" .
@@ -75,8 +75,8 @@ she:CarbonStorageCapacity a skos:Concept ;
 she:CationExchangeCapacity a skos:Concept ;
     skos:prefLabel "cation exchange capacity" .
 
-she:ChemicalSoilFunctions a skos:Concept ;
-    skos:prefLabel "chemical soil functions" .
+she:SoilChemicalFunctions a skos:Concept ;
+    skos:prefLabel "soil chemical functions" .
 
 she:ClayMineralogy a skos:Concept ;
     skos:prefLabel "clay mineralogy" .
@@ -188,8 +188,8 @@ she:ObservableSoilProperties a skos:Concept ;
     skos:prefLabel "observable soil properties" ;
     schema:isBasedOn she:Measurements .
 
-she:PhysicalSoilFunctions a skos:Concept ;
-    skos:prefLabel "physical soil functions" .
+she:SoilPhysicalFunctions a skos:Concept ;
+    skos:prefLabel "soil physical functions" .
 
 she:ProvisioningServices a skos:Concept ;
     skos:prefLabel "provisioning services" .
