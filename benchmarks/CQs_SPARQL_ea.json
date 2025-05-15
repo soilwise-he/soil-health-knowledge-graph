@@ -501,27 +501,27 @@
         "expected_answer": "The NDVI method quantifies vegetation by measuring the difference between near-infrared light (which vegetation strongly reflects) and red light (which vegetation absorbs)."
       },
       {
-        "competency_question": "",
+        "competency_question": "What kind of process is soil salinisation, how does it affect soil fertility, and what causes it?",
         "sparql_query": "",
         "expected_answer": "Soil salinisation is a major soil degradation process, diminishing soil fertility. It can stem from natural factors such as geological and climatic conditions or human-induced practices such as improper irrigation methods and poor drainage."
       },
       {
-        "competency_question": "",
+        "competency_question": "What is the definition of soil salinisation, what is sodification, and what causes sodification?",
         "sparql_query": "",
         "expected_answer": "Soil salinisation is the increase in soluble salt concentration in soil. Sodification is the process by which the exchangeable sodium (Na+) content of soil is increased. This results in the soil having unfavourable physical and chemical properties, which makes it difficult to utilise the soil and reduces its ecosystem service potential."
       },
       {
-        "competency_question": "",
+        "competency_question": "In Northern and Western Europe, what are the dominant soil types?",
         "sparql_query": "",
         "expected_answer": "In northern Europe, soils are predominantly Histosols and Podzols. In western Europe, the dominant soil types are Cambisols, Luvisols and Albeluvisols."
       },
       {
-        "competency_question": "",
+        "competency_question": "What are the predominant soil types in southern Europe, and what is the soil type in the mountain areas?",
         "sparql_query": "",
         "expected_answer": "In southern Europe, typical soils are Calcisols, Cambisols and Leptosols. Regosols are typical of the mountain areas in Albania, Greece, Italy, Spain and Türkiye."
       },
       {
-        "competency_question": "",
+        "competency_question": "What soil types are predominant in the steppic region of Eastern Europe and what do azonal soils consist of?",
         "sparql_query": "",
         "expected_answer": "Chernozems, Phaeozems, and Kastanozems are typical soil types in the steppic region of eastern Europe. Azonal soils are Fluvisols, Stagnosols and Gleysols."
       }
