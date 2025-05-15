@@ -437,7 +437,7 @@
       },
       {
         "competency_question": "What is a set of complex soil physical parameters that can document the consequences of soil compaction and soil degradation on physical, chemical and biological functions and what are their symbols and units, if any?",
-        "sparql_query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX she: <https://soilwise-he.github.io/soil-health#>\nPREFIX qudt: <http://qudt.org/schema/qudt/>\nPREFIX unit: <http://qudt.org/vocab/unit/>\nPREFIX om: <http://www.ontology-of-units-of-measure.org/resource/om-2/>\nPREFIX obo: <http://purl.obolibrary.org/obo/>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX agrontology: <http://aims.fao.org/aos/agrontology#>\n\nSELECT ?parameterLabel ?propertyURI ?valueLabel\nWHERE {\n  she:ComplexSoilPhysicalParameters skos:narrower ?parameterURI .\n  ?parameterURI skos:prefLabel ?parameterLabel .\n\n  {\n    ?parameterURI qudt:Unit ?unitValueURI .\n    OPTIONAL { ?unitValueURI skos:prefLabel ?unitPrefLabel . }\n    BIND(\n      COALESCE(\n        ?unitPrefLabel,\n        IF( STRSTARTS(STR(?unitValueURI), STR(unit:)),\n            STRAFTER(STR(?unitValueURI), STR(unit:)),\n            IF( STRSTARTS(STR(?unitValueURI), STR(om:)),\n                STRAFTER(STR(?unitValueURI), STR(om:)),\n                STR(?unitValueURI)\n            )\n        )\n      ) AS ?unitDisplayLabel\n    )\n\n    BIND(qudt:Unit AS ?propertyURI)\n    BIND(?unitDisplayLabel AS ?valueLabel)\n  }\n  UNION\n  {\n    ?parameterURI qudt:symbol ?symbolValue .\n    BIND(qudt:symbol AS ?propertyURI)\n    BIND(STR(?symbolValue) AS ?valueLabel)\n  }\n  UNION\n  {\n    FILTER(?parameterURI = she:SoilRigidityRatio)\n    ?parameterURI agrontology:isMeasuredBy ?measureNode .\n    ?measureNode obo:RO_0020202 ?numerator .\n    ?measureNode obo:RO_0020203 ?denominator .\n    ?numerator skos:prefLabel ?numeratorLabel .\n    ?denominator skos:prefLabel ?denominatorLabel .\n\n    BIND(agrontology:isMeasuredBy AS ?propertyURI)\n    BIND(CONCAT(?numeratorLabel, \" / \", ?denominatorLabel) AS ?valueLabel)\n  }\n  UNION\n  {\n    FILTER(?parameterURI = she:ShearStrength)\n    ?parameterURI sio:equivalentTo she:Stiffness .\n    she:Stiffness skos:prefLabel ?stiffnessLabel .\n    BIND(sio:equivalentTo AS ?propertyURI)\n    BIND(?stiffnessLabel AS ?valueLabel)\n  }\n}\nORDER BY ?parameterLabel ?propertyURI",
+        "sparql_query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX she: <https://soilwise-he.github.io/soil-health#>\nPREFIX qudt: <http://qudt.org/schema/qudt/>\nPREFIX unit: <http://qudt.org/vocab/unit/>\nPREFIX om: <http://www.ontology-of-units-of-measure.org/resource/om-2/>\nPREFIX obo: <http://purl.obolibrary.org/obo/>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX agrontology: <http://aims.fao.org/aos/agrontology#>\n\nSELECT ?parameterLabel ?propertyURI ?valueLabel\nWHERE {\n  she:ComplexSoilPhysicalParameters skos:narrower ?parameterURI .\n  ?parameterURI skos:prefLabel ?parameterLabel .\n\n  {\n    ?parameterURI qudt:unit ?unitValueURI .\n    OPTIONAL { ?unitValueURI skos:prefLabel ?unitPrefLabel . }\n    BIND(\n      COALESCE(\n        ?unitPrefLabel,\n        IF( STRSTARTS(STR(?unitValueURI), STR(unit:)),\n            STRAFTER(STR(?unitValueURI), STR(unit:)),\n            IF( STRSTARTS(STR(?unitValueURI), STR(om:)),\n                STRAFTER(STR(?unitValueURI), STR(om:)),\n                STR(?unitValueURI)\n            )\n        )\n      ) AS ?unitDisplayLabel\n    )\n\n    BIND(qudt:unit AS ?propertyURI)\n    BIND(?unitDisplayLabel AS ?valueLabel)\n  }\n  UNION\n  {\n    ?parameterURI qudt:symbol ?symbolValue .\n    BIND(qudt:symbol AS ?propertyURI)\n    BIND(STR(?symbolValue) AS ?valueLabel)\n  }\n  UNION\n  {\n    FILTER(?parameterURI = she:SoilRigidityRatio)\n    ?parameterURI agrontology:isMeasuredBy ?measureNode .\n    ?measureNode obo:RO_0020202 ?numerator .\n    ?measureNode obo:RO_0020203 ?denominator .\n    ?numerator skos:prefLabel ?numeratorLabel .\n    ?denominator skos:prefLabel ?denominatorLabel .\n\n    BIND(agrontology:isMeasuredBy AS ?propertyURI)\n    BIND(CONCAT(?numeratorLabel, \" / \", ?denominatorLabel) AS ?valueLabel)\n  }\n  UNION\n  {\n    FILTER(?parameterURI = she:ShearStrength)\n    ?parameterURI sio:equivalentTo she:Stiffness .\n    she:Stiffness skos:prefLabel ?stiffnessLabel .\n    BIND(sio:equivalentTo AS ?propertyURI)\n    BIND(?stiffnessLabel AS ?valueLabel)\n  }\n}\nORDER BY ?parameterLabel ?propertyURI",
         "expected_answer": "The set of complex soil physical parameters are: precompression stress (kPa); contact area pressure (kPa); soil rigidity ratio = precompression stress (kPa)/actual soil stress (kPa); shear strength (kPa) (stiffness); hydraulic conductivity (K) (cm/d) and air permeability (K_l)."
       },
       {
@@ -503,27 +503,27 @@
       {
         "competency_question": "",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Soil salinisation is a major soil degradation process, diminishing soil fertility. It can stem from natural factors such as geological and climatic conditions or human-induced practices such as improper irrigation methods and poor drainage."
       },
       {
         "competency_question": "",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Soil salinisation is the increase in soluble salt concentration in soil. Sodification is the process by which the exchangeable sodium (Na+) content of soil is increased. This results in the soil having unfavourable physical and chemical properties, which makes it difficult to utilise the soil and reduces its ecosystem service potential."
       },
       {
         "competency_question": "",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "In northern Europe, soils are predominantly Histosols and Podzols. In western Europe, the dominant soil types are Cambisols, Luvisols and Albeluvisols."
       },
       {
         "competency_question": "",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "In southern Europe, typical soils are Calcisols, Cambisols and Leptosols. Regosols are typical of the mountain areas in Albania, Greece, Italy, Spain and Türkiye."
       },
       {
         "competency_question": "",
         "sparql_query": "",
-        "expected_answer": ""
+        "expected_answer": "Chernozems, Phaeozems, and Kastanozems are typical soil types in the steppic region of eastern Europe. Azonal soils are Fluvisols, Stagnosols and Gleysols."
       }
     ]
   }

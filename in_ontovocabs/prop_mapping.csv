@@ -41,11 +41,9 @@ https://soilwise-he.github.io/soil-health#hasEquilibriumWith,https://soilwise-he
 https://soilwise-he.github.io/soil-health#isLimitedBy,https://soilwise-he.github.io/soil-health#limits
 http://aims.fao.org/aos/agrontology#isComponentOf,http://aims.fao.org/aos/agrontology#hasComponent
 http://purl.obolibrary.org/obo/RO_0002434,http://purl.obolibrary.org/obo/RO_0002434
-https://soilwise-he.github.io/soil-health#isRetainedBy,https://soilwise-he.github.io/soil-health#retains
 https://soilwise-he.github.io/soil-health#reflects,https://soilwise-he.github.io/soil-health#isReflectedBy
 http://semanticscience.org/resource/SIO_000205,http://semanticscience.org/resource/SIO_000210
 http://purl.obolibrary.org/obo/RO_0000053,http://purl.obolibrary.org/obo/RO_0000052
-http://semanticscience.org/resource/SIO_000223,http://semanticscience.org/resource/SIO_000224
 http://semanticscience.org/resource/SIO_000291,http://semanticscience.org/resource/SIO_000292
 http://purl.allotrope.org/ontologies/property#AFX_0002843,http://purl.allotrope.org/ontologies/property#AFX_0002842
 http://semanticscience.org/resource/SIO_000364,http://semanticscience.org/resource/SIO_000365
@@ -54,3 +52,9 @@ https://soilwise-he.github.io/soil-health#calculates,https://soilwise-he.github.
 http://semanticscience.org/resource/SIO_000066,http://semanticscience.org/resource/SIO_000064
 http://aims.fao.org/aos/agrontology#isPropertyOf,http://aims.fao.org/aos/agrontology#hasProperty
 http://aims.fao.org/aos/agrontology#hasTaxonomicConcept,http://aims.fao.org/aos/agrontology#hasCommonNameConcept
+https://soilwise-he.github.io/soil-health#absorbs,https://soilwise-he.github.io/soil-health#isAbsorbedBy
+https://soilwise-he.github.io/soil-health#isAccompaniedBy,https://soilwise-he.github.io/soil-health#accompanies
+http://sweetontology.net/relaSpace/above,http://sweetontology.net/relaSpace/below
+http://purl.obolibrary.org/obo/RO_0002211,http://purl.obolibrary.org/obo/RO_0002334
+http://purl.obolibrary.org/obo/RO_0002508,http://purl.obolibrary.org/obo/RO_0002507
+http://aims.fao.org/aos/agrontology#hasType,http://aims.fao.org/aos/agrontology#typeOf

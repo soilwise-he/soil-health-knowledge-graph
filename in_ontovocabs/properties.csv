@@ -135,7 +135,6 @@ she:limits,https://soilwise-he.github.io/soil-health#limits,limits
 agrontology:hasComponent,http://aims.fao.org/aos/agrontology#hasComponent,has component
 agrontology:isComponentOf,http://aims.fao.org/aos/agrontology#isComponentOf,is component of
 she:isRetainedBy,https://soilwise-he.github.io/soil-health#isRetainedBy,is retained by
-she:retains,https://soilwise-he.github.io/soil-health#retains,retains
 she:reflects,https://soilwise-he.github.io/soil-health#reflects,reflects
 she:isReflectedBy,https://soilwise-he.github.io/soil-health#isReflectedBy,is reflected by
 she:suffersFrom,https://soilwise-he.github.io/soil-health#suffersFrom,suffers from
@@ -172,6 +171,7 @@ she:calculates,https://soilwise-he.github.io/soil-health#calculates,calculates
 she:isCalculatedBy,https://soilwise-he.github.io/soil-health#isCalculatedBy,is calculated by
 sorelm:hasAverage,http://sweetontology.net/relaMath/hasAverage,has average
 she:isAccompaniedBy,https://soilwise-he.github.io/soil-health#isAccompaniedBy,is accompanied by
+she:accompanies,https://soilwise-he.github.io/soil-health#accompanies,accompanies
 sorelph:hasTransport,http://sweetontology.net/relaPhysical/hasTransport,has transport
 obo:RO_0002339,http://purl.obolibrary.org/obo/RO_0002339,has target end location
 obo:RO_0002341,http://purl.obolibrary.org/obo/RO_0002341,results in transport along
@@ -194,9 +194,13 @@ she:isFormedBy,https://soilwise-he.github.io/soil-health#isFormedBy,is formed by
 she:forms,https://soilwise-he.github.io/soil-health#forms,forms
 sorelm:hasWeight,http://sweetontology.net/relaMath/hasWeight,has weight
 she:absorbs,https://soilwise-he.github.io/soil-health#absorbs,absorbs
+she:isAbsorbedBy,https://soilwise-he.github.io/soil-health#isAbsorbedBy,is absorbed by
 obo:T4FS_0000560,http://purl.obolibrary.org/obo/T4FS_0000560,supports implementation of
 she:hasDensity,https://soilwise-he.github.io/soil-health#hasDensity,has density
 she:hasBiomass,https://soilwise-he.github.io/soil-health#hasBiomass,has biomass
 she:hasFreshBiomass,https://soilwise-he.github.io/soil-health#hasFreshBiomass,has fresh biomass
 sio:SIO_000272,http://semanticscience.org/resource/SIO_000272,is variant of
 sorelsp:above,http://sweetontology.net/relaSpace/above,above
+skos:exactMatch,http://www.w3.org/2004/02/skos/core#exactMatch,has exact match
+skos:closeMatch,http://www.w3.org/2004/02/skos/core#closeMatch,has close match
+dcterms:isReplacedBy,http://purl.org/dc/terms/isReplacedBy,is replaced by
