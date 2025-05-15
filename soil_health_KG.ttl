@@ -40,12 +40,12 @@ she:AluminiumToBaseCationsRatio a skos:Concept ;
 she:AnnualSoilLoss a skos:Concept ;
     af-x:AFX_0002696 [ agrontology:isCausedBy she:SoilSealing ;
             qudt:unit unit:KiloM2 ;
-            sorelm:hasInterval "300-500"@en ;
+            sorelm:hasInterval "300-500" ;
             prov:atLocation she:Europe ] ;
     sorelm:hasAverage [ agrontology:isCausedBy she:SoilSealing ;
             qudt:numericValue "429"^^xsd:int ;
             qudt:unit unit:KiloM2 ;
-            time:years "2006-2015"@en ;
+            time:years "2006-2015" ;
             prov:atLocation she:Europe,
                 she:UnitedKingdom ] ;
     skos:prefLabel "annual soil loss"@en .
@@ -308,7 +308,7 @@ she:MatricPotentialValues a skos:Concept ;
                 she:StressdependentChanges ;
             qudt:numericValue "-60"^^xsd:int ;
             qudt:unit unit:HectoPA ;
-            sio:equivalentTo "pF1.8"@en ;
+            sio:equivalentTo "pF1.8" ;
             time:hasDuration she:EarlySpring ],
         [ af-x:AFX_0000408 she:Drying,
                 she:LaboratoryConditions ;
@@ -316,7 +316,7 @@ she:MatricPotentialValues a skos:Concept ;
                 she:StressdependentChanges ;
             qudt:numericValue "-300"^^xsd:int ;
             qudt:unit unit:HectoPA ;
-            sio:equivalentTo "pF2.5"@en ] ;
+            sio:equivalentTo "pF2.5" ] ;
     skos:prefLabel "matric potential values"@en .
 
 she:MechanicalSeedbedPreparation a skos:Concept ;
@@ -415,7 +415,7 @@ she:PConcentration a skos:Concept ;
 she:PDeposition a skos:Concept ;
     af-x:AFX_0002696 [ obo:BFO_0000066 she:TerrestrialEcosystems ;
             qudt:unit unit:KiloGM-PER-HA-YR ;
-            sorelm:hasInterval "0.07-1.7"@en ] ;
+            sorelm:hasInterval "0.07-1.7" ] ;
     dcterms:source she:Newman1995 ;
     skos:prefLabel "P deposition"@en .
 
@@ -440,7 +440,7 @@ she:PSupply a skos:Concept ;
 she:PWeathering a skos:Concept ;
     af-x:AFX_0002696 [ obo:BFO_0000066 she:TerrestrialEcosystems ;
             qudt:unit unit:KiloGM-PER-HA-YR ;
-            sorelm:hasInterval "0.01-1"@en ] ;
+            sorelm:hasInterval "0.01-1" ] ;
     dcterms:source she:Newman1995 ;
     skos:prefLabel "P weathering"@en .
 
@@ -766,7 +766,7 @@ she:Wheat a skos:Concept ;
             qudt:unit unit:MegaTONNE ;
             sio:equivalentTo [ obo:BFO_0000066 she:MemberStates ;
                     obo:RO_0002212 she:PotentialAgriculturalProductionCapacity ;
-                    time:years "1990-2006"@en ] ] ;
+                    time:years "1990-2006" ] ] ;
     skos:exactMatch agrovoc:c_8373 ;
     skos:prefLabel "wheat"@en .
 
@@ -4213,7 +4213,7 @@ she:TieredMonitoring a skos:Concept ;
 
 she:TillageDepth a skos:Concept ;
     qudt:unit unit:CentiM ;
-    sorelm:hasInterval "20-35"@en ;
+    sorelm:hasInterval "20-35" ;
     sorelsp:above she:Subsoil ;
     skos:closeMatch agrovoc:c_d349db98 ;
     skos:prefLabel "tillage depth"@en .
@@ -4457,7 +4457,7 @@ she:VulnerabilityLimit a skos:Concept ;
             qudt:numericValue "0.1"^^xsd:float ;
             prov:atLocation she:Switzerland ],
         [ dcterms:source she:Prout2020 ;
-            sorelm:hasUpperBound "1/13"@en ;
+            sorelm:hasUpperBound "1/13" ;
             she:indicates she:SoilDegradation ] ;
     skos:prefLabel "vulnerability limit"@en ;
     she:isConvertedFrom she:OptimumSOCClayRatio .
@@ -6259,7 +6259,7 @@ she:Runoff a skos:Concept ;
 she:SOCClayRatio a skos:Concept ;
     af-x:AFX_0002696 [ af-x:AFX_0000408 she:TransitionalLand ;
             dcterms:source she:Chartin2022 ;
-            sorelm:hasInterval "0.08-0.1"@en ;
+            sorelm:hasInterval "0.08-0.1" ;
             prov:atLocation she:Wallonia ] ;
     sorelm:hasLowerBound [ af-x:AFX_0000408 she:FavourableLand ;
             dcterms:source she:Chartin2022 ;
@@ -6295,7 +6295,7 @@ she:SSVsForIndustry a skos:Concept ;
 
 she:SSVsForOrganicPollutants a skos:Concept ;
     sio:SIO_000283 she:SSVsForMetals ;
-    sorelm:hasThreshold [ qudt:valueSN "1.0E-5"@en ;
+    sorelm:hasThreshold [ qudt:valueSN "1.0E-5" ;
             prov:atLocation she:Italy ;
             she:isDevelopedFor she:PCDD,
                 she:PCDF ],
@@ -6325,7 +6325,7 @@ she:SamplingIntervals a sio:SIO_001246 ;
         she:MonitoredNutrients ;
     dcterms:source she:VanCamp2004b ;
     qudt:unit unit:YR ;
-    sorelm:hasInterval "5-10"@en ;
+    sorelm:hasInterval "5-10" ;
     skos:prefLabel "sampling intervals"@en .
 
 she:SamplingProtocolDevelopment a skos:Concept ;
@@ -6488,13 +6488,13 @@ she:SoilFormation a skos:Concept ;
 she:SoilFormationRates a skos:Concept ;
     af-x:AFX_0002696 [ dcterms:source she:Wakatsuki1992 ;
             qudt:unit unit:MilliM-PER-YR ;
-            sorelm:hasInterval "0.05-0.5"@en ],
+            sorelm:hasInterval "0.05-0.5" ],
         [ dcterms:source she:Verheijen2009 ;
             qudt:unit unit:TONNE-PER-HA-YR ;
-            sorelm:hasInterval "1.4-2"@en ],
+            sorelm:hasInterval "1.4-2" ],
         [ dcterms:source she:Egli2014 ;
             qudt:unit unit:TONNE-PER-HA-YR ;
-            sorelm:hasInterval "3.2-4.5"@en ] ;
+            sorelm:hasInterval "3.2-4.5" ] ;
     dcterms:source she:FAO2019 ;
     om:hasValue [ dcterms:source she:Montgomery2007 ;
             qudt:numericValue "2.2"^^xsd:float ;
@@ -6590,7 +6590,7 @@ she:SoilRigidityRatio a skos:Concept ;
         [ agrontology:causes she:SoilDeformation ;
             obo:RO_0002552 she:SoilFunctions,
                 she:SoilProperties ;
-            sorelm:hasInterval "0.8-1.2"@en ] ;
+            sorelm:hasInterval "0.8-1.2" ] ;
     skos:broader she:ComplexSoilPhysicalParameters ;
     skos:definition "Soil rigidity ratio is the ratio between the actual precompression stress and the actual soil stress applied by machines, animals or permanent loads, defines the soil sensitivity for changes in the physical, chemical and biological functions."@en ;
     skos:prefLabel "soil rigidity ratio"@en .
@@ -6705,17 +6705,17 @@ she:TolerableDailyIntake a skos:Concept ;
 she:TolerableSoilLossRates a skos:Concept ;
     agrontology:isUsedToMake she:SiteadaptedThresholds ;
     af-x:AFX_0002696 [ qudt:unit unit:TONNE-PER-HA-YR ;
-            sorelm:hasInterval "2.24-11.21"@en ;
-            time:years "1959-1962"@en ;
+            sorelm:hasInterval "2.24-11.21" ;
+            time:years "1959-1962" ;
             prov:atLocation she:UnitedStates ;
             she:isConvertedFrom "1-5 t/acre/year"@en ],
         [ dcterms:source she:Verheijen2009 ;
             qudt:unit unit:MilliM-PER-YR ;
-            sorelm:hasInterval "0.02-0.11"@en ;
+            sorelm:hasInterval "0.02-0.11" ;
             prov:atLocation she:Europe ],
         [ dcterms:source she:Verheijen2009 ;
             qudt:unit unit:TONNE-PER-HA-YR ;
-            sorelm:hasInterval "0.3-1.4"@en ;
+            sorelm:hasInterval "0.3-1.4" ;
             prov:atLocation she:Europe ] ;
     sorelm:hasThreshold [ agrontology:isUsedIn she:ShallowSoils ;
             qudt:unit unit:TONNE-PER-HA-YR ;
@@ -6960,9 +6960,9 @@ she:Bacteria a skos:Concept ;
     skos:exactMatch agrovoc:c_765 ;
     skos:prefLabel "bacteria"@en ;
     she:hasBiomass [ qudt:unit unit:KiloGM-PER-HA ;
-            sorelm:hasInterval "50-500"@en ] ;
+            sorelm:hasInterval "50-500" ] ;
     she:hasDensity [ qudt:unit unit:NUM-PER-GM ;
-            qudt:valueSN "10E9"@en ] .
+            qudt:valueSN "10E9" ] .
 
 she:BaseCationLoss a skos:Concept ;
     agrontology:isCausedBy she:SoilCationExchangeProcesses ;
@@ -7060,7 +7060,7 @@ she:Collembola a skos:Concept ;
     she:hasBiomass [ qudt:unit unit:KiloGM-PER-HA ;
             sorelm:hasUpperBound "1"^^xsd:int ] ;
     she:hasDensity [ qudt:unit unit:NUM-PER-M2 ;
-            sorelm:hasInterval "1000-10E5"@en ] .
+            sorelm:hasInterval "1000-10E5" ] .
 
 she:CommercialAreas a skos:Concept ;
     agrontology:isIncludedIn she:ArtificialSurface ;
@@ -7135,7 +7135,7 @@ she:Enchytraeids a skos:Concept ;
     she:hasBiomass [ qudt:unit unit:KiloGM-PER-HA ;
             sorelm:hasUpperBound "1"^^xsd:int ] ;
     she:hasDensity [ qudt:unit unit:NUM-PER-M2 ;
-            sorelm:hasInterval "100-10E6"@en ] .
+            sorelm:hasInterval "100-10E6" ] .
 
 she:England a sorepsg:Region ;
     skos:exactMatch agrovoc:c_2574 ;
@@ -7919,7 +7919,7 @@ she:Springtails a skos:Concept ;
     she:hasBiomass [ qudt:unit unit:KiloGM-PER-HA ;
             sorelm:hasUpperBound "1"^^xsd:int ] ;
     she:hasDensity [ qudt:unit unit:NUM-PER-M2 ;
-            sorelm:hasInterval "1000-10E5"@en ] .
+            sorelm:hasInterval "1000-10E5" ] .
 
 she:StaticStress a skos:Concept ;
     agrontology:isCausedBy she:ShearEffects,
@@ -8573,7 +8573,7 @@ she:Mites a skos:Concept ;
     she:hasBiomass [ qudt:unit unit:KiloGM-PER-HA ;
             sorelm:hasUpperBound "0.1"^^xsd:float ] ;
     she:hasDensity [ qudt:unit unit:NUM-PER-M2 ;
-            qudt:valueSN "10E5"@en ] .
+            qudt:valueSN "10E5" ] .
 
 she:NDVIMethod a skos:Concept ;
     agrontology:measures [ rdf:object she:Vegetation ;
@@ -9790,7 +9790,7 @@ she:Pribyl2010 a dcterms:BibliographicResource ;
 
 she:Protists a skos:Concept ;
     obo:MICRO_0000105 [ qudt:unit unit:MicroM ;
-            sorelm:hasInterval "2-200"@en ] ;
+            sorelm:hasInterval "2-200" ] ;
     skos:broader she:FunctionalGroups,
         she:Microorganisms,
         she:UnicellularAnimals ;
@@ -9802,7 +9802,7 @@ she:Protists a skos:Concept ;
     she:hasBiomass [ qudt:numericValue "10"^^xsd:int ;
             qudt:unit unit:KiloGM-PER-HA ] ;
     she:hasDensity [ qudt:unit unit:NUM-PER-GM ;
-            qudt:valueSN "10E6"@en ] .
+            qudt:valueSN "10E6" ] .
 
 she:RillErosion a skos:Concept ;
     agrontology:isCausedBy she:SurfaceRunoff ;
@@ -10033,9 +10033,9 @@ she:Fungi a skos:Concept ;
     obo:RO_0002507 she:DNAYield ;
     sio:SIO_000210 she:EcologicalSoilCapital ;
     sorelsp:diameter [ qudt:unit unit:MicroM ;
-            sorelm:hasInterval "2-10"@en ] ;
+            sorelm:hasInterval "2-10" ] ;
     sorelsp:hasLength [ qudt:unit she:M-PER-GM ;
-            sorelm:hasInterval "10-1000"@en ] ;
+            sorelm:hasInterval "10-1000" ] ;
     skos:broader she:FunctionalGroups,
         she:GenotypebasedIndicators,
         she:Microorganisms ;
@@ -10044,7 +10044,7 @@ she:Fungi a skos:Concept ;
     skos:prefLabel "fungi"@en ;
     skos:related she:MicrobialCommunityStructure ;
     she:hasBiomass [ qudt:unit unit:KiloGM-PER-HA ;
-            sorelm:hasInterval "1-500"@en ] .
+            sorelm:hasInterval "1-500" ] .
 
 she:Gregory2006 a dcterms:BibliographicResource ;
     dcterms:date "2006" .
@@ -10121,7 +10121,7 @@ she:Nematodes a skos:Concept ;
     she:hasBiomass [ qudt:unit unit:KiloGM-PER-HA ;
             sorelm:hasUpperBound "1"^^xsd:int ] ;
     she:hasDensity [ qudt:unit unit:NUM-PER-GM ;
-            sorelm:hasInterval "10-50"@en ] .
+            sorelm:hasInterval "10-50" ] .
 
 she:NutrientCycling a skos:Concept ;
     agrontology:isMeasuredBy she:CarbonAmount,
@@ -10244,7 +10244,7 @@ she:SoilCNRatios a skos:Concept ;
             qudt:numericValue "20"^^xsd:int ] ;
     af-x:AFX_0002696 [ af-x:AFX_0000408 she:ForestSoils ;
             obo:BFO_0000066 she:OrganicLayer ;
-            sorelm:hasInterval "20-30"@en ;
+            sorelm:hasInterval "20-30" ;
             schema:isBasedOn she:NLeaching ] ;
     obo:RO_0002508 she:SoilBiodiversity ;
     obo:RO_0017004 [ agrontology:isCausedBy she:Mineralisation ;
@@ -10721,7 +10721,7 @@ she:LandTake a skos:Concept ;
             rdf:object she:ScatteredSettlements ],
         [ obo:BFO_0000066 she:UrbanNucleus ;
             rdf:object she:UrbanAreas ] ;
-    obo:RO_0002336 [ time:years "1985-2009"@en ;
+    obo:RO_0002336 [ time:years "1985-2009" ;
             prov:atLocation she:Belgium ;
             biolink:has_percentage "30%"^^qudt:integerPercentage ] ;
     dcterms:source she:Prokop2011 ;
@@ -11353,7 +11353,7 @@ she:Earthworms a skos:Concept ;
     skos:note "In the medium term (up to 4 years) under organic management, earthworms are found at two or three times the level found in conventionally managed fields."@en ;
     skos:prefLabel "earthworms"@en ;
     she:hasBiomass [ qudt:unit unit:KiloGM-PER-HA ;
-            sorelm:hasInterval "100-1000"@en ] ;
+            sorelm:hasInterval "100-1000" ] ;
     she:hasDensity [ qudt:unit unit:NUM-PER-M2 ;
             sorelm:hasUpperBound "1000"^^xsd:int ] ;
     she:hasFreshBiomass [ qudt:unit unit:KiloGM-PER-HA ;
@@ -11486,7 +11486,7 @@ she:SoilpH a skos:Concept ;
             af-x:AFX_0000408 she:AgriculturalSoils ;
             qudt:numericValue "4.5"^^xsd:float ],
         [ obo:RO_0002212 she:CropProduction ;
-            sorelm:hasInterval "5.5-6.0"@en ] ;
+            sorelm:hasInterval "5.5-6.0" ] ;
     obo:RO_0002335 she:SoilAcidification ;
     obo:RO_0002508 she:SoilBiodiversity,
         she:SoilFertility ;
