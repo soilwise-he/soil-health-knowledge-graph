@@ -6,6 +6,9 @@
 @prefix bao: <http://www.bioassayontology.org/bao#> .
 @prefix biolink: <https://w3id.org/biolink/vocab/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix glosis_cm: <http://w3id.org/glosis/model/common/> .
+@prefix glosis_lh: <http://w3id.org/glosis/model/layerhorizon/> .
+@prefix glosis_pr: <http://w3id.org/glosis/model/profile/> .
 @prefix iso11074: <https://data.geoscience.earth/ncl/ISO11074v2025/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
@@ -1083,11 +1086,11 @@ she:BaseCationAvailability a skos:Concept ;
     skos:related she:SoilpH .
 
 she:BelowgroundBiologicalActivity a skos:Concept ;
-    agrontology:isIncludedIn she:EcologicalSoilFunctions ;
+    agrontology:isIncludedIn she:SoilEcologicalFunctions ;
     skos:prefLabel "below-ground biological activity"@en .
 
 she:BelowgroundBiologicalDiversity a skos:Concept ;
-    agrontology:isIncludedIn she:EcologicalSoilFunctions ;
+    agrontology:isIncludedIn she:SoilEcologicalFunctions ;
     skos:prefLabel "below-ground biological diversity"@en .
 
 she:Benzene a skos:Concept ;
@@ -1177,7 +1180,7 @@ she:CarParks a skos:Concept ;
     skos:prefLabel "car parks"@en .
 
 she:CarbonCycle a skos:Concept ;
-    agrontology:isIncludedIn she:EcologicalSoilFunctions ;
+    agrontology:isIncludedIn she:SoilEcologicalFunctions ;
     skos:exactMatch agrovoc:c_17299 ;
     skos:prefLabel "carbon cycle"@en .
 
@@ -1301,7 +1304,7 @@ she:CompactionSusceptibility a skos:Concept ;
     schema:isBasedOn she:EUResearch .
 
 she:CompletelySealedArea a skos:Concept ;
-    af-x:AFX_0002727 she:EcologicalSoilFunctions ;
+    af-x:AFX_0002727 she:SoilEcologicalFunctions ;
     skos:prefLabel "completely sealed area"@en .
 
 she:ConcentationRegulationProcesses a skos:Concept ;
@@ -1331,7 +1334,7 @@ she:ConiferousForests a skos:Concept ;
     skos:prefLabel "coniferous forests"@en .
 
 she:ConstructionSites a skos:Concept ;
-    agrontology:isIncludedIn she:ArtificialSurface ;
+    agrontology:isIncludedIn she:ArtificialSurfaces ;
     skos:prefLabel "construction sites"@en .
 
 she:Consumption a skos:Concept ;
@@ -1613,7 +1616,7 @@ she:DrySummers a skos:Concept ;
 she:DuffuseSoilPollution skos:narrower she:PollutedSedimentDeposition .
 
 she:Dumps a skos:Concept ;
-    agrontology:isIncludedIn she:ArtificialSurface ;
+    agrontology:isIncludedIn she:ArtificialSurfaces ;
     skos:prefLabel "dumps"@en .
 
 she:DwellersInTheLitterLayer a skos:Concept ;
@@ -1840,7 +1843,7 @@ she:FlagshipSpecies a skos:Concept ;
     skos:related she:FunctionallyRelevantSpecies .
 
 she:FloodResilience a skos:Concept ;
-    agrontology:isIncludedIn she:EcologicalSoilFunctions ;
+    agrontology:isIncludedIn she:SoilEcologicalFunctions ;
     skos:prefLabel "flood resilience"@en .
 
 she:FloodRisk a skos:Concept ;
@@ -2610,7 +2613,7 @@ she:MineralisableNitrogen a skos:Concept ;
     skos:prefLabel "mineralisable nitrogen"@en .
 
 she:Mines a skos:Concept ;
-    agrontology:isIncludedIn she:ArtificialSurface ;
+    agrontology:isIncludedIn she:ArtificialSurfaces ;
     skos:prefLabel "mines"@en .
 
 she:Mobility a skos:Concept ;
@@ -3727,17 +3730,9 @@ she:SoilDistributions a skos:Concept ;
         she:GeologicalOrigin ;
     skos:prefLabel "soil distributions"@en .
 
-she:SoilEcologicalFunctions a skos:Concept ;
-    agrontology:isAffectedBy she:SoilCompaction ;
-    skos:prefLabel "soil ecological functions"@en .
-
 she:SoilEcologicalVulnerability a skos:Concept ;
     skos:broader she:EcologicalIndicators ;
     skos:prefLabel "soil ecological vulnerability"@en .
-
-she:SoilEconomicFunctions a skos:Concept ;
-    agrontology:isAffectedBy she:SoilCompaction ;
-    skos:prefLabel "soil economic functions"@en .
 
 she:SoilErosionRatesPerUnitOfLandCover a skos:Concept ;
     dcterms:source she:Maes2020 ;
@@ -3771,10 +3766,6 @@ she:SoilFoodWebComplexity a skos:Concept ;
     obo:RO_0002335 she:AgriculturalIntensification ;
     dcterms:source she:Tsiafouli2015 ;
     skos:prefLabel "soil food web complexity"@en .
-
-she:SoilFunction a skos:Concept ;
-    skos:exactMatch iso11074:3.453 ;
-    skos:prefLabel "soil function"@en .
 
 she:SoilFunctionalCapacity a skos:Concept ;
     skos:prefLabel "soil functional capacity"@en .
@@ -4222,10 +4213,6 @@ she:Time a skos:Concept ;
     skos:exactMatch agrovoc:c_7778 ;
     skos:prefLabel "time"@en .
 
-she:TolerableRateOfSoilLoss a skos:Concept ;
-    skos:prefLabel "tolerable rate of soil loss"@en ;
-    skos:related she:UnacceptableErosionLevels .
-
 she:Toluene a skos:Concept ;
     sio:SIO_000272 she:AromaticHydrocarbons ;
     skos:broader she:BTEX ;
@@ -4318,7 +4305,7 @@ she:TransitionalLand a skos:Concept ;
     skos:prefLabel "transitional land"@en .
 
 she:TransportAreas a skos:Concept ;
-    agrontology:isIncludedIn she:ArtificialSurface ;
+    agrontology:isIncludedIn she:ArtificialSurfaces ;
     skos:prefLabel "transport areas"@en .
 
 she:TrendsInSOCStocksInCropland a skos:Concept ;
@@ -4672,10 +4659,6 @@ she:AreaOfOrganicSoils a skos:Concept ;
     skos:broader she:SoilIndicators ;
     skos:prefLabel "area of organic soils"@en ;
     schema:isBasedOn she:EUResearch .
-
-she:ArtificialSurfaces a skos:Concept ;
-    skos:prefLabel "artificial surfaces"@en ;
-    skos:related she:SettlementAreas .
 
 she:Atmosphere a skos:Concept ;
     dcterms:source she:IPCC2019b,
@@ -5534,7 +5517,7 @@ she:IndustrialActivities a skos:Concept ;
     skos:prefLabel "industrial activities"@en .
 
 she:IndustrialAreas a skos:Concept ;
-    agrontology:isIncludedIn she:ArtificialSurface ;
+    agrontology:isIncludedIn she:ArtificialSurfaces ;
     skos:altLabel "industrial area"@en ;
     skos:prefLabel "industrial areas"@en ;
     biolink:consumes she:Land .
@@ -6317,7 +6300,8 @@ she:SaltrichIrrigationWater a skos:Concept ;
 she:Salts a skos:Concept ;
     skos:broader she:SoilAnionContent,
         she:SoilCationContent ;
-    skos:exactMatch agrovoc:c_33129 ;
+    skos:exactMatch agrovoc:c_33129,
+        glosis_lh:saltProperty ;
     skos:prefLabel "salts"@en .
 
 she:SamplingIntervals a sio:SIO_001246 ;
@@ -6450,6 +6434,10 @@ she:SoilDwellingOrganismHabitat a skos:Concept ;
     agrontology:isPartOf she:SoilProtection ;
     skos:broader she:SoilServices ;
     skos:prefLabel "soil dwelling organism habitat"@en .
+
+she:SoilEconomicFunctions a skos:Concept ;
+    agrontology:isAffectedBy she:SoilCompaction ;
+    skos:prefLabel "soil economic functions"@en .
 
 she:SoilEcosystem a skos:Concept ;
     skos:broader she:Endpoints,
@@ -6701,37 +6689,6 @@ she:TolerableDailyIntake a skos:Concept ;
     skos:broader she:CriticalExposureValue ;
     skos:closeMatch agrovoc:c_34980 ;
     skos:prefLabel "tolerable daily intake"@en .
-
-she:TolerableSoilLossRates a skos:Concept ;
-    agrontology:isUsedToMake she:SiteadaptedThresholds ;
-    af-x:AFX_0002696 [ qudt:unit unit:TONNE-PER-HA-YR ;
-            sorelm:hasInterval "2.24-11.21" ;
-            time:years "1959-1962" ;
-            prov:atLocation she:UnitedStates ;
-            she:isConvertedFrom "1-5 t/acre/year"@en ],
-        [ dcterms:source she:Verheijen2009 ;
-            qudt:unit unit:MilliM-PER-YR ;
-            sorelm:hasInterval "0.02-0.11" ;
-            prov:atLocation she:Europe ],
-        [ dcterms:source she:Verheijen2009 ;
-            qudt:unit unit:TONNE-PER-HA-YR ;
-            sorelm:hasInterval "0.3-1.4" ;
-            prov:atLocation she:Europe ] ;
-    sorelm:hasThreshold [ agrontology:isUsedIn she:ShallowSoils ;
-            qudt:unit unit:TONNE-PER-HA-YR ;
-            sorelm:hasUpperBound "2"^^xsd:int ;
-            prov:atLocation she:Switzerland ],
-        [ agrontology:isUsedIn she:DeeplyDevelopedSoils ;
-            dcterms:source she:Ledermann2008,
-                she:SchweizerBundesrat1998 ;
-            qudt:unit unit:TONNE-PER-HA-YR ;
-            sorelm:hasUpperBound "4"^^xsd:int ;
-            prov:atLocation she:Switzerland ] ;
-    skos:altLabel "tolerable soil loss rate"@en ;
-    skos:prefLabel "tolerable soil loss rates"@en ;
-    she:isCalculatedBy she:SoilFormationRates ;
-    she:requires [ schema:assesses she:SoilFormationRates,
-                she:SoilLoss ] .
 
 she:TopographicOrigin a skos:Concept ;
     agrontology:causes she:SoilSalinisation ;
@@ -7028,7 +6985,8 @@ she:CationExchangeCapacity a skos:Concept ;
     obo:RO_0002335 she:SoilChemicalDegradation ;
     skos:broader she:DerivedSoilProperties,
         she:SoilFunctionIndicators ;
-    skos:exactMatch agrovoc:c_24981 ;
+    skos:exactMatch agrovoc:c_24981,
+        glosis_lh:cationExchangeCapacityProperty ;
     skos:prefLabel "cation exchange capacity"@en .
 
 she:ChemicalStability a skos:Concept ;
@@ -7063,7 +7021,7 @@ she:Collembola a skos:Concept ;
             sorelm:hasInterval "1000-10E5" ] .
 
 she:CommercialAreas a skos:Concept ;
-    agrontology:isIncludedIn she:ArtificialSurface ;
+    agrontology:isIncludedIn she:ArtificialSurfaces ;
     skos:altLabel "commercial area"@en ;
     skos:prefLabel "commercial areas"@en ;
     biolink:consumes she:Land .
@@ -7968,6 +7926,39 @@ she:TillageErosion a skos:Concept ;
     skos:exactMatch agrovoc:c_924f2195 ;
     skos:prefLabel "tillage erosion"@en .
 
+she:TolerableSoilLossRates a skos:Concept ;
+    agrontology:isUsedToMake she:SiteadaptedThresholds ;
+    af-x:AFX_0002696 [ qudt:unit unit:TONNE-PER-HA-YR ;
+            sorelm:hasInterval "2.24-11.21" ;
+            time:years "1959-1962" ;
+            prov:atLocation she:UnitedStates ;
+            she:isConvertedFrom "1-5 t/acre/year"@en ],
+        [ dcterms:source she:Verheijen2009 ;
+            qudt:unit unit:MilliM-PER-YR ;
+            sorelm:hasInterval "0.02-0.11" ;
+            prov:atLocation she:Europe ],
+        [ dcterms:source she:Verheijen2009 ;
+            qudt:unit unit:TONNE-PER-HA-YR ;
+            sorelm:hasInterval "0.3-1.4" ;
+            prov:atLocation she:Europe ] ;
+    sorelm:hasThreshold [ agrontology:isUsedIn she:ShallowSoils ;
+            qudt:unit unit:TONNE-PER-HA-YR ;
+            sorelm:hasUpperBound "2"^^xsd:int ;
+            prov:atLocation she:Switzerland ],
+        [ agrontology:isUsedIn she:DeeplyDevelopedSoils ;
+            dcterms:source she:Ledermann2008,
+                she:SchweizerBundesrat1998 ;
+            qudt:unit unit:TONNE-PER-HA-YR ;
+            sorelm:hasUpperBound "4"^^xsd:int ;
+            prov:atLocation she:Switzerland ] ;
+    skos:altLabel "tolerable rate of soil loss"@en,
+        "tolerable soil loss rate"@en ;
+    skos:prefLabel "tolerable soil loss rates"@en ;
+    skos:related she:UnacceptableErosionLevels ;
+    she:isCalculatedBy she:SoilFormationRates ;
+    she:requires [ schema:assesses she:SoilFormationRates,
+                she:SoilLoss ] .
+
 she:TrophicGroups a skos:Concept ;
     skos:closeMatch agrovoc:c_7969 ;
     skos:prefLabel "trophic groups"@en ;
@@ -7978,7 +7969,7 @@ she:TrophicGroups a skos:Concept ;
 she:UnacceptableErosionLevels a skos:Concept ;
     skos:prefLabel "unacceptable erosion levels"@en ;
     skos:related she:TieredMonitoring,
-        she:TolerableRateOfSoilLoss .
+        she:TolerableSoilLossRates .
 
 she:UnsaturatedHydraulicConductivity a skos:Concept ;
     agrontology:measures [ af-x:AFX_0000408 she:PoreDiameters ;
@@ -8120,7 +8111,7 @@ she:ArrangementOfHumusConstituents a skos:Concept ;
     skos:prefLabel "arrangement of humus constituents"@en .
 
 she:ArtificialNonagriculturalVegetatedAreas a skos:Concept ;
-    agrontology:isIncludedIn she:ArtificialSurface ;
+    agrontology:isIncludedIn she:ArtificialSurfaces ;
     skos:narrower she:LeisureFacilities,
         she:SportFacilities,
         she:UrbanLeisureParks ;
@@ -9166,7 +9157,7 @@ she:GAEC a dcterms:Standard ;
     schema:inSupportOf she:SoilQuality .
 
 she:GasExchange a skos:Concept ;
-    agrontology:isIncludedIn she:EcologicalSoilFunctions ;
+    agrontology:isIncludedIn she:SoilEcologicalFunctions ;
     dcterms:source she:Zhao2012 ;
     skos:exactMatch agrovoc:c_11098 ;
     skos:prefLabel "gas exchange"@en .
@@ -9414,7 +9405,8 @@ she:SoilDepth a skos:Concept ;
         she:Renard1997 ;
     skos:broader she:ObservableSoilProperties,
         she:SoilProperties ;
-    skos:exactMatch agrovoc:c_0c184d6f ;
+    skos:exactMatch agrovoc:c_0c184d6f,
+        glosis_cm:soilDepthProperty ;
     skos:prefLabel "soil depth"@en .
 
 she:SoilEcologicalDegradation a skos:Concept ;
@@ -9587,7 +9579,7 @@ she:Vitousek2010 a dcterms:BibliographicResource ;
     dcterms:date "2010" .
 
 she:WaterExchange a skos:Concept ;
-    agrontology:isIncludedIn she:EcologicalSoilFunctions ;
+    agrontology:isIncludedIn she:SoilEcologicalFunctions ;
     dcterms:source she:Zhao2012 ;
     skos:prefLabel "water exchange"@en .
 
@@ -9670,7 +9662,7 @@ she:FoodSecurity a skos:Concept ;
         she:ForestLand,
         she:Grassland ;
     agrontology:isAffectedBy she:SoilOrganicCarbon ;
-    agrontology:isIncludedIn she:EcologicalSoilFunctions ;
+    agrontology:isIncludedIn she:SoilEcologicalFunctions ;
     skos:broader she:LandscapeFunctions ;
     skos:exactMatch agrovoc:c_10967 ;
     skos:prefLabel "food security"@en .
@@ -9882,7 +9874,7 @@ she:SoilFoodWebs a skos:Concept ;
     skos:prefLabel "soil food webs"@en .
 
 she:SoilNutrientAvailability a skos:Concept ;
-    agrontology:isIncludedIn she:EcologicalSoilFunctions ;
+    agrontology:isIncludedIn she:SoilEcologicalFunctions ;
     dcterms:source she:EC2017,
         she:MAES ;
     skos:altLabel "nutrient availability"@en ;
@@ -9935,7 +9927,7 @@ she:UrbanFabric a skos:Concept ;
     agrontology:includes she:ConnectedAreas,
         she:PrivateHomes,
         she:PublicBuildings ;
-    agrontology:isIncludedIn she:ArtificialSurface ;
+    agrontology:isIncludedIn she:ArtificialSurfaces ;
     skos:narrower she:ContinuousUrbanFabric,
         she:DiscontinuousUrbanFabric ;
     skos:prefLabel "urban fabric"@en .
@@ -10324,18 +10316,6 @@ she:Air a skos:Concept ;
     skos:exactMatch agrovoc:c_224 ;
     skos:prefLabel "air"@en .
 
-she:ArtificialSurface a skos:Concept ;
-    agrontology:includes she:ArtificialNonagriculturalVegetatedAreas,
-        she:CommercialAreas,
-        she:ConstructionSites,
-        she:Dumps,
-        she:IndustrialAreas,
-        she:Mines,
-        she:TransportAreas,
-        she:UrbanFabric ;
-    dcterms:source she:ETCULS2019 ;
-    skos:prefLabel "artificial surface"@en .
-
 she:Biodiversity a skos:Concept ;
     agrontology:isAffectedBy she:SoilOrganicCarbon,
         she:SoilPollution ;
@@ -10694,20 +10674,22 @@ she:WaterQuality a skos:Concept ;
     skos:prefLabel "water quality"@en ;
     skos:related she:FilterFunction .
 
+she:ArtificialSurfaces a skos:Concept ;
+    agrontology:includes she:ArtificialNonagriculturalVegetatedAreas,
+        she:CommercialAreas,
+        she:ConstructionSites,
+        she:Dumps,
+        she:IndustrialAreas,
+        she:Mines,
+        she:TransportAreas,
+        she:UrbanFabric ;
+    dcterms:source she:ETCULS2019 ;
+    skos:altLabel "artificial surface"@en ;
+    skos:prefLabel "artificial surfaces"@en ;
+    skos:related she:SettlementAreas .
+
 she:EC2017 a dcterms:BibliographicResource ;
     dcterms:date "2017" .
-
-she:EcologicalSoilFunctions a skos:Concept ;
-    agrontology:includes she:BelowgroundBiologicalActivity,
-        she:BelowgroundBiologicalDiversity,
-        she:CarbonCycle,
-        she:FloodResilience,
-        she:FoodSecurity,
-        she:GasExchange,
-        she:HumanHealth,
-        she:SoilNutrientAvailability,
-        she:WaterExchange ;
-    skos:prefLabel "ecological soil functions"@en .
 
 she:Huber2008 a dcterms:BibliographicResource ;
     dcterms:date "2008" .
@@ -10973,7 +10955,7 @@ she:SoilScreeningValues a skos:Concept ;
     agrontology:hasAbbreviation "SSVs"@en ;
     agrontology:isPartOf [ rdf:object she:LegislativeFramework ;
             she:variesIn she:MemberStates ] ;
-    obo:RO_0002502 she:SoilFunction,
+    obo:RO_0002502 she:SoilFunctions,
         she:SoilProtection,
         she:SoilTypes ;
     obo:RO_0002507 she:RiskLevel ;
@@ -11036,8 +11018,8 @@ she:HumanHealth a skos:Concept ;
     agrontology:benefitsFrom she:SoilHealth,
         she:SoilQuality ;
     agrontology:isAffectedBy she:SoilPollution ;
-    agrontology:isIncludedIn she:EcologicalSoilFunctions,
-        she:EnvironmentalQuality ;
+    agrontology:isIncludedIn she:EnvironmentalQuality,
+        she:SoilEcologicalFunctions ;
     skos:broader she:Endpoints,
         she:ProtectionTargets ;
     skos:exactMatch agrovoc:c_c722a312 ;
@@ -11080,6 +11062,19 @@ she:PhenotypebasedIndicators a skos:Concept ;
     skos:related she:TrophicGroups ;
     schema:isBasedOn she:PhenotypicMethods ;
     she:appliesTo she:ActivityMonitoring .
+
+she:SoilEcologicalFunctions a skos:Concept ;
+    agrontology:includes she:BelowgroundBiologicalActivity,
+        she:BelowgroundBiologicalDiversity,
+        she:CarbonCycle,
+        she:FloodResilience,
+        she:FoodSecurity,
+        she:GasExchange,
+        she:HumanHealth,
+        she:SoilNutrientAvailability,
+        she:WaterExchange ;
+    agrontology:isAffectedBy she:SoilCompaction ;
+    skos:prefLabel "soil ecological functions"@en .
 
 she:SoilFertility a skos:Concept ;
     obo:RO_0002335 she:SoilSalinisation ;
@@ -11274,7 +11269,8 @@ she:SoilTypes a skos:Concept ;
     obo:RO_0002502 she:Climate,
         she:ParentMaterial ;
     skos:altLabel "soil type"@en ;
-    skos:exactMatch agrovoc:c_7204 ;
+    skos:exactMatch agrovoc:c_7204,
+        glosis_pr:soilTypeProperty ;
     skos:narrower she:Albeluvisols,
         she:Calcisols,
         she:Cambisols,
@@ -12282,9 +12278,10 @@ she:Soils a skos:Concept ;
         she:Time .
 
 she:SoilFunctions a skos:Concept ;
-    agrontology:includes she:HabitatForBiodiversity,
-        she:SoilBiologicalFunctions,
+    agrontology:includes she:SoilBiologicalFunctions,
         she:SoilChemicalFunctions,
+        she:SoilEcologicalFunctions,
+        she:SoilEconomicFunctions,
         she:SoilPhysicalFunctions ;
     agrontology:isAffectedBy she:Pollutant,
         she:SoilAcidification,
@@ -12299,14 +12296,17 @@ she:SoilFunctions a skos:Concept ;
         she:Vogel2020 ;
     sio:SIO_000066 she:Soils ;
     bao:BAO_0095002 she:SoilFunctionIndicators ;
+    skos:altLabel "soil function"@en ;
     skos:definition "Soil functions are defined as bundles of soil processes that underpin the delivery of ecosystem services."@en,
         "Soil functions describe the soil's capacity to support the ecosystem services essential for human well-being."@en ;
-    skos:exactMatch agrovoc:c_e5629cbd ;
+    skos:exactMatch agrovoc:c_e5629cbd,
+        iso11074:3.453 ;
     skos:narrower she:CarbonPool,
         she:CleanWaterProvision,
         she:ClimateRegulation,
         she:FoodProduction,
         she:Habitat,
+        she:HabitatForBiodiversity,
         she:HabitatProvision,
         she:NutrientDynamics,
         she:WaterCapacity,
