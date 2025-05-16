@@ -1,0 +1,59 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX sorelm: <http://sweetontology.net/relaMath/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?pH_Context ?relationshipOrLimitType ?valueOrRange ?relatedConditionLabel
+WHERE {
+  {
+    she:pH skos:prefLabel ?phLabel_1 .
+    she:pH agrontology:smallerThan ?constraintNode .
+    ?constraintNode obo:RO_0002212 she:CropProduction .
+    she:CropProduction skos:prefLabel ?cpLabel_1 .
+    ?constraintNode sorelm:hasInterval ?interval .
+
+    BIND(?phLabel_1 AS ?pH_Context)
+    BIND(agrontology:smallerThan AS ?relationshipOrLimitType)
+    BIND(?interval AS ?valueOrRange)
+    BIND(CONCAT("constrains ", ?cpLabel_1) AS ?relatedConditionLabel)
+  }
+  UNION
+  {
+    she:pH skos:prefLabel ?phLabel_2 .
+    she:pH sorelm:hasLowerBound ?lowerBoundValueSimple .
+    BIND(?phLabel_2 AS ?pH_Context)
+    BIND(sorelm:hasLowerBound AS ?relationshipOrLimitType)
+    BIND(STR(?lowerBoundValueSimple) AS ?valueOrRange)
+    BIND("lower constraint" AS ?relatedConditionLabel)
+
+  }
+  UNION
+  {
+    she:pH skos:prefLabel ?phLabel_3 .
+    she:pH sorelm:hasThreshold ?criticalNode .
+    ?criticalNode qudt:numericValue ?criticalValue .
+    ?criticalNode skos:related she:AluminiumToxicity .
+    she:AluminiumToxicity skos:prefLabel ?alToxLabel .
+
+    BIND(?phLabel_3 AS ?pH_Context)
+    BIND(sorelm:hasThreshold AS ?relationshipOrLimitType)
+    BIND(STR(?criticalValue) AS ?valueOrRange)
+    BIND(CONCAT("critical for ", ?alToxLabel) AS ?relatedConditionLabel)
+  }
+  UNION
+  {
+    she:pH skos:prefLabel ?phLabel_4 .
+    she:pH agrontology:greaterThan ?optimalNode .
+    ?optimalNode agrontology:isBeneficialFor she:CropProduction .
+    she:CropProduction skos:prefLabel ?cpLabel_3 .
+    ?optimalNode qudt:numericValue ?optimalValue .
+
+    BIND(?phLabel_4 AS ?pH_Context)
+    BIND(agrontology:greaterThan AS ?relationshipOrLimitType)
+    BIND(STR(?optimalValue) AS ?valueOrRange)
+    BIND(CONCAT("beneficial for ", ?cpLabel_3) AS ?relatedConditionLabel)
+  }
+}
+ORDER BY ?pH_Context ?relationshipOrLimitType ?valueOrRange

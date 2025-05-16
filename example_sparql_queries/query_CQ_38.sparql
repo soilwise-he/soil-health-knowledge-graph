@@ -1,0 +1,62 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sorelph: <http://sweetontology.net/relaPhysical/>
+
+SELECT ?nutrientContentLabel ?relationshipURI ?affectedEcosystemComponentLabel ?contextLabel
+WHERE {
+  {
+    she:SoilNContent skos:prefLabel ?nutrientContentLabel .
+    she:SoilNContent agrontology:affects ?effectNodeN .
+
+    ?effectNodeN rdf:object ?affectedComponentN .
+
+    ?affectedComponentN a ?nonCropComponentN .
+    ?affectedComponentN skos:prefLabel ?affectedEcosystemComponentLabel .
+
+    OPTIONAL {
+      ?effectNodeN obo:BFO_0000066 ?contextN .
+      ?contextN skos:prefLabel ?contextLabelN_internal .
+    }
+    BIND(COALESCE(?contextLabelN_internal, "") AS ?contextLabel)
+    BIND(agrontology:affects AS ?relationshipURI)
+  }
+  UNION
+  {
+    she:SoilPContent skos:prefLabel ?nutrientContentLabel .
+    she:SoilPContent agrontology:affects ?effectNodePBio .
+
+    ?effectNodePBio rdf:object ?affectedComponentPBio .
+    ?affectedComponentPBio a ?nonCropComponentPBio .
+    ?affectedComponentPBio skos:prefLabel ?affectedEcosystemComponentLabel .
+
+    OPTIONAL {
+      ?effectNodePBio obo:BFO_0000066 ?contextPBio .
+      ?contextPBio skos:prefLabel ?contextLabelPBio_internal .
+    }
+    BIND(COALESCE(?contextLabelPBio_internal, "") AS ?contextLabel)
+    BIND(agrontology:affects AS ?relationshipURI)
+  }
+  UNION
+  {
+    she:SoilPContent skos:prefLabel ?nutrientContentLabel .
+    she:SoilPContent agrontology:affects ?effectNodePWater .
+
+    ?effectNodePWater rdf:object ?pProcess .
+    ?pProcess a ?pProcessType .
+    ?pProcess skos:prefLabel ?pProcessLabel .
+
+    ?effectNodePWater agrontology:affects she:SurfaceWaterQuality .
+    she:SurfaceWaterQuality skos:prefLabel ?affectedEcosystemComponentLabel .
+
+    OPTIONAL {
+      ?effectNodePWater sorelph:to ?waterContext .
+      ?waterContext skos:prefLabel ?waterContextLabel_internal .
+    }
+    BIND(CONCAT("via ", ?pProcessLabel, IF(BOUND(?waterContextLabel_internal), CONCAT(" to ", ?waterContextLabel_internal), "")) AS ?contextLabel)
+    BIND(agrontology:affects AS ?relationshipURI)
+  }
+}
+ORDER BY ?nutrientContentLabel ?relationshipURI ?affectedEcosystemComponentLabel

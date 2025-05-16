@@ -1,0 +1,40 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?soilTypeLabel ?predicateURI ?locationOrContextLabel
+WHERE {
+  {
+    ?soilTypeURI_se skos:prefLabel ?soilTypeLabel_se .
+    ?soilTypeURI_se prov:atLocation she:SouthernEurope .
+    she:SouthernEurope skos:prefLabel ?locationLabel_se .
+
+    BIND(?soilTypeLabel_se AS ?soilTypeLabel)
+    BIND(prov:atLocation AS ?predicateURI)
+    BIND(?locationLabel_se AS ?locationOrContextLabel)
+  }
+  UNION
+  {
+    ?soilTypeURI_ma skos:prefLabel ?solsLabel_ma .
+    ?soilTypeURI_ma obo:BFO_0000066 she:MountainAreas .
+    she:MountainAreas skos:prefLabel ?maLabel .
+
+    BIND(?solsLabel_ma AS ?soilTypeLabel)
+    BIND(obo:BFO_0000066 AS ?predicateURI)
+    BIND(?maLabel AS ?locationOrContextLabel)
+  }
+  UNION
+  {
+    ?soilTypeURI_ma skos:prefLabel ?regosolsLabel_country .
+    ?soilTypeURI_ma obo:BFO_0000066 she:MountainAreas .
+    ?soilTypeURI_ma prov:atLocation ?countryURI .
+
+    ?countryURI skos:prefLabel ?countryLabel .
+
+    BIND(?regosolsLabel_country AS ?soilTypeLabel)
+    BIND(prov:atLocation AS ?predicateURI)
+    BIND(?countryLabel AS ?locationOrContextLabel)
+  }
+}
+ORDER BY ?soilTypeLabel ?predicateURI ?locationOrContextLabel

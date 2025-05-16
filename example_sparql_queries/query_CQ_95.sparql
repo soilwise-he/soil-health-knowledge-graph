@@ -1,0 +1,103 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX sorelm: <http://sweetontology.net/relaMath/>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX om: <http://www.ontology-of-units-of-measure.org/resource/om-2/>
+
+SELECT ?itemDescription ?value ?context
+WHERE {
+  {
+    she:LandTake skos:prefLabel ?ltLabel .
+    she:Belgium skos:prefLabel ?belgiumLabel .
+    she:LandTake obo:RO_0002336 ?ltNode_be .
+    ?ltNode_be prov:atLocation she:Belgium .
+    ?ltNode_be time:years ?yrLabel .
+    ?ltNode_be biolink:has_percentage ?ltPercentage_be .
+
+    BIND(CONCAT(?ltLabel, " increase") AS ?itemDescription)
+    BIND(STR(?ltPercentage_be) AS ?value)
+    BIND(CONCAT("in ", ?belgiumLabel, ", ", ?yrLabel) AS ?context)
+  }
+  UNION
+  {
+    she:SealedSoil skos:prefLabel ?ssLabel_br .
+    she:Brussels skos:prefLabel ?brusselsLabel .
+    she:SealedSoil obo:RO_0002336 ?ssNode_br .
+    ?ssNode_br prov:atLocation she:Brussels .
+    ?ssNode_br sorelph:from ?fromNode_br .
+    ?fromNode_br time:year "1950" .
+    ?fromNode_br biolink:has_percentage ?fromPercentage_br .
+    ?ssNode_br sorelph:to ?toNode_br .
+    ?toNode_br time:year "2006" .
+    ?toNode_br biolink:has_percentage ?toPercentage_br .
+
+    BIND(CONCAT(?ssLabel_br, " increase") AS ?itemDescription)
+    BIND(CONCAT(STR(?fromPercentage_br), " to ", STR(?toPercentage_br)) AS ?value)
+    BIND(CONCAT("in ", ?brusselsLabel, " (1950 to 2006)") AS ?context)
+  }
+  UNION
+  {
+    she:PermeableGreenAreaExtension skos:prefLabel ?pgaeLabel_br .
+    she:Brescia skos:prefLabel ?bresciaLabel_pgae .
+    she:PermeableGreenAreaExtension sorelm:hasMinimum ?pgaeNode_br .
+    ?pgaeNode_br prov:atLocation she:Brescia .
+    ?pgaeNode_br she:appliesTo ?areaType_pgae_br .
+    ?areaType_pgae_br skos:prefLabel ?areaTypeLabel_pgae_br .
+    ?pgaeNode_br biolink:has_percentage ?pgaePercentage_br .
+
+    BIND(CONCAT("Minimum ", ?pgaeLabel_br) AS ?itemDescription)
+    BIND(STR(?pgaePercentage_br) AS ?value)
+    BIND(CONCAT("in ", ?bresciaLabel_pgae, " (", ?areaTypeLabel_pgae_br, ")") AS ?context)
+  }
+  UNION
+  {
+    she:SurfacePermeability skos:prefLabel ?spLabel_pad_val .
+    she:Padua skos:prefLabel ?paduaLabel_sp_val .
+    she:SurfacePermeability om:hasValue ?spNode_pad_val .
+    ?spNode_pad_val prov:atLocation she:Padua .
+    ?spNode_pad_val she:appliesTo ?areaType_sp_pad_val .
+    ?areaType_sp_pad_val skos:prefLabel ?areaTypeLabel_sp_pad_val .
+    ?spNode_pad_val biolink:has_percentage ?spPercentage_pad_val .
+
+    BIND(?spLabel_pad_val AS ?itemDescription)
+    BIND(STR(?spPercentage_pad_val) AS ?value)
+    BIND(CONCAT("in ", ?paduaLabel_sp_val, " (", ?areaTypeLabel_sp_pad_val, ")") AS ?context)
+  }
+  UNION
+  {
+    she:SurfacePermeability skos:prefLabel ?spLabel_pad_int .
+    she:Padua skos:prefLabel ?paduaLabel_sp_int .
+    she:SurfacePermeability af-x:AFX_0002696 ?spNode_pad_int .
+    ?spNode_pad_int prov:atLocation she:Padua .
+    ?spNode_pad_int she:appliesTo she:ResidentialAreas .
+    she:ResidentialAreas skos:prefLabel ?raLabel_pad_int .
+    ?spNode_pad_int sorelm:hasInterval ?spInterval_pad_int .
+
+    BIND(?spLabel_pad_int AS ?itemDescription)
+    BIND(?spInterval_pad_int AS ?value)
+    BIND(CONCAT("in ", ?paduaLabel_sp_int, " (", ?raLabel_pad_int, ")") AS ?context)
+  }
+  UNION
+  {
+    she:SurfacePermeability skos:prefLabel ?spLabel_par .
+    she:Parma skos:prefLabel ?parmaLabel_sp .
+    she:SurfacePermeability sorelm:hasMinimum ?spNode_par .
+    ?spNode_par prov:atLocation she:Parma .
+    ?spNode_par she:appliesTo ?areaType_sp_par .
+    ?areaType_sp_par skos:prefLabel ?areaTypeLabel_sp_par .
+    OPTIONAL { ?spNode_par biolink:has_percentage ?spPercentage_par . }
+    OPTIONAL { ?spNode_par sorelm:hasInterval ?spInterval_par . }
+    BIND(COALESCE(STR(?spPercentage_par), ?spInterval_par) AS ?parmaValue)
+
+    BIND(CONCAT("Minimum standard for ", ?spLabel_par) AS ?itemDescription)
+    BIND(?parmaValue AS ?value)
+    BIND(CONCAT("in ", ?parmaLabel_sp, " (", ?areaTypeLabel_sp_par, ")") AS ?context)
+    FILTER(BOUND(?parmaValue))
+  }
+}
+ORDER BY ?itemDescription ?context

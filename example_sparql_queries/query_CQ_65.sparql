@@ -1,0 +1,45 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX sorelm: <http://sweetontology.net/relaMath/>
+
+SELECT ?itemDescription ?relationshipURI ?valueDescription ?contextDescription
+WHERE {
+  {
+    she:SSVsForOrganicPollutants skos:prefLabel ?ssvopLabel .
+    she:SSVsForOrganicPollutants sorelm:hasThreshold ?thresholdNode .
+
+    ?thresholdNode she:isDevelopedFor ?chemical .
+    VALUES ?chemical { she:PCDD she:PCDF }
+    OPTIONAL { ?chemical skos:prefLabel ?chemLabel_opt . }
+    OPTIONAL { ?chemical agrontology:hasAbbreviation ?chemAbbr_opt . }
+    BIND(COALESCE(?chemLabel_opt, ?chemAbbr_opt, STR(?chemical)) AS ?chemicalDisplayLabel)
+
+    ?thresholdNode prov:atLocation ?location .
+    VALUES ?location { she:Italy she:Austria }
+    ?location skos:prefLabel ?locationLabel .
+
+    OPTIONAL { ?thresholdNode qudt:numericValue ?numericValue . }
+    OPTIONAL { ?thresholdNode qudt:valueSN ?scientificNotationValue . }
+    BIND(COALESCE(STR(?numericValue), STR(?scientificNotationValue)) AS ?thresholdValueStr)
+
+    BIND(CONCAT(?ssvopLabel, " for ", ?chemicalDisplayLabel) AS ?itemDescription)
+    BIND(sorelm:hasThreshold AS ?relationshipURI)
+    BIND(?thresholdValueStr AS ?valueDescription)
+    BIND(CONCAT("in ", ?locationLabel) AS ?contextDescription)
+    FILTER(BOUND(?thresholdValueStr))
+  }
+  UNION
+  {
+    she:SSVsForOrganicPollutants skos:prefLabel ?ssvopLabel_factors .
+    she:SSVsForOrganicPollutants skos:related ?relatedFactor .
+    VALUES ?relatedFactor { she:RegulatedChemicals she:ChemicalAbsoluteValue }
+    ?relatedFactor skos:prefLabel ?relatedFactorLabel .
+
+    BIND(?ssvopLabel_factors AS ?itemDescription)
+    BIND(skos:related AS ?relationshipURI)
+    BIND(?relatedFactorLabel AS ?valueDescription)
+  }
+}
+ORDER BY ?itemDescription ?relationshipURI ?valueDescription

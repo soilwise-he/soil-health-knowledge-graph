@@ -1,0 +1,33 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:TopsoilCompaction skos:prefLabel ?tcLabel .
+    she:TopsoilCompaction agrontology:isPreventedBy ?ispMethod .
+    ?ispMethod skos:prefLabel ?ispLabel .
+    BIND(?tcLabel AS ?subjectLabel)
+    BIND(agrontology:isPreventedBy AS ?predicateURI)
+    BIND(?ispLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:SubsoilCompaction skos:prefLabel ?scLabel_note .
+    she:SubsoilCompaction skos:note ?scNote .
+    BIND(?scLabel_note AS ?subjectLabel)
+    BIND(skos:note AS ?predicateURI)
+    BIND(?scNote AS ?objectLabel)
+  }
+  UNION
+  {
+    she:FreezeThawCycles skos:prefLabel ?ftcLabel .
+    she:FreezeThawCycles skos:note ?ftcNote .
+
+    BIND(?ftcLabel AS ?subjectLabel)
+    BIND(skos:note AS ?predicateURI)
+    BIND(?ftcNote AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

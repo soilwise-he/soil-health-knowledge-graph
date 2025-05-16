@@ -1,0 +1,39 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX sio: <http://semanticscience.org/resource/>
+
+SELECT ?itemDescription ?relationshipURI ?valueDescription
+WHERE {
+  {
+    she:PlantProtectionProducts skos:prefLabel ?pppLabel .
+    she:PlantProtectionProducts agrontology:isPartOf she:CommonAgriculturalPractices .
+    she:CommonAgriculturalPractices skos:prefLabel ?capLabel .
+
+    BIND(?pppLabel AS ?itemDescription)
+    BIND(agrontology:isPartOf AS ?relationshipURI)
+    BIND(?capLabel AS ?valueDescription)
+  }
+  UNION
+  {
+    she:PlantProtectionProducts skos:prefLabel ?pppLabel .
+    she:PlantProtectionProducts skos:narrower she:Herbicides .
+    she:Herbicides skos:prefLabel ?herbicidesLabel .
+
+    BIND(?pppLabel AS ?itemDescription)
+    BIND(skos:narrower AS ?relationshipURI)
+    BIND(?herbicidesLabel AS ?valueDescription)
+  }
+  UNION
+  {
+    she:PlantProtectionProducts skos:prefLabel ?pppLabel .
+    she:PlantProtectionProducts sio:SIO_000128 ?locationDirect .
+    FILTER(!ISBLANK(?locationDirect))
+    ?locationDirect skos:prefLabel ?locationDirectLabel .
+
+    BIND(?pppLabel AS ?itemDescription)
+    BIND(sio:SIO_000128 AS ?relationshipURI)
+    BIND(?locationDirectLabel AS ?valueDescription)
+  }
+}
+ORDER BY ?itemDescription ?relationshipURI ?valueDescription

@@ -1,0 +1,25 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT ?soilTypeLabel ?predicateURI ?regionLabel
+WHERE {
+  {
+    she:NorthernEurope skos:prefLabel ?regionLabel_ne .
+    ?soilTypeURI prov:atLocation she:NorthernEurope .
+    ?soilTypeURI skos:prefLabel ?soilTypeLabel_ne .
+    BIND(?soilTypeLabel_ne AS ?soilTypeLabel)
+    BIND(prov:atLocation AS ?predicateURI)
+    BIND(?regionLabel_ne AS ?regionLabel)
+  }
+  UNION
+  {
+    she:WesternEurope skos:prefLabel ?regionLabel_we .
+    ?soilTypeURI prov:atLocation she:WesternEurope .
+    ?soilTypeURI skos:prefLabel ?soilTypeLabel_we .
+    BIND(?soilTypeLabel_we AS ?soilTypeLabel)
+    BIND(prov:atLocation AS ?predicateURI)
+    BIND(?regionLabel_we AS ?regionLabel)
+  }
+}
+ORDER BY ?soilTypeLabel ?regionLabel

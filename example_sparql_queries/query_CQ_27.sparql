@@ -1,0 +1,62 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sorelm: <http://sweetontology.net/relaMath/>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+
+SELECT ?category ?thresholdValue ?relationshipURI ?contextLabel
+WHERE {
+  {
+    ?socLevelsConcept skos:prefLabel "SOC levels"@en .
+    ?socLevelsConcept sorelm:hasLowerBound ?lowerBoundNode .
+    ?lowerBoundNode biolink:has_percentage ?percentageValueLB .
+    ?lowerBoundNode agrontology:isBeneficialFor ?beneficialForLB .
+    ?beneficialForLB skos:prefLabel ?beneficialForLabelLB .
+
+    BIND("SOC Level: Lower Bound" AS ?category)
+    BIND(STR(?percentageValueLB) AS ?thresholdValue)
+    BIND(agrontology:isBeneficialFor AS ?relationshipURI)
+    BIND(?beneficialForLabelLB AS ?contextLabel)
+  }
+  UNION
+  {
+    ?socLevelsConcept skos:prefLabel "SOC levels"@en .
+    ?socLevelsConcept sorelm:hasUpperBound ?upperBoundNode .
+    ?upperBoundNode biolink:has_percentage ?percentageValueUB .
+    ?upperBoundNode obo:RO_0002552 ?affectsUB .
+    ?affectsUB skos:prefLabel ?affectsLabelUB .
+
+    BIND("SOC Level: Upper Bound" AS ?category)
+    BIND(STR(?percentageValueUB) AS ?thresholdValue)
+    BIND(obo:RO_0002552 AS ?relationshipURI)
+    BIND(?affectsLabelUB AS ?contextLabel)
+  }
+  UNION
+  {
+    ?socCriticalRangesConcept skos:prefLabel "SOC critical ranges"@en .
+    ?socCriticalRangesConcept af-x:AFX_0002696 ?rangeNode .
+    ?rangeNode biolink:has_percentage ?percentageValueCR .
+    ?rangeNode agrontology:isUsedIn ?soilType .
+    ?soilType skos:prefLabel ?soilTypeLabel .
+
+    BIND("SOC Critical Range" AS ?category)
+    BIND(STR(?percentageValueCR) AS ?thresholdValue)
+    BIND(agrontology:isUsedIn AS ?relationshipURI)
+    BIND(?soilTypeLabel AS ?contextLabel)
+  }
+  UNION
+  {
+    ?socCriticalRangesConcept skos:prefLabel "SOC critical ranges"@en .
+    ?socCriticalRangesConcept af-x:AFX_0002696 ?rangeNode .
+    ?rangeNode biolink:has_percentage ?percentageValueCR .
+    ?rangeNode obo:RO_0002212 ?condition .
+    ?condition skos:prefLabel ?conditionLabel .
+
+    BIND("SOC Critical Range" AS ?category)
+    BIND(STR(?percentageValueCR) AS ?thresholdValue)
+    BIND(obo:RO_0002212 AS ?relationshipURI)
+    BIND(?conditionLabel AS ?contextLabel)
+  }
+}
+ORDER BY ?category ?contextLabel ?thresholdValue

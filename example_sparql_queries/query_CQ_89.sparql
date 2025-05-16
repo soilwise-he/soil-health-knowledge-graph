@@ -1,0 +1,90 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX unit: <http://qudt.org/vocab/unit/>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX om: <http://www.ontology-of-units-of-measure.org/resource/om-2/>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel ?contextLabel
+WHERE {
+  {
+    she:PrecompressionStress skos:prefLabel ?psLabel_indicates .
+    she:PrecompressionStress she:indicates she:SoilCompaction .
+    she:SoilCompaction skos:prefLabel ?scLabel_indicated .
+
+    BIND(?psLabel_indicates AS ?subjectLabel)
+    BIND(she:indicates AS ?predicateURI)
+    BIND(?scLabel_indicated AS ?objectLabel)
+  }
+  UNION
+  {
+    she:InternalSoilStrength skos:prefLabel ?issLabel_ams .
+    she:InternalSoilStrength obo:RO_0017004 ?bnode_ams .
+    ?bnode_ams she:suffersFrom she:AdditionalMechanicalStress .
+    she:AdditionalMechanicalStress skos:prefLabel ?amsLabel .
+
+    BIND(?issLabel_ams AS ?subjectLabel)
+    BIND(obo:RO_0017004 AS ?predicateURI)
+    BIND(she:suffersFrom AS ?objectLabel)
+    BIND(?amsLabel AS ?contextLabel)
+  }
+  UNION
+  {
+    she:InternalSoilStrength skos:prefLabel ?issLabel_ssd .
+    she:InternalSoilStrength obo:RO_0017004 ?bnode_ssd .
+    ?bnode_ssd she:suffersFrom she:SoilStructureDegradation .
+    she:SoilStructureDegradation skos:prefLabel ?ssdLabel .
+
+    BIND(?issLabel_ssd AS ?subjectLabel)
+    BIND(obo:RO_0017004 AS ?predicateURI)
+    BIND(she:suffersFrom AS ?objectLabel)
+    BIND(?ssdLabel AS ?contextLabel)
+  }
+  UNION
+  {
+    she:PrecompressionStress skos:prefLabel ?psLabel_eq_iss .
+    she:PrecompressionStress sio:equivalentTo she:InternalSoilStrength .
+    she:InternalSoilStrength skos:prefLabel ?issLabel_eq_ps .
+
+    BIND(?psLabel_eq_iss AS ?subjectLabel)
+    BIND(sio:equivalentTo AS ?predicateURI)
+    BIND(?issLabel_eq_ps AS ?objectLabel)
+    BIND("" AS ?contextLabel)
+  }
+  UNION
+  {
+    she:MatricPotentialValues skos:prefLabel ?mpLabel .
+    she:MatricPotentialValues om:hasValue ?valueNode .
+    ?valueNode obo:RO_0002508 she:PrecompressionStress .
+    she:PrecompressionStress skos:prefLabel ?psLabel_mp .
+
+    ?valueNode qudt:numericValue ?mpNumericValue .
+    ?valueNode qudt:unit ?mpUnitURI .
+    BIND(STRAFTER(STR(?mpUnitURI), STR(unit:)) AS ?mpUnitLabel)
+    OPTIONAL { ?valueNode sio:equivalentTo ?pfValue . }
+
+    OPTIONAL {
+        ?valueNode af-x:AFX_0000408 ?condition .
+        ?condition skos:prefLabel ?conditionLabel_opt .
+    }
+    OPTIONAL {
+        ?valueNode time:hasDuration ?duration .
+        ?duration skos:prefLabel ?durationLabel_opt .
+    }
+    BIND(CONCAT(
+        COALESCE(?conditionLabel_opt, ""),
+        IF(BOUND(?conditionLabel_opt) && BOUND(?durationLabel_opt), ", ", ""),
+        COALESCE(?durationLabel_opt, ""),
+        IF( (BOUND(?conditionLabel_opt) || BOUND(?durationLabel_opt)) && BOUND(?pfValue), CONCAT(" (", ?pfValue, ")"), COALESCE(CONCAT(" (",?pfValue,")"),"") )
+    ) AS ?mpContext)
+
+    BIND(CONCAT(?psLabel_mp, " at ", ?mpLabel) AS ?subjectLabel)
+    BIND(om:hasValue AS ?predicateURI)
+    BIND(CONCAT(STR(?mpNumericValue), " ", ?mpUnitLabel) AS ?objectLabel)
+    BIND(CONCAT("under conditions: ", ?mpContext) AS ?contextLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

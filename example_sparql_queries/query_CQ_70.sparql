@@ -1,0 +1,75 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX bao: <http://www.bioassayontology.org/bao#>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:MicrobialBiomassIndicators skos:prefLabel ?mbiLabel_direct .
+    she:MicrobialBiomassIndicators skos:narrower ?indicatorURI_direct .
+    ?indicatorURI_direct skos:prefLabel ?indicatorLabel_direct .
+
+    BIND(?mbiLabel_direct AS ?subjectLabel)
+    BIND(skos:narrower AS ?predicateURI)
+    BIND(?indicatorLabel_direct AS ?objectLabel)
+  }
+  UNION
+  {
+    she:MicrobialBiomassIndicators skos:narrower she:HotWaterExtractableCarbon .
+    she:HotWaterExtractableCarbon skos:prefLabel ?hwcLabel .
+    she:HotWaterExtractableCarbon skos:definition ?hwcDefinition .
+    BIND(?hwcLabel AS ?subjectLabel)
+    BIND(skos:definition AS ?predicateURI)
+    BIND(?hwcDefinition AS ?objectLabel)
+  }
+  UNION
+  {
+    she:MicrobialBiomassIndicators skos:narrower she:HotWaterExtractableCarbon .
+    she:HotWaterExtractableCarbon skos:prefLabel ?hwcLabel_includes .
+    she:HotWaterExtractableCarbon agrontology:includes ?hwcIncludesNode .
+    OPTIONAL {
+        FILTER(!ISBLANK(?hwcIncludesNode))
+        ?hwcIncludesNode skos:prefLabel ?includedConceptLabel_direct .
+        BIND(?includedConceptLabel_direct AS ?includedLabel)
+    }
+    OPTIONAL {
+        FILTER(ISBLANK(?hwcIncludesNode))
+        ?hwcIncludesNode rdf:object ?includedConceptViaBNode .
+        ?includedConceptViaBNode skos:prefLabel ?includedConceptLabel_bnode .
+        OPTIONAL {
+            ?hwcIncludesNode she:isAvailableFor ?availableForMicrobes .
+            ?availableForMicrobes skos:prefLabel ?availableForMicrobesLabel .
+        }
+        BIND(IF(BOUND(?availableForMicrobesLabel), CONCAT(?includedConceptLabel_bnode, " (available to ", ?availableForMicrobesLabel, ")"), ?includedConceptLabel_bnode) AS ?includedLabel)
+    }
+    BIND(?hwcLabel_includes AS ?subjectLabel)
+    BIND(agrontology:includes AS ?predicateURI)
+    BIND(?includedLabel AS ?objectLabel)
+    FILTER(BOUND(?includedLabel))
+  }
+  UNION
+  {
+    she:MicrobialBiomassIndicators skos:narrower she:AmountOfCultivableBacteria .
+    she:AmountOfCultivableBacteriaInDeciduousForestStands skos:prefLabel ?acbDeciduousLabel .
+    she:AmountOfCultivableBacteriaInConiferousForestStands skos:prefLabel ?acbConiferousLabel .
+    she:AmountOfCultivableBacteriaInDeciduousForestStands agrontology:greaterThan she:AmountOfCultivableBacteriaInConiferousForestStands .
+
+    BIND(?acbDeciduousLabel AS ?subjectLabel)
+    BIND(agrontology:greaterThan AS ?predicateURI)
+    BIND(?acbConiferousLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:MicrobialBiomassIndicators skos:narrower she:AmountOfCultivableBacteria .
+    she:MullHumusForm skos:prefLabel ?mhfLabel .
+    she:MullHumusForm bao:BAO_0002586 she:AmountOfColonyFormingUnits .
+    she:AmountOfColonyFormingUnits skos:prefLabel ?acfuLabel .
+
+    BIND(?mhfLabel AS ?subjectLabel)
+    BIND(bao:BAO_0002586 AS ?predicateURI)
+    BIND(?acfuLabel AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

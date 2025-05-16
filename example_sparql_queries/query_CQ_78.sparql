@@ -1,0 +1,86 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX sorelph: <http://sweetontology.net/relaPhysical/>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel ?contextLabel
+WHERE {
+  {
+    she:OnsiteEffectsOfSoilErosion skos:prefLabel ?oseLabel .
+    she:OnsiteEffectsOfSoilErosion skos:narrower she:SoilQualityReduction .
+    she:SoilQualityReduction skos:prefLabel ?sqrLabel .
+    BIND(?oseLabel AS ?subjectLabel)
+    BIND(skos:narrower AS ?predicateURI)
+    BIND(?sqrLabel AS ?objectLabel)
+    BIND("" AS ?contextLabel)
+  }
+  UNION
+  {
+    she:SoilQualityReduction skos:prefLabel ?sqrLabel_ftl .
+    she:SoilQualityReduction obo:OAE_0000025 she:FertileTopsoilLoss .
+    she:FertileTopsoilLoss skos:prefLabel ?ftlLabel .
+    BIND(?sqrLabel_ftl AS ?subjectLabel)
+    BIND(obo:OAE_0000025 AS ?predicateURI)
+    BIND(?ftlLabel AS ?objectLabel)
+    BIND("" AS ?contextLabel)
+  }
+  UNION
+  {
+    she:FertileTopsoilLoss skos:prefLabel ?ftlLabel_scl .
+    she:FertileTopsoilLoss agrontology:includes she:SoilCarbonLoss .
+    she:SoilCarbonLoss skos:prefLabel ?sclLabel .
+    BIND(?ftlLabel_scl AS ?subjectLabel)
+    BIND(agrontology:includes AS ?predicateURI)
+    BIND(?sclLabel AS ?objectLabel)
+    BIND("" AS ?contextLabel)
+  }
+  UNION
+  {
+    she:ErodedMaterial skos:prefLabel ?emLabel .
+    she:ErodedMaterial sorelph:hasTransport ?transportNode .
+    ?transportNode obo:RO_0002552 ?damageNode .
+    ?damageNode agrontology:isCausedBy she:Flooding .
+    she:Flooding skos:prefLabel ?floodingLabel .
+    ?damageNode rdf:object ?damagedThing .
+    ?damagedThing skos:prefLabel ?damagedThingLabel .
+
+    BIND(?emLabel AS ?subjectLabel)
+    BIND(obo:RO_0002552 AS ?predicateURI)
+    BIND(?damagedThingLabel AS ?objectLabel)
+    BIND(CONCAT("as a result of ", ?floodingLabel) AS ?contextLabel)
+  }
+  UNION
+  {
+    she:ErodedSoil skos:prefLabel ?esLabel .
+    she:ErodedSoil obo:RO_0002552 ?clogNode .
+    ?clogNode rdf:object she:DrainageSystems .
+    she:DrainageSystems skos:prefLabel ?dsLabel .
+    ?clogNode agrontology:causes ?clogEffect .
+    ?clogEffect skos:prefLabel ?clogEffectLabel .
+
+    BIND(?esLabel AS ?subjectLabel)
+    BIND(agrontology:causes AS ?predicateURI)
+    BIND(?clogEffectLabel AS ?objectLabel)
+    BIND(CONCAT("to ", ?dsLabel) AS ?contextLabel)
+  }
+  UNION
+  {
+    she:SoilErosion skos:prefLabel ?seLabel_pl .
+    she:SoilErosion agrontology:affects ?pavementNode .
+    ?pavementNode rdf:object she:PavementLifetime .
+    she:PavementLifetime skos:prefLabel ?plLabel .
+    ?pavementNode af-x:AFX_0000408 she:PoorDrainageMaintenance .
+    she:PoorDrainageMaintenance skos:prefLabel ?pdmLabel .
+    ?pavementNode agrontology:causes ?pavementEffect .
+    ?pavementEffect skos:prefLabel ?pavementEffectLabel .
+
+    BIND(?seLabel_pl AS ?subjectLabel)
+    BIND(agrontology:causes AS ?predicateURI)
+    BIND(?pavementEffectLabel AS ?objectLabel)
+    BIND(CONCAT("to ", ?plLabel, " (coupled with ", ?pdmLabel, ")") AS ?contextLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

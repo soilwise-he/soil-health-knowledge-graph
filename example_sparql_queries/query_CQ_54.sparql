@@ -1,0 +1,49 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel ?contextLabel
+WHERE {
+  {
+    she:CommonlyRegulatedHeavyMetals skos:prefLabel ?crhmLabel_part1 .
+    she:CommonlyRegulatedHeavyMetals skos:narrower ?specificMetal .
+    ?specificMetal skos:prefLabel ?specificMetalLabel .
+
+    BIND(?crhmLabel_part1 AS ?subjectLabel)
+    BIND(skos:narrower AS ?predicateURI)
+    BIND(?specificMetalLabel AS ?objectLabel)
+    BIND("" AS ?contextLabel)
+  }
+  UNION
+  {
+    she:CommonlyRegulatedHeavyMetals skos:narrower ?toxicMetal .
+    ?toxicMetal skos:prefLabel ?toxicMetalLabel .
+
+    ?toxicMetal she:isToxicTo ?toxicityNode .
+    ?toxicityNode af-x:AFX_0000408 she:LowConcentrations .
+    she:LowConcentrations skos:prefLabel ?lowConcLabel .
+    ?toxicityNode rdf:object she:HumanBeings .
+    she:HumanBeings skos:prefLabel ?hbLabel .
+    ?toxicityNode rdf:object she:SoilOrganisms .
+    she:SoilOrganisms skos:prefLabel ?soLabel .
+
+    BIND(?toxicMetalLabel AS ?subjectLabel)
+    BIND(she:isToxicTo AS ?predicateURI)
+    BIND(CONCAT(?hbLabel, " and ", ?soLabel) AS ?objectLabel)
+    BIND(CONCAT("at ", ?lowConcLabel) AS ?contextLabel)
+  }
+  UNION
+  {
+    she:CommonlyRegulatedHeavyMetals skos:prefLabel ?crhmLabel_part3 .
+    she:CommonlyRegulatedHeavyMetals agrontology:includes ?includedConcept .
+    ?includedConcept skos:prefLabel ?includedConceptLabel .
+
+    BIND(?crhmLabel_part3 AS ?subjectLabel)
+    BIND(agrontology:includes AS ?predicateURI)
+    BIND(?includedConceptLabel AS ?objectLabel)
+    BIND("" AS ?contextLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

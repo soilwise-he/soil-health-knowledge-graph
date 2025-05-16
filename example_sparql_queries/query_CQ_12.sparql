@@ -1,0 +1,15 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT ?modelLabel ?countryLabel
+WHERE {
+  ?riskAssessmentModelsCategory skos:prefLabel "risk assessment models"@en .
+  ?riskAssessmentModelsCategory skos:narrower ?model .
+  ?model skos:prefLabel ?modelLabel .
+
+  OPTIONAL {
+    ?model prov:atLocation ?countryURI .
+    ?countryURI skos:prefLabel ?countryLabel .
+  }
+}
+ORDER BY ?modelLabel ?countryLabel

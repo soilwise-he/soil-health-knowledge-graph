@@ -1,0 +1,35 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX bao: <http://www.bioassayontology.org/bao#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX unit: <http://qudt.org/vocab/unit/>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:SoilErosion skos:prefLabel ?seLabel_def .
+    she:SoilErosion skos:definition ?definition .
+    BIND(?seLabel_def AS ?subjectLabel)
+    BIND(skos:definition AS ?predicateURI)
+    BIND(?definition AS ?objectLabel)
+  }
+  UNION
+  {
+    she:RateOfLossOfTopsoilMass skos:prefLabel ?rolotmLabel .
+    she:RateOfLossOfTopsoilMass bao:BAO_0002586 she:SoilErosion .
+    she:SoilErosion skos:prefLabel ?seLabel_ind .
+    BIND(?rolotmLabel AS ?subjectLabel)
+    BIND(bao:BAO_0002586 AS ?predicateURI)
+    BIND(?seLabel_ind AS ?objectLabel)
+  }
+  UNION
+  {
+    she:RateOfLossOfTopsoilMass skos:prefLabel ?rolotmLabel_unit .
+    she:RateOfLossOfTopsoilMass qudt:unit ?unitURI .
+    BIND(STRAFTER(STR(?unitURI), STR(unit:)) AS ?unitLocalName)
+    BIND(?rolotmLabel_unit AS ?subjectLabel)
+    BIND(qudt:unit AS ?predicateURI)
+    BIND(?unitLocalName AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

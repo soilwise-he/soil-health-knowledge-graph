@@ -1,0 +1,102 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX sorelm: <http://sweetontology.net/relaMath/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:SoilRigidityRatio skos:prefLabel ?srrLabel .
+    she:SoilRigidityRatio skos:definition ?definition .
+    BIND(?srrLabel AS ?subjectLabel)
+    BIND(skos:definition AS ?predicateURI)
+    BIND(?definition AS ?objectLabel)
+  }
+  UNION
+  {
+    she:SoilRigidityRatio skos:prefLabel ?srrLabel_measured .
+    she:SoilRigidityRatio agrontology:isMeasuredBy ?measureNode .
+    ?measureNode obo:RO_0020202 she:ActualPrecompressionStress .
+    ?measureNode obo:RO_0020203 she:ActualSoilStress .
+    she:ActualPrecompressionStress skos:prefLabel ?apsLabel_measure .
+    she:ActualSoilStress skos:prefLabel ?assLabel_measure .
+
+    BIND(?srrLabel_measured AS ?subjectLabel)
+    BIND(agrontology:isMeasuredBy AS ?predicateURI)
+    BIND(CONCAT(?apsLabel_measure, " / ", ?assLabel_measure) AS ?objectLabel)
+  }
+  UNION
+  {
+    she:ActualPrecompressionStress skos:prefLabel ?apsLabel_eq .
+    she:ActualPrecompressionStress sio:equivalentTo she:InternalSoilStrength .
+    she:InternalSoilStrength skos:prefLabel ?issLabel_eq .
+    BIND(?apsLabel_eq AS ?subjectLabel)
+    BIND(sio:equivalentTo AS ?predicateURI)
+    BIND(?issLabel_eq AS ?objectLabel)
+  }
+  UNION
+  {
+    she:SoilRigidityRatio skos:prefLabel ?srrLabel_gt .
+    she:SoilRigidityRatio sorelm:hasThreshold ?thresholdNode_gt .
+    ?thresholdNode_gt agrontology:greaterThan "1.2"^^xsd:float .
+    {
+      she:SoilRigidityRatio skos:prefLabel ?srrLabel_gt .
+      she:SoilRigidityRatio sorelm:hasThreshold ?thresholdNode_gt .
+      ?thresholdNode_gt agrontology:greaterThan "1.2"^^xsd:float .
+      ?thresholdNode_gt af-x:AFX_0002842 she:RigidSoilStructureConditions .
+      she:RigidSoilStructureConditions skos:prefLabel ?rsscLabel .
+      BIND(?srrLabel_gt AS ?subjectLabel)
+      BIND(af-x:AFX_0002842 AS ?predicateURI)
+      BIND(CONCAT(?rsscLabel, " (when ratio > 1.2)") AS ?objectLabel)
+    } UNION {
+      she:SoilRigidityRatio skos:prefLabel ?srrLabel_gt .
+      she:SoilRigidityRatio sorelm:hasThreshold ?thresholdNode_gt .
+      ?thresholdNode_gt agrontology:greaterThan "1.2"^^xsd:float .
+      ?thresholdNode_gt af-x:AFX_0002727 she:CompactionProcesses .
+      she:CompactionProcesses skos:prefLabel ?cpLabel_gt .
+      BIND(?srrLabel_gt AS ?subjectLabel)
+      BIND(af-x:AFX_0002727 AS ?predicateURI)
+      BIND(CONCAT(?cpLabel_gt, " (when ratio > 1.2)") AS ?objectLabel)
+    }
+  }
+  UNION
+  {
+    she:SoilRigidityRatio skos:prefLabel ?srrLabel_lt .
+    she:SoilRigidityRatio sorelm:hasThreshold ?thresholdNode_lt .
+    ?thresholdNode_lt agrontology:smallerThan "0.8"^^xsd:float .
+    ?thresholdNode_lt af-x:AFX_0002842 she:IrreversiblyDeformedSoilStructure .
+    she:IrreversiblyDeformedSoilStructure skos:prefLabel ?idsLabel .
+
+    BIND(?srrLabel_lt AS ?subjectLabel)
+    BIND(af-x:AFX_0002842 AS ?predicateURI)
+    BIND(CONCAT(?idsLabel, " (when ratio < 0.8)") AS ?objectLabel)
+  }
+  UNION
+  {
+    {
+      she:SoilRigidityRatio skos:prefLabel ?srrLabel_interval .
+      she:SoilRigidityRatio sorelm:hasThreshold ?thresholdNode_interval .
+      ?thresholdNode_interval sorelm:hasInterval "0.8-1.2"@en .
+      ?thresholdNode_interval agrontology:causes she:SoilDeformation .
+      she:SoilDeformation skos:prefLabel ?sdLabel_interval .
+      BIND(?srrLabel_interval AS ?subjectLabel)
+      BIND(agrontology:causes AS ?predicateURI)
+      BIND(CONCAT(?sdLabel_interval, " (ratio is 0.8-1.2)") AS ?objectLabel)
+    } UNION {
+      she:SoilRigidityRatio skos:prefLabel ?srrLabel_interval .
+      she:SoilRigidityRatio sorelm:hasThreshold ?thresholdNode_interval .
+      ?thresholdNode_interval sorelm:hasInterval "0.8-1.2"@en .
+      ?thresholdNode_interval obo:RO_0002552 ?affectedEntity_interval .
+      VALUES ?affectedEntity_interval { she:SoilFunctions she:SoilProperties }
+      ?affectedEntity_interval skos:prefLabel ?affectedEntityLabel_interval .
+      BIND(?srrLabel_interval AS ?subjectLabel)
+      BIND(obo:RO_0002552 AS ?predicateURI)
+      BIND(CONCAT(?affectedEntityLabel_interval, " (ratio is 0.8-1.2)") AS ?objectLabel)
+    }
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

@@ -1,0 +1,15 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?concept ?uniqueDefinition
+WHERE {
+  ?concept skos:prefLabel ?label ;
+           skos:definition ?uniqueDefinition .
+  FILTER(?label = "soil health"@en || ?label = "soil quality"@en)
+  
+  FILTER NOT EXISTS {
+    ?otherConcept skos:prefLabel ?otherLabel ;
+                  skos:definition ?uniqueDefinition .
+    FILTER(?otherLabel != ?label && 
+           (?otherLabel = "soil health"@en || ?otherLabel = "soil quality"@en))
+  }
+}

@@ -1,0 +1,40 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?subjectDescription ?relationship ?objectDescription ?contextDescription
+WHERE {
+  {
+    ?somContentConcept skos:prefLabel "soil organic matter content"@en .
+    ?somContentConcept agrontology:affects ?affectedEntity .
+    ?affectedEntity skos:prefLabel ?affectedEntityLabel .
+
+    BIND("Soil Organic Matter Content" AS ?subjectDescription)
+    BIND("agrontology:affects" AS ?relationship)
+    BIND(?affectedEntityLabel AS ?objectDescription)
+  }
+  UNION
+  {
+    ?somContentConcept skos:prefLabel "soil organic matter content"@en .
+    ?somContentConcept agrontology:isSourceOf ?bNodeSource .
+    ?bNodeSource rdf:object ?providedObject .
+    ?providedObject skos:prefLabel ?providedObjectLabel .
+    ?bNodeSource agrontology:isUsedIn ?userEntity .
+    ?userEntity skos:prefLabel ?userEntityLabel .
+
+    BIND("Soil Organic Matter Content" AS ?subjectDescription)
+    BIND(CONCAT("agrontology:isSourceOf '", ?providedObjectLabel, "'") AS ?relationship)
+    BIND(CONCAT("agrontology:isUsedIn '", ?userEntityLabel, "'") AS ?objectDescription)
+  }
+  UNION
+  {
+    ?somContentConcept skos:prefLabel "soil organic matter content"@en .
+    ?somContentConcept skos:related ?somRelatedConcept .
+    ?somRelatedConcept skos:prefLabel ?somRelatedConceptLabel .
+
+    BIND("Soil Organic Matter Content" AS ?subjectDescription)
+    BIND("skos:related" AS ?relationship)
+    BIND(?somRelatedConceptLabel AS ?objectDescription)
+  }
+}
+ORDER BY ?subjectDescription ?relationship ?objectDescription

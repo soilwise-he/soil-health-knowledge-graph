@@ -1,0 +1,36 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX om: <http://www.ontology-of-units-of-measure.org/resource/om-2/>
+PREFIX sorelm: <http://sweetontology.net/relaMath/>
+
+SELECT ?socPercentage ?countryLabel ?factorOrLandUseLabel
+WHERE {
+  ?siteTypicalSocConcept skos:prefLabel "site-typical SOC contents"@en .
+
+  {
+    ?siteTypicalSocConcept om:hasValue ?valueNode .
+  }
+  UNION
+  {
+    ?siteTypicalSocConcept sorelm:hasUpperBound ?valueNode .
+  }
+
+  ?valueNode biolink:has_percentage ?socPercentage .
+  ?valueNode prov:atLocation ?locationURI .
+  ?locationURI skos:prefLabel ?countryLabel .
+
+  OPTIONAL {
+    ?valueNode af-x:AFX_0000408 ?environmentalFactor .
+    ?environmentalFactor skos:prefLabel ?factorLabel .
+    BIND(?factorLabel AS ?factorOrLandUseLabel)
+  }
+  OPTIONAL {
+    ?valueNode obo:BFO_0000066 ?landUseContext .
+    ?landUseContext skos:prefLabel ?landUseLabel .
+    BIND(?landUseLabel AS ?factorOrLandUseLabel)
+  }
+}
+ORDER BY ?countryLabel ?socPercentage ?factorOrLandUseLabel

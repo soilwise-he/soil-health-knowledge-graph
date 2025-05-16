@@ -1,0 +1,107 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:SaturatedHydraulicConductivity skos:prefLabel ?shcLabel .
+    she:SaturatedHydraulicConductivity sio:SIO_000210 ?functionalQualitySHC .
+    VALUES ?functionalQualitySHC { she:SoilStructureFunctionalQuality she:PoreContinuityFunctionalQuality }
+    ?functionalQualitySHC skos:prefLabel ?fqLabelSHC .
+
+    BIND(?shcLabel AS ?subjectLabel)
+    BIND(sio:SIO_000210 AS ?predicateURI)
+    BIND(?fqLabelSHC AS ?objectLabel)
+  }
+  UNION
+  {
+    she:UnsaturatedHydraulicConductivity skos:prefLabel ?uhcLabel .
+    she:UnsaturatedHydraulicConductivity sio:SIO_000210 ?functionalQualityUHC .
+    VALUES ?functionalQualityUHC { she:SoilStructureFunctionalQuality she:PoreContinuityFunctionalQuality }
+    ?functionalQualityUHC skos:prefLabel ?fqLabelUHC .
+
+    BIND(?uhcLabel AS ?subjectLabel)
+    BIND(sio:SIO_000210 AS ?predicateURI)
+    BIND(?fqLabelUHC AS ?objectLabel)
+  }
+  UNION
+  {
+    she:AirPermeability skos:prefLabel ?apLabel .
+    she:AirPermeability sio:SIO_000210 ?functionalQualityAP .
+    VALUES ?functionalQualityAP { she:SoilStructureFunctionalQuality she:PoreContinuityFunctionalQuality }
+    ?functionalQualityAP skos:prefLabel ?fqLabelAP .
+
+    BIND(?apLabel AS ?subjectLabel)
+    BIND(sio:SIO_000210 AS ?predicateURI)
+    BIND(?fqLabelAP AS ?objectLabel)
+  }
+  UNION
+  {
+    ?conductivityOrPermeabilityConcept obo:RO_0002502 she:MatricPotential .
+    VALUES ?conductivityOrPermeabilityConcept {
+        she:SaturatedHydraulicConductivity
+        she:UnsaturatedHydraulicConductivity
+        she:AirPermeability
+    }
+    ?conductivityOrPermeabilityConcept skos:prefLabel ?copLabel .
+    she:MatricPotential skos:prefLabel ?mpLabel .
+
+    BIND(?copLabel AS ?subjectLabel)
+    BIND(obo:RO_0002502 AS ?predicateURI)
+    BIND(?mpLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    ?parameterForTrafficability agrontology:isUsedIn ?bnode_traffic .
+    ?bnode_traffic obo:RO_0002508 she:Trafficability .
+    VALUES ?parameterForTrafficability { she:AirPermeability she:HydraulicConductivity }
+    ?parameterForTrafficability skos:prefLabel ?pftLabel .
+    she:Trafficability skos:prefLabel ?trafficabilityLabel .
+
+    BIND(?pftLabel AS ?subjectLabel)
+    BIND(obo:RO_0002508 AS ?predicateURI)
+    BIND(?trafficabilityLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:SaturatedHydraulicConductivity skos:prefLabel ?shcLabel_smp .
+    she:SaturatedHydraulicConductivity obo:RO_0002502 she:SaturatedMacropores .
+    she:SaturatedMacropores skos:prefLabel ?smpLabel .
+
+    BIND(?shcLabel_smp AS ?subjectLabel)
+    BIND(obo:RO_0002502 AS ?predicateURI)
+    BIND(?smpLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:UnsaturatedHydraulicConductivity skos:prefLabel ?uhcLabel_flux .
+    she:UnsaturatedHydraulicConductivity agrontology:measures ?bnode_uhc_flux .
+    ?bnode_uhc_flux rdf:object she:Fluxes .
+    she:Fluxes skos:prefLabel ?fluxesLabel_uhc .
+    ?bnode_uhc_flux af-x:AFX_0000408 she:PoreDiameters .
+    she:PoreDiameters skos:prefLabel ?pdLabel_uhc .
+
+    BIND(?uhcLabel_flux AS ?subjectLabel)
+    BIND(agrontology:measures AS ?predicateURI)
+    BIND(?fluxesLabel_uhc AS ?objectLabel)
+  }
+  UNION
+  {
+    she:AirPermeability skos:prefLabel ?apLabel_flux .
+    she:AirPermeability agrontology:measures ?bnode_ap_flux .
+    ?bnode_ap_flux rdf:object she:Fluxes .
+    she:Fluxes skos:prefLabel ?fluxesLabel_ap .
+    ?bnode_ap_flux af-x:AFX_0000408 she:PoreDiameters .
+    she:PoreDiameters skos:prefLabel ?pdLabel_ap .
+
+    BIND(?apLabel_flux AS ?subjectLabel)
+    BIND(agrontology:measures AS ?predicateURI)
+    BIND(?fluxesLabel_ap AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

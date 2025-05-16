@@ -1,0 +1,47 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT ?itemDescription ?relationshipURI ?valueDescription
+WHERE {
+  {
+    she:PointSourcePollution skos:prefLabel ?pspLabel .
+    she:PointSourcePollution she:isCharacterisedBy ?characteristic .
+    ?characteristic skos:prefLabel ?characteristicLabel .
+    BIND(?pspLabel AS ?itemDescription)
+    BIND(she:isCharacterisedBy AS ?relationshipURI)
+    BIND(?characteristicLabel AS ?valueDescription)
+  }
+  UNION
+  {
+    she:PointSourcePollution skos:prefLabel ?pspLabel .
+    she:PointSourcePollution obo:BFO_0000066 ?scaleNode .
+    ?scaleNode agrontology:smallerThan she:DiffusePollution .
+    she:DiffusePollution skos:prefLabel ?dspLabel_scale .
+    BIND(?pspLabel AS ?itemDescription)
+    BIND(agrontology:smallerThan AS ?relationshipURI)
+    BIND(?dspLabel_scale AS ?valueDescription)
+  }
+  UNION
+  {
+    she:PointSourcePollution skos:prefLabel ?pspLabel .
+    she:PointSourcePollution sio:equivalentTo she:LocalPollution .
+    she:LocalPollution skos:prefLabel ?lpLabel .
+    BIND(?pspLabel AS ?itemDescription)
+    BIND(sio:equivalentTo AS ?relationshipURI)
+    BIND(?lpLabel AS ?valueDescription)
+  }
+  UNION
+  {
+    she:PointSourcePollution skos:prefLabel ?pspLabel .
+    she:PointSourcePollution wdt:P1889 she:DiffusePollution .
+    she:DiffusePollution skos:prefLabel ?dspLabel_diff .
+    BIND(?pspLabel AS ?itemDescription)
+    BIND(wdt:P1889 AS ?relationshipURI)
+    BIND(?dspLabel_diff AS ?valueDescription)
+  }
+}
+ORDER BY ?itemDescription ?relationshipURI ?valueDescription

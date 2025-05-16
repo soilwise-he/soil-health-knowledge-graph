@@ -1,0 +1,22 @@
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?soilLabel ?predicate ?objectLabel
+WHERE {
+  ?soil skos:prefLabel "soils"@en ;
+        skos:prefLabel ?soilLabel . 
+
+  {
+    ?soil agrontology:isComposedOf ?object .
+    BIND(agrontology:isComposedOf AS ?predicate)
+    ?object skos:prefLabel ?objectLabel .
+  }
+  UNION
+  {
+    ?soilFunctions skos:prefLabel "soil functions"@en ;
+                   skos:prefLabel ?objectLabel . 
+    ?soil ?predicate ?soilFunctions .
+  }
+}
+
+ORDER BY ?predicate ?objectLabel

@@ -1,0 +1,89 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:DirectIndicators skos:prefLabel ?diLabel .
+    she:DirectIndicators skos:narrower ?specificDirectIndicator .
+    ?specificDirectIndicator skos:prefLabel ?specificDirectIndicatorLabel .
+    BIND(?diLabel AS ?subjectLabel)
+    BIND(skos:narrower AS ?predicateURI)
+    BIND(?specificDirectIndicatorLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:DirectIndicators skos:prefLabel ?diLabel_rel .
+    she:DirectIndicators skos:related she:SpecficContaminantLoad .
+    she:SpecficContaminantLoad skos:prefLabel ?sclLabel .
+    BIND(?diLabel_rel AS ?subjectLabel)
+    BIND(skos:related AS ?predicateURI)
+    BIND(?sclLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:MassBalanceIndicators skos:prefLabel ?mbiLabel .
+    she:MassBalanceIndicators skos:narrower ?specificMassBalanceIndicator .
+    ?specificMassBalanceIndicator skos:prefLabel ?specificMassBalanceIndicatorLabel .
+    BIND(?mbiLabel AS ?subjectLabel)
+    BIND(skos:narrower AS ?predicateURI)
+    BIND(?specificMassBalanceIndicatorLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:MassBalanceIndicators skos:prefLabel ?mbiLabel_app .
+    she:MassBalanceIndicators schema:isBasedOn she:MassBalanceApproach .
+    she:MassBalanceApproach skos:prefLabel ?mbaLabel .
+    BIND(?mbiLabel_app AS ?subjectLabel)
+    BIND(schema:isBasedOn AS ?predicateURI)
+    BIND(?mbaLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:CriticalLoadOfHeavyMetalContentInSoilsRelatedToDifferentLandUses skos:prefLabel ?clhmLabel .
+    she:CriticalLoadOfHeavyMetalContentInSoilsRelatedToDifferentLandUses schema:isBasedOn she:InputOutputAssessmentOfHeavyMetalsInArableCroppingSystems .
+    she:InputOutputAssessmentOfHeavyMetalsInArableCroppingSystems skos:prefLabel ?iohmLabel .
+    BIND(?clhmLabel AS ?subjectLabel)
+    BIND(schema:isBasedOn AS ?predicateURI)
+    BIND(?iohmLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:MonitoredHeavyMetals skos:prefLabel ?mhmLabel .
+    she:MonitoredHeavyMetals skos:narrower ?specificHeavyMetal .
+    ?specificHeavyMetal skos:prefLabel ?specificHeavyMetalLabel .
+    BIND(?mhmLabel AS ?subjectLabel)
+    BIND(skos:narrower AS ?predicateURI)
+    BIND(?specificHeavyMetalLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:MonitoredHeavyMetals skos:prefLabel ?mhmLabel_si .
+    she:MonitoredHeavyMetals af-x:AFX_0000408 she:SamplingIntervals .
+    she:SamplingIntervals skos:prefLabel ?siLabel_mhm .
+    BIND(?mhmLabel_si AS ?subjectLabel)
+    BIND(af-x:AFX_0000408 AS ?predicateURI)
+    BIND(?siLabel_mhm AS ?objectLabel)
+  }
+  UNION
+  {
+    she:MonitoredNutrients skos:prefLabel ?mnLabel .
+    she:MonitoredNutrients skos:narrower ?specificNutrient .
+    ?specificNutrient skos:prefLabel ?specificNutrientLabel .
+    BIND(?mnLabel AS ?subjectLabel)
+    BIND(skos:narrower AS ?predicateURI)
+    BIND(?specificNutrientLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:MonitoredNutrients skos:prefLabel ?mnLabel_si .
+    she:MonitoredNutrients af-x:AFX_0000408 she:SamplingIntervals .
+    she:SamplingIntervals skos:prefLabel ?siLabel_mn .
+    BIND(?mnLabel_si AS ?subjectLabel)
+    BIND(af-x:AFX_0000408 AS ?predicateURI)
+    BIND(?siLabel_mn AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

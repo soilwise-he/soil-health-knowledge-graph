@@ -1,0 +1,28 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?resultType ?value ?valueLabel
+WHERE {
+  ?sdgResource agrontology:hasAbbreviation "SDG"@en .
+
+  ?ldiConcept skos:prefLabel "land degradation indicators"@en .
+
+  {
+    ?ldiConcept skos:definition ?definition .
+    BIND("Definition of Land Degradation Indicators" AS ?resultType)
+    BIND(?definition AS ?value)
+    BIND("" AS ?valueLabel)
+  }
+  UNION
+  {
+    ?ldiConcept skos:narrower ?specificIndicator .
+    ?specificIndicator dcterms:source ?sdgResource .
+    ?specificIndicator skos:prefLabel ?indicatorLabel .
+
+    BIND("SDG Land Degradation Indicator" AS ?resultType)
+    BIND(?specificIndicator AS ?value)
+    BIND(?indicatorLabel AS ?valueLabel)
+  }
+}
+ORDER BY ?resultType DESC(?valueLabel)

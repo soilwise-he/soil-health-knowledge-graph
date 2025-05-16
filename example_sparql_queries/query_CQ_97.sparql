@@ -1,0 +1,28 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:CompletelySealedArea skos:prefLabel ?csaLabel .
+    she:CompletelySealedArea af-x:AFX_0002727 she:EcologicalSoilFunctions .
+    she:EcologicalSoilFunctions skos:prefLabel ?esfLabel .
+
+    BIND(?csaLabel AS ?subjectLabel)
+    BIND(af-x:AFX_0002727 AS ?predicateURI)
+    BIND(?esfLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:EcologicalSoilFunctions skos:prefLabel ?esfLabel_includes .
+    she:EcologicalSoilFunctions agrontology:includes ?specificFunction .
+    ?specificFunction skos:prefLabel ?specificFunctionLabel .
+
+    BIND(?esfLabel_includes AS ?subjectLabel)
+    BIND(agrontology:includes AS ?predicateURI)
+    BIND(?specificFunctionLabel AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

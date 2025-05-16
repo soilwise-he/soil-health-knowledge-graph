@@ -1,0 +1,46 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    VALUES ?protectionConcept { she:HumanHealthProtection she:EcosystemProtection }
+    ?protectionConcept skos:prefLabel ?subjectLabel .
+    ?protectionConcept skos:related ?relatedObject .
+    VALUES ?relatedObjectType { she:SoilServices she:SoilFunctions }
+    ?relatedObject a ?relatedObjectType .
+    ?relatedObject skos:prefLabel ?objectLabel .
+    BIND(skos:related AS ?predicateURI)
+  }
+  UNION
+  {
+    ?keyServiceURI skos:prefLabel ?subjectLabel .
+    ?keyServiceURI agrontology:isPartOf she:SoilProtection .
+    she:SoilProtection skos:prefLabel ?objectLabel .
+    BIND(agrontology:isPartOf AS ?predicateURI)
+  }
+  UNION
+  {
+    she:ProductionService skos:prefLabel ?subjectLabel .
+    she:ProductionService skos:narrower ?prodServiceOutput .
+    ?prodServiceOutput skos:prefLabel ?objectLabel .
+    BIND(skos:narrower AS ?predicateURI)
+  }
+  UNION
+  {
+    she:FilterFunction skos:prefLabel ?subjectLabel .
+    she:FilterFunction skos:narrower ?filterFunctionOutput .
+    ?filterFunctionOutput skos:prefLabel ?objectLabel .
+    BIND(skos:narrower AS ?predicateURI)
+  }
+  UNION
+  {
+    she:SoilProtection skos:prefLabel ?subjectLabel .
+    she:SoilProtection af-x:AFX_0000388 ?mainEntity .
+    ?mainEntity skos:prefLabel ?objectLabel .
+    BIND(af-x:AFX_0000388 AS ?predicateURI)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

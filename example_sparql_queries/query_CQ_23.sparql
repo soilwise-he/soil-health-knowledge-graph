@@ -1,0 +1,36 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?subjectDescription ?relationshipURI ?objectDescription
+WHERE {
+  {
+    ?socConcept skos:prefLabel "soil organic carbon"@en .
+    ?soilNitrogenConcept skos:prefLabel "soil nitrogen"@en .
+    ?socConcept ?predicateSOC_SN ?soilNitrogenConcept .
+
+    BIND("Soil Organic Carbon" AS ?subjectDescription)
+    BIND(?predicateSOC_SN AS ?relationshipURI)
+    BIND("Soil Nitrogen" AS ?objectDescription)
+  }
+  UNION
+  {
+    ?socLossConcept skos:prefLabel "SOC loss"@en .
+    ?soilNitrogenLossConcept skos:prefLabel "soil nitrogen loss"@en .
+    ?socLossConcept ?predicateSOCLoss_SNLoss ?soilNitrogenLossConcept .
+
+    BIND("SOC loss" AS ?subjectDescription)
+    BIND(?predicateSOCLoss_SNLoss AS ?relationshipURI)
+    BIND("Soil Nitrogen Loss" AS ?objectDescription)
+  }
+  UNION
+  {
+    ?soilNitrogenConcept skos:prefLabel "soil nitrogen"@en .
+    ?soilNitrogenConcept agrontology:affects ?affectedEntity .
+    ?affectedEntity skos:prefLabel ?affectedEntityLabel .
+
+    BIND("Soil Nitrogen" AS ?subjectDescription)
+    BIND(agrontology:affects AS ?relationshipURI)
+    BIND(?affectedEntityLabel AS ?objectDescription)
+  }
+}
+ORDER BY ?subjectDescription ?relationshipURI

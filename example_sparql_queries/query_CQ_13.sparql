@@ -1,0 +1,26 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?subjectLabel ?predicate ?objectLabel
+WHERE {
+  {
+    ?soilDegradationConcept skos:prefLabel "soil degradation"@en .
+    ?soilDegradationConcept agrontology:includes ?typeOfDegradation .
+
+    ?soilDegradationConcept skos:prefLabel ?subjectLabel .
+    BIND(agrontology:includes AS ?predicate)
+    ?typeOfDegradation skos:prefLabel ?objectLabel .
+  }
+  UNION
+  {
+    ?soilPhysicalDegradationConcept skos:prefLabel "soil physical degradation"@en .
+    ?soilSealingConcept skos:prefLabel "soil sealing"@en .
+
+    ?soilPhysicalDegradationConcept agrontology:includes ?soilSealingConcept .
+
+    ?soilPhysicalDegradationConcept skos:prefLabel ?subjectLabel .
+    BIND(agrontology:includes AS ?predicate)
+    ?soilSealingConcept skos:prefLabel ?objectLabel .
+  }
+}
+ORDER BY ?subjectLabel ?predicate ?objectLabel

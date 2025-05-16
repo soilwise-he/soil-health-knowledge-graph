@@ -1,0 +1,72 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX sorelph: <http://sweetontology.net/relaPhysical/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT ?itemDescription ?relationshipURI ?valueDescription
+WHERE {
+  {
+    she:DiffuseSoilPollution skos:prefLabel ?dspLabel .
+    she:PointSourceSoilPollution skos:prefLabel ?pspLabel .
+    she:PointSourceSoilPollution wdt:P1889 she:DiffuseSoilPollution .
+
+    BIND("Soil Pollution Types" AS ?itemDescription)
+    BIND(rdf:type AS ?relationshipURI)
+    BIND(?dspLabel AS ?valueDescription)
+  }
+  UNION
+  {
+    she:DiffuseSoilPollution skos:prefLabel ?dspLabel_type2 .
+    she:PointSourceSoilPollution skos:prefLabel ?pspLabel_type2 .
+    she:PointSourceSoilPollution wdt:P1889 she:DiffuseSoilPollution .
+
+    BIND("Soil Pollution Types" AS ?itemDescription)
+    BIND(rdf:type AS ?relationshipURI)
+    BIND(?pspLabel_type2 AS ?valueDescription)
+  }
+  UNION
+  {
+    she:DiffuseSoilPollution skos:prefLabel ?dspLabel_char .
+    she:DiffuseSoilPollution she:isCharacterisedBy ?characteristic .
+    ?characteristic skos:prefLabel ?characteristicLabel .
+
+    BIND(?dspLabel_char AS ?itemDescription)
+    BIND(she:isCharacterisedBy AS ?relationshipURI)
+    BIND(?characteristicLabel AS ?valueDescription)
+  }
+  UNION
+  {
+    she:DiffuseSoilPollution skos:prefLabel ?dspLabel_origin_a .
+    she:DiffuseSoilPollution sorelph:from ?originNode .
+    ?originNode agrontology:includes ?includesNode .
+    ?includesNode skos:related ?relatedOrigin .
+    ?relatedOrigin skos:prefLabel ?relatedOriginLabel .
+
+    BIND(?dspLabel_origin_a AS ?itemDescription)
+    BIND(sorelph:from AS ?relationshipURI)
+    BIND(?relatedOriginLabel AS ?valueDescription)
+  }
+  UNION
+  {
+    she:PollutedSedimentDeposition skos:prefLabel ?psdLabel .
+    she:PollutedSedimentDeposition skos:broader she:DiffuseSoilPollution .
+    she:DiffuseSoilPollution skos:prefLabel ?dspLabel_origin_b .
+
+    BIND(?dspLabel_origin_b AS ?itemDescription)
+    BIND(skos:broader AS ?relationshipURI)
+    BIND(CONCAT("includes ", ?psdLabel) AS ?valueDescription)
+  }
+  UNION
+  {
+    she:AtmosphericDeposition skos:prefLabel ?adLabel .
+    she:AtmosphericDeposition sorelph:from ?atmosSource .
+    ?atmosSource skos:prefLabel ?atmosSourceLabel .
+
+    BIND(?adLabel AS ?itemDescription)
+    BIND(sorelph:from AS ?relationshipURI)
+    BIND(?atmosSourceLabel AS ?valueDescription)
+  }
+}
+ORDER BY ?itemDescription ?relationshipURI ?valueDescription

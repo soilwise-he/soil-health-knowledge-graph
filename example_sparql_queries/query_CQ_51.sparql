@@ -1,0 +1,53 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX om: <http://www.ontology-of-units-of-measure.org/resource/om-2/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+
+SELECT ?itemDescription ?relationshipURI ?valueDescription
+WHERE {
+  {
+    she:BackgroundConcentrations skos:prefLabel ?bcLabel .
+    she:Metals skos:prefLabel ?metalsLabel .
+    she:ParentMaterial skos:prefLabel ?pmLabel .
+
+    she:BackgroundConcentrations she:variesIn ?bnodeMetals .
+    ?bnodeMetals af-x:AFX_0000408 she:Metals .
+    ?bnodeMetals obo:RO_0002502 she:ParentMaterial .
+
+    BIND(CONCAT(?bcLabel, " for ", ?metalsLabel) AS ?itemDescription)
+    BIND(obo:RO_0002502 AS ?relationshipURI)
+    BIND(?pmLabel AS ?valueDescription)
+  }
+  UNION
+  {
+    she:BackgroundLevels skos:prefLabel ?blLabel_hmop .
+    she:HumanmadeOrganicPollutants skos:prefLabel ?hmopLabel .
+
+    she:BackgroundLevels om:hasValue ?bnodeHMOP .
+    ?bnodeHMOP af-x:AFX_0000408 she:HumanmadeOrganicPollutants .
+    ?bnodeHMOP qudt:numericValue ?hmopValue .
+
+    BIND(CONCAT(?blLabel_hmop, " for ", ?hmopLabel) AS ?itemDescription)
+    BIND(om:hasValue AS ?relationshipURI)
+    BIND(STR(?hmopValue) AS ?valueDescription)
+  }
+  UNION
+  {
+    she:BackgroundLevels skos:prefLabel ?blLabel_pah .
+    she:PAHs agrontology:hasAbbreviation ?pahLabel .
+    she:ForestFireSoils skos:prefLabel ?ffsLabel .
+
+    she:BackgroundLevels agrontology:greaterThan ?bnodePAH .
+    ?bnodePAH af-x:AFX_0000408 she:PAHs .
+    ?bnodePAH obo:BFO_0000066 she:ForestFireSoils .
+    ?bnodePAH qudt:numericValue ?pahValue .
+
+    BIND(?blLabel_pah AS ?itemDescription)
+    BIND(agrontology:greaterThan AS ?relationshipURI)
+    BIND(CONCAT(STR(?pahValue), " for ", ?pahLabel, " in ", ?ffsLabel) AS ?valueDescription)
+  }
+}
+ORDER BY ?itemDescription ?relationshipURI

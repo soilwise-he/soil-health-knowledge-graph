@@ -1,0 +1,13 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  she:PointSourcePollutionSubindicators skos:prefLabel ?subjectLabel .
+  she:PointSourcePollutionSubindicators agrontology:includes ?subIndicator .
+  ?subIndicator skos:prefLabel ?objectLabel .
+
+  BIND(agrontology:includes AS ?predicateURI)
+}
+ORDER BY ?objectLabel

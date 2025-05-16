@@ -1,0 +1,44 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?subject ?predicate ?object
+WHERE {
+  {
+    ?startNode skos:prefLabel "soil parameters"@en .
+    ?startNode skos:narrower* ?subject .
+    ?subject skos:narrower ?object .
+    BIND(skos:narrower AS ?predicate)
+  }
+  UNION
+  {
+    ?startNode skos:prefLabel "soil attributes"@en .
+    ?startNode skos:narrower* ?subject .
+    ?subject skos:narrower ?object .
+    BIND(skos:narrower AS ?predicate)
+  }
+  UNION
+  {
+    ?startNode skos:prefLabel "measured soil parameters"@en .
+    ?startNode skos:narrower* ?subject .
+    ?subject skos:narrower ?object .
+    BIND(skos:narrower AS ?predicate)
+  }
+  UNION
+  {
+    ?complexParametersNode skos:prefLabel "complex soil parameters"@en .
+    ?complexParametersNode agrontology:isDerivedFrom / agrontology:makeUseOf ?toolUsed .
+    BIND(?complexParametersNode AS ?subject)
+    BIND(CONCAT(STR(agrontology:isDerivedFrom), ", ", STR(agrontology:makeUseOf)) AS ?predicate)
+    BIND(?toolUsed AS ?object)
+  }
+  UNION
+  {
+    ?complexParametersNode skos:prefLabel "complex soil parameters"@en .
+    ?complexParametersNode agrontology:isDerivedFrom / rdf:object ?sourceInputParameter .
+    BIND(?complexParametersNode AS ?subject)
+    BIND(CONCAT(STR(agrontology:isDerivedFrom), ", ", STR(rdf:object)) AS ?predicate)
+    BIND(?sourceInputParameter AS ?object)
+  }
+}
+ORDER BY ?subject ?predicate

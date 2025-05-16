@@ -1,0 +1,116 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX unit: <http://qudt.org/vocab/unit/>
+PREFIX sorelm: <http://sweetontology.net/relaMath/>
+PREFIX om: <http://www.ontology-of-units-of-measure.org/resource/om-2/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?riskLevelType ?metalLabel ?valueOrFactor ?unitLabel ?contextOrLandUseLabel ?locationLabel
+WHERE {
+  {
+    she:SSVCriticalRiskLevel skos:prefLabel ?riskLevelType_cd_crit .
+    she:Cadmium skos:prefLabel ?metalLabel_cd_crit .
+    she:SSVCriticalRiskLevel sorelm:hasThreshold ?node_cd_crit .
+    ?node_cd_crit she:isDevelopedFor she:Cadmium .
+    ?node_cd_crit qudt:numericValue ?value_cd_crit .
+    ?node_cd_crit qudt:unit ?unitURI_cd_crit .
+    BIND(STRAFTER(STR(?unitURI_cd_crit), STR(unit:)) AS ?unit_cd_crit)
+    ?node_cd_crit af-x:AFX_0000408 ?landUse_cd_crit .
+    ?landUse_cd_crit skos:prefLabel ?landUseLabel_cd_crit .
+    ?node_cd_crit prov:atLocation ?location_cd_crit .
+    ?location_cd_crit skos:prefLabel ?locationLabel_cd_crit .
+
+    BIND(?riskLevelType_cd_crit AS ?riskLevelType)
+    BIND(?metalLabel_cd_crit AS ?metalLabel)
+    BIND(STR(?value_cd_crit) AS ?valueOrFactor)
+    BIND(?unit_cd_crit AS ?unitLabel)
+    BIND(?landUseLabel_cd_crit AS ?contextOrLandUseLabel)
+    BIND(?locationLabel_cd_crit AS ?locationLabel)
+  }
+  UNION
+  {
+    she:SSVIntermediateRiskLevel skos:prefLabel ?riskLevelType_cd_int_thresh .
+    she:Cadmium skos:prefLabel ?metalLabel_cd_int_thresh .
+    she:SSVIntermediateRiskLevel sorelm:hasThreshold ?node_cd_int_thresh .
+    ?node_cd_int_thresh she:isDevelopedFor she:Cadmium .
+    ?node_cd_int_thresh qudt:numericValue ?value_cd_int_thresh .
+    ?node_cd_int_thresh qudt:unit ?unitURI_cd_int_thresh .
+    BIND(STRAFTER(STR(?unitURI_cd_int_thresh), STR(unit:)) AS ?unit_cd_int_thresh)
+    ?node_cd_int_thresh prov:atLocation ?location_cd_int_thresh .
+    ?location_cd_int_thresh skos:prefLabel ?locationLabel_cd_int_thresh .
+
+    BIND(?riskLevelType_cd_int_thresh AS ?riskLevelType)
+    BIND(?metalLabel_cd_int_thresh AS ?metalLabel)
+    BIND(STR(?value_cd_int_thresh) AS ?valueOrFactor)
+    BIND(?unit_cd_int_thresh AS ?unitLabel)
+    BIND(?locationLabel_cd_int_thresh AS ?locationLabel)
+  }
+  UNION
+  {
+    she:SSVIntermediateRiskLevel skos:prefLabel ?riskLevelType_cd_int_factor .
+    she:Cadmium skos:prefLabel ?metalLabel_cd_int_factor .
+    she:SSVIntermediateRiskLevel she:variesIn ?node_cd_int_factor .
+    ?node_cd_int_factor she:isDevelopedFor she:Cadmium .
+    ?node_cd_int_factor om:hasFactor ?factor_cd_int .
+
+    BIND(?riskLevelType_cd_int_factor AS ?riskLevelType)
+    BIND(?metalLabel_cd_int_factor AS ?metalLabel)
+    BIND(CONCAT("Factor: ", STR(?factor_cd_int)) AS ?valueOrFactor)
+  }
+  UNION
+  {
+    she:SSVCriticalRiskLevel skos:prefLabel ?riskLevelType_cu_crit .
+    she:Copper skos:prefLabel ?metalLabel_cu_crit .
+    she:SSVCriticalRiskLevel sorelm:hasThreshold ?node_cu_crit .
+    ?node_cu_crit she:isDevelopedFor she:Copper .
+    ?node_cu_crit qudt:numericValue ?value_cu_crit .
+    ?node_cu_crit qudt:unit ?unitURI_cu_crit .
+    BIND(STRAFTER(STR(?unitURI_cu_crit), STR(unit:)) AS ?unit_cu_crit)
+
+    BIND(?riskLevelType_cu_crit AS ?riskLevelType)
+    BIND(?metalLabel_cu_crit AS ?metalLabel)
+    BIND(STR(?value_cu_crit) AS ?valueOrFactor)
+    BIND(?unit_cu_crit AS ?unitLabel)
+  }
+  UNION
+  {
+    she:SSVIntermediateRiskLevel skos:prefLabel ?riskLevelType_cu_int_factor .
+    she:Copper skos:prefLabel ?metalLabel_cu_int_factor .
+    she:SSVIntermediateRiskLevel she:variesIn ?node_cu_int_factor .
+    ?node_cu_int_factor she:isDevelopedFor she:Copper .
+    ?node_cu_int_factor om:hasFactor ?factor_cu_int .
+
+    BIND(?riskLevelType_cu_int_factor AS ?riskLevelType)
+    BIND(?metalLabel_cu_int_factor AS ?metalLabel)
+    BIND(CONCAT("Factor: ", STR(?factor_cu_int)) AS ?valueOrFactor)
+  }
+  UNION
+  {
+    she:SSVsForMetals skos:prefLabel ?riskLevelType_gen_factors .
+    she:SSVsForMetals af-x:AFX_0000408 ?factor .
+    FILTER(!ISBLANK(?factor))
+    ?factor skos:prefLabel ?factorLabel_gen .
+
+    BIND(?riskLevelType_gen_factors AS ?riskLevelType)
+    BIND(af-x:AFX_0000408 AS ?metalLabel)
+    BIND(?factorLabel_gen AS ?contextOrLandUseLabel)
+  }
+  UNION
+  {
+    she:SSVsForMetals skos:prefLabel ?riskLevelType_pl_factors .
+    she:Poland skos:prefLabel ?polandLabel .
+    she:SSVsForMetals af-x:AFX_0000408 ?bnode_pl .
+    ?bnode_pl prov:atLocation she:Poland .
+    ?bnode_pl rdf:object ?soilProperty_pl .
+    ?soilProperty_pl skos:prefLabel ?soilPropertyLabel_pl .
+
+    BIND(?riskLevelType_pl_factors AS ?riskLevelType)
+    BIND(af-x:AFX_0000408 AS ?metalLabel)
+    BIND(?soilPropertyLabel_pl AS ?contextOrLandUseLabel)
+    BIND(?polandLabel AS ?locationLabel)
+  }
+}
+ORDER BY ?riskLevelType ?metalLabel ?valueOrFactor

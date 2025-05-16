@@ -1,0 +1,24 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?itemDescription ?relationshipURI ?valueDescription
+WHERE {
+  {
+    she:SoilScreeningValues skos:prefLabel ?ssvLabel .
+    she:SoilScreeningValues skos:definition ?definition .
+    BIND(?ssvLabel AS ?itemDescription)
+    BIND(skos:definition AS ?relationshipURI)
+    BIND(?definition AS ?valueDescription)
+  }
+  UNION
+  {
+    she:SoilScreeningValues skos:prefLabel ?ssvLabel .
+    she:SoilScreeningValues obo:RO_0002502 ?dependency .
+    ?dependency skos:prefLabel ?dependencyLabel .
+    BIND(?ssvLabel AS ?itemDescription)
+    BIND(obo:RO_0002502 AS ?relationshipURI)
+    BIND(?dependencyLabel AS ?valueDescription)
+  }
+}
+ORDER BY ?itemDescription ?relationshipURI ?valueDescription

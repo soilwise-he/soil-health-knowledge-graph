@@ -1,0 +1,16 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?gaecStandardLabel ?relatedTopicLabel
+WHERE {
+  ?gaecConcept agrontology:hasAbbreviation "GAEC"@en .
+
+  ?gaecConcept skos:narrower ?gaecStandard .
+
+  ?gaecStandard skos:prefLabel ?gaecStandardLabel .
+
+  ?gaecStandard skos:related ?relatedTopic .
+
+  ?relatedTopic skos:prefLabel ?relatedTopicLabel .
+}
+ORDER BY ?gaecStandardLabel

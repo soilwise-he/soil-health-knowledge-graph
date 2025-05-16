@@ -1,0 +1,114 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX sorelph: <http://sweetontology.net/relaPhysical/>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel ?contextLabel
+WHERE {
+  {
+    she:InternalSoilStrength skos:prefLabel ?issLabel .
+    she:InternalSoilStrength agrontology:smallerThan ?bnode_sc .
+    ?bnode_sc rdf:object she:AdditionalStress .
+    she:AdditionalStress skos:prefLabel ?asLabel_sc .
+    ?bnode_sc agrontology:causes she:SoilCompaction .
+    she:SoilCompaction skos:prefLabel ?scLabel_sc .
+
+    BIND(?issLabel AS ?subjectLabel)
+    BIND(agrontology:smallerThan AS ?predicateURI)
+    BIND(?asLabel_sc AS ?objectLabel)
+    BIND(CONCAT("causes ", ?scLabel_sc) AS ?contextLabel)
+  }
+  UNION
+  {
+    she:InternalSoilStrength skos:prefLabel ?issLabel_eq .
+    she:InternalSoilStrength sio:equivalentTo she:ActualPrecompressionStress .
+    she:ActualPrecompressionStress skos:prefLabel ?apsLabel .
+
+    BIND(?issLabel_eq AS ?subjectLabel)
+    BIND(sio:equivalentTo AS ?predicateURI)
+    BIND(?apsLabel AS ?objectLabel)
+    BIND("" AS ?contextLabel)
+  }
+  UNION
+  {
+    she:AdditionalStress skos:prefLabel ?asLabel_hm .
+    she:AdditionalStress sorelph:from she:HeavyMachinery .
+    she:HeavyMachinery skos:prefLabel ?hmLabel .
+
+    BIND(?asLabel_hm AS ?subjectLabel)
+    BIND(sorelph:from AS ?predicateURI)
+    BIND(?hmLabel AS ?objectLabel)
+    BIND("" AS ?contextLabel)
+  }
+  UNION
+  {
+    she:AdditionalStress skos:prefLabel ?asLabel_dt .
+    she:AdditionalStress sorelph:from she:DenseTrafficking .
+    she:DenseTrafficking skos:prefLabel ?dtLabel .
+
+    BIND(?asLabel_dt AS ?subjectLabel)
+    BIND(sorelph:from AS ?predicateURI)
+    BIND(?dtLabel AS ?objectLabel)
+    BIND("" AS ?contextLabel)
+  }
+  UNION
+  {
+    she:AdditionalStress skos:prefLabel ?asLabel_drv .
+    she:AdditionalStress sorelph:from ?drivingNode .
+    ?drivingNode rdf:object she:Driving .
+    she:Driving skos:prefLabel ?drivingLabel .
+    ?drivingNode af-x:AFX_0000408 she:HighSoilMoistureContent .
+    she:HighSoilMoistureContent skos:prefLabel ?hsmcLabel .
+
+    BIND(?asLabel_drv AS ?subjectLabel)
+    BIND(sorelph:from AS ?predicateURI)
+    BIND(?drivingLabel AS ?objectLabel)
+    BIND(CONCAT("when ", ?hsmcLabel) AS ?contextLabel)
+  }
+  UNION
+  {
+    she:SoilCompaction skos:prefLabel ?scLabel_def .
+    she:SoilCompaction skos:definition ?scdefinition .
+
+    BIND(?scLabel_def AS ?subjectLabel)
+    BIND(skos:definition AS ?predicateURI)
+    BIND(?scdefinition AS ?objectLabel)
+    BIND("" AS ?contextLabel)
+  }
+  UNION
+  {
+    she:PrecompressionStress skos:prefLabel ?psLabel_def .
+    she:PrecompressionStress skos:definition ?psdefinition .
+
+    BIND(?psLabel_def AS ?subjectLabel)
+    BIND(skos:definition AS ?predicateURI)
+    BIND(?psdefinition AS ?objectLabel)
+    BIND("" AS ?contextLabel)
+  }
+  UNION
+  {
+    she:PrecompressionStress skos:prefLabel ?psLabel_emf .
+    she:PrecompressionStress skos:related she:ExternalMechanicalForces .
+    she:ExternalMechanicalForces skos:prefLabel ?emfLabel .
+
+    BIND(?psLabel_emf AS ?subjectLabel)
+    BIND(skos:related AS ?predicateURI)
+    BIND(?emfLabel AS ?objectLabel)
+    BIND("" AS ?contextLabel)
+  }
+  UNION
+  {
+    she:PrecompressionStress skos:prefLabel ?psLabel_sc .
+    she:PrecompressionStress sio:SIO_000210 she:SoilConditions .
+    she:SoilConditions skos:prefLabel ?scCondLabel .
+
+    BIND(?psLabel_sc AS ?subjectLabel)
+    BIND(sio:SIO_000210 AS ?predicateURI)
+    BIND(?scCondLabel AS ?objectLabel)
+    BIND("" AS ?contextLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

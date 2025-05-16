@@ -1,0 +1,93 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX schema: <https://schema.org/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:EcologicalIndicators skos:prefLabel ?eiLabel .
+    she:EssentialBiodiversityVariables skos:prefLabel ?ebvLabel_static .
+    she:EcologicalIndicators agrontology:isDerivedFrom ?derivationNode .
+    ?derivationNode schema:isBasedOn she:EssentialBiodiversityVariables .
+
+    BIND(?eiLabel AS ?subjectLabel)
+    BIND(schema:isBasedOn AS ?predicateURI)
+    BIND(?ebvLabel_static AS ?objectLabel)
+  }
+  UNION
+  {
+    she:EcologicalIndicators skos:prefLabel ?eiLabel_narrower .
+    she:EcologicalIndicators skos:narrower ?specificEcologicalIndicator .
+    ?specificEcologicalIndicator skos:prefLabel ?specificEcologicalIndicatorLabel .
+
+    BIND(?eiLabel_narrower AS ?subjectLabel)
+    BIND(skos:narrower AS ?predicateURI)
+    BIND(?specificEcologicalIndicatorLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:EssentialBiodiversityVariables skos:narrower ?ebv .
+    ?ebv skos:prefLabel ?ebvLabel .
+    ?ebv agrontology:isMeasuredBy ?methodology .
+    she:AnalyticalMethodologies skos:narrower ?methodology .
+    ?methodology skos:prefLabel ?methodologyLabel .
+
+    BIND(?ebvLabel AS ?subjectLabel)
+    BIND(agrontology:isMeasuredBy AS ?predicateURI)
+    BIND(?methodologyLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:FluorescenceMeasurements skos:prefLabel ?fmLabel .
+    she:Incubation skos:prefLabel ?incubationLabel .
+    she:FluorescenceMeasurements agrontology:follows she:Incubation .
+    she:EnzymaticActivity skos:prefLabel ?eaLabel_fm .
+    she:EnzymaticActivity agrontology:isMeasuredBy she:FluorescenceMeasurements .
+    BIND(?eaLabel_fm AS ?subjectLabel)
+    BIND(agrontology:isMeasuredBy AS ?predicateURI)
+    BIND(?fmLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:EnzymaticActivity skos:prefLabel ?eaLabel_inc .
+    she:EnzymaticActivity agrontology:isMeasuredBy she:Incubation .
+    she:Incubation skos:prefLabel ?incubationLabel_obj .
+     BIND(?eaLabel_inc AS ?subjectLabel)
+    BIND(agrontology:isMeasuredBy AS ?predicateURI)
+    BIND(?incubationLabel_obj AS ?objectLabel)
+  }
+  UNION
+  {
+    she:FluorescenceMeasurements skos:prefLabel ?fmLabel_seq .
+    she:Incubation skos:prefLabel ?incubationLabel_seq .
+    she:FluorescenceMeasurements agrontology:follows she:Incubation .
+    BIND(?fmLabel_seq AS ?subjectLabel)
+    BIND(agrontology:follows AS ?predicateURI)
+    BIND(?incubationLabel_seq AS ?objectLabel)
+  }
+  UNION
+  {
+    she:EssentialBiodiversityVariables skos:prefLabel ?ebvLabel_source .
+    she:EssentialBiodiversityVariables dcterms:source she:Guerra2021 .
+    OPTIONAL { she:Guerra2021 skos:prefLabel ?guerraLabel_opt . }
+    BIND(COALESCE(?guerraLabel_opt, STR(she:Guerra2021)) AS ?guerraDisplayLabel)
+
+    BIND(?ebvLabel_source AS ?subjectLabel)
+    BIND(dcterms:source AS ?predicateURI)
+    BIND(?guerraDisplayLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:AnalyticalMethodologies skos:prefLabel ?amLabel_source .
+    she:AnalyticalMethodologies dcterms:source she:Guerra2021 .
+    OPTIONAL { she:Guerra2021 skos:prefLabel ?guerraLabel_opt2 . }
+    BIND(COALESCE(?guerraLabel_opt2, STR(she:Guerra2021)) AS ?guerraDisplayLabel2)
+
+    BIND(?amLabel_source AS ?subjectLabel)
+    BIND(dcterms:source AS ?predicateURI)
+    BIND(?guerraDisplayLabel2 AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

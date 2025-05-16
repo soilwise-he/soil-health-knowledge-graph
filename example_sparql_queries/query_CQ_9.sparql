@@ -1,0 +1,22 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?resultType ?value ?valueLabel
+WHERE {
+  ?ecosystemServicesConcept skos:prefLabel "ecosystem services"@en .
+
+  {
+    ?ecosystemServicesConcept skos:definition ?definition .
+    BIND("Definition" AS ?resultType)
+    BIND(?definition AS ?value)
+    BIND("" AS ?valueLabel)
+  }
+  UNION
+  {
+    ?ecosystemServicesConcept skos:narrower ?typeOfService .
+    ?typeOfService skos:prefLabel ?typeLabel .
+    BIND("Type of Ecosystem Service" AS ?resultType)
+    BIND(?typeOfService AS ?value)
+    BIND(?typeLabel AS ?valueLabel)
+  }
+}
+ORDER BY ?resultType ?valueLabel

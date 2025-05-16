@@ -1,0 +1,39 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+
+SELECT ?itemDescription ?relationshipURI ?valueDescription
+WHERE {
+  {
+    she:NPRatios agrontology:greaterThan ?limitNodeP .
+    ?limitNodeP af-x:AFX_0000408 ?treeSpeciesP .
+    ?treeSpeciesP skos:prefLabel ?treeSpeciesLabelP .
+    FILTER(?treeSpeciesP IN (she:ConiferousTreeSpecies, she:DeciduousTreeSpecies))
+
+    ?limitNodeP qudt:numericValue ?numericValueP .
+    ?limitNodeP she:indicates she:PLimitation .
+    she:PLimitation skos:prefLabel ?pLimitationLabel .
+
+    BIND(CONCAT("N/P Ratio for ", ?treeSpeciesLabelP) AS ?itemDescription)
+    BIND(agrontology:greaterThan AS ?relationshipURI)
+    BIND(CONCAT(STR(?numericValueP), " (N/P Ratio > ", STR(?numericValueP), " indicates ", ?pLimitationLabel, ")") AS ?valueDescription)
+  }
+  UNION
+  {
+    she:NPRatios agrontology:smallerThan ?limitNodeN .
+    ?limitNodeN af-x:AFX_0000408 ?treeSpeciesN .
+    ?treeSpeciesN skos:prefLabel ?treeSpeciesLabelN .
+    FILTER(?treeSpeciesN IN (she:ConiferousTreeSpecies, she:DeciduousTreeSpecies))
+
+    ?limitNodeN qudt:numericValue ?numericValueN .
+    ?limitNodeN she:indicates she:NLimitation .
+    she:NLimitation skos:prefLabel ?nLimitationLabel .
+
+    BIND(CONCAT("N/P Ratio for ", ?treeSpeciesLabelN) AS ?itemDescription)
+    BIND(agrontology:smallerThan AS ?relationshipURI)
+    BIND(CONCAT(STR(?numericValueN), " (N/P Ratio < ", STR(?numericValueN), " indicates ", ?nLimitationLabel, ")") AS ?valueDescription)
+  }
+}
+ORDER BY ?itemDescription ?relationshipURI

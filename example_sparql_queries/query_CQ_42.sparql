@@ -1,0 +1,32 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?itemDescription ?relationshipOrProperty ?valueDescription
+WHERE {
+  {
+    ?soilAcidificationConcept skos:prefLabel "soil acidification"@en .
+    ?soilAcidificationConcept skos:definition ?definition .
+
+    BIND("Soil Acidification" AS ?itemDescription)
+    BIND(skos:definition AS ?relationshipOrProperty)
+    BIND(?definition AS ?valueDescription)
+  }
+  UNION
+  {
+    ?soilAcidificationConcept skos:prefLabel "soil acidification"@en .
+    she:UnlimedAgriculturalLand skos:prefLabel ?ualLabel .
+
+    ?soilAcidificationConcept agrontology:affects ?influenceNode .
+    ?influenceNode rdf:object she:UnlimedAgriculturalLand .
+    ?influenceNode agrontology:isCausedBy ?anthropogenicCause .
+    ?anthropogenicCause a ?anthropogenicCauseType .
+    ?anthropogenicCause skos:prefLabel ?causeLabel .
+
+    BIND(CONCAT("Soil Acidification in ", ?ualLabel) AS ?itemDescription)
+    BIND(agrontology:isCausedBy AS ?relationshipOrProperty)
+    BIND(?causeLabel AS ?valueDescription)
+  }
+}
+ORDER BY ?itemDescription ?relationshipOrProperty

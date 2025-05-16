@@ -1,0 +1,49 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:SoilProtectionRegulations skos:prefLabel ?sprLabel .
+    she:SoilProtectionRegulations sio:SIO_000291 ?bnode_spr .
+    ?bnode_spr agrontology:isBeneficialFor ?benefitTarget_spr .
+    ?benefitTarget_spr skos:prefLabel ?benefitTargetLabel_spr .
+
+    BIND(?sprLabel AS ?subjectLabel)
+    BIND(agrontology:isBeneficialFor AS ?predicateURI)
+    BIND(?benefitTargetLabel_spr AS ?objectLabel)
+  }
+  UNION
+  {
+    she:SoilProtectionProcedures skos:prefLabel ?sppLabel .
+    she:SoilProtectionProcedures sio:SIO_000291 ?bnode_spp .
+    ?bnode_spp agrontology:isBeneficialFor ?benefitTarget_spp .
+    ?benefitTarget_spp skos:prefLabel ?benefitTargetLabel_spp .
+
+    BIND(?sppLabel AS ?subjectLabel)
+    BIND(agrontology:isBeneficialFor AS ?predicateURI)
+    BIND(?benefitTargetLabel_spp AS ?objectLabel)
+  }
+  UNION
+  {
+    she:SoilRisk skos:prefLabel ?srLabel_def .
+    she:SoilRisk skos:definition ?definition .
+
+    BIND(?srLabel_def AS ?subjectLabel)
+    BIND(skos:definition AS ?predicateURI)
+    BIND(?definition AS ?objectLabel)
+  }
+  UNION
+  {
+    she:SoilRisk skos:prefLabel ?srLabel_rel .
+    she:SoilRisk skos:related ?relatedToRisk .
+    ?relatedToRisk skos:prefLabel ?relatedToRiskLabel .
+
+    BIND(?srLabel_rel AS ?subjectLabel)
+    BIND(skos:related AS ?predicateURI)
+    BIND(?relatedToRiskLabel AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

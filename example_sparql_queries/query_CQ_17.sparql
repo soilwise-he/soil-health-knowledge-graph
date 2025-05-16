@@ -1,0 +1,23 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX unit: <http://qudt.org/vocab/unit/>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?indicatorLabel ?unitLabel
+WHERE {
+  ?maesConcept agrontology:hasAbbreviation "MAES"@en .
+
+  ?indicator dcterms:source ?maesConcept .
+
+  ?indicator she:isEssentialFor she:Soils .
+
+  ?indicator skos:prefLabel ?indicatorLabel .
+
+  OPTIONAL {
+    ?indicator qudt:unit ?unitURI .
+    BIND(STRAFTER(STR(?unitURI), STR(unit:)) AS ?unitLabel)
+  }
+}
+ORDER BY ?indicatorLabel

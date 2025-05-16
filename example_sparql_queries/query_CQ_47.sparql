@@ -1,0 +1,59 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?itemDescription ?relationshipURI ?valueDescription
+WHERE {
+  {
+    she:SoilPollution skos:prefLabel ?spLabel .
+    she:SocietalNeeds skos:prefLabel ?snLabel .
+    she:SoilPollution agrontology:affects ?bnode_sn_context .
+    ?bnode_sn_context rdf:object she:SocietalNeeds .
+    ?bnode_sn_context obo:RO_0002502 ?affected_via_ro .
+    ?affected_via_ro skos:prefLabel ?affected_via_ro_label .
+
+    BIND(CONCAT(?snLabel, " (as affected by ", ?spLabel, ")") AS ?itemDescription)
+    BIND(obo:RO_0002502 AS ?relationshipURI)
+    BIND(?affected_via_ro_label AS ?valueDescription)
+  }
+  UNION
+  {
+    she:SoilPollution skos:prefLabel ?spLabel .
+    she:SoilPollution ?pred_direct ?obj_direct .
+    VALUES ?pred_direct { agrontology:affects obo:RO_0002552 }
+    FILTER (!ISBLANK(?obj_direct))
+    ?obj_direct skos:prefLabel ?obj_direct_label .
+
+    BIND(?spLabel AS ?itemDescription)
+    BIND(?pred_direct AS ?relationshipURI)
+    BIND(?obj_direct_label AS ?valueDescription)
+  }
+  UNION
+  {
+    she:SoilPollution skos:prefLabel ?spLabel .
+    ?subject_affected_via_bnode agrontology:isAffectedBy ?bnode_affecting_sp .
+    ?bnode_affecting_sp rdf:object she:SoilPollution .
+    ?subject_affected_via_bnode skos:prefLabel ?subject_affected_via_bnode_label .
+    OPTIONAL {
+      ?bnode_affecting_sp she:requires ?requirement .
+      ?requirement skos:prefLabel ?requirement_label .
+    }
+
+    BIND(?spLabel AS ?itemDescription)
+    BIND(agrontology:affects AS ?relationshipURI)
+    BIND(IF(BOUND(?requirement_label), CONCAT(?subject_affected_via_bnode_label, " (context: requires ", ?requirement_label, ")"), ?subject_affected_via_bnode_label) AS ?valueDescription)
+  }
+  UNION
+  {
+    she:SoilPollution skos:prefLabel ?spLabel .
+    ?direct_subject_affected agrontology:isAffectedBy she:SoilPollution .
+    ?direct_subject_affected skos:prefLabel ?direct_subject_affected_label .
+
+    BIND(?spLabel AS ?itemDescription)
+    BIND(agrontology:affects AS ?relationshipURI)
+    BIND(?direct_subject_affected_label AS ?valueDescription)
+  }
+}
+ORDER BY ?itemDescription ?relationshipURI ?valueDescription

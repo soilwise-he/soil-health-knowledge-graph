@@ -1,0 +1,70 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:Imperviousness skos:prefLabel ?impLabel_def .
+    she:Imperviousness skos:definition ?definition_imp .
+    BIND(?impLabel_def AS ?subjectLabel)
+    BIND(skos:definition AS ?predicateURI)
+    BIND(?definition_imp AS ?objectLabel)
+  }
+  UNION
+  {
+    she:Imperviousness skos:prefLabel ?impLabel_ss .
+    she:Imperviousness obo:BFO_0000066 she:SoilSurface .
+    she:SoilSurface skos:prefLabel ?ssLabel .
+    BIND(?impLabel_ss AS ?subjectLabel)
+    BIND(obo:BFO_0000066 AS ?predicateURI)
+    BIND(?ssLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:Imperviousness skos:prefLabel ?impLabel_im .
+    she:Imperviousness obo:RO_0002331 she:ImpermeableMaterials .
+    she:ImpermeableMaterials skos:prefLabel ?imMatLabel .
+    BIND(?impLabel_im AS ?subjectLabel)
+    BIND(obo:RO_0002331 AS ?predicateURI)
+    BIND(?imMatLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:Imperviousness skos:prefLabel ?impLabel_eq .
+    she:Imperviousness sio:equivalentTo she:SoilSealing .
+    she:SoilSealing skos:prefLabel ?ssSealLabel .
+    BIND(?impLabel_eq AS ?subjectLabel)
+    BIND(sio:equivalentTo AS ?predicateURI)
+    BIND(?ssSealLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:SealedLand skos:prefLabel ?slLabel_def .
+    she:SealedLand skos:definition ?definition_sl .
+    BIND(?slLabel_def AS ?subjectLabel)
+    BIND(skos:definition AS ?predicateURI)
+    BIND(?definition_sl AS ?objectLabel)
+  }
+  UNION
+  {
+    she:SealedLand skos:prefLabel ?slLabel_broader .
+    she:SealedLand skos:broader she:LandTake .
+    she:LandTake skos:prefLabel ?ltLabel .
+    BIND(?slLabel_broader AS ?subjectLabel)
+    BIND(skos:broader AS ?predicateURI)
+    BIND(?ltLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:Land skos:prefLabel ?landLabel_consumed .
+    she:Land biolink:consumed_by ?consumer .
+    ?consumer skos:prefLabel ?consumerLabel .
+    BIND(?landLabel_consumed AS ?subjectLabel)
+    BIND(biolink:consumed_by AS ?predicateURI)
+    BIND(?consumerLabel AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

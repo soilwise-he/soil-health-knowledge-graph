@@ -1,0 +1,17 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?attributeLabel ?relationshipURI ?objectLabel
+WHERE {
+  she:SoilAttributes skos:narrower ?attributeURI .
+
+  ?attributeURI skos:prefLabel ?attributeLabel .
+  ?attributeURI obo:RO_0002508 she:SoilBiodiversity .
+  she:SoilBiodiversity skos:prefLabel ?sbLabel .
+
+  BIND(?attributeLabel AS ?subjectLabel)
+  BIND(obo:RO_0002508 AS ?relationshipURI)
+  BIND(?sbLabel AS ?objectLabel)
+}
+ORDER BY ?attributeLabel

@@ -1,0 +1,19 @@
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?resultType ?value
+WHERE {
+  ?threat skos:prefLabel "soil threats"@en .
+
+  {
+    ?threat skos:definition ?value .
+    BIND("Definition" AS ?resultType)
+  }
+  UNION
+  {
+    ?threat she:isIndicatedBy ?indicator .
+    ?indicator skos:prefLabel ?value .
+    BIND("Indicator" AS ?resultType)
+  }
+}
+ORDER BY ?resultType

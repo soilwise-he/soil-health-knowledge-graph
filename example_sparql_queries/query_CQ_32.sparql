@@ -1,0 +1,13 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?nutrientTypeLabel ?substanceLabel
+WHERE {
+  ?snsConcept skos:prefLabel "soil nutrient status"@en .
+
+  ?snsConcept skos:related ?nutrientType .
+  ?nutrientType skos:prefLabel ?nutrientTypeLabel .
+
+  ?nutrientType skos:narrower ?substance .
+  ?substance skos:prefLabel ?substanceLabel .
+}
+ORDER BY ?nutrientTypeLabel ?substanceLabel

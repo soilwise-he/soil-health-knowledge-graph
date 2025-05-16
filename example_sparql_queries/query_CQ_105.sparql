@@ -1,0 +1,38 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    ?soilTypeURI_sr skos:prefLabel ?subjectLabel_sr .
+    ?soilTypeURI_sr obo:BFO_0000066 she:SteppicRegion .
+    she:SteppicRegion skos:prefLabel ?srLabel .
+
+    BIND(?subjectLabel_sr AS ?subjectLabel)
+    BIND(obo:BFO_0000066 AS ?predicateURI)
+    BIND(?srLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    ?soilTypeURI_loc skos:prefLabel ?subjectLabel_loc .
+    ?soilTypeURI_loc prov:atLocation she:EasternEurope .
+    she:EasternEurope skos:prefLabel ?eeLabel .
+
+    BIND(?subjectLabel_loc AS ?subjectLabel)
+    BIND(prov:atLocation AS ?predicateURI)
+    BIND(?eeLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:AzonalSoils skos:prefLabel ?asLabel .
+    she:AzonalSoils skos:narrower ?azonalSubTypeURI .
+    ?azonalSubTypeURI skos:prefLabel ?azonalSubTypeLabel .
+
+    BIND(?asLabel AS ?subjectLabel)
+    BIND(skos:narrower AS ?predicateURI)
+    BIND(?azonalSubTypeLabel AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

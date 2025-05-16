@@ -1,0 +1,73 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:Weather skos:prefLabel ?weatherLabel .
+    she:SoilErosionByWater skos:prefLabel ?sebwLabel .
+    she:Weather sio:SIO_000636 she:SoilErosionByWater .
+    BIND(?weatherLabel AS ?subjectLabel)
+    BIND(sio:SIO_000636 AS ?predicateURI)
+    BIND(?sebwLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:HeavyRainfall skos:prefLabel ?hrLabel .
+    she:SoilErosionByWater skos:prefLabel ?sebwLabel_hr .
+    she:HeavyRainfall sio:SIO_000636 she:SoilErosionByWater .
+    BIND(?hrLabel AS ?subjectLabel)
+    BIND(sio:SIO_000636 AS ?predicateURI)
+    BIND(?sebwLabel_hr AS ?objectLabel)
+  }
+  UNION
+  {
+    ?driverConcept obo:OAE_0000186 ?bnode_sse .
+    ?bnode_sse rdf:object she:SevereSoilErosion .
+    ?bnode_sse af-x:AFX_0000408 she:UnsustainableSoilManagement .
+    ?driverConcept skos:prefLabel ?driverLabel .
+    she:SevereSoilErosion skos:prefLabel ?sseLabel .
+    she:UnsustainableSoilManagement skos:prefLabel ?usmLabel .
+
+    BIND(?driverLabel AS ?subjectLabel)
+    BIND(obo:OAE_0000186 AS ?predicateURI)
+    BIND(CONCAT(?sseLabel, " (due to ", ?usmLabel, ")") AS ?objectLabel)
+  }
+  UNION
+  {
+    she:OnsiteEffectsOfSoilErosion skos:prefLabel ?oseLabel .
+    she:OnsiteEffectsOfSoilErosion agrontology:includes she:CropYieldLosses .
+    she:CropYieldLosses skos:prefLabel ?cylLabel .
+
+    BIND(?oseLabel AS ?subjectLabel)
+    BIND(agrontology:includes AS ?predicateURI)
+    BIND(?cylLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:LargeErosionEvents skos:prefLabel ?leeLabel .
+    she:LargeErosionEvents she:isAccompaniedBy she:OffsiteDamage .
+    she:OffsiteDamage skos:prefLabel ?odLabel .
+
+    BIND(?leeLabel AS ?subjectLabel)
+    BIND(she:isAccompaniedBy AS ?predicateURI)
+    BIND(?odLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:LargeErosionEvents skos:prefLabel ?leeLabel_spec .
+    she:LargeErosionEvents she:isAccompaniedBy ?specificOffsiteDamage .
+    she:OffsiteDamage agrontology:includes ?specificOffsiteDamage .
+    ?specificOffsiteDamage skos:prefLabel ?specificOffsiteDamageLabel .
+
+    BIND(?leeLabel_spec AS ?subjectLabel)
+    BIND(she:isAccompaniedBy AS ?predicateURI)
+    BIND(?specificOffsiteDamageLabel AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

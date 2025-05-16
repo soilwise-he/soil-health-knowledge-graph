@@ -88,12 +88,6 @@ she:BiomassGrowth a skos:Concept ;
             rdf:object she:AdditionalInputs ] ;
     skos:prefLabel "biomass growth"@en .
 
-she:BlockedSoilPores a skos:Concept ;
-    agrontology:affects she:SlipEffects,
-        she:SmearingEffects ;
-    af-x:AFX_0002727 [ obo:RO_0002326 she:MassExchanges ] ;
-    skos:prefLabel "blocked soil pores"@en .
-
 she:BuildingConstruction a skos:Concept ;
     obo:RO_0002331 she:GreyRecycling ;
     skos:exactMatch agrovoc:c_1140 ;
@@ -541,15 +535,6 @@ she:SOCToSOMConversion a skos:Concept ;
             she:appliesTo she:ForestFloors ] ;
     skos:note "Since SOM is difficult to measure directly, it is common practice to measure and report SOC."@en ;
     skos:prefLabel "SOC to SOM conversion"@en .
-
-she:SOMCNRatio a skos:Concept ;
-    agrontology:affects she:DissolvedOrganicMatterFormation,
-        she:NitrogenousFertiliserNeed,
-        she:NitrousOxideRelease ;
-    dcterms:source she:Kindler2011,
-        she:Mu2009,
-        she:Schjonning2018 ;
-    skos:prefLabel "SOM C/N ratio"@en .
 
 she:SSVCriticalRiskLevel a skos:Concept ;
     sorelm:hasThreshold [ af-x:AFX_0000408 she:ProtectedAreas ;
@@ -1545,6 +1530,7 @@ she:DispersibleClay a skos:Concept ;
     skos:prefLabel "dispersible clay"@en .
 
 she:DissolvedOrganicMatterFormation a skos:Concept ;
+    agrontology:isAffectedBy she:SOMCNRatio ;
     skos:prefLabel "dissolved organic matter formation"@en .
 
 she:Disturbance a skos:Concept ;
@@ -2816,6 +2802,7 @@ she:NitrousOxide a skos:Concept ;
     skos:prefLabel "nitrous oxide"@en .
 
 she:NitrousOxideRelease a skos:Concept ;
+    agrontology:isAffectedBy she:SOMCNRatio ;
     skos:prefLabel "nitrous oxide release"@en .
 
 she:NonagriculturalSoil a skos:Concept ;
@@ -3593,6 +3580,7 @@ she:Size a skos:Concept ;
     skos:prefLabel "size"@en .
 
 she:SlipEffects a skos:Concept ;
+    agrontology:isAffectedBy she:BlockedSoilPores ;
     sorelph:from she:DensifiedAggregates ;
     skos:prefLabel "slip effects"@en .
 
@@ -3612,6 +3600,7 @@ she:Sludges a skos:Concept ;
     skos:prefLabel "sludges"@en .
 
 she:SmearingEffects a skos:Concept ;
+    agrontology:isAffectedBy she:BlockedSoilPores ;
     sorelph:from she:DensifiedAggregates ;
     skos:prefLabel "smearing effects"@en .
 
@@ -4715,6 +4704,12 @@ she:Bioturbation a skos:Concept ;
     skos:exactMatch agrovoc:c_a3354940 ;
     skos:prefLabel "bioturbation"@en .
 
+she:BlockedSoilPores a skos:Concept ;
+    agrontology:affects she:SlipEffects,
+        she:SmearingEffects ;
+    af-x:AFX_0002727 [ obo:RO_0002326 she:MassExchanges ] ;
+    skos:prefLabel "blocked soil pores"@en .
+
 she:Bone2010 a dcterms:BibliographicResource ;
     dcterms:date "2010" .
 
@@ -4739,12 +4734,6 @@ she:CAP a dcterms:Policy ;
     skos:narrower she:CAP2013,
         she:CAP20232027 ;
     skos:prefLabel "common agricultural policy"@en .
-
-she:CAP2013 a dcterms:Policy ;
-    dcterms:isReplacedBy she:CAP20232027 ;
-    skos:broader she:CAP ;
-    skos:prefLabel "2013 CAP regulation"@en ;
-    skos:related she:RegulationEUNo13062013 .
 
 she:CarbonAmount a skos:Concept ;
     agrontology:measures she:NutrientCycling ;
@@ -5042,6 +5031,7 @@ she:Digestate a skos:Concept ;
     skos:prefLabel "digestate"@en .
 
 she:Dioxins a skos:Concept ;
+    skos:broader she:HumanmadeOrganicPollutants ;
     skos:exactMatch agrovoc:c_33477 ;
     skos:prefLabel "dioxins"@en .
 
@@ -5407,10 +5397,6 @@ she:GullyErosionSeverity a skos:Concept ;
 she:HaaseLathrop2003 a dcterms:BibliographicResource ;
     dcterms:date "2003" .
 
-she:HabitatForBiodiversity a skos:Concept ;
-    agrontology:isIncludedIn she:SoilFunctions ;
-    skos:prefLabel "habitat for biodiversity"@en .
-
 she:HarmfulOrganisms a skos:Concept ;
     obo:RO_0002335 she:IntensiveRotation ;
     skos:narrower she:PhytophagousNematodes ;
@@ -5466,13 +5452,6 @@ she:HumanHealthProtection a skos:Concept ;
     skos:prefLabel "human health protection"@en ;
     skos:related she:SoilFunctions,
         she:SoilServices .
-
-she:HumanmadeOrganicPollutants a skos:Concept ;
-    skos:narrower she:Dioxins,
-        she:Microplastics,
-        she:PAHs,
-        she:PFAS ;
-    skos:prefLabel "human-made organic pollutants"@en .
 
 she:HumicOhHorizon a skos:Concept ;
     skos:broader she:OrganicLayer ;
@@ -6437,6 +6416,7 @@ she:SoilDwellingOrganismHabitat a skos:Concept ;
 
 she:SoilEconomicFunctions a skos:Concept ;
     agrontology:isAffectedBy she:SoilCompaction ;
+    agrontology:isIncludedIn she:SoilFunctions ;
     skos:prefLabel "soil economic functions"@en .
 
 she:SoilEcosystem a skos:Concept ;
@@ -6953,6 +6933,12 @@ she:Brussels a schema:City ;
 she:Buenemann2018 a dcterms:BibliographicResource ;
     dcterms:date "2018" .
 
+she:CAP2013 a dcterms:Policy ;
+    dcterms:isReplacedBy she:CAP20232027 ;
+    skos:broader she:CAP ;
+    skos:prefLabel "2013 CAP regulation"@en ;
+    skos:related she:RegulationEUNo13062013 .
+
 she:CLEAModel a sio:SIO_000510 ;
     agrontology:makeUseOf she:GeneralSoilIndicators,
         she:GeneralSoilProperties ;
@@ -7197,6 +7183,10 @@ she:HabitatExtent a skos:Concept ;
         she:SoilStructure ;
     skos:broader she:EssentialBiodiversityVariables ;
     skos:prefLabel "habitat extent"@en .
+
+she:HabitatForBiodiversity a skos:Concept ;
+    skos:broader she:SoilFunctions ;
+    skos:prefLabel "habitat for biodiversity"@en .
 
 she:HabitatProvision a skos:Concept ;
     agrontology:isBeneficialFor she:SoilDwellingOrganisms ;
@@ -7455,6 +7445,7 @@ she:NitrogenAvailability a skos:Concept ;
     skos:prefLabel "nitrogen availability"@en .
 
 she:NitrogenousFertiliserNeed a skos:Concept ;
+    agrontology:isAffectedBy she:SOMCNRatio ;
     bao:BAO_0095002 she:SoilOrganicCarbon,
         she:SoilOrganicMatter ;
     skos:altLabel "fertiliser nitrogen need"@en ;
@@ -7655,6 +7646,15 @@ she:Roots a skos:Concept ;
 
 she:SOCTurnover a skos:Concept ;
     skos:prefLabel "SOC turnover"@en .
+
+she:SOMCNRatio a skos:Concept ;
+    agrontology:affects she:DissolvedOrganicMatterFormation,
+        she:NitrogenousFertiliserNeed,
+        she:NitrousOxideRelease ;
+    dcterms:source she:Kindler2011,
+        she:Mu2009,
+        she:Schjonning2018 ;
+    skos:prefLabel "SOM C/N ratio"@en .
 
 she:SRiskModel a sio:SIO_000510 ;
     agrontology:makeUseOf she:GeneralSoilIndicators,
@@ -8169,6 +8169,7 @@ she:BuildingLandStock a skos:Concept ;
     skos:prefLabel "building land stock"@en .
 
 she:CAP20232027 a dcterms:Policy ;
+    dcterms:replaces she:CAP2013 ;
     skos:broader she:CAP ;
     skos:prefLabel "regulation for the CAP period 2023-2027"@en .
 
@@ -8533,6 +8534,7 @@ she:MicrobialBiomassIndicators a skos:Concept ;
 she:Microplastics a skos:Concept ;
     agrontology:isIncludedIn she:EmergingConcernPollutants ;
     sio:SIO_000128 she:OrganicSoilImprovers ;
+    skos:broader she:HumanmadeOrganicPollutants ;
     skos:exactMatch agrovoc:c_ccc97cab ;
     skos:prefLabel "microplastics"@en .
 
@@ -9719,6 +9721,13 @@ she:HumanActivities a skos:Concept ;
         she:UnsustainableIrrigationPractices ;
     skos:prefLabel "human activities"@en .
 
+she:HumanmadeOrganicPollutants a skos:Concept ;
+    skos:narrower she:Dioxins,
+        she:Microplastics,
+        she:PAHs,
+        she:PFAS ;
+    skos:prefLabel "human-made organic pollutants"@en .
+
 she:IPCC2019b a dcterms:BibliographicResource ;
     dcterms:date "2019" .
 
@@ -9762,7 +9771,8 @@ she:PAHs a skos:Concept ;
     agrontology:hasAbbreviation "PAHs"@en ;
     agrontology:hasProperty she:NaturallyOccurring ;
     sio:SIO_000128 she:ForestFireSoils ;
-    skos:broader she:OrganicPollutants .
+    skos:broader she:HumanmadeOrganicPollutants,
+        she:OrganicPollutants .
 
 she:PlantSpeciesDiversity a skos:Concept ;
     agrontology:isAffectedBy she:SoilNutrientStatus ;
@@ -10143,7 +10153,8 @@ she:PFAS a skos:Concept ;
     agrontology:hasAbbreviation "PFAS"@en ;
     agrontology:hasProperty she:HighPersistence ;
     agrontology:isIncludedIn she:OrganicCompounds ;
-    skos:broader she:OrganicPollutants ;
+    skos:broader she:HumanmadeOrganicPollutants,
+        she:OrganicPollutants ;
     she:bioaccumulatesIn she:FoodChain .
 
 she:PointSourcePollutionSubindicators a skos:Concept ;
@@ -11074,6 +11085,7 @@ she:SoilEcologicalFunctions a skos:Concept ;
         she:SoilNutrientAvailability,
         she:WaterExchange ;
     agrontology:isAffectedBy she:SoilCompaction ;
+    agrontology:isIncludedIn she:SoilFunctions ;
     skos:prefLabel "soil ecological functions"@en .
 
 she:SoilFertility a skos:Concept ;

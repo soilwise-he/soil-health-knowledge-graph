@@ -1,0 +1,56 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX sorelm: <http://sweetontology.net/relaMath/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?subjectLabel ?predicateURI ?objectOrValueLabel ?explanatoryContext
+WHERE {
+  ?soilCNRatioConcept skos:prefLabel "soil C/N ratio"@en .
+  she:ForestSoils skos:prefLabel ?forestSoilsLabel .
+  she:OrganicLayer skos:prefLabel ?organicLayerLabel .
+
+  {
+    ?soilCNRatioConcept ?thresholdPredicate ?thresholdNode .
+    ?thresholdNode af-x:AFX_0000408 she:ForestSoils .
+    ?thresholdNode obo:BFO_0000066 she:OrganicLayer .
+    ?thresholdNode schema:isBasedOn she:NLeaching .
+    she:NLeaching skos:prefLabel ?nLeachingLabel .
+
+    OPTIONAL { ?thresholdNode qudt:numericValue ?numericVal . }
+    OPTIONAL { ?thresholdNode sorelm:hasInterval ?intervalVal . }
+    BIND(COALESCE(STR(?numericVal), ?intervalVal) AS ?cnValue)
+
+    BIND("soil C/N ratio" AS ?subjectLabel)
+    BIND(?thresholdPredicate AS ?predicateURI)
+    BIND(?cnValue AS ?objectOrValueLabel)
+    BIND(CONCAT("based on ", ?nLeachingLabel) AS ?explanatoryContext)
+    FILTER(BOUND(?cnValue))
+  }
+  UNION
+  {
+    ?soilCNRatioConcept skos:prefLabel ?soilCNRatioLabel_2 .
+    ?soilCNRatioConcept ?rangePredicate ?rangeNode .
+    ?rangeNode qudt:numericValue ?numericRangeVal .
+
+    OPTIONAL {
+        ?rangeNode she:limits she:NLeachingRisk .
+        she:NLeachingRisk skos:prefLabel ?nLeachingRiskLabel_opt .
+        BIND(CONCAT("limits ", ?nLeachingRiskLabel_opt) AS ?context_opt1)
+    }
+    OPTIONAL {
+        ?rangeNode ?retentionPredicate she:NRetentionFraction .
+        she:NRetentionFraction skos:prefLabel ?nRetentionFractionLabel_opt .
+        BIND(CONCAT("low ", ?nRetentionFractionLabel_opt) AS ?context_opt2)
+    }
+
+    BIND(?soilCNRatioLabel_2 AS ?subjectLabel)
+    BIND(?rangePredicate AS ?predicateURI)
+    BIND(STR(?numericRangeVal) AS ?objectOrValueLabel)
+    BIND(COALESCE(?context_opt1, ?context_opt2, "") AS ?explanatoryContext)
+    FILTER(BOUND(?numericRangeVal) && (BOUND(?context_opt1) || BOUND(?context_opt2)))
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectOrValueLabel

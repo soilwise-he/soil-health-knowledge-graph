@@ -1,0 +1,34 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:LandRecycling skos:prefLabel ?lrLabel .
+    she:LandRecycling skos:definition ?lrDefinition .
+    BIND(?lrLabel AS ?subjectLabel)
+    BIND(skos:definition AS ?predicateURI)
+    BIND(?lrDefinition AS ?objectLabel)
+  }
+  UNION
+  {
+    she:LandRecycling skos:prefLabel ?lrLabel_types .
+    she:LandRecycling agrontology:hasType ?recyclingTypeURI .
+    ?recyclingTypeURI skos:prefLabel ?recyclingTypeLabel .
+    BIND(?lrLabel_types AS ?subjectLabel)
+    BIND(agrontology:hasType AS ?predicateURI)
+    BIND(?recyclingTypeLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:LandRecycling agrontology:hasType ?recyclingTypeURI_def .
+    ?recyclingTypeURI_def skos:prefLabel ?recyclingTypeLabel_def .
+    ?recyclingTypeURI_def skos:definition ?typeDefinition .
+
+    BIND(?recyclingTypeLabel_def AS ?subjectLabel)
+    BIND(skos:definition AS ?predicateURI)
+    BIND(?typeDefinition AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

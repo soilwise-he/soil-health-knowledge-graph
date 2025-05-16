@@ -1,0 +1,36 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+
+SELECT ?item ?property ?value
+WHERE {
+  {
+    ?somConcept skos:prefLabel "soil organic matter"@en .
+    ?somConcept skos:definition ?somDefinition .
+    BIND("Soil Organic Matter" AS ?item)
+    BIND("Definition" AS ?property)
+    BIND(?somDefinition AS ?value)
+  }
+  UNION
+  {
+    ?somConcept skos:prefLabel "soil organic matter"@en .
+    ?somConcept agrontology:isMadeFrom ?component .
+    ?component skos:prefLabel ?componentLabel .
+    BIND("Soil Organic Matter" AS ?item)
+    BIND("Is made from" AS ?property)
+    BIND(?componentLabel AS ?value)
+  }
+  UNION
+  {
+    ?conversionConcept skos:prefLabel "SOC to SOM conversion"@en .
+    ?conversionConcept qudt:conversionMultiplier ?factorNode .
+
+    ?factorNode qudt:numericValue ?factorValue .
+    ?factorNode skos:definition ?factorDefinition .
+
+    BIND(CONCAT("Factor: ", STR(?factorValue)) AS ?item)
+    BIND("Definition of Factor" AS ?property)
+    BIND(?factorDefinition AS ?value)
+  }
+}
+ORDER BY ?item ?property

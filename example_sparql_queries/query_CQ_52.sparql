@@ -1,0 +1,39 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:ProtectionTarget skos:prefLabel ?ptLabel .
+    she:ProtectionTarget skos:narrower ?highLevelTarget .
+    ?highLevelTarget skos:prefLabel ?highLevelTargetLabel .
+
+    BIND(?ptLabel AS ?subjectLabel)
+    BIND(skos:narrower AS ?predicateURI)
+    BIND(?highLevelTargetLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:Subtargets skos:prefLabel ?subTargetsConceptLabel .
+    she:Subtargets agrontology:includes ?specificSubTarget .
+    ?specificSubTarget skos:prefLabel ?specificSubTargetLabel .
+
+    BIND(?subTargetsConceptLabel AS ?subjectLabel)
+    BIND(agrontology:includes AS ?predicateURI)
+    BIND(?specificSubTargetLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:Subtargets agrontology:includes ?aSubTargetForDetail .
+    ?aSubTargetForDetail skos:prefLabel ?aSubTargetForDetailLabel .
+    ?aSubTargetForDetail af-x:AFX_0000388 ?furtherDetailedConcept .
+    ?furtherDetailedConcept skos:prefLabel ?furtherDetailedConceptLabel .
+
+    BIND(?aSubTargetForDetailLabel AS ?subjectLabel)
+    BIND(af-x:AFX_0000388 AS ?predicateURI)
+    BIND(?furtherDetailedConceptLabel AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

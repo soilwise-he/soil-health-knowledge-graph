@@ -1,0 +1,22 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+
+SELECT ?indicatorCategoryLabel ?indicatorLabel ?valueLabel
+WHERE {
+  {
+    she:TopsoilCompactionParameters skos:prefLabel ?tcpLabel_1 .
+    she:TopsoilCompactionParameters skos:narrower ?indicator .
+    ?indicator skos:prefLabel ?indicatorLabel_main .
+
+    OPTIONAL { ?indicator qudt:symbol ?symbol_val . }
+
+    BIND(?tcpLabel_1 AS ?indicatorCategoryLabel)
+    BIND(?indicatorLabel_main AS ?indicatorLabel)
+    BIND(IF(BOUND(?symbol_val),
+            CONCAT("Symbol: ", STR(?symbol_val)),
+            "")
+         AS ?valueLabel)
+  }
+}
+ORDER BY ?indicatorCategoryLabel ?indicatorLabel ?valueLabel

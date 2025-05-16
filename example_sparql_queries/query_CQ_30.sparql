@@ -1,0 +1,33 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?item ?propertyOrRole ?valueOrFactorLabel
+WHERE {
+  {
+    ?csConcept skos:prefLabel "carbon sequestration"@en .
+    ?csConcept skos:definition ?definition .
+    BIND("Carbon Sequestration" AS ?item)
+    BIND(skos:definition AS ?propertyOrRole)
+    BIND(?definition AS ?valueOrFactorLabel)
+  }
+  UNION
+  {
+    ?sspConcept skos:prefLabel "soil sequestration potential"@en .
+    {
+      ?sspConcept obo:RO_0002336 ?influencingFactor .
+      ?influencingFactor skos:prefLabel ?influencingFactorLabel .
+      BIND("Soil Sequestration Potential" AS ?item)
+      BIND(obo:RO_0002336 AS ?propertyOrRole)
+      BIND(?influencingFactorLabel AS ?valueOrFactorLabel)
+    }
+    UNION
+    {
+      ?outputConcept obo:RO_0017004 ?sspConcept .
+      ?outputConcept skos:prefLabel ?outputConceptLabel .
+      BIND("Soil Sequestration Potential" AS ?item)
+      BIND(obo:RO_0017004 AS ?propertyOrRole)
+      BIND(?outputConceptLabel AS ?valueOrFactorLabel)
+    }
+  }
+}
+ORDER BY ?item ?propertyOrRole

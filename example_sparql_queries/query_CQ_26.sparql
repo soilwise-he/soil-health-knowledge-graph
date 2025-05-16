@@ -1,0 +1,34 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?item ?predicateURI ?value
+WHERE {
+  {
+    ?socThresholdDerivationConcept skos:prefLabel "SOC threshold derivation"@en .
+    ?socThresholdDerivationConcept she:focusesOn ?focusItem .
+    ?focusItem skos:prefLabel ?focusItemLabel .
+
+    ?socThresholdsConcept skos:prefLabel "SOC thresholds"@en .
+    ?socThresholdsConcept she:isDevelopedFor ?sasmConcept .
+    ?sasmConcept skos:prefLabel ?sasmLabel .
+
+    BIND(CONCAT("SOC Threshold Derivation (for ", ?sasmLabel, ")") AS ?item)
+    BIND(she:focusesOn AS ?predicateURI)
+    BIND(?focusItemLabel AS ?value)
+  }
+  UNION
+  {
+    ?socThresholdDerivationConcept skos:prefLabel "SOC threshold derivation"@en .
+    ?socThresholdDerivationConcept she:focusesOn ?focusItem . 
+    ?focusItem skos:prefLabel ?focusItemLabel .
+    
+    ?focusItem obo:RO_0002502 ?dependencyItem . 
+    ?dependencyItem skos:prefLabel ?dependencyItemLabel .
+
+    BIND(?focusItemLabel AS ?item)
+    BIND(obo:RO_0002502 AS ?predicateURI) 
+    BIND(?dependencyItemLabel AS ?value)
+  }
+}
+ORDER BY ?item ?predicateURI ?value

@@ -1,0 +1,366 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX unit: <http://qudt.org/vocab/unit/>
+PREFIX sorelm: <http://sweetontology.net/relaMath/>
+PREFIX sorelsp: <http://sweetontology.net/reprSpace/>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+
+SELECT ?functionalGroupLabel ?propertyType ?propertyValueDescription
+WHERE {
+  {
+    she:Earthworms skos:prefLabel ?fgLabel .
+    {
+      she:Earthworms biolink:consumes ?consumedItem .
+      ?consumedItem skos:prefLabel ?consumedItemLabel .
+      BIND(biolink:consumes AS ?propType)
+      BIND(?consumedItemLabel AS ?propValue)
+    }
+    UNION
+    {
+      she:Earthworms she:hasDensity ?densityNode .
+      ?densityNode sorelm:hasUpperBound ?densityUpperBound .
+      ?densityNode qudt:unit ?densityUnitURI .
+      OPTIONAL { ?densityUnitURI skos:prefLabel ?unitLabelFromPrefD . }
+      BIND(COALESCE(?unitLabelFromPrefD, STRAFTER(STR(?densityUnitURI), STR(unit:))) AS ?densityUnit)
+      BIND(she:hasDensity AS ?propType)
+      BIND(CONCAT("up to ", STR(?densityUpperBound), " ", ?densityUnit) AS ?propValue)
+    }
+    UNION
+    {
+      she:Earthworms she:hasBiomass ?biomassNode .
+      ?biomassNode sorelm:hasInterval ?biomassInterval .
+      ?biomassNode qudt:unit ?biomassUnitURI .
+      OPTIONAL { ?biomassUnitURI skos:prefLabel ?unitLabelFromPrefB1 . }
+      BIND(COALESCE(?unitLabelFromPrefB1, STRAFTER(STR(?biomassUnitURI), STR(unit:))) AS ?biomassUnit)
+      BIND(she:hasBiomass AS ?propType)
+      BIND(CONCAT(?biomassInterval, " ", ?biomassUnit) AS ?propValue)
+    }
+    UNION
+    {
+      she:Earthworms she:hasFreshBiomass ?freshBiomassNode .
+      ?freshBiomassNode sorelm:hasUpperBound ?freshBiomassUpperBound .
+      ?freshBiomassNode qudt:unit ?freshBiomassUnitURI .
+      OPTIONAL { ?freshBiomassUnitURI skos:prefLabel ?unitLabelFromPrefB2 . }
+      BIND(COALESCE(?unitLabelFromPrefB2, STRAFTER(STR(?freshBiomassUnitURI), STR(unit:))) AS ?freshBiomassUnit)
+      BIND(she:hasFreshBiomass AS ?propType)
+      BIND(CONCAT("up to ", STR(?freshBiomassUpperBound), " ", ?freshBiomassUnit) AS ?propValue)
+    }
+    BIND(?fgLabel AS ?functionalGroupLabel)
+    BIND(?propType AS ?propertyType)
+    BIND(?propValue AS ?propertyValueDescription)
+  }
+  UNION
+  {
+    she:Enchytraeids skos:prefLabel ?fgLabel .
+    {
+      she:Enchytraeids agrontology:hasCommonNameConcept ?commonNameConcept .
+      ?commonNameConcept skos:prefLabel ?commonNameLabel .
+      BIND(agrontology:hasCommonNameConcept AS ?propType)
+      BIND(?commonNameLabel AS ?propValue)
+    }
+    UNION
+    {
+      she:Enchytraeids agrontology:smallerThan she:Earthworms .
+      she:Earthworms skos:prefLabel ?ewLabel .
+      BIND(agrontology:smallerThan AS ?propType)
+      BIND(?ewLabel AS ?propValue)
+    }
+    UNION
+    {
+      she:Enchytraeids she:hasDensity ?densityNode .
+      ?densityNode sorelm:hasInterval ?densityInterval .
+      ?densityNode qudt:unit ?densityUnitURI .
+      OPTIONAL { ?densityUnitURI skos:prefLabel ?unitLabelFromPrefD_enc . }
+      BIND(COALESCE(?unitLabelFromPrefD_enc, STRAFTER(STR(?densityUnitURI), STR(unit:))) AS ?densityUnit)
+      BIND(she:hasDensity AS ?propType)
+      BIND(CONCAT(?densityInterval, " ", ?densityUnit) AS ?propValue)
+    }
+    UNION
+    {
+      she:Enchytraeids she:hasBiomass ?biomassNode .
+      ?biomassNode sorelm:hasUpperBound ?biomassUpperBound .
+      ?biomassNode qudt:unit ?biomassUnitURI .
+      OPTIONAL { ?biomassUnitURI skos:prefLabel ?unitLabelFromPrefB_enc . }
+      BIND(COALESCE(?unitLabelFromPrefB_enc, STRAFTER(STR(?biomassUnitURI), STR(unit:))) AS ?biomassUnit)
+      BIND(she:hasBiomass AS ?propType)
+      BIND(CONCAT("up to ", STR(?biomassUpperBound), " ", ?biomassUnit) AS ?propValue)
+    }
+    BIND(?fgLabel AS ?functionalGroupLabel)
+    BIND(?propType AS ?propertyType)
+    BIND(?propValue AS ?propertyValueDescription)
+  }
+  UNION
+  {
+    she:Mites skos:prefLabel ?fgLabel .
+    {
+      she:Mites skos:broader ?feedingType .
+      ?feedingType skos:prefLabel ?feedingTypeLabel .
+      BIND(skos:broader AS ?propType)
+      BIND(?feedingTypeLabel AS ?propValue)
+    }
+    UNION
+    {
+      she:Mites obo:MICRO_0000105 ?sizeNode .
+      ?sizeNode qudt:numericValue ?sizeValue .
+      ?sizeNode qudt:unit ?sizeUnitURI .
+      OPTIONAL { ?sizeUnitURI skos:prefLabel ?unitLabelFromPrefS_mit . }
+      BIND(COALESCE(?unitLabelFromPrefS_mit, STRAFTER(STR(?sizeUnitURI), STR(unit:))) AS ?sizeUnit)
+      BIND(obo:MICRO_0000105 AS ?propType)
+      BIND(CONCAT(STR(?sizeValue), " ", ?sizeUnit) AS ?propValue)
+    }
+    UNION
+    {
+      she:Mites she:hasDensity ?densityNode .
+      ?densityNode qudt:valueSN ?densityValueSN .
+      ?densityNode qudt:unit ?densityUnitURI .
+      OPTIONAL { ?densityUnitURI skos:prefLabel ?unitLabelFromPrefD_mit . }
+      BIND(COALESCE(?unitLabelFromPrefD_mit, STRAFTER(STR(?densityUnitURI), STR(unit:))) AS ?densityUnit)
+      BIND(she:hasDensity AS ?propType)
+      BIND(CONCAT("about ", STR(?densityValueSN), " ", ?densityUnit) AS ?propValue)
+    }
+    UNION
+    {
+      she:Mites she:hasBiomass ?biomassNode .
+      ?biomassNode sorelm:hasUpperBound ?biomassUpperBound .
+      ?biomassNode qudt:unit ?biomassUnitURI .
+      OPTIONAL { ?biomassUnitURI skos:prefLabel ?unitLabelFromPrefB_mit . }
+      BIND(COALESCE(?unitLabelFromPrefB_mit, STRAFTER(STR(?biomassUnitURI), STR(unit:))) AS ?biomassUnit)
+      BIND(she:hasBiomass AS ?propType)
+      BIND(CONCAT("up to ", STR(?biomassUpperBound), " ", ?biomassUnit) AS ?propValue)
+    }
+    BIND(?fgLabel AS ?functionalGroupLabel)
+    BIND(?propType AS ?propertyType)
+    BIND(?propValue AS ?propertyValueDescription)
+  }
+  UNION
+  {
+    she:Collembola skos:prefLabel ?fgLabel .
+    {
+      she:Collembola skos:broader ?feedingType .
+      ?feedingType skos:prefLabel ?feedingTypeLabel .
+      BIND(skos:broader AS ?propType)
+      BIND(?feedingTypeLabel AS ?propValue)
+    }
+    UNION
+    {
+      she:Collembola obo:MICRO_0000105 ?sizeNode .
+      ?sizeNode qudt:numericValue ?sizeValue .
+      ?sizeNode qudt:unit ?sizeUnitURI .
+      OPTIONAL { ?sizeUnitURI skos:prefLabel ?unitLabelFromPrefS_col . }
+      BIND(COALESCE(?unitLabelFromPrefS_col, STRAFTER(STR(?sizeUnitURI), STR(unit:))) AS ?sizeUnit)
+      BIND(obo:MICRO_0000105 AS ?propType)
+      BIND(CONCAT(STR(?sizeValue), " ", ?sizeUnit) AS ?propValue)
+    }
+    UNION
+    {
+      she:Collembola she:hasDensity ?densityNode .
+      ?densityNode sorelm:hasInterval ?densityInterval .
+      ?densityNode qudt:unit ?densityUnitURI .
+      OPTIONAL { ?densityUnitURI skos:prefLabel ?unitLabelFromPrefD_col . }
+      BIND(COALESCE(?unitLabelFromPrefD_col, STRAFTER(STR(?densityUnitURI), STR(unit:))) AS ?densityUnit)
+      BIND(she:hasDensity AS ?propType)
+      BIND(CONCAT(?densityInterval, " ", ?densityUnit) AS ?propValue)
+    }
+    UNION
+    {
+      she:Collembola she:hasBiomass ?biomassNode .
+      ?biomassNode sorelm:hasUpperBound ?biomassUpperBound .
+      ?biomassNode qudt:unit ?biomassUnitURI .
+      OPTIONAL { ?biomassUnitURI skos:prefLabel ?unitLabelFromPrefB_col . }
+      BIND(COALESCE(?unitLabelFromPrefB_col, STRAFTER(STR(?biomassUnitURI), STR(unit:))) AS ?biomassUnit)
+      BIND(she:hasBiomass AS ?propType)
+      BIND(CONCAT("up to ", STR(?biomassUpperBound), " ", ?biomassUnit) AS ?propValue)
+    }
+    BIND(?fgLabel AS ?functionalGroupLabel)
+    BIND(?propType AS ?propertyType)
+    BIND(?propValue AS ?propertyValueDescription)
+  }
+  UNION
+  {
+    she:Nematodes skos:prefLabel ?fgLabel .
+    {
+      she:Nematodes skos:broader ?feedingType .
+      ?feedingType skos:prefLabel ?feedingTypeLabel .
+      BIND(skos:broader AS ?propType)
+      BIND(?feedingTypeLabel AS ?propValue)
+    }
+    UNION
+    {
+      she:Nematodes obo:MICRO_0000105 ?sizeNode .
+      ?sizeNode qudt:numericValue ?sizeValue .
+      ?sizeNode qudt:unit ?sizeUnitURI .
+      OPTIONAL { ?sizeUnitURI skos:prefLabel ?unitLabelFromPrefS_nem . }
+      BIND(COALESCE(?unitLabelFromPrefS_nem, STRAFTER(STR(?sizeUnitURI), STR(unit:))) AS ?sizeUnit)
+      BIND(obo:MICRO_0000105 AS ?propType)
+      BIND(CONCAT("about ", STR(?sizeValue), " ", ?sizeUnit) AS ?propValue)
+    }
+    UNION
+    {
+      she:Nematodes she:hasDensity ?densityNode .
+      ?densityNode sorelm:hasInterval ?densityInterval .
+      ?densityNode qudt:unit ?densityUnitURI .
+      OPTIONAL { ?densityUnitURI skos:prefLabel ?unitLabelFromPrefD_nem . }
+      BIND(COALESCE(?unitLabelFromPrefD_nem, STRAFTER(STR(?densityUnitURI), STR(unit:))) AS ?densityUnit)
+      BIND(she:hasDensity AS ?propType)
+      BIND(CONCAT(?densityInterval, " ", ?densityUnit, " soil") AS ?propValue)
+    }
+    UNION
+    {
+      she:Nematodes she:hasBiomass ?biomassNode .
+      ?biomassNode sorelm:hasUpperBound ?biomassUpperBound .
+      ?biomassNode qudt:unit ?biomassUnitURI .
+      OPTIONAL { ?biomassUnitURI skos:prefLabel ?unitLabelFromPrefB_nem . }
+      BIND(COALESCE(?unitLabelFromPrefB_nem, STRAFTER(STR(?biomassUnitURI), STR(unit:))) AS ?biomassUnit)
+      BIND(she:hasBiomass AS ?propType)
+      BIND(CONCAT("up to ", STR(?biomassUpperBound), " ", ?biomassUnit) AS ?propValue)
+    }
+    BIND(?fgLabel AS ?functionalGroupLabel)
+    BIND(?propType AS ?propertyType)
+    BIND(?propValue AS ?propertyValueDescription)
+  }
+  UNION
+  {
+    she:Protists skos:prefLabel ?fgLabel .
+    {
+      she:Protists skos:broader she:UnicellularAnimals .
+      she:UnicellularAnimals skos:prefLabel ?uaLabel .
+      BIND(skos:broader AS ?propType)
+      BIND(?uaLabel AS ?propValue)
+    }
+    UNION
+    {
+      she:Protists skos:narrower ?subtype .
+      ?subtype skos:prefLabel ?subtypeLabel .
+      BIND(skos:narrower AS ?propType)
+      BIND(?subtypeLabel AS ?propValue)
+    }
+    UNION
+    {
+      she:Protists obo:MICRO_0000105 ?sizeNode .
+      ?sizeNode sorelm:hasInterval ?sizeInterval .
+      ?sizeNode qudt:unit ?sizeUnitURI .
+      OPTIONAL { ?sizeUnitURI skos:prefLabel ?unitLabelFromPrefS_pro . }
+      BIND(COALESCE(?unitLabelFromPrefS_pro, STRAFTER(STR(?sizeUnitURI), STR(unit:))) AS ?sizeUnit)
+      BIND(obo:MICRO_0000105 AS ?propType)
+      BIND(CONCAT(?sizeInterval, " ", ?sizeUnit) AS ?propValue)
+    }
+    UNION
+    {
+      she:Protists she:hasDensity ?densityNode .
+      ?densityNode qudt:valueSN ?densityValueSN .
+      ?densityNode qudt:unit ?densityUnitURI .
+      OPTIONAL { ?densityUnitURI skos:prefLabel ?unitLabelFromPrefD_pro . }
+      BIND(COALESCE(?unitLabelFromPrefD_pro, STRAFTER(STR(?densityUnitURI), STR(unit:))) AS ?densityUnit)
+      BIND(she:hasDensity AS ?propType)
+      BIND(CONCAT("about ", STR(?densityValueSN), " cells/", ?densityUnit, " soil") AS ?propValue)
+    }
+    UNION
+    {
+      she:Protists she:hasBiomass ?biomassNode .
+      ?biomassNode qudt:numericValue ?biomassValue .
+      ?biomassNode qudt:unit ?biomassUnitURI .
+      OPTIONAL { ?biomassUnitURI skos:prefLabel ?unitLabelFromPrefB_pro . }
+      BIND(COALESCE(?unitLabelFromPrefB_pro, STRAFTER(STR(?biomassUnitURI), STR(unit:))) AS ?biomassUnit)
+      BIND(she:hasBiomass AS ?propType)
+      BIND(CONCAT("about ", STR(?biomassValue), " ", ?biomassUnit) AS ?propValue)
+    }
+    BIND(?fgLabel AS ?functionalGroupLabel)
+    BIND(?propType AS ?propertyType)
+    BIND(?propValue AS ?propertyValueDescription)
+  }
+  UNION
+  {
+    she:Bacteria skos:prefLabel ?fgLabel .
+    {
+      she:Bacteria skos:definition ?definition .
+      BIND(skos:definition AS ?propType)
+      BIND(?definition AS ?propValue)
+    }
+    UNION
+    {
+      she:Bacteria agrontology:smallerThan ?sizeNode .
+      ?sizeNode qudt:numericValue ?sizeValue .
+      ?sizeNode qudt:unit ?sizeUnitURI .
+      OPTIONAL { ?sizeUnitURI skos:prefLabel ?unitLabelFromPrefS_bac . }
+      BIND(COALESCE(?unitLabelFromPrefS_bac, STRAFTER(STR(?sizeUnitURI), STR(unit:))) AS ?sizeUnit)
+      BIND(agrontology:smallerThan AS ?propType)
+      BIND(CONCAT("smaller than ", STR(?sizeValue), " ", ?sizeUnit) AS ?propValue)
+    }
+    UNION
+    {
+      she:Bacteria she:hasDensity ?densityNode .
+      ?densityNode qudt:valueSN ?densityValueSN .
+      ?densityNode qudt:unit ?densityUnitURI .
+      OPTIONAL { ?densityUnitURI skos:prefLabel ?unitLabelFromPrefD_bac . }
+      BIND(COALESCE(?unitLabelFromPrefD_bac, STRAFTER(STR(?densityUnitURI), STR(unit:))) AS ?densityUnit)
+      BIND(she:hasDensity AS ?propType)
+      BIND(CONCAT("about ", STR(?densityValueSN), " cells/", ?densityUnit, " soil") AS ?propValue)
+    }
+    UNION
+    {
+      she:Bacteria she:hasBiomass ?biomassNode .
+      ?biomassNode sorelm:hasInterval ?biomassInterval .
+      ?biomassNode qudt:unit ?biomassUnitURI .
+      OPTIONAL { ?biomassUnitURI skos:prefLabel ?unitLabelFromPrefB_bac . }
+      BIND(COALESCE(?unitLabelFromPrefB_bac, STRAFTER(STR(?biomassUnitURI), STR(unit:))) AS ?biomassUnit)
+      BIND(she:hasBiomass AS ?propType)
+      BIND(CONCAT(?biomassInterval, " ", ?biomassUnit) AS ?propValue)
+    }
+    BIND(?fgLabel AS ?functionalGroupLabel)
+    BIND(?propType AS ?propertyType)
+    BIND(?propValue AS ?propertyValueDescription)
+  }
+  UNION
+  {
+    she:Fungi skos:prefLabel ?fgLabel .
+    {
+      she:Fungi skos:definition ?definition .
+      BIND(skos:definition AS ?propType)
+      BIND(?definition AS ?propValue)
+    }
+    UNION
+    {
+      she:Fungi agrontology:hasComponent she:Hyphae .
+      she:Hyphae skos:prefLabel ?hyphaeLabel .
+      BIND(agrontology:hasComponent AS ?propType)
+      BIND(?hyphaeLabel AS ?propValue)
+    }
+    UNION
+    {
+      she:Fungi sorelsp:diameter ?diameterNode .
+      ?diameterNode sorelm:hasInterval ?diameterInterval .
+      ?diameterNode qudt:unit ?diameterUnitURI .
+      OPTIONAL { ?diameterUnitURI skos:prefLabel ?unitLabelFromPrefDia_fun . }
+      BIND(COALESCE(?unitLabelFromPrefDia_fun, STRAFTER(STR(?diameterUnitURI), STR(unit:))) AS ?diameterUnit)
+      BIND(sorelsp:diameter AS ?propType)
+      BIND(CONCAT(?diameterInterval, " ", ?diameterUnit) AS ?propValue)
+    }
+    UNION
+    {
+      she:Fungi sorelsp:hasLength ?lengthNode .
+      ?lengthNode sorelm:hasInterval ?lengthInterval .
+      ?lengthNode qudt:unit ?lengthUnitURI .
+      OPTIONAL { ?lengthUnitURI skos:prefLabel ?unitLabelFromPrefLen_fun . }
+      BIND(COALESCE(?unitLabelFromPrefLen_fun, STRAFTER(STR(?lengthUnitURI), STR(she:))) AS ?lengthUnit)
+      BIND(sorelsp:hasLength AS ?propType)
+      BIND(CONCAT(?lengthInterval, " ", ?lengthUnit, " soil") AS ?propValue)
+    }
+    UNION
+    {
+      she:Fungi she:hasBiomass ?biomassNode .
+      ?biomassNode sorelm:hasInterval ?biomassInterval .
+      ?biomassNode qudt:unit ?biomassUnitURI .
+      OPTIONAL { ?biomassUnitURI skos:prefLabel ?unitLabelFromPrefB_fun . }
+      BIND(COALESCE(?unitLabelFromPrefB_fun, STRAFTER(STR(?biomassUnitURI), STR(unit:))) AS ?biomassUnit)
+      BIND(she:hasBiomass AS ?propType)
+      BIND(CONCAT(?biomassInterval, " ", ?biomassUnit) AS ?propValue)
+    }
+    BIND(?fgLabel AS ?functionalGroupLabel)
+    BIND(?propType AS ?propertyType)
+    BIND(?propValue AS ?propertyValueDescription)
+  }
+}
+ORDER BY ?functionalGroupLabel ?propertyType ?propertyValueDescription

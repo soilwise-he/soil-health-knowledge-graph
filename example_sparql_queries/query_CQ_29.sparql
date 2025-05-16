@@ -1,0 +1,52 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX sorelm: <http://sweetontology.net/relaMath/>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+
+SELECT ?landClassificationLabel ?predicateURI ?value
+WHERE {
+  ?socClayRatioConcept skos:prefLabel "SOC/clay ratio"@en .
+
+  {
+    ?socClayRatioConcept sorelm:hasUpperBound ?upperBoundNode .
+    ?upperBoundNode af-x:AFX_0000408 she:DegradedLand ;
+                    prov:atLocation she:Wallonia ;
+                    qudt:numericValue ?numericValueUB .
+    she:DegradedLand skos:prefLabel ?landClassificationLabel .
+    BIND(sorelm:hasUpperBound AS ?predicateURI)
+    BIND(STR(?numericValueUB) AS ?value)
+  }
+  UNION
+  {
+    ?socClayRatioConcept af-x:AFX_0002696 ?intervalNode .
+    ?intervalNode af-x:AFX_0000408 she:TransitionalLand ;
+                  prov:atLocation she:Wallonia ;
+                  sorelm:hasInterval ?intervalValue .
+    she:TransitionalLand skos:prefLabel ?landClassificationLabel .
+    BIND(af-x:AFX_0002696 AS ?predicateURI)
+    BIND(?intervalValue AS ?value)
+  }
+  UNION
+  {
+    ?socClayRatioConcept sorelm:hasLowerBound ?lowerBoundNodeF .
+    ?lowerBoundNodeF af-x:AFX_0000408 she:FavourableLand ;
+                     prov:atLocation she:Wallonia ;
+                     qudt:numericValue ?numericValueLBF .
+    she:FavourableLand skos:prefLabel ?landClassificationLabel .
+    BIND(sorelm:hasLowerBound AS ?predicateURI)
+    BIND(STR(?numericValueLBF) AS ?value)
+  }
+  UNION
+  {
+    ?socClayRatioConcept sorelm:hasLowerBound ?lowerBoundNodeHF .
+    ?lowerBoundNodeHF af-x:AFX_0000408 she:HighlyFavourableLand ;
+                      prov:atLocation she:Wallonia ;
+                      qudt:numericValue ?numericValueLBHF .
+    she:HighlyFavourableLand skos:prefLabel ?landClassificationLabel .
+    BIND(sorelm:hasLowerBound AS ?predicateURI)
+    BIND(STR(?numericValueLBHF) AS ?value)
+  }
+}
+ORDER BY ?landClassificationLabel ?predicateURI

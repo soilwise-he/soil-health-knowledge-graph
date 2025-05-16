@@ -1,0 +1,41 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?subject ?predicate ?object
+WHERE {
+  ?soilFunctionsConcept skos:prefLabel "soil functions"@en .
+  ?soilProcessesConcept skos:prefLabel "soil processes"@en .
+  ?ecosystemServicesConcept skos:prefLabel "ecosystem services"@en .
+
+  {
+    ?soilFunctionsConcept skos:definition ?definitionText .
+    BIND(?soilFunctionsConcept AS ?subject)
+    BIND(IRI(skos:definition) AS ?predicate)
+    BIND(?definitionText AS ?object)
+  }
+  UNION
+  {
+    ?soilFunctionsConcept ?connectingPredicate1 ?soilProcessesConcept .
+
+    BIND(?soilFunctionsConcept AS ?subject)
+    BIND(?connectingPredicate1 AS ?predicate)
+    BIND(?soilProcessesConcept AS ?object)
+  }
+  UNION
+  {
+    ?soilFunctionsConcept ?connectingPredicate2 ?ecosystemServicesConcept .
+
+    BIND(?soilFunctionsConcept AS ?subject)
+    BIND(?connectingPredicate2 AS ?predicate)
+    BIND(?ecosystemServicesConcept AS ?object)
+  }
+  UNION
+  {
+    ?soilProcessesConcept ?connectingPredicate3 ?ecosystemServicesConcept .
+
+    BIND(?soilProcessesConcept AS ?subject)
+    BIND(?connectingPredicate3 AS ?predicate)
+    BIND(?ecosystemServicesConcept AS ?object)
+  }
+}
+
+ORDER BY ?subject ?predicate

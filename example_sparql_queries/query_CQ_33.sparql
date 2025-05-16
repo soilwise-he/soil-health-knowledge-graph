@@ -1,0 +1,49 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?itemDescription ?relationshipURI ?valueDescription
+WHERE {
+  {
+    ?soilFertilityConcept skos:prefLabel "soil fertility"@en .
+    ?parameter obo:RO_0002508 ?soilFertilityConcept .
+    ?parameter skos:prefLabel ?parameterLabel .
+
+    BIND(?parameterLabel AS ?itemDescription)
+    BIND(obo:RO_0002508 AS ?relationshipURI)
+    BIND("Soil Fertility" AS ?valueDescription)
+  }
+  UNION
+  {
+    ?soilParameterConcept skos:prefLabel "soil parameters"@en .
+    ?soilParameterConcept agrontology:isAffectedBy ?influenceNode .
+
+    OPTIONAL {
+      ?influenceNode obo:BFO_0000066 ?agriculture .
+      ?agriculture skos:prefLabel ?agriLabel .
+      ?influenceNode she:inputsFrom ?agriInputSource .
+      ?agriInputSource skos:prefLabel ?agriInputSourceLabel .
+      BIND("soil parameters" AS ?itemDescription)
+      BIND(CONCAT(STR(agrontology:isAffectedBy), ", ", STR(she:inputsFrom)) AS ?relationshipURI)
+      BIND(CONCAT(?agriInputSourceLabel, " (in ", ?agriLabel, ")") AS ?valueDescription)
+    }
+
+    OPTIONAL {
+      ?influenceNode she:inputsFrom ?atmosphericDeposition .
+      ?atmosphericDeposition skos:prefLabel ?atmosDepLabel .
+      ?atmosphericDeposition agrontology:isSourceOf ?atmosSourceNode .
+      ?atmosSourceNode obo:BFO_0000066 ?nonagriculturalSoil .
+      ?nonagriculturalSoil skos:prefLabel ?nonAgriSoilLabel .
+      ?atmosSourceNode rdf:object ?inputConceptFromAtmos .
+      ?inputConceptFromAtmos skos:prefLabel ?inputConceptFromAtmosLabel .
+
+      BIND("soil parameters" AS ?itemDescription)
+      BIND(CONCAT(STR(agrontology:isAffectedBy), ", ", STR(she:inputsFrom)) AS ?relationshipURI)
+      BIND(CONCAT(?atmosDepLabel, " (in ", ?nonAgriSoilLabel, ")") AS ?valueDescription)
+    }
+    FILTER(BOUND(?valueDescription))
+  }
+}
+ORDER BY ?itemDescription ?relationshipURI ?valueDescription

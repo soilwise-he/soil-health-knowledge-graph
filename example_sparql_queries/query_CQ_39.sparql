@@ -1,0 +1,49 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX bao: <http://www.bioassayontology.org/bao#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+
+SELECT ?assessmentFocusLabel ?indicatorLabel ?specificContextLabel
+WHERE {
+  {
+    she:SoilNStatus skos:prefLabel ?snsLabel .
+    she:SoilNStatus bao:BAO_0095002 ?nMeasure .
+    ?nMeasure skos:prefLabel ?nMeasureLabel .
+
+    BIND(?snsLabel AS ?assessmentFocusLabel)
+    BIND(?nMeasureLabel AS ?indicatorLabel)
+    BIND("" AS ?specificContextLabel)
+  }
+  UNION
+  {
+    she:SoilPStatus skos:prefLabel ?spsLabel_b .
+    she:SoilPStatus bao:BAO_0095002 ?pMeasure .
+    ?pMeasure skos:prefLabel ?pMeasureLabel .
+
+    BIND(?spsLabel_b AS ?assessmentFocusLabel)
+    BIND(?pMeasureLabel AS ?indicatorLabel)
+    BIND("" AS ?specificContextLabel)
+  }
+  UNION
+  {
+    she:SoilNStatusIndicators skos:prefLabel ?snsiLabel .
+    she:SoilNStatusIndicators agrontology:includes ?indicatorNode .
+    ?indicatorNode agrontology:isUsedIn she:ForestSoils .
+    she:ForestSoils skos:prefLabel ?forestSoilsLabel .
+    ?indicatorNode rdf:object ?forestNIndicator .
+    ?forestNIndicator skos:prefLabel ?forestNIndicatorLabel .
+
+    OPTIONAL {
+      ?indicatorNode af-x:AFX_0000408 ?furtherContextEntity .
+      ?furtherContextEntity skos:prefLabel ?furtherContextLabelInternal .
+    }
+    BIND(IF(BOUND(?furtherContextLabelInternal), CONCAT(?forestSoilsLabel, " - ", ?furtherContextLabelInternal), ?forestSoilsLabel) AS ?detailedForestContext)
+
+    BIND(?snsiLabel AS ?assessmentFocusLabel)
+    BIND(?forestNIndicatorLabel AS ?indicatorLabel)
+    BIND(?detailedForestContext AS ?specificContextLabel)
+  }
+}
+ORDER BY ?assessmentFocusLabel ?indicatorLabel

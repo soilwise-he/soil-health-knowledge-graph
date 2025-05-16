@@ -1,0 +1,65 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX unit: <http://qudt.org/vocab/unit/>
+PREFIX sorelm: <http://sweetontology.net/relaMath/>
+PREFIX om: <http://www.ontology-of-units-of-measure.org/resource/om-2/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT ?itemDescription ?valueOrInterval ?unitLabel ?sourceLabel
+WHERE {
+  {
+    she:SoilFormationRates skos:prefLabel ?sfrLabel .
+    she:SoilFormationRates af-x:AFX_0002696 ?rateNode .
+    ?rateNode sorelm:hasInterval ?intervalValue .
+    ?rateNode qudt:unit ?unitURI .
+    BIND(STRAFTER(STR(?unitURI), STR(unit:)) AS ?unitStr)
+    ?rateNode dcterms:source ?sourceURI .
+    OPTIONAL { ?sourceURI skos:prefLabel ?sLabelOpt . }
+    OPTIONAL { ?sourceURI dcterms:date ?sDateOpt . }
+    BIND(COALESCE(?sLabelOpt, IF(BOUND(?sDateOpt), CONCAT(STR(?sourceURI)," (",STR(?sDateOpt),")"), STR(?sourceURI))) AS ?sourceDisplay)
+
+    BIND(?sfrLabel AS ?itemDescription)
+    BIND(?intervalValue AS ?valueOrInterval)
+    BIND(?unitStr AS ?unitLabel)
+    BIND(?sourceDisplay AS ?sourceLabel)
+  }
+  UNION
+  {
+    she:SoilFormationRates skos:prefLabel ?sfrLabel_val .
+    she:SoilFormationRates om:hasValue ?valueNode .
+    ?valueNode qudt:numericValue ?numericValue .
+    ?valueNode qudt:unit ?unitURI_val .
+    BIND(STRAFTER(STR(?unitURI_val), STR(unit:)) AS ?unitStr_val)
+    ?valueNode dcterms:source ?sourceURI_val .
+    OPTIONAL { ?sourceURI_val skos:prefLabel ?sLabelOpt_val . }
+    OPTIONAL { ?sourceURI_val dcterms:date ?sDateOpt_val . }
+    BIND(COALESCE(?sLabelOpt_val, IF(BOUND(?sDateOpt_val), CONCAT(STR(?sourceURI_val)," (",STR(?sDateOpt_val),")"), STR(?sourceURI_val))) AS ?sourceDisplay_val)
+
+    BIND(?sfrLabel_val AS ?itemDescription)
+    BIND(STR(?numericValue) AS ?valueOrInterval)
+    BIND(?unitStr_val AS ?unitLabel)
+    BIND(?sourceDisplay_val AS ?sourceLabel)
+  }
+  UNION
+  {
+    she:TolerableSoilLossRate skos:prefLabel ?tslrLabel .
+    she:TolerableSoilLossRate af-x:AFX_0002696 ?tslrNode .
+    ?tslrNode prov:atLocation she:Europe .
+    she:Europe skos:prefLabel ?europeLabel .
+    ?tslrNode sorelm:hasInterval ?tslrIntervalValue .
+    ?tslrNode qudt:unit ?tslrUnitURI .
+    BIND(STRAFTER(STR(?tslrUnitURI), STR(unit:)) AS ?tslrUnitStr)
+    ?tslrNode dcterms:source ?tslrSourceURI .
+    OPTIONAL { ?tslrSourceURI skos:prefLabel ?tslrSourceLabelOpt . }
+    OPTIONAL { ?tslrSourceURI dcterms:date ?tslrSourceDateOpt . }
+    BIND(COALESCE(?tslrSourceLabelOpt, IF(BOUND(?tslrSourceDateOpt), CONCAT(STR(?tslrSourceURI)," (",STR(?tslrSourceDateOpt),")"), STR(?tslrSourceURI))) AS ?tslrSourceDisplay)
+
+    BIND(CONCAT(?tslrLabel, " (for ", ?europeLabel, ")") AS ?itemDescription)
+    BIND(?tslrIntervalValue AS ?valueOrInterval)
+    BIND(?tslrUnitStr AS ?unitLabel)
+    BIND(?tslrSourceDisplay AS ?sourceLabel)
+  }
+}
+ORDER BY ?itemDescription ?sourceLabel ?unitLabel

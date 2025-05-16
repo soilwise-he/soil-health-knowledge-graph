@@ -1,0 +1,54 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX schema: <https://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:NDVIMethod skos:prefLabel ?ndviMethodLabel .
+    she:NDVIMethod agrontology:measures ?bnode_veg_measure .
+    ?bnode_veg_measure rdf:object she:Vegetation .
+    she:Vegetation skos:prefLabel ?vegLabel_measure .
+
+    BIND(?ndviMethodLabel AS ?subjectLabel)
+    BIND(agrontology:measures AS ?predicateURI)
+    BIND(?vegLabel_measure AS ?objectLabel)
+  }
+  UNION
+  {
+    she:NDVIMethod skos:prefLabel ?ndviMethodLabel .
+    she:NDVIMethod agrontology:measures ?bnode_veg_measure_lights .
+    ?bnode_veg_measure_lights rdf:object she:Vegetation .
+    ?bnode_veg_measure_lights schema:isBasedOn ?bnode_lights .
+    ?bnode_lights agrontology:measures ?lightType .
+    VALUES ?lightType { she:NearinfraredLight she:RedLight }
+    ?lightType skos:prefLabel ?lightTypeLabel .
+
+    BIND(?ndviMethodLabel AS ?subjectLabel)
+    BIND(schema:isBasedOn AS ?predicateURI)
+    BIND(?lightTypeLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:Vegetation skos:prefLabel ?vegLabel_gen_nir .
+    she:Vegetation she:reflects she:NearinfraredLight .
+    she:NearinfraredLight skos:prefLabel ?nirLabel_gen .
+
+    BIND(?vegLabel_gen_nir AS ?subjectLabel)
+    BIND(she:reflects AS ?predicateURI)
+    BIND(?nirLabel_gen AS ?objectLabel)
+  }
+  UNION
+  {
+    she:Vegetation skos:prefLabel ?vegLabel_gen_red .
+    she:Vegetation she:absorbs she:RedLight .
+    she:RedLight skos:prefLabel ?redLabel_gen_abs .
+
+    BIND(?vegLabel_gen_red AS ?subjectLabel)
+    BIND(she:absorbs AS ?predicateURI)
+    BIND(?redLabel_gen_abs AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

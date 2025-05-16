@@ -1,0 +1,14 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?commonDefinition
+WHERE {
+  ?soilQualityConcept skos:prefLabel "soil quality"@en .
+  ?soilQualityConcept skos:definition ?definitionSQ .
+
+  ?soilHealthConcept skos:prefLabel "soil health"@en .
+  ?soilHealthConcept skos:definition ?definitionSH .
+
+  FILTER (?definitionSQ = ?definitionSH)
+
+  BIND (?definitionSQ AS ?commonDefinition)
+}

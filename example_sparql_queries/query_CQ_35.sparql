@@ -1,0 +1,46 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+
+SELECT ?itemDescription ?relationshipURI ?valueDescription ?contextDescription
+WHERE {
+  {
+    ?soilNitrogenConcept skos:prefLabel "soil nitrogen"@en .
+    ?soilNitrogenConcept agrontology:isDerivedFrom ?derivationNode .
+    ?derivationNode obo:BFO_0000066 she:AgriculturalSoils .
+    she:AgriculturalSoils skos:prefLabel ?agriSoilsLabel_1a .
+    ?derivationNode rdf:object she:SoilOrganicMatter .
+    she:SoilOrganicMatter skos:prefLabel ?somLabel_1a .
+
+    BIND("Soil Nitrogen" AS ?itemDescription)
+    BIND(agrontology:isDerivedFrom AS ?relationshipURI)
+    BIND(?somLabel_1a AS ?valueDescription)
+    BIND(CONCAT("in ", ?agriSoilsLabel_1a) AS ?contextDescription)
+  }
+  UNION
+  {
+    she:SoilNAvailability skos:prefLabel ?soilNAvailabilityLabel .
+    ?parameterItselfAffectingSNA agrontology:affects she:SoilNAvailability .
+    ?parameterItselfAffectingSNA skos:prefLabel ?parameterItselfAffectingSNALabel .
+
+    BIND(?parameterItselfAffectingSNALabel AS ?itemDescription)
+    BIND(agrontology:affects AS ?relationshipURI)
+    BIND(?soilNAvailabilityLabel AS ?valueDescription)
+    BIND("" AS ?contextDescription)
+  }
+  UNION
+  {
+    ?nInputsConcept skos:prefLabel "N inputs"@en .
+    ?nInputsConcept biolink:consumed_by ?consumer .
+    ?consumer skos:prefLabel ?consumerLabel .
+
+    BIND("N Inputs" AS ?itemDescription)
+    BIND(biolink:consumed_by AS ?relationshipURI)
+    BIND(?consumerLabel AS ?valueDescription)
+    BIND("" AS ?contextDescription)
+  }
+}
+ORDER BY ?itemDescription ?relationshipURI ?valueDescription

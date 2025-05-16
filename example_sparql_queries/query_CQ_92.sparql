@@ -1,0 +1,58 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:SoilSealing skos:prefLabel ?ssLabel .
+    she:SoilSealing skos:definition ?definition .
+    BIND(?ssLabel AS ?subjectLabel)
+    BIND(skos:definition AS ?predicateURI)
+    BIND(?definition AS ?objectLabel)
+  }
+  UNION
+  {
+    she:ImpermeableMaterial skos:prefLabel ?imLabel .
+    she:SoilSealing skos:prefLabel ?ssLabel_im .
+    she:ImpermeableMaterial obo:RO_0002331 she:SoilSealing .
+    BIND(?imLabel AS ?subjectLabel)
+    BIND(obo:RO_0002331 AS ?predicateURI)
+    BIND(?ssLabel_im AS ?objectLabel)
+  }
+  UNION
+  {
+    she:SoilSealing skos:prefLabel ?ssLabel_causes .
+    she:SoilSealing agrontology:causes ?consequence .
+    ?consequence skos:prefLabel ?consequenceLabel .
+    VALUES ?consequence {
+        she:SoilLoss
+        she:SoilBiologicalFunctionLoss
+        she:BiodiversityLoss
+    }
+    BIND(?ssLabel_causes AS ?subjectLabel)
+    BIND(agrontology:causes AS ?predicateURI)
+    BIND(?consequenceLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:SoilSealingBaselines skos:prefLabel ?ssbLabel .
+    she:SoilSealingBaselines schema:isBasedOn she:Policy .
+    she:Policy skos:prefLabel ?policyLabel_ssb .
+    BIND(?ssbLabel AS ?subjectLabel)
+    BIND(schema:isBasedOn AS ?predicateURI)
+    BIND(?policyLabel_ssb AS ?objectLabel)
+  }
+  UNION
+  {
+    she:SoilSealingThresholds skos:prefLabel ?sstLabel .
+    she:SoilSealingThresholds schema:isBasedOn she:Policy .
+    she:Policy skos:prefLabel ?policyLabel_sst .
+    BIND(?sstLabel AS ?subjectLabel)
+    BIND(schema:isBasedOn AS ?predicateURI)
+    BIND(?policyLabel_sst AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

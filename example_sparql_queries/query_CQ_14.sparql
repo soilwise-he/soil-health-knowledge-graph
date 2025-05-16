@@ -1,0 +1,35 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT DISTINCT ?subject ?predicate ?object ?objectLabel
+WHERE {
+  ?scdConcept skos:prefLabel "soil chemical degradation"@en .
+
+  {
+    ?scdConcept skos:definition ?definitionText .
+    BIND(?scdConcept AS ?subject)
+    BIND(skos:definition AS ?predicate)
+    BIND(?definitionText AS ?object)
+    BIND("" AS ?objectLabel)
+  }
+  UNION
+  {
+    ?scdConcept agrontology:includes ?includedConcept .
+    ?includedConcept skos:prefLabel ?includedConceptLabel .
+    BIND(?scdConcept AS ?subject)
+    BIND(agrontology:includes AS ?predicate)
+    BIND(?includedConcept AS ?object)
+    BIND(?includedConceptLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    ?scdConcept she:isCharacterisedBy ?characteristicConcept .
+    ?characteristicConcept skos:prefLabel ?characteristicConceptLabel .
+    BIND(?scdConcept AS ?subject)
+    BIND(she:isCharacterisedBy AS ?predicate)
+    BIND(?characteristicConcept AS ?object)
+    BIND(?characteristicConceptLabel AS ?objectLabel)
+  }
+}
+ORDER BY ?subject ?predicate ?objectLabel

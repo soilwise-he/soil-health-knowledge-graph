@@ -1,0 +1,43 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?itemDescription ?relationshipURI ?valueDescription
+WHERE {
+  {
+    she:SoilPollutionIndicator skos:prefLabel ?spiLabel .
+    she:SoilPollutionIndicator skos:definition ?definition .
+    BIND(?spiLabel AS ?itemDescription)
+    BIND(skos:definition AS ?relationshipURI)
+    BIND(?definition AS ?valueDescription)
+  }
+  UNION
+  {
+    she:ActualState skos:prefLabel ?asLabel .
+    she:CriticalLevel skos:prefLabel ?clLabel .
+    she:ActualState she:isComparedWith she:CriticalLevel .
+    BIND(?asLabel AS ?itemDescription)
+    BIND(she:isComparedWith AS ?relationshipURI)
+    BIND(?clLabel AS ?valueDescription)
+  }
+  UNION
+  {
+    ?useConcept obo:RO_0002508 she:RiskLevel .
+    ?useConcept skos:prefLabel ?useConceptLabel .
+    she:RiskLevel skos:prefLabel ?rlLabel .
+    BIND(?useConceptLabel AS ?itemDescription)
+    BIND(obo:RO_0002508 AS ?relationshipURI)
+    BIND(?rlLabel AS ?valueDescription)
+  }
+  UNION
+  {
+    she:RiskLevel skos:prefLabel ?rlLabel_2 .
+    she:RiskLevel obo:RO_0002508 ?thresholdConcept .
+    OPTIONAL { ?thresholdConcept skos:prefLabel ?thresholdConceptLabel .}
+    OPTIONAL { ?thresholdConcept agrontology:hasAbbreviation ?tcAbbr .}
+    BIND(?rlLabel_2 AS ?itemDescription)
+    BIND(obo:RO_0002508 AS ?relationshipURI)
+    BIND(COALESCE(?tcAbbr, ?thresholdConceptLabel) AS ?valueDescription)
+  }
+}
+ORDER BY ?itemDescription ?relationshipURI ?valueDescription

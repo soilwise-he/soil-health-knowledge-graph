@@ -1,0 +1,13 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  she:SoilPollutionThresholds skos:prefLabel ?subjectLabel .
+  she:SoilPollutionThresholds obo:T4FS_0000577 ?consideredElement .
+  ?consideredElement skos:prefLabel ?objectLabel .
+
+  BIND(obo:T4FS_0000577 AS ?predicateURI)
+}
+ORDER BY ?subjectLabel ?objectLabel

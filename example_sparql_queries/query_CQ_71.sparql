@@ -1,0 +1,165 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX schema: <https://schema.org/>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX sorelph: <http://sweetontology.net/relaPhysical/>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:BiologicalIndicators skos:prefLabel ?biLabel .
+    she:BiologicalIndicators dcterms:source she:Ritz2009 .
+    she:Ritz2009 skos:prefLabel ?ritzLabel .
+    BIND(?biLabel AS ?subjectLabel)
+    BIND(dcterms:source AS ?predicateURI)
+    BIND(COALESCE(?ritzLabel, STR(she:Ritz2009)) AS ?objectLabel)
+  }
+  UNION
+  {
+    she:BiologicalIndicators skos:prefLabel ?biLabel_cat .
+    she:BiologicalIndicators skos:narrower ?categoryURI .
+    ?categoryURI skos:prefLabel ?categoryLabel .
+    VALUES ?categoryURI { she:GenotypebasedIndicators she:PhenotypebasedIndicators she:FunctionbasedIndicators }
+
+    BIND(?biLabel_cat AS ?subjectLabel)
+    BIND(skos:narrower AS ?predicateURI)
+    BIND(?categoryLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    {
+      she:GenotypebasedIndicators skos:prefLabel ?gbiLabel1 .
+      she:GenotypebasedIndicators skos:note ?gbiNote .
+      BIND(?gbiLabel1 AS ?subjectLabel)
+      BIND(skos:note AS ?predicateURI)
+      BIND(?gbiNote AS ?objectLabel)
+    }
+    UNION
+    {
+      she:GenotypebasedIndicators skos:prefLabel ?gbiLabel2 .
+      she:GenotypebasedIndicators schema:isBasedOn she:GenotypicMethods .
+      she:GenotypicMethods skos:prefLabel ?gmLabel .
+      BIND(?gbiLabel2 AS ?subjectLabel)
+      BIND(schema:isBasedOn AS ?predicateURI)
+      BIND(?gmLabel AS ?objectLabel)
+    }
+    UNION
+    {
+      she:GenotypebasedIndicators skos:prefLabel ?gbiLabel3 .
+      she:GenotypebasedIndicators agrontology:benefitsFrom she:MolecularSequencingTechniques .
+      she:MolecularSequencingTechniques skos:prefLabel ?mstLabel .
+      BIND(?gbiLabel3 AS ?subjectLabel)
+      BIND(agrontology:benefitsFrom AS ?predicateURI)
+      BIND(?mstLabel AS ?objectLabel)
+    }
+    UNION
+    {
+      she:GenotypebasedIndicators skos:prefLabel ?gbiLabel4 .
+      she:GenotypebasedIndicators skos:narrower ?specificGenoIndicator .
+      ?specificGenoIndicator skos:prefLabel ?specificGenoIndicatorLabel .
+      BIND(?gbiLabel4 AS ?subjectLabel)
+      BIND(skos:narrower AS ?predicateURI)
+      BIND(?specificGenoIndicatorLabel AS ?objectLabel)
+    }
+    UNION
+    {
+      she:GenotypebasedIndicators skos:narrower ?genoIndicator_dna .
+      ?genoIndicator_dna skos:prefLabel ?genoIndicatorDnaLabel .
+      ?genoIndicator_dna obo:RO_0002507 she:DNAYield .
+      she:DNAYield skos:prefLabel ?dnaYieldLabel .
+      BIND(?genoIndicatorDnaLabel AS ?subjectLabel)
+      BIND(obo:RO_0002507 AS ?predicateURI)
+      BIND(?dnaYieldLabel AS ?objectLabel)
+    }
+    UNION
+    {
+      she:GenotypebasedIndicators skos:narrower ?genoIndicator_mcs .
+      ?genoIndicator_mcs skos:prefLabel ?genoIndicatorMcsLabel .
+      ?genoIndicator_mcs skos:related she:MicrobialCommunityStructure .
+      she:MicrobialCommunityStructure skos:prefLabel ?mcsLabel .
+      BIND(?genoIndicatorMcsLabel AS ?subjectLabel)
+      BIND(skos:related AS ?predicateURI)
+      BIND(?mcsLabel AS ?objectLabel)
+    }
+  }
+  UNION
+  {
+    {
+      she:PhenotypebasedIndicators skos:prefLabel ?pbiLabel1 .
+      she:PhenotypebasedIndicators schema:isBasedOn she:PhenotypicMethods .
+      she:PhenotypicMethods skos:prefLabel ?pmLabel .
+      BIND(?pbiLabel1 AS ?subjectLabel)
+      BIND(schema:isBasedOn AS ?predicateURI)
+      BIND(?pmLabel AS ?objectLabel)
+    }
+    UNION
+    {
+      she:PhenotypebasedIndicators skos:prefLabel ?pbiLabel2 .
+      she:PhenotypebasedIndicators skos:narrower ?specificPhenoIndicator .
+      ?specificPhenoIndicator skos:prefLabel ?specificPhenoIndicatorLabel .
+      BIND(?pbiLabel2 AS ?subjectLabel)
+      BIND(skos:narrower AS ?predicateURI)
+      BIND(?specificPhenoIndicatorLabel AS ?objectLabel)
+    }
+    UNION
+    {
+      she:PhenotypicMethods skos:prefLabel ?pmLabel_narrower .
+      she:PhenotypicMethods skos:narrower ?phenoMethodType .
+      ?phenoMethodType skos:prefLabel ?phenoMethodTypeLabel .
+      BIND(?pmLabel_narrower AS ?subjectLabel)
+      BIND(skos:narrower AS ?predicateURI)
+      BIND(?phenoMethodTypeLabel AS ?objectLabel)
+    }
+    UNION
+    {
+      she:Catches skos:prefLabel ?catchesLabel .
+      she:Catches skos:related she:PitfallTraps .
+      she:PitfallTraps skos:prefLabel ?ptLabel .
+      BIND(?catchesLabel AS ?subjectLabel)
+      BIND(skos:related AS ?predicateURI)
+      BIND(?ptLabel AS ?objectLabel)
+    }
+  }
+  UNION
+  {
+    {
+      she:FunctionbasedIndicators skos:prefLabel ?fbiLabel1 .
+      she:FunctionbasedIndicators schema:isBasedOn she:FunctionalMethods .
+      she:FunctionalMethods skos:prefLabel ?fmLabel .
+      BIND(?fbiLabel1 AS ?subjectLabel)
+      BIND(schema:isBasedOn AS ?predicateURI)
+      BIND(?fmLabel AS ?objectLabel)
+    }
+    UNION
+    {
+      she:FunctionbasedIndicators skos:prefLabel ?fbiLabel2 .
+      she:FunctionbasedIndicators skos:narrower ?specificFuncIndicator .
+      ?specificFuncIndicator skos:prefLabel ?specificFuncIndicatorLabel .
+      BIND(?fbiLabel2 AS ?subjectLabel)
+      BIND(skos:narrower AS ?predicateURI)
+      BIND(?specificFuncIndicatorLabel AS ?objectLabel)
+    }
+    UNION
+    {
+      she:PotentialEnzymeActivity skos:prefLabel ?peaLabel_ind .
+      she:PotentialEnzymeActivity she:indicates ?peaIndicates .
+      ?peaIndicates skos:prefLabel ?peaIndicatesLabel .
+      VALUES ?peaIndicates { she:MicrobialBiomass she:TotalCommunityActivity }
+      BIND(?peaLabel_ind AS ?subjectLabel)
+      BIND(she:indicates AS ?predicateURI)
+      BIND(?peaIndicatesLabel AS ?objectLabel)
+    }
+    UNION
+    {
+      she:PotentialEnzymeActivity skos:prefLabel ?peaLabel_from .
+      she:PotentialEnzymeActivity sorelph:from she:SoilInvertebrateFeedingActivity .
+      she:SoilInvertebrateFeedingActivity skos:prefLabel ?sifaLabel .
+      BIND(?peaLabel_from AS ?subjectLabel)
+      BIND(sorelph:from AS ?predicateURI)
+      BIND(?sifaLabel AS ?objectLabel)
+    }
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

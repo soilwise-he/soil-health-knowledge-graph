@@ -1,0 +1,44 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX unit: <http://qudt.org/vocab/unit/>
+
+SELECT ?item ?property ?value
+WHERE {
+  {
+    ?quantificationConcept skos:prefLabel "SOC stock quantification"@en .
+    ?quantificationConcept qudt:expression ?formula .
+    BIND("SOC Stock Quantification" AS ?item)
+    BIND("Equation" AS ?property)
+    BIND(STR(?formula) AS ?value)
+  }
+  UNION
+  {
+    ?quantificationConcept skos:prefLabel "SOC stock quantification"@en .
+    ?quantificationConcept obo:RO_0002502 ?parameter .
+
+    ?parameter skos:prefLabel ?paramLabel .
+    OPTIONAL { ?parameter qudt:symbol ?paramSymbol . }
+    OPTIONAL {
+      ?parameter qudt:unit ?paramUnitURI .
+      BIND(STRAFTER(STR(?paramUnitURI), STR(unit:)) AS ?paramUnitLabelPart)
+    }
+
+    BIND(?paramLabel AS ?item)
+    BIND("Symbol" AS ?property)
+    BIND(COALESCE(?paramSymbol, "") AS ?value)
+  }
+  UNION
+  {
+    ?quantificationConcept skos:prefLabel "SOC stock quantification"@en .
+    ?quantificationConcept obo:RO_0002502 ?parameter .
+    ?parameter skos:prefLabel ?paramLabel .
+    ?parameter qudt:unit ?paramUnitURI .
+    BIND(STRAFTER(STR(?paramUnitURI), STR(unit:)) AS ?paramUnitLabelPart)
+
+    BIND(?paramLabel AS ?item)
+    BIND("Unit" AS ?property)
+    BIND(?paramUnitLabelPart AS ?value)
+  }
+}
+ORDER BY ?item ?property

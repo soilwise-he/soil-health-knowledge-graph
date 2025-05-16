@@ -1,0 +1,21 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?mainConceptLabel ?relationshipURI ?specificTypeLabel
+WHERE {
+  {
+    she:ArtificialSurface skos:prefLabel ?mainConceptLabel .
+    she:ArtificialSurface agrontology:includes ?specificTypeURI .
+    ?specificTypeURI skos:prefLabel ?specificTypeLabel .
+    BIND(agrontology:includes AS ?relationshipURI)
+  }
+  UNION
+  {
+    she:UrbanSoils skos:prefLabel ?mainConceptLabel .
+    she:UrbanSoils skos:narrower ?specificTypeURI .
+    ?specificTypeURI skos:prefLabel ?specificTypeLabel .
+    BIND(skos:narrower AS ?relationshipURI)
+  }
+}
+ORDER BY ?mainConceptLabel ?relationshipURI ?specificTypeLabel

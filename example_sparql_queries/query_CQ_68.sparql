@@ -1,0 +1,59 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:SoilBiota skos:prefLabel ?sbLabel .
+    she:LandUse skos:prefLabel ?luLabel_1 .
+    she:SoilBiota agrontology:isAffectedBy she:LandUse .
+
+    BIND(?sbLabel AS ?subjectLabel)
+    BIND(agrontology:isAffectedBy AS ?predicateURI)
+    BIND(?luLabel_1 AS ?objectLabel)
+  }
+  UNION
+  {
+    she:LandUse skos:prefLabel ?luLabel_2 .
+    she:LandUse obo:RO_0002508 ?determinesAspect .
+    ?determinesAspect skos:prefLabel ?determinesAspectLabel .
+    VALUES ?determinesAspect {
+        she:PhysicalDisturbance
+        she:ChemicalInput
+        she:OrganicMaterialAmount
+        she:OrganicMaterialQuality
+    }
+
+    BIND(?luLabel_2 AS ?subjectLabel)
+    BIND(obo:RO_0002508 AS ?predicateURI)
+    BIND(?determinesAspectLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:AgriculturalIntensification skos:prefLabel ?aiLabel_3 .
+    she:AgriculturalIntensification she:alters she:DiversityOfSoilBiotaIndividualGroups .
+    she:DiversityOfSoilBiotaIndividualGroups skos:prefLabel ?dsbigLabel .
+
+    BIND(?aiLabel_3 AS ?subjectLabel)
+    BIND(she:alters AS ?predicateURI)
+    BIND(?dsbigLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:AgriculturalIntensification skos:prefLabel ?aiLabel_4 .
+    she:AgriculturalIntensification obo:RO_0002212 ?reducesAspect .
+    ?reducesAspect skos:prefLabel ?reducesAspectLabel .
+    VALUES ?reducesAspect {
+        she:SoilFoodWebComplexity
+        she:CommunityrelatedBiomassOfSoilFauna
+        she:InteractionNetworkBetweenSoilBacteria
+    }
+
+    BIND(?aiLabel_4 AS ?subjectLabel)
+    BIND(obo:RO_0002212 AS ?predicateURI)
+    BIND(?reducesAspectLabel AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

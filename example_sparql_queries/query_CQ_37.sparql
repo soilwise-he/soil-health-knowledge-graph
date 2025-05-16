@@ -1,0 +1,54 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?itemDescription ?relationshipURI ?valueDescription ?contextDescription
+WHERE {
+  {
+    she:BiomassProduction skos:prefLabel ?bpLabel .
+    she:BiomassProduction she:isLimitedBy ?limitNodeBP .
+    ?limitNodeBP rdf:object ?limitingNutrientBP .
+    ?limitingNutrientBP skos:prefLabel ?limitingNutrientLabelBP .
+
+    ?limitNodeBP obo:BFO_0000066 ?ecosystemContextBP .
+
+    ?ecosystemContextBP a ?ecosystemContextTypeBP .
+    ?ecosystemContextBP skos:prefLabel ?ecosystemContextLabelBP .
+
+    BIND(?bpLabel AS ?itemDescription)
+    BIND(she:isLimitedBy AS ?relationshipURI)
+    BIND(?limitingNutrientLabelBP AS ?valueDescription)
+    BIND(CONCAT("in ", ?ecosystemContextLabelBP) AS ?contextDescription)
+  }
+  UNION
+  {
+    she:TreeGrowth skos:prefLabel ?tgLabel .
+    she:TreeGrowth she:isLimitedBy ?limitNodeTG .
+    ?limitNodeTG rdf:object ?limitingNutrientTG .
+    ?limitingNutrientTG skos:prefLabel ?limitingNutrientLabelTG .
+    ?limitNodeTG obo:BFO_0000066 she:ForestEcosystems .
+    she:ForestEcosystems skos:prefLabel ?feLabelTG .
+
+    BIND(?tgLabel AS ?itemDescription)
+    BIND(she:isLimitedBy AS ?relationshipURI)
+    BIND(?limitingNutrientLabelTG AS ?valueDescription)
+    BIND(CONCAT("in ", ?feLabelTG) AS ?contextDescription)
+  }
+  UNION
+  {
+    she:SoilNAvailability skos:prefLabel ?snaLabel .
+    she:SoilNAvailability agrontology:isAffectedBy ?snaAffectedByNode .
+    ?snaAffectedByNode obo:BFO_0000066 she:ForestEcosystems .
+    she:ForestEcosystems skos:prefLabel ?feLabelSNA .
+    ?snaAffectedByNode rdf:object ?influencingFactorSNA .
+    ?influencingFactorSNA skos:prefLabel ?influencingFactorLabelSNA .
+
+    BIND(?snaLabel AS ?itemDescription)
+    BIND(agrontology:isAffectedBy AS ?relationshipURI)
+    BIND(?influencingFactorLabelSNA AS ?valueDescription)
+    BIND(CONCAT("in ", ?feLabelSNA) AS ?contextDescription)
+  }
+}
+ORDER BY ?itemDescription ?relationshipURI ?valueDescription

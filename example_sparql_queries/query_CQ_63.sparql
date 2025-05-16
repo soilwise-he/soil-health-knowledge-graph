@@ -1,0 +1,46 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:DiffusePollutedSites skos:prefLabel ?dpsLabel .
+    she:DiffusePollutedSites she:isCharacterisedBy she:HomogeneousPollutionPattern .
+    she:HomogeneousPollutionPattern skos:prefLabel ?hppLabel .
+
+    BIND(?dpsLabel AS ?subjectLabel)
+    BIND(she:isCharacterisedBy AS ?predicateURI)
+    BIND(?hppLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:LimitedSamples skos:prefLabel ?lsLabel .
+    she:LimitedSamples she:appliesTo she:DiffusePollutedSites .
+    she:DiffusePollutedSites skos:prefLabel ?dpsLabel_ls .
+
+    BIND(?lsLabel AS ?subjectLabel)
+    BIND(she:appliesTo AS ?predicateURI)
+    BIND(?dpsLabel_ls AS ?objectLabel)
+  }
+  UNION
+  {
+    she:CompositeSampleAnalyses skos:prefLabel ?csaLabel .
+    she:CompositeSampleAnalyses she:appliesTo she:DiffusePollutedSites .
+    she:DiffusePollutedSites skos:prefLabel ?dpsLabel_csa .
+
+    BIND(?csaLabel AS ?subjectLabel)
+    BIND(she:appliesTo AS ?predicateURI)
+    BIND(?dpsLabel_csa AS ?objectLabel)
+  }
+  UNION
+  {
+    ?investigationType she:appliesTo she:PointSourcePollutedSites .
+    ?investigationType skos:prefLabel ?investigationTypeLabel .
+    she:PointSourcePollutedSites skos:prefLabel ?pspsLabel .
+
+    BIND(?investigationTypeLabel AS ?subjectLabel)
+    BIND(she:appliesTo AS ?predicateURI)
+    BIND(?pspsLabel AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

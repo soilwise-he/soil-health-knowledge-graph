@@ -1,0 +1,44 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX bao: <http://www.bioassayontology.org/bao#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel
+WHERE {
+  {
+    she:SoilOrganisms skos:prefLabel ?soLabel .
+    she:SoilOrganisms skos:definition ?soDefinition .
+    BIND(?soLabel AS ?subjectLabel)
+    BIND(skos:definition AS ?predicateURI)
+    BIND(?soDefinition AS ?objectLabel)
+  }
+  UNION
+  {
+    she:SoilOrganisms skos:prefLabel ?soLabel_func .
+    she:SoilOrganisms skos:related she:SoilFunctioning .
+    she:SoilFunctioning skos:prefLabel ?sfLabel .
+    BIND(?soLabel_func AS ?subjectLabel)
+    BIND(skos:related AS ?predicateURI)
+    BIND(?sfLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:SpeciesDiversity skos:prefLabel ?sdLabel .
+    she:SpeciesDiversity bao:BAO_0002586 she:SoilCommunityHealth .
+    she:SoilCommunityHealth skos:prefLabel ?schLabel .
+    BIND(?sdLabel AS ?subjectLabel)
+    BIND(bao:BAO_0002586 AS ?predicateURI)
+    BIND(?schLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:SoilCommunityHealth skos:prefLabel ?schLabel_targets .
+    she:SoilCommunityHealth obo:T4FS_0000577 ?targetConcept .
+    ?targetConcept skos:prefLabel ?targetConceptLabel .
+
+    BIND(?schLabel_targets AS ?subjectLabel)
+    BIND(obo:T4FS_0000577 AS ?predicateURI)
+    BIND(?targetConceptLabel AS ?objectLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

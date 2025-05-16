@@ -1,0 +1,22 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?subject ?predicate ?object
+WHERE {
+  ?soilIndicatorsConcept skos:prefLabel "soil indicators"@en .
+  ?soilAttributesConcept skos:prefLabel "soil attributes"@en .
+
+  {
+    ?soilIndicatorsConcept skos:definition ?definitionText .
+    BIND(?soilIndicatorsConcept AS ?subject)
+    BIND(IRI(skos:definition) AS ?predicate)
+    BIND(?definitionText AS ?object)
+  }
+  UNION
+  {
+    ?soilIndicatorsConcept ?connectingPredicate ?soilAttributesConcept .
+    BIND(?soilIndicatorsConcept AS ?subject)
+    BIND(?connectingPredicate AS ?predicate)
+    BIND(?soilAttributesConcept AS ?object)
+  }
+}
+ORDER BY ?subject ?predicate

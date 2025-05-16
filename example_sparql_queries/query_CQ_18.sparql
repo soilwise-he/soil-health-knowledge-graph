@@ -1,0 +1,15 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT ?indicatorLabel
+WHERE {
+  ?generalSoilIndicatorsConcept skos:prefLabel "soil indicators"@en .
+
+  ?generalSoilIndicatorsConcept skos:narrower ?indicator .
+
+  ?indicator dcterms:source she:Maes2020 .
+
+  ?indicator skos:prefLabel ?indicatorLabel .
+}
+ORDER BY ?indicatorLabel

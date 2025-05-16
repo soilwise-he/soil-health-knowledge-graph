@@ -1,0 +1,64 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+
+SELECT ?itemDescription ?relationshipURI ?valueDescription ?contextDescription
+WHERE {
+  {
+    ?nutrientInputsConcept skos:prefLabel "nutrient inputs"@en .
+    ?nutrientInputsConcept agrontology:affects ?affectedEntity .
+    ?affectedEntity skos:prefLabel ?affectedEntityLabel .
+
+    BIND("Nutrient Inputs" AS ?itemDescription)
+    BIND(agrontology:affects AS ?relationshipURI)
+    BIND(?affectedEntityLabel AS ?valueDescription)
+    BIND("" AS ?contextDescription)
+  }
+  UNION
+  {
+    ?cropGrowthConcept skos:prefLabel "crop growth"@en .
+    ?cropGrowthConcept obo:RO_0002336 ?inputNode .
+    ?inputNode obo:BFO_0000066 she:AgriculturalSoils .
+    she:AgriculturalSoils skos:prefLabel ?agriSoilsLabel .
+    ?inputNode rdf:object ?InputType .
+    ?InputType skos:prefLabel ?InputTypeLabel .
+
+    BIND("Crop Growth" AS ?itemDescription)
+    BIND(obo:RO_0002336 AS ?relationshipURI)
+    BIND(?InputTypeLabel AS ?valueDescription)
+    BIND(CONCAT("in ", ?agriSoilsLabel) AS ?contextDescription)
+  }
+  UNION
+  {
+    she:BiomassGrowth skos:prefLabel ?bgLabel .
+    she:BiomassGrowth obo:RO_0002336 ?bgInputNode .
+    ?bgInputNode rdf:object she:AdditionalInputs .
+    she:AdditionalInputs skos:prefLabel ?aiLabel .
+    ?bgInputNode obo:BFO_0000066 ?nonAgriSystemContext .
+    ?nonAgriSystemContext a ?nonAgriSystemType .
+    ?nonAgriSystemContext skos:prefLabel ?nonAgriSystemLabel .
+
+    BIND(?bgLabel AS ?itemDescription)
+    BIND(obo:RO_0002336 AS ?relationshipURI)
+    BIND(?aiLabel AS ?valueDescription)
+    BIND(CONCAT("in ", ?nonAgriSystemLabel) AS ?contextDescription)
+  }
+  UNION
+  {
+    she:BiomassGrowth skos:prefLabel ?gLabel .
+    she:BiomassGrowth obo:RO_0002335 ?gOutputNode .
+    ?gOutputNode rdf:object she:ProductionIncrease .
+    she:ProductionIncrease skos:prefLabel ?piLabel .
+    ?gOutputNode af-x:AFX_0000408 she:HighInputLevels .
+    she:HighInputLevels skos:prefLabel ?hilLabel .
+
+    BIND(?gLabel AS ?itemDescription)
+    BIND(obo:RO_0002335 AS ?relationshipURI)
+    BIND(?piLabel AS ?valueDescription)
+    BIND(CONCAT("under ", ?hilLabel) AS ?contextDescription)
+  }
+}
+ORDER BY ?itemDescription ?relationshipURI ?valueDescription

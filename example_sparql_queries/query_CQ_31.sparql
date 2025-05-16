@@ -1,0 +1,78 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX om: <http://www.ontology-of-units-of-measure.org/resource/om-2/>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?limitType ?limitPropertyOrValue ?relatedToClayCondition ?somPercentage
+WHERE {
+  {
+    ?lowerSOMLimitConcept skos:prefLabel "lower SOM limit"@en .
+    ?clayContentConcept skos:prefLabel "clay content"@en .
+    ?lowerSOMLimitConcept obo:RO_0017003 ?clayContentConcept .
+    BIND("Lower SOM Limit" AS ?limitType)
+    BIND(obo:RO_0017003 AS ?limitPropertyOrValue)
+    BIND("Clay Content" AS ?relatedToClayCondition)
+    BIND("" AS ?somPercentage)
+  }
+  UNION
+  {
+    ?lowerSOMLimitConcept skos:prefLabel "lower SOM limit"@en .
+    ?lowerSOMLimitConcept om:hasValue ?valueNode .
+    ?valueNode af-x:AFX_0000408 ?clayConditionString .
+    ?valueNode biolink:has_percentage ?percentage .
+    BIND("Lower SOM Limit Value" AS ?limitType)
+    BIND(af-x:AFX_0000408 AS ?limitPropertyOrValue)
+    BIND(?clayConditionString AS ?relatedToClayCondition)
+    BIND(STR(?percentage) AS ?somPercentage)
+  }
+  UNION
+  {
+    ?upperSOMLimitConcept skos:prefLabel "upper SOM limit"@en .
+    ?clayContentConcept skos:prefLabel "clay content"@en .
+    ?upperSOMLimitConcept obo:RO_0017003 ?clayContentConcept .
+    BIND("Upper SOM Limit" AS ?limitType)
+    BIND(obo:RO_0017003 AS ?limitPropertyOrValue)
+    BIND("Clay Content" AS ?relatedToClayCondition)
+    BIND("" AS ?somPercentage)
+  }
+  UNION
+  {
+    ?somContentsConcept skos:prefLabel "SOM contents"@en .
+    ?somContentsConcept agrontology:smallerThan ?bNodeSmallerThan1Percent .
+    ?bNodeSmallerThan1Percent biolink:has_percentage "1%"^^qudt:integerPercentage .
+    ?bNodeSmallerThan1Percent af-x:AFX_0000408 ?obj1 .
+    ?obj1 skos:prefLabel ?obj1Label .
+    BIND("SOM Contents < 1%" AS ?limitType)
+    BIND(af-x:AFX_0000408 AS ?limitPropertyOrValue)
+    BIND(?obj1Label AS ?relatedToClayCondition)
+    BIND("1%" AS ?somPercentage)
+  }
+  UNION
+  {
+    ?somContentsConcept skos:prefLabel "SOM contents"@en .
+    ?somContentsConcept agrontology:smallerThan ?bNodeSmallerThan1Percent .
+    ?bNodeSmallerThan1Percent biolink:has_percentage "1%"^^qudt:integerPercentage .
+    ?bNodeSmallerThan1Percent obo:RO_0002212 ?obj2 .
+    ?obj2 skos:prefLabel ?obj2Label .
+    BIND("SOM Contents < 1%" AS ?limitType)
+    BIND(obo:RO_0002212 AS ?limitPropertyOrValue)
+    BIND(?obj2Label AS ?relatedToClayCondition)
+    BIND("1%" AS ?somPercentage)
+  }
+  UNION
+  {
+    ?somContentsConcept skos:prefLabel "SOM contents"@en .
+    ?somContentsConcept agrontology:smallerThan ?bNodeSmallerThan1Percent .
+    ?bNodeSmallerThan1Percent biolink:has_percentage "1%"^^qudt:integerPercentage .
+    ?bNodeSmallerThan1Percent obo:RO_0002552 ?obj3 .
+    ?obj3 skos:prefLabel ?obj3Label .
+    BIND("SOM Contents < 1%" AS ?limitType)
+    BIND(obo:RO_0002552 AS ?limitPropertyOrValue)
+    BIND(?obj3Label AS ?relatedToClayCondition)
+    BIND("1%" AS ?somPercentage)
+  }
+}
+ORDER BY ?limitType ?limitPropertyOrValue

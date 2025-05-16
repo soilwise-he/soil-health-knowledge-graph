@@ -1,0 +1,74 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX sorelph: <http://sweetontology.net/relaPhysical/>
+
+SELECT ?subjectLabel ?predicateURI ?objectLabel ?contextLabel
+WHERE {
+  {
+    she:PointSourcePollution skos:prefLabel ?pspLabel .
+    she:PointSourcePollution agrontology:causes ?directEffect .
+    ?directEffect skos:prefLabel ?directEffectLabel .
+
+    OPTIONAL {
+      ?directEffect obo:TXPO_0003500 she:FormerMiningAreas .
+      she:FormerMiningAreas skos:prefLabel ?fmaLabel .
+    }
+
+    BIND(?pspLabel AS ?subjectLabel)
+    BIND(agrontology:causes AS ?predicateURI)
+    BIND(?directEffectLabel AS ?objectLabel)
+    BIND(IF(BOUND(?fmaLabel), CONCAT("in ", ?fmaLabel), "") AS ?contextLabel)
+  }
+  UNION
+  {
+    she:PointSourcePollution skos:prefLabel ?pspLabel_2 .
+    she:Sites skos:prefLabel ?sitesLabel .
+    she:Sites agrontology:isAffectedBy she:PointSourcePollution .
+
+    she:SoilPollutionLevels skos:prefLabel ?splLabel .
+    she:SoilPollutionLevels obo:TXPO_0003500 she:Sites .
+
+    she:HumanHealth skos:prefLabel ?hhLabel .
+    she:SoilPollutionLevels obo:RO_0002552 ?bnode_hh .
+    ?bnode_hh rdf:object she:HumanHealth .
+    ?bnode_hh agrontology:isCausedBy ?causeOfHealthThreat .
+    ?causeOfHealthThreat skos:prefLabel ?causeOfHealthThreatLabel .
+
+    BIND(CONCAT(?splLabel, " (at ", ?sitesLabel, " affected by ", ?pspLabel_2, ")") AS ?subjectLabel)
+    BIND(agrontology:isCausedBy AS ?predicateURI)
+    BIND(?causeOfHealthThreatLabel AS ?objectLabel)
+    BIND(CONCAT("leading to threat to ", ?hhLabel) AS ?contextLabel)
+
+  }
+  UNION
+  {
+    she:HeavilyPollutedDustParticles skos:prefLabel ?hpdpLabel_3a .
+    she:HeavilyPollutedDustParticles sorelph:to she:NearbyHousingAreas .
+    she:NearbyHousingAreas skos:prefLabel ?nhaLabel .
+
+    BIND(?hpdpLabel_3a AS ?subjectLabel)
+    BIND(sorelph:to AS ?predicateURI)
+    BIND(?nhaLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:HeavilyPollutedDustParticles skos:prefLabel ?hpdpLabel_3b .
+    she:HeavilyPollutedDustParticles sorelph:to ?bnode_fc .
+    ?bnode_fc rdf:object she:FoodChain .
+    she:FoodChain skos:prefLabel ?fcLabel .
+    ?bnode_fc af-x:AFX_0000408 she:LocalCropProduction .
+    she:LocalCropProduction skos:prefLabel ?lcpLabel .
+    ?bnode_fc obo:BFO_0000066 she:CityAreas .
+    she:CityAreas skos:prefLabel ?caLabel .
+
+    BIND(?hpdpLabel_3b AS ?subjectLabel)
+    BIND(sorelph:to AS ?predicateURI)
+    BIND(?fcLabel AS ?objectLabel)
+    BIND(CONCAT("via ", ?lcpLabel, " in ", ?caLabel) AS ?contextLabel)
+  }
+}
+ORDER BY ?subjectLabel ?predicateURI ?objectLabel

@@ -1,0 +1,88 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?subject ?predicate ?object ?objectLabel ?contextLabel
+WHERE {
+  ?sbdConcept skos:prefLabel "soil biological degradation"@en .
+
+  {
+    ?sbdConcept skos:definition ?definitionText .
+    BIND(?sbdConcept AS ?subject)
+    BIND(skos:definition AS ?predicate)
+    BIND(?definitionText AS ?object)
+    BIND("" AS ?objectLabel)
+    BIND("" AS ?contextLabel)
+  }
+  UNION
+  {
+    ?sbdConcept she:isAccompaniedBy ?accompaniedByConcept .
+    ?accompaniedByConcept skos:prefLabel ?accompaniedByLabel .
+    BIND(?sbdConcept AS ?subject)
+    BIND(she:isAccompaniedBy AS ?predicate)
+    BIND(?accompaniedByConcept AS ?object)
+    BIND(?accompaniedByLabel AS ?objectLabel)
+    BIND("" AS ?contextLabel)
+  }
+  UNION
+  {
+    ?sbdConcept agrontology:causes ?bNodeCaused .
+    ?bNodeCaused rdf:object ?causedObject .
+    ?causedObject skos:prefLabel ?causedObjectLabel .
+    BIND(?sbdConcept AS ?subject)
+    BIND(agrontology:causes AS ?predicate)
+    BIND(?causedObject AS ?object)
+    BIND(?causedObjectLabel AS ?objectLabel)
+    OPTIONAL {
+        ?bNodeCaused obo:BFO_0000066 ?context .
+        ?context skos:prefLabel ?ctxLabel .
+        BIND(?ctxLabel AS ?contextLabel)
+    }
+    BIND(IF(BOUND(?contextLabel), ?contextLabel, "") AS ?contextLabel)
+  }
+  UNION
+  {
+    ?sbdConcept obo:RO_0002212 ?relatedObjectOrBNode .
+    OPTIONAL {
+        ?relatedObjectOrBNode rdf:object ?actualObject .
+        ?actualObject skos:prefLabel ?actualObjectLabel .
+        OPTIONAL {
+            ?relatedObjectOrBNode obo:BFO_0000066 ?context .
+            ?context skos:prefLabel ?ctxLabel .
+        }
+    }
+    OPTIONAL {
+      FILTER(!ISBLANK(?relatedObjectOrBNode))
+      ?relatedObjectOrBNode skos:prefLabel ?directObjectLabel .
+    }
+    BIND(?sbdConcept AS ?subject)
+    BIND(obo:RO_0002212 AS ?predicate)
+    BIND(COALESCE(?actualObject, ?relatedObjectOrBNode) AS ?object)
+    BIND(COALESCE(?actualObjectLabel, ?directObjectLabel) AS ?objectLabel)
+    BIND(IF(BOUND(?ctxLabel), ?ctxLabel, "") AS ?contextLabel)
+  }
+  UNION
+  {
+    ?sbdConcept obo:RO_0002213 ?relatedObjectOrBNode_2213 .
+    OPTIONAL {
+        ?relatedObjectOrBNode_2213 rdf:object ?actualObject_2213 .
+        ?actualObject_2213 skos:prefLabel ?actualObjectLabel_2213 .
+        OPTIONAL {
+            ?relatedObjectOrBNode_2213 obo:BFO_0000066 ?context_2213 .
+            ?context_2213 skos:prefLabel ?ctxLabel_2213 .
+        }
+    }
+    OPTIONAL {
+      FILTER(!ISBLANK(?relatedObjectOrBNode_2213))
+      ?relatedObjectOrBNode_2213 skos:prefLabel ?directObjectLabel_2213 .
+    }
+    BIND(?sbdConcept AS ?subject)
+    BIND(obo:RO_0002213 AS ?predicate)
+    BIND(COALESCE(?actualObject_2213, ?relatedObjectOrBNode_2213) AS ?object)
+    BIND(COALESCE(?actualObjectLabel_2213, ?directObjectLabel_2213) AS ?objectLabel)
+    BIND(IF(BOUND(?ctxLabel_2213), ?ctxLabel_2213, "") AS ?contextLabel)
+  }
+}
+ORDER BY ?subject ?predicate ?objectLabel

@@ -1,0 +1,76 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX unit: <http://qudt.org/vocab/unit/>
+PREFIX sorelm: <http://sweetontology.net/relaMath/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX sorelsp: <http://sweetontology.net/relaSpace/>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+
+SELECT ?itemDescription ?predicateURI ?objectLabel ?unitLabel ?contextDescription
+WHERE {
+  {
+    she:TolerableSoilLoss skos:prefLabel ?tslLabel .
+    she:TolerableSoilLoss skos:definition ?definition .
+
+    BIND(?tslLabel AS ?itemDescription)
+    BIND(skos:definition AS ?predicateURI)
+    BIND(?definition AS ?objectLabel)
+  }
+  UNION
+  {
+    she:TolerableSoilLossRates skos:prefLabel ?tslrLabel_us .
+    she:TolerableSoilLossRates af-x:AFX_0002696 ?usNode .
+    ?usNode prov:atLocation she:UnitedStates .
+    she:UnitedStates skos:prefLabel ?usLabel .
+    ?usNode sorelm:hasInterval ?usInterval .
+    ?usNode qudt:unit unit:TONNE-PER-HA-YR .
+    ?usNode she:isConvertedFrom ?usOriginalUnits .
+    ?usNode time:years ?usYears .
+
+    BIND(?tslrLabel_us AS ?itemDescription)
+    BIND(CONCAT(STR(af-x:AFX_0002696), " / ", STR(sorelm:hasInterval)) AS ?predicateURI)
+    BIND(?usInterval AS ?objectLabel)
+    BIND("t/ha/year" AS ?unitLabel)
+    BIND(CONCAT("in ", ?usLabel, ", converted from ", ?usOriginalUnits, " (", ?usYears, ")") AS ?contextDescription)
+  }
+  UNION
+  {
+    she:TolerableSoilLossRates skos:prefLabel ?tslrLabel_ch_shallow .
+    she:TolerableSoilLossRates sorelm:hasThreshold ?chShallowNode .
+    ?chShallowNode prov:atLocation she:Switzerland .
+    she:Switzerland skos:prefLabel ?chLabel_shallow .
+    ?chShallowNode agrontology:isUsedIn she:ShallowSoils .
+    she:ShallowSoils skos:prefLabel ?shallowSoilsLabel .
+    she:ShallowSoils sorelsp:hasMaximumDepth ?shallowDepthValue .
+    she:ShallowSoils qudt:unit unit:CentiM .
+    ?chShallowNode sorelm:hasUpperBound ?chShallowRate .
+    ?chShallowNode qudt:unit unit:TONNE-PER-HA-YR .
+
+    BIND(?tslrLabel_ch_shallow AS ?itemDescription)
+    BIND(CONCAT(STR(sorelm:hasThreshold), " / ", STR(sorelm:hasUpperBound)) AS ?predicateURI)
+    BIND(STR(?chShallowRate) AS ?objectLabel)
+    BIND("t/ha/year" AS ?unitLabel)
+    BIND(CONCAT("for ", ?shallowSoilsLabel, " (< ", STR(?shallowDepthValue), " cm depth) in ", ?chLabel_shallow) AS ?contextDescription)
+  }
+  UNION
+  {
+    she:TolerableSoilLossRates skos:prefLabel ?tslrLabel_ch_deep .
+    she:TolerableSoilLossRates sorelm:hasThreshold ?chDeepNode .
+    ?chDeepNode prov:atLocation she:Switzerland .
+    she:Switzerland skos:prefLabel ?chLabel_deep .
+    ?chDeepNode agrontology:isUsedIn she:DeeplyDevelopedSoils .
+    she:DeeplyDevelopedSoils skos:prefLabel ?deepSoilsLabel .
+    ?chDeepNode sorelm:hasUpperBound ?chDeepRate .
+    ?chDeepNode qudt:unit unit:TONNE-PER-HA-YR .
+
+    BIND(?tslrLabel_ch_deep AS ?itemDescription)
+    BIND(CONCAT(STR(sorelm:hasThreshold), " / ", STR(sorelm:hasUpperBound)) AS ?predicateURI)
+    BIND(STR(?chDeepRate) AS ?objectLabel)
+    BIND("t/ha/year" AS ?unitLabel)
+    BIND(CONCAT("for ", ?deepSoilsLabel, " in ", ?chLabel_deep) AS ?contextDescription)
+  }
+}
+ORDER BY ?itemDescription ?predicateURI ?objectLabel

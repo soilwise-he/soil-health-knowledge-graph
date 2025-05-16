@@ -1,0 +1,23 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX sorelph: <http://sweetontology.net/relaPhysical/>
+
+SELECT ?resultType ?value
+WHERE {
+  ?thresholdsConcept skos:prefLabel "thresholds"@en .
+  {
+    ?thresholdsConcept skos:definition ?value .
+    BIND("Definition of Thresholds" AS ?resultType)
+  }
+  UNION
+  {
+    ?soilProtectionConcept skos:prefLabel "soil protection"@en .
+    ?soilProtectionConcept obo:T4FS_0000577 ?criticalLevelConcept .
+    ?criticalLevelConcept sorelph:from ?thresholdsConcept .
+    ?criticalLevelConcept skos:prefLabel ?value .
+
+    BIND("Information Provided by Thresholds (for Soil Protection)" AS ?resultType)
+  }
+}
+
+ORDER BY ?resultType DESC(?value)

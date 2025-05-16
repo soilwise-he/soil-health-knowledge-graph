@@ -1,0 +1,45 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?itemDescription ?relationshipOrProperty ?valueDescription
+WHERE {
+  {
+    she:SoilAcidification skos:prefLabel ?saLabel .
+    she:SoilAcidification ?effectPredicate ?affectedEntity .
+    VALUES ?effectPredicate { obo:RO_0002212 }
+
+    FILTER(!ISBLANK(?affectedEntity))
+    ?affectedEntity skos:prefLabel ?affectedEntityLabel .
+
+    BIND(?saLabel AS ?itemDescription)
+    BIND(?effectPredicate AS ?relationshipOrProperty)
+    BIND(?affectedEntityLabel AS ?valueDescription)
+  }
+  UNION
+  {
+    she:LowpH skos:prefLabel ?lowPhLabel_3a .
+    she:AcidForestSoils skos:prefLabel ?afsLabel_3a .
+    she:LowpH obo:RO_0002212 ?bnode_decomp .
+    ?bnode_decomp obo:BFO_0000066 she:AcidForestSoils .
+    ?bnode_decomp rdf:object she:Decomposition .
+    she:Decomposition skos:prefLabel ?decompLabel .
+    BIND(?lowPhLabel_3a AS ?itemDescription)
+    BIND(obo:RO_0002212 AS ?relationshipOrProperty)
+    BIND(CONCAT(?decompLabel, " (in ", ?afsLabel_3a, ")") AS ?valueDescription)
+  }
+  UNION
+  {
+    she:LowpH skos:prefLabel ?lowPhLabel_3b .
+    she:AcidForestSoils skos:prefLabel ?afsLabel_3b .
+    she:LowpH obo:RO_0002213 ?bnode_oma .
+    ?bnode_oma obo:BFO_0000066 she:AcidForestSoils .
+    ?bnode_oma rdf:object she:OrganicMatterAccumulation .
+    she:OrganicMatterAccumulation skos:prefLabel ?omaLabel .
+    BIND(?lowPhLabel_3b AS ?itemDescription)
+    BIND(obo:RO_0002213 AS ?relationshipOrProperty)
+    BIND(CONCAT(?omaLabel, " (in ", ?afsLabel_3b, ")") AS ?valueDescription)
+  }
+}
+ORDER BY ?itemDescription ?relationshipOrProperty ?valueDescription
