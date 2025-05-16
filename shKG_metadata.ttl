@@ -7,7 +7,7 @@
 @prefix citedcat: <https://w3id.org/citedcat-ap/> .
 
 <https://soilwise-he.github.io/soil-health>
-        owl:versionInfo  "v0.2.1" ;
+        owl:versionInfo  "v0.2.2" ;
         dcterms:creator [ schema:affiliation [ foaf:name "Wageningen University & Research" ;
                                                rdfs:seeAlso <https://www.wur.nl/> ] ;
                       rdfs:seeAlso <https://orcid.org/0009-0008-5213-5114> ;

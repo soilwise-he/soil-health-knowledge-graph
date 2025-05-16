@@ -14,6 +14,3 @@ imgs/soil_health_KG.drawio
 
 # Ignore entity similarity file
 entity_similarity.csv
-
-# Ignore test .ttl file
-test_1.ttl
