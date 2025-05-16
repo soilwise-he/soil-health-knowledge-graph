@@ -58,3 +58,4 @@ http://sweetontology.net/relaSpace/above,http://sweetontology.net/relaSpace/belo
 http://purl.obolibrary.org/obo/RO_0002211,http://purl.obolibrary.org/obo/RO_0002334
 http://purl.obolibrary.org/obo/RO_0002508,http://purl.obolibrary.org/obo/RO_0002507
 http://aims.fao.org/aos/agrontology#hasType,http://aims.fao.org/aos/agrontology#typeOf
+http://purl.org/dc/terms/replaces,http://purl.org/dc/terms/isReplacedBy

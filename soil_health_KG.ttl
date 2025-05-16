@@ -89,10 +89,10 @@ she:BiomassGrowth a skos:Concept ;
     skos:prefLabel "biomass growth"@en .
 
 she:BlockedSoilPores a skos:Concept ;
+    agrontology:affects she:SlipEffects,
+        she:SmearingEffects ;
     af-x:AFX_0002727 [ obo:RO_0002326 she:MassExchanges ] ;
-    skos:prefLabel "blocked soil pores"@en ;
-    she:affects she:SlipEffects,
-        she:SmearingEffects .
+    skos:prefLabel "blocked soil pores"@en .
 
 she:BuildingConstruction a skos:Concept ;
     obo:RO_0002331 she:GreyRecycling ;
@@ -543,13 +543,13 @@ she:SOCToSOMConversion a skos:Concept ;
     skos:prefLabel "SOC to SOM conversion"@en .
 
 she:SOMCNRatio a skos:Concept ;
+    agrontology:affects she:DissolvedOrganicMatterFormation,
+        she:NitrogenousFertiliserNeed,
+        she:NitrousOxideRelease ;
     dcterms:source she:Kindler2011,
         she:Mu2009,
         she:Schjonning2018 ;
-    skos:prefLabel "SOM C/N ratio"@en ;
-    she:affects she:DissolvedOrganicMatterFormation,
-        she:NitrogenousFertiliserNeed,
-        she:NitrousOxideRelease .
+    skos:prefLabel "SOM C/N ratio"@en .
 
 she:SSVCriticalRiskLevel a skos:Concept ;
     sorelm:hasThreshold [ af-x:AFX_0000408 she:ProtectedAreas ;
@@ -5468,11 +5468,11 @@ she:HumanHealthProtection a skos:Concept ;
         she:SoilServices .
 
 she:HumanmadeOrganicPollutants a skos:Concept ;
-    skos:prefLabel "human-made organic pollutants"@en ;
-    she:narrower she:Dioxins,
+    skos:narrower she:Dioxins,
         she:Microplastics,
         she:PAHs,
-        she:PFAS .
+        she:PFAS ;
+    skos:prefLabel "human-made organic pollutants"@en .
 
 she:HumicOhHorizon a skos:Concept ;
     skos:broader she:OrganicLayer ;

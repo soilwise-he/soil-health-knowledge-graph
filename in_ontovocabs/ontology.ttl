@@ -167,9 +167,6 @@ agrontology:isPerformedBy a rdf:Property ;
 agrontology:isPreventedBy a rdf:Property ;
     skos:prefLabel "is prevented by" .
 
-agrontology:isProcessFor a rdf:Property ;
-    skos:prefLabel "is process for" .
-
 agrontology:isPropertyOf a rdf:Property ;
     skos:prefLabel "is property of" .
 
@@ -700,4 +697,32 @@ biolink:has_percentage a rdf:Property ;
 
 repr:storedAt a rdf:Property ;
     skos:prefLabel "stored at" .
+ "is absorbed by" .
+
+obo:T4FS_0000560 a rdf:Property ;
+    skos:prefLabel "supports implementation of" .
+
+she:hasDensity a rdf:Property ;
+    skos:prefLabel "has density" .
+
+she:hasBiomass a rdf:Property ;
+    skos:prefLabel "has biomass" .
+
+she:hasFreshBiomass a rdf:Property ;
+    skos:prefLabel "has fresh biomass" .
+
+sio:SIO_000272 a rdf:Property ;
+    skos:prefLabel "is variant of" .
+
+sorelsp:above a rdf:Property ;
+    skos:prefLabel "above" .
+
+skos:exactMatch a rdf:Property ;
+    skos:prefLabel "has exact match" .
+
+skos:closeMatch a rdf:Property ;
+    skos:prefLabel "has close match" .
+
+dcterms:isReplacedBy a rdf:Property ;
+    skos:prefLabel "is replaced by" .
 
