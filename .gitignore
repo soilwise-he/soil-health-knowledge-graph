@@ -8,9 +8,7 @@ config
 __pycache__/
 
 # Ignore .drawio figure
-imgs/LLM4KG.drawio
-imgs/text2KG.drawio
-imgs/soil_health_KG.drawio
+*.drawio
 
 # Ignore entity similarity file
 entity_similarity.csv
