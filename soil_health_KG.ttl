@@ -7387,7 +7387,7 @@ she:MonitoredNutrients a skos:Concept ;
     skos:exactMatch agrovoc:c_5274 ;
     skos:narrower she:Phosphates,
         she:SoilNitrogen ;
-    skos:prefLabel "nutrients"@en .
+    skos:prefLabel "monitored nutrients"@en .
 
 she:NLeaching a skos:Concept ;
     skos:prefLabel "N leaching"@en .
@@ -10577,7 +10577,7 @@ she:MonitoredHeavyMetals a skos:Concept ;
         she:Mercury,
         she:Nickel,
         she:Zinc ;
-    skos:prefLabel "heavy metals"@en .
+    skos:prefLabel "monitored heavy metals"@en .
 
 she:Olson2014 a dcterms:BibliographicResource ;
     dcterms:date "2014" .
