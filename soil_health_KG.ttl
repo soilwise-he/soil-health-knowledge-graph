@@ -127,7 +127,7 @@ she:CriticalLimitsInFood a skos:Concept ;
     she:isDevelopedFor she:SelectedPollutants .
 
 she:CropResidueInput a skos:Concept ;
-    obo:RO_0017003 she:CarbonStorage ;
+    obo:RO_0017003 she:SoilCarbonStorage ;
     skos:prefLabel "crop residue input"@en .
 
 she:CurrentSoilManagement a skos:Concept ;
@@ -3675,10 +3675,6 @@ she:SoilCarbonCycle a skos:Concept ;
     agrontology:hasComponent she:SoilRespiration ;
     skos:prefLabel "soil carbon cycle"@en .
 
-she:SoilCarbonStorage a skos:Concept ;
-    bao:BAO_0095002 she:SoilRespiration ;
-    skos:prefLabel "soil carbon storage"@en .
-
 she:SoilCommunityHealth a skos:Concept ;
     obo:T4FS_0000577 she:SoilBiodiversityBaselines,
         she:SoilBiodiversityStatus ;
@@ -5397,6 +5393,10 @@ she:GullyErosionSeverity a skos:Concept ;
 she:HaaseLathrop2003 a dcterms:BibliographicResource ;
     dcterms:date "2003" .
 
+she:HabitatForBiodiversity a skos:Concept ;
+    skos:broader she:SoilFunctions ;
+    skos:prefLabel "habitat for biodiversity"@en .
+
 she:HarmfulOrganisms a skos:Concept ;
     obo:RO_0002335 she:IntensiveRotation ;
     skos:narrower she:PhytophagousNematodes ;
@@ -6960,13 +6960,6 @@ she:CarbonAvailability a skos:Concept ;
     skos:broader she:AnalyticalMethodologies ;
     skos:prefLabel "carbon availability"@en .
 
-she:CarbonStorage a skos:Concept ;
-    agrontology:isAffectedBy [ rdf:object she:SoilPollution ;
-            she:requires she:HighPollutantConcentrations ] ;
-    obo:RO_0002336 she:HighNutrientStatus ;
-    skos:broader she:SoilServices ;
-    skos:prefLabel "carbon storage"@en .
-
 she:CationExchangeCapacity a skos:Concept ;
     obo:RO_0002335 she:SoilChemicalDegradation ;
     skos:broader she:DerivedSoilProperties,
@@ -7184,10 +7177,6 @@ she:HabitatExtent a skos:Concept ;
     skos:broader she:EssentialBiodiversityVariables ;
     skos:prefLabel "habitat extent"@en .
 
-she:HabitatForBiodiversity a skos:Concept ;
-    skos:broader she:SoilFunctions ;
-    skos:prefLabel "habitat for biodiversity"@en .
-
 she:HabitatProvision a skos:Concept ;
     agrontology:isBeneficialFor she:SoilDwellingOrganisms ;
     skos:broader she:SoilFunctions ;
@@ -7216,7 +7205,7 @@ she:HighNitrogenStatus a skos:Concept ;
 
 she:HighNutrientStatus a skos:Concept ;
     obo:RO_0002212 she:WaterQuality ;
-    obo:RO_0002213 she:CarbonStorage ;
+    obo:RO_0002213 she:SoilCarbonStorage ;
     skos:narrower she:HighPhosphorusStatus ;
     skos:prefLabel "high nutrient status"@en .
 
@@ -8829,6 +8818,14 @@ she:SoilCarbonPools a skos:Concept ;
     obo:RO_0017004 she:SoilSequestrationPotential ;
     skos:altLabel "soil carbon pool"@en ;
     skos:prefLabel "soil carbon pools"@en .
+
+she:SoilCarbonStorage a skos:Concept ;
+    agrontology:isAffectedBy [ rdf:object she:SoilPollution ;
+            she:requires she:HighPollutantConcentrations ] ;
+    obo:RO_0002336 she:HighNutrientStatus ;
+    bao:BAO_0095002 she:SoilRespiration ;
+    skos:broader she:SoilServices ;
+    skos:prefLabel "soil carbon storage"@en .
 
 she:SoilChemicalProperties a skos:Concept ;
     agrontology:isAffectedBy she:SoilThreats ;
@@ -11470,9 +11467,9 @@ she:SoilServices a skos:Concept ;
         she:SoilAcidification ;
     dcterms:source she:FAOITPS2015 ;
     sio:SIO_000066 she:Soils ;
-    skos:narrower she:CarbonStorage,
-        she:FilterFunction,
+    skos:narrower she:FilterFunction,
         she:ProductionService,
+        she:SoilCarbonStorage,
         she:SoilDwellingOrganismHabitat,
         she:WaterStorage ;
     skos:prefLabel "soil services"@en ;
