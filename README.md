@@ -21,6 +21,7 @@ See [Issues](https://github.com/soilwise-he/soil-health-knowledge-graph/issues).
 - [Semanticscience Integrated Ontology](https://sio.semanticscience.org/)
 - [Open Biological and Biomedical Ontology](https://obofoundry.org/)
 - [QUDT](https://qudt.org/)
+- [OM](http://www.ontology-of-units-of-measure.org/resource/om-2/)
 - [PROV-O](https://www.w3.org/TR/prov-o/)
 - [Schema.org](https://schema.org/)
 - [SWEET ontology](http://sweetontology.net/)
@@ -33,6 +34,8 @@ See [Issues](https://github.com/soilwise-he/soil-health-knowledge-graph/issues).
 
 ## Vocabularies/Thesauri linked
 
-- [AGROVOC](https://aims.fao.org/aos/agrovoc)
-- [ISO11074](https://data.geoscience.earth/ncl/ISO11074")
+- [AGROVOC](http://aims.fao.org/aos/agrovoc)
+- [ISO 11074:2025](https://data.geoscience.earth/ncl/ISO11074v2025")
 - [GloSIS ontology](https://glosis-ld.github.io/glosis/)
+- [INRAE Thesaurus](http://opendata.inrae.fr/thesaurusINRAE/)
+- [GEMET Thesaurus](https://www.eionet.europa.eu/gemet/)
