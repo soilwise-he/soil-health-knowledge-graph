@@ -7492,7 +7492,7 @@ she:HotWaterExtractableCarbon a skos:Concept ;
     dcterms:source she:Gaublomme2006 ;
     sio:SIO_000210 she:LabileFractionOfTotalSoilOrganicCarbonPool ;
     skos:broader she:MicrobialBiomassIndicators ;
-    skos:definition "Hot water extractable carbon represents the labile fraction of the total soil organic carbon (soc) pool and includes microbial carbon and carbon and nitrogen sources that are readily available to microbes"@en ;
+    skos:definition "Hot water extractable carbon represents the labile fraction of the total soil organic carbon (SOC) pool and includes microbial carbon and carbon and nitrogen sources that are readily available to microbes"@en ;
     skos:prefLabel "hot water extractable carbon"@en .
 
 she:HumaninducedPractices a skos:Concept ;
