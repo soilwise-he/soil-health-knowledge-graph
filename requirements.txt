@@ -3,7 +3,7 @@ keybert==0.8.4
 langchain_community==0.3.24
 lemminflect==0.2.2
 networkx==3.3
-nltk==3.8.1
+nltk==3.9.1
 numpy==1.24.3
 openai==1.84.0
 pandas==2.2.3
