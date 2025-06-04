@@ -4,16 +4,15 @@ PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX sio: <http://semanticscience.org/resource/>
 
-SELECT ?subjectLabel ?predicateURI ?objectLabel ?contextLabel
+SELECT ?subjectLabel ?predicateURI ?objectLabel
 WHERE {
   {
     she:SoilCompaction skos:prefLabel ?scLabel_1 .
-    she:SoilCompaction obo:RO_0002552 she:SoilPhysicalStructure .
-    she:SoilPhysicalStructure skos:prefLabel ?spsLabel .
+    she:SoilCompaction obo:RO_0002552 ?sps .
+    ?sps skos:prefLabel ?spsLabel .
     BIND(?scLabel_1 AS ?subjectLabel)
     BIND(obo:RO_0002552 AS ?predicateURI)
     BIND(?spsLabel AS ?objectLabel)
-    BIND("harms" AS ?contextLabel)
   }
   UNION
   {
@@ -23,76 +22,58 @@ WHERE {
     BIND(?scLabel_2 AS ?subjectLabel)
     BIND(obo:RO_0002212 AS ?predicateURI)
     BIND(?rppLabel AS ?objectLabel)
-    BIND("reduces" AS ?contextLabel)
   }
   UNION
   {
     she:SoilCompaction skos:prefLabel ?scLabel_5 .
-    she:SoilCompaction obo:RO_0002213 she:Waterlogging .
-    she:Waterlogging skos:prefLabel ?wlLabel .
+    she:SoilCompaction obo:RO_0002213 ?wl .
+    ?wl skos:prefLabel ?wlLabel .
     BIND(?scLabel_5 AS ?subjectLabel)
     BIND(obo:RO_0002213 AS ?predicateURI)
     BIND(?wlLabel AS ?objectLabel)
-    BIND("increases likelihood of" AS ?contextLabel)
   }
   UNION
   {
     she:SoilCompaction skos:prefLabel ?scLabel_6 .
-    she:SoilBiochemicalProcesses agrontology:isAffectedBy she:SoilCompaction .
-    she:SoilBiochemicalProcesses skos:prefLabel ?sbpLabel .
+    ?sbq agrontology:isAffectedBy she:SoilCompaction .
+    ?sbq skos:prefLabel ?sbpLabel .
     BIND(?scLabel_6 AS ?subjectLabel)
     BIND(agrontology:affects AS ?predicateURI)
     BIND(?sbpLabel AS ?objectLabel)
-    BIND("" AS ?contextLabel)
   }
   UNION
   {
-    she:SoilCompaction skos:prefLabel ?scLabel_7 .
-    she:SoilBiochemicalProcesses skos:prefLabel ?sbpLabel_includes .
-    she:SoilBiochemicalProcesses agrontology:includes ?biochemComponent .
-    ?biochemComponent skos:prefLabel ?biochemComponentLabel .
-    ?biochemComponent agrontology:isAffectedBy she:SoilCompaction .
-
-    BIND(?scLabel_7 AS ?subjectLabel)
-    BIND(agrontology:affects AS ?predicateURI)
-    BIND(?biochemComponentLabel AS ?objectLabel)
-    BIND(CONCAT("as part of ", ?sbpLabel_includes) AS ?contextLabel)
-  }
-  UNION
-  {
-    she:GreenhouseGasEmissions skos:prefLabel ?ghgLabel_includes .
-    ?specificGHG obo:RO_0002331 she:GreenhouseGasEmissions .
+    ?ghg agrontology:isAffectedBy she:SoilCompaction .
+    ?ghg skos:prefLabel ?ghgLabel .
+    ?specificGHG obo:RO_0002331 ?ghg .
     ?specificGHG skos:prefLabel ?specificGHGLabel .
 
-    BIND(?ghgLabel_includes AS ?subjectLabel)
-    BIND(agrontology:includes AS ?predicateURI)
-    BIND(?specificGHGLabel AS ?objectLabel)
-    BIND("" AS ?contextLabel)
+    BIND(?specificGHGLabel AS ?subjectLabel)
+    BIND(obo:RO_0002331 AS ?predicateURI)
+    BIND(?ghgLabel AS ?objectLabel)
   }
   UNION
   {
     she:SoilCompaction skos:prefLabel ?scLabel_9 .
     ?productionType obo:RO_0002335 she:SoilCompaction .
     ?productionType skos:prefLabel ?productionTypeLabel .
-    BIND(?scLabel_9 AS ?subjectLabel)
+    BIND(?productionTypeLabel AS ?subjectLabel)
     BIND(obo:RO_0002335 AS ?predicateURI)
-    BIND(?productionTypeLabel AS ?objectLabel)
-    BIND("adversely affects" AS ?contextLabel)
+    BIND(?scLabel_9 AS ?objectLabel)
   }
   UNION
   {
     she:SoilCompaction skos:prefLabel ?scLabel_10 .
     she:SoilCompaction agrontology:isCausedBy ?causeNode .
-    ?causeNode sio:SIO_000635 she:CriticalSoilMoistureLevels .
-    she:CriticalSoilMoistureLevels skos:prefLabel ?csmlLabel .
+    ?causeNode sio:SIO_000635 ?csml .
+    ?csml skos:prefLabel ?csmlLabel .
     OPTIONAL {
-        ?causeNode agrontology:makeUseOf she:HeavyMachinery .
-        she:HeavyMachinery skos:prefLabel ?hmLabel .
+        ?causeNode agrontology:makeUseOf ?hm .
+        ?hm skos:prefLabel ?hmLabel .
     }
     BIND(?scLabel_10 AS ?subjectLabel)
     BIND(agrontology:isCausedBy AS ?predicateURI)
-    BIND(IF(BOUND(?hmLabel), CONCAT("Operations at ", ?csmlLabel, " using ", ?hmLabel), CONCAT("Operations at ", ?csmlLabel)) AS ?objectLabel)
-    BIND("" AS ?contextLabel)
+    BIND(IF(BOUND(?hmLabel), CONCAT("operations at ", ?csmlLabel, " using ", ?hmLabel), CONCAT("Operations at ", ?csmlLabel)) AS ?objectLabel)
   }
 }
 ORDER BY ?subjectLabel ?predicateURI ?objectLabel

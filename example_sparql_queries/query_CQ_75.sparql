@@ -15,8 +15,8 @@ WHERE {
   }
   UNION
   {
-    she:RateOfLossOfTopsoilMass skos:prefLabel ?rolotmLabel .
-    she:RateOfLossOfTopsoilMass bao:BAO_0002586 she:SoilErosion .
+    ?indicator skos:prefLabel ?rolotmLabel .
+    ?indicator bao:BAO_0002586 she:SoilErosion .
     she:SoilErosion skos:prefLabel ?seLabel_ind .
     BIND(?rolotmLabel AS ?subjectLabel)
     BIND(bao:BAO_0002586 AS ?predicateURI)
@@ -24,8 +24,9 @@ WHERE {
   }
   UNION
   {
-    she:RateOfLossOfTopsoilMass skos:prefLabel ?rolotmLabel_unit .
-    she:RateOfLossOfTopsoilMass qudt:unit ?unitURI .
+    ?indicator bao:BAO_0002586 she:SoilErosion .
+    ?indicator skos:prefLabel ?rolotmLabel_unit .
+    ?indicator qudt:unit ?unitURI .
     BIND(STRAFTER(STR(?unitURI), STR(unit:)) AS ?unitLocalName)
     BIND(?rolotmLabel_unit AS ?subjectLabel)
     BIND(qudt:unit AS ?predicateURI)

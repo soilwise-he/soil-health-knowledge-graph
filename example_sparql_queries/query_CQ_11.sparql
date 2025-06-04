@@ -12,13 +12,6 @@ WHERE {
   }
   UNION
   {
-    ?startNode skos:prefLabel "soil attributes"@en .
-    ?startNode skos:narrower* ?subject .
-    ?subject skos:narrower ?object .
-    BIND(skos:narrower AS ?predicate)
-  }
-  UNION
-  {
     ?startNode skos:prefLabel "measured soil parameters"@en .
     ?startNode skos:narrower* ?subject .
     ?subject skos:narrower ?object .
@@ -37,7 +30,7 @@ WHERE {
     ?complexParametersNode skos:prefLabel "complex soil parameters"@en .
     ?complexParametersNode agrontology:isDerivedFrom / rdf:object ?sourceInputParameter .
     BIND(?complexParametersNode AS ?subject)
-    BIND(CONCAT(STR(agrontology:isDerivedFrom), ", ", STR(rdf:object)) AS ?predicate)
+    BIND(agrontology:isDerivedFrom AS ?predicate)
     BIND(?sourceInputParameter AS ?object)
   }
 }

@@ -23,17 +23,11 @@ WHERE {
   }
   UNION
   {
-    she:ProductionService skos:prefLabel ?subjectLabel .
-    she:ProductionService skos:narrower ?prodServiceOutput .
+    ?keyServiceURI skos:prefLabel ?subjectLabel .
+    ?keyServiceURI agrontology:isPartOf she:SoilProtection .
+    ?keyServiceURI skos:related ?prodServiceOutput .
     ?prodServiceOutput skos:prefLabel ?objectLabel .
-    BIND(skos:narrower AS ?predicateURI)
-  }
-  UNION
-  {
-    she:FilterFunction skos:prefLabel ?subjectLabel .
-    she:FilterFunction skos:narrower ?filterFunctionOutput .
-    ?filterFunctionOutput skos:prefLabel ?objectLabel .
-    BIND(skos:narrower AS ?predicateURI)
+    BIND(skos:related AS ?predicateURI)
   }
   UNION
   {

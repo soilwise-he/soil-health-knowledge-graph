@@ -14,7 +14,6 @@ WHERE {
     BIND(?crhmLabel_part1 AS ?subjectLabel)
     BIND(skos:narrower AS ?predicateURI)
     BIND(?specificMetalLabel AS ?objectLabel)
-    BIND("" AS ?contextLabel)
   }
   UNION
   {
@@ -43,7 +42,6 @@ WHERE {
     BIND(?crhmLabel_part3 AS ?subjectLabel)
     BIND(agrontology:includes AS ?predicateURI)
     BIND(?includedConceptLabel AS ?objectLabel)
-    BIND("" AS ?contextLabel)
   }
 }
 ORDER BY ?subjectLabel ?predicateURI ?objectLabel

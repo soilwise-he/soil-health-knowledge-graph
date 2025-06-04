@@ -8,8 +8,8 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 SELECT ?itemDescription ?relationshipURI ?valueDescription
 WHERE {
   {
-    she:PointSourcePollution skos:prefLabel ?pspLabel .
-    she:PointSourcePollution she:isCharacterisedBy ?characteristic .
+    she:PointSourceSoilPollution skos:prefLabel ?pspLabel .
+    she:PointSourceSoilPollution she:isCharacterisedBy ?characteristic .
     ?characteristic skos:prefLabel ?characteristicLabel .
     BIND(?pspLabel AS ?itemDescription)
     BIND(she:isCharacterisedBy AS ?relationshipURI)
@@ -17,18 +17,18 @@ WHERE {
   }
   UNION
   {
-    she:PointSourcePollution skos:prefLabel ?pspLabel .
-    she:PointSourcePollution obo:BFO_0000066 ?scaleNode .
-    ?scaleNode agrontology:smallerThan she:DiffusePollution .
-    she:DiffusePollution skos:prefLabel ?dspLabel_scale .
+    she:PointSourceSoilPollution skos:prefLabel ?pspLabel .
+    she:PointSourceSoilPollution obo:BFO_0000066 ?scaleNode .
+    ?scaleNode agrontology:smallerThan she:DiffuseSoilPollution .
+    she:DiffuseSoilPollution skos:prefLabel ?dspLabel_scale .
     BIND(?pspLabel AS ?itemDescription)
     BIND(agrontology:smallerThan AS ?relationshipURI)
     BIND(?dspLabel_scale AS ?valueDescription)
   }
   UNION
   {
-    she:PointSourcePollution skos:prefLabel ?pspLabel .
-    she:PointSourcePollution sio:equivalentTo she:LocalPollution .
+    she:PointSourceSoilPollution skos:prefLabel ?pspLabel .
+    she:PointSourceSoilPollution sio:equivalentTo she:LocalPollution .
     she:LocalPollution skos:prefLabel ?lpLabel .
     BIND(?pspLabel AS ?itemDescription)
     BIND(sio:equivalentTo AS ?relationshipURI)
@@ -36,9 +36,9 @@ WHERE {
   }
   UNION
   {
-    she:PointSourcePollution skos:prefLabel ?pspLabel .
-    she:PointSourcePollution wdt:P1889 she:DiffusePollution .
-    she:DiffusePollution skos:prefLabel ?dspLabel_diff .
+    she:PointSourceSoilPollution skos:prefLabel ?pspLabel .
+    she:PointSourceSoilPollution wdt:P1889 she:DiffuseSoilPollution .
+    she:DiffuseSoilPollution skos:prefLabel ?dspLabel_diff .
     BIND(?pspLabel AS ?itemDescription)
     BIND(wdt:P1889 AS ?relationshipURI)
     BIND(?dspLabel_diff AS ?valueDescription)

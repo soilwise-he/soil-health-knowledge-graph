@@ -11,7 +11,7 @@ WHERE {
     ?affectedEntity skos:prefLabel ?affectedEntityLabel .
 
     BIND("Soil Organic Carbon" AS ?subjectDescription)
-    BIND("agrontology:affects" AS ?relationship)
+    BIND(agrontology:affects AS ?relationship)
     BIND(?affectedEntityLabel AS ?objectDescription)
   }
   UNION
@@ -24,7 +24,7 @@ WHERE {
     ?thresholdConcept skos:prefLabel ?thresholdLabel .
 
     BIND(CONCAT("SOC contents below '", ?thresholdLabel, "' threshold") AS ?subjectDescription)
-    BIND("obo:RO_0002552" AS ?relationship)
+    BIND(obo:RO_0002552 AS ?relationship)
     BIND(?affectedByLowSOCLabel AS ?objectDescription)
   }
 }

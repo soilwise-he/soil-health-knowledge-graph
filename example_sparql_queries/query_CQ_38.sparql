@@ -55,7 +55,7 @@ WHERE {
       ?effectNodePWater sorelph:to ?waterContext .
       ?waterContext skos:prefLabel ?waterContextLabel_internal .
     }
-    BIND(CONCAT("via ", ?pProcessLabel, IF(BOUND(?waterContextLabel_internal), CONCAT(" to ", ?waterContextLabel_internal), "")) AS ?contextLabel)
+    BIND(CONCAT(?pProcessLabel, IF(BOUND(?waterContextLabel_internal), CONCAT(" to ", ?waterContextLabel_internal), "")) AS ?contextLabel)
     BIND(agrontology:affects AS ?relationshipURI)
   }
 }

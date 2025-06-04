@@ -5,8 +5,8 @@ SELECT ?subjectLabel ?predicateURI ?objectLabel
 WHERE {
   {
     she:DiffusePollutedSites skos:prefLabel ?dpsLabel .
-    she:DiffusePollutedSites she:isCharacterisedBy she:HomogeneousPollutionPattern .
-    she:HomogeneousPollutionPattern skos:prefLabel ?hppLabel .
+    she:DiffusePollutedSites she:isCharacterisedBy ?hppConcept .
+    ?hppConcept skos:prefLabel ?hppLabel .
 
     BIND(?dpsLabel AS ?subjectLabel)
     BIND(she:isCharacterisedBy AS ?predicateURI)
@@ -14,23 +14,13 @@ WHERE {
   }
   UNION
   {
-    she:LimitedSamples skos:prefLabel ?lsLabel .
-    she:LimitedSamples she:appliesTo she:DiffusePollutedSites .
+    ?dpsApp skos:prefLabel ?lsLabel .
+    ?dpsApp she:appliesTo she:DiffusePollutedSites .
     she:DiffusePollutedSites skos:prefLabel ?dpsLabel_ls .
 
     BIND(?lsLabel AS ?subjectLabel)
     BIND(she:appliesTo AS ?predicateURI)
     BIND(?dpsLabel_ls AS ?objectLabel)
-  }
-  UNION
-  {
-    she:CompositeSampleAnalyses skos:prefLabel ?csaLabel .
-    she:CompositeSampleAnalyses she:appliesTo she:DiffusePollutedSites .
-    she:DiffusePollutedSites skos:prefLabel ?dpsLabel_csa .
-
-    BIND(?csaLabel AS ?subjectLabel)
-    BIND(she:appliesTo AS ?predicateURI)
-    BIND(?dpsLabel_csa AS ?objectLabel)
   }
   UNION
   {

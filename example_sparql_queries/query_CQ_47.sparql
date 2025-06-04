@@ -14,21 +14,9 @@ WHERE {
     ?bnode_sn_context obo:RO_0002502 ?affected_via_ro .
     ?affected_via_ro skos:prefLabel ?affected_via_ro_label .
 
-    BIND(CONCAT(?snLabel, " (as affected by ", ?spLabel, ")") AS ?itemDescription)
+    BIND(?snLabel AS ?itemDescription)
     BIND(obo:RO_0002502 AS ?relationshipURI)
     BIND(?affected_via_ro_label AS ?valueDescription)
-  }
-  UNION
-  {
-    she:SoilPollution skos:prefLabel ?spLabel .
-    she:SoilPollution ?pred_direct ?obj_direct .
-    VALUES ?pred_direct { agrontology:affects obo:RO_0002552 }
-    FILTER (!ISBLANK(?obj_direct))
-    ?obj_direct skos:prefLabel ?obj_direct_label .
-
-    BIND(?spLabel AS ?itemDescription)
-    BIND(?pred_direct AS ?relationshipURI)
-    BIND(?obj_direct_label AS ?valueDescription)
   }
   UNION
   {
@@ -43,7 +31,7 @@ WHERE {
 
     BIND(?spLabel AS ?itemDescription)
     BIND(agrontology:affects AS ?relationshipURI)
-    BIND(IF(BOUND(?requirement_label), CONCAT(?subject_affected_via_bnode_label, " (context: requires ", ?requirement_label, ")"), ?subject_affected_via_bnode_label) AS ?valueDescription)
+    BIND(IF(BOUND(?requirement_label), CONCAT(?subject_affected_via_bnode_label, " (requires ", ?requirement_label, ")"), ?subject_affected_via_bnode_label) AS ?valueDescription)
   }
   UNION
   {

@@ -51,10 +51,9 @@ WHERE {
   }
   UNION
   {
-    she:MicrobialBiomassIndicators skos:narrower she:AmountOfCultivableBacteria .
     she:AmountOfCultivableBacteriaInDeciduousForestStands skos:prefLabel ?acbDeciduousLabel .
-    she:AmountOfCultivableBacteriaInConiferousForestStands skos:prefLabel ?acbConiferousLabel .
-    she:AmountOfCultivableBacteriaInDeciduousForestStands agrontology:greaterThan she:AmountOfCultivableBacteriaInConiferousForestStands .
+    ?smallerConcept skos:prefLabel ?acbConiferousLabel .
+    she:AmountOfCultivableBacteriaInDeciduousForestStands agrontology:greaterThan ?smallerConcept .
 
     BIND(?acbDeciduousLabel AS ?subjectLabel)
     BIND(agrontology:greaterThan AS ?predicateURI)
@@ -62,10 +61,9 @@ WHERE {
   }
   UNION
   {
-    she:MicrobialBiomassIndicators skos:narrower she:AmountOfCultivableBacteria .
     she:MullHumusForm skos:prefLabel ?mhfLabel .
-    she:MullHumusForm bao:BAO_0002586 she:AmountOfColonyFormingUnits .
-    she:AmountOfColonyFormingUnits skos:prefLabel ?acfuLabel .
+    she:MullHumusForm bao:BAO_0002586 ?indicateConcept .
+    ?indicateConcept skos:prefLabel ?acfuLabel .
 
     BIND(?mhfLabel AS ?subjectLabel)
     BIND(bao:BAO_0002586 AS ?predicateURI)

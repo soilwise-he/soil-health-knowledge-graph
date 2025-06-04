@@ -9,7 +9,7 @@ WHERE {
     ?socThresholdDerivationConcept she:focusesOn ?focusItem .
     ?focusItem skos:prefLabel ?focusItemLabel .
 
-    ?socThresholdsConcept skos:prefLabel "SOC thresholds"@en .
+    ?socThresholdsConcept skos:prefLabel "soil organic carbon thresholds"@en .
     ?socThresholdsConcept she:isDevelopedFor ?sasmConcept .
     ?sasmConcept skos:prefLabel ?sasmLabel .
 

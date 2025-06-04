@@ -20,12 +20,12 @@ WHERE {
 
     BIND(?indicatorLabel AS ?itemDescription)
     BIND(bao:BAO_0002586 AS ?relationshipOrProperty)
-    BIND(CONCAT("assessment of ", ?assessedConceptLabel, " in ", ?agriSoilsLabel) AS ?valueDescription)
+    BIND(CONCAT("assess ", ?assessedConceptLabel, " in ", ?agriSoilsLabel) AS ?valueDescription)
   }
   UNION
   {
-    she:pH skos:prefLabel ?phLabel .
-    she:pH agrontology:smallerThan ?conditionNode .
+    she:SoilpH skos:prefLabel ?phLabel .
+    she:SoilpH agrontology:smallerThan ?conditionNode .
 
     ?conditionNode agrontology:causes she:AluminiumRelease .
     she:AluminiumRelease skos:prefLabel ?alReleaseLabel .

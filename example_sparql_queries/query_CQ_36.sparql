@@ -17,14 +17,13 @@ WHERE {
 
     BIND(?pConcLabel AS ?itemDescription)
     BIND(obo:RO_0002334 AS ?relationshipURI)
-    BIND(CONCAT(?pStockLabel, " (in ", ?soilSolutionLabel, ")") AS ?valueDescription)
+    BIND(?pStockLabel AS ?valueDescription)
   }
   UNION
   {
     she:SoilPAvailability skos:prefLabel ?pAvailLabel .
     ?affectingParameter agrontology:affects she:SoilPAvailability .
     ?affectingParameter skos:prefLabel ?affectingParameterLabel .
-    FILTER(?affectingParameter IN (she:SoilParameters, she:AluminiumOxideContent, she:IronOxideContent))
 
     BIND(?affectingParameterLabel AS ?itemDescription)
     BIND(agrontology:affects AS ?relationshipURI)

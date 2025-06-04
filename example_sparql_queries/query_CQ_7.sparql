@@ -7,7 +7,7 @@ WHERE {
   ?thresholdsConcept skos:prefLabel "thresholds"@en .
   {
     ?thresholdsConcept skos:definition ?value .
-    BIND("Definition of Thresholds" AS ?resultType)
+    BIND("Definition" AS ?resultType)
   }
   UNION
   {

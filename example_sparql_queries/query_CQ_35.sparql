@@ -29,7 +29,6 @@ WHERE {
     BIND(?parameterItselfAffectingSNALabel AS ?itemDescription)
     BIND(agrontology:affects AS ?relationshipURI)
     BIND(?soilNAvailabilityLabel AS ?valueDescription)
-    BIND("" AS ?contextDescription)
   }
   UNION
   {
@@ -40,7 +39,6 @@ WHERE {
     BIND("N Inputs" AS ?itemDescription)
     BIND(biolink:consumed_by AS ?relationshipURI)
     BIND(?consumerLabel AS ?valueDescription)
-    BIND("" AS ?contextDescription)
   }
 }
 ORDER BY ?itemDescription ?relationshipURI ?valueDescription

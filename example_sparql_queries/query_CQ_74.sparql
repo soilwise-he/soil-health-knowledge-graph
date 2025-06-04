@@ -1,146 +1,51 @@
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX she: <https://soilwise-he.github.io/soil-health#>
-PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
 
-SELECT ?subjectLabel ?predicateURI ?objectLabel
+SELECT DISTINCT ?categoryLabel ?relationshipType ?relatedEntityLabel
 WHERE {
   {
-    she:SoilSamplingSites skos:prefLabel ?sssLabel .
-    she:SoilSamplingSites obo:T4FS_0000577 ?targetConcept .
-    ?targetConcept skos:prefLabel ?targetConceptLabel .
-
-    BIND(?sssLabel AS ?subjectLabel)
-    BIND(obo:T4FS_0000577 AS ?predicateURI)
-    BIND(?targetConceptLabel AS ?objectLabel)
+    she:SoilSamplingSites obo:T4FS_0000577 ?relatedEntity .
+    she:SoilSamplingSites skos:prefLabel ?categoryLabel .
+    ?relatedEntity skos:prefLabel ?relatedEntityLabel .
+    FILTER(?relatedEntity != she:StandardDocumentation)
+    BIND(obo:T4FS_0000577 AS ?relationshipType)
   }
   UNION
   {
-    she:OrganicHorizons skos:prefLabel ?ohLabel_type .
-    she:OrganicHorizons skos:narrower ?organicHorizonType .
-    ?organicHorizonType skos:prefLabel ?organicHorizonTypeLabel .
-    BIND(?ohLabel_type AS ?subjectLabel)
-    BIND(skos:narrower AS ?predicateURI)
-    BIND(?organicHorizonTypeLabel AS ?objectLabel)
+    she:SoilSamplingSites obo:T4FS_0000577 ?category .
+    ?category skos:prefLabel ?categoryLabel .
+    ?category agrontology:hasProperty ?relatedEntity .
+    ?relatedEntity skos:prefLabel ?relatedEntityLabel .
+    BIND(agrontology:hasProperty AS ?relationshipType)
   }
   UNION
   {
-    she:FabricOfOrganicHorizons skos:prefLabel ?fohLabel_prop .
-    she:FabricOfOrganicHorizons agrontology:hasProperty ?humusConstituentType .
-    ?humusConstituentType skos:prefLabel ?humusConstituentTypeLabel .
-    BIND(?fohLabel_prop AS ?subjectLabel)
-    BIND(agrontology:hasProperty AS ?predicateURI)
-    BIND(?humusConstituentTypeLabel AS ?objectLabel)
+    she:SoilSamplingSites obo:T4FS_0000577 ?category .
+    ?category skos:narrower ?relatedEntity .
+    ?relatedEntity skos:prefLabel ?relatedEntityLabel .
+    ?category skos:prefLabel ?categoryLabel .
+    BIND(skos:narrower AS ?relationshipType)
   }
   UNION
   {
-    VALUES ?humusConstituentPropURI { she:NatureOfHumusConstituents she:ArrangementOfHumusConstituents }
-    ?humusConstituentPropURI skos:prefLabel ?humusConstituentPropLabel .
-    ?humusConstituentPropURI agrontology:hasProperty ?subProperty .
-    ?subProperty skos:prefLabel ?subPropertyLabel .
-    BIND(?humusConstituentPropLabel AS ?subjectLabel)
-    BIND(agrontology:hasProperty AS ?predicateURI)
-    BIND(?subPropertyLabel AS ?objectLabel)
+    she:SoilSamplingSites obo:T4FS_0000577 ?category .
+    ?category skos:narrower ?relatedEntity .
+    ?relatedEntity skos:narrower ?narrowEntity .
+    ?narrowEntity skos:prefLabel ?relatedEntityLabel .
+    ?relatedEntity skos:prefLabel ?categoryLabel .
+    BIND(skos:narrower AS ?relationshipType)
   }
   UNION
   {
-    she:TypeOfLitter skos:prefLabel ?tolLabel .
-    she:TypeOfLitter agrontology:hasProperty ?litterProperty .
-    ?litterProperty skos:prefLabel ?litterPropertyLabel .
-    BIND(?tolLabel AS ?subjectLabel)
-    BIND(agrontology:hasProperty AS ?predicateURI)
-    BIND(?litterPropertyLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:PlantPart skos:prefLabel ?ppLabel .
-    she:PlantPart skos:narrower ?specificPlantPart .
-    ?specificPlantPart skos:prefLabel ?specificPlantPartLabel .
-    BIND(?ppLabel AS ?subjectLabel)
-    BIND(skos:narrower AS ?predicateURI)
-    BIND(?specificPlantPartLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:FungalMycelia skos:prefLabel ?fmLabel .
-    she:FungalMycelia agrontology:hasProperty ?fmProperty .
-    ?fmProperty skos:prefLabel ?fmPropertyLabel .
-    BIND(?fmLabel AS ?subjectLabel)
-    BIND(agrontology:hasProperty AS ?predicateURI)
-    BIND(?fmPropertyLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:FaunalDroppings skos:prefLabel ?fdLabel .
-    she:FaunalDroppings agrontology:hasProperty ?fdProperty .
-    ?fdProperty skos:prefLabel ?fdPropertyLabel .
-    BIND(?fdLabel AS ?subjectLabel)
-    BIND(agrontology:hasProperty AS ?predicateURI)
-    BIND(?fdPropertyLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:Roots skos:prefLabel ?rootsLabel .
-    she:Roots agrontology:hasProperty ?rootsProperty .
-    ?rootsProperty skos:prefLabel ?rootsPropertyLabel .
-    BIND(?rootsLabel AS ?subjectLabel)
-    BIND(agrontology:hasProperty AS ?predicateURI)
-    BIND(?rootsPropertyLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:CommonSoilFauna skos:prefLabel ?csfLabel .
-    she:CommonSoilFauna agrontology:hasProperty ?csfProperty .
-    ?csfProperty skos:prefLabel ?csfPropertyLabel .
-    BIND(?csfLabel AS ?subjectLabel)
-    BIND(agrontology:hasProperty AS ?predicateURI)
-    BIND(?csfPropertyLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:CommonSoilFauna skos:prefLabel ?csfLabel_ew .
-    she:CommonSoilFauna skos:narrower she:Earthworms .
-    she:Earthworms skos:prefLabel ?ewLabel_spec .
-    BIND(?csfLabel_ew AS ?subjectLabel)
-    BIND(skos:narrower AS ?predicateURI)
-    BIND(?ewLabel_spec AS ?objectLabel)
-  }
-  UNION
-  {
-    she:Earthworms skos:prefLabel ?ewLabel_fg .
-    she:Earthworms skos:narrower ?earthwormFunctionalGroup .
-    ?earthwormFunctionalGroup skos:prefLabel ?efgLabel .
-    BIND(?ewLabel_fg AS ?subjectLabel)
-    BIND(skos:narrower AS ?predicateURI)
-    BIND(?efgLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    VALUES ?efg_def { she:Anecics she:Endogeics she:Epigeics }
-    ?efg_def skos:prefLabel ?efgDefLabel .
-    ?efg_def skos:definition ?efgDefinition .
-    BIND(?efgDefLabel AS ?subjectLabel)
-    BIND(skos:definition AS ?predicateURI)
-    BIND(?efgDefinition AS ?objectLabel)
-  }
-  UNION
-  {
-    VALUES ?efg_habitat { she:Anecics she:Endogeics she:Epigeics }
-    ?efg_habitat skos:prefLabel ?efgHabitatLabel .
-    ?efg_habitat obo:RO_0000053 ?dwellingPlace .
-    ?dwellingPlace skos:prefLabel ?dwellingPlaceLabel .
-    BIND(?efgHabitatLabel AS ?subjectLabel)
-    BIND(obo:RO_0000053 AS ?predicateURI)
-    BIND(?dwellingPlaceLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:HorizonBoundaries skos:prefLabel ?hbLabel .
-    she:HorizonBoundaries agrontology:hasProperty ?hbProperty .
-    ?hbProperty skos:prefLabel ?hbPropertyLabel .
-    BIND(?hbLabel AS ?subjectLabel)
-    BIND(agrontology:hasProperty AS ?predicateURI)
-    BIND(?hbPropertyLabel AS ?objectLabel)
+    she:SoilSamplingSites obo:T4FS_0000577 ?category .
+    ?category skos:narrower ?relatedEntity .
+    ?relatedEntity skos:narrower ?narrowEntity .
+    ?narrowEntity skos:definition ?relatedEntityLabel .
+    ?narrowEntity skos:prefLabel ?categoryLabel .
+    BIND(skos:definition AS ?relationshipType)
   }
 }
-ORDER BY ?subjectLabel ?predicateURI ?objectLabel
+ORDER BY ?categoryLabel ?relationshipType ?relatedEntityLabel

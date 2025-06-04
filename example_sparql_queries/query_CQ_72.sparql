@@ -40,35 +40,6 @@ WHERE {
   }
   UNION
   {
-    she:FluorescenceMeasurements skos:prefLabel ?fmLabel .
-    she:Incubation skos:prefLabel ?incubationLabel .
-    she:FluorescenceMeasurements agrontology:follows she:Incubation .
-    she:EnzymaticActivity skos:prefLabel ?eaLabel_fm .
-    she:EnzymaticActivity agrontology:isMeasuredBy she:FluorescenceMeasurements .
-    BIND(?eaLabel_fm AS ?subjectLabel)
-    BIND(agrontology:isMeasuredBy AS ?predicateURI)
-    BIND(?fmLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:EnzymaticActivity skos:prefLabel ?eaLabel_inc .
-    she:EnzymaticActivity agrontology:isMeasuredBy she:Incubation .
-    she:Incubation skos:prefLabel ?incubationLabel_obj .
-     BIND(?eaLabel_inc AS ?subjectLabel)
-    BIND(agrontology:isMeasuredBy AS ?predicateURI)
-    BIND(?incubationLabel_obj AS ?objectLabel)
-  }
-  UNION
-  {
-    she:FluorescenceMeasurements skos:prefLabel ?fmLabel_seq .
-    she:Incubation skos:prefLabel ?incubationLabel_seq .
-    she:FluorescenceMeasurements agrontology:follows she:Incubation .
-    BIND(?fmLabel_seq AS ?subjectLabel)
-    BIND(agrontology:follows AS ?predicateURI)
-    BIND(?incubationLabel_seq AS ?objectLabel)
-  }
-  UNION
-  {
     she:EssentialBiodiversityVariables skos:prefLabel ?ebvLabel_source .
     she:EssentialBiodiversityVariables dcterms:source she:Guerra2021 .
     OPTIONAL { she:Guerra2021 skos:prefLabel ?guerraLabel_opt . }

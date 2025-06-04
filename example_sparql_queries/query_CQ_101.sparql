@@ -1,14 +1,13 @@
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX she: <https://soilwise-he.github.io/soil-health#>
 PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
-PREFIX obo: <http://purl.obolibrary.org/obo/>
 
 SELECT ?subjectLabel ?predicateURI ?objectLabel
 WHERE {
   {
     she:SoilSalinisation skos:prefLabel ?ssLabel_broader .
-    she:SoilSalinisation skos:broader she:SoilDegradationProcess .
-    she:SoilDegradationProcess skos:prefLabel ?sdpLabel .
+    she:SoilSalinisation skos:broader ?sdp .
+    ?sdp skos:prefLabel ?sdpLabel .
     BIND(?ssLabel_broader AS ?subjectLabel)
     BIND(skos:broader AS ?predicateURI)
     BIND(?sdpLabel AS ?objectLabel)
@@ -16,49 +15,20 @@ WHERE {
   UNION
   {
     she:SoilSalinisation skos:prefLabel ?ssLabel_fertility .
-    she:SoilSalinisation obo:RO_0002212 she:SoilFertility .
+    she:SoilSalinisation ?rela she:SoilFertility .
     she:SoilFertility skos:prefLabel ?sfLabel .
     BIND(?ssLabel_fertility AS ?subjectLabel)
-    BIND(obo:RO_0002212 AS ?predicateURI)
+    BIND(?rela AS ?predicateURI)
     BIND(?sfLabel AS ?objectLabel)
   }
   UNION
   {
     she:SoilSalinisation skos:prefLabel ?ssLabel_nf .
-    she:SoilSalinisation agrontology:isCausedBy she:NaturalFactors .
-    she:NaturalFactors skos:prefLabel ?nfLabel .
+    she:SoilSalinisation agrontology:isCausedBy ?nf .
+    ?nf skos:prefLabel ?nfLabel .
     BIND(?ssLabel_nf AS ?subjectLabel)
     BIND(agrontology:isCausedBy AS ?predicateURI)
     BIND(?nfLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:NaturalFactors skos:prefLabel ?nfLabel_spec .
-    she:NaturalFactors skos:narrower ?specificNaturalFactor .
-    ?specificNaturalFactor skos:prefLabel ?specificNaturalFactorLabel .
-    she:SoilSalinisation agrontology:isCausedBy ?specificNaturalFactor .
-    BIND(?nfLabel_spec AS ?subjectLabel)
-    BIND(skos:narrower AS ?predicateURI)
-    BIND(?specificNaturalFactorLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:SoilSalinisation skos:prefLabel ?ssLabel_hip .
-    she:SoilSalinisation agrontology:isCausedBy she:HumaninducedPractices .
-    she:HumaninducedPractices skos:prefLabel ?hipLabel .
-    BIND(?ssLabel_hip AS ?subjectLabel)
-    BIND(agrontology:isCausedBy AS ?predicateURI)
-    BIND(?hipLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:HumaninducedPractices skos:prefLabel ?hipLabel_spec .
-    she:HumaninducedPractices skos:narrower ?specificHumanPractice .
-    ?specificHumanPractice skos:prefLabel ?specificHumanPracticeLabel .
-    she:SoilSalinisation agrontology:isCausedBy ?specificHumanPractice .
-    BIND(?hipLabel_spec AS ?subjectLabel)
-    BIND(skos:narrower AS ?predicateURI)
-    BIND(?specificHumanPracticeLabel AS ?objectLabel)
   }
 }
 ORDER BY ?subjectLabel ?predicateURI ?objectLabel

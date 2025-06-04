@@ -12,8 +12,8 @@ WHERE {
     she:PointSourceSoilPollution skos:prefLabel ?pspLabel .
     she:PointSourceSoilPollution wdt:P1889 she:DiffuseSoilPollution .
 
-    BIND("Soil Pollution Types" AS ?itemDescription)
-    BIND(rdf:type AS ?relationshipURI)
+    BIND("Soil Pollution" AS ?itemDescription)
+    BIND(skos:narrower AS ?relationshipURI)
     BIND(?dspLabel AS ?valueDescription)
   }
   UNION
@@ -22,8 +22,8 @@ WHERE {
     she:PointSourceSoilPollution skos:prefLabel ?pspLabel_type2 .
     she:PointSourceSoilPollution wdt:P1889 she:DiffuseSoilPollution .
 
-    BIND("Soil Pollution Types" AS ?itemDescription)
-    BIND(rdf:type AS ?relationshipURI)
+    BIND("Soil Pollution" AS ?itemDescription)
+    BIND(skos:narrower AS ?relationshipURI)
     BIND(?pspLabel_type2 AS ?valueDescription)
   }
   UNION

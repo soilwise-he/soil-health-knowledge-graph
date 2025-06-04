@@ -2,15 +2,13 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX she: <https://soilwise-he.github.io/soil-health#>
 PREFIX bao: <http://www.bioassayontology.org/bao#>
 PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
-PREFIX schema: <https://schema.org/>
-PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
 
 SELECT ?subjectLabel ?predicateURI ?objectLabel
 WHERE {
   {
     she:SoilErosionByWater skos:prefLabel ?sebwLabel .
-    she:SoilErosionByWater bao:BAO_0095002 she:SoilLossRates .
-    she:SoilLossRates skos:prefLabel ?slrLabel .
+    she:SoilErosionByWater bao:BAO_0095002 ?slr .
+    ?slr skos:prefLabel ?slrLabel .
 
     BIND(?sebwLabel AS ?subjectLabel)
     BIND(bao:BAO_0095002 AS ?predicateURI)

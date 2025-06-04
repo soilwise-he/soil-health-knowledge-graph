@@ -10,7 +10,6 @@ WHERE {
     she:NPRatios agrontology:greaterThan ?limitNodeP .
     ?limitNodeP af-x:AFX_0000408 ?treeSpeciesP .
     ?treeSpeciesP skos:prefLabel ?treeSpeciesLabelP .
-    FILTER(?treeSpeciesP IN (she:ConiferousTreeSpecies, she:DeciduousTreeSpecies))
 
     ?limitNodeP qudt:numericValue ?numericValueP .
     ?limitNodeP she:indicates she:PLimitation .
@@ -18,14 +17,13 @@ WHERE {
 
     BIND(CONCAT("N/P Ratio for ", ?treeSpeciesLabelP) AS ?itemDescription)
     BIND(agrontology:greaterThan AS ?relationshipURI)
-    BIND(CONCAT(STR(?numericValueP), " (N/P Ratio > ", STR(?numericValueP), " indicates ", ?pLimitationLabel, ")") AS ?valueDescription)
+    BIND(CONCAT(STR(?numericValueP), ", ", ?pLimitationLabel) AS ?valueDescription)
   }
   UNION
   {
     she:NPRatios agrontology:smallerThan ?limitNodeN .
     ?limitNodeN af-x:AFX_0000408 ?treeSpeciesN .
     ?treeSpeciesN skos:prefLabel ?treeSpeciesLabelN .
-    FILTER(?treeSpeciesN IN (she:ConiferousTreeSpecies, she:DeciduousTreeSpecies))
 
     ?limitNodeN qudt:numericValue ?numericValueN .
     ?limitNodeN she:indicates she:NLimitation .
@@ -33,7 +31,7 @@ WHERE {
 
     BIND(CONCAT("N/P Ratio for ", ?treeSpeciesLabelN) AS ?itemDescription)
     BIND(agrontology:smallerThan AS ?relationshipURI)
-    BIND(CONCAT(STR(?numericValueN), " (N/P Ratio < ", STR(?numericValueN), " indicates ", ?nLimitationLabel, ")") AS ?valueDescription)
+    BIND(CONCAT(STR(?numericValueN), ", ", ?nLimitationLabel) AS ?valueDescription)
   }
 }
 ORDER BY ?itemDescription ?relationshipURI

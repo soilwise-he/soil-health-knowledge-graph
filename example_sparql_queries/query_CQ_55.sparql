@@ -7,8 +7,8 @@ SELECT ?itemDescription ?relationshipURI ?valueDescription
 WHERE {
   {
     she:PlantProtectionProducts skos:prefLabel ?pppLabel .
-    she:PlantProtectionProducts agrontology:isPartOf she:CommonAgriculturalPractices .
-    she:CommonAgriculturalPractices skos:prefLabel ?capLabel .
+    she:PlantProtectionProducts agrontology:isPartOf ?cap .
+    ?cap skos:prefLabel ?capLabel .
 
     BIND(?pppLabel AS ?itemDescription)
     BIND(agrontology:isPartOf AS ?relationshipURI)
@@ -17,8 +17,8 @@ WHERE {
   UNION
   {
     she:PlantProtectionProducts skos:prefLabel ?pppLabel .
-    she:PlantProtectionProducts skos:narrower she:Herbicides .
-    she:Herbicides skos:prefLabel ?herbicidesLabel .
+    she:PlantProtectionProducts skos:narrower ?pppNarrower .
+    ?pppNarrower skos:prefLabel ?herbicidesLabel .
 
     BIND(?pppLabel AS ?itemDescription)
     BIND(skos:narrower AS ?relationshipURI)

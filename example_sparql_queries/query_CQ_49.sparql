@@ -1,180 +1,65 @@
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
 PREFIX she: <https://soilwise-he.github.io/soil-health#>
 PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX sorelph: <http://sweetontology.net/relaPhysical/>
-PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
 
-SELECT ?pollutantCategoryLabel ?specificPollutantLabel ?sourceWithinArableFarmingLabel
+SELECT DISTINCT ?pollutantLabel ?relationship ?sourceLabel
 WHERE {
   {
-    she:Metals skos:prefLabel ?catLabelM .
-    she:Cadmium skos:prefLabel ?pollutantLabelCd .
-    she:Cadmium sio:SIO_000128 she:MineralFertilisers .
-    she:MineralFertilisers skos:prefLabel ?sourceLabelCd .
-    BIND(?catLabelM AS ?pollutantCategoryLabel)
-    BIND(?pollutantLabelCd AS ?specificPollutantLabel)
-    BIND(?sourceLabelCd AS ?sourceWithinArableFarmingLabel)
+    ?pollutant sorelph:from ?source .
+    ?pollutant skos:prefLabel ?pollutantLabel .
+    ?source skos:prefLabel ?sourceLabel .
+    BIND(sorelph:from AS ?relationship)
+    
+    FILTER EXISTS {
+      ?pollutant agrontology:isIncludedIn she:EmergingConcernPollutants
+    }
   }
   UNION
   {
-    she:Metals skos:prefLabel ?catLabelCu .
-    she:Copper skos:prefLabel ?pollutantLabelCu .
-    she:Copper sio:SIO_000128 she:AnimalManure .
-    she:AnimalManure skos:prefLabel ?sourceLabelCu .
-    BIND(?catLabelCu AS ?pollutantCategoryLabel)
-    BIND(?pollutantLabelCu AS ?specificPollutantLabel)
-    BIND(?sourceLabelCu AS ?sourceWithinArableFarmingLabel)
+    ?pollutant sio:SIO_000128 ?source .
+    ?pollutant skos:prefLabel ?pollutantLabel .
+    ?source skos:prefLabel ?sourceLabel .
+    BIND(sio:SIO_000128 AS ?relationship)
+    
+    FILTER EXISTS {
+      ?pollutant agrontology:isIncludedIn she:EmergingConcernPollutants
+    }
   }
   UNION
   {
-    she:Metals skos:prefLabel ?catLabelZn .
-    she:Zinc skos:prefLabel ?pollutantLabelZn .
-    she:Zinc sio:SIO_000128 she:AnimalManure .
-    she:AnimalManure skos:prefLabel ?sourceLabelZn .
-    BIND(?catLabelZn AS ?pollutantCategoryLabel)
-    BIND(?pollutantLabelZn AS ?specificPollutantLabel)
-    BIND(?sourceLabelZn AS ?sourceWithinArableFarmingLabel)
+    ?broadCategory agrontology:includes ?pollutant .
+    ?broadCategory sio:SIO_000128 she:ArableSoils .
+    ?broadCategory skos:prefLabel ?pollutantLabel .
+    ?pollutant skos:prefLabel ?sourceLabel .
+    BIND(agrontology:includes AS ?relationship)
   }
   UNION
   {
-    she:Metals skos:prefLabel ?catLabelMComp .
-    she:Metals sio:SIO_000128 she:Compost .
-    she:Compost skos:prefLabel ?sourceLabelMComp .
-    BIND(?catLabelMComp AS ?pollutantCategoryLabel)
-    BIND("most metals" AS ?specificPollutantLabel)
-    BIND(?sourceLabelMComp AS ?sourceWithinArableFarmingLabel)
+    ?pollutant skos:narrower ?specificPollutant .
+    ?pollutant sio:SIO_000128 she:ArableSoils .
+    ?pollutant skos:prefLabel ?pollutantLabel .
+    ?specificPollutant skos:prefLabel ?sourceLabel .
+    BIND(skos:narrower AS ?relationship)
   }
   UNION
   {
-    she:Metals skos:prefLabel ?catLabelMSlud .
-    she:Metals sio:SIO_000128 she:Sludges .
-    she:Sludges skos:prefLabel ?sourceLabelMSlud .
-    BIND(?catLabelMSlud AS ?pollutantCategoryLabel)
-    BIND("most metals" AS ?specificPollutantLabel)
-    BIND(?sourceLabelMSlud AS ?sourceWithinArableFarmingLabel)
+    ?metal skos:broader she:Metals .
+    she:Metals sio:SIO_000128 she:ArableSoils .
+    ?metal sio:SIO_000128 ?source .
+    ?metal skos:prefLabel ?pollutantLabel .
+    ?source skos:prefLabel ?sourceLabel .
+    FILTER(?source != she:ArableSoils)
+    BIND(sio:SIO_000128 AS ?relationship)
   }
   UNION
   {
-    she:EmergingConcernPollutants skos:prefLabel ?catLabelECP .
-    she:EmergingConcernPollutants sio:SIO_000128 she:ArableSoils .
-
-    she:EmergingConcernPollutants agrontology:includes she:MedicinalResidues .
-    she:MedicinalResidues skos:prefLabel ?pollutantLabelMedR .
-    she:MedicinalResidues sorelph:from she:AnimalMedicines .
-    she:AnimalMedicines skos:prefLabel ?sourceLabelMedRAM .
-    BIND(?catLabelECP AS ?pollutantCategoryLabel)
-    BIND(?pollutantLabelMedR AS ?specificPollutantLabel)
-    BIND(?sourceLabelMedRAM AS ?sourceWithinArableFarmingLabel)
-  }
-  UNION
-  {
-    she:EmergingConcernPollutants skos:prefLabel ?catLabelECP2 .
-    she:EmergingConcernPollutants sio:SIO_000128 she:ArableSoils .
-    she:EmergingConcernPollutants agrontology:includes she:MedicinalResidues .
-    she:MedicinalResidues skos:prefLabel ?pollutantLabelMedR2 .
-    she:MedicinalResidues sorelph:from she:HumanMedicines .
-    she:HumanMedicines skos:prefLabel ?sourceLabelMedRHM .
-    BIND(?catLabelECP2 AS ?pollutantCategoryLabel)
-    BIND(?pollutantLabelMedR2 AS ?specificPollutantLabel)
-    BIND(?sourceLabelMedRHM AS ?sourceWithinArableFarmingLabel)
-  }
-  UNION
-  {
-    she:EmergingConcernPollutants skos:prefLabel ?catLabelAntiAM .
-    she:EmergingConcernPollutants sio:SIO_000128 she:ArableSoils .
-    she:EmergingConcernPollutants agrontology:includes she:MedicinalResidues .
-    she:MedicinalResidues skos:narrower she:Antibiotics .
-    she:Antibiotics skos:prefLabel ?pollutantLabelAnti .
-    she:MedicinalResidues sorelph:from she:AnimalMedicines .
-    she:AnimalMedicines skos:prefLabel ?sourceLabelAntiAM .
-    BIND(?catLabelAntiAM AS ?pollutantCategoryLabel)
-    BIND(?pollutantLabelAnti AS ?specificPollutantLabel)
-    BIND(?sourceLabelAntiAM AS ?sourceWithinArableFarmingLabel)
-  }
-  UNION
-  {
-    she:EmergingConcernPollutants skos:prefLabel ?catLabelAntiHM .
-    she:EmergingConcernPollutants sio:SIO_000128 she:ArableSoils .
-    she:EmergingConcernPollutants agrontology:includes she:MedicinalResidues .
-    she:MedicinalResidues skos:narrower she:Antibiotics .
-    she:Antibiotics skos:prefLabel ?pollutantLabelAnti2 .
-    she:MedicinalResidues sorelph:from she:HumanMedicines .
-    she:HumanMedicines skos:prefLabel ?sourceLabelAntiHM .
-    BIND(?catLabelAntiHM AS ?pollutantCategoryLabel)
-    BIND(?pollutantLabelAnti2 AS ?specificPollutantLabel)
-    BIND(?sourceLabelAntiHM AS ?sourceWithinArableFarmingLabel)
-  }
-  UNION
-  {
-    she:EmergingConcernPollutants skos:prefLabel ?catLabelHormAM .
-    she:EmergingConcernPollutants sio:SIO_000128 she:ArableSoils .
-    she:EmergingConcernPollutants agrontology:includes she:MedicinalResidues .
-    she:MedicinalResidues skos:narrower she:HormonalResidues .
-    she:HormonalResidues skos:prefLabel ?pollutantLabelHorm .
-    she:MedicinalResidues sorelph:from she:AnimalMedicines .
-    she:AnimalMedicines skos:prefLabel ?sourceLabelHormAM .
-    BIND(?catLabelHormAM AS ?pollutantCategoryLabel)
-    BIND(?pollutantLabelHorm AS ?specificPollutantLabel)
-    BIND(?sourceLabelHormAM AS ?sourceWithinArableFarmingLabel)
-  }
-  UNION
-  {
-    she:EmergingConcernPollutants skos:prefLabel ?catLabelHormHM .
-    she:EmergingConcernPollutants sio:SIO_000128 she:ArableSoils .
-    she:EmergingConcernPollutants agrontology:includes she:MedicinalResidues .
-    she:MedicinalResidues skos:narrower she:HormonalResidues .
-    she:HormonalResidues skos:prefLabel ?pollutantLabelHorm2 .
-    she:MedicinalResidues sorelph:from she:HumanMedicines .
-    she:HumanMedicines skos:prefLabel ?sourceLabelHormHM .
-    BIND(?catLabelHormHM AS ?pollutantCategoryLabel)
-    BIND(?pollutantLabelHorm2 AS ?specificPollutantLabel)
-    BIND(?sourceLabelHormHM AS ?sourceWithinArableFarmingLabel)
-  }
-  UNION
-  {
-    she:EmergingConcernPollutants skos:prefLabel ?catLabelMic .
-    she:EmergingConcernPollutants sio:SIO_000128 she:ArableSoils .
-    she:EmergingConcernPollutants agrontology:includes she:Microplastics .
-    she:Microplastics skos:prefLabel ?pollutantLabelMic .
-    she:Microplastics sio:SIO_000128 she:OrganicSoilImprovers .
-    she:OrganicSoilImprovers skos:prefLabel ?sourceLabelMic .
-    BIND(?catLabelMic AS ?pollutantCategoryLabel)
-    BIND(?pollutantLabelMic AS ?specificPollutantLabel)
-    BIND(?sourceLabelMic AS ?sourceWithinArableFarmingLabel)
-  }
-  UNION
-  {
-    she:EmergingConcernPollutants skos:prefLabel ?catLabelPFC .
-    she:EmergingConcernPollutants sio:SIO_000128 she:ArableSoils .
-    she:EmergingConcernPollutants agrontology:includes she:PolyfluorinatedCompounds .
-    she:PolyfluorinatedCompounds skos:prefLabel ?pollutantLabelPFC .
-    she:PolyfluorinatedCompounds sorelph:from she:SewageSludge .
-    she:SewageSludge skos:prefLabel ?sourceLabelPFC .
-    BIND(?catLabelPFC AS ?pollutantCategoryLabel)
-    BIND(?pollutantLabelPFC AS ?specificPollutantLabel)
-    BIND(?sourceLabelPFC AS ?sourceWithinArableFarmingLabel)
-  }
-  UNION
-  {
-    she:EmergingConcernPollutants skos:prefLabel ?catLabelPFOA .
-    she:EmergingConcernPollutants sio:SIO_000128 she:ArableSoils .
-    she:EmergingConcernPollutants agrontology:includes she:PolyfluorinatedCompounds .
-    she:PolyfluorinatedCompounds skos:narrower she:PerfluorooctanoicAcid .
-    she:PerfluorooctanoicAcid skos:prefLabel ?pollutantLabelPFOA .
-    she:PolyfluorinatedCompounds sorelph:from she:SewageSludge .
-    she:SewageSludge skos:prefLabel ?sourceLabelPFOA .
-    BIND(?catLabelPFOA AS ?pollutantCategoryLabel)
-    BIND(?pollutantLabelPFOA AS ?specificPollutantLabel)
-    BIND(?sourceLabelPFOA AS ?sourceWithinArableFarmingLabel)
-  }
-  UNION
-  {
-    she:EmergingConcernPollutants skos:prefLabel ?catLabelNano .
-    she:EmergingConcernPollutants sio:SIO_000128 she:ArableSoils .
-    she:EmergingConcernPollutants agrontology:includes she:Nanoparticles .
-    she:Nanoparticles skos:prefLabel ?pollutantLabelNano .
-    BIND(?catLabelNano AS ?pollutantCategoryLabel)
-    BIND(?pollutantLabelNano AS ?specificPollutantLabel)
+    she:Metals sio:SIO_000128 ?source .
+    she:Metals skos:prefLabel ?pollutantLabel .
+    ?source skos:prefLabel ?sourceLabel .
+    FILTER(?source != she:ArableSoils)
+    BIND(sio:SIO_000128 AS ?relationship)
   }
 }
-ORDER BY ?pollutantCategoryLabel ?specificPollutantLabel ?sourceWithinArableFarmingLabel
+ORDER BY ?pollutantLabel ?sourceLabel

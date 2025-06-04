@@ -15,7 +15,6 @@ WHERE {
     BIND("Lower SOM Limit" AS ?limitType)
     BIND(obo:RO_0017003 AS ?limitPropertyOrValue)
     BIND("Clay Content" AS ?relatedToClayCondition)
-    BIND("" AS ?somPercentage)
   }
   UNION
   {
@@ -36,43 +35,42 @@ WHERE {
     BIND("Upper SOM Limit" AS ?limitType)
     BIND(obo:RO_0017003 AS ?limitPropertyOrValue)
     BIND("Clay Content" AS ?relatedToClayCondition)
-    BIND("" AS ?somPercentage)
   }
   UNION
   {
-    ?somContentsConcept skos:prefLabel "SOM contents"@en .
+    ?somContentsConcept skos:prefLabel "soil organic matter contents"@en .
     ?somContentsConcept agrontology:smallerThan ?bNodeSmallerThan1Percent .
-    ?bNodeSmallerThan1Percent biolink:has_percentage "1%"^^qudt:integerPercentage .
+    ?bNodeSmallerThan1Percent biolink:has_percentage ?percentage .
     ?bNodeSmallerThan1Percent af-x:AFX_0000408 ?obj1 .
     ?obj1 skos:prefLabel ?obj1Label .
-    BIND("SOM Contents < 1%" AS ?limitType)
+    BIND(CONCAT("SOM Contents < ", STR(?percentage)) AS ?limitType)
     BIND(af-x:AFX_0000408 AS ?limitPropertyOrValue)
     BIND(?obj1Label AS ?relatedToClayCondition)
-    BIND("1%" AS ?somPercentage)
+    BIND(?percentage AS ?somPercentage)
   }
   UNION
   {
-    ?somContentsConcept skos:prefLabel "SOM contents"@en .
+    ?somContentsConcept skos:prefLabel "soil organic matter contents"@en .
     ?somContentsConcept agrontology:smallerThan ?bNodeSmallerThan1Percent .
-    ?bNodeSmallerThan1Percent biolink:has_percentage "1%"^^qudt:integerPercentage .
+    ?bNodeSmallerThan1Percent biolink:has_percentage ?percentage .
     ?bNodeSmallerThan1Percent obo:RO_0002212 ?obj2 .
     ?obj2 skos:prefLabel ?obj2Label .
-    BIND("SOM Contents < 1%" AS ?limitType)
+    BIND(CONCAT("SOM Contents < ", STR(?percentage)) AS ?limitType)
     BIND(obo:RO_0002212 AS ?limitPropertyOrValue)
     BIND(?obj2Label AS ?relatedToClayCondition)
-    BIND("1%" AS ?somPercentage)
+    BIND(?percentage AS ?somPercentage)
   }
   UNION
   {
-    ?somContentsConcept skos:prefLabel "SOM contents"@en .
+    ?somContentsConcept skos:prefLabel "soil organic matter contents"@en .
     ?somContentsConcept agrontology:smallerThan ?bNodeSmallerThan1Percent .
-    ?bNodeSmallerThan1Percent biolink:has_percentage "1%"^^qudt:integerPercentage .
+    ?bNodeSmallerThan1Percent biolink:has_percentage ?percentage .
     ?bNodeSmallerThan1Percent obo:RO_0002552 ?obj3 .
     ?obj3 skos:prefLabel ?obj3Label .
-    BIND("SOM Contents < 1%" AS ?limitType)
+    BIND(CONCAT("SOM Contents < ", STR(?percentage)) AS ?limitType)
     BIND(obo:RO_0002552 AS ?limitPropertyOrValue)
     BIND(?obj3Label AS ?relatedToClayCondition)
-    BIND("1%" AS ?somPercentage)
+    BIND(?percentage AS ?somPercentage)
   }
 }
 ORDER BY ?limitType ?limitPropertyOrValue

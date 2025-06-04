@@ -15,7 +15,6 @@ WHERE {
     BIND("Nutrient Inputs" AS ?itemDescription)
     BIND(agrontology:affects AS ?relationshipURI)
     BIND(?affectedEntityLabel AS ?valueDescription)
-    BIND("" AS ?contextDescription)
   }
   UNION
   {

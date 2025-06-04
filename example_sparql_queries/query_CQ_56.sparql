@@ -1,156 +1,93 @@
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX she: <https://soilwise-he.github.io/soil-health#>
-PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX she: <https://soilwise-he.github.io/soil-health#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-SELECT ?pollutantCategoryLabel ?specificPollutantLabel ?sourceLabel
+SELECT DISTINCT ?pollutantLabel ?sourceLabel ?location ?compoundLabel
 WHERE {
   {
-    she:Agriculture skos:prefLabel ?agricultureLabel_static .
-    she:OrganicCompounds skos:prefLabel ?ocCatLabel .
-    VALUES ?sourceURI { she:SewageSludge she:Compost }
-    ?sourceURI skos:prefLabel ?sourceDisplayLabel .
-    ?sourceURI agrontology:isSourceOf ?bnode_oc .
-    ?bnode_oc obo:BFO_0000066 she:Agriculture .
-    ?bnode_oc rdf:object ?organicCompoundType .
-    VALUES ?organicCompoundType { she:PFAS she:Plastics she:Antimicrobials }
-
-    OPTIONAL { ?organicCompoundType skos:prefLabel ?ocTypeLabel_opt . }
-    OPTIONAL { ?organicCompoundType agrontology:hasAbbreviation ?ocTypeAbbr_opt . }
-    BIND(COALESCE(?ocTypeLabel_opt, ?ocTypeAbbr_opt, STR(?organicCompoundType)) AS ?ocType_displayName)
-
-    BIND(?ocCatLabel AS ?pollutantCategoryLabel)
-    BIND(?ocType_displayName AS ?specificPollutantLabel)
-    BIND(CONCAT(?sourceDisplayLabel, " (in ", ?agricultureLabel_static, ")") AS ?sourceLabel)
-  }
-  UNION
-  {
-    she:OrganicPollutants skos:prefLabel ?opCatLabel_pah .
-    she:OrganicPollutants skos:narrower she:PAHs .
-    she:NaturallyOccurring agrontology:isPropertyOf she:PAHs .
-    she:NaturallyOccurring skos:prefLabel ?naturallyOccurringLabel .
-
-    OPTIONAL { she:PAHs skos:prefLabel ?pah_label_opt . }
-    OPTIONAL { she:PAHs agrontology:hasAbbreviation ?pah_abbr_opt . }
-    BIND(COALESCE(?pah_label_opt, ?pah_abbr_opt, STR(she:PAHs)) AS ?pah_displayName)
-
-    BIND(?opCatLabel_pah AS ?pollutantCategoryLabel)
-    BIND(?pah_displayName AS ?specificPollutantLabel)
-    BIND(?naturallyOccurringLabel AS ?sourceLabel)
-  }
-  UNION
-  {
-    she:OrganicPollutants skos:prefLabel ?opCatLabel_pcb .
-    she:OrganicPollutants skos:narrower she:PCBs .
-    she:PCBs she:inputsFrom she:IndustrialProcesses .
-    she:IndustrialProcesses skos:prefLabel ?industrialProcessesLabel .
-
-    OPTIONAL { she:PCBs skos:prefLabel ?pcb_label_opt . }
-    OPTIONAL { she:PCBs agrontology:hasAbbreviation ?pcb_abbr_opt . }
-    BIND(COALESCE(?pcb_label_opt, ?pcb_abbr_opt, STR(she:PCBs)) AS ?pcb_displayName)
-
-    BIND(?opCatLabel_pcb AS ?pollutantCategoryLabel)
-    BIND(?pcb_displayName AS ?specificPollutantLabel)
-    BIND(?industrialProcessesLabel AS ?sourceLabel)
-  }
-  UNION
-  {
-    {
-      she:OrganicPollutants skos:prefLabel ?opCatLabel_ocp .
-      she:OrganicPollutants skos:narrower she:OrganochlorinePesticides .
-
-      OPTIONAL { she:OrganochlorinePesticides skos:prefLabel ?ocp_label_opt . }
-      BIND(COALESCE(?ocp_label_opt, STR(she:OrganochlorinePesticides)) AS ?ocp_displayName)
-      BIND(?opCatLabel_ocp AS ?pollutantCategoryLabel)
-      BIND(?ocp_displayName AS ?specificPollutantLabel)
+    ?pollutant sio:SIO_000128 ?process .
+    ?process rdf:object she:Soil .
+    
+    OPTIONAL { ?pollutant skos:prefLabel ?prefLabel }
+    OPTIONAL { ?pollutant agrontology:hasAbbreviation ?abbrev }
+    BIND(COALESCE(?prefLabel, ?abbrev) AS ?pollutantLabel)
+    
+    OPTIONAL {
+      ?source agrontology:isSourceOf ?sourceProcess .
+      ?sourceProcess rdf:object ?pollutant .
+      OPTIONAL { ?source skos:prefLabel ?sourcePrefLabel }
+      OPTIONAL { ?source agrontology:hasAbbreviation ?sourceAbbrev }
+      BIND(COALESCE(?sourcePrefLabel, ?sourceAbbrev) AS ?sourceLabel)
     }
-    UNION
-    {
-      she:OrganochlorinePesticides skos:narrower ?sub_ocp .
-      OPTIONAL { ?sub_ocp skos:prefLabel ?sub_ocp_label_opt . }
-      OPTIONAL { ?sub_ocp agrontology:hasAbbreviation ?sub_ocp_abbr_opt . }
-      BIND(COALESCE(?sub_ocp_label_opt, ?sub_ocp_abbr_opt, STR(?sub_ocp)) AS ?sub_ocp_displayName)
-
-      OPTIONAL { she:OrganochlorinePesticides skos:prefLabel ?ocp_label_opt_inner . }
-      BIND(COALESCE(?ocp_label_opt_inner, STR(she:OrganochlorinePesticides)) AS ?ocp_displayName_inner)
-
-
-      BIND(?opCatLabel_ocp AS ?pollutantCategoryLabel)
-      BIND(CONCAT(?sub_ocp_displayName, " (subtype of ", ?ocp_displayName_inner, ")") AS ?specificPollutantLabel)
+    
+    OPTIONAL {
+      ?pollutant she:inputsFrom ?source .
+      OPTIONAL { ?source skos:prefLabel ?sourcePrefLabel }
+      OPTIONAL { ?source agrontology:hasAbbreviation ?sourceAbbrev }
+      BIND(COALESCE(?sourcePrefLabel, ?sourceAbbrev) AS ?sourceLabel)
     }
   }
   UNION
   {
-    {
-      she:OrganicPollutants skos:prefLabel ?opCatLabel_btex .
-      she:OrganicPollutants skos:narrower she:BTEX .
-      she:BTEX sio:SIO_000128 ?btexLocNode .
-      ?btexLocNode prov:atLocation she:LargeScaleCleaningFacilities .
-      she:LargeScaleCleaningFacilities skos:prefLabel ?lscfLabel_btex .
-      OPTIONAL {
-        ?btexLocNode rdf:object ?btexContextObj .
-        ?btexContextObj skos:prefLabel ?btexContextLabel .
+    ?pollutant sio:SIO_000128 she:UrbanSoils .
+    
+    OPTIONAL { ?pollutant skos:prefLabel ?prefLabel }
+    OPTIONAL { ?pollutant agrontology:hasAbbreviation ?abbrev }
+    BIND(COALESCE(?prefLabel, ?abbrev) AS ?pollutantLabel)
+    
+    OPTIONAL {
+      ?pollutant she:inputsFrom ?source .
+      OPTIONAL { ?source skos:prefLabel ?sourcePrefLabel }
+      OPTIONAL { ?source agrontology:hasAbbreviation ?sourceAbbrev }
+      BIND(COALESCE(?sourcePrefLabel, ?sourceAbbrev) AS ?sourceLabel)
+    }
+  }
+  UNION
+  {
+    she:OrganicPollutants skos:narrower ?pollutant .
+    
+    OPTIONAL { ?pollutant skos:prefLabel ?prefLabel }
+    OPTIONAL { ?pollutant agrontology:hasAbbreviation ?abbrev }
+    BIND(COALESCE(?prefLabel, ?abbrev) AS ?pollutantLabel)
+    
+    OPTIONAL {
+      ?pollutant she:inputsFrom ?source .
+      OPTIONAL { ?source skos:prefLabel ?sourcePrefLabel }
+      OPTIONAL { ?source agrontology:hasAbbreviation ?sourceAbbrev }
+      BIND(COALESCE(?sourcePrefLabel, ?sourceAbbrev) AS ?sourceLabel)
+    }
+    
+    OPTIONAL {
+      {
+        ?pollutant skos:narrower ?specificCompound .
       }
-      BIND(CONCAT(?lscfLabel_btex, IF(BOUND(?btexContextLabel), CONCAT(" (", ?btexContextLabel, ")"), "")) AS ?btexSourceDisplay)
-
-      OPTIONAL { she:BTEX skos:prefLabel ?btex_label_opt . }
-      OPTIONAL { she:BTEX agrontology:hasAbbreviation ?btex_abbr_opt . }
-      BIND(COALESCE(?btex_label_opt, ?btex_abbr_opt, STR(she:BTEX)) AS ?btex_displayName)
-      BIND(?opCatLabel_btex AS ?pollutantCategoryLabel)
-      BIND(?btex_displayName AS ?specificPollutantLabel)
-      BIND(?btexSourceDisplay AS ?sourceLabel)
-    }
-    UNION
-    {
-      she:BTEX skos:narrower ?sub_btex .
-      OPTIONAL { ?sub_btex skos:prefLabel ?sub_btex_label_opt . }
-      OPTIONAL { ?sub_btex agrontology:hasAbbreviation ?sub_btex_abbr_opt . }
-      BIND(COALESCE(?sub_btex_label_opt, ?sub_btex_abbr_opt, STR(?sub_btex)) AS ?sub_btex_displayName)
-
-      OPTIONAL { she:BTEX skos:prefLabel ?btex_label_opt_inner . }
-      OPTIONAL { she:BTEX agrontology:hasAbbreviation ?btex_abbr_opt_inner . }
-      BIND(COALESCE(?btex_label_opt_inner, ?btex_abbr_opt_inner, STR(she:BTEX)) AS ?btex_displayName_inner)
-
-      BIND(?opCatLabel_btex AS ?pollutantCategoryLabel)
-      BIND(CONCAT(?sub_btex_displayName, " (subtype of ", ?btex_displayName_inner, ")") AS ?specificPollutantLabel)
-      BIND(?btexSourceDisplay AS ?sourceLabel)
+      UNION
+      {
+        ?pollutant agrontology:includes ?specificCompound .
+      }
+      OPTIONAL { ?specificCompound skos:prefLabel ?compoundPrefLabel }
+      OPTIONAL { ?specificCompound agrontology:hasAbbreviation ?compoundAbbrev }
+      BIND(COALESCE(?compoundPrefLabel, ?compoundAbbrev) AS ?compoundLabel)
     }
   }
   UNION
   {
-    {
-      she:OrganicPollutants skos:prefLabel ?opCatLabel_voc .
-      she:OrganicPollutants skos:narrower she:VOCs .
-      she:VOCs she:inputsFrom ?voc_source_uri .
-      VALUES ?voc_source_uri { she:IndustrialActivities she:DryCleaning }
-      ?voc_source_uri skos:prefLabel ?voc_source_label .
-      OPTIONAL { she:VOCs sio:SIO_000128 ?vocContextObj . ?vocContextObj skos:prefLabel ?vocContextLabel .}
-
-      OPTIONAL { she:VOCs skos:prefLabel ?voc_label_opt . }
-      OPTIONAL { she:VOCs agrontology:hasAbbreviation ?voc_abbr_opt . }
-      BIND(COALESCE(?voc_label_opt, ?voc_abbr_opt, STR(she:VOCs)) AS ?voc_displayName)
-      BIND(?opCatLabel_voc AS ?pollutantCategoryLabel)
-      BIND(?voc_displayName AS ?specificPollutantLabel)
-      BIND(CONCAT(?voc_source_label, IF(BOUND(?vocContextLabel), CONCAT(" (", ?vocContextLabel, ")"), "")) AS ?sourceLabel)
-    }
-    UNION
-    {
-      she:VOCs agrontology:includes ?sub_voc .
-      OPTIONAL { ?sub_voc skos:prefLabel ?sub_voc_label_opt . }
-      OPTIONAL { ?sub_voc agrontology:hasAbbreviation ?sub_voc_abbr_opt . }
-      BIND(COALESCE(?sub_voc_label_opt, ?sub_voc_abbr_opt, STR(?sub_voc)) AS ?sub_voc_displayName)
-
-      OPTIONAL { she:VOCs skos:prefLabel ?voc_label_opt_inner . }
-      OPTIONAL { she:VOCs agrontology:hasAbbreviation ?voc_abbr_opt_inner . }
-      BIND(COALESCE(?voc_label_opt_inner, ?voc_abbr_opt_inner, STR(she:VOCs)) AS ?voc_displayName_inner)
-
-      BIND(?opCatLabel_voc AS ?pollutantCategoryLabel)
-      BIND(CONCAT(?sub_voc_displayName, " (subtype of ", ?voc_displayName_inner, ")") AS ?specificPollutantLabel)
-      BIND(CONCAT(?voc_source_label, IF(BOUND(?vocContextLabel), CONCAT(" (", ?vocContextLabel, ")"), "")) AS ?sourceLabel)
-    }
+    ?source agrontology:isSourceOf ?sourceProcess .
+    ?sourceProcess obo:BFO_0000066 she:Agriculture .
+    ?sourceProcess rdf:object ?pollutant .
+    
+    OPTIONAL { ?source skos:prefLabel ?sourcePrefLabel }
+    OPTIONAL { ?source agrontology:hasAbbreviation ?sourceAbbrev }
+    BIND(COALESCE(?sourcePrefLabel, ?sourceAbbrev) AS ?sourceLabel)
+    
+    OPTIONAL { ?pollutant skos:prefLabel ?prefLabel }
+    OPTIONAL { ?pollutant agrontology:hasAbbreviation ?abbrev }
+    BIND(COALESCE(?prefLabel, ?abbrev) AS ?pollutantLabel)
   }
+  FILTER(?pollutant != she:PPPs)
 }
-ORDER BY ?pollutantCategoryLabel ?specificPollutantLabel ?sourceLabel
+ORDER BY ?pollutantLabel ?sourceLabel

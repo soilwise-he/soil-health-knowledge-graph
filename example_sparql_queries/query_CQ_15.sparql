@@ -4,7 +4,7 @@ PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-SELECT DISTINCT ?subject ?predicate ?object ?objectLabel ?contextLabel
+SELECT DISTINCT ?subject ?predicate ?object ?contextLabel
 WHERE {
   ?sbdConcept skos:prefLabel "soil biological degradation"@en .
 
@@ -13,8 +13,6 @@ WHERE {
     BIND(?sbdConcept AS ?subject)
     BIND(skos:definition AS ?predicate)
     BIND(?definitionText AS ?object)
-    BIND("" AS ?objectLabel)
-    BIND("" AS ?contextLabel)
   }
   UNION
   {
@@ -22,9 +20,7 @@ WHERE {
     ?accompaniedByConcept skos:prefLabel ?accompaniedByLabel .
     BIND(?sbdConcept AS ?subject)
     BIND(she:isAccompaniedBy AS ?predicate)
-    BIND(?accompaniedByConcept AS ?object)
-    BIND(?accompaniedByLabel AS ?objectLabel)
-    BIND("" AS ?contextLabel)
+    BIND(?accompaniedByLabel AS ?object)
   }
   UNION
   {
@@ -33,8 +29,7 @@ WHERE {
     ?causedObject skos:prefLabel ?causedObjectLabel .
     BIND(?sbdConcept AS ?subject)
     BIND(agrontology:causes AS ?predicate)
-    BIND(?causedObject AS ?object)
-    BIND(?causedObjectLabel AS ?objectLabel)
+    BIND(?causedObjectLabel AS ?object)
     OPTIONAL {
         ?bNodeCaused obo:BFO_0000066 ?context .
         ?context skos:prefLabel ?ctxLabel .
@@ -59,8 +54,7 @@ WHERE {
     }
     BIND(?sbdConcept AS ?subject)
     BIND(obo:RO_0002212 AS ?predicate)
-    BIND(COALESCE(?actualObject, ?relatedObjectOrBNode) AS ?object)
-    BIND(COALESCE(?actualObjectLabel, ?directObjectLabel) AS ?objectLabel)
+    BIND(COALESCE(?actualObjectLabel, ?directObjectLabel) AS ?object)
     BIND(IF(BOUND(?ctxLabel), ?ctxLabel, "") AS ?contextLabel)
   }
   UNION
@@ -80,9 +74,8 @@ WHERE {
     }
     BIND(?sbdConcept AS ?subject)
     BIND(obo:RO_0002213 AS ?predicate)
-    BIND(COALESCE(?actualObject_2213, ?relatedObjectOrBNode_2213) AS ?object)
-    BIND(COALESCE(?actualObjectLabel_2213, ?directObjectLabel_2213) AS ?objectLabel)
+    BIND(COALESCE(?actualObjectLabel_2213, ?directObjectLabel_2213) AS ?object)
     BIND(IF(BOUND(?ctxLabel_2213), ?ctxLabel_2213, "") AS ?contextLabel)
   }
 }
-ORDER BY ?subject ?predicate ?objectLabel
+ORDER BY ?subject ?predicate

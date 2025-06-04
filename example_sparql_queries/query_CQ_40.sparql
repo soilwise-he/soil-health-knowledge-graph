@@ -8,7 +8,7 @@ PREFIX schema: <https://schema.org/>
 
 SELECT ?subjectLabel ?predicateURI ?objectOrValueLabel ?explanatoryContext
 WHERE {
-  ?soilCNRatioConcept skos:prefLabel "soil C/N ratio"@en .
+  ?soilCNRatioConcept skos:prefLabel "soil C/N ratios"@en .
   she:ForestSoils skos:prefLabel ?forestSoilsLabel .
   she:OrganicLayer skos:prefLabel ?organicLayerLabel .
 
@@ -23,7 +23,7 @@ WHERE {
     OPTIONAL { ?thresholdNode sorelm:hasInterval ?intervalVal . }
     BIND(COALESCE(STR(?numericVal), ?intervalVal) AS ?cnValue)
 
-    BIND("soil C/N ratio" AS ?subjectLabel)
+    BIND("soil C/N ratios" AS ?subjectLabel)
     BIND(?thresholdPredicate AS ?predicateURI)
     BIND(?cnValue AS ?objectOrValueLabel)
     BIND(CONCAT("based on ", ?nLeachingLabel) AS ?explanatoryContext)
@@ -43,7 +43,7 @@ WHERE {
     OPTIONAL {
         ?rangeNode ?retentionPredicate she:NRetentionFraction .
         she:NRetentionFraction skos:prefLabel ?nRetentionFractionLabel_opt .
-        BIND(CONCAT("low ", ?nRetentionFractionLabel_opt) AS ?context_opt2)
+        BIND(CONCAT(STR(?retentionPredicate), " ", ?nRetentionFractionLabel_opt) AS ?context_opt2)
     }
 
     BIND(?soilCNRatioLabel_2 AS ?subjectLabel)

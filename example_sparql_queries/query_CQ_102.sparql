@@ -14,15 +14,6 @@ WHERE {
   }
   UNION
   {
-    she:SoilSalinisation skos:prefLabel ?ssLabel_ssc .
-    she:SoilSalinisation skos:related she:SolubleSaltConcentration .
-    she:SolubleSaltConcentration skos:prefLabel ?sscLabel .
-    BIND(?ssLabel_ssc AS ?subjectLabel)
-    BIND(skos:related AS ?predicateURI)
-    BIND(?sscLabel AS ?objectLabel)
-  }
-  UNION
-  {
     she:Sodification skos:prefLabel ?sodLabel .
     she:Sodification skos:definition ?sodDefinition .
     BIND(?sodLabel AS ?subjectLabel)
@@ -31,68 +22,32 @@ WHERE {
   }
   UNION
   {
-    she:Sodification skos:prefLabel ?sodLabel_es .
-    she:Sodification skos:related she:ExchangeableSodium .
-    she:ExchangeableSodium skos:prefLabel ?esLabel_raw .
-    OPTIONAL {she:ExchangeableSodium agrontology:hasSymbol ?esSymbol .}
-    BIND(CONCAT(?esLabel_raw, IF(BOUND(?esSymbol), CONCAT(" (", ?esSymbol, ")"), "")) AS ?esLabel)
-    BIND(?sodLabel_es AS ?subjectLabel)
-    BIND(skos:related AS ?predicateURI)
-    BIND(?esLabel AS ?objectLabel)
-  }
-  UNION
-  {
     she:Sodification skos:prefLabel ?sodLabel_phys .
-    she:Sodification agrontology:causes she:UnfavourableSoilPhysicalProperties .
-    she:UnfavourableSoilPhysicalProperties skos:prefLabel ?usppLabel .
+    she:Sodification agrontology:causes ?usp .
+    ?usp skos:prefLabel ?uspLabel .
     BIND(?sodLabel_phys AS ?subjectLabel)
     BIND(agrontology:causes AS ?predicateURI)
-    BIND(?usppLabel AS ?objectLabel)
+    BIND(?uspLabel AS ?objectLabel)
   }
   UNION
   {
-    she:Sodification skos:prefLabel ?sodLabel_chem .
-    she:Sodification agrontology:causes she:UnfavourableSoilChemicalProperties .
-    she:UnfavourableSoilChemicalProperties skos:prefLabel ?uscpLabel .
-    BIND(?sodLabel_chem AS ?subjectLabel)
-    BIND(agrontology:causes AS ?predicateURI)
-    BIND(?uscpLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:UnfavourableSoilPhysicalProperties skos:prefLabel ?usppLabel_esp .
-    she:UnfavourableSoilPhysicalProperties obo:RO_0002212 she:EcosystemServicePotential .
-    she:EcosystemServicePotential skos:prefLabel ?espLabel_phys .
-    BIND(?usppLabel_esp AS ?subjectLabel)
+    she:Sodification agrontology:causes ?usp .
+    ?usp skos:prefLabel ?uspLabel_esp .
+    ?usp obo:RO_0002212 ?esp .
+    ?esp skos:prefLabel ?espLabel_phys .
+    BIND(?uspLabel_esp AS ?subjectLabel)
     BIND(obo:RO_0002212 AS ?predicateURI)
     BIND(?espLabel_phys AS ?objectLabel)
   }
   UNION
   {
-    she:UnfavourableSoilChemicalProperties skos:prefLabel ?uscpLabel_esp .
-    she:UnfavourableSoilChemicalProperties obo:RO_0002212 she:EcosystemServicePotential .
-    she:EcosystemServicePotential skos:prefLabel ?espLabel_chem .
-    BIND(?uscpLabel_esp AS ?subjectLabel)
-    BIND(obo:RO_0002212 AS ?predicateURI)
-    BIND(?espLabel_chem AS ?objectLabel)
-  }
-  UNION
-  {
-    she:UnfavourableSoilPhysicalProperties skos:prefLabel ?usppLabel_soil .
-    she:UnfavourableSoilPhysicalProperties obo:RO_0002552 she:Soil .
-    she:Soil skos:prefLabel ?soilLabel_phys .
-    BIND(?usppLabel_soil AS ?subjectLabel)
+    she:Sodification agrontology:causes ?usp .
+    ?usp skos:prefLabel ?uspLabel_esp .
+    ?usp obo:RO_0002552 ?soil .
+    ?soil skos:prefLabel ?soilLabel_phys .
+    BIND(?uspLabel_esp AS ?subjectLabel)
     BIND(obo:RO_0002552 AS ?predicateURI)
     BIND(?soilLabel_phys AS ?objectLabel)
-  }
-  UNION
-  {
-    she:UnfavourableSoilChemicalProperties skos:prefLabel ?uscpLabel_soil .
-    she:UnfavourableSoilChemicalProperties obo:RO_0002552 she:Soil .
-    she:Soil skos:prefLabel ?soilLabel_chem .
-    BIND(?uscpLabel_soil AS ?subjectLabel)
-    BIND(obo:RO_0002552 AS ?predicateURI)
-    BIND(?soilLabel_chem AS ?objectLabel)
   }
 }
 ORDER BY ?subjectLabel ?predicateURI ?objectLabel

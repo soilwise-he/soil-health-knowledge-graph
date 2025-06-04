@@ -9,35 +9,28 @@ SELECT ?subjectLabel ?predicateURI ?objectLabel
 WHERE {
   {
     she:Level1SoilErosionMonitoring skos:prefLabel ?l1semLabel .
-    she:Level1SoilErosionMonitoring agrontology:includes she:LargeScaleModelling .
-    she:LargeScaleModelling skos:prefLabel ?lsmLabel .
+    she:Level1SoilErosionMonitoring agrontology:includes ?lsm .
+    ?lsm skos:prefLabel ?lsmLabel .
     BIND(?l1semLabel AS ?subjectLabel)
     BIND(agrontology:includes AS ?predicateURI)
     BIND(?lsmLabel AS ?objectLabel)
   }
   UNION
   {
-    she:LargeScaleModelling skos:prefLabel ?lsmLabel_assess_sl .
-    she:LargeScaleModelling schema:assesses she:SoilLossRatesByWater .
-    she:SoilLossRatesByWater skos:prefLabel ?slrbwLabel .
+    she:Level1SoilErosionMonitoring skos:prefLabel ?l1semLabel .
+    she:Level1SoilErosionMonitoring agrontology:includes ?lsm .
+    ?lsm skos:prefLabel ?lsmLabel_assess_sl .
+    ?lsm schema:assesses ?slrbw .
+    ?slrbw skos:prefLabel ?slrbwLabel .
     BIND(?lsmLabel_assess_sl AS ?subjectLabel)
     BIND(schema:assesses AS ?predicateURI)
     BIND(?slrbwLabel AS ?objectLabel)
   }
   UNION
   {
-    she:LargeScaleModelling skos:prefLabel ?lsmLabel_assess_imse .
-    she:LargeScaleModelling schema:assesses she:ImpactOfManagementOnSoilErosion .
-    she:ImpactOfManagementOnSoilErosion skos:prefLabel ?imseLabel .
-    BIND(?lsmLabel_assess_imse AS ?subjectLabel)
-    BIND(schema:assesses AS ?predicateURI)
-    BIND(?imseLabel AS ?objectLabel)
-  }
-  UNION
-  {
     she:Level1SoilErosionMonitoring skos:prefLabel ?l1semLabel_hs .
-    she:Level1SoilErosionMonitoring af-x:AFX_0002717 she:SoilErosionHotSpots .
-    she:SoilErosionHotSpots skos:prefLabel ?sehsLabel_l1 .
+    she:Level1SoilErosionMonitoring af-x:AFX_0002717 ?sehs .
+    ?sehs skos:prefLabel ?sehsLabel_l1 .
     BIND(?l1semLabel_hs AS ?subjectLabel)
     BIND(af-x:AFX_0002717 AS ?predicateURI)
     BIND(?sehsLabel_l1 AS ?objectLabel)
@@ -45,43 +38,40 @@ WHERE {
   UNION
   {
     she:Level2SoilErosionMonitoring skos:prefLabel ?l2semLabel .
-    she:Level2SoilErosionMonitoring agrontology:includes she:MonitoringApproaches .
-    she:MonitoringApproaches skos:prefLabel ?maLabel_l2 .
+    she:Level2SoilErosionMonitoring agrontology:includes ?ma .
+    ?ma skos:prefLabel ?maLabel_l2 .
     BIND(?l2semLabel AS ?subjectLabel)
     BIND(agrontology:includes AS ?predicateURI)
     BIND(?maLabel_l2 AS ?objectLabel)
   }
   UNION
   {
-    she:MonitoringApproaches skos:prefLabel ?maLabel_narrower .
-    she:MonitoringApproaches skos:narrower ?maSubMethod .
-    ?maSubMethod skos:prefLabel ?maSubMethodLabel .
-    BIND(?maLabel_narrower AS ?subjectLabel)
-    BIND(skos:narrower AS ?predicateURI)
-    BIND(?maSubMethodLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:MonitoringApproaches skos:prefLabel ?maLabel_gt .
-    she:MonitoringApproaches sio:SIO_000365 she:GroundtruthDataOnSoilErosionByWater .
-    she:GroundtruthDataOnSoilErosionByWater skos:prefLabel ?gtdLabel .
+    she:Level2SoilErosionMonitoring skos:prefLabel ?l2semLabel .
+    she:Level2SoilErosionMonitoring agrontology:includes ?ma .
+    ?ma skos:prefLabel ?maLabel_gt .
+    ?ma sio:SIO_000365 ?gtd .
+    ?gtd skos:prefLabel ?gtdLabel .
     BIND(?maLabel_gt AS ?subjectLabel)
     BIND(sio:SIO_000365 AS ?predicateURI)
     BIND(?gtdLabel AS ?objectLabel)
   }
   UNION
   {
-    she:MonitoringApproaches skos:prefLabel ?maLabel_sfsm .
-    she:MonitoringApproaches agrontology:makeUseOf she:StandardisedFieldSurveyMethods .
-    she:StandardisedFieldSurveyMethods skos:prefLabel ?sfsmLabel .
+    she:Level2SoilErosionMonitoring skos:prefLabel ?l2semLabel .
+    she:Level2SoilErosionMonitoring agrontology:includes ?ma .
+    ?ma skos:prefLabel ?maLabel_sfsm .
+    ?ma agrontology:makeUseOf ?sfsm .
+    ?sfsm skos:prefLabel ?sfsmLabel .
     BIND(?maLabel_sfsm AS ?subjectLabel)
     BIND(agrontology:makeUseOf AS ?predicateURI)
     BIND(?sfsmLabel AS ?objectLabel)
   }
   UNION
   {
-    she:MonitoringApproaches skos:prefLabel ?maLabel_scale .
-    she:MonitoringApproaches af-x:AFX_0000408 ?scale .
+    she:Level2SoilErosionMonitoring skos:prefLabel ?l2semLabel .
+    she:Level2SoilErosionMonitoring agrontology:includes ?ma .
+    ?ma skos:prefLabel ?maLabel_scale .
+    ?ma af-x:AFX_0000408 ?scale .
     ?scale skos:prefLabel ?scaleLabel .
     BIND(?maLabel_scale AS ?subjectLabel)
     BIND(af-x:AFX_0000408 AS ?predicateURI)
@@ -89,17 +79,19 @@ WHERE {
   }
   UNION
   {
-    she:MonitoringApproaches skos:prefLabel ?maLabel_focus .
-    she:MonitoringApproaches she:focusesOn she:AgriculturalLandParcels .
-    she:AgriculturalLandParcels skos:prefLabel ?alpLabel .
+    she:Level2SoilErosionMonitoring skos:prefLabel ?l2semLabel .
+    she:Level2SoilErosionMonitoring agrontology:includes ?ma .
+    ?ma skos:prefLabel ?maLabel_focus .
+    ?ma she:focusesOn ?alp .
+    ?alp skos:prefLabel ?alpLabel .
     BIND(?maLabel_focus AS ?subjectLabel)
     BIND(she:focusesOn AS ?predicateURI)
     BIND(?alpLabel AS ?objectLabel)
   }
   UNION
   {
-    she:SoilErosionHotSpots skos:prefLabel ?sehsLabel_l2 .
-    she:SoilErosionHotSpots agrontology:isUsedIn she:Level2SoilErosionMonitoring .
+    ?sehs skos:prefLabel ?sehsLabel_l2 .
+    ?sehs agrontology:isUsedIn she:Level2SoilErosionMonitoring .
     she:Level2SoilErosionMonitoring skos:prefLabel ?l2semLabel_hs .
     BIND(?sehsLabel_l2 AS ?subjectLabel)
     BIND(agrontology:isUsedIn AS ?predicateURI)

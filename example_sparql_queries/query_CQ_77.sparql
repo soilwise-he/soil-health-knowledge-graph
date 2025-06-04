@@ -1,7 +1,5 @@
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX she: <https://soilwise-he.github.io/soil-health#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX sio: <http://semanticscience.org/resource/>
 
 SELECT ?subjectLabel ?predicateURI ?objectLabel
 WHERE {
@@ -16,48 +14,14 @@ WHERE {
   }
   UNION
   {
-    she:WaterErosion skos:prefLabel ?weLabel .
-    she:WaterErosion skos:narrower ?waterSubtype .
-    ?waterSubtype skos:prefLabel ?waterSubtypeLabel .
-    BIND(?weLabel AS ?subjectLabel)
+    she:SoilErosion skos:prefLabel ?seLabel_main .
+    she:SoilErosion skos:narrower ?mainErosionType .
+    ?mainErosionType skos:prefLabel ?mainErosionTypeLabel .
+    ?mainErosionType skos:narrower ?subtype .
+    ?subtype skos:prefLabel ?subtypeLabel .
+    BIND(?mainErosionTypeLabel AS ?subjectLabel)
     BIND(skos:narrower AS ?predicateURI)
-    BIND(?waterSubtypeLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:InterrillErosion skos:prefLabel ?ieLabel .
-    she:InterrillErosion sio:equivalentTo she:SheetwashErosion .
-    she:SheetwashErosion skos:prefLabel ?sweLabel .
-    BIND(?ieLabel AS ?subjectLabel)
-    BIND(sio:equivalentTo AS ?predicateURI)
-    BIND(?sweLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:PipingErosion skos:prefLabel ?peLabel .
-    she:PipingErosion sio:equivalentTo she:SubsurfaceErosion .
-    she:SubsurfaceErosion skos:prefLabel ?sseLabel_sub .
-    BIND(?peLabel AS ?subjectLabel)
-    BIND(sio:equivalentTo AS ?predicateURI)
-    BIND(?sseLabel_sub AS ?objectLabel)
-  }
-  UNION
-  {
-    she:AnthropogenicErosion skos:prefLabel ?aeLabel .
-    she:AnthropogenicErosion skos:narrower ?anthroSubtype .
-    ?anthroSubtype skos:prefLabel ?anthroSubtypeLabel .
-    BIND(?aeLabel AS ?subjectLabel)
-    BIND(skos:narrower AS ?predicateURI)
-    BIND(?anthroSubtypeLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    she:AnthropogenicErosion skos:prefLabel ?aeLabel_eq .
-    she:AnthropogenicErosion sio:equivalentTo she:TechnicErosion .
-    she:TechnicErosion skos:prefLabel ?teLabel .
-    BIND(?aeLabel_eq AS ?subjectLabel)
-    BIND(sio:equivalentTo AS ?predicateURI)
-    BIND(?teLabel AS ?objectLabel)
+    BIND(?subtypeLabel AS ?objectLabel)
   }
 }
 ORDER BY ?subjectLabel ?predicateURI ?objectLabel

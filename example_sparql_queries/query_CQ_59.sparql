@@ -9,8 +9,8 @@ PREFIX sorelph: <http://sweetontology.net/relaPhysical/>
 SELECT ?subjectLabel ?predicateURI ?objectLabel ?contextLabel
 WHERE {
   {
-    she:PointSourcePollution skos:prefLabel ?pspLabel .
-    she:PointSourcePollution agrontology:causes ?directEffect .
+    she:PointSourceSoilPollution skos:prefLabel ?pspLabel .
+    she:PointSourceSoilPollution agrontology:causes ?directEffect .
     ?directEffect skos:prefLabel ?directEffectLabel .
 
     OPTIONAL {
@@ -21,13 +21,13 @@ WHERE {
     BIND(?pspLabel AS ?subjectLabel)
     BIND(agrontology:causes AS ?predicateURI)
     BIND(?directEffectLabel AS ?objectLabel)
-    BIND(IF(BOUND(?fmaLabel), CONCAT("in ", ?fmaLabel), "") AS ?contextLabel)
+    BIND(?fmaLabel AS ?contextLabel)
   }
   UNION
   {
-    she:PointSourcePollution skos:prefLabel ?pspLabel_2 .
+    she:PointSourceSoilPollution skos:prefLabel ?pspLabel_2 .
     she:Sites skos:prefLabel ?sitesLabel .
-    she:Sites agrontology:isAffectedBy she:PointSourcePollution .
+    she:Sites agrontology:isAffectedBy she:PointSourceSoilPollution .
 
     she:SoilPollutionLevels skos:prefLabel ?splLabel .
     she:SoilPollutionLevels obo:TXPO_0003500 she:Sites .
@@ -42,7 +42,6 @@ WHERE {
     BIND(agrontology:isCausedBy AS ?predicateURI)
     BIND(?causeOfHealthThreatLabel AS ?objectLabel)
     BIND(CONCAT("leading to threat to ", ?hhLabel) AS ?contextLabel)
-
   }
   UNION
   {

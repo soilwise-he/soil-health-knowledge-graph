@@ -7,8 +7,8 @@ SELECT ?subjectLabel ?predicateURI ?objectLabel
 WHERE {
   {
     she:SoilBiota skos:prefLabel ?sbLabel .
-    she:LandUse skos:prefLabel ?luLabel_1 .
-    she:SoilBiota agrontology:isAffectedBy she:LandUse .
+    ?affSB skos:prefLabel ?luLabel_1 .
+    she:SoilBiota agrontology:isAffectedBy ?affSB .
 
     BIND(?sbLabel AS ?subjectLabel)
     BIND(agrontology:isAffectedBy AS ?predicateURI)
@@ -16,15 +16,10 @@ WHERE {
   }
   UNION
   {
-    she:LandUse skos:prefLabel ?luLabel_2 .
-    she:LandUse obo:RO_0002508 ?determinesAspect .
+    she:SoilBiota agrontology:isAffectedBy ?affSB .
+    ?affSB skos:prefLabel ?luLabel_2 .
+    ?affSB obo:RO_0002508 ?determinesAspect .
     ?determinesAspect skos:prefLabel ?determinesAspectLabel .
-    VALUES ?determinesAspect {
-        she:PhysicalDisturbance
-        she:ChemicalInput
-        she:OrganicMaterialAmount
-        she:OrganicMaterialQuality
-    }
 
     BIND(?luLabel_2 AS ?subjectLabel)
     BIND(obo:RO_0002508 AS ?predicateURI)
@@ -33,8 +28,8 @@ WHERE {
   UNION
   {
     she:AgriculturalIntensification skos:prefLabel ?aiLabel_3 .
-    she:AgriculturalIntensification she:alters she:DiversityOfSoilBiotaIndividualGroups .
-    she:DiversityOfSoilBiotaIndividualGroups skos:prefLabel ?dsbigLabel .
+    she:AgriculturalIntensification she:alters ?dsbig .
+    ?dsbig skos:prefLabel ?dsbigLabel .
 
     BIND(?aiLabel_3 AS ?subjectLabel)
     BIND(she:alters AS ?predicateURI)
@@ -45,11 +40,6 @@ WHERE {
     she:AgriculturalIntensification skos:prefLabel ?aiLabel_4 .
     she:AgriculturalIntensification obo:RO_0002212 ?reducesAspect .
     ?reducesAspect skos:prefLabel ?reducesAspectLabel .
-    VALUES ?reducesAspect {
-        she:SoilFoodWebComplexity
-        she:CommunityrelatedBiomassOfSoilFauna
-        she:InteractionNetworkBetweenSoilBacteria
-    }
 
     BIND(?aiLabel_4 AS ?subjectLabel)
     BIND(obo:RO_0002212 AS ?predicateURI)

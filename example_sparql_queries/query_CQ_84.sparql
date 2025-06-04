@@ -9,59 +9,32 @@ PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
 SELECT ?subjectLabel ?predicateURI ?objectLabel ?contextLabel
 WHERE {
   {
-    she:InternalSoilStrength skos:prefLabel ?issLabel .
-    she:InternalSoilStrength agrontology:smallerThan ?bnode_sc .
-    ?bnode_sc rdf:object she:AdditionalStress .
-    she:AdditionalStress skos:prefLabel ?asLabel_sc .
-    ?bnode_sc agrontology:causes she:SoilCompaction .
-    she:SoilCompaction skos:prefLabel ?scLabel_sc .
-
-    BIND(?issLabel AS ?subjectLabel)
-    BIND(agrontology:smallerThan AS ?predicateURI)
-    BIND(?asLabel_sc AS ?objectLabel)
-    BIND(CONCAT("causes ", ?scLabel_sc) AS ?contextLabel)
-  }
-  UNION
-  {
     she:InternalSoilStrength skos:prefLabel ?issLabel_eq .
-    she:InternalSoilStrength sio:equivalentTo she:ActualPrecompressionStress .
-    she:ActualPrecompressionStress skos:prefLabel ?apsLabel .
+    she:InternalSoilStrength sio:equivalentTo ?aps .
+    ?aps skos:prefLabel ?apsLabel .
 
     BIND(?issLabel_eq AS ?subjectLabel)
     BIND(sio:equivalentTo AS ?predicateURI)
     BIND(?apsLabel AS ?objectLabel)
-    BIND("" AS ?contextLabel)
   }
   UNION
   {
     she:AdditionalStress skos:prefLabel ?asLabel_hm .
-    she:AdditionalStress sorelph:from she:HeavyMachinery .
-    she:HeavyMachinery skos:prefLabel ?hmLabel .
+    she:AdditionalStress sorelph:from ?hm .
+    ?hm skos:prefLabel ?hmLabel .
 
     BIND(?asLabel_hm AS ?subjectLabel)
     BIND(sorelph:from AS ?predicateURI)
     BIND(?hmLabel AS ?objectLabel)
-    BIND("" AS ?contextLabel)
-  }
-  UNION
-  {
-    she:AdditionalStress skos:prefLabel ?asLabel_dt .
-    she:AdditionalStress sorelph:from she:DenseTrafficking .
-    she:DenseTrafficking skos:prefLabel ?dtLabel .
-
-    BIND(?asLabel_dt AS ?subjectLabel)
-    BIND(sorelph:from AS ?predicateURI)
-    BIND(?dtLabel AS ?objectLabel)
-    BIND("" AS ?contextLabel)
   }
   UNION
   {
     she:AdditionalStress skos:prefLabel ?asLabel_drv .
     she:AdditionalStress sorelph:from ?drivingNode .
-    ?drivingNode rdf:object she:Driving .
-    she:Driving skos:prefLabel ?drivingLabel .
-    ?drivingNode af-x:AFX_0000408 she:HighSoilMoistureContent .
-    she:HighSoilMoistureContent skos:prefLabel ?hsmcLabel .
+    ?drivingNode rdf:object ?driving .
+    ?driving skos:prefLabel ?drivingLabel .
+    ?drivingNode af-x:AFX_0000408 ?hsmc .
+    ?hsmc skos:prefLabel ?hsmcLabel .
 
     BIND(?asLabel_drv AS ?subjectLabel)
     BIND(sorelph:from AS ?predicateURI)
@@ -76,7 +49,6 @@ WHERE {
     BIND(?scLabel_def AS ?subjectLabel)
     BIND(skos:definition AS ?predicateURI)
     BIND(?scdefinition AS ?objectLabel)
-    BIND("" AS ?contextLabel)
   }
   UNION
   {
@@ -86,29 +58,6 @@ WHERE {
     BIND(?psLabel_def AS ?subjectLabel)
     BIND(skos:definition AS ?predicateURI)
     BIND(?psdefinition AS ?objectLabel)
-    BIND("" AS ?contextLabel)
-  }
-  UNION
-  {
-    she:PrecompressionStress skos:prefLabel ?psLabel_emf .
-    she:PrecompressionStress skos:related she:ExternalMechanicalForces .
-    she:ExternalMechanicalForces skos:prefLabel ?emfLabel .
-
-    BIND(?psLabel_emf AS ?subjectLabel)
-    BIND(skos:related AS ?predicateURI)
-    BIND(?emfLabel AS ?objectLabel)
-    BIND("" AS ?contextLabel)
-  }
-  UNION
-  {
-    she:PrecompressionStress skos:prefLabel ?psLabel_sc .
-    she:PrecompressionStress sio:SIO_000210 she:SoilConditions .
-    she:SoilConditions skos:prefLabel ?scCondLabel .
-
-    BIND(?psLabel_sc AS ?subjectLabel)
-    BIND(sio:SIO_000210 AS ?predicateURI)
-    BIND(?scCondLabel AS ?objectLabel)
-    BIND("" AS ?contextLabel)
   }
 }
 ORDER BY ?subjectLabel ?predicateURI ?objectLabel

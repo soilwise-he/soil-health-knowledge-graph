@@ -2,7 +2,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
 
-SELECT ?resultType ?value ?valueLabel
+SELECT ?resultType ?value
 WHERE {
   ?sdgResource agrontology:hasAbbreviation "SDG"@en .
 
@@ -12,7 +12,6 @@ WHERE {
     ?ldiConcept skos:definition ?definition .
     BIND("Definition of Land Degradation Indicators" AS ?resultType)
     BIND(?definition AS ?value)
-    BIND("" AS ?valueLabel)
   }
   UNION
   {
@@ -21,8 +20,7 @@ WHERE {
     ?specificIndicator skos:prefLabel ?indicatorLabel .
 
     BIND("SDG Land Degradation Indicator" AS ?resultType)
-    BIND(?specificIndicator AS ?value)
-    BIND(?indicatorLabel AS ?valueLabel)
+    BIND(?indicatorLabel AS ?value)
   }
 }
-ORDER BY ?resultType DESC(?valueLabel)
+ORDER BY ?resultType ?value

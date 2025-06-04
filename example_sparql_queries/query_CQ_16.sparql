@@ -2,7 +2,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX she: <https://soilwise-he.github.io/soil-health#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 
-SELECT DISTINCT ?subject ?predicate ?object ?objectLabel
+SELECT DISTINCT ?subject ?predicate ?object
 WHERE {
   ?sedConcept skos:prefLabel "soil ecological degradation"@en .
 
@@ -11,7 +11,6 @@ WHERE {
     BIND(?sedConcept AS ?subject)
     BIND(skos:definition AS ?predicate)
     BIND(?definitionText AS ?object)
-    BIND("" AS ?objectLabel)
   }
   UNION
   {
@@ -19,8 +18,7 @@ WHERE {
     ?reflectedConcept skos:prefLabel ?reflectedConceptLabel .
     BIND(?sedConcept AS ?subject)
     BIND(she:reflects AS ?predicate)
-    BIND(?reflectedConcept AS ?object)
-    BIND(?reflectedConceptLabel AS ?objectLabel)
+    BIND(?reflectedConceptLabel AS ?object)
   }
   UNION
   {
@@ -31,8 +29,7 @@ WHERE {
 
     BIND(?sedConcept AS ?subject)
     BIND(obo:RO_0002552 AS ?predicate)
-    BIND(?narrowerFunction AS ?object)
-    BIND(?narrowerFunctionLabel AS ?objectLabel)
+    BIND(?narrowerFunctionLabel AS ?object)
   }
 }
-ORDER BY ?subject ?predicate ?objectLabel
+ORDER BY ?subject ?predicate

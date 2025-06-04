@@ -11,7 +11,6 @@ WHERE {
   {
     she:SaturatedHydraulicConductivity skos:prefLabel ?shcLabel .
     she:SaturatedHydraulicConductivity sio:SIO_000210 ?functionalQualitySHC .
-    VALUES ?functionalQualitySHC { she:SoilStructureFunctionalQuality she:PoreContinuityFunctionalQuality }
     ?functionalQualitySHC skos:prefLabel ?fqLabelSHC .
 
     BIND(?shcLabel AS ?subjectLabel)
@@ -22,7 +21,6 @@ WHERE {
   {
     she:UnsaturatedHydraulicConductivity skos:prefLabel ?uhcLabel .
     she:UnsaturatedHydraulicConductivity sio:SIO_000210 ?functionalQualityUHC .
-    VALUES ?functionalQualityUHC { she:SoilStructureFunctionalQuality she:PoreContinuityFunctionalQuality }
     ?functionalQualityUHC skos:prefLabel ?fqLabelUHC .
 
     BIND(?uhcLabel AS ?subjectLabel)
@@ -33,7 +31,6 @@ WHERE {
   {
     she:AirPermeability skos:prefLabel ?apLabel .
     she:AirPermeability sio:SIO_000210 ?functionalQualityAP .
-    VALUES ?functionalQualityAP { she:SoilStructureFunctionalQuality she:PoreContinuityFunctionalQuality }
     ?functionalQualityAP skos:prefLabel ?fqLabelAP .
 
     BIND(?apLabel AS ?subjectLabel)
@@ -42,36 +39,9 @@ WHERE {
   }
   UNION
   {
-    ?conductivityOrPermeabilityConcept obo:RO_0002502 she:MatricPotential .
-    VALUES ?conductivityOrPermeabilityConcept {
-        she:SaturatedHydraulicConductivity
-        she:UnsaturatedHydraulicConductivity
-        she:AirPermeability
-    }
-    ?conductivityOrPermeabilityConcept skos:prefLabel ?copLabel .
-    she:MatricPotential skos:prefLabel ?mpLabel .
-
-    BIND(?copLabel AS ?subjectLabel)
-    BIND(obo:RO_0002502 AS ?predicateURI)
-    BIND(?mpLabel AS ?objectLabel)
-  }
-  UNION
-  {
-    ?parameterForTrafficability agrontology:isUsedIn ?bnode_traffic .
-    ?bnode_traffic obo:RO_0002508 she:Trafficability .
-    VALUES ?parameterForTrafficability { she:AirPermeability she:HydraulicConductivity }
-    ?parameterForTrafficability skos:prefLabel ?pftLabel .
-    she:Trafficability skos:prefLabel ?trafficabilityLabel .
-
-    BIND(?pftLabel AS ?subjectLabel)
-    BIND(obo:RO_0002508 AS ?predicateURI)
-    BIND(?trafficabilityLabel AS ?objectLabel)
-  }
-  UNION
-  {
     she:SaturatedHydraulicConductivity skos:prefLabel ?shcLabel_smp .
-    she:SaturatedHydraulicConductivity obo:RO_0002502 she:SaturatedMacropores .
-    she:SaturatedMacropores skos:prefLabel ?smpLabel .
+    she:SaturatedHydraulicConductivity obo:RO_0002502 ?smp .
+    ?smp skos:prefLabel ?smpLabel .
 
     BIND(?shcLabel_smp AS ?subjectLabel)
     BIND(obo:RO_0002502 AS ?predicateURI)
@@ -79,29 +49,47 @@ WHERE {
   }
   UNION
   {
-    she:UnsaturatedHydraulicConductivity skos:prefLabel ?uhcLabel_flux .
-    she:UnsaturatedHydraulicConductivity agrontology:measures ?bnode_uhc_flux .
-    ?bnode_uhc_flux rdf:object she:Fluxes .
-    she:Fluxes skos:prefLabel ?fluxesLabel_uhc .
-    ?bnode_uhc_flux af-x:AFX_0000408 she:PoreDiameters .
-    she:PoreDiameters skos:prefLabel ?pdLabel_uhc .
+    she:UnsaturatedHydraulicConductivity skos:prefLabel ?shcLabel_smp .
+    she:UnsaturatedHydraulicConductivity obo:RO_0002502 ?smp .
+    ?smp skos:prefLabel ?smpLabel .
+
+    BIND(?shcLabel_smp AS ?subjectLabel)
+    BIND(obo:RO_0002502 AS ?predicateURI)
+    BIND(?smpLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    she:AirPermeability skos:prefLabel ?shcLabel_smp .
+    she:AirPermeability obo:RO_0002502 ?smp .
+    ?smp skos:prefLabel ?smpLabel .
+
+    BIND(?shcLabel_smp AS ?subjectLabel)
+    BIND(obo:RO_0002502 AS ?predicateURI)
+    BIND(?smpLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    ?parameterForTrafficability agrontology:isUsedIn ?bnode_traffic .
+    ?bnode_traffic obo:RO_0002508 ?trafficability .
+    ?parameterForTrafficability skos:prefLabel ?pftLabel .
+    ?trafficability skos:prefLabel ?trafficabilityLabel .
+
+    BIND(?pftLabel AS ?subjectLabel)
+    BIND(obo:RO_0002508 AS ?predicateURI)
+    BIND(?trafficabilityLabel AS ?objectLabel)
+  }
+  UNION
+  {
+    ?uhcap skos:prefLabel ?uhcLabel_flux .
+    ?uhcap agrontology:measures ?bnode_uhc_flux .
+    ?bnode_uhc_flux rdf:object ?fluxes .
+    ?fluxes skos:prefLabel ?fluxesLabel_uhc .
+    ?bnode_uhc_flux af-x:AFX_0000408 ?pd .
+    ?pd skos:prefLabel ?pdLabel_uhc .
 
     BIND(?uhcLabel_flux AS ?subjectLabel)
     BIND(agrontology:measures AS ?predicateURI)
     BIND(?fluxesLabel_uhc AS ?objectLabel)
-  }
-  UNION
-  {
-    she:AirPermeability skos:prefLabel ?apLabel_flux .
-    she:AirPermeability agrontology:measures ?bnode_ap_flux .
-    ?bnode_ap_flux rdf:object she:Fluxes .
-    she:Fluxes skos:prefLabel ?fluxesLabel_ap .
-    ?bnode_ap_flux af-x:AFX_0000408 she:PoreDiameters .
-    she:PoreDiameters skos:prefLabel ?pdLabel_ap .
-
-    BIND(?apLabel_flux AS ?subjectLabel)
-    BIND(agrontology:measures AS ?predicateURI)
-    BIND(?fluxesLabel_ap AS ?objectLabel)
   }
 }
 ORDER BY ?subjectLabel ?predicateURI ?objectLabel

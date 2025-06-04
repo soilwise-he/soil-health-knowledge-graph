@@ -1,9 +1,11 @@
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sio: <http://semanticscience.org/resource/>
 
 SELECT DISTINCT ?subject ?predicate ?object
 WHERE {
   ?soilIndicatorsConcept skos:prefLabel "soil indicators"@en .
   ?soilAttributesConcept skos:prefLabel "soil attributes"@en .
+  ?sensitiveSoilAttributesConcept skos:prefLabel "sensitive soil attributes"@en .
 
   {
     ?soilIndicatorsConcept skos:definition ?definitionText .
@@ -13,10 +15,18 @@ WHERE {
   }
   UNION
   {
-    ?soilIndicatorsConcept ?connectingPredicate ?soilAttributesConcept .
-    BIND(?soilIndicatorsConcept AS ?subject)
-    BIND(?connectingPredicate AS ?predicate)
-    BIND(?soilAttributesConcept AS ?object)
+    ?sensitiveSoilAttributesConcept skos:definition ?definitionText .
+    BIND(?sensitiveSoilAttributesConcept AS ?subject)
+    BIND(IRI(skos:definition) AS ?predicate)
+    BIND(?definitionText AS ?object)
+  }
+  UNION
+  {
+    ?soilAttributesConcept sio:equivalentTo ?equivalentConcept .
+    ?equivalentConcept skos:prefLabel ?label .
+    BIND(?soilAttributesConcept AS ?subject)
+    BIND(sio:equivalentTo AS ?predicate)
+    BIND(?label AS ?object)
   }
 }
 ORDER BY ?subject ?predicate

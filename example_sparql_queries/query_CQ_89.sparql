@@ -12,8 +12,8 @@ SELECT ?subjectLabel ?predicateURI ?objectLabel ?contextLabel
 WHERE {
   {
     she:PrecompressionStress skos:prefLabel ?psLabel_indicates .
-    she:PrecompressionStress she:indicates she:SoilCompaction .
-    she:SoilCompaction skos:prefLabel ?scLabel_indicated .
+    she:PrecompressionStress she:indicates ?sc .
+    ?sc skos:prefLabel ?scLabel_indicated .
 
     BIND(?psLabel_indicates AS ?subjectLabel)
     BIND(she:indicates AS ?predicateURI)
@@ -21,10 +21,11 @@ WHERE {
   }
   UNION
   {
-    she:InternalSoilStrength skos:prefLabel ?issLabel_ams .
-    she:InternalSoilStrength obo:RO_0017004 ?bnode_ams .
-    ?bnode_ams she:suffersFrom she:AdditionalMechanicalStress .
-    she:AdditionalMechanicalStress skos:prefLabel ?amsLabel .
+    she:PrecompressionStress sio:equivalentTo ?iss .
+    ?iss skos:prefLabel ?issLabel_ams .
+    ?iss obo:RO_0017004 ?bnode_ams .
+    ?bnode_ams she:suffersFrom ?ams .
+    ?ams skos:prefLabel ?amsLabel .
 
     BIND(?issLabel_ams AS ?subjectLabel)
     BIND(obo:RO_0017004 AS ?predicateURI)
@@ -33,31 +34,8 @@ WHERE {
   }
   UNION
   {
-    she:InternalSoilStrength skos:prefLabel ?issLabel_ssd .
-    she:InternalSoilStrength obo:RO_0017004 ?bnode_ssd .
-    ?bnode_ssd she:suffersFrom she:SoilStructureDegradation .
-    she:SoilStructureDegradation skos:prefLabel ?ssdLabel .
-
-    BIND(?issLabel_ssd AS ?subjectLabel)
-    BIND(obo:RO_0017004 AS ?predicateURI)
-    BIND(she:suffersFrom AS ?objectLabel)
-    BIND(?ssdLabel AS ?contextLabel)
-  }
-  UNION
-  {
-    she:PrecompressionStress skos:prefLabel ?psLabel_eq_iss .
-    she:PrecompressionStress sio:equivalentTo she:InternalSoilStrength .
-    she:InternalSoilStrength skos:prefLabel ?issLabel_eq_ps .
-
-    BIND(?psLabel_eq_iss AS ?subjectLabel)
-    BIND(sio:equivalentTo AS ?predicateURI)
-    BIND(?issLabel_eq_ps AS ?objectLabel)
-    BIND("" AS ?contextLabel)
-  }
-  UNION
-  {
-    she:MatricPotentialValues skos:prefLabel ?mpLabel .
-    she:MatricPotentialValues om:hasValue ?valueNode .
+    ?mpv skos:prefLabel ?mpLabel .
+    ?mpv om:hasValue ?valueNode .
     ?valueNode obo:RO_0002508 she:PrecompressionStress .
     she:PrecompressionStress skos:prefLabel ?psLabel_mp .
 

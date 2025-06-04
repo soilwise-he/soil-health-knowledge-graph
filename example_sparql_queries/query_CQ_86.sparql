@@ -22,8 +22,9 @@ WHERE {
   }
   UNION
   {
-    she:FreezeThawCycles skos:prefLabel ?ftcLabel .
-    she:FreezeThawCycles skos:note ?ftcNote .
+    she:Subsoil skos:related ?ftc .
+    ?ftc skos:prefLabel ?ftcLabel .
+    ?ftc skos:note ?ftcNote .
 
     BIND(?ftcLabel AS ?subjectLabel)
     BIND(skos:note AS ?predicateURI)

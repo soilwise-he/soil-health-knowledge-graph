@@ -6,13 +6,11 @@ WHERE {
   VALUES ?practiceLabelString { "sustainable soil management"@en "soil protection"@en }
   ?practice skos:prefLabel ?practiceLabelString ;
             skos:prefLabel ?itemLabel .
-  FILTER(LANG(?itemLabel) = "en")
 
   ?practice ?predicate ?targetOfPractice .
   FILTER(?predicate = obo:T4FS_0000577)
 
   ?targetOfPractice skos:prefLabel ?relatedItemLabel .
-  FILTER(LANG(?relatedItemLabel) = "en")
 }
 
 ORDER BY ?itemLabel ?predicate ?relatedItemLabel

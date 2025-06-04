@@ -3,7 +3,6 @@ PREFIX she: <https://soilwise-he.github.io/soil-health#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX biolink: <https://w3id.org/biolink/vocab/>
-PREFIX qudt: <http://qudt.org/schema/qudt/>
 PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX sorelm: <http://sweetontology.net/relaMath/>
 PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
@@ -30,15 +29,15 @@ WHERE {
     she:SealedSoil obo:RO_0002336 ?ssNode_br .
     ?ssNode_br prov:atLocation she:Brussels .
     ?ssNode_br sorelph:from ?fromNode_br .
-    ?fromNode_br time:year "1950" .
+    ?fromNode_br time:year ?fromYr .
     ?fromNode_br biolink:has_percentage ?fromPercentage_br .
     ?ssNode_br sorelph:to ?toNode_br .
-    ?toNode_br time:year "2006" .
+    ?toNode_br time:year ?toYr .
     ?toNode_br biolink:has_percentage ?toPercentage_br .
 
     BIND(CONCAT(?ssLabel_br, " increase") AS ?itemDescription)
-    BIND(CONCAT(STR(?fromPercentage_br), " to ", STR(?toPercentage_br)) AS ?value)
-    BIND(CONCAT("in ", ?brusselsLabel, " (1950 to 2006)") AS ?context)
+    BIND(CONCAT("from ", STR(?fromPercentage_br), " to ", STR(?toPercentage_br)) AS ?value)
+    BIND(CONCAT("in ", ?brusselsLabel, " (", STR(?fromYr), " to ", STR(?toYr), ")") AS ?context)
   }
   UNION
   {
@@ -74,8 +73,8 @@ WHERE {
     she:Padua skos:prefLabel ?paduaLabel_sp_int .
     she:SurfacePermeability af-x:AFX_0002696 ?spNode_pad_int .
     ?spNode_pad_int prov:atLocation she:Padua .
-    ?spNode_pad_int she:appliesTo she:ResidentialAreas .
-    she:ResidentialAreas skos:prefLabel ?raLabel_pad_int .
+    ?spNode_pad_int she:appliesTo ?ra .
+    ?ra skos:prefLabel ?raLabel_pad_int .
     ?spNode_pad_int sorelm:hasInterval ?spInterval_pad_int .
 
     BIND(?spLabel_pad_int AS ?itemDescription)
@@ -94,7 +93,7 @@ WHERE {
     OPTIONAL { ?spNode_par sorelm:hasInterval ?spInterval_par . }
     BIND(COALESCE(STR(?spPercentage_par), ?spInterval_par) AS ?parmaValue)
 
-    BIND(CONCAT("Minimum standard for ", ?spLabel_par) AS ?itemDescription)
+    BIND(CONCAT("Minimum ", ?spLabel_par) AS ?itemDescription)
     BIND(?parmaValue AS ?value)
     BIND(CONCAT("in ", ?parmaLabel_sp, " (", ?areaTypeLabel_sp_par, ")") AS ?context)
     FILTER(BOUND(?parmaValue))

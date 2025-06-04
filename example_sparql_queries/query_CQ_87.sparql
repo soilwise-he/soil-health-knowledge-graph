@@ -13,10 +13,7 @@ WHERE {
 
     BIND(?tcpLabel_1 AS ?indicatorCategoryLabel)
     BIND(?indicatorLabel_main AS ?indicatorLabel)
-    BIND(IF(BOUND(?symbol_val),
-            CONCAT("Symbol: ", STR(?symbol_val)),
-            "")
-         AS ?valueLabel)
+    BIND(?symbol_val AS ?valueLabel)
   }
 }
 ORDER BY ?indicatorCategoryLabel ?indicatorLabel ?valueLabel

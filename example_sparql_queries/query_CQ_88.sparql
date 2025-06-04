@@ -4,7 +4,6 @@ PREFIX qudt: <http://qudt.org/schema/qudt/>
 PREFIX unit: <http://qudt.org/vocab/unit/>
 PREFIX om: <http://www.ontology-of-units-of-measure.org/resource/om-2/>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
-PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
 
 SELECT ?parameterLabel ?propertyURI ?valueLabel
@@ -39,7 +38,6 @@ WHERE {
   }
   UNION
   {
-    FILTER(?parameterURI = she:SoilRigidityRatio)
     ?parameterURI agrontology:isMeasuredBy ?measureNode .
     ?measureNode obo:RO_0020202 ?numerator .
     ?measureNode obo:RO_0020203 ?denominator .
@@ -48,14 +46,6 @@ WHERE {
 
     BIND(agrontology:isMeasuredBy AS ?propertyURI)
     BIND(CONCAT(?numeratorLabel, " / ", ?denominatorLabel) AS ?valueLabel)
-  }
-  UNION
-  {
-    FILTER(?parameterURI = she:ShearStrength)
-    ?parameterURI sio:equivalentTo she:Stiffness .
-    she:Stiffness skos:prefLabel ?stiffnessLabel .
-    BIND(sio:equivalentTo AS ?propertyURI)
-    BIND(?stiffnessLabel AS ?valueLabel)
   }
 }
 ORDER BY ?parameterLabel ?propertyURI

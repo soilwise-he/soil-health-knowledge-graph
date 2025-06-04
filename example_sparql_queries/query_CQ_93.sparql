@@ -1,7 +1,6 @@
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX she: <https://soilwise-he.github.io/soil-health#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
-PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX biolink: <https://w3id.org/biolink/vocab/>
 
 SELECT ?subjectLabel ?predicateURI ?objectLabel
@@ -16,8 +15,8 @@ WHERE {
   UNION
   {
     she:Imperviousness skos:prefLabel ?impLabel_ss .
-    she:Imperviousness obo:BFO_0000066 she:SoilSurface .
-    she:SoilSurface skos:prefLabel ?ssLabel .
+    she:Imperviousness obo:BFO_0000066 ?ss .
+    ?ss skos:prefLabel ?ssLabel .
     BIND(?impLabel_ss AS ?subjectLabel)
     BIND(obo:BFO_0000066 AS ?predicateURI)
     BIND(?ssLabel AS ?objectLabel)
@@ -25,8 +24,8 @@ WHERE {
   UNION
   {
     she:Imperviousness skos:prefLabel ?impLabel_im .
-    she:Imperviousness obo:RO_0002331 she:ImpermeableMaterials .
-    she:ImpermeableMaterials skos:prefLabel ?imMatLabel .
+    she:Imperviousness obo:RO_0002331 ?imMat .
+    ?imMat skos:prefLabel ?imMatLabel .
     BIND(?impLabel_im AS ?subjectLabel)
     BIND(obo:RO_0002331 AS ?predicateURI)
     BIND(?imMatLabel AS ?objectLabel)
@@ -34,10 +33,10 @@ WHERE {
   UNION
   {
     she:Imperviousness skos:prefLabel ?impLabel_eq .
-    she:Imperviousness sio:equivalentTo she:SoilSealing .
+    she:Imperviousness ?rela she:SoilSealing .
     she:SoilSealing skos:prefLabel ?ssSealLabel .
     BIND(?impLabel_eq AS ?subjectLabel)
-    BIND(sio:equivalentTo AS ?predicateURI)
+    BIND(?rela AS ?predicateURI)
     BIND(?ssSealLabel AS ?objectLabel)
   }
   UNION
@@ -51,8 +50,8 @@ WHERE {
   UNION
   {
     she:SealedLand skos:prefLabel ?slLabel_broader .
-    she:SealedLand skos:broader she:LandTake .
-    she:LandTake skos:prefLabel ?ltLabel .
+    she:SealedLand skos:broader ?lt .
+    ?lt skos:prefLabel ?ltLabel .
     BIND(?slLabel_broader AS ?subjectLabel)
     BIND(skos:broader AS ?predicateURI)
     BIND(?ltLabel AS ?objectLabel)

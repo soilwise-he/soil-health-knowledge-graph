@@ -11,13 +11,10 @@ WHERE {
     she:SSVsForOrganicPollutants sorelm:hasThreshold ?thresholdNode .
 
     ?thresholdNode she:isDevelopedFor ?chemical .
-    VALUES ?chemical { she:PCDD she:PCDF }
-    OPTIONAL { ?chemical skos:prefLabel ?chemLabel_opt . }
-    OPTIONAL { ?chemical agrontology:hasAbbreviation ?chemAbbr_opt . }
+    ?chemical agrontology:hasAbbreviation ?chemAbbr_opt .
     BIND(COALESCE(?chemLabel_opt, ?chemAbbr_opt, STR(?chemical)) AS ?chemicalDisplayLabel)
 
     ?thresholdNode prov:atLocation ?location .
-    VALUES ?location { she:Italy she:Austria }
     ?location skos:prefLabel ?locationLabel .
 
     OPTIONAL { ?thresholdNode qudt:numericValue ?numericValue . }
@@ -34,7 +31,6 @@ WHERE {
   {
     she:SSVsForOrganicPollutants skos:prefLabel ?ssvopLabel_factors .
     she:SSVsForOrganicPollutants skos:related ?relatedFactor .
-    VALUES ?relatedFactor { she:RegulatedChemicals she:ChemicalAbsoluteValue }
     ?relatedFactor skos:prefLabel ?relatedFactorLabel .
 
     BIND(?ssvopLabel_factors AS ?itemDescription)

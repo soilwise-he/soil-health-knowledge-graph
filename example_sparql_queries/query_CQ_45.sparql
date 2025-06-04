@@ -8,8 +8,8 @@ PREFIX obo: <http://purl.obolibrary.org/obo/>
 SELECT ?pH_Context ?relationshipOrLimitType ?valueOrRange ?relatedConditionLabel
 WHERE {
   {
-    she:pH skos:prefLabel ?phLabel_1 .
-    she:pH agrontology:smallerThan ?constraintNode .
+    she:SoilpH skos:prefLabel ?phLabel_1 .
+    she:SoilpH agrontology:smallerThan ?constraintNode .
     ?constraintNode obo:RO_0002212 she:CropProduction .
     she:CropProduction skos:prefLabel ?cpLabel_1 .
     ?constraintNode sorelm:hasInterval ?interval .
@@ -21,18 +21,16 @@ WHERE {
   }
   UNION
   {
-    she:pH skos:prefLabel ?phLabel_2 .
-    she:pH sorelm:hasLowerBound ?lowerBoundValueSimple .
+    she:SoilpH skos:prefLabel ?phLabel_2 .
+    she:SoilpH sorelm:hasLowerBound ?lowerBoundValueSimple .
     BIND(?phLabel_2 AS ?pH_Context)
     BIND(sorelm:hasLowerBound AS ?relationshipOrLimitType)
     BIND(STR(?lowerBoundValueSimple) AS ?valueOrRange)
-    BIND("lower constraint" AS ?relatedConditionLabel)
-
   }
   UNION
   {
-    she:pH skos:prefLabel ?phLabel_3 .
-    she:pH sorelm:hasThreshold ?criticalNode .
+    she:SoilpH skos:prefLabel ?phLabel_3 .
+    she:SoilpH sorelm:hasThreshold ?criticalNode .
     ?criticalNode qudt:numericValue ?criticalValue .
     ?criticalNode skos:related she:AluminiumToxicity .
     she:AluminiumToxicity skos:prefLabel ?alToxLabel .
@@ -44,8 +42,8 @@ WHERE {
   }
   UNION
   {
-    she:pH skos:prefLabel ?phLabel_4 .
-    she:pH agrontology:greaterThan ?optimalNode .
+    she:SoilpH skos:prefLabel ?phLabel_4 .
+    she:SoilpH agrontology:greaterThan ?optimalNode .
     ?optimalNode agrontology:isBeneficialFor she:CropProduction .
     she:CropProduction skos:prefLabel ?cpLabel_3 .
     ?optimalNode qudt:numericValue ?optimalValue .

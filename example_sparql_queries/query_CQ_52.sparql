@@ -6,8 +6,8 @@ PREFIX af-x: <http://purl.allotrope.org/ontologies/property#>
 SELECT ?subjectLabel ?predicateURI ?objectLabel
 WHERE {
   {
-    she:ProtectionTarget skos:prefLabel ?ptLabel .
-    she:ProtectionTarget skos:narrower ?highLevelTarget .
+    she:ProtectionTargets skos:prefLabel ?ptLabel .
+    she:ProtectionTargets skos:narrower ?highLevelTarget .
     ?highLevelTarget skos:prefLabel ?highLevelTargetLabel .
 
     BIND(?ptLabel AS ?subjectLabel)

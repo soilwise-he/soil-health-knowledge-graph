@@ -8,7 +8,7 @@ WHERE {
     ?somConcept skos:prefLabel "soil organic matter"@en .
     ?somConcept skos:definition ?somDefinition .
     BIND("Soil Organic Matter" AS ?item)
-    BIND("Definition" AS ?property)
+    BIND(skos:definition AS ?property)
     BIND(?somDefinition AS ?value)
   }
   UNION
@@ -17,7 +17,7 @@ WHERE {
     ?somConcept agrontology:isMadeFrom ?component .
     ?component skos:prefLabel ?componentLabel .
     BIND("Soil Organic Matter" AS ?item)
-    BIND("Is made from" AS ?property)
+    BIND(agrontology:isMadeFrom AS ?property)
     BIND(?componentLabel AS ?value)
   }
   UNION
@@ -29,7 +29,7 @@ WHERE {
     ?factorNode skos:definition ?factorDefinition .
 
     BIND(CONCAT("Factor: ", STR(?factorValue)) AS ?item)
-    BIND("Definition of Factor" AS ?property)
+    BIND(skos:definition AS ?property)
     BIND(?factorDefinition AS ?value)
   }
 }

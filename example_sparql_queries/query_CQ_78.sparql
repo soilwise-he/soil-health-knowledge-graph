@@ -10,40 +10,30 @@ SELECT ?subjectLabel ?predicateURI ?objectLabel ?contextLabel
 WHERE {
   {
     she:OnsiteEffectsOfSoilErosion skos:prefLabel ?oseLabel .
-    she:OnsiteEffectsOfSoilErosion skos:narrower she:SoilQualityReduction .
-    she:SoilQualityReduction skos:prefLabel ?sqrLabel .
+    she:OnsiteEffectsOfSoilErosion skos:narrower ?sqr .
+    ?sqr skos:prefLabel ?sqrLabel .
     BIND(?oseLabel AS ?subjectLabel)
     BIND(skos:narrower AS ?predicateURI)
     BIND(?sqrLabel AS ?objectLabel)
-    BIND("" AS ?contextLabel)
   }
   UNION
   {
-    she:SoilQualityReduction skos:prefLabel ?sqrLabel_ftl .
-    she:SoilQualityReduction obo:OAE_0000025 she:FertileTopsoilLoss .
-    she:FertileTopsoilLoss skos:prefLabel ?ftlLabel .
+    she:OnsiteEffectsOfSoilErosion skos:prefLabel ?oseLabel .
+    she:OnsiteEffectsOfSoilErosion skos:narrower ?sqr .
+    ?sqr skos:prefLabel ?sqrLabel_ftl .
+    ?sqr obo:OAE_0000025 ?ftl .
+    ?ftl skos:prefLabel ?ftlLabel .
     BIND(?sqrLabel_ftl AS ?subjectLabel)
     BIND(obo:OAE_0000025 AS ?predicateURI)
     BIND(?ftlLabel AS ?objectLabel)
-    BIND("" AS ?contextLabel)
-  }
-  UNION
-  {
-    she:FertileTopsoilLoss skos:prefLabel ?ftlLabel_scl .
-    she:FertileTopsoilLoss agrontology:includes she:SoilCarbonLoss .
-    she:SoilCarbonLoss skos:prefLabel ?sclLabel .
-    BIND(?ftlLabel_scl AS ?subjectLabel)
-    BIND(agrontology:includes AS ?predicateURI)
-    BIND(?sclLabel AS ?objectLabel)
-    BIND("" AS ?contextLabel)
   }
   UNION
   {
     she:ErodedMaterial skos:prefLabel ?emLabel .
     she:ErodedMaterial sorelph:hasTransport ?transportNode .
     ?transportNode obo:RO_0002552 ?damageNode .
-    ?damageNode agrontology:isCausedBy she:Flooding .
-    she:Flooding skos:prefLabel ?floodingLabel .
+    ?damageNode agrontology:isCausedBy ?flooding .
+    ?flooding skos:prefLabel ?floodingLabel .
     ?damageNode rdf:object ?damagedThing .
     ?damagedThing skos:prefLabel ?damagedThingLabel .
 
@@ -56,8 +46,8 @@ WHERE {
   {
     she:ErodedSoil skos:prefLabel ?esLabel .
     she:ErodedSoil obo:RO_0002552 ?clogNode .
-    ?clogNode rdf:object she:DrainageSystems .
-    she:DrainageSystems skos:prefLabel ?dsLabel .
+    ?clogNode rdf:object ?ds .
+    ?ds skos:prefLabel ?dsLabel .
     ?clogNode agrontology:causes ?clogEffect .
     ?clogEffect skos:prefLabel ?clogEffectLabel .
 
@@ -70,10 +60,10 @@ WHERE {
   {
     she:SoilErosion skos:prefLabel ?seLabel_pl .
     she:SoilErosion agrontology:affects ?pavementNode .
-    ?pavementNode rdf:object she:PavementLifetime .
-    she:PavementLifetime skos:prefLabel ?plLabel .
-    ?pavementNode af-x:AFX_0000408 she:PoorDrainageMaintenance .
-    she:PoorDrainageMaintenance skos:prefLabel ?pdmLabel .
+    ?pavementNode rdf:object ?pl .
+    ?pl skos:prefLabel ?plLabel .
+    ?pavementNode af-x:AFX_0000408 ?pdm .
+    ?pdm skos:prefLabel ?pdmLabel .
     ?pavementNode agrontology:causes ?pavementEffect .
     ?pavementEffect skos:prefLabel ?pavementEffectLabel .
 

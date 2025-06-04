@@ -14,7 +14,6 @@ WHERE {
 
     BIND(?snsLabel AS ?assessmentFocusLabel)
     BIND(?nMeasureLabel AS ?indicatorLabel)
-    BIND("" AS ?specificContextLabel)
   }
   UNION
   {
@@ -24,7 +23,6 @@ WHERE {
 
     BIND(?spsLabel_b AS ?assessmentFocusLabel)
     BIND(?pMeasureLabel AS ?indicatorLabel)
-    BIND("" AS ?specificContextLabel)
   }
   UNION
   {
@@ -39,7 +37,7 @@ WHERE {
       ?indicatorNode af-x:AFX_0000408 ?furtherContextEntity .
       ?furtherContextEntity skos:prefLabel ?furtherContextLabelInternal .
     }
-    BIND(IF(BOUND(?furtherContextLabelInternal), CONCAT(?forestSoilsLabel, " - ", ?furtherContextLabelInternal), ?forestSoilsLabel) AS ?detailedForestContext)
+    BIND(IF(BOUND(?furtherContextLabelInternal), CONCAT(?forestSoilsLabel, ", ", ?furtherContextLabelInternal), ?forestSoilsLabel) AS ?detailedForestContext)
 
     BIND(?snsiLabel AS ?assessmentFocusLabel)
     BIND(?forestNIndicatorLabel AS ?indicatorLabel)

@@ -11,7 +11,6 @@ WHERE {
     BIND(?scdConcept AS ?subject)
     BIND(skos:definition AS ?predicate)
     BIND(?definitionText AS ?object)
-    BIND("" AS ?objectLabel)
   }
   UNION
   {
@@ -19,8 +18,7 @@ WHERE {
     ?includedConcept skos:prefLabel ?includedConceptLabel .
     BIND(?scdConcept AS ?subject)
     BIND(agrontology:includes AS ?predicate)
-    BIND(?includedConcept AS ?object)
-    BIND(?includedConceptLabel AS ?objectLabel)
+    BIND(?includedConceptLabel AS ?object)
   }
   UNION
   {
@@ -28,8 +26,7 @@ WHERE {
     ?characteristicConcept skos:prefLabel ?characteristicConceptLabel .
     BIND(?scdConcept AS ?subject)
     BIND(she:isCharacterisedBy AS ?predicate)
-    BIND(?characteristicConcept AS ?object)
-    BIND(?characteristicConceptLabel AS ?objectLabel)
+    BIND(?characteristicConceptLabel AS ?object)
   }
 }
-ORDER BY ?subject ?predicate ?objectLabel
+ORDER BY ?subject ?predicate

@@ -7,14 +7,13 @@ SELECT ?itemDescription ?relationshipOrProperty ?valueDescription
 WHERE {
   {
     she:SoilAcidification skos:prefLabel ?saLabel .
-    she:SoilAcidification ?effectPredicate ?affectedEntity .
-    VALUES ?effectPredicate { obo:RO_0002212 }
+    she:SoilAcidification obo:RO_0002212 ?affectedEntity .
 
     FILTER(!ISBLANK(?affectedEntity))
     ?affectedEntity skos:prefLabel ?affectedEntityLabel .
 
     BIND(?saLabel AS ?itemDescription)
-    BIND(?effectPredicate AS ?relationshipOrProperty)
+    BIND(obo:RO_0002212 AS ?relationshipOrProperty)
     BIND(?affectedEntityLabel AS ?valueDescription)
   }
   UNION
@@ -23,11 +22,11 @@ WHERE {
     she:AcidForestSoils skos:prefLabel ?afsLabel_3a .
     she:LowpH obo:RO_0002212 ?bnode_decomp .
     ?bnode_decomp obo:BFO_0000066 she:AcidForestSoils .
-    ?bnode_decomp rdf:object she:Decomposition .
-    she:Decomposition skos:prefLabel ?decompLabel .
+    ?bnode_decomp rdf:object ?negaAffectConcept .
+    ?negaAffectConcept skos:prefLabel ?negaAffectLabel .
     BIND(?lowPhLabel_3a AS ?itemDescription)
     BIND(obo:RO_0002212 AS ?relationshipOrProperty)
-    BIND(CONCAT(?decompLabel, " (in ", ?afsLabel_3a, ")") AS ?valueDescription)
+    BIND(CONCAT(?negaAffectLabel, " (in ", ?afsLabel_3a, ")") AS ?valueDescription)
   }
   UNION
   {
@@ -35,11 +34,11 @@ WHERE {
     she:AcidForestSoils skos:prefLabel ?afsLabel_3b .
     she:LowpH obo:RO_0002213 ?bnode_oma .
     ?bnode_oma obo:BFO_0000066 she:AcidForestSoils .
-    ?bnode_oma rdf:object she:OrganicMatterAccumulation .
-    she:OrganicMatterAccumulation skos:prefLabel ?omaLabel .
+    ?bnode_oma rdf:object ?posiAffectConcept .
+    ?posiAffectConcept skos:prefLabel ?posiAffectLabel .
     BIND(?lowPhLabel_3b AS ?itemDescription)
     BIND(obo:RO_0002213 AS ?relationshipOrProperty)
-    BIND(CONCAT(?omaLabel, " (in ", ?afsLabel_3b, ")") AS ?valueDescription)
+    BIND(CONCAT(?posiAffectLabel, " (in ", ?afsLabel_3b, ")") AS ?valueDescription)
   }
 }
 ORDER BY ?itemDescription ?relationshipOrProperty ?valueDescription

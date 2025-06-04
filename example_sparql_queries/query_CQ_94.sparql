@@ -2,7 +2,6 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX she: <https://soilwise-he.github.io/soil-health#>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX biolink: <https://w3id.org/biolink/vocab/>
-PREFIX obo: <http://purl.obolibrary.org/obo/>
 
 SELECT ?subjectLabel ?predicateURI ?objectLabel
 WHERE {
@@ -15,35 +14,13 @@ WHERE {
   }
   UNION
   {
-    she:LandTake skos:prefLabel ?ltLabel_aa .
-    she:LandTake skos:related she:ArtificialAreas .
-    she:ArtificialAreas skos:prefLabel ?aaLabel .
-    BIND(?ltLabel_aa AS ?subjectLabel)
-    BIND(skos:related AS ?predicateURI)
-    BIND(?aaLabel AS ?objectLabel)
-  }
-  UNION
-  {
     she:LandTake skos:prefLabel ?ltLabel_consumes_rural .
     she:LandTake sio:SIO_000210 ?indicatorNode .
-    ?indicatorNode biolink:consumes she:RuralAreas .
-    she:RuralAreas skos:prefLabel ?raLabel .
-    OPTIONAL {
-        ?indicatorNode obo:RO_0002213 ?increasedAreaType .
-        ?increasedAreaType skos:prefLabel ?increasedAreaLabel .
-    }
+    ?indicatorNode biolink:consumes ?ra .
+    ?ra skos:prefLabel ?raLabel .
     BIND(?ltLabel_consumes_rural AS ?subjectLabel)
     BIND(biolink:consumes AS ?predicateURI)
-    BIND(CONCAT(?raLabel, " (leading to increase in ", COALESCE(?increasedAreaLabel, "Settlement/Artificial Areas"), ")") AS ?objectLabel)
-  }
-  UNION
-  {
-    she:SettlementAreas skos:prefLabel ?saLabel .
-    she:SettlementAreas skos:related she:ArtificialSurfaces .
-    she:ArtificialSurfaces skos:altLabel ?asLabel .
-    BIND(?saLabel AS ?subjectLabel)
-    BIND(skos:related AS ?predicateURI)
-    BIND(?asLabel AS ?objectLabel)
+    BIND(?raLabel AS ?objectLabel)
   }
 }
 ORDER BY ?subjectLabel ?predicateURI ?objectLabel

@@ -16,17 +16,5 @@ WHERE {
     BIND(dcterms:source AS ?relationshipProperty)
     BIND(?sourceDisplay AS ?relatedItemLabelOrURI)
   }
-  UNION
-  {
-    she:SoilBiodiversityIndicators skos:narrower she:MicrobialBiomass .
-    she:MicrobialBiomass skos:prefLabel ?mbLabel .
-    she:MicrobialBiomass skos:narrower ?componentURI .
-    ?componentURI skos:prefLabel ?componentLabel_val .
-    she:MicrobialBiomass dcterms:source she:Breure2004 .
-
-    BIND(?mbLabel AS ?indicatorLabel)
-    BIND(skos:narrower AS ?relationshipProperty)
-    BIND(?componentLabel_val AS ?relatedItemLabelOrURI)
-  }
 }
 ORDER BY ?indicatorLabel ?relationshipProperty ?relatedItemLabelOrURI

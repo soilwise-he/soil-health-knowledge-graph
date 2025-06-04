@@ -9,8 +9,8 @@ WHERE {
   {
     she:SoilCompaction skos:prefLabel ?scLabel_static_1 .
     she:SoilCompaction obo:RO_0002213 ?bnode_spr .
-    ?bnode_spr rdf:object she:SoilPenetrationResistance .
-    she:SoilPenetrationResistance skos:prefLabel ?sprLabel .
+    ?bnode_spr rdf:object ?spr .
+    ?spr skos:prefLabel ?sprLabel .
 
     BIND(?scLabel_static_1 AS ?subjectLabel)
     BIND(obo:RO_0002213 AS ?predicateURI)
@@ -32,46 +32,35 @@ WHERE {
   }
   UNION
   {
-    she:StressKind skos:prefLabel ?skLabel .
-    she:StressKind skos:narrower ?specificStressKind .
+    she:SoilCompaction obo:RO_0002212 ?bnode_reduction .
+    ?bnode_reduction obo:RO_0002502 ?stressFactor .
+    ?stressFactor skos:prefLabel ?skLabel .
+    ?stressFactor skos:narrower ?specificStressKind .
     ?specificStressKind skos:prefLabel ?specificStressKindLabel .
     BIND(?skLabel AS ?subjectLabel)
     BIND(skos:narrower AS ?predicateURI)
     BIND(?specificStressKindLabel AS ?objectLabel)
-    BIND("" AS ?contextOrCauseLabel)
-  }
-  UNION
-  {
-    ?stressTypeURI skos:prefLabel ?stressTypeLabel .
-    ?stressTypeURI agrontology:isCausedBy ?stressCause .
-    ?stressCause skos:prefLabel ?stressCauseLabel .
-
-    BIND(?stressTypeLabel AS ?subjectLabel)
-    BIND(agrontology:isCausedBy AS ?predicateURI)
-    BIND(?stressCauseLabel AS ?objectLabel)
-    BIND("" AS ?contextOrCauseLabel)
   }
   UNION
   {
     she:SoilCompaction skos:prefLabel ?scLabel_static_3 .
-    she:PhysicochemicalProcesses skos:prefLabel ?pcpLabel .
-    she:PhysicochemicalProcesses agrontology:isAffectedBy she:SoilCompaction .
+    ?pcp skos:prefLabel ?pcpLabel .
+    ?pcp agrontology:isAffectedBy she:SoilCompaction .
 
     BIND(?pcpLabel AS ?subjectLabel)
     BIND(agrontology:isAffectedBy AS ?predicateURI)
     BIND(?scLabel_static_3 AS ?objectLabel)
-    BIND("" AS ?contextOrCauseLabel)
   }
   UNION
   {
-    she:PhysicochemicalProcesses skos:prefLabel ?pcpLabel_narrower .
-    she:PhysicochemicalProcesses skos:narrower ?specificPcp .
+    ?pcp agrontology:isAffectedBy she:SoilCompaction .
+    ?pcp skos:prefLabel ?pcpLabel_narrower .
+    ?pcp skos:narrower ?specificPcp .
     ?specificPcp skos:prefLabel ?specificPcpLabel .
 
     BIND(?pcpLabel_narrower AS ?subjectLabel)
     BIND(skos:narrower AS ?predicateURI)
     BIND(?specificPcpLabel AS ?objectLabel)
-    BIND("" AS ?contextOrCauseLabel)
   }
 }
 ORDER BY ?subjectLabel ?predicateURI ?objectLabel

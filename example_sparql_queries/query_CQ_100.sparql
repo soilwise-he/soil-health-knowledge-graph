@@ -9,8 +9,8 @@ WHERE {
   {
     she:NDVIMethod skos:prefLabel ?ndviMethodLabel .
     she:NDVIMethod agrontology:measures ?bnode_veg_measure .
-    ?bnode_veg_measure rdf:object she:Vegetation .
-    she:Vegetation skos:prefLabel ?vegLabel_measure .
+    ?bnode_veg_measure rdf:object ?veg .
+    ?veg skos:prefLabel ?vegLabel_measure .
 
     BIND(?ndviMethodLabel AS ?subjectLabel)
     BIND(agrontology:measures AS ?predicateURI)
@@ -20,10 +20,8 @@ WHERE {
   {
     she:NDVIMethod skos:prefLabel ?ndviMethodLabel .
     she:NDVIMethod agrontology:measures ?bnode_veg_measure_lights .
-    ?bnode_veg_measure_lights rdf:object she:Vegetation .
     ?bnode_veg_measure_lights schema:isBasedOn ?bnode_lights .
     ?bnode_lights agrontology:measures ?lightType .
-    VALUES ?lightType { she:NearinfraredLight she:RedLight }
     ?lightType skos:prefLabel ?lightTypeLabel .
 
     BIND(?ndviMethodLabel AS ?subjectLabel)
@@ -32,9 +30,11 @@ WHERE {
   }
   UNION
   {
-    she:Vegetation skos:prefLabel ?vegLabel_gen_nir .
-    she:Vegetation she:reflects she:NearinfraredLight .
-    she:NearinfraredLight skos:prefLabel ?nirLabel_gen .
+    she:NDVIMethod agrontology:measures ?bnode_veg_measure .
+    ?bnode_veg_measure rdf:object ?veg .
+    ?veg skos:prefLabel ?vegLabel_gen_nir .
+    ?veg she:reflects ?nl .
+    ?nl skos:prefLabel ?nirLabel_gen .
 
     BIND(?vegLabel_gen_nir AS ?subjectLabel)
     BIND(she:reflects AS ?predicateURI)
@@ -42,9 +42,11 @@ WHERE {
   }
   UNION
   {
-    she:Vegetation skos:prefLabel ?vegLabel_gen_red .
-    she:Vegetation she:absorbs she:RedLight .
-    she:RedLight skos:prefLabel ?redLabel_gen_abs .
+    she:NDVIMethod agrontology:measures ?bnode_veg_measure .
+    ?bnode_veg_measure rdf:object ?veg .
+    ?veg skos:prefLabel ?vegLabel_gen_red .
+    ?veg she:absorbs ?rl .
+    ?rl skos:prefLabel ?redLabel_gen_abs .
 
     BIND(?vegLabel_gen_red AS ?subjectLabel)
     BIND(she:absorbs AS ?predicateURI)

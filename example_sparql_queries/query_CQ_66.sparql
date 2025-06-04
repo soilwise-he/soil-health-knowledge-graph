@@ -14,18 +14,9 @@ WHERE {
   }
   UNION
   {
-    she:SoilOrganisms skos:prefLabel ?soLabel_func .
-    she:SoilOrganisms skos:related she:SoilFunctioning .
-    she:SoilFunctioning skos:prefLabel ?sfLabel .
-    BIND(?soLabel_func AS ?subjectLabel)
-    BIND(skos:related AS ?predicateURI)
-    BIND(?sfLabel AS ?objectLabel)
-  }
-  UNION
-  {
     she:SpeciesDiversity skos:prefLabel ?sdLabel .
-    she:SpeciesDiversity bao:BAO_0002586 she:SoilCommunityHealth .
-    she:SoilCommunityHealth skos:prefLabel ?schLabel .
+    she:SpeciesDiversity bao:BAO_0002586 ?sdIndicator .
+    ?sdIndicator skos:prefLabel ?schLabel .
     BIND(?sdLabel AS ?subjectLabel)
     BIND(bao:BAO_0002586 AS ?predicateURI)
     BIND(?schLabel AS ?objectLabel)
