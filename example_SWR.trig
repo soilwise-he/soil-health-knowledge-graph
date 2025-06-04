@@ -6,9 +6,11 @@
 @prefix bao: <http://www.bioassayontology.org/bao#> .
 @prefix biolink: <https://w3id.org/biolink/vocab/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix gemet: <http://www.eionet.europa.eu/gemet/concept/> .
 @prefix glosis_cm: <http://w3id.org/glosis/model/common/> .
 @prefix glosis_lh: <http://w3id.org/glosis/model/layerhorizon/> .
 @prefix glosis_pr: <http://w3id.org/glosis/model/profile/> .
+@prefix inrae: <http://opendata.inrae.fr/thesaurusINRAE/> .
 @prefix iso11074: <https://data.geoscience.earth/ncl/ISO11074v2025/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
@@ -56,6 +58,33 @@ she:metadata {
             "STEROPES" ;
         dcterms:title "On the impact of soil texture on local scale organic carbon quantification: From airborne to spaceborne sensing domains" .
 
+    <https://doi.org/10.3897/aca.8.e149257> a dcterms:BibliographicResource ;
+        dcterms:creator "Diaz-Pines, Eugenio",
+            "Goff, Dylan",
+            "Kager, Thomas",
+            "Leitner, Sonja",
+            "Marschick, Johannes",
+            "Zechmeister-Boltenstern, Sophie",
+            "Zelinka, Peter" ;
+        dcterms:date "2025-05-28" ;
+        dcterms:identifier <https://doi.org/10.3897/aca.8.e149257> ;
+        dcterms:title "Long-term effects of drought and rewetting manipulations on the greenhouse gas balance of a temperate forest soil." .
+
+    <https://doi.org/10.5061/dryad.1g1jwstx3> a dcterms:BibliographicResource ;
+        dcterms:creator "Cai, Huiying",
+            "Cui, Haiying",
+            "Fu, Xiao",
+            "Gao, Weifeng",
+            "Qu, Yanan",
+            "Shi, Baoku",
+            "Sun, Wei",
+            "Vilonen, Leena",
+            "Wang, Chengliang",
+            "Zhang, Rui" ;
+        dcterms:date "2021-09-15" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.1g1jwstx3> ;
+        dcterms:title "Data from: Grazing and nitrogen addition restructure the spatial heterogeneity of soil microbial community structure and enzymatic activities" .
+
     <https://doi.org/10.5061/dryad.2280gb5rk> a dcterms:BibliographicResource ;
         dcterms:creator "Adams, Jonathan M.",
             "Cheng, Liang",
@@ -69,6 +98,25 @@ she:metadata {
         dcterms:date "2021-09-20" ;
         dcterms:identifier <https://doi.org/10.5061/dryad.2280gb5rk> ;
         dcterms:title "Saprotrophic fungal diversity predicts ectomycorrhizal fungal diversity along the timberline in the framework of island biogeography theory" .
+
+    <https://doi.org/10.5061/dryad.3vr71> a dcterms:BibliographicResource ;
+        dcterms:creator "Akimoto, Shin-ichi",
+            "Imanaka, Tetsuji",
+            "Ishida, Ken",
+            "Li, Yang",
+            "Sato, Hitoshi" ;
+        dcterms:date "2017-11-06" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.3vr71> ;
+        dcterms:subject "Conservation genetics and biodiversity",
+            "Cs-137",
+            "Eriosomatinae",
+            "Holocene",
+            "Prociphilus oriens",
+            "exposure dose",
+            "the present day",
+            "β-ray",
+            "γ-ray" ;
+        dcterms:title "Data from: Effects of radiation from contaminated soil and moss in Fukushima on embryogenesis and egg hatching of the aphid Prociphilus oriens" .
 
     <https://doi.org/10.5061/dryad.8cz8w9gpg> a dcterms:BibliographicResource ;
         dcterms:creator "Chu, Haiyan",
@@ -113,6 +161,15 @@ she:metadata {
         dcterms:subject "ithaca" ;
         dcterms:title "Data from: Biochar application on paddy and purple soils in southern China: soil carbon and biotic activity" .
 
+    <https://doi.org/10.5061/dryad.p0jn1> a dcterms:BibliographicResource ;
+        dcterms:creator "Hart, Stephen C.",
+            "Hungate, Bruce A.",
+            "Nasto, Megan K.",
+            "Sullivan, Benjamin W." ;
+        dcterms:date "2017-12-08" ;
+        dcterms:identifier <https://doi.org/10.5061/dryad.p0jn1> ;
+        dcterms:title "Data from: Proximate controls on semiarid soil greenhouse gas fluxes across 3 million years of soil development" .
+
     <https://doi.org/10.5061/dryad.p8cz8w9qv> a dcterms:BibliographicResource ;
         dcterms:creator "Bowd, Elle" ;
         dcterms:date "2021-11-08" ;
@@ -126,20 +183,6 @@ she:metadata {
         dcterms:date "2024-10-22" ;
         dcterms:identifier <https://doi.org/10.5194/essd-16-4735-2024> ;
         dcterms:title "Providing quality-assessed and standardised soil data to support global mapping and modelling (WoSIS snapshot 2023)" .
-
-    <https://doi.org/10.5281/zenodo.10397954> a dcterms:BibliographicResource ;
-        dcterms:creator "Dixit, Shalabh",
-            "Jat, H S",
-            "Krishnamurthy, S L",
-            "Kumar, Virender",
-            "Lokeshkumar, B M",
-            "Rathor, Suman",
-            "Sharma, P C",
-            "Singh, Vikas Kumar",
-            "Warraich, A S" ;
-        dcterms:date "2023-10-16" ;
-        dcterms:identifier <https://doi.org/10.5281/zenodo.10397954> ;
-        dcterms:title "Identification of rice genotypes under direct dry seeded condition using GGE biplot analysis for anaerobic germination and grain yield" .
 
     <https://doi.org/10.5281/zenodo.10555187> a dcterms:BibliographicResource ;
         dcterms:creator "Chae, Kyu-Seok",
@@ -157,14 +200,6 @@ she:metadata {
             "Strongylidium",
             "Strongylidium koreanum" ;
         dcterms:title "Strongylidium koreanum Chae & Park & Min 2023, n. sp." .
-
-    <https://doi.org/10.5281/zenodo.1065954> a dcterms:BibliographicResource ;
-        dcterms:creator "Alexandre Wadoux",
-            "Gerard Heuvelink",
-            "Kasia Sawicka" ;
-        dcterms:date "2017-11-23" ;
-        dcterms:identifier <https://doi.org/10.5281/zenodo.1065954> ;
-        dcterms:title "Sample design optimisation techniques and associated software" .
 
     <https://doi.org/10.5281/zenodo.10842922> a dcterms:BibliographicResource ;
         dcterms:creator "Ahmad, Wasim",
@@ -215,16 +250,16 @@ she:metadata {
             "Sugars" ;
         dcterms:title "Dataset for \"Contrasting Effects of Organic and Mineral Nitrogen Challenge the N-Mining Hypothesis for Soil Organic Matter Priming\"" .
 
-    <https://doi.org/10.5281/zenodo.1198839> a dcterms:BibliographicResource ;
-        dcterms:creator "Bishop, Tom",
-            "Ewers, Rob" ;
-        dcterms:date "2018-03-14" ;
-        dcterms:identifier <https://doi.org/10.5281/zenodo.1198839> ;
-        dcterms:subject she:FunctionalDiversity,
-            "ants",
-            "morphometrics",
-            "soil communities" ;
-        dcterms:title "Abundance and morphometrics of ant genera" .
+    <https://doi.org/10.5281/zenodo.12672748> a dcterms:BibliographicResource ;
+        dcterms:creator "Dr. Bahadur Lal" ;
+        dcterms:date "2018-12-30" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.12672748> ;
+        dcterms:subject she:SoilStructure,
+            "Bio pores",
+            "Inhibitory Bacteria",
+            "Root signal",
+            "Water Potential" ;
+        dcterms:title "A REVIEW ON \"SOIL CONDITION AND PLANT GROWTH" .
 
     <https://doi.org/10.5281/zenodo.13138811> a dcterms:BibliographicResource ;
         dcterms:creator "Min, Kyu-Seok Chae and Gi-Sik" ;
@@ -441,15 +476,16 @@ she:metadata {
         dcterms:date "2024-10-17" ;
         dcterms:identifier <https://doi.org/10.5281/zenodo.13945384> ;
         dcterms:subject she:Agriculture,
+            she:Austria,
             she:ClimateChange,
             she:HabitatForBiodiversity,
+            she:Poland,
             she:SoilAcidification,
             she:SoilCompaction,
             she:SoilContamination,
             she:SoilSealing,
             she:SoilThreats,
             she:Waterlogging,
-            "Austria",
             "Czech Republic",
             "D3.4",
             "Environmental pollution control",
@@ -460,7 +496,6 @@ she:metadata {
             "Grant n. 862695",
             "Hydrological control",
             "Ireland",
-            "Poland",
             "Primary biomass production",
             "SERENA EJPSOIL",
             "Soil ecosystem services",
@@ -498,13 +533,13 @@ she:metadata {
         dcterms:date "2024-10-31" ;
         dcterms:identifier <https://doi.org/10.5281/zenodo.14017262> ;
         dcterms:subject she:AgriculturalSoils,
+            she:Poland,
+            she:RUSLE,
             she:SoilErosion,
             she:SoilLoss,
             she:SoilThreats,
             "862695",
             "EJP-SOIL",
-            "Poland",
-            "RUSLE",
             "SERENA" ;
         dcterms:title "SERENA EJPSOIL PL EROSION SOIL LOSS" .
 
@@ -516,9 +551,9 @@ she:metadata {
         dcterms:identifier <https://doi.org/10.5281/zenodo.14017679> ;
         dcterms:subject she:AgriculturalSoils,
             she:ClimateRegulation,
+            she:Poland,
             "EJP-SOIL",
             "GHG",
-            "Poland",
             "SERENA",
             "Soil-based Ecosystem Services" ;
         dcterms:title "SERENA EJPSOIL PL GHG NEP" .
@@ -530,10 +565,10 @@ she:metadata {
         dcterms:date "2024-10-31" ;
         dcterms:identifier <https://doi.org/10.5281/zenodo.14018112> ;
         dcterms:subject she:AgriculturalLand,
+            she:Poland,
+            she:RUSLE,
             "EJP-SOIL",
             "Erosion Control",
-            "Poland",
-            "RUSLE",
             "SERENA",
             "Soil Mass Not Eroded",
             "Soil-based Ecosystem Services" ;
@@ -546,9 +581,9 @@ she:metadata {
         dcterms:date "2024-10-31" ;
         dcterms:identifier <https://doi.org/10.5281/zenodo.14018212> ;
         dcterms:subject she:AgriculturalSoils,
+            she:Poland,
             she:SoilThreats,
             "EJP-SOIL",
-            "Poland",
             "RCP",
             "SERENA",
             "SOC content",
@@ -565,7 +600,7 @@ she:metadata {
             "Knowledge organization",
             "Online",
             "Platform" ;
-        dcterms:title "BBioNets online knowledge platform - initial version" .
+        dcterms:title "D3.1 - BBioNets online knowledge platform - initial version - Draft" .
 
     <https://doi.org/10.5281/zenodo.1422970> a dcterms:BibliographicResource ;
         dcterms:creator "STRI Soil Lab",
@@ -638,11 +673,11 @@ she:metadata {
             "van Genuchten, Paul" ;
         dcterms:date "2025-01-24" ;
         dcterms:identifier <https://doi.org/10.5281/zenodo.14733169> ;
-        dcterms:subject she:SoilHealth,
+        dcterms:subject she:Europe,
+            she:SoilHealth,
             she:SoilProperties,
             she:SoilQuality,
             "Cataloging/classification",
-            "Europe",
             "Metadata",
             "Software",
             "Soil sciences" ;
@@ -679,6 +714,16 @@ she:metadata {
         dcterms:date "2025-02-25" ;
         dcterms:identifier <https://doi.org/10.5281/zenodo.14924182> ;
         dcterms:title "Metadata Augmentation Tools (SoilWise-HE)" .
+
+    <https://doi.org/10.5281/zenodo.15010657> a dcterms:BibliographicResource ;
+        dcterms:creator "Cesarz, Simone",
+            "Gulder, Hans-Jürgen" ;
+        dcterms:date "2025-03-12" ;
+        dcterms:identifier <https://doi.org/10.5281/zenodo.15010657> ;
+        dcterms:subject "Soil type",
+            "humus form",
+            "soil cores" ;
+        dcterms:title "BETA-FOR_SP4_Soil_Inventory_2024" .
 
     <https://doi.org/10.5281/zenodo.15303679> a dcterms:BibliographicResource ;
         dcterms:creator "Berbeć, Adam Kleofas",
@@ -1057,15 +1102,6 @@ she:metadata {
             "soil map" ;
         dcterms:title "Soil Survey of Scotland Staff (1970-1987). Soil maps of Scotland (partial coverage). Digital phase 10 release." .
 
-    <https://doi.org/10.5281/zenodo.6921102> a dcterms:BibliographicResource ;
-        dcterms:creator "Annely Kuu" ;
-        dcterms:date "2022-06-29" ;
-        dcterms:identifier <https://doi.org/10.5281/zenodo.6921102> ;
-        dcterms:subject she:SoilManagement,
-            "Soil",
-            "Soil earthworm" ;
-        dcterms:title "Impact of soil management practices on the abundance and diversity of the soil earthworm community" .
-
     <https://doi.org/10.5281/zenodo.6926872> a dcterms:BibliographicResource ;
         dcterms:creator "Di Bene, Claudia",
             "Marchetti, Marco",
@@ -1074,7 +1110,7 @@ she:metadata {
             "Rivieccio, Rosa" ;
         dcterms:date "2022-07-28" ;
         dcterms:identifier <https://doi.org/10.5281/zenodo.6926872> ;
-        dcterms:subject "Italy",
+        dcterms:subject she:Italy,
             "Soil mapping",
             "Soil rooting depth map" ;
         dcterms:title "Soil rooting depth of Italy" .
@@ -1187,7 +1223,6 @@ she:metadata {
         dcterms:date "2023-05-04" ;
         dcterms:identifier <https://doi.org/10.5281/zenodo.7892160> ;
         dcterms:subject she:ClimateChange,
-            she:MonitoredNutrients,
             she:Nutrients,
             "Indexing Fertility",
             "Scenario" ;
@@ -1221,31 +1256,6 @@ she:metadata {
             "Fodder",
             "Maize" ;
         dcterms:title "Economically Optimal Rate of N-P-K Fertilizers of Fodder Maize for Central Punjab, Pakistan" .
-
-    <https://doi.org/10.5281/zenodo.826569> a dcterms:BibliographicResource ;
-        dcterms:creator "Ilieva, Zhenya",
-            "Karadjova, Olia",
-            "Krumov, Vladimir",
-            "Petrova, Elena" ;
-        dcterms:date "2014-01-13" ;
-        dcterms:identifier <https://doi.org/10.5281/zenodo.826569> ;
-        dcterms:subject "Bulgaria",
-            "Heterodera zeae",
-            "Opinion",
-            "maize",
-            "spread" ;
-        dcterms:title "Scientific opinion on the risks of introduction and spread of the cyst nematode Heterodera zeae on maize and other representatives of the family Poaceae in Bulgaria" .
-
-    <https://doi.org/10.5281/zenodo.839634> a dcterms:BibliographicResource ;
-        dcterms:creator "Chinedu Anyika",
-            "K.O. Oluwasemire",
-            "R.N. Edoga" ;
-        dcterms:date "2009-08-07" ;
-        dcterms:identifier <https://doi.org/10.5281/zenodo.839634> ;
-        dcterms:subject "Sorghum",
-            "potential evapotranspiration and management practices",
-            "water loss" ;
-        dcterms:title "EFFECT OF SOIL MANAGEMENT PRACTICES ON EVAPORANSPIRATION OF SORGHUM PLOT" .
 
     <https://doi.org/10.54536/ajaset.v7i1.1296> a dcterms:BibliographicResource ;
         dcterms:creator "Alam, Faridul",
@@ -1328,7 +1338,8 @@ she:metadata {
 
     she:BuildingConstruction a skos:Concept ;
         obo:RO_0002331 she:GreyRecycling ;
-        skos:exactMatch agrovoc:c_1140 ;
+        skos:exactMatch agrovoc:c_1140,
+            inrae:c_4020 ;
         skos:prefLabel "building construction"@en .
 
     she:ChemicalImpactsOnSoil a skos:Concept ;
@@ -1365,7 +1376,7 @@ she:metadata {
         she:isDevelopedFor she:SelectedPollutants .
 
     she:CropResidueInput a skos:Concept ;
-        obo:RO_0017003 she:CarbonStorage ;
+        obo:RO_0017003 she:SoilCarbonStorage ;
         skos:prefLabel "crop residue input"@en .
 
     she:CurrentSoilManagement a skos:Concept ;
@@ -1383,6 +1394,7 @@ she:metadata {
 
     she:DeskStudy a skos:Concept ;
         obo:RO_0002331 she:PreliminaryInvestigation ;
+        skos:exactMatch gemet:2117 ;
         skos:prefLabel "desk study"@en .
 
     she:DissolvedAluminiumConcentrations a skos:Concept ;
@@ -1452,6 +1464,7 @@ she:metadata {
                     she:Washout ;
                 rdf:object she:DrainageSystems ] ;
         dcterms:source she:WHO1991 ;
+        skos:exactMatch inrae:c_11581 ;
         skos:prefLabel "eroded soil"@en .
 
     she:ExcessRainwater a skos:Concept ;
@@ -1564,20 +1577,25 @@ she:metadata {
 
     she:Methane a skos:Concept ;
         obo:RO_0002331 she:GreenhouseGasEmissions ;
-        skos:exactMatch agrovoc:c_4784 ;
+        skos:exactMatch agrovoc:c_4784,
+            inrae:c_843,
+            gemet:5199 ;
         skos:prefLabel "methane"@en .
 
     she:Microbiome a skos:Concept ;
         obo:INO_0000082 [ obo:BFO_0000066 she:Ecosystems ;
                 rdf:object she:EnergyTransformations,
                     she:NutrientTurnover ] ;
+        skos:exactMatch inrae:c_7751 ;
         skos:prefLabel "microbiome"@en .
 
     she:Mining a skos:Concept ;
         obo:OAE_0000186 [ af-x:AFX_0000408 she:UnsustainableSoilManagement ;
                 rdf:object she:SevereSoilErosion ] ;
         dcterms:source she:Stolte2016 ;
-        skos:exactMatch agrovoc:c_49983 ;
+        skos:exactMatch agrovoc:c_49983,
+            inrae:c_945,
+            gemet:14837 ;
         skos:prefLabel "mining"@en .
 
     she:ModelValidation a skos:Concept ;
@@ -1686,7 +1704,9 @@ she:metadata {
         dcterms:source she:NoeHupp2005,
             she:PickettCadenasso2009,
             she:Pouyat2006 ;
-        skos:exactMatch agrovoc:c_5718 ;
+        skos:closeMatch inrae:c_13934 ;
+        skos:exactMatch agrovoc:c_5718,
+            gemet:6120 ;
         skos:prefLabel "permeability"@en .
 
     she:PermeableGreenAreaExtension a skos:Concept ;
@@ -1716,6 +1736,8 @@ she:metadata {
         skos:prefLabel "pollutant inputs"@en .
 
     she:RUSLE a sio:SIO_000510 ;
+        dcterms:source <https://doi.org/10.5281/zenodo.14017262>,
+            <https://doi.org/10.5281/zenodo.14018112> ;
         skos:prefLabel "RUSLE"@en ;
         schema:assesses she:SoilLossRates .
 
@@ -1935,6 +1957,7 @@ she:metadata {
 
     she:SoilVariability a skos:Concept ;
         skos:definition "Soil varies naturally in both space and time over a range of scales."@en ;
+        skos:exactMatch inrae:c_1190 ;
         skos:prefLabel "soil variability"@en .
 
     she:SoildwellingSpecies a skos:Concept ;
@@ -1948,13 +1971,15 @@ she:metadata {
 
     she:Stratification a skos:Concept ;
         dcterms:source <https://doi.org/10.1016/j.still.2024.106125> ;
-        skos:exactMatch agrovoc:c_2d2ea4aa ;
+        skos:exactMatch agrovoc:c_2d2ea4aa,
+            gemet:8125 ;
         skos:prefLabel "stratification"@en ;
         she:appliesTo she:SealedAreaPerTotalArea .
 
     she:SulphurDioxide a skos:Concept ;
         obo:RO_0002331 she:AcidPrecipitation ;
-        skos:exactMatch agrovoc:c_7515 ;
+        skos:exactMatch agrovoc:c_7515,
+            inrae:c_15738 ;
         skos:prefLabel "sulphur dioxide"@en .
 
     she:SurfacePermeability a skos:Concept ;
@@ -1994,11 +2019,13 @@ she:metadata {
                 sio:equivalentTo [ obo:BFO_0000066 she:MemberStates ;
                         obo:RO_0002212 she:PotentialAgriculturalProductionCapacity ;
                         time:years "1990-2006" ] ] ;
-        skos:exactMatch agrovoc:c_8373 ;
+        skos:exactMatch agrovoc:c_8373,
+            inrae:c_3059 ;
         skos:prefLabel "wheat"@en .
 
     she:AbioticEnvironment a skos:Concept ;
         obo:RO_0002434 she:FunctionalOrganismGroups ;
+        skos:exactMatch gemet:10193 ;
         skos:prefLabel "abiotic environment"@en .
 
     she:AcceptableRiskLevels a skos:Concept ;
@@ -2010,7 +2037,9 @@ she:metadata {
 
     she:Acidification a skos:Concept ;
         agrontology:isIncludedIn she:SoilChemicalDegradation ;
-        skos:exactMatch agrovoc:c_90 ;
+        skos:exactMatch agrovoc:c_90,
+            inrae:c_15791,
+            gemet:44 ;
         skos:prefLabel "acidification"@en .
 
     she:Action a skos:Concept ;
@@ -2061,7 +2090,9 @@ she:metadata {
 
     she:Adsorption a skos:Concept ;
         skos:broader she:DerivedSoilProperties ;
-        skos:exactMatch agrovoc:c_137 ;
+        skos:exactMatch agrovoc:c_137,
+            inrae:c_9850,
+            gemet:120 ;
         skos:prefLabel "adsorption"@en .
 
     she:Agent a skos:Concept ;
@@ -2071,6 +2102,7 @@ she:metadata {
     she:AggregateStability a skos:Concept ;
         dcterms:source she:Johnannes2017 ;
         skos:broader she:SoilStructuralParameters ;
+        skos:exactMatch inrae:c_4714 ;
         skos:prefLabel "aggregate stability"@en .
 
     she:AgriculturalAreaUnderSevereErosion a skos:Concept ;
@@ -2109,7 +2141,9 @@ she:metadata {
 
     she:AirQuality a skos:Concept ;
         agrontology:isAffectedBy she:SoilOrganicCarbon ;
-        skos:exactMatch agrovoc:c_a2ef545f ;
+        skos:exactMatch agrovoc:c_a2ef545f,
+            inrae:c_4762,
+            gemet:270 ;
         skos:prefLabel "air quality"@en .
 
     she:Albania a schema:Country ;
@@ -2123,7 +2157,8 @@ she:metadata {
 
     she:Algae a skos:Concept ;
         skos:broader she:Microorganisms ;
-        skos:exactMatch agrovoc:c_258 ;
+        skos:exactMatch agrovoc:c_258,
+            inrae:c_6464 ;
         skos:prefLabel "algae"@en .
 
     she:AllochthonousMaterials a skos:Concept ;
@@ -2150,12 +2185,16 @@ she:metadata {
     she:Ammonia a skos:Concept ;
         agrontology:hasSymbol "NH₃"@en ;
         obo:RO_0002331 she:AcidPrecipitation ;
-        skos:exactMatch agrovoc:c_349 ;
+        skos:exactMatch agrovoc:c_349,
+            inrae:c_15772,
+            gemet:375 ;
         skos:prefLabel "ammonia"@en .
 
     she:Ammonium a skos:Concept ;
         sio:SIO_000128 she:HeavyClaySoils ;
-        skos:exactMatch agrovoc:c_32634 ;
+        skos:exactMatch agrovoc:c_32634,
+            inrae:c_15723,
+            gemet:379 ;
         skos:prefLabel "ammonium"@en ;
         she:isConvertedTo [ obo:BFO_0000066 she:AgriculturalSoils ;
                 rdf:object she:Nitrate ] .
@@ -2257,6 +2296,7 @@ she:metadata {
         obo:RO_0002331 she:SoilSealing ;
         skos:broader she:ImpermeableArtificialMaterial ;
         skos:closeMatch agrovoc:c_26761 ;
+        skos:exactMatch inrae:c_14063 ;
         skos:prefLabel "asphalt"@en .
 
     she:AssessmentCriteria a skos:Concept ;
@@ -2288,7 +2328,8 @@ she:metadata {
         dcterms:source she:EC2017,
             she:MAES ;
         skos:broader she:SoilIndicators ;
-        skos:exactMatch iso11074:3.33 ;
+        skos:exactMatch inrae:c_6446,
+            iso11074:3.33 ;
         skos:prefLabel "available water capacity"@en ;
         she:isEssentialFor she:Soils .
 
@@ -2321,7 +2362,9 @@ she:metadata {
     she:Benzene a skos:Concept ;
         sio:SIO_000272 she:AromaticHydrocarbons ;
         skos:broader she:BTEX ;
-        skos:exactMatch agrovoc:c_879 ;
+        skos:exactMatch agrovoc:c_879,
+            inrae:c_082951e5,
+            gemet:776 ;
         skos:prefLabel "benzene"@en .
 
     she:Berlin a schema:City ;
@@ -2343,12 +2386,15 @@ she:metadata {
         skos:prefLabel "biomaterials"@en .
 
     she:BlueLight a skos:Concept ;
+        skos:exactMatch inrae:c_369 ;
         skos:prefLabel "blue light"@en ;
         she:isAbsorbedBy she:HealthyVegetation .
 
     she:Boron a skos:Concept ;
         skos:broader she:Micronutrients ;
-        skos:exactMatch agrovoc:c_1018 ;
+        skos:exactMatch agrovoc:c_1018,
+            inrae:c_13532,
+            gemet:965 ;
         skos:prefLabel "boron"@en .
 
     she:BulkSoils a skos:Concept ;
@@ -2406,7 +2452,9 @@ she:metadata {
 
     she:CarbonCycle a skos:Concept ;
         agrontology:isIncludedIn she:SoilEcologicalFunctions ;
-        skos:exactMatch agrovoc:c_17299 ;
+        skos:exactMatch agrovoc:c_17299,
+            inrae:c_1422,
+            gemet:1164 ;
         skos:prefLabel "carbon cycle"@en .
 
     she:CarbonInput a skos:Concept ;
@@ -2419,7 +2467,9 @@ she:metadata {
     she:CarbonSequestration a skos:Concept ;
         dcterms:source she:Olson2014 ;
         skos:definition "Carbon sequestration is the process of transferring CO₂ from the atmosphere into the soil of a land unit, through plants, plant residues and other organic solids which are stored or retained in the unit as part of the soil organic matter with a long residence time."@en ;
-        skos:exactMatch agrovoc:c_331583 ;
+        skos:exactMatch agrovoc:c_331583,
+            inrae:c_4684,
+            gemet:15091 ;
         skos:prefLabel "carbon sequestration"@en ;
         she:appliesTo she:Soils .
 
@@ -2471,6 +2521,8 @@ she:metadata {
 
     she:Chlorophyll a skos:Concept ;
         sio:SIO_000128 she:HealthyVegetation ;
+        skos:exactMatch inrae:c_8416,
+            gemet:1391 ;
         skos:prefLabel "chlorophyll"@en .
 
     she:Ciliates a skos:Concept ;
@@ -2482,7 +2534,9 @@ she:metadata {
         skos:prefLabel "city areas"@en .
 
     she:Clay a skos:Concept ;
-        skos:exactMatch agrovoc:c_15619 ;
+        skos:exactMatch agrovoc:c_15619,
+            inrae:c_11626,
+            gemet:1449 ;
         skos:prefLabel "clay"@en .
 
     she:ClayMineralogy a skos:Concept ;
@@ -2497,6 +2551,7 @@ she:metadata {
     she:ClimateRegulation a skos:Concept ;
         dcterms:source <https://doi.org/10.5281/zenodo.14017679> ;
         skos:broader she:SoilFunctions ;
+        skos:exactMatch gemet:15098 ;
         skos:prefLabel "climate regulation"@en .
 
     she:CoarseMineralFragmentContent a skos:Concept ;
@@ -2545,7 +2600,9 @@ she:metadata {
     she:Concrete a skos:Concept ;
         obo:RO_0002331 she:SoilSealing ;
         skos:broader she:ImpermeableArtificialMaterial ;
-        skos:exactMatch agrovoc:c_1804 ;
+        skos:exactMatch agrovoc:c_1804,
+            inrae:c_13223,
+            gemet:1677 ;
         skos:prefLabel "concrete"@en .
 
     she:ConditionOfLands a skos:Concept ;
@@ -2564,7 +2621,9 @@ she:metadata {
         skos:prefLabel "construction sites"@en .
 
     she:Consumption a skos:Concept ;
-        skos:exactMatch agrovoc:c_1827 ;
+        skos:exactMatch agrovoc:c_1827,
+            inrae:c_20919,
+            gemet:1743 ;
         skos:prefLabel "consumption"@en .
 
     she:ContaminatedSiteDetection a skos:Concept ;
@@ -2585,10 +2644,13 @@ she:metadata {
     she:Contamination a skos:Concept ;
         agrontology:isIncludedIn she:SoilChemicalDegradation ;
         skos:exactMatch agrovoc:c_28317,
+            inrae:c_12482,
+            gemet:1752,
             iso11074:3.93 ;
         skos:prefLabel "contamination"@en .
 
     she:Continent a skos:Concept ;
+        skos:exactMatch gemet:10148 ;
         skos:prefLabel "continent"@en .
 
     she:ContinuousLoading a skos:Concept ;
@@ -2604,7 +2666,9 @@ she:metadata {
         skos:related she:EssentialBiodiversityVariables .
 
     she:Cooling a skos:Concept ;
-        skos:exactMatch agrovoc:c_1854 ;
+        skos:closeMatch inrae:c_10256 ;
+        skos:exactMatch agrovoc:c_1854,
+            gemet:1781 ;
         skos:prefLabel "cooling"@en .
 
     she:Cottages a skos:Concept ;
@@ -2675,7 +2739,9 @@ she:metadata {
 
     she:Cultivation a skos:Concept ;
         agrontology:causes she:SOCLosses ;
-        skos:exactMatch agrovoc:c_2018 ;
+        skos:closeMatch inrae:c_3369 ;
+        skos:exactMatch agrovoc:c_2018,
+            gemet:1899 ;
         skos:prefLabel "cultivation"@en .
 
     she:Cyprus a schema:Country ;
@@ -2729,7 +2795,9 @@ she:metadata {
     she:Denitrification a skos:Concept ;
         agrontology:isSourceOf she:CriticalNLeachingRate ;
         dcterms:source she:Posch2015 ;
-        skos:exactMatch agrovoc:c_15869 ;
+        skos:exactMatch agrovoc:c_15869,
+            inrae:c_15773,
+            gemet:2071 ;
         skos:prefLabel "denitrification"@en .
 
     she:DenseTrafficking a skos:Concept ;
@@ -2802,7 +2870,9 @@ she:metadata {
         she:isAlteredBy she:AgriculturalIntensification .
 
     she:Drainage a skos:Concept ;
-        skos:exactMatch agrovoc:c_2372 ;
+        skos:exactMatch agrovoc:c_2372,
+            inrae:c_3570,
+            gemet:2319 ;
         skos:prefLabel "drainage"@en .
 
     she:DrainageImprovement a skos:Concept ;
@@ -2901,14 +2971,17 @@ she:metadata {
 
     she:Earth a skos:Concept ;
         agrontology:hasPart she:TerrestrialLayer ;
-        skos:exactMatch agrovoc:c_2437 ;
+        skos:exactMatch agrovoc:c_2437,
+            inrae:c_5006 ;
         skos:prefLabel "earth"@en .
 
     she:EcologicalProcesses a skos:Concept ;
         skos:prefLabel "ecological processes"@en .
 
     she:Ecology a skos:Concept ;
-        skos:exactMatch agrovoc:c_2467 ;
+        skos:exactMatch agrovoc:c_2467,
+            inrae:c_906,
+            gemet:2470 ;
         skos:prefLabel "ecology"@en .
 
     she:EcosystemCondition a skos:Concept ;
@@ -2931,6 +3004,7 @@ she:metadata {
 
     she:ElectricConductivity a skos:Concept ;
         skos:broader she:DerivedSoilProperties ;
+        skos:exactMatch inrae:c_14004 ;
         skos:prefLabel "electric conductivity"@en .
 
     she:Emissions a skos:Concept ;
@@ -2942,7 +3016,9 @@ she:metadata {
         skos:related she:ExposurePathways .
 
     she:Energy a skos:Concept ;
-        skos:exactMatch agrovoc:c_2565 ;
+        skos:exactMatch agrovoc:c_2565,
+            inrae:c_23044,
+            gemet:2712 ;
         skos:prefLabel "energy"@en .
 
     she:EnvironmentalAttributes a skos:Concept ;
@@ -2950,12 +3026,15 @@ she:metadata {
 
     she:EnvironmentalDegradation a skos:Concept ;
         dcterms:source she:Johnson1997 ;
-        skos:exactMatch agrovoc:c_34821 ;
+        skos:exactMatch agrovoc:c_34821,
+            inrae:c_4708,
+            gemet:15154 ;
         skos:narrower she:LandDegradation ;
         skos:prefLabel "environmental degradation"@en .
 
     she:EnvironmentalPollution a skos:Concept ;
         skos:closeMatch agrovoc:c_6077 ;
+        skos:exactMatch gemet:2895 ;
         skos:prefLabel "environmental pollution"@en .
 
     she:Ethylbenzene a skos:Concept ;
@@ -3017,6 +3096,7 @@ she:metadata {
         skos:prefLabel "extractions"@en .
 
     she:ExtremeRainfall a skos:Concept ;
+        skos:exactMatch inrae:c_11274 ;
         skos:prefLabel "extreme rainfall"@en ;
         skos:related she:ClimateResilience .
 
@@ -3054,6 +3134,7 @@ she:metadata {
 
     she:FieldScale a skos:Concept ;
         af-x:AFX_0000355 she:MonitoringApproaches ;
+        skos:closeMatch inrae:c_3027 ;
         skos:prefLabel "field scale"@en .
 
     she:FieldbasedMonitoringApproaches a skos:Concept ;
@@ -3074,11 +3155,14 @@ she:metadata {
         skos:prefLabel "flood resilience"@en .
 
     she:FloodRisk a skos:Concept ;
+        skos:exactMatch inrae:c_4656 ;
         skos:prefLabel "flood risk"@en .
 
     she:Flooding a skos:Concept ;
         dcterms:source she:Verstraeten2006 ;
-        skos:exactMatch agrovoc:c_2980 ;
+        skos:exactMatch agrovoc:c_2980,
+            inrae:c_4911,
+            gemet:3301 ;
         skos:prefLabel "flooding"@en .
 
     she:Floods a skos:Concept ;
@@ -3093,7 +3177,9 @@ she:metadata {
         agrontology:isIncludedIn she:Subtargets ;
         af-x:AFX_0000388 she:SpecificProductGroups,
             she:SpecificProducts ;
-        skos:exactMatch agrovoc:c_10965 ;
+        skos:exactMatch agrovoc:c_10965,
+            inrae:c_11120,
+            gemet:3380 ;
         skos:prefLabel "food quality"@en .
 
     she:FoodQualityStandard a skos:Concept ;
@@ -3226,6 +3312,7 @@ she:metadata {
 
     she:Habitat a skos:Concept ;
         skos:broader she:SoilFunctions ;
+        skos:exactMatch gemet:3808 ;
         skos:prefLabel "habitat"@en .
 
     she:HabitatProvisionCapacity a skos:Concept ;
@@ -3241,7 +3328,8 @@ she:metadata {
 
     she:Harvesting a skos:Concept ;
         agrontology:causes she:HarvestingErosion ;
-        skos:exactMatch agrovoc:c_3500 ;
+        skos:exactMatch agrovoc:c_3500,
+            inrae:c_3738 ;
         skos:prefLabel "harvesting"@en .
 
     she:HealthySoils a skos:Concept ;
@@ -3367,6 +3455,7 @@ she:metadata {
         skos:prefLabel "human medicines"@en .
 
     she:HumanWellbeing a skos:Concept ;
+        skos:exactMatch gemet:15201 ;
         skos:prefLabel "human well-being"@en .
 
     she:HumidTemperateClimates a skos:Concept ;
@@ -3374,7 +3463,9 @@ she:metadata {
 
     she:Hydrogen a skos:Concept ;
         agrontology:isIncludedIn she:BasicElements ;
-        skos:exactMatch agrovoc:c_3724 ;
+        skos:exactMatch agrovoc:c_3724,
+            inrae:c_15774,
+            gemet:4103 ;
         skos:prefLabel "hydrogen"@en .
 
     she:HydrogenIons a skos:Concept ;
@@ -3382,6 +3473,7 @@ she:metadata {
         she:isConvertedFrom she:AmmoniumNitrogen .
 
     she:HydrologicalCycle a skos:Concept ;
+        skos:closeMatch inrae:c_332 ;
         skos:exactMatch agrovoc:c_11670 ;
         skos:prefLabel "hydrological cycle"@en .
 
@@ -3439,6 +3531,7 @@ she:metadata {
                     she:Soils,
                     she:Water ;
                 rdf:object she:PollutedSoils ] ;
+        skos:exactMatch inrae:c_8467 ;
         skos:prefLabel "intake"@en ;
         skos:related she:HumanHealth ;
         she:isConvertedTo [ agrontology:makeUseOf she:ExposureModels ;
@@ -3479,7 +3572,9 @@ she:metadata {
 
     she:Iron a skos:Concept ;
         skos:broader she:Micronutrients ;
-        skos:exactMatch agrovoc:c_3950 ;
+        skos:exactMatch agrovoc:c_3950,
+            inrae:c_15808,
+            gemet:4498 ;
         skos:prefLabel "iron"@en .
 
     she:IrreversiblyDeformedSoilStructure a skos:Concept ;
@@ -3553,6 +3648,7 @@ she:metadata {
 
     she:LandscapeScale a skos:Concept ;
         af-x:AFX_0000355 she:MonitoringApproaches ;
+        skos:exactMatch inrae:c_16264 ;
         skos:prefLabel "landscape scale"@en .
 
     she:LargeScaleCleaningFacilities a skos:Concept ;
@@ -3578,6 +3674,8 @@ she:metadata {
 
     she:Leaf a skos:Concept ;
         skos:broader she:PlantPart ;
+        skos:exactMatch inrae:c_9020,
+            gemet:4730 ;
         skos:prefLabel "leaf"@en .
 
     she:Ledermann2008 a dcterms:BibliographicResource ;
@@ -3602,7 +3700,8 @@ she:metadata {
 
     she:Liming a skos:Concept ;
         agrontology:prevents she:SoilAcidification ;
-        skos:exactMatch agrovoc:c_25206 ;
+        skos:exactMatch agrovoc:c_25206,
+            inrae:c_2853 ;
         skos:prefLabel "liming"@en .
 
     she:LitterLayer a skos:Concept ;
@@ -3790,6 +3889,7 @@ she:metadata {
         agrontology:isAffectedBy she:SoilpH ;
         sorelph:from she:Soils ;
         sorelph:to she:Crops ;
+        skos:exactMatch inrae:c_15768 ;
         skos:prefLabel "metal transfer"@en .
 
     she:Metalloids a skos:Concept ;
@@ -3859,7 +3959,8 @@ she:metadata {
 
     she:Molybdenum a skos:Concept ;
         skos:broader she:Micronutrients ;
-        skos:exactMatch agrovoc:c_4901 ;
+        skos:exactMatch agrovoc:c_4901,
+            inrae:c_f9c3b60c ;
         skos:prefLabel "molybdenum"@en .
 
     she:MountainAreas a skos:Concept ;
@@ -3874,6 +3975,8 @@ she:metadata {
         skos:prefLabel "mull humus form"@en .
 
     she:Municipality a skos:Concept ;
+        skos:exactMatch inrae:c_21913,
+            gemet:5431 ;
         skos:prefLabel "municipality"@en .
 
     she:Musinguzi2013 a dcterms:BibliographicResource ;
@@ -4031,6 +4134,7 @@ she:metadata {
 
     she:NitrogenDynamics a skos:Concept ;
         dcterms:source she:VanGroenigen2015 ;
+        skos:exactMatch inrae:c_15661 ;
         skos:prefLabel "nitrogen dynamics"@en ;
         skos:related she:SOCDynamics .
 
@@ -4040,7 +4144,8 @@ she:metadata {
     she:NitrousOxide a skos:Concept ;
         agrontology:hasSymbol "N₂O"@en ;
         obo:RO_0002331 she:GreenhouseGasEmissions ;
-        skos:exactMatch agrovoc:c_12838 ;
+        skos:exactMatch agrovoc:c_12838,
+            inrae:c_15749 ;
         skos:prefLabel "nitrous oxide"@en .
 
     she:NitrousOxideRelease a skos:Concept ;
@@ -4170,6 +4275,7 @@ she:metadata {
         dcterms:date "2017" .
 
     she:Overflow a skos:Concept ;
+        skos:exactMatch inrae:c_13544 ;
         skos:prefLabel "overflow"@en .
 
     she:Overgrazing a skos:Concept ;
@@ -4177,7 +4283,9 @@ she:metadata {
         obo:OAE_0000186 [ af-x:AFX_0000408 she:UnsustainableSoilManagement ;
                 rdf:object she:SevereSoilErosion ] ;
         dcterms:source she:Stolte2016 ;
-        skos:exactMatch agrovoc:c_24945 ;
+        skos:exactMatch agrovoc:c_24945,
+            inrae:c_1698,
+            gemet:5962 ;
         skos:prefLabel "overgrazing"@en .
 
     she:Oxic a skos:Concept ;
@@ -4190,7 +4298,9 @@ she:metadata {
 
     she:Oxygen a skos:Concept ;
         agrontology:isIncludedIn she:BasicElements ;
-        skos:exactMatch agrovoc:c_5477 ;
+        skos:exactMatch agrovoc:c_5477,
+            inrae:c_15776,
+            gemet:5982 ;
         skos:prefLabel "oxygen"@en .
 
     she:PAccumulation a skos:Concept ;
@@ -4254,7 +4364,9 @@ she:metadata {
 
     she:Peat a skos:Concept ;
         skos:broader she:OrganicHorizons ;
-        skos:exactMatch agrovoc:c_5647 ;
+        skos:exactMatch agrovoc:c_5647,
+            inrae:c_11527,
+            gemet:6081 ;
         skos:prefLabel "peat"@en .
 
     she:People a skos:Concept ;
@@ -4311,7 +4423,8 @@ she:metadata {
 
     she:PlantGrowth a skos:Concept ;
         obo:RO_0002335 she:SoilAcidification ;
-        skos:exactMatch agrovoc:c_08842b17 ;
+        skos:exactMatch agrovoc:c_08842b17,
+            inrae:c_8550 ;
         skos:prefLabel "plant growth"@en .
 
     she:PlantNutrientLeaching a skos:Concept ;
@@ -4368,12 +4481,15 @@ she:metadata {
         skos:prefLabel "pollutant concentration in harvested product"@en .
 
     she:PollutantDistribution a skos:Concept ;
+        skos:exactMatch gemet:6409 ;
         skos:prefLabel "pollutant distribution"@en .
 
     she:PollutantEmissions a skos:Concept ;
         skos:prefLabel "pollutant emissions"@en .
 
     she:PollutantExposure a skos:Concept ;
+        skos:exactMatch inrae:c_4995,
+            gemet:6414 ;
         skos:prefLabel "pollutant exposure"@en .
 
     she:PollutantInputsInArableCroppingSystems a skos:Concept ;
@@ -4411,7 +4527,9 @@ she:metadata {
 
     she:PopulationDensity a skos:Concept ;
         obo:RO_0002336 she:UrbanDensification ;
-        skos:exactMatch agrovoc:c_6112 ;
+        skos:exactMatch agrovoc:c_6112,
+            inrae:c_649,
+            gemet:10918 ;
         skos:prefLabel "population density"@en .
 
     she:PoreGeometry a skos:Concept ;
@@ -4423,6 +4541,7 @@ she:metadata {
             she:Johnannes2017 ;
         skos:broader she:SoilStructuralParameters ;
         skos:exactMatch agrovoc:c_13520,
+            inrae:c_13512,
             iso11074:3.334 ;
         skos:prefLabel "porosity"@en .
 
@@ -4544,6 +4663,7 @@ she:metadata {
 
     she:RedoxPotential a skos:Concept ;
         skos:broader she:PhysicochemicalProcesses ;
+        skos:closeMatch inrae:c_9760 ;
         skos:exactMatch agrovoc:c_6482 ;
         skos:prefLabel "redox potential"@en .
 
@@ -4557,6 +4677,8 @@ she:metadata {
         skos:prefLabel "reduction in soil organic matter"@en .
 
     she:Region a skos:Concept ;
+        skos:exactMatch inrae:c_23212,
+            gemet:7059 ;
         skos:prefLabel "region"@en .
 
     she:RegionalSoilMapping a skos:Concept ;
@@ -4589,6 +4711,8 @@ she:metadata {
 
     she:RiskAssessment a skos:Concept ;
         skos:exactMatch agrovoc:c_37932,
+            inrae:c_4522,
+            gemet:7236,
             iso11074:3.395 ;
         skos:prefLabel "risk assessment"@en .
 
@@ -4622,6 +4746,8 @@ she:metadata {
 
     she:Root a skos:Concept ;
         skos:broader she:PlantPart ;
+        skos:exactMatch inrae:c_9503,
+            gemet:7312 ;
         skos:prefLabel "root"@en .
 
     she:RootGrowth a skos:Concept ;
@@ -4629,6 +4755,7 @@ she:metadata {
             she:Gregory2006,
             she:Horn2022,
             she:Schrader1999 ;
+        skos:exactMatch inrae:c_6851 ;
         skos:prefLabel "root growth"@en .
 
     she:RootTurnover a skos:Concept ;
@@ -4637,6 +4764,7 @@ she:metadata {
 
     she:Rooting a skos:Concept ;
         obo:RO_0002335 she:Waterlogging ;
+        skos:closeMatch inrae:c_2319 ;
         skos:exactMatch agrovoc:c_6649 ;
         skos:prefLabel "rooting"@en .
 
@@ -4699,7 +4827,9 @@ she:metadata {
         she:appliesTo she:Nature .
 
     she:Sand a skos:Concept ;
-        skos:exactMatch agrovoc:c_6779 ;
+        skos:exactMatch agrovoc:c_6779,
+            inrae:c_11587,
+            gemet:7413 ;
         skos:prefLabel "sand"@en .
 
     she:SaturatedMacropores a skos:Concept ;
@@ -4751,7 +4881,8 @@ she:metadata {
         skos:prefLabel "seeding losses"@en .
 
     she:SemiaridClimate a skos:Concept ;
-        skos:exactMatch agrovoc:c_14191 ;
+        skos:exactMatch agrovoc:c_14191,
+            inrae:c_533 ;
         skos:prefLabel "semi-arid climate"@en .
 
     she:SensitiveSoilManagement a skos:Concept ;
@@ -4820,7 +4951,8 @@ she:metadata {
 
     she:Size a skos:Concept ;
         agrontology:isPropertyOf she:Roots ;
-        skos:exactMatch agrovoc:c_7093 ;
+        skos:exactMatch agrovoc:c_7093,
+            inrae:c_14812 ;
         skos:prefLabel "size"@en .
 
     she:SlipEffects a skos:Concept ;
@@ -4860,12 +4992,14 @@ she:metadata {
 
     she:Sodium a skos:Concept ;
         skos:broader she:BaseCations ;
-        skos:exactMatch agrovoc:c_7145 ;
+        skos:exactMatch agrovoc:c_7145,
+            inrae:c_15787 ;
         skos:prefLabel "sodium"@en .
 
     she:SoilAcidity a skos:Concept ;
         dcterms:source she:Blume2016 ;
         skos:closeMatch agrovoc:c_34901 ;
+        skos:exactMatch inrae:c_ee37c05c ;
         skos:prefLabel "soil acidity"@en .
 
     she:SoilAggregateStability a skos:Concept ;
@@ -4877,6 +5011,8 @@ she:metadata {
 
     she:SoilBiodiversityLoss a skos:Concept ;
         agrontology:isCausedBy she:SoilSealing ;
+        skos:exactMatch inrae:c_abeaf838,
+            gemet:15074 ;
         skos:prefLabel "biodiversity loss"@en .
 
     she:SoilBiodiversityPotential a skos:Concept ;
@@ -4908,6 +5044,7 @@ she:metadata {
     she:SoilCapability a skos:Concept ;
         dcterms:source she:Schwilch2016 ;
         skos:definition "Soil capability is the intrinsic capacity of soil to contribute to ecosystem services based on inherent (static) and manageable (dynamic) attributes."@en ;
+        skos:exactMatch gemet:7848 ;
         skos:prefLabel "soil capability"@en ;
         skos:related she:SoilQuality ;
         schema:isBasedOn she:DynamicSoilAttributes,
@@ -4918,10 +5055,6 @@ she:metadata {
     she:SoilCarbonCycle a skos:Concept ;
         agrontology:hasComponent she:SoilRespiration ;
         skos:prefLabel "soil carbon cycle"@en .
-
-    she:SoilCarbonStorage a skos:Concept ;
-        bao:BAO_0095002 she:SoilRespiration ;
-        skos:prefLabel "soil carbon storage"@en .
 
     she:SoilCommunityHealth a skos:Concept ;
         obo:T4FS_0000577 she:SoilBiodiversityBaselines,
@@ -4940,10 +5073,13 @@ she:metadata {
         sorelph:from she:DiffuseSources,
             she:PointSources ;
         skos:broader she:SoilIndicators ;
+        skos:exactMatch inrae:c_c62d3822,
+            gemet:15298 ;
         skos:prefLabel "soil contamination"@en ;
         she:isEssentialFor she:Soils .
 
     she:SoilCover a skos:Concept ;
+        skos:exactMatch inrae:c_470 ;
         skos:prefLabel "soil cover"@en ;
         skos:related she:GAEC4 .
 
@@ -4993,7 +5129,8 @@ she:metadata {
             she:ISO2006b,
             she:ISO2007 ;
         skos:broader she:PhenotypebasedIndicators ;
-        skos:exactMatch agrovoc:c_7172 ;
+        skos:exactMatch agrovoc:c_7172,
+            inrae:c_7026 ;
         skos:prefLabel "soil flora"@en .
 
     she:SoilFoodWebComplexity a skos:Concept ;
@@ -5028,12 +5165,13 @@ she:metadata {
         skos:prefLabel "soil loss rates by water"@en .
 
     she:SoilManagement a skos:Concept ;
-        dcterms:source <https://doi.org/10.5281/zenodo.6921102>,
-            she:Vogel2020 ;
-        skos:exactMatch agrovoc:c_7176 ;
+        dcterms:source she:Vogel2020 ;
+        skos:exactMatch agrovoc:c_7176,
+            inrae:c_3542 ;
         skos:prefLabel "soil management"@en .
 
     she:SoilMatricPotential a skos:Concept ;
+        skos:exactMatch inrae:c_5050 ;
         skos:prefLabel "soil matric potential"@en .
 
     she:SoilMicrobialBiomassCarbon a skos:Concept ;
@@ -5150,7 +5288,8 @@ she:metadata {
 
     she:SoilPorosity a skos:Concept ;
         skos:broader she:DerivedSoilProperties ;
-        skos:exactMatch agrovoc:c_35320 ;
+        skos:exactMatch agrovoc:c_35320,
+            inrae:c_16324 ;
         skos:prefLabel "soil porosity"@en .
 
     she:SoilProcessChanges a skos:Concept ;
@@ -5169,12 +5308,14 @@ she:metadata {
         skos:prefLabel "soil rehabilitation"@en .
 
     she:SoilRemediation a skos:Concept ;
+        skos:exactMatch inrae:c_13554 ;
         skos:prefLabel "soil remediation"@en ;
         she:isRequiredBy she:HighScreeningLevels .
 
     she:SoilRestoration a skos:Concept ;
         dcterms:source she:Huber2008 ;
-        skos:exactMatch iso11074:3.471 ;
+        skos:exactMatch inrae:c_13140,
+            iso11074:3.471 ;
         skos:prefLabel "soil restoration"@en ;
         she:isRequiredBy she:SoilThreatFocalAreas .
 
@@ -5198,7 +5339,8 @@ she:metadata {
         skos:related she:SoilSealingLimits .
 
     she:SoilSolution a skos:Concept ;
-        skos:exactMatch agrovoc:c_7192 ;
+        skos:exactMatch agrovoc:c_7192,
+            inrae:c_13587 ;
         skos:prefLabel "soil solution"@en .
 
     she:SoilStateIndicators a skos:Concept ;
@@ -5275,7 +5417,8 @@ she:metadata {
                 rdf:object she:LandManagementIntensity,
                     she:LandUseIntensity ] ;
         bao:BAO_0002586 she:SoilCommunityHealth ;
-        skos:exactMatch agrovoc:c_00ba8c53 ;
+        skos:exactMatch agrovoc:c_00ba8c53,
+            inrae:c_9585 ;
         skos:prefLabel "species diversity"@en .
 
     she:SpecificProductGroups a skos:Concept ;
@@ -5387,6 +5530,7 @@ she:metadata {
     she:SulphuricAcid a skos:Concept ;
         skos:broader she:Acids ;
         skos:closeMatch agrovoc:c_7517 ;
+        skos:exactMatch gemet:8203 ;
         skos:prefLabel "sulphuric acid"@en .
 
     she:SurfaceWaterQuality a skos:Concept ;
@@ -5406,7 +5550,8 @@ she:metadata {
         skos:prefLabel "sustainable irrigation"@en .
 
     she:Swimming a skos:Concept ;
-        skos:exactMatch agrovoc:c_1e56d0a8 ;
+        skos:exactMatch agrovoc:c_1e56d0a8,
+            inrae:c_5809 ;
         skos:prefLabel "swimming"@en .
 
     she:Taxonomy a skos:Concept ;
@@ -5432,7 +5577,8 @@ she:metadata {
             <https://doi.org/10.5281/zenodo.6758378>,
             <https://doi.org/10.5281/zenodo.6758382>,
             <https://doi.org/10.5281/zenodo.6772048> ;
-        skos:exactMatch agrovoc:c_7631 ;
+        skos:exactMatch agrovoc:c_7631,
+            gemet:8313 ;
         skos:prefLabel "taxonomy"@en .
 
     she:TechnicErosion a skos:Concept ;
@@ -5467,13 +5613,15 @@ she:metadata {
 
     she:Time a skos:Concept ;
         dcterms:source <https://doi.org/10.5281/zenodo.7656722> ;
-        skos:exactMatch agrovoc:c_7778 ;
+        skos:exactMatch agrovoc:c_7778,
+            gemet:8487 ;
         skos:prefLabel "time"@en .
 
     she:Toluene a skos:Concept ;
         sio:SIO_000272 she:AromaticHydrocarbons ;
         skos:broader she:BTEX ;
-        skos:exactMatch agrovoc:c_7803 ;
+        skos:exactMatch agrovoc:c_7803,
+            inrae:c_41d2f13a ;
         skos:prefLabel "toluene"@en .
 
     she:TopsoilDeformation a skos:Concept ;
@@ -5541,7 +5689,8 @@ she:metadata {
         skos:prefLabel "toxicological criteria"@en .
 
     she:Traffic a skos:Concept ;
-        skos:exactMatch agrovoc:c_37947 ;
+        skos:exactMatch agrovoc:c_37947,
+            gemet:8582 ;
         skos:prefLabel "traffic"@en .
 
     she:TrafficRouteSoils a skos:Concept ;
@@ -5577,6 +5726,7 @@ she:metadata {
 
     she:Trichloroethylene a skos:Concept ;
         agrontology:isIncludedIn she:VOCs ;
+        skos:exactMatch inrae:c_2988a390 ;
         skos:prefLabel "trichloroethylene"@en .
 
     she:Turkiye a schema:Country ;
@@ -5632,7 +5782,9 @@ she:metadata {
 
     she:UrbanSprawl a skos:Concept ;
         agrontology:isCausedBy she:LandTake ;
+        skos:closeMatch inrae:c_22180 ;
         skos:definition "Urban sprawl is an expansion of urban areas around an urban nucleus."@en ;
+        skos:exactMatch gemet:7625 ;
         skos:prefLabel "urban sprawl"@en .
 
     she:UrbanZonePopulationGrowth a skos:Concept ;
@@ -5641,7 +5793,8 @@ she:metadata {
         skos:related she:SoilSealing .
 
     she:Urea a skos:Concept ;
-        skos:exactMatch agrovoc:c_8090 ;
+        skos:exactMatch agrovoc:c_8090,
+            inrae:c_4135 ;
         skos:prefLabel "urea"@en .
 
     she:VanLynden2004 a dcterms:BibliographicResource ;
@@ -5655,6 +5808,8 @@ she:metadata {
         skos:related she:VOCs .
 
     she:VegetationCover a skos:Concept ;
+        skos:closeMatch inrae:c_3326 ;
+        skos:exactMatch gemet:8908 ;
         skos:prefLabel "vegetation cover"@en ;
         skos:related she:SoilErosion .
 
@@ -5689,7 +5844,8 @@ she:metadata {
 
     she:Volatility a skos:Concept ;
         agrontology:isPropertyOf she:VOCs ;
-        skos:exactMatch agrovoc:c_24425 ;
+        skos:exactMatch agrovoc:c_24425,
+            gemet:8995 ;
         skos:prefLabel "volatility"@en .
 
     she:Vonk2020 a dcterms:BibliographicResource ;
@@ -5718,7 +5874,8 @@ she:metadata {
 
     she:WaterConservation a skos:Concept ;
         obo:RO_0002335 she:SoilDegradation ;
-        skos:exactMatch agrovoc:c_8315 ;
+        skos:exactMatch agrovoc:c_8315,
+            gemet:9159 ;
         skos:prefLabel "water conservation"@en .
 
     she:WaterFlux a skos:Concept ;
@@ -5736,6 +5893,7 @@ she:metadata {
     she:WaterRetention a skos:Concept ;
         skos:broader she:SoilFunctions ;
         skos:closeMatch agrovoc:c_28410 ;
+        skos:exactMatch inrae:c_12473 ;
         skos:prefLabel "water retention"@en .
 
     she:WaterRunoff a skos:Concept ;
@@ -5755,7 +5913,8 @@ she:metadata {
         agrontology:isAffectedBy [ rdf:object she:SoilPollution ;
                 she:requires she:HighPollutantConcentrations ] ;
         skos:broader she:SoilServices ;
-        skos:exactMatch agrovoc:c_8327 ;
+        skos:exactMatch agrovoc:c_8327,
+            inrae:c_13132 ;
         skos:prefLabel "water storage"@en .
 
     she:WaterStorageCapacity a skos:Concept ;
@@ -5781,11 +5940,14 @@ she:metadata {
 
     she:Width a skos:Concept ;
         agrontology:isPropertyOf she:HorizonBoundaries ;
-        skos:exactMatch agrovoc:c_8387 ;
+        skos:exactMatch agrovoc:c_8387,
+            inrae:c_c618146a ;
         skos:prefLabel "width"@en .
 
     she:Wind a skos:Concept ;
         dcterms:source she:Verstraeten2006 ;
+        skos:exactMatch inrae:c_11505,
+            gemet:9327 ;
         skos:prefLabel "wind"@en .
 
     she:WindErosionRate a skos:Concept ;
@@ -5795,12 +5957,14 @@ she:metadata {
         schema:isBasedOn she:Modelling .
 
     she:Winter a skos:Concept ;
-        skos:exactMatch agrovoc:c_8410 ;
+        skos:exactMatch agrovoc:c_8410,
+            inrae:c_1332 ;
         skos:prefLabel "winter"@en .
 
     she:Wood a skos:Concept ;
         skos:broader she:PlantPart ;
-        skos:exactMatch agrovoc:c_8421 ;
+        skos:exactMatch agrovoc:c_8421,
+            gemet:9349 ;
         skos:prefLabel "wood"@en .
 
     she:Xylenes a skos:Concept ;
@@ -5860,7 +6024,9 @@ she:metadata {
     she:AgriculturalLand a skos:Concept ;
         agrontology:hasType she:CambicLuvisols ;
         dcterms:source <https://doi.org/10.5281/zenodo.14018112> ;
-        skos:closeMatch agrovoc:c_2808 ;
+        skos:closeMatch agrovoc:c_2808,
+            inrae:c_1754 ;
+        skos:exactMatch gemet:202 ;
         skos:prefLabel "agricultural land"@en .
 
     she:AgriculturalLandManagement a skos:Concept ;
@@ -5922,7 +6088,9 @@ she:metadata {
     she:Atmosphere a skos:Concept ;
         dcterms:source she:IPCC2019b,
             she:Olson2014 ;
-        skos:exactMatch agrovoc:c_8994 ;
+        skos:exactMatch agrovoc:c_8994,
+            inrae:c_412,
+            gemet:617 ;
         skos:prefLabel "atmosphere"@en .
 
     she:BackgroundLevels a skos:Concept ;
@@ -6001,6 +6169,8 @@ she:metadata {
     she:CAP a dcterms:Policy ;
         agrontology:hasAbbreviation "CAP"@en ;
         dcterms:source she:EU2013b ;
+        skos:exactMatch inrae:c_22767,
+            gemet:1600 ;
         skos:narrower she:CAP2013,
             she:CAP20232027 ;
         skos:prefLabel "common agricultural policy"@en .
@@ -6019,6 +6189,7 @@ she:metadata {
     she:CationExchange a skos:Concept ;
         agrontology:isAffectedBy she:SOMContents ;
         agrontology:isIncludedIn she:BiochemicalProcesses ;
+        skos:exactMatch inrae:c_3a30d01b ;
         skos:prefLabel "cation exchange"@en .
 
     she:Cemeteries a skos:Concept ;
@@ -6061,7 +6232,9 @@ she:metadata {
         agrontology:hasSymbol "Cr"@en ;
         skos:broader she:CommonlyRegulatedHeavyMetals,
             she:MonitoredHeavyMetals ;
-        skos:exactMatch agrovoc:c_1595 ;
+        skos:exactMatch agrovoc:c_1595,
+            inrae:c_15743,
+            gemet:1401 ;
         skos:prefLabel "chromium"@en .
 
     she:CleanWaterProvision a skos:Concept ;
@@ -6070,7 +6243,9 @@ she:metadata {
 
     she:ClimateChangeMitigation a skos:Concept ;
         dcterms:source she:IPCC2019b ;
-        skos:exactMatch agrovoc:c_1374571087594 ;
+        skos:exactMatch agrovoc:c_1374571087594,
+            inrae:c_d23aa503,
+            gemet:15032 ;
         skos:prefLabel "climate change mitigation"@en .
 
     she:ClimaticChanges a skos:Concept ;
@@ -6085,7 +6260,9 @@ she:metadata {
         agrontology:hasSymbol "Co"@en ;
         skos:broader she:CommonlyRegulatedHeavyMetals,
             she:EssentialMicronutrient ;
-        skos:exactMatch agrovoc:c_1702 ;
+        skos:exactMatch agrovoc:c_1702,
+            inrae:c_15733,
+            gemet:1532 ;
         skos:prefLabel "cobalt"@en ;
         she:isToxicTo [ af-x:AFX_0000408 she:HighConcentrations ;
                 rdf:object she:Soils ] .
@@ -6110,7 +6287,8 @@ she:metadata {
     she:Consistency a skos:Concept ;
         agrontology:isPropertyOf she:ArrangementOfHumusConstituents,
             she:NatureOfHumusConstituents ;
-        skos:exactMatch agrovoc:c_24152 ;
+        skos:exactMatch agrovoc:c_24152,
+            inrae:c_10512 ;
         skos:prefLabel "consistency"@en .
 
     she:ContactAreaPressure a skos:Concept ;
@@ -6139,7 +6317,9 @@ she:metadata {
             she:AgriculturalSoilManagement .
 
     she:ContinentalClimate a skos:Concept ;
-        skos:exactMatch agrovoc:c_1833 ;
+        skos:exactMatch agrovoc:c_1833,
+            inrae:c_0f2a693c,
+            gemet:12060 ;
         skos:prefLabel "continental climate"@en .
 
     she:CoolSummers a skos:Concept ;
@@ -6206,7 +6386,8 @@ she:metadata {
     she:DNAExtraction a skos:Concept ;
         agrontology:measures she:IntraspecificGeneticDiversity ;
         skos:broader she:AnalyticalMethodologies ;
-        skos:exactMatch agrovoc:c_ae6e60d6 ;
+        skos:exactMatch agrovoc:c_ae6e60d6,
+            inrae:c_16673 ;
         skos:prefLabel "DNA extraction"@en .
 
     she:DNAbasedBacteriaExtraction a skos:Concept ;
@@ -6282,7 +6463,9 @@ she:metadata {
 
     she:Desertification a skos:Concept ;
         obo:RO_0002336 she:SoilPhysicalDegradation ;
-        skos:exactMatch agrovoc:c_2204 ;
+        skos:exactMatch agrovoc:c_2204,
+            inrae:c_4569,
+            gemet:2105 ;
         skos:prefLabel "desertification"@en .
 
     she:DiffusePollutionIndicators a skos:Concept ;
@@ -6297,7 +6480,8 @@ she:metadata {
 
     she:Digestate a skos:Concept ;
         obo:RO_0002331 she:AgriculturalSoilManagement ;
-        skos:exactMatch agrovoc:c_4af94ce2 ;
+        skos:exactMatch agrovoc:c_4af94ce2,
+            inrae:c_9592 ;
         skos:prefLabel "digestate"@en .
 
     she:Dioxins a skos:Concept ;
@@ -6313,6 +6497,8 @@ she:metadata {
         agrontology:isPropertyOf she:FaunalDroppings,
             she:FungalMycelia ;
         skos:closeMatch agrovoc:c_2338 ;
+        skos:exactMatch inrae:c_15554,
+            gemet:2264 ;
         skos:prefLabel "distribution"@en .
 
     she:DrainedOrganicSoils a skos:Concept ;
@@ -6321,17 +6507,22 @@ she:metadata {
 
     she:Drought a skos:Concept ;
         agrontology:isMeasuredBy she:NDVIMethod ;
-        skos:exactMatch agrovoc:c_2391 ;
+        skos:exactMatch agrovoc:c_2391,
+            inrae:c_11292,
+            gemet:2347 ;
         skos:prefLabel "drought"@en ;
         skos:related she:ClimateResilience .
 
     she:DryCleaning a skos:Concept ;
         agrontology:isIncludedIn she:IndustrialActivities ;
+        skos:exactMatch gemet:2358 ;
         skos:prefLabel "dry cleaning"@en .
 
     she:Drying a skos:Concept ;
         agrontology:isCausedBy she:Evapotranspiration ;
         skos:exactMatch agrovoc:c_2402,
+            inrae:c_13877,
+            gemet:2361,
             iso11074:3.135 ;
         skos:prefLabel "drying"@en .
 
@@ -6381,6 +6572,7 @@ she:metadata {
 
     she:EcosystemFunctioning a skos:Concept ;
         agrontology:isAffectedBy she:SoilPollution ;
+        skos:exactMatch inrae:c_8630 ;
         skos:prefLabel "ecosystem functioning"@en .
 
     she:EcosystemProtection a skos:Concept ;
@@ -6398,6 +6590,7 @@ she:metadata {
         skos:prefLabel "ecosystem service provision"@en .
 
     she:EcosystemStability a skos:Concept ;
+        skos:exactMatch gemet:15139 ;
         skos:prefLabel "ecosystem stability"@en ;
         she:isIndicatedBy she:NematodeAbsoluteAbundance,
             she:NematodeReletiveAbundance .
@@ -6447,7 +6640,9 @@ she:metadata {
     she:Evapotranspiration a skos:Concept ;
         agrontology:causes she:Drying ;
         obo:RO_0002212 she:SoilWaterContent ;
-        skos:exactMatch agrovoc:c_2741 ;
+        skos:exactMatch agrovoc:c_2741,
+            inrae:c_212,
+            gemet:3022 ;
         skos:prefLabel "evapotranspiration"@en .
 
     she:ExposurePathways a skos:Concept ;
@@ -6474,9 +6669,12 @@ she:metadata {
         skos:prefLabel "fertile topsoil loss"@en .
 
     she:Fertiliser a skos:Concept ;
+        skos:exactMatch inrae:c_4063 ;
         skos:prefLabel "fertiliser"@en .
 
     she:Field a skos:Concept ;
+        skos:exactMatch inrae:c_1679,
+            gemet:3176 ;
         skos:prefLabel "field"@en .
 
     she:FineRootDiameterDistributions a skos:Concept ;
@@ -6522,6 +6720,8 @@ she:metadata {
         skos:prefLabel "foliage N/P ratio"@en .
 
     she:FoodChain a skos:Concept ;
+        skos:closeMatch inrae:c_11147 ;
+        skos:exactMatch gemet:3358 ;
         skos:prefLabel "food chain"@en .
 
     she:FoodCrops a skos:Concept ;
@@ -6543,7 +6743,9 @@ she:metadata {
     she:Forestry a skos:Concept ;
         dcterms:source <https://doi.org/10.5281/zenodo.6322608> ;
         skos:broader she:NonagriculturalSystems ;
-        skos:exactMatch agrovoc:c_3055 ;
+        skos:exactMatch agrovoc:c_3055,
+            inrae:c_2282,
+            gemet:3439 ;
         skos:prefLabel "forestry"@en .
 
     she:FormerMiningAreas a skos:Concept ;
@@ -6962,20 +7164,25 @@ she:metadata {
         skos:broader she:SoilBiota,
             she:SoilOrganisms ;
         skos:closeMatch agrovoc:c_12312 ;
+        skos:exactMatch inrae:c_24230 ;
         skos:prefLabel "macrofauna"@en .
 
     she:Manganese a skos:Concept ;
         skos:broader she:Micronutrients ;
-        skos:exactMatch agrovoc:c_4570 ;
+        skos:exactMatch agrovoc:c_4570,
+            inrae:c_15732 ;
         skos:prefLabel "manganese"@en .
 
     she:Manure a skos:Concept ;
+        skos:exactMatch inrae:c_2073,
+            gemet:5007 ;
         skos:prefLabel "manure"@en .
 
     she:Mapping a skos:Concept ;
         agrontology:isIncludedIn she:Level2SoilErosionMonitoring ;
         skos:broader she:MonitoringApproaches ;
         skos:closeMatch agrovoc:c_1344 ;
+        skos:exactMatch gemet:5013 ;
         skos:prefLabel "mapping"@en .
 
     she:MassSoilMovements a skos:Concept ;
@@ -6989,7 +7196,9 @@ she:metadata {
         agrontology:hasSymbol "Hg"@en ;
         skos:broader she:CommonlyRegulatedHeavyMetals,
             she:MonitoredHeavyMetals ;
-        skos:exactMatch agrovoc:c_4751 ;
+        skos:exactMatch agrovoc:c_4751,
+            inrae:c_15669,
+            gemet:5154 ;
         skos:prefLabel "mercury"@en ;
         she:isToxicTo [ af-x:AFX_0000408 she:LowConcentrations ;
                 rdf:object she:HumanBeings,
@@ -6998,6 +7207,7 @@ she:metadata {
     she:Mesofauna a skos:Concept ;
         skos:broader she:SoilBiota,
             she:SoilOrganisms ;
+        skos:exactMatch inrae:c_25426 ;
         skos:prefLabel "mesofauna"@en .
 
     she:MicrobialImmobilisation a skos:Concept ;
@@ -7007,6 +7217,7 @@ she:metadata {
     she:Microfauna a skos:Concept ;
         skos:broader she:SoilBiota,
             she:SoilOrganisms ;
+        skos:exactMatch inrae:c_25467 ;
         skos:prefLabel "microfauna"@en .
 
     she:MicronutrientAvailability a skos:Concept ;
@@ -7159,7 +7370,9 @@ she:metadata {
         agrontology:hasSymbol "Ni"@en ;
         skos:broader she:CommonlyRegulatedHeavyMetals,
             she:MonitoredHeavyMetals ;
-        skos:exactMatch agrovoc:c_5172 ;
+        skos:exactMatch agrovoc:c_5172,
+            inrae:c_727,
+            gemet:5589 ;
         skos:prefLabel "nickel"@en .
 
     she:NitrogenAmount a skos:Concept ;
@@ -7299,6 +7512,7 @@ she:metadata {
     she:Ploughing a skos:Concept ;
         agrontology:prevents she:TopsoilCompaction ;
         skos:broader she:EffectiveSoilManagement ;
+        skos:closeMatch inrae:c_3992 ;
         skos:prefLabel "ploughing"@en .
 
     she:Poeplau2019 a dcterms:BibliographicResource ;
@@ -7314,6 +7528,11 @@ she:metadata {
         skos:prefLabel "point sources"@en .
 
     she:Poland a schema:Country ;
+        dcterms:source <https://doi.org/10.5281/zenodo.13945384>,
+            <https://doi.org/10.5281/zenodo.14017262>,
+            <https://doi.org/10.5281/zenodo.14017679>,
+            <https://doi.org/10.5281/zenodo.14018112>,
+            <https://doi.org/10.5281/zenodo.14018212> ;
         skos:exactMatch agrovoc:c_6055 ;
         skos:prefLabel "Poland"@en .
 
@@ -7384,7 +7603,8 @@ she:metadata {
     she:PrimaryProductivity a skos:Concept ;
         dcterms:source she:Elser2007,
             she:Vitousek2010 ;
-        skos:exactMatch agrovoc:c_34328 ;
+        skos:exactMatch agrovoc:c_34328,
+            inrae:c_22480 ;
         skos:prefLabel "primary productivity"@en .
 
     she:ProductionIncrease a skos:Concept ;
@@ -7393,6 +7613,7 @@ she:metadata {
                 rdf:object she:NLosses,
                     she:PLosses ] ;
         obo:RO_0002212 she:PlantSpeciesDiversity ;
+        skos:closeMatch inrae:c_20644 ;
         skos:exactMatch agrovoc:c_29978 ;
         skos:prefLabel "production increase"@en .
 
@@ -7480,6 +7701,7 @@ she:metadata {
     she:RiverSedimentation a skos:Concept ;
         agrontology:isIncludedIn she:OffsiteDamage ;
         dcterms:source she:Boardman2006 ;
+        skos:exactMatch inrae:c_4891 ;
         skos:prefLabel "river sedimentation"@en ;
         she:accompanies she:LargeErosionEvents .
 
@@ -7586,7 +7808,8 @@ she:metadata {
         she:calculates she:SoilSealing .
 
     she:Sedimentation a skos:Concept ;
-        skos:exactMatch agrovoc:c_6926 ;
+        skos:exactMatch agrovoc:c_6926,
+            inrae:c_4418 ;
         skos:prefLabel "sedimentation"@en .
 
     she:SelectedOrganicCompounds a skos:Concept ;
@@ -7698,6 +7921,7 @@ she:metadata {
     she:SoilEcosystem a skos:Concept ;
         skos:broader she:Endpoints,
             she:ProtectionTargets ;
+        skos:exactMatch inrae:c_5835 ;
         skos:prefLabel "soil ecosystem"@en .
 
     she:SoilErodibility a skos:Concept ;
@@ -7726,6 +7950,8 @@ she:metadata {
         dcterms:source she:FAO2019 ;
         sio:equivalentTo she:SoilProduction ;
         skos:closeMatch agrovoc:c_7173 ;
+        skos:exactMatch inrae:c_270,
+            gemet:7862 ;
         skos:prefLabel "soil formation"@en ;
         skos:related she:TolerableSoilLoss .
 
@@ -7851,6 +8077,8 @@ she:metadata {
 
     she:SoilStability a skos:Concept ;
         skos:broader she:SoilFunctionIndicators ;
+        skos:exactMatch inrae:c_1400,
+            gemet:12717 ;
         skos:prefLabel "soil stability"@en .
 
     she:SoilStiffness a skos:Concept ;
@@ -7861,13 +8089,15 @@ she:metadata {
     she:SoilTemperature a skos:Concept ;
         agrontology:isAffectedBy she:SOMContents ;
         skos:broader she:ObservableSoilProperties ;
-        skos:exactMatch agrovoc:c_7197 ;
+        skos:exactMatch agrovoc:c_7197,
+            inrae:c_513 ;
         skos:prefLabel "soil temperature"@en .
 
     she:SoilWaterContent a skos:Concept ;
         obo:RO_0002335 she:Evapotranspiration ;
         skos:broader she:ObservableSoilProperties ;
-        skos:exactMatch agrovoc:c_7208 ;
+        skos:exactMatch agrovoc:c_7208,
+            inrae:c_11519 ;
         skos:prefLabel "soil water content"@en .
 
     she:Spain a schema:Country ;
@@ -7877,7 +8107,8 @@ she:metadata {
     she:SpatialData a skos:Concept ;
         agrontology:measures she:SoilThreats ;
         dcterms:source she:Huber2008 ;
-        skos:exactMatch agrovoc:c_379bbe9f ;
+        skos:exactMatch agrovoc:c_379bbe9f,
+            inrae:c_15844 ;
         skos:prefLabel "spatial data"@en ;
         she:indicates she:SoilThreatFocalAreas .
 
@@ -7893,6 +8124,7 @@ she:metadata {
     she:Stiffness a skos:Concept ;
         sio:equivalentTo she:ShearStrength ;
         skos:broader she:ComplexSoilPhysicalParameters ;
+        skos:closeMatch inrae:c_13416 ;
         skos:prefLabel "stiffness"@en .
 
     she:StressDuration a skos:Concept ;
@@ -7928,7 +8160,8 @@ she:metadata {
     she:Swelling a skos:Concept ;
         agrontology:prevents she:TopsoilCompaction ;
         skos:broader she:NaturalProcesses ;
-        skos:exactMatch agrovoc:c_26829 ;
+        skos:exactMatch agrovoc:c_26829,
+            inrae:c_14086 ;
         skos:prefLabel "swelling"@en .
 
     she:TerrestrialLayer a skos:Concept ;
@@ -7939,7 +8172,8 @@ she:metadata {
     she:Tillage a skos:Concept ;
         agrontology:causes she:TillageErosion ;
         agrontology:prevents she:TopsoilCompaction ;
-        skos:exactMatch agrovoc:c_7771 ;
+        skos:exactMatch agrovoc:c_7771,
+            inrae:c_3725 ;
         skos:prefLabel "tillage"@en .
 
     she:TolerableDailyIntake a skos:Concept ;
@@ -7959,6 +8193,7 @@ she:metadata {
         agrontology:causes she:NutrientUptake ;
         dcterms:source <https://doi.org/10.5281/zenodo.1422970> ;
         skos:broader she:BiomassProduction ;
+        skos:exactMatch inrae:c_6006 ;
         skos:prefLabel "tree growth"@en ;
         she:isLimitedBy [ obo:BFO_0000066 she:ForestEcosystems ;
                 rdf:object she:SoilNAvailability ] .
@@ -8003,7 +8238,8 @@ she:metadata {
         obo:RO_0002212 she:SoilFunctioning ;
         dcterms:source she:EC2020a,
             she:JRC2012 ;
-        skos:exactMatch agrovoc:c_8088 ;
+        skos:exactMatch agrovoc:c_8088,
+            inrae:c_21242 ;
         skos:prefLabel "urbanisation"@en ;
         she:alters she:SoilProperties .
 
@@ -8023,6 +8259,8 @@ she:metadata {
 
     she:Waste a skos:Concept ;
         skos:broader she:SoilPollutingActivity ;
+        skos:exactMatch inrae:c_5130,
+            gemet:9041 ;
         skos:prefLabel "waste"@en .
 
     she:WaterErosionExtent a skos:Concept ;
@@ -8055,7 +8293,8 @@ she:metadata {
 
     she:Weather a skos:Concept ;
         sio:SIO_000636 she:SoilErosionByWater ;
-        skos:exactMatch agrovoc:c_15292 ;
+        skos:exactMatch agrovoc:c_15292,
+            gemet:9269 ;
         skos:narrower she:HeavyRainfall ;
         skos:prefLabel "weather"@en .
 
@@ -8104,7 +8343,9 @@ she:metadata {
             <https://doi.org/10.5281/zenodo.6322683>,
             <https://doi.org/10.5281/zenodo.6322760>,
             she:Stolte2016 ;
-        skos:exactMatch agrovoc:c_203 ;
+        skos:exactMatch agrovoc:c_203,
+            inrae:c_3959,
+            gemet:232 ;
         skos:prefLabel "agriculture"@en .
 
     she:Alfisols a skos:Concept ;
@@ -8134,7 +8375,8 @@ she:metadata {
     she:ArableLand a skos:Concept ;
         dcterms:source she:Prout2020 ;
         skos:broader she:LandUses ;
-        skos:exactMatch agrovoc:c_18948 ;
+        skos:exactMatch agrovoc:c_18948,
+            inrae:c_3071 ;
         skos:prefLabel "arable land"@en .
 
     she:ArableSoils a skos:Concept ;
@@ -8151,7 +8393,9 @@ she:metadata {
         skos:broader she:CommonlyRegulatedHeavyMetals,
             she:MonitoredHeavyMetals,
             she:SelectedPollutants ;
-        skos:exactMatch agrovoc:c_629 ;
+        skos:exactMatch agrovoc:c_629,
+            inrae:c_15651,
+            gemet:567 ;
         skos:prefLabel "arsenic"@en .
 
     she:ArtificialisedSoils a skos:Concept ;
@@ -8175,7 +8419,8 @@ she:metadata {
         skos:broader she:FunctionalGroups,
             she:Microorganisms ;
         skos:definition "Bacteria are the smallest and most numerous of the soil organisms."@en ;
-        skos:exactMatch agrovoc:c_765 ;
+        skos:exactMatch agrovoc:c_765,
+            inrae:c_25099 ;
         skos:prefLabel "bacteria"@en ;
         she:hasBiomass [ qudt:unit unit:KiloGM-PER-HA ;
                 sorelm:hasInterval "50-500" ] ;
@@ -8231,7 +8476,9 @@ she:metadata {
         agrontology:isIncludedIn she:BasicElements ;
         dcterms:source <https://doi.org/10.5281/zenodo.7656722>,
             she:IPCC2019b ;
-        skos:exactMatch agrovoc:c_1301 ;
+        skos:exactMatch agrovoc:c_1301,
+            inrae:c_15715,
+            gemet:1160 ;
         skos:prefLabel "carbon"@en .
 
     she:CarbonAvailability a skos:Concept ;
@@ -8241,13 +8488,6 @@ she:metadata {
             she:Pouyat2006 ;
         skos:broader she:AnalyticalMethodologies ;
         skos:prefLabel "carbon availability"@en .
-
-    she:CarbonStorage a skos:Concept ;
-        agrontology:isAffectedBy [ rdf:object she:SoilPollution ;
-                she:requires she:HighPollutantConcentrations ] ;
-        obo:RO_0002336 she:HighNutrientStatus ;
-        skos:broader she:SoilServices ;
-        skos:prefLabel "carbon storage"@en .
 
     she:CationExchangeCapacity a skos:Concept ;
         obo:RO_0002335 she:SoilChemicalDegradation ;
@@ -8259,6 +8499,7 @@ she:metadata {
 
     she:ChemicalStability a skos:Concept ;
         agrontology:isPartOf she:RegistrationProcedure ;
+        skos:exactMatch inrae:c_13230 ;
         skos:prefLabel "chemical stability"@en ;
         skos:related she:ChemicalPersistence .
 
@@ -8281,7 +8522,8 @@ she:metadata {
         skos:broader she:FunctionalGroups,
             she:Fungivores,
             she:Omnivores ;
-        skos:exactMatch agrovoc:c_1759 ;
+        skos:exactMatch agrovoc:c_1759,
+            inrae:c_23819 ;
         skos:prefLabel "collembola"@en ;
         she:hasBiomass [ qudt:unit unit:KiloGM-PER-HA ;
                 sorelm:hasUpperBound "1"^^xsd:int ] ;
@@ -8302,6 +8544,8 @@ she:metadata {
                     she:Plastics ] ;
         obo:RO_0002331 she:AgriculturalSoilManagement ;
         sio:SIO_000202 she:Metals ;
+        skos:exactMatch inrae:c_3091,
+            gemet:1649 ;
         skos:prefLabel "compost"@en .
 
     she:CyclicStress a skos:Concept ;
@@ -8319,7 +8563,8 @@ she:metadata {
     she:Decomposition a skos:Concept ;
         dcterms:source she:Pribyl2010 ;
         skos:closeMatch agrovoc:c_2159 ;
-        skos:exactMatch iso11074:3.113 ;
+        skos:exactMatch gemet:2014,
+            iso11074:3.113 ;
         skos:prefLabel "decomposition"@en ;
         skos:related she:DeadOrganicComponents,
             she:SoilOrganicMatter .
@@ -8371,7 +8616,8 @@ she:metadata {
         agrontology:isMeasuredBy she:FluorescenceMeasurements,
             she:Incubation ;
         skos:broader she:EssentialBiodiversityVariables ;
-        skos:closeMatch agrovoc:c_2604 ;
+        skos:closeMatch agrovoc:c_2604,
+            inrae:c_6811 ;
         skos:prefLabel "enzymatic activity"@en .
 
     she:EphemeralGullyErosion a skos:Concept ;
@@ -8435,7 +8681,9 @@ she:metadata {
     she:Food a skos:Concept ;
         skos:broader she:Endpoints,
             she:ProtectionTargets ;
-        skos:closeMatch agrovoc:c_3032 ;
+        skos:closeMatch agrovoc:c_3032,
+            inrae:c_9937 ;
+        skos:exactMatch gemet:3354 ;
         skos:prefLabel "food"@en .
 
     she:FungalMycelia a skos:Concept ;
@@ -8457,7 +8705,8 @@ she:metadata {
     she:GroundwaterRecharge a skos:Concept ;
         obo:RO_0002335 she:SoilCompaction ;
         skos:broader she:EcosystemServices ;
-        skos:exactMatch agrovoc:c_24035 ;
+        skos:exactMatch agrovoc:c_24035,
+            inrae:c_4746 ;
         skos:prefLabel "groundwater recharge"@en .
 
     she:HabitatExtent a skos:Concept ;
@@ -8477,7 +8726,8 @@ she:metadata {
     she:HeavyMetals a skos:Concept ;
         agrontology:isPartOf she:SoilMatrix ;
         sio:SIO_000128 she:Soils ;
-        skos:exactMatch agrovoc:c_2223 ;
+        skos:exactMatch agrovoc:c_2223,
+            inrae:c_967 ;
         skos:prefLabel "heavy metals"@en .
 
     she:HighBaseSaturation a skos:Concept ;
@@ -8494,7 +8744,7 @@ she:metadata {
 
     she:HighNutrientStatus a skos:Concept ;
         obo:RO_0002212 she:WaterQuality ;
-        obo:RO_0002213 she:CarbonStorage ;
+        obo:RO_0002213 she:SoilCarbonStorage ;
         skos:narrower she:HighPhosphorusStatus ;
         skos:prefLabel "high nutrient status"@en .
 
@@ -8534,7 +8784,7 @@ she:metadata {
         dcterms:source she:Gaublomme2006 ;
         sio:SIO_000210 she:LabileFractionOfTotalSoilOrganicCarbonPool ;
         skos:broader she:MicrobialBiomassIndicators ;
-        skos:definition "Hot water extractable carbon represents the labile fraction of the total soil organic carbon (soc) pool and includes microbial carbon and carbon and nitrogen sources that are readily available to microbes"@en ;
+        skos:definition "Hot water extractable carbon represents the labile fraction of the total soil organic carbon (SOC) pool and includes microbial carbon and carbon and nitrogen sources that are readily available to microbes"@en ;
         skos:prefLabel "hot water extractable carbon"@en .
 
     she:HumaninducedPractices a skos:Concept ;
@@ -8558,7 +8808,9 @@ she:metadata {
                 rdf:object she:SevereSoilErosion ] ;
         dcterms:source she:Stolte2016,
             she:Verstraeten2006 ;
-        skos:exactMatch agrovoc:c_26790 ;
+        skos:exactMatch agrovoc:c_26790,
+            inrae:c_22230,
+            gemet:4321 ;
         skos:prefLabel "infrastructure"@en ;
         biolink:consumes she:Land .
 
@@ -8603,6 +8855,8 @@ she:metadata {
     she:Litter a skos:Concept ;
         skos:broader she:OrganicLayer,
             she:OrganicMaterial ;
+        skos:exactMatch inrae:c_4972,
+            gemet:4857 ;
         skos:prefLabel "litter"@en .
 
     she:LitterDecomposition a skos:Concept ;
@@ -8672,12 +8926,11 @@ she:metadata {
 
     she:MonitoredNutrients a skos:Concept ;
         af-x:AFX_0000408 she:SamplingIntervals ;
-        dcterms:source <https://doi.org/10.5281/zenodo.7892160>,
-            she:VanCamp2004b ;
+        dcterms:source she:VanCamp2004b ;
         skos:exactMatch agrovoc:c_5274 ;
         skos:narrower she:Phosphates,
             she:SoilNitrogen ;
-        skos:prefLabel "nutrients"@en .
+        skos:prefLabel "monitored nutrients"@en .
 
     she:NLeaching a skos:Concept ;
         skos:prefLabel "N leaching"@en .
@@ -8696,7 +8949,9 @@ she:metadata {
         skos:prefLabel "N transformation processes"@en .
 
     she:NaturalEnvironment a skos:Concept ;
-        skos:exactMatch agrovoc:c_331336 ;
+        skos:exactMatch agrovoc:c_331336,
+            inrae:c_7607,
+            gemet:5498 ;
         skos:prefLabel "natural environment"@en ;
         skos:related she:TerrestrialEcosystems .
 
@@ -8721,6 +8976,7 @@ she:metadata {
             she:PickettCadenasso2009,
             she:Pouyat2006 ;
         skos:broader she:AnalyticalMethodologies ;
+        skos:exactMatch inrae:c_2417 ;
         skos:prefLabel "nitrogen availability"@en .
 
     she:NitrogenousFertiliserNeed a skos:Concept ;
@@ -8741,7 +8997,8 @@ she:metadata {
             she:CropGrowth,
             she:TreeGrowth ;
         dcterms:source <https://doi.org/10.54536/ajaset.v7i1.1296> ;
-        skos:exactMatch agrovoc:c_5273 ;
+        skos:exactMatch agrovoc:c_5273,
+            inrae:c_6715 ;
         skos:prefLabel "nutrient uptake"@en .
 
     she:Omnivores a skos:Concept ;
@@ -8802,6 +9059,7 @@ she:metadata {
     she:PlantCover a skos:Concept ;
         obo:RO_0002212 she:SoilErosionByWater,
             she:SoilErosionByWind ;
+        skos:closeMatch inrae:c_3326 ;
         skos:exactMatch agrovoc:c_25409 ;
         skos:prefLabel "plant cover"@en ;
         she:isRequiredBy she:GAEC4 .
@@ -8831,6 +9089,8 @@ she:metadata {
         skos:prefLabel "platy structure"@en .
 
     she:Policy a skos:Concept ;
+        skos:exactMatch inrae:c_20186,
+            gemet:6370 ;
         skos:prefLabel "policy"@en ;
         skos:related she:NoNetLandTake .
 
@@ -8843,7 +9103,9 @@ she:metadata {
     she:Pollutant a skos:Concept ;
         agrontology:affects she:SoilFunctions,
             she:SoilServices ;
-        skos:exactMatch iso11074:3.328 ;
+        skos:exactMatch inrae:c_4274,
+            gemet:6395,
+            iso11074:3.328 ;
         skos:prefLabel "pollutant"@en ;
         skos:related she:SoilRisk .
 
@@ -8870,7 +9132,9 @@ she:metadata {
         agrontology:benefitsFrom she:SoilHealth,
             she:SoilQuality ;
         dcterms:source she:Bunemann2018 ;
-        skos:exactMatch agrovoc:c_6210 ;
+        skos:exactMatch agrovoc:c_6210,
+            inrae:c_20784,
+            gemet:6670 ;
         skos:prefLabel "productivity"@en ;
         she:isLimitedBy she:SoilDegradation .
 
@@ -8967,7 +9231,9 @@ she:metadata {
                     she:PFAS,
                     she:Plastics ] ;
         obo:RO_0002331 she:AgriculturalSoilManagement ;
-        skos:exactMatch agrovoc:c_7008 ;
+        skos:exactMatch agrovoc:c_7008,
+            inrae:c_4450,
+            gemet:7632 ;
         skos:prefLabel "sewage sludge"@en .
 
     she:ShearEffects a skos:Concept ;
@@ -9000,6 +9266,7 @@ she:metadata {
         agrontology:isAffectedBy she:SOMContents ;
         agrontology:isMeasuredBy she:SoilAggregateResistanceIndex ;
         skos:broader she:EssentialBiodiversityVariables ;
+        skos:exactMatch inrae:c_1354 ;
         skos:prefLabel "soil aggregation"@en .
 
     she:SoilBiochemicalProcesses a skos:Concept ;
@@ -9011,6 +9278,7 @@ she:metadata {
     she:SoilBiologicalActivity a skos:Concept ;
         obo:RO_0002335 she:Waterlogging ;
         bao:BAO_0095002 she:SoilRespiration ;
+        skos:exactMatch inrae:c_1492 ;
         skos:prefLabel "soil biological activity"@en ;
         skos:related she:SoilBiologicalDegradation .
 
@@ -9288,7 +9556,8 @@ she:metadata {
     she:WaterPurification a skos:Concept ;
         skos:broader she:EcosystemFunctions,
             she:SoilFunctions ;
-        skos:exactMatch agrovoc:c_34145 ;
+        skos:exactMatch agrovoc:c_34145,
+            gemet:9210 ;
         skos:prefLabel "water purification"@en .
 
     she:Waterlogging a skos:Concept ;
@@ -9296,16 +9565,19 @@ she:metadata {
             she:SoilBiologicalActivity ;
         obo:RO_0002336 she:SoilCompaction ;
         dcterms:source <https://doi.org/10.5281/zenodo.13945384> ;
+        skos:closeMatch inrae:c_1174 ;
         skos:exactMatch agrovoc:c_8333 ;
         skos:prefLabel "waterlogging"@en .
 
     she:WesternEurope a sorepsg:Region ;
-        skos:exactMatch agrovoc:c_8364 ;
+        skos:exactMatch agrovoc:c_8364,
+            gemet:9295 ;
         skos:prefLabel "western Europe"@en .
 
     she:Woodland a skos:Concept ;
         dcterms:source she:Prout2020 ;
         skos:broader she:LandUses ;
+        skos:exactMatch inrae:c_21037 ;
         skos:prefLabel "woodland"@en .
 
     she:Abundance a skos:Concept ;
@@ -9350,6 +9622,7 @@ she:metadata {
             she:SoilFoodWebComplexity ;
         dcterms:source she:Karimi2019,
             she:Tsiafouli2015 ;
+        skos:exactMatch inrae:c_2747 ;
         skos:prefLabel "agricultural intensification"@en ;
         she:alters she:DiversityOfSoilBiotaIndividualGroups .
 
@@ -9370,7 +9643,9 @@ she:metadata {
             she:SoilQuality ;
         agrontology:isIncludedIn she:EnvironmentalQuality ;
         dcterms:source she:Bunemann2018 ;
-        skos:exactMatch agrovoc:c_431 ;
+        skos:exactMatch agrovoc:c_431,
+            inrae:c_12249,
+            gemet:13321 ;
         skos:prefLabel "animal health"@en .
 
     she:ArableCroppingSystems a skos:Concept ;
@@ -9380,6 +9655,7 @@ she:metadata {
         obo:RO_0002507 she:DNAYield ;
         skos:broader she:GenotypebasedIndicators,
             she:Microorganisms ;
+        skos:exactMatch inrae:c_25141 ;
         skos:prefLabel "archaea"@en ;
         skos:related she:MicrobialCommunityStructure .
 
@@ -9399,6 +9675,7 @@ she:metadata {
         skos:prefLabel "artificial non-agricultural vegetated areas"@en .
 
     she:Austria a schema:Country ;
+        dcterms:source <https://doi.org/10.5281/zenodo.13945384> ;
         skos:exactMatch agrovoc:c_718 ;
         skos:prefLabel "Austria"@en .
 
@@ -9423,7 +9700,8 @@ she:metadata {
 
     she:BiomassProduction a skos:Concept ;
         agrontology:causes she:NutrientUptake ;
-        skos:exactMatch agrovoc:c_adfffd29 ;
+        skos:exactMatch agrovoc:c_adfffd29,
+            inrae:c_7247 ;
         skos:narrower she:CropGrowth,
             she:TreeGrowth ;
         skos:prefLabel "biomass production"@en ;
@@ -9490,7 +9768,9 @@ she:metadata {
             she:WeatherExtremes ;
         dcterms:source <https://doi.org/10.5281/zenodo.13945384>,
             <https://doi.org/10.5281/zenodo.7892160> ;
-        skos:exactMatch agrovoc:c_1666 ;
+        skos:exactMatch agrovoc:c_1666,
+            inrae:c_11564,
+            gemet:1471 ;
         skos:prefLabel "climate change"@en .
 
     she:CommonSoilFauna a skos:Concept ;
@@ -9579,14 +9859,17 @@ she:metadata {
             she:SoilsWithGaseousEmissions .
 
     she:EasternEurope a sorepsg:Region ;
-        skos:exactMatch agrovoc:c_2448 ;
+        skos:exactMatch agrovoc:c_2448,
+            gemet:2413 ;
         skos:prefLabel "eastern Europe"@en .
 
     she:EcosystemFunctionLoss a skos:Concept ;
         skos:prefLabel "ecosystem function loss"@en .
 
     she:Eutrophication a skos:Concept ;
-        skos:exactMatch agrovoc:c_2734 ;
+        skos:exactMatch agrovoc:c_2734,
+            inrae:c_337,
+            gemet:3007 ;
         skos:prefLabel "eutrophication"@en .
 
     she:ExtensivelyManagedFarms a skos:Concept ;
@@ -9610,7 +9893,9 @@ she:metadata {
         skos:related she:WaterQuality .
 
     she:Foliage a skos:Concept ;
-        skos:exactMatch agrovoc:c_36752 ;
+        skos:exactMatch agrovoc:c_36752,
+            inrae:c_7454,
+            gemet:3350 ;
         skos:narrower she:Leaves,
             she:Needles ;
         skos:prefLabel "foliage"@en .
@@ -9618,7 +9903,8 @@ she:metadata {
     she:FoodProduction a skos:Concept ;
         obo:RO_0002335 she:SoilCompaction ;
         skos:broader she:SoilFunctions ;
-        skos:exactMatch agrovoc:c_3025 ;
+        skos:exactMatch agrovoc:c_3025,
+            inrae:c_2879 ;
         skos:prefLabel "food production"@en .
 
     she:ForestFloors a skos:Concept ;
@@ -9653,6 +9939,7 @@ she:metadata {
         skos:broader she:MicrobialBiomass,
             she:SoilAttributes,
             she:SoilBiodiversityIndicators ;
+        skos:exactMatch inrae:c_6253 ;
         skos:prefLabel "fungal biomass"@en .
 
     she:Fungivores a skos:Concept ;
@@ -9697,7 +9984,8 @@ she:metadata {
         qudt:unit om:centimetrePerDay ;
         skos:broader she:ComplexSoilPhysicalParameters,
             she:DerivedSoilProperties ;
-        skos:exactMatch agrovoc:c_25579 ;
+        skos:exactMatch agrovoc:c_25579,
+            inrae:c_13292 ;
         skos:prefLabel "hydraulic conductivity"@en .
 
     she:Imperviousness a skos:Concept ;
@@ -9717,10 +10005,13 @@ she:metadata {
 
     she:Industry a skos:Concept ;
         skos:broader she:SoilPollutingActivity ;
-        skos:exactMatch agrovoc:c_3848 ;
+        skos:exactMatch agrovoc:c_3848,
+            inrae:c_20730,
+            gemet:4279 ;
         skos:prefLabel "industry"@en .
 
     she:Italy a schema:Country ;
+        dcterms:source <https://doi.org/10.5281/zenodo.6926872> ;
         skos:exactMatch agrovoc:c_4026 ;
         skos:prefLabel "Italy"@en .
 
@@ -9731,7 +10022,9 @@ she:metadata {
         dcterms:date "2019" .
 
     she:Land a skos:Concept ;
-        skos:exactMatch agrovoc:c_4172 ;
+        skos:exactMatch agrovoc:c_4172,
+            inrae:c_22714,
+            gemet:4599 ;
         skos:prefLabel "land"@en ;
         biolink:consumed_by she:CommercialAreas,
             she:IndustrialAreas,
@@ -9742,7 +10035,8 @@ she:metadata {
         agrontology:affects she:EcosystemServices ;
         dcterms:source she:Johnson1997 ;
         skos:broader she:EnvironmentalDegradation ;
-        skos:exactMatch agrovoc:c_34823 ;
+        skos:exactMatch agrovoc:c_34823,
+            gemet:15214 ;
         skos:narrower she:SoilDegradation ;
         skos:prefLabel "land degradation"@en ;
         she:requires she:LandDegradationIndicators .
@@ -9803,7 +10097,9 @@ she:metadata {
             she:HotSummers,
             she:MildWinters,
             she:ShortRainPeriods ;
-        skos:exactMatch agrovoc:c_4697 ;
+        skos:exactMatch agrovoc:c_4697,
+            inrae:c_1331,
+            gemet:12063 ;
         skos:prefLabel "Mediterranean climate"@en .
 
     she:MicrobialBiomassIndicators a skos:Concept ;
@@ -9882,6 +10178,8 @@ she:metadata {
     she:Nitrate a skos:Concept ;
         agrontology:hasSymbol "NO₃⁻"@en ;
         skos:broader she:Acids ;
+        skos:exactMatch inrae:c_15698,
+            gemet:5593 ;
         skos:prefLabel "nitrate"@en ;
         she:isConvertedFrom she:AmmoniumNitrogen .
 
@@ -9967,6 +10265,7 @@ she:metadata {
             she:PickettCadenasso2009,
             she:Pouyat2006 ;
         skos:broader she:AnalyticalMethodologies ;
+        skos:exactMatch inrae:c_690 ;
         skos:prefLabel "phosphorus availability"@en ;
         she:limits she:CropProduction .
 
@@ -10017,7 +10316,9 @@ she:metadata {
             she:ForestLand,
             she:Grassland ;
         skos:broader she:LandscapeFunctions ;
-        skos:exactMatch agrovoc:c_6477 ;
+        skos:exactMatch agrovoc:c_6477,
+            inrae:c_22196,
+            gemet:7001 ;
         skos:prefLabel "recreation"@en .
 
     she:RegionalSRisk a sio:SIO_000510 ;
@@ -10032,7 +10333,8 @@ she:metadata {
         obo:RO_0002336 she:ExtensivelyManagedFarms,
             she:OrganicFarms ;
         dcterms:source she:Bloem2006b ;
-        skos:exactMatch agrovoc:c_9421 ;
+        skos:exactMatch agrovoc:c_9421,
+            gemet:7176 ;
         skos:prefLabel "respiration"@en ;
         skos:related she:SoilMicrobialActivity .
 
@@ -10112,6 +10414,14 @@ she:metadata {
         obo:RO_0017004 she:SoilSequestrationPotential ;
         skos:altLabel "soil carbon pool"@en ;
         skos:prefLabel "soil carbon pools"@en .
+
+    she:SoilCarbonStorage a skos:Concept ;
+        agrontology:isAffectedBy [ rdf:object she:SoilPollution ;
+                she:requires she:HighPollutantConcentrations ] ;
+        obo:RO_0002336 she:HighNutrientStatus ;
+        bao:BAO_0095002 she:SoilRespiration ;
+        skos:broader she:SoilServices ;
+        skos:prefLabel "soil carbon storage"@en .
 
     she:SoilChemicalProperties a skos:Concept ;
         agrontology:isAffectedBy she:SoilThreats ;
@@ -10207,6 +10517,7 @@ she:metadata {
             she:Smearing ;
         agrontology:isPreventedBy she:BindingForces ;
         sio:equivalentTo she:Rearrangement ;
+        skos:closeMatch inrae:c_7337 ;
         skos:prefLabel "strain"@en .
 
     she:StressKind a skos:Concept ;
@@ -10273,6 +10584,7 @@ she:metadata {
         sio:SIO_000202 she:Copper,
             she:Metals,
             she:Zinc ;
+        skos:exactMatch gemet:432 ;
         skos:prefLabel "animal manure"@en .
 
     she:AnthropogenicErosion a skos:Concept ;
@@ -10331,6 +10643,8 @@ she:metadata {
             she:Horn2022,
             she:Schrader1999 ;
         skos:closeMatch agrovoc:c_4b49522d ;
+        skos:exactMatch inrae:c_9720,
+            gemet:839 ;
         skos:narrower she:CollembolaFrequency,
             she:EarthwormFrequency,
             she:NematodeFrequency ;
@@ -10345,13 +10659,15 @@ she:metadata {
         dcterms:source she:Dexter2008,
             she:Schjonnning2012 ;
         skos:broader she:SoilTexture ;
-        skos:exactMatch iso11074:3.74 ;
+        skos:exactMatch inrae:c_18093,
+            iso11074:3.74 ;
         skos:prefLabel "clay content"@en .
 
     she:Cornu2021 a dcterms:BibliographicResource ;
         dcterms:date "2021" .
 
     she:CriticalLevel a skos:Concept ;
+        skos:exactMatch gemet:1864 ;
         skos:prefLabel "critical level"@en ;
         skos:related she:SoilPollutionIndicator ;
         she:isIndicatedBy she:GroundwaterThreshold,
@@ -10380,7 +10696,9 @@ she:metadata {
             she:PlantProtectionProducts ;
         skos:broader she:Endpoints,
             she:ProtectionTargets ;
-        skos:exactMatch agrovoc:c_10463 ;
+        skos:exactMatch agrovoc:c_10463,
+            inrae:c_5079,
+            gemet:2339 ;
         skos:prefLabel "drinking water"@en .
 
     she:DustInfiltration a skos:Concept ;
@@ -10445,7 +10763,8 @@ she:metadata {
     she:GasExchange a skos:Concept ;
         agrontology:isIncludedIn she:SoilEcologicalFunctions ;
         dcterms:source she:Zhao2012 ;
-        skos:exactMatch agrovoc:c_11098 ;
+        skos:exactMatch agrovoc:c_11098,
+            inrae:c_8341 ;
         skos:prefLabel "gas exchange"@en .
 
     she:GeneralSoilIndicators a skos:Concept ;
@@ -10469,7 +10788,8 @@ she:metadata {
             she:SoilCompaction ;
         agrontology:isIncludedIn she:SoilBiochemicalProcesses ;
         dcterms:source <https://doi.org/10.5281/zenodo.7656722> ;
-        skos:exactMatch agrovoc:c_36198c2c ;
+        skos:exactMatch agrovoc:c_36198c2c,
+            gemet:15192 ;
         skos:prefLabel "greenhouse gas emissions"@en .
 
     she:HarvestingErosion a skos:Concept ;
@@ -10497,7 +10817,8 @@ she:metadata {
         dcterms:date "2007" .
 
     she:LandManagement a skos:Concept ;
-        skos:exactMatch agrovoc:c_24866 ;
+        skos:exactMatch agrovoc:c_24866,
+            inrae:c_21762 ;
         skos:prefLabel "land management"@en ;
         skos:related she:GAEC5 ;
         she:limits she:SoilErosion ;
@@ -10509,7 +10830,9 @@ she:metadata {
         skos:broader she:CommonlyRegulatedHeavyMetals,
             she:MonitoredHeavyMetals,
             she:SelectedPollutants ;
-        skos:exactMatch agrovoc:c_4235 ;
+        skos:exactMatch agrovoc:c_4235,
+            inrae:c_15746,
+            gemet:4723 ;
         skos:prefLabel "lead"@en ;
         she:isToxicTo [ af-x:AFX_0000408 she:LowConcentrations ;
                 rdf:object she:HumanBeings,
@@ -10568,11 +10891,13 @@ she:metadata {
         agrontology:isIncludedIn she:EnvironmentalQuality ;
         obo:RO_0002335 she:SoilCompaction ;
         dcterms:source she:Bunemann2018 ;
-        skos:exactMatch agrovoc:c_25398 ;
+        skos:exactMatch agrovoc:c_25398,
+            inrae:c_11833 ;
         skos:prefLabel "plant health"@en .
 
     she:PlantPart a skos:Concept ;
         agrontology:isPropertyOf she:TypeOfLitter ;
+        skos:exactMatch inrae:c_26194 ;
         skos:narrower she:Leaf,
             she:Needle,
             she:Root,
@@ -10605,7 +10930,8 @@ she:metadata {
             she:Macronutrients,
             she:Nutrients,
             she:SoilNutrients ;
-        skos:exactMatch agrovoc:c_6139 ;
+        skos:exactMatch agrovoc:c_6139,
+            inrae:c_15734 ;
         skos:prefLabel "potassium"@en ;
         wdt:P1889 she:SoilNitrogen .
 
@@ -10621,7 +10947,8 @@ she:metadata {
     she:SDG a dcterms:Policy,
             sio:SIO_010423 ;
         agrontology:hasAbbreviation "SDG"@en ;
-        skos:exactMatch agrovoc:c_013b16cd ;
+        skos:exactMatch agrovoc:c_013b16cd,
+            gemet:15303 ;
         skos:prefLabel "sustainable development goals"@en ;
         skos:related she:EssentialBiodiversityVariables .
 
@@ -10718,7 +11045,8 @@ she:metadata {
             she:Ungaro2022 ;
         sio:SIO_000128 she:UrbanGreenSoils ;
         skos:broader she:PhenotypebasedIndicators ;
-        skos:exactMatch agrovoc:c_7169 ;
+        skos:exactMatch agrovoc:c_7169,
+            inrae:c_5616 ;
         skos:narrower she:GrounddwellingOrganisms,
             she:MacroSoilInvertebrates ;
         skos:prefLabel "soil fauna"@en ;
@@ -10730,6 +11058,7 @@ she:metadata {
         dcterms:source she:Bloem2006b,
             she:Gaublomme2006 ;
         sio:SIO_000557 she:MicrobialBiomassIndicators ;
+        skos:exactMatch inrae:c_1144 ;
         skos:prefLabel "soil microbial activity"@en ;
         skos:related she:Respiration .
 
@@ -10765,7 +11094,8 @@ she:metadata {
             she:StateOfSoils ;
         dcterms:source she:EUSoilThematicStrategy2006,
             she:FAOITPS2015 ;
-        skos:exactMatch iso11074:3.463 ;
+        skos:exactMatch inrae:c_3587,
+            iso11074:3.463 ;
         skos:prefLabel "soil protection"@en .
 
     she:SoilRisk a skos:Concept ;
@@ -10787,10 +11117,13 @@ she:metadata {
 
     she:SoilStructure a skos:Concept ;
         agrontology:measures she:HabitatExtent ;
+        dcterms:source <https://doi.org/10.5281/zenodo.12672748> ;
         bao:BAO_0095002 she:SOCClayRatio ;
         skos:broader she:AnalyticalMethodologies,
             she:ObservableSoilProperties ;
         skos:exactMatch agrovoc:c_7196,
+            inrae:c_11453,
+            gemet:7895,
             iso11074:3.475 ;
         skos:prefLabel "soil structure"@en .
 
@@ -10849,6 +11182,8 @@ she:metadata {
         sorelsp:below she:TillageDepth ;
         skos:definition "The subsoil in agriculture is defined as soil below the tillage depth (usually around 20-35cm)."@en ;
         skos:exactMatch agrovoc:c_7486,
+            inrae:c_11573,
+            gemet:8167,
             iso11074:3.507 ;
         skos:prefLabel "subsoil"@en ;
         skos:related she:FreezeThawCycles .
@@ -10890,7 +11225,8 @@ she:metadata {
                 rdf:object she:Inputs ] ;
         sorelph:from she:Industry,
             she:Traffic ;
-        skos:exactMatch agrovoc:c_36094 ;
+        skos:exactMatch agrovoc:c_36094,
+            inrae:c_4975 ;
         skos:prefLabel "atmospheric deposition"@en .
 
     she:Belgium a schema:Country ;
@@ -10914,13 +11250,16 @@ she:metadata {
                     she:NFertiliserInputs,
                     she:PFertiliserInputs ] ;
         skos:broader she:BiomassProduction ;
+        skos:exactMatch inrae:c_7715 ;
         skos:prefLabel "crop growth"@en ;
         skos:related she:ProductionService .
 
     she:CropProduction a skos:Concept ;
         dcterms:source she:Holland2019,
             she:Walker2011 ;
-        skos:exactMatch agrovoc:c_5976 ;
+        skos:exactMatch agrovoc:c_5976,
+            inrae:c_4022,
+            gemet:13209 ;
         skos:prefLabel "crop production"@en ;
         she:isLimitedBy she:CalciumAvailability,
             she:MagnesiumAvailability,
@@ -10934,6 +11273,8 @@ she:metadata {
             she:HumanHealth,
             she:PlantHealth ;
         dcterms:source she:Bunemann2018 ;
+        skos:exactMatch inrae:c_4172,
+            gemet:2912 ;
         skos:prefLabel "environmental quality"@en .
 
     she:ExternalFactors a skos:Concept ;
@@ -10952,7 +11293,8 @@ she:metadata {
         agrontology:isAffectedBy she:SoilOrganicCarbon ;
         agrontology:isIncludedIn she:SoilEcologicalFunctions ;
         skos:broader she:LandscapeFunctions ;
-        skos:exactMatch agrovoc:c_10967 ;
+        skos:exactMatch agrovoc:c_10967,
+            inrae:c_11669 ;
         skos:prefLabel "food security"@en .
 
     she:ForestLand a skos:Concept ;
@@ -10971,9 +11313,9 @@ she:metadata {
             she:FunctionalDiversityOfFungi,
             she:FunctionalDiversityOfSelectedInvertebrates,
             she:MicroscopicAnalysisOfFunctionalGroupsOfNematodes ;
-        dcterms:source <https://doi.org/10.5281/zenodo.1198839> ;
         skos:broader she:EssentialBiodiversityVariables ;
-        skos:exactMatch agrovoc:c_7ee18365 ;
+        skos:exactMatch agrovoc:c_7ee18365,
+            inrae:c_9542 ;
         skos:prefLabel "functional diversity"@en .
 
     she:GullyErosion a skos:Concept ;
@@ -10982,7 +11324,8 @@ she:metadata {
         obo:RO_0000053 she:Gullies ;
         skos:broader she:SoilErosionByWater ;
         skos:definition "Gully erosion is a special and very intense form of water erosion in areas with concentrated run-off leading to large gullies as the typical landform."@en ;
-        skos:exactMatch agrovoc:c_25010 ;
+        skos:exactMatch agrovoc:c_25010,
+            inrae:c_11418 ;
         skos:prefLabel "gully erosion"@en .
 
     she:HealthyVegetation a skos:Concept ;
@@ -11033,6 +11376,7 @@ she:metadata {
             she:OrganicFarms ;
         dcterms:source she:Bloem2006b,
             she:Breure2004 ;
+        skos:exactMatch inrae:c_6432 ;
         skos:narrower she:BacterialBiomass,
             she:FungalBiomass ;
         skos:prefLabel "microbial biomass"@en ;
@@ -11110,6 +11454,7 @@ she:metadata {
             she:IntendedWaterBodyUse ;
         obo:RO_0002508 she:SoilScreeningValues,
             she:WaterQualityThreshold ;
+        skos:exactMatch inrae:c_4663 ;
         skos:prefLabel "risk level"@en .
 
     she:SOCLosses a skos:Concept ;
@@ -11198,7 +11543,8 @@ she:metadata {
             she:SoilCarbonStorage,
             she:SoilQuality ;
         skos:broader she:EssentialBiodiversityVariables ;
-        skos:exactMatch agrovoc:c_33553 ;
+        skos:exactMatch agrovoc:c_33553,
+            inrae:c_7979 ;
         skos:prefLabel "soil respiration"@en .
 
     she:SurfaceRunoff a skos:Concept ;
@@ -11291,7 +11637,9 @@ she:metadata {
             she:Macronutrients,
             she:PlantNutrients,
             she:SoilNutrients ;
-        skos:exactMatch agrovoc:c_1196 ;
+        skos:exactMatch agrovoc:c_1196,
+            inrae:c_15775,
+            gemet:1111 ;
         skos:prefLabel "calcium"@en ;
         wdt:P1889 she:SoilNitrogen .
 
@@ -11301,7 +11649,9 @@ she:metadata {
             she:Vegetation ;
         skos:broader she:ExternalFactors,
             she:RegionalConditions ;
-        skos:exactMatch agrovoc:c_1665 ;
+        skos:exactMatch agrovoc:c_1665,
+            inrae:c_341,
+            gemet:1462 ;
         skos:prefLabel "climate"@en ;
         skos:related she:SOCContents .
 
@@ -11312,6 +11662,7 @@ she:metadata {
             she:Recreation ;
         skos:broader she:LandUses ;
         skos:closeMatch agrovoc:c_2808 ;
+        skos:exactMatch inrae:c_4893 ;
         skos:prefLabel "cropland"@en ;
         biolink:consumed_by she:LandTake .
 
@@ -11346,6 +11697,7 @@ she:metadata {
         agrontology:isCausedBy she:SurfaceRunoff ;
         sio:equivalentTo she:SheetwashErosion ;
         skos:broader she:SoilErosionByWater ;
+        skos:closeMatch inrae:c_1551 ;
         skos:exactMatch agrovoc:c_dc754417 ;
         skos:prefLabel "interrill erosion"@en .
 
@@ -11390,6 +11742,7 @@ she:metadata {
         obo:RO_0002335 she:SoilBiologicalDegradation ;
         dcterms:source she:Pribyl2010 ;
         skos:broader she:NTransformationProcesses ;
+        skos:exactMatch gemet:5269 ;
         skos:prefLabel "mineralisation"@en ;
         skos:related she:SoilOrganicMatter .
 
@@ -11518,6 +11871,8 @@ she:metadata {
     she:SoilBiota a skos:Concept ;
         agrontology:isAffectedBy she:LandUses ;
         skos:broader she:ObservableSoilProperties ;
+        skos:exactMatch inrae:c_5825,
+            gemet:15297 ;
         skos:narrower she:Macrofauna,
             she:Mesofauna,
             she:Microfauna,
@@ -11596,7 +11951,9 @@ she:metadata {
     she:Vegetation a skos:Concept ;
         obo:RO_0002434 she:Climate,
             she:Soils ;
-        skos:exactMatch agrovoc:c_8176 ;
+        skos:exactMatch agrovoc:c_8176,
+            inrae:c_8895,
+            gemet:8922 ;
         skos:prefLabel "vegetation"@en ;
         skos:related she:SOCContents ;
         she:absorbs she:RedLight ;
@@ -11612,7 +11969,9 @@ she:metadata {
 
     she:Air a skos:Concept ;
         agrontology:compose she:Soils ;
-        skos:exactMatch agrovoc:c_224 ;
+        skos:exactMatch agrovoc:c_224,
+            inrae:c_4994,
+            gemet:245 ;
         skos:prefLabel "air"@en .
 
     she:Biodiversity a skos:Concept ;
@@ -11641,6 +12000,8 @@ she:metadata {
             <https://doi.org/10.5281/zenodo.6772048> ;
         skos:broader she:EcosystemServices ;
         skos:exactMatch agrovoc:c_33949,
+            inrae:c_5836,
+            gemet:827,
             iso11074:3.45 ;
         skos:narrower she:PlantSpeciesDiversity ;
         skos:prefLabel "biodiversity"@en .
@@ -11662,7 +12023,8 @@ she:metadata {
             she:ObservableSoilProperties,
             she:SoilAttributes,
             she:TopsoilCompactionParameters ;
-        skos:exactMatch iso11074:3.62 ;
+        skos:exactMatch inrae:c_991,
+            iso11074:3.62 ;
         skos:prefLabel "bulk density"@en .
 
     she:Chartin2022 a dcterms:BibliographicResource ;
@@ -11695,6 +12057,8 @@ she:metadata {
             she:Recreation ;
         dcterms:source she:Prout2020 ;
         skos:broader she:LandUses ;
+        skos:exactMatch inrae:c_6e7e381e,
+            gemet:3733 ;
         skos:prefLabel "grassland"@en ;
         biolink:consumed_by she:LandTake .
 
@@ -11732,7 +12096,8 @@ she:metadata {
             she:Micronutrients,
             she:PlantNutrients,
             she:SoilNutrients ;
-        skos:exactMatch agrovoc:c_4517 ;
+        skos:exactMatch agrovoc:c_4517,
+            inrae:c_15747 ;
         skos:prefLabel "magnesium"@en ;
         wdt:P1889 she:SoilNitrogen .
 
@@ -11807,6 +12172,8 @@ she:metadata {
         skos:broader she:SoilAttributes,
             she:TopsoilCompactionParameters ;
         skos:exactMatch agrovoc:c_7199,
+            inrae:c_394,
+            gemet:7898,
             iso11074:3.476 ;
         skos:narrower she:ClayContent ;
         skos:prefLabel "soil texture"@en ;
@@ -11825,7 +12192,9 @@ she:metadata {
 
     she:SurfaceWater a skos:Concept ;
         skos:altLabel "surface waters"@en ;
-        skos:exactMatch agrovoc:c_25317 ;
+        skos:exactMatch agrovoc:c_25317,
+            inrae:c_4469,
+            gemet:8229 ;
         skos:prefLabel "surface water"@en .
 
     she:Topsoil a skos:Concept ;
@@ -11834,6 +12203,7 @@ she:metadata {
         agrontology:isAffectedBy she:CurrentHarmfulPractices,
             she:FreezeThawCycles,
             she:SoilDeformation ;
+        skos:closeMatch inrae:c_423 ;
         skos:exactMatch agrovoc:c_7812,
             iso11074:3.536 ;
         skos:prefLabel "topsoil"@en .
@@ -11850,7 +12220,9 @@ she:metadata {
             she:Micronutrients,
             she:MonitoredHeavyMetals,
             she:Nutrients ;
-        skos:exactMatch agrovoc:c_8517 ;
+        skos:exactMatch agrovoc:c_8517,
+            inrae:c_15783,
+            gemet:9412 ;
         skos:prefLabel "zinc"@en ;
         she:isEssentialFor she:ArableCrops ;
         she:isToxicTo [ af-x:AFX_0000408 she:HighConcentrations ;
@@ -11894,7 +12266,7 @@ she:metadata {
             she:Mercury,
             she:Nickel,
             she:Zinc ;
-        skos:prefLabel "heavy metals"@en .
+        skos:prefLabel "monitored heavy metals"@en .
 
     she:Olson2014 a dcterms:BibliographicResource ;
         dcterms:date "2014" .
@@ -11976,6 +12348,7 @@ she:metadata {
             she:ObservableSoilProperties,
             she:PlantNutrients,
             she:SoilNutrients ;
+        skos:exactMatch inrae:c_13588 ;
         skos:prefLabel "soil phosphorus"@en ;
         wdt:P1889 she:SoilNitrogen ;
         she:inputsFrom [ agrontology:affects she:CropYields ;
@@ -11995,7 +12368,9 @@ she:metadata {
         obo:RO_0002335 she:HighNutrientStatus,
             she:HighPhosphorusStatus,
             she:SoilAcidification ;
-        skos:exactMatch agrovoc:c_16061 ;
+        skos:exactMatch agrovoc:c_16061,
+            inrae:c_4669,
+            gemet:9214 ;
         skos:prefLabel "water quality"@en ;
         skos:related she:FilterFunction .
 
@@ -12128,7 +12503,9 @@ she:metadata {
             she:Metals,
             she:MonitoredHeavyMetals,
             she:SelectedPollutants ;
-        skos:exactMatch agrovoc:c_1178 ;
+        skos:exactMatch agrovoc:c_1178,
+            inrae:c_15828,
+            gemet:1100 ;
         skos:prefLabel "cadmium"@en .
 
     she:CommonlyRegulatedHeavyMetals a skos:Concept ;
@@ -12156,7 +12533,9 @@ she:metadata {
             she:Micronutrients,
             she:MonitoredHeavyMetals,
             she:Nutrients ;
-        skos:exactMatch agrovoc:c_1868 ;
+        skos:exactMatch agrovoc:c_1868,
+            inrae:c_15666,
+            gemet:1792 ;
         skos:prefLabel "copper"@en ;
         she:isEssentialFor she:ArableCrops ;
         she:isToxicTo [ af-x:AFX_0000408 she:HighConcentrations ;
@@ -12201,6 +12580,8 @@ she:metadata {
         sio:SIO_000202 she:Herbicides,
             she:PlantProtectionProducts ;
         skos:exactMatch agrovoc:c_3391,
+            inrae:c_499,
+            gemet:3780,
             iso11074:3.191 ;
         skos:prefLabel "groundwater"@en .
 
@@ -12272,7 +12653,9 @@ she:metadata {
             she:PointSources ;
         skos:broader she:SoilIndicators,
             she:SoilThreatIndicators ;
-        skos:exactMatch agrovoc:c_7183 ;
+        skos:exactMatch agrovoc:c_7183,
+            inrae:c_4843,
+            gemet:7880 ;
         skos:prefLabel "soil pollution"@en ;
         she:isEssentialFor she:Soils .
 
@@ -12347,7 +12730,9 @@ she:metadata {
             she:SoilEcologicalFunctions ;
         skos:broader she:Endpoints,
             she:ProtectionTargets ;
-        skos:exactMatch agrovoc:c_c722a312 ;
+        skos:exactMatch agrovoc:c_c722a312,
+            inrae:c_12183,
+            gemet:4051 ;
         skos:prefLabel "human health"@en ;
         skos:related she:Intake .
 
@@ -12414,6 +12799,8 @@ she:metadata {
             she:MosimannSanders2004 ;
         sio:SIO_000292 she:AgriculturalPolicies ;
         skos:exactMatch agrovoc:c_7170,
+            inrae:c_1975,
+            gemet:7860,
             iso11074:3.451 ;
         skos:prefLabel "soil fertility"@en ;
         skos:related she:SoilErosion,
@@ -12436,6 +12823,7 @@ she:metadata {
         skos:closeMatch agrovoc:c_a9645d28 ;
         skos:definition "Soil health is defined as the actual capacity of a soil to perform its core functions and to provide ecosystem services."@en,
             "The definition of soil quality and soil health is the capacity of a soil to function within ecosystems and land-use boundaries to sustain biological productivity, maintain environmental quality, and promote plant and animal health."@en ;
+        skos:exactMatch inrae:c_2d69fde2 ;
         skos:prefLabel "soil health"@en .
 
     she:SoilNutrientStatus a skos:Concept ;
@@ -12480,7 +12868,9 @@ she:metadata {
 
     she:Europe a schema:Continent ;
         af-x:AFX_0002727 [ agrontology:measures she:LandRecyclingPotential ] ;
-        skos:exactMatch agrovoc:c_2724 ;
+        dcterms:source <https://doi.org/10.5281/zenodo.14733169> ;
+        skos:exactMatch agrovoc:c_2724,
+            gemet:2992 ;
         skos:prefLabel "Europe"@en .
 
     she:PrecompressionStress a skos:Concept ;
@@ -12529,6 +12919,8 @@ she:metadata {
         dcterms:source <https://doi.org/10.5281/zenodo.13945384> ;
         skos:broader she:SoilThreatIndicators ;
         skos:definition "Soil acidification occurs when the acid neutralising capacity of the soil is reduced, which leads to a decrease in pH."@en ;
+        skos:exactMatch inrae:c_900,
+            gemet:7844 ;
         skos:prefLabel "soil acidification"@en .
 
     she:TerrestrialEcosystems a skos:Concept ;
@@ -12618,7 +13010,8 @@ she:metadata {
         agrontology:compose she:Soils ;
         dcterms:source she:Verstraeten2006 ;
         skos:broader she:EnvironmentalCompartments ;
-        skos:exactMatch agrovoc:c_8309 ;
+        skos:exactMatch agrovoc:c_8309,
+            inrae:c_4786 ;
         skos:prefLabel "water"@en .
 
     she:ComplexSoilPhysicalParameters a skos:Concept ;
@@ -12780,7 +13173,8 @@ she:metadata {
         bao:BAO_0002586 she:NitrogenousFertiliserNeed ;
         skos:broader she:ObservableSoilProperties,
             she:SoilProperties ;
-        skos:exactMatch agrovoc:c_389fe908 ;
+        skos:exactMatch agrovoc:c_389fe908,
+            inrae:c_13665 ;
         skos:prefLabel "soil organic carbon"@en .
 
     she:SoilServices a skos:Concept ;
@@ -12790,9 +13184,9 @@ she:metadata {
             she:SoilAcidification ;
         dcterms:source she:FAOITPS2015 ;
         sio:SIO_000066 she:Soils ;
-        skos:narrower she:CarbonStorage,
-            she:FilterFunction,
+        skos:narrower she:FilterFunction,
             she:ProductionService,
+            she:SoilCarbonStorage,
             she:SoilDwellingOrganismHabitat,
             she:WaterStorage ;
         skos:prefLabel "soil services"@en ;
@@ -12975,6 +13369,8 @@ she:metadata {
         skos:definition "The definition of soil quality and soil health is the capacity of a soil to function within ecosystems and land-use boundaries to sustain biological productivity, maintain environmental quality, and promote plant and animal health."@en,
             "soil quality is defined as the inherent capacity which provides the basic frame within which a soil evolves."@en ;
         skos:exactMatch agrovoc:c_a9645d28,
+            inrae:c_661,
+            gemet:7884,
             iso11074:3.466 ;
         skos:prefLabel "soil quality"@en ;
         skos:related she:SoilBiologicalProperties,
@@ -13165,6 +13561,7 @@ she:metadata {
             she:Nutrients,
             she:ObservableSoilProperties,
             she:SoilNutrients ;
+        skos:exactMatch inrae:c_13527 ;
         skos:prefLabel "soil nitrogen"@en ;
         wdt:P1889 she:Calcium,
             she:Magnesium,
@@ -13201,6 +13598,8 @@ she:metadata {
             she:SoilpH ;
         dcterms:source she:Rutgers2012 ;
         skos:broader she:EcologicalIndicators ;
+        skos:exactMatch inrae:c_642,
+            gemet:15296 ;
         skos:prefLabel "soil biodiversity"@en .
 
     she:SoilErosion a skos:Concept ;
@@ -13241,6 +13640,8 @@ she:metadata {
         skos:closeMatch agrovoc:c_2651 ;
         skos:definition "Soil erosion is the detachment, transport and sedimentation of soil particles by water or by wind."@en,
             "Soil erosion refers to the loss of fertile topsoil after erosive rain events on sensitive soils, largely in the absence of sufficient vegetation cover."@en ;
+        skos:exactMatch inrae:c_1543,
+            gemet:7858 ;
         skos:narrower she:AnthropogenicErosion,
             she:SoilErosionByWater,
             she:SoilErosionByWind ;
@@ -13310,6 +13711,7 @@ she:metadata {
             she:SoilSealingChange ;
         skos:broader she:SoilIndicators,
             she:SoilThreatIndicators ;
+        skos:closeMatch inrae:c_11338 ;
         skos:definition "Soil sealing is the destruction or covering of the soil by an impermeable material."@en,
             "Soil sealing refers to the destruction or covering of soil by buildings, other constructions and layers of impermeable artificial material (asphalt, concrete, etc.)."@en ;
         skos:exactMatch agrovoc:c_f9554e7c ;
@@ -13343,7 +13745,8 @@ she:metadata {
             she:Schwilch2016 ;
         sio:SIO_000066 she:Soils ;
         skos:definition "Ecosystem services can be summarised as the goods and benefits people and societies receive from ecosystems."@en ;
-        skos:exactMatch agrovoc:c_1348040570280 ;
+        skos:exactMatch agrovoc:c_1348040570280,
+            gemet:15138 ;
         skos:narrower she:Biodiversity,
             she:GroundwaterRecharge,
             she:LifeSupportFunctions,
@@ -13402,7 +13805,9 @@ she:metadata {
             she:Johnson1997 ;
         skos:broader she:LandDegradation ;
         skos:definition "Soil degradation can be defined as a decline in soil quality, resulting in the reduced functioning of the soil."@en ;
-        skos:exactMatch agrovoc:c_7168 ;
+        skos:exactMatch agrovoc:c_7168,
+            inrae:c_960,
+            gemet:7857 ;
         skos:narrower she:Badlands,
             she:PermanentGullying ;
         skos:prefLabel "soil degradation"@en ;
@@ -13449,7 +13854,8 @@ she:metadata {
         bao:BAO_0002586 she:NitrogenousFertiliserNeed ;
         skos:broader she:SoilAttributes ;
         skos:definition "SOM is the sum of all dead organic components at various stages of decomposition in a soil, which are made from basic elements including carbon, nitrogen, oxygen, hydrogen and an array of attached cations and ions. Some definitions also include undecayed plant and animal residues as well as microbial biomass."@en ;
-        skos:exactMatch agrovoc:c_35657 ;
+        skos:exactMatch agrovoc:c_35657,
+            inrae:c_336 ;
         skos:prefLabel "soil organic matter"@en ;
         skos:related she:DeadOrganicComponents,
             she:Decomposition,
@@ -13550,7 +13956,9 @@ she:metadata {
         sio:SIO_000636 she:SoilErosion ;
         skos:broader she:SoilThreatIndicators ;
         skos:definition "Soil compaction occurs primarily if the internal soil strength is exceeded by additional stress."@en ;
-        skos:exactMatch agrovoc:c_7163 ;
+        skos:exactMatch agrovoc:c_7163,
+            inrae:c_2004,
+            gemet:7850 ;
         skos:narrower she:SubsoilCompaction,
             she:TopsoilCompaction ;
         skos:prefLabel "soil compaction"@en ;
@@ -13675,10 +14083,17 @@ she:metadata {
 }
 
 she:augmented {
+    <https://doi.org/10.3897/aca.8.e149257> dcterms:subject "soil greenhouse" .
+
+    <https://doi.org/10.5061/dryad.1g1jwstx3> dcterms:subject "grazing activity",
+            "nitrogen soil" .
+
     <https://doi.org/10.5061/dryad.2280gb5rk> dcterms:subject "elevation soil",
             "fungal diversity" .
 
     <https://doi.org/10.5061/dryad.8cz8w9gpg> dcterms:subject "soil microbial" .
+
+    <https://doi.org/10.5061/dryad.p0jn1> dcterms:subject "ecosystems soil" .
 
     <https://doi.org/10.5061/dryad.p8cz8w9qv> dcterms:subject "archaea declined",
             "forest soil",
@@ -13687,12 +14102,14 @@ she:augmented {
     <https://doi.org/10.5194/essd-16-4735-2024> dcterms:subject "soil data",
             "standardised soil" .
 
-    <https://doi.org/10.5281/zenodo.10397954> dcterms:subject "anaerobic germination",
-            "rice genotypes" .
-
-    <https://doi.org/10.5281/zenodo.1065954> dcterms:subject "rainfall mapping" .
+    <https://doi.org/10.5281/zenodo.1422970> dcterms:subject she:TreeGrowth,
+            "soillabatstri soil" .
 
     <https://doi.org/10.5281/zenodo.14514458> dcterms:subject "ai hr" .
+
+    <https://doi.org/10.5281/zenodo.14524990> dcterms:subject she:SoilRespiration,
+            "and soil",
+            "soil profile" .
 
     <https://doi.org/10.5281/zenodo.14721139> dcterms:subject "soil data",
             "soilgrids isric" .
@@ -13711,23 +14128,16 @@ she:augmented {
             "kansas agricultural",
             "ksustl irrigationrecs" .
 
-    <https://doi.org/10.5281/zenodo.6536275> dcterms:subject "agriculture et",
-            "rural liaison" .
-
-    <https://doi.org/10.5281/zenodo.7720703> dcterms:subject "lunar regolith" .
-
-    <https://doi.org/10.5281/zenodo.1422970> dcterms:subject she:TreeGrowth,
-            "soillabatstri soil" .
-
-    <https://doi.org/10.5281/zenodo.14524990> dcterms:subject she:SoilRespiration,
-            "and soil",
-            "soil profile" .
-
     <https://doi.org/10.5281/zenodo.545670> dcterms:subject she:Soils,
             "celebrating soils" .
 
     <https://doi.org/10.5281/zenodo.545671> dcterms:subject she:Soils,
             "celebrating soils" .
+
+    <https://doi.org/10.5281/zenodo.6536275> dcterms:subject "agriculture et",
+            "rural liaison" .
+
+    <https://doi.org/10.5281/zenodo.7720703> dcterms:subject "lunar regolith" .
 
     <https://doi.org/10.7291/D1CD6F> dcterms:subject she:SoilNutrients .
 }

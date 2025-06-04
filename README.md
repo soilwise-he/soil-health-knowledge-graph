@@ -8,10 +8,6 @@
 
 ![image](https://github.com/soilwise-he/soil-health-knowledge-graph/blob/main/imgs/text2KG.svg)
 
-## To-do
-
-See [Issues](https://github.com/soilwise-he/soil-health-knowledge-graph/issues).
-
 ## Ontologies/Schemas imported
 
 - [SKOS Core](https://www.w3.org/2009/08/skos-reference/skos.html)
@@ -39,3 +35,7 @@ See [Issues](https://github.com/soilwise-he/soil-health-knowledge-graph/issues).
 - [GloSIS ontology](https://glosis-ld.github.io/glosis/)
 - [INRAE Thesaurus](http://opendata.inrae.fr/thesaurusINRAE/)
 - [GEMET Thesaurus](https://www.eionet.europa.eu/gemet/)
+
+## To-do
+
+See [Issues](https://github.com/soilwise-he/soil-health-knowledge-graph/issues).
