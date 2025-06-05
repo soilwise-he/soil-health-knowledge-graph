@@ -29,790 +29,790 @@
 
 # Classes
 skos:Concept a rdfs:Class ;
-    rdfs:label "Concept" .
+    skos:prefLabel "Concept" .
 
 dcterms:BibliographicResource a rdfs:Class ;
-    rdfs:label "Bibliographic Resource" .
+    skos:prefLabel "Bibliographic Resource" .
 
 dcterms:Policy a rdfs:Class ;
-    rdfs:label "Policy" .
+    skos:prefLabel "Policy" .
 
 dcterms:Standard a rdfs:Class ;
-    rdfs:label "Standard" .
+    skos:prefLabel "Standard" .
 
 af-r:AFR_0000916 a rdfs:Class ;
-    rdfs:label "Classification" .
+    skos:prefLabel "Classification" .
 
 sio:SIO_000510 a rdfs:Class ;
-    rdfs:label "Model" .
+    skos:prefLabel "Model" .
 
 sio:SIO_000368 a rdfs:Class ;
-    rdfs:label "Equation" .
+    skos:prefLabel "Equation" .
 
 sohuj:Regulation a rdfs:Class ;
-    rdfs:label "Regulation" .
+    skos:prefLabel "Regulation" .
 
 sio:SIO_010423 a rdfs:Class ;
-    rdfs:label "Target" .
+    skos:prefLabel "Target" .
 
 schema:Continent a rdfs:Class ;
-    rdfs:label "Continent" .
+    skos:prefLabel "Continent" .
 
 schema:Country a rdfs:Class ;
-    rdfs:label "Country" .
+    skos:prefLabel "Country" .
 
 sorepsg:Region a rdfs:Class ;
-    rdfs:label "Region" .
+    skos:prefLabel "Region" .
 
 sio:SIO_000999 a rdfs:Class ;
-    rdfs:label "Procedure" .
+    skos:prefLabel "Procedure" .
 
 obo:NCIT_C61419 a rdfs:Class ;
-    rdfs:label "Working Group" .
+    skos:prefLabel "Working Group" .
 
 obo:NCIT_C180602 a rdfs:Class ;
-    rdfs:label "Workshop" .
+    skos:prefLabel "Workshop" .
 
 sio:SIO_001246 a rdfs:Class ;
-    rdfs:label "Interval" .
+    skos:prefLabel "Interval" .
 
 schema:City a rdfs:Class ;
-    rdfs:label "City" .
+    skos:prefLabel "City" .
 
 qudt:Unit a rdfs:Class ;
-    rdfs:label "Unit" .
+    skos:prefLabel "Unit" .
 
 af-p:AFP_0003730 a rdfs:Class ;
-    rdfs:label "Project" .
+    skos:prefLabel "Project" .
 
 obo:NCIT_C80234 a rdfs:Class ;
-    rdfs:label "Municipality" .
+    skos:prefLabel "Municipality" .
 
 # Properties
 skos:broader a rdf:Property ;
-    rdfs:label "has broader"
+    skos:prefLabel "has broader" ;
     owl:inverseOf skos:narrower .
 
 skos:narrower a rdf:Property ;
-    rdfs:label "has narrower"
+    skos:prefLabel "has narrower" ;
     owl:inverseOf skos:broader .
 
 skos:related a rdf:Property ;
-    rdfs:label "has related"
+    skos:prefLabel "has related" ;
     owl:inverseOf skos:related .
 
 dcterms:date a rdf:Property ;
-    rdfs:label "date" .
+    skos:prefLabel "date" .
 
 dcterms:source a rdf:Property ;
-    rdfs:label "source" .
+    skos:prefLabel "source" .
 
 sio:SIO_000064 a rdf:Property ;
-    rdfs:label "is provider of"
+    skos:prefLabel "is provider of" ;
     owl:inverseOf sio:SIO_000066 .
 
 sio:SIO_000066 a rdf:Property ;
-    rdfs:label "has provider"
+    skos:prefLabel "has provider" ;
     owl:inverseOf sio:SIO_000064 .
 
 she:variesIn a rdf:Property ;
-    rdfs:label "varies in" .
+    skos:prefLabel "varies in" .
 
 agrontology:isComposedOf a rdf:Property ;
-    rdfs:label "is composed of"
+    skos:prefLabel "is composed of" ;
     owl:inverseOf agrontology:compose .
 
 agrontology:isPartOf a rdf:Property ;
-    rdfs:label "is part of"
+    skos:prefLabel "is part of" ;
     owl:inverseOf agrontology:hasPart .
 
 agrontology:includes a rdf:Property ;
-    rdfs:label "includes"
+    skos:prefLabel "includes" ;
     owl:inverseOf agrontology:isIncludedIn .
 
 skos:definition a rdf:Property ;
-    rdfs:label "definition" .
+    skos:prefLabel "definition" .
 
 skos:prefLabel a rdf:Property ;
-    rdfs:label "preferred label" .
+    skos:prefLabel "preferred label" .
 
 agrontology:affects a rdf:Property ;
-    rdfs:label "affects"
+    skos:prefLabel "affects" ;
     owl:inverseOf agrontology:isAffectedBy .
 
 agrontology:hasAbbreviation a rdf:Property ;
-    rdfs:label "has abbreviation" .
+    skos:prefLabel "has abbreviation" .
 
 agrontology:measures a rdf:Property ;
-    rdfs:label "measures"
+    skos:prefLabel "measures" ;
     owl:inverseOf agrontology:isMeasuredBy .
 
 dcterms:replaces a rdf:Property ;
-    rdfs:label "replaces"
+    skos:prefLabel "replaces" ;
     owl:inverseOf dcterms:isReplacedBy .
 
 agrontology:isAffectedBy a rdf:Property ;
-    rdfs:label "is affected by"
+    skos:prefLabel "is affected by" ;
     owl:inverseOf agrontology:affects .
 
 agrontology:benefitsFrom a rdf:Property ;
-    rdfs:label "benefits from"
+    skos:prefLabel "benefits from" ;
     owl:inverseOf agrontology:isBeneficialFor .
 
 agrontology:isBeneficialFor a rdf:Property ;
-    rdfs:label "is beneficial for"
+    skos:prefLabel "is beneficial for" ;
     owl:inverseOf agrontology:benefitsFrom .
 
 agrontology:isPreventedBy a rdf:Property ;
-    rdfs:label "is prevented by"
+    skos:prefLabel "is prevented by" ;
     owl:inverseOf agrontology:prevents .
 
 agrontology:prevents a rdf:Property ;
-    rdfs:label "prevents"
+    skos:prefLabel "prevents" ;
     owl:inverseOf agrontology:isPreventedBy .
 
 agrontology:isMeasuredBy a rdf:Property ;
-    rdfs:label "is measured by"
+    skos:prefLabel "is measured by" ;
     owl:inverseOf agrontology:measures .
 
 prov:atLocation a rdf:Property ;
-    rdfs:label "at location" .
+    skos:prefLabel "at location" .
 
 skos:note a rdf:Property ;
-    rdfs:label "note" .
+    skos:prefLabel "note" .
 
 agrontology:compose a rdf:Property ;
-    rdfs:label "compose"
+    skos:prefLabel "compose" ;
     owl:inverseOf agrontology:isComposedOf .
 
 agrontology:isMadeFrom a rdf:Property ;
-    rdfs:label "is made from"
+    skos:prefLabel "is made from" ;
     owl:inverseOf agrontology:isUsedToMake .
 
 agrontology:isUsedToMake a rdf:Property ;
-    rdfs:label "is used to make"
+    skos:prefLabel "is used to make" ;
     owl:inverseOf agrontology:isMadeFrom .
 
 agrontology:causes a rdf:Property ;
-    rdfs:label "causes"
+    skos:prefLabel "causes" ;
     owl:inverseOf agrontology:isCausedBy .
 
 agrontology:isCausedBy a rdf:Property ;
-    rdfs:label "is caused by"
+    skos:prefLabel "is caused by" ;
     owl:inverseOf agrontology:causes .
 
 qudt:unit a rdf:Property ;
-    rdfs:label "unit" .
+    skos:prefLabel "unit" .
 
 qudt:expression a rdf:Property ;
-    rdfs:label "expression" .
+    skos:prefLabel "expression" .
 
 agrontology:makeUseOf a rdf:Property ;
-    rdfs:label "make use of"
+    skos:prefLabel "make use of" ;
     owl:inverseOf agrontology:isUsedIn .
 
 skos:altLabel a rdf:Property ;
-    rdfs:label "alternative label" .
+    skos:prefLabel "alternative label" .
 
 agrontology:isUsedIn a rdf:Property ;
-    rdfs:label "is used in"
+    skos:prefLabel "is used in" ;
     owl:inverseOf agrontology:makeUseOf .
 
 agrontology:isProcessFor a rdf:Property ;
-    rdfs:label "is process for"
+    skos:prefLabel "is process for" ;
     owl:inverseOf agrontology:usesProcess .
 
 agrontology:usesProcess a rdf:Property ;
-    rdfs:label "uses process"
+    skos:prefLabel "uses process" ;
     owl:inverseOf agrontology:isProcessFor .
 
 agrontology:hasPart a rdf:Property ;
-    rdfs:label "has part"
+    skos:prefLabel "has part" ;
     owl:inverseOf agrontology:isPartOf .
 
 agrontology:follows a rdf:Property ;
-    rdfs:label "follows"
+    skos:prefLabel "follows" ;
     owl:inverseOf agrontology:precedes .
 
 agrontology:precedes a rdf:Property ;
-    rdfs:label "precedes"
+    skos:prefLabel "precedes" ;
     owl:inverseOf agrontology:follows .
 
 qudt:numericValue a rdf:Property ;
-    rdfs:label "numeric value" .
+    skos:prefLabel "numeric value" .
 
 agrontology:isUsedAs a rdf:Property ;
-    rdfs:label "is used as"
+    skos:prefLabel "is used as" ;
     owl:inverseOf agrontology:isUseOf .
 
 qudt:symbol a rdf:Property ;
-    rdfs:label "symbol" .
+    skos:prefLabel "symbol" .
 
 agrontology:performs a rdf:Property ;
-    rdfs:label "performs"
+    skos:prefLabel "performs" ;
     owl:inverseOf agrontology:isPerformedBy .
 
 agrontology:isPerformedBy a rdf:Property ;
-    rdfs:label "is performed by"
+    skos:prefLabel "is performed by" ;
     owl:inverseOf agrontology:performs .
 
 agrontology:isIncludedIn a rdf:Property ;
-    rdfs:label "is included in"
+    skos:prefLabel "is included in" ;
     owl:inverseOf agrontology:includes .
 
 agrontology:isDerivedFrom a rdf:Property ;
-    rdfs:label "is derived from"
+    skos:prefLabel "is derived from" ;
     owl:inverseOf agrontology:isSourceOf .
 
 agrontology:isSourceOf a rdf:Property ;
-    rdfs:label "is source of"
+    skos:prefLabel "is source of" ;
     owl:inverseOf agrontology:isDerivedFrom .
 
 agrontology:isUseOf a rdf:Property ;
-    rdfs:label "is use of"
+    skos:prefLabel "is use of" ;
     owl:inverseOf agrontology:isUsedAs .
 
 rdf:type a rdf:Property ;
-    rdfs:label "type" .
+    skos:prefLabel "type" .
 
 dcterms:title a rdf:Property ;
-    rdfs:label "title" .
+    skos:prefLabel "title" .
 
 obo:T4FS_0000577 a rdf:Property ;
-    rdfs:label "requires knowledge about" .
+    skos:prefLabel "requires knowledge about" .
 
 obo:RO_0002212 a rdf:Property ;
-    rdfs:label "negatively regulates"
+    skos:prefLabel "negatively regulates" ;
     owl:inverseOf obo:RO_0002335 .
 
 obo:RO_0002335 a rdf:Property ;
-    rdfs:label "negatively regulated by"
+    skos:prefLabel "negatively regulated by" ;
     owl:inverseOf obo:RO_0002212 .
 
 she:alters a rdf:Property ;
-    rdfs:label "alters"
+    skos:prefLabel "alters" ;
     owl:inverseOf she:isAlteredBy .
 
 she:isAlteredBy a rdf:Property ;
-    rdfs:label "is altered by"
+    skos:prefLabel "is altered by" ;
     owl:inverseOf she:alters .
 
 obo:RO_0002326 a rdf:Property ;
-    rdfs:label "contributes to" .
+    skos:prefLabel "contributes to" .
 
 schema:isBasedOn a rdf:Property ;
-    rdfs:label "is based on" .
+    skos:prefLabel "is based on" .
 
 she:isIndicatedBy a rdf:Property ;
-    rdfs:label "is indicated by"
+    skos:prefLabel "is indicated by" ;
     owl:inverseOf she:indicates .
 
 she:indicates a rdf:Property ;
-    rdfs:label "indicates"
+    skos:prefLabel "indicates" ;
     owl:inverseOf she:isIndicatedBy .
 
 obo:OAE_0000186 a rdf:Property ;
-    rdfs:label "induces"
+    skos:prefLabel "induces" ;
     owl:inverseOf obo:OAE_0000025 .
 
 obo:OAE_0000025 a rdf:Property ;
-    rdfs:label "induced by"
+    skos:prefLabel "induced by" ;
     owl:inverseOf obo:OAE_0000186 .
 
 obo:RO_0002327 a rdf:Property ;
-    rdfs:label "enables"
+    skos:prefLabel "enables" ;
     owl:inverseOf obo:RO_0002333 .
 
 obo:RO_0002333 a rdf:Property ;
-    rdfs:label "enabled by"
+    skos:prefLabel "enabled by" ;
     owl:inverseOf obo:RO_0002327 .
 
 af-x:AFX_0002806 a rdf:Property ;
-    rdfs:label "classifies"
+    skos:prefLabel "classifies" ;
     owl:inverseOf af-x:AFX_0001154 .
 
 af-x:AFX_0001154 a rdf:Property ;
-    rdfs:label "has classification"
+    skos:prefLabel "has classification" ;
     owl:inverseOf af-x:AFX_0002806 .
 
 wdt:P1889 a rdf:Property ;
-    rdfs:label "different from"
+    skos:prefLabel "different from" ;
     owl:inverseOf wdt:P1889 .
 
 obo:RO_0002502 a rdf:Property ;
-    rdfs:label "depends on" .
+    skos:prefLabel "depends on" .
 
 she:characterises a rdf:Property ;
-    rdfs:label "characterises" .
+    skos:prefLabel "characterises" .
 
 she:isCharacterisedBy a rdf:Property ;
-    rdfs:label "is characterised by" .
+    skos:prefLabel "is characterised by" .
 
 schema:assesses a rdf:Property ;
-    rdfs:label "assesses" .
+    skos:prefLabel "assesses" .
 
 obo:RO_0002213 a rdf:Property ;
-    rdfs:label "positively regulates"
+    skos:prefLabel "positively regulates" ;
     owl:inverseOf obo:RO_0002336 .
 
 obo:RO_0002336 a rdf:Property ;
-    rdfs:label "positively regulated by"
+    skos:prefLabel "positively regulated by" ;
     owl:inverseOf obo:RO_0002213 .
 
 she:inputsFrom a rdf:Property ;
-    rdfs:label "inputs from" .
+    skos:prefLabel "inputs from" .
 
 obo:INO_0000082 a rdf:Property ;
-    rdfs:label "controls"
+    skos:prefLabel "controls" ;
     owl:inverseOf sorelpr:wasControlledBy .
 
 sorelpr:wasControlledBy a rdf:Property ;
-    rdfs:label "was controlled by"
+    skos:prefLabel "was controlled by" ;
     owl:inverseOf obo:INO_0000082 .
 
 obo:RO_0002434 a rdf:Property ;
-    rdfs:label "interacts with"
+    skos:prefLabel "interacts with" ;
     owl:inverseOf obo:RO_0002434 .
 
 biolink:consumed_by a rdf:Property ;
-    rdfs:label "consumed by"
+    skos:prefLabel "consumed by" ;
     owl:inverseOf biolink:consumes .
 
 biolink:consumes a rdf:Property ;
-    rdfs:label "consumes"
+    skos:prefLabel "consumes" ;
     owl:inverseOf biolink:consumed_by .
 
 agrontology:hasSymbol a rdf:Property ;
-    rdfs:label "has symbol" .
+    skos:prefLabel "has symbol" .
 
 sio:equivalentTo a rdf:Property ;
-    rdfs:label "equivalent to"
+    skos:prefLabel "equivalent to" ;
     owl:inverseOf sio:equivalentTo .
 
 she:requires a rdf:Property ;
-    rdfs:label "requires"
+    skos:prefLabel "requires" ;
     owl:inverseOf she:isRequiredBy .
 
 she:isRequiredBy a rdf:Property ;
-    rdfs:label "is required by"
+    skos:prefLabel "is required by" ;
     owl:inverseOf she:requires .
 
 sio:SIO_000563 a rdf:Property ;
-    rdfs:label "describes"
+    skos:prefLabel "describes" ;
     owl:inverseOf sio:SIO_000557 .
 
 sio:SIO_000557 a rdf:Property ;
-    rdfs:label "is described by"
+    skos:prefLabel "is described by" ;
     owl:inverseOf sio:SIO_000563 .
 
 schema:inSupportOf a rdf:Property ;
-    rdfs:label "in support of" .
+    skos:prefLabel "in support of" .
 
 sio:SIO_000202 a rdf:Property ;
-    rdfs:label "contains"
+    skos:prefLabel "contains" ;
     owl:inverseOf sio:SIO_000128 .
 
 sio:SIO_000128 a rdf:Property ;
-    rdfs:label "is contained in"
+    skos:prefLabel "is contained in" ;
     owl:inverseOf sio:SIO_000202 .
 
 obo:BFO_0000066 a rdf:Property ;
-    rdfs:label "occurs in" .
+    skos:prefLabel "occurs in" .
 
 sorelph:from a rdf:Property ;
-    rdfs:label "from" .
+    skos:prefLabel "from" .
 
 obo:RO_0002331 a rdf:Property ;
-    rdfs:label "involved in" .
+    skos:prefLabel "involved in" .
 
 sorelm:hasThreshold a rdf:Property ;
-    rdfs:label "has threshold" .
+    skos:prefLabel "has threshold" .
 
 af-x:AFX_0000408 a rdf:Property ;
-    rdfs:label "has condition"
+    skos:prefLabel "has condition" ;
     owl:inverseOf af-x:AFX_0000355 .
 
 af-x:AFX_0000355 a rdf:Property ;
-    rdfs:label "is condition for"
+    skos:prefLabel "is condition for" ;
     owl:inverseOf af-x:AFX_0000408 .
 
 repr:storedAt a rdf:Property ;
-    rdfs:label "stored at" .
+    skos:prefLabel "stored at" .
 
 she:bindsWith a rdf:Property ;
-    rdfs:label "binds with" .
+    skos:prefLabel "binds with" .
 
 she:respondsTo a rdf:Property ;
-    rdfs:label "responds to" .
+    skos:prefLabel "responds to" .
 
 she:sequesters a rdf:Property ;
-    rdfs:label "sequesters" .
+    skos:prefLabel "sequesters" .
 
 obo:RO_0017003 a rdf:Property ;
-    rdfs:label "positively correlated with" .
+    skos:prefLabel "positively correlated with" .
 
 obo:RO_0017004 a rdf:Property ;
-    rdfs:label "negatively correlated with" .
+    skos:prefLabel "negatively correlated with" .
 
 rdf:object a rdf:Property ;
-    rdfs:label "object" .
+    skos:prefLabel "object" .
 
 sorelm:hasInterval a rdf:Property ;
-    rdfs:label "has interval" .
+    skos:prefLabel "has interval" .
 
 biolink:has_percentage a rdf:Property ;
-    rdfs:label "has percentage" .
+    skos:prefLabel "has percentage" .
 
 she:isConvertedTo a rdf:Property ;
-    rdfs:label "is converted to"
+    skos:prefLabel "is converted to" ;
     owl:inverseOf she:isConvertedFrom .
 
 she:isConvertedFrom a rdf:Property ;
-    rdfs:label "is converted from"
+    skos:prefLabel "is converted from" ;
     owl:inverseOf she:isConvertedTo .
 
 bao:BAO_0095002 a rdf:Property ;
-    rdfs:label "has indicator"
+    skos:prefLabel "has indicator" ;
     owl:inverseOf bao:BAO_0002586 .
 
 bao:BAO_0002586 a rdf:Property ;
-    rdfs:label "is indicator of"
+    skos:prefLabel "is indicator of" ;
     owl:inverseOf bao:BAO_0095002 .
 
 sio:SIO_000635 a rdf:Property ;
-    rdfs:label "has trigger"
+    skos:prefLabel "has trigger" ;
     owl:inverseOf sio:SIO_000636 .
 
 sio:SIO_000636 a rdf:Property ;
-    rdfs:label "is trigger for"
+    skos:prefLabel "is trigger for" ;
     owl:inverseOf sio:SIO_000635 .
 
 time:hasDuration a rdf:Property ;
-    rdfs:label "has duration" .
+    skos:prefLabel "has duration" .
 
 obo:RO_0002610 a rdf:Property ;
-    rdfs:label "correlated with" .
+    skos:prefLabel "correlated with" .
 
 she:focusesOn a rdf:Property ;
-    rdfs:label "focuses on" .
+    skos:prefLabel "focuses on" .
 
 she:isAcceptedBy a rdf:Property ;
-    rdfs:label "is accepted by"
+    skos:prefLabel "is accepted by" ;
     owl:inverseOf she:accepts .
 
 she:accepts a rdf:Property ;
-    rdfs:label "accepts"
+    skos:prefLabel "accepts" ;
     owl:inverseOf she:isAcceptedBy .
 
 af-x:AFX_0002696 a rdf:Property ;
-    rdfs:label "has range" .
+    skos:prefLabel "has range" .
 
 agrontology:hasType a rdf:Property ;
-    rdfs:label "has type"
+    skos:prefLabel "has type" ;
     owl:inverseOf agrontology:typeOf .
 
 agrontology:typeOf a rdf:Property ;
-    rdfs:label "type of"
+    skos:prefLabel "type of" ;
     owl:inverseOf agrontology:hasType .
 
 she:appliesTo a rdf:Property ;
-    rdfs:label "applies to" .
+    skos:prefLabel "applies to" .
 
 obo:RO_0002552 a rdf:Property ;
-    rdfs:label "results in ending of" .
+    skos:prefLabel "results in ending of" .
 
 qudt:conversionMultiplier a rdf:Property ;
-    rdfs:label "conversion multiplier" .
+    skos:prefLabel "conversion multiplier" .
 
 sorelm:hasUpperBound a rdf:Property ;
-    rdfs:label "has upper bound" .
+    skos:prefLabel "has upper bound" .
 
 sorelm:hasLowerBound a rdf:Property ;
-    rdfs:label "has lower bound" .
+    skos:prefLabel "has lower bound" .
 
 agrontology:greaterThan a rdf:Property ;
-    rdfs:label "greater than"
+    skos:prefLabel "greater than" ;
     owl:inverseOf agrontology:smallerThan .
 
 agrontology:smallerThan a rdf:Property ;
-    rdfs:label "smaller than"
+    skos:prefLabel "smaller than" ;
     owl:inverseOf agrontology:greaterThan .
 
 obo:RO_0002508 a rdf:Property ;
-    rdfs:label "determines"
+    skos:prefLabel "determines" ;
     owl:inverseOf obo:RO_0002507 .
 
 obo:RO_0002507 a rdf:Property ;
-    rdfs:label "determined by"
+    skos:prefLabel "determined by" ;
     owl:inverseOf obo:RO_0002508 .
 
 she:hasEquilibriumWith a rdf:Property ;
-    rdfs:label "has equilibrium with"
+    skos:prefLabel "has equilibrium with" ;
     owl:inverseOf she:hasEquilibriumWith .
 
 af-x:AFX_0002727 a rdf:Property ;
-    rdfs:label "lacks" .
+    skos:prefLabel "lacks" .
 
 she:isEmittedTo a rdf:Property ;
-    rdfs:label "is emitted to" .
+    skos:prefLabel "is emitted to" .
 
 obo:RO_0002334 a rdf:Property ;
-    rdfs:label "regulated by"
+    skos:prefLabel "regulated by" ;
     owl:inverseOf obo:RO_0002211 .
 
 obo:RO_0002211 a rdf:Property ;
-    rdfs:label "regulates"
+    skos:prefLabel "regulates" ;
     owl:inverseOf obo:RO_0002334 .
 
 she:isLimitedBy a rdf:Property ;
-    rdfs:label "is limited by"
+    skos:prefLabel "is limited by" ;
     owl:inverseOf she:limits .
 
 she:limits a rdf:Property ;
-    rdfs:label "limits"
+    skos:prefLabel "limits" ;
     owl:inverseOf she:isLimitedBy .
 
 agrontology:hasComponent a rdf:Property ;
-    rdfs:label "has component"
+    skos:prefLabel "has component" ;
     owl:inverseOf agrontology:isComponentOf .
 
 agrontology:isComponentOf a rdf:Property ;
-    rdfs:label "is component of"
+    skos:prefLabel "is component of" ;
     owl:inverseOf agrontology:hasComponent .
 
 she:isRetainedBy a rdf:Property ;
-    rdfs:label "is retained by" .
+    skos:prefLabel "is retained by" .
 
 she:reflects a rdf:Property ;
-    rdfs:label "reflects"
+    skos:prefLabel "reflects" ;
     owl:inverseOf she:isReflectedBy .
 
 she:isReflectedBy a rdf:Property ;
-    rdfs:label "is reflected by"
+    skos:prefLabel "is reflected by" ;
     owl:inverseOf she:reflects .
 
 she:suffersFrom a rdf:Property ;
-    rdfs:label "suffers from" .
+    skos:prefLabel "suffers from" .
 
 af-x:AFX_0000388 a rdf:Property ;
-    rdfs:label "has scope" .
+    skos:prefLabel "has scope" .
 
 sio:SIO_000205 a rdf:Property ;
-    rdfs:label "is represented by"
+    skos:prefLabel "is represented by" ;
     owl:inverseOf sio:SIO_000210 .
 
 sio:SIO_000210 a rdf:Property ;
-    rdfs:label "represents"
+    skos:prefLabel "represents" ;
     owl:inverseOf sio:SIO_000205 .
 
 she:isEssentialFor a rdf:Property ;
-    rdfs:label "is essential for" .
+    skos:prefLabel "is essential for" .
 
 she:isToxicTo a rdf:Property ;
-    rdfs:label "is toxic to" .
+    skos:prefLabel "is toxic to" .
 
 she:isDevelopedFor a rdf:Property ;
-    rdfs:label "is developed for" .
+    skos:prefLabel "is developed for" .
 
 she:isAvailableFor a rdf:Property ;
-    rdfs:label "is available for" .
+    skos:prefLabel "is available for" .
 
 obo:RO_0000053 a rdf:Property ;
-    rdfs:label "has characteristic"
+    skos:prefLabel "has characteristic" ;
     owl:inverseOf obo:RO_0000052 .
 
 obo:RO_0000052 a rdf:Property ;
-    rdfs:label "characteristic of"
+    skos:prefLabel "characteristic of" ;
     owl:inverseOf obo:RO_0000053 .
 
 agrontology:hasProperty a rdf:Property ;
-    rdfs:label "has property"
+    skos:prefLabel "has property" ;
     owl:inverseOf agrontology:isPropertyOf .
 
 agrontology:isPropertyOf a rdf:Property ;
-    rdfs:label "is property of"
+    skos:prefLabel "is property of" ;
     owl:inverseOf agrontology:hasProperty .
 
 she:bioaccumulatesIn a rdf:Property ;
-    rdfs:label "bioaccumulates in" .
+    skos:prefLabel "bioaccumulates in" .
 
 sio:SIO_000291 a rdf:Property ;
-    rdfs:label "has target"
+    skos:prefLabel "has target" ;
     owl:inverseOf sio:SIO_000292 .
 
 sio:SIO_000292 a rdf:Property ;
-    rdfs:label "is target in"
+    skos:prefLabel "is target in" ;
     owl:inverseOf sio:SIO_000291 .
 
 she:isComparedWith a rdf:Property ;
-    rdfs:label "is compared with" .
+    skos:prefLabel "is compared with" .
 
 sorelph:to a rdf:Property ;
-    rdfs:label "to" .
+    skos:prefLabel "to" .
 
 sorelch:hasMedium a rdf:Property ;
-    rdfs:label "has medium" .
+    skos:prefLabel "has medium" .
 
 obo:TXPO_0003500 a rdf:Property ;
-    rdfs:label "observed in" .
+    skos:prefLabel "observed in" .
 
 af-x:AFX_0002843 a rdf:Property ;
-    rdfs:label "has definition"
+    skos:prefLabel "has definition" ;
     owl:inverseOf af-x:AFX_0002842 .
 
 af-x:AFX_0002842 a rdf:Property ;
-    rdfs:label "defines"
+    skos:prefLabel "defines" ;
     owl:inverseOf af-x:AFX_0002843 .
 
 obo:SEPIO_0000151 a rdf:Property ;
-    rdfs:label "validated by" .
+    skos:prefLabel "validated by" .
 
 om:hasFactor a rdf:Property ;
-    rdfs:label "has factor" .
+    skos:prefLabel "has factor" .
 
 sio:SIO_000283 a rdf:Property ;
-    rdfs:label "is similar to" .
+    skos:prefLabel "is similar to" .
 
 qudt:valueSN a rdf:Property ;
-    rdfs:label "value scientific" .
+    skos:prefLabel "value scientific" .
 
 agrontology:hasTaxonomicConcept a rdf:Property ;
-    rdfs:label "has taxonomic concept"
+    skos:prefLabel "has taxonomic concept" ;
     owl:inverseOf agrontology:hasCommonNameConcept .
 
 agrontology:hasCommonNameConcept a rdf:Property ;
-    rdfs:label "has common name concept"
+    skos:prefLabel "has common name concept" ;
     owl:inverseOf agrontology:hasTaxonomicConcept .
 
 obo:MICRO_0000105 a rdf:Property ;
-    rdfs:label "has size" .
+    skos:prefLabel "has size" .
 
 sorelsp:hasLength a rdf:Property ;
-    rdfs:label "has length" .
+    skos:prefLabel "has length" .
 
 sorelsp:diameter a rdf:Property ;
-    rdfs:label "diameter" .
+    skos:prefLabel "diameter" .
 
 she:calculates a rdf:Property ;
-    rdfs:label "calculates"
+    skos:prefLabel "calculates" ;
     owl:inverseOf she:isCalculatedBy .
 
 she:isCalculatedBy a rdf:Property ;
-    rdfs:label "is calculated by"
+    skos:prefLabel "is calculated by" ;
     owl:inverseOf she:calculates .
 
 sorelm:hasAverage a rdf:Property ;
-    rdfs:label "has average" .
+    skos:prefLabel "has average" .
 
 she:isAccompaniedBy a rdf:Property ;
-    rdfs:label "is accompanied by"
+    skos:prefLabel "is accompanied by" ;
     owl:inverseOf she:accompanies .
 
 she:accompanies a rdf:Property ;
-    rdfs:label "accompanies"
+    skos:prefLabel "accompanies" ;
     owl:inverseOf she:isAccompaniedBy .
 
 sorelph:hasTransport a rdf:Property ;
-    rdfs:label "has transport" .
+    skos:prefLabel "has transport" .
 
 obo:RO_0002339 a rdf:Property ;
-    rdfs:label "has target end location" .
+    skos:prefLabel "has target end location" .
 
 obo:RO_0002341 a rdf:Property ;
-    rdfs:label "results in transport along" .
+    skos:prefLabel "results in transport along" .
 
 sio:SIO_000365 a rdf:Property ;
-    rdfs:label "is creator of"
+    skos:prefLabel "is creator of" ;
     owl:inverseOf sio:SIO_000364 .
 
 sio:SIO_000364 a rdf:Property ;
-    rdfs:label "has creator"
+    skos:prefLabel "has creator" ;
     owl:inverseOf sio:SIO_000365 .
 
 af-x:AFX_0002717 a rdf:Property ;
-    rdfs:label "identifies"
+    skos:prefLabel "identifies" ;
     owl:inverseOf af-x:AFX_0002716 .
 
 af-x:AFX_0002716 a rdf:Property ;
-    rdfs:label "has identifier"
+    skos:prefLabel "has identifier" ;
     owl:inverseOf af-x:AFX_0002717 .
 
 om:hasValue a rdf:Property ;
-    rdfs:label "has value" .
+    skos:prefLabel "has value" .
 
 time:years a rdf:Property ;
-    rdfs:label "years duration" .
+    skos:prefLabel "years duration" .
 
 af-x:AFX_0002821 a rdf:Property ;
-    rdfs:label "proxy for" .
+    skos:prefLabel "proxy for" .
 
 sorelsp:hasMaximumDepth a rdf:Property ;
-    rdfs:label "has maximum depth" .
+    skos:prefLabel "has maximum depth" .
 
 she:isExceeded a rdf:Property ;
-    rdfs:label "is exceeded" .
+    skos:prefLabel "is exceeded" .
 
 sorelsp:below a rdf:Property ;
-    rdfs:label "below"
+    skos:prefLabel "below" ;
     owl:inverseOf sorelsp:above .
 
 obo:RO_0020202 a rdf:Property ;
-    rdfs:label "has numerator" .
+    skos:prefLabel "has numerator" .
 
 obo:RO_0020203 a rdf:Property ;
-    rdfs:label "has denominator" .
+    skos:prefLabel "has denominator" .
 
 sorelm:hasScale a rdf:Property ;
-    rdfs:label "has scale" .
+    skos:prefLabel "has scale" .
 
 time:year a rdf:Property ;
-    rdfs:label "year" .
+    skos:prefLabel "year" .
 
 sorelm:hasMinimum a rdf:Property ;
-    rdfs:label "has minimum" .
+    skos:prefLabel "has minimum" .
 
 she:isFormedBy a rdf:Property ;
-    rdfs:label "is formed by" .
+    skos:prefLabel "is formed by" .
 
 she:forms a rdf:Property ;
-    rdfs:label "forms" .
+    skos:prefLabel "forms" .
 
 sorelm:hasWeight a rdf:Property ;
-    rdfs:label "has weight" .
+    skos:prefLabel "has weight" .
 
 she:absorbs a rdf:Property ;
-    rdfs:label "absorbs"
+    skos:prefLabel "absorbs" ;
     owl:inverseOf she:isAbsorbedBy .
 
 she:isAbsorbedBy a rdf:Property ;
-    rdfs:label "is absorbed by"
+    skos:prefLabel "is absorbed by" ;
     owl:inverseOf she:absorbs .
 
 obo:T4FS_0000560 a rdf:Property ;
-    rdfs:label "supports implementation of" .
+    skos:prefLabel "supports implementation of" .
 
 she:hasDensity a rdf:Property ;
-    rdfs:label "has density" .
+    skos:prefLabel "has density" .
 
 she:hasBiomass a rdf:Property ;
-    rdfs:label "has biomass" .
+    skos:prefLabel "has biomass" .
 
 she:hasFreshBiomass a rdf:Property ;
-    rdfs:label "has fresh biomass" .
+    skos:prefLabel "has fresh biomass" .
 
 sio:SIO_000272 a rdf:Property ;
-    rdfs:label "is variant of" .
+    skos:prefLabel "is variant of" .
 
 sorelsp:above a rdf:Property ;
-    rdfs:label "above"
+    skos:prefLabel "above" ;
     owl:inverseOf sorelsp:below .
 
 skos:exactMatch a rdf:Property ;
-    rdfs:label "has exact match" .
+    skos:prefLabel "has exact match" .
 
 skos:closeMatch a rdf:Property ;
-    rdfs:label "has close match" .
+    skos:prefLabel "has close match" .
 
 dcterms:isReplacedBy a rdf:Property ;
-    rdfs:label "is replaced by"
+    skos:prefLabel "is replaced by" ;
     owl:inverseOf dcterms:replaces .
