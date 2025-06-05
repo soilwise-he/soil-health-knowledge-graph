@@ -133,7 +133,7 @@ agrontology:includes a rdf:Property ;
 skos:definition a rdf:Property ;
     rdfs:label "definition" .
 
-rdfs:label a rdf:Property ;
+skos:prefLabel a rdf:Property ;
     rdfs:label "preferred label" .
 
 agrontology:affects a rdf:Property ;
