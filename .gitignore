@@ -11,4 +11,4 @@ __pycache__/
 *.drawio
 
 # Ignore entity similarity file
-entity_similarity.csv
+entity_similarity_*.csv
