@@ -1,50 +1,46 @@
-# Ontology-Compliant Soil Health Knowledge Graph
+# Construction of an Ontology-Compliant Soil Health Knowledge Graph with Large Language Models
 
-This repository contains the open-source code and resources for the paper: "Make soil healthy again: Construction of ontology-compliant soil health knowledge graph with large language models".
+[cite_start]This repository contains the open-source code and resources for the paper: "Make soil healthy again: Construction of ontology-compliant soil health knowledge graph with large language models".
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14936019.svg)](https://doi.org/10.5281/zenodo.14936019)
+[cite_start]Our work introduces an ontology-compliant soil health Knowledge Graph (KG) constructed from domain literature, with the assistance of Large Language Models (LLMs) to expedite the process. [cite_start]This KG aims to integrate fragmented soil health knowledge into a structured and semantically rich format.
 
-## Overview
+## About the Project
 
-Soil health is crucial for environmental sustainability and food security, but knowledge about it is spread across many different sources. This makes it hard to use this knowledge effectively. Knowledge graphs (KGs) can solve this problem by organizing information in a structured way. This project presents a soil health KG created from scientific literature to address this issue.
+[cite_start]Soil health is a cornerstone of environmental sustainability and food security. [cite_start]However, the relevant knowledge is often dispersed across various sources, making it difficult to apply effectively. [cite_start]Knowledge Graphs offer a solution by structuring this information.
 
-Our KG is made up of 10,707 RDF triples that describe 2,070 entities, including 1,837 concepts related to soil. The KG was built using a pipeline that employs large language models (LLMs) to speed up the process. We worked with soil science experts to make sure the information in the KG is accurate. The KG's ability to answer relevant questions was also tested and confirmed by these experts.
+[cite_start]This project presents a soil health KG that contains 10,707 RDF triples, representing 2,070 entities, including 1,837 soil-related concepts. [cite_start]The KG is aligned with established ontologies and was validated by soil science experts through a series of competency questions.
 
-## Key Features
+[cite_start]The primary knowledge source for our KG is the "Soil Monitoring in Europe: Indicators and Thresholds for Soil Health Assessments" report from the European Environment Agency.
 
-* **Ontology-Compliant:** The KG aligns with established ontologies to ensure structured and semantically rich data.
-* **Expert-Validated:** Soil science experts reviewed and confirmed the factual representation and accuracy of the KG.
-* **LLM-Powered Construction:** We used a pipeline with LLMs to efficiently extract information from text.
-* **Richly Interlinked:** The KG is linked to external vocabularies and thesauri like AGROVOC, GloSIS, and ISO 11074.
+## The Knowledge Graph
 
-## Knowledge Graph Details
+[cite_start]The soil health KG provides a FAIR (Findable, Accessible, Interoperable, and Reusable) representation of knowledge in the domain.
 
-* **Total RDF Triples:** 10,707
-* **Total Entities:** 2,070
-    * **Soil-Related Concepts:** 1,837
-    * **Bibliographic References:** 158
-    * **Other Entities:** Policies, standards, geographical regions, etc.
-* **Classes and Properties:** 20 classes and 205 properties from selected ontologies.
-
-## Knowledge Graph Construction
-
-The KG was built using a pipeline that includes the following steps:
-
-1.  **Knowledge Source Pre-processing:** The main source of information was the "Soil Monitoring in Europe: Indicators and Thresholds for Soil Health Assessments" report from the European Environment Agency.
-2.  **KG Generation with LLMs:** We used GPT-4o to generate RDF triples from the text. This process included steps to handle complex statements with blank nodes and to validate and repair the Turtle syntax.
-3.  **KG Post-processing:** This manual and automated step involved aligning the KG with ontologies, integrating different KG segments, normalizing entities, and disambiguating relationships with the help of soil scientists.
-4.  **KG Enrichment:** We added inverse properties to complete the KG and linked it to external vocabularies using `skos:exactMatch` and `skos:closeMatch`.
+* [cite_start]**Size**: 10,707 RDF triples, 2,070 entities (1,837 soil-related concepts).
+* **Ontologies**: We used a range of ontologies to structure the KG, including:
+    * [cite_start]Simple Knowledge Organization System (SKOS) for the conceptual framework.
+    * [cite_start]Dublin Core for bibliographic resources.
+    * [cite_start]Agrontology, Semanticscience Integrated Ontology, Open Biological and Biomedical Ontology, and others for representing complex relationships.
+* [cite_start]**Ontology Extension**: We defined new properties, such as `she:alters` and `she:sequesters`, to capture domain-specific relationships, ensuring all entities and relations have a formal definition.
 
 ## Resources
 
-* **HTML Page:** You can browse the concepts and relationships in the KG here: [https://soilwise-he.github.io/soil-health](https://soilwise-he.github.io/soil-health)
-* **SPARQL Endpoint:** For programmatic access and querying, the SPARQL endpoint is available at: [https://repository.soilwise-he.eu/sparql/](https://repository.soilwise-he.eu/sparql/)
-* **Datasets:** The KG, ontology schema, text2KG benchmark dataset, and validation dataset with competency questions are available in this repository and on Zenodo.
+[cite_start]All resources are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 
-## Applications
+* [cite_start]**Knowledge Graph and Ontology Schema**: The soil health KG and its ontology are available for download.
+* [cite_start]**HTML Browser**: An HTML page for Browse the concepts and relationships in the KG can be accessed at: [https://soilwise-he.github.io/soil-health](https://soilwise-he.github.io/soil-health)[cite: 244].
+* [cite_start]**SPARQL Endpoint**: For programmatic access and querying, a SPARQL endpoint is provided at: [https://repository.soilwise-he.eu/sparql/](https://repository.soilwise-he.eu/sparql/)[cite: 245].
+* [cite_start]**Datasets**: The text2KG benchmark dataset and the validation dataset with competency questions are also available.
+* [cite_start]**Code and Prompts**: The code for the KG generation pipeline and the prompts used are included in this repository.
 
-This soil health KG can be used for several purposes:
+## Cite this work
 
-* **Backbone of a Soil Knowledge Repository:** The KG can serve as the foundation for a larger repository of soil-related data and knowledge.
-* **KG-Based Question Answering:** The dataset of competency questions and SPARQL queries can be used to develop a natural language querying system.
-* **A Benchmark for text2KG:** The dataset of text segments and their corresponding RDF triples can be used to test and evaluate text-to-knowledge-graph models.
+If you use the resources in this repository, please cite our paper:
+
+```bibtex
+@inproceedings{wang2025soil,
+  title={Make soil healthy again: Construction of ontology-compliant soil health knowledge graph with large language models},
+  author={Wang, Beichen and de Sousa, Lu{\'\i}s Moreira and Fensel, Anna},
+  year={2025},
+  url={[https://doi.org/10.5281/zenodo.14936019](https://doi.org/10.5281/zenodo.14936019)}
+}
