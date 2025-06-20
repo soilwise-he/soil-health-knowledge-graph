@@ -10,13 +10,13 @@
         owl:versionInfo  "v0.2.4" ;
         dcterms:creator [ schema:affiliation [ foaf:name "Wageningen University & Research" ;
                                                rdfs:seeAlso <https://www.wur.nl/> ] ;
-                      rdfs:seeAlso <https://orcid.org/0009-0008-5213-5114> ;
-                      foaf:name "Beichen Wang"
+                          rdfs:seeAlso <https://orcid.org/0009-0008-5213-5114> ;
+                          foaf:name "Beichen Wang"
                     ] ;
         dcterms:contributor [ schema:affiliation [ foaf:name "Wageningen University & Research" ;
-                                               rdfs:seeAlso <https://www.wur.nl/> ] ;
-                      rdfs:seeAlso <https://orcid.org/0000-0002-1391-7104> ;
-                      foaf:name "Anna Fensel"                        
+                                                   rdfs:seeAlso <https://www.wur.nl/> ] ;
+                              rdfs:seeAlso <https://orcid.org/0000-0002-1391-7104> ;
+                              foaf:name "Anna Fensel"                        
                     ],
                     [ schema:affiliation [ foaf:name "Instituto Superior Técnico" ;
                                            rdfs:seeAlso <https://tecnico.ulisboa.pt/> ] ;

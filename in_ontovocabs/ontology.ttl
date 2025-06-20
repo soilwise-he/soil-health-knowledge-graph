@@ -26,6 +26,32 @@
 @prefix sorepsg: <http://sweetontology.net/reprSpaceGeometry/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<> rdf:type owl:Ontology ;
+    owl:versionInfo "v0.2.4" ;
+    dcterms:description "This is the ontology that underpins the soil health knowledge graph."@en ;
+    dcterms:creator [ schema:affiliation [ foaf:name "Wageningen University & Research" ;
+                                           rdfs:seeAlso <https://www.wur.nl/> ] ;
+                      rdfs:seeAlso <https://orcid.org/0009-0008-5213-5114> ;
+                      foaf:name "Beichen Wang"
+                    ] ;
+    dcterms:contributor [ schema:affiliation [ foaf:name "Wageningen University & Research" ;
+                                               rdfs:seeAlso <https://www.wur.nl/> ] ;
+                          rdfs:seeAlso <https://orcid.org/0000-0002-1391-7104> ;
+                          foaf:name "Anna Fensel"                        
+                    ],
+                    [ schema:affiliation [ foaf:name "Instituto Superior Técnico" ;
+                                           rdfs:seeAlso <https://tecnico.ulisboa.pt/> ] ;
+                      rdfs:seeAlso <https://orcid.org/0000-0002-5851-2071/> ;
+                      foaf:name "Luís Moreira de Sousa"
+                    ],
+                    [ schema:affiliation [ foaf:name "ISRIC - World Soil Information" ;
+                                           rdfs:seeAlso <https://www.isric.org/> ] ;
+                      rdfs:seeAlso <https://orcid.org/0000-0002-4789-174X> ;
+                      foaf:name "Paul van Genuchten"
+                    ] ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> .
 
 skos:Concept a rdfs:Class ;
     skos:prefLabel "Concept" .

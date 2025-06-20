@@ -3,6 +3,7 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Zenodo DOI](https://zenodo.org/badge/doi/10.5281/zenodo.14936019.svg)](https://doi.org/10.5281/zenodo.14936019)
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![free pitfalls were found](http://oops.linkeddata.es/resource/image/oops_free.png)
 
 This repository contains the open‑source code, data, and examples supporting the paper:
 
@@ -11,7 +12,7 @@ This repository contains the open‑source code, data, and examples supporting t
 
 ## ✨ Abstract
 
-Soil health is fundamental to environmental sustainability and food security, yet relevant knowledge remains fragmented across diverse sources, hindering its effective application. Knowledge graphs (KGs) offer a robust solution by integrating disparate information into a structured, semantically rich format. Addressing this need, we present an ontology-compliant **soil health knowledge graph** (SHKG) derived from domain literature. Our KG comprises **10,707 RDF triples** that represent **2,070 entities** (including **1,837 soil-related concepts**), aligned with established ontologies. We employed a KG construction pipeline that utilizes **large language models** (LLMs) to accelerate the construction of such a KG. The resulting KG was validated through its ability to answer a series of competency questions reviewed by soil science experts, and the KG's factual representation was reviewed and confirmed by them as well. Finally, we propose several potential applications for our KG. The KG, ontology schema, and associated datasets are made publicly available here.
+Soil health is fundamental to environmental sustainability and food security, yet relevant knowledge remains fragmented across diverse sources, hindering its effective application. Knowledge graphs (KGs) offer a robust solution by integrating disparate information into a structured, semantically rich format. Addressing this need, we present an ontology-compliant **soil health knowledge graph** (SHKG) derived from domain literature. Our KG comprises **10,996 RDF triples** that represent **2,023 entities** (including **1,791 soil-related concepts**), aligned with established ontologies. We employed a KG construction pipeline that utilizes **large language models** (LLMs) to accelerate the construction of such a KG. The resulting KG was validated through its ability to answer a series of competency questions reviewed by soil science experts, and the KG's factual representation was reviewed and confirmed by them as well. Finally, we propose several potential applications for our KG. The KG, ontology schema, and associated datasets are made publicly available here.
 
 ---
 
