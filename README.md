@@ -1,54 +1,67 @@
 # Soil Health Knowledge Graph
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)  
-[![Zenodo DOI](https://zenodo.org/badge/doi/10.5281/zenodo.14936019.svg)](https://doi.org/10.5281/zenodo.14936019)  
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Zenodo DOI](https://zenodo.org/badge/doi/10.5281/zenodo.14936019.svg)](https://doi.org/10.5281/zenodo.14936019)
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 
 This repository contains the open‑source code, data, and examples supporting the paper:
 
-> **Make soil healthy again: Construction of ontology‑compliant soil health knowledge graph with large language models**  
-> *B. Wang, L. Moreira de Sousa & A. Fensel*  
+> **Make soil healthy again: Construction of ontology‑compliant soil health knowledge graph with large language models**
+> *B. Wang, L. Moreira de Sousa & A. Fensel*
 > *ISWC 2025*
 
 Our work produces an ontology‑compliant **Soil Health Knowledge Graph** (SHKG) of over 10 700 RDF triples, derived from major soil‑health literature via a mixed pipeline of LLM‑assisted extraction and expert curation.
 
 ---
 
+## 📈 Overview of Core Concepts
+
+Illustration of the core concepts and their relationships in the SHKG:
+
+![Soil Health KG overview](imgs/soil_health_KG.svg)
+
+## 🛠️ Pipeline of KG Construction
+
+End‑to‑end pipeline from text to knowledge graph:
+
+![Text2KG pipeline](imgs/text2KG.svg)
+
+---
+
 ## 📦 Repository Contents
 
 ```
-
 .
 ├── LICENSE
 ├── README.md
 ├── requirements.txt          # Python dependencies
-├── KGC\_pipeline.ipynb        # Jupyter notebook demonstrating the full KG‑construction pipeline
+├── KGC_pipeline.ipynb        # Jupyter notebook demonstrating the full KG‑construction pipeline
 ├── uk2us.py                  # Utility script (UK ↔ US spelling normalizer)
 ├── widoco.properties         # Configuration for generating ontology documentation
 │
-├── top\_level\_KG.ttl          # Top‑level schema (RDF/Turtle)
-├── soil\_health\_KG.ttl        # Full Soil Health KG (RDF/Turtle)
-├── shKG\_metadata.ttl         # Metadata describing the KG
-├── example\_SWR.trig          # Example serialization (TriG)
+├── top_level_KG.ttl          # Top‑level schema (RDF/Turtle)
+├── soil_health_KG.ttl        # Full Soil Health KG (RDF/Turtle)
+├── shKG_metadata.ttl         # Metadata describing the KG
+├── example_SWR.trig          # Example serialization (TriG)
 │
-├── example\_sparql\_queries/   # SPARQL queries & usage examples
-├── ex\_ontovocabs/            # Example ontology‐vocabulary alignments
-├── in\_ontovocabs/            # Ontology vocabulary imports
+├── example_sparql_queries/   # SPARQL queries & usage examples
+├── ex_ontovocabs/            # Example ontology‐vocabulary alignments
+├── in_ontovocabs/            # Ontology vocabulary imports
 ├── benchmarks/               # text2KG benchmark dataset and scripts
 ├── imgs/                     # Diagrams & figures
 └── …
-
-````
+```
 
 ---
 
 ## 🚀 Quick Start
 
-1. **Clone** this repository  
+1. **Clone** this repository
+
    ```bash
    git clone https://github.com/soilwise-he/soil-health-knowledge-graph.git
    cd soil-health-knowledge-graph
-````
+   ```
 
 2. **Install** dependencies
 
@@ -78,14 +91,33 @@ Our work produces an ontology‑compliant **Soil Health Knowledge Graph** (SHKG)
 
 ---
 
-## 🔗 Resources
+## 🔗 Imported Ontologies & Schemas
 
-* **Zenodo DOI & Data Archive**:
-  [https://doi.org/10.5281/zenodo.14936019](https://doi.org/10.5281/zenodo.14936019)
-* **Interactive Browser**:
-  [https://soilwise-he.github.io/soil-health](https://soilwise-he.github.io/soil-health)
-* **SPARQL Endpoint**:
-  [https://repository.soilwise-he.eu/sparql/](https://repository.soilwise-he.eu/sparql/)
+* [SKOS Core](https://www.w3.org/2009/08/skos-reference/skos.html)
+* [Dublin Core](https://www.dublincore.org/specifications/dublin-core/)
+* [RDF Schema](https://www.w3.org/TR/rdf-schema/)
+* [Agrontology](https://aims.fao.org/aos/agrontology)
+* [Semanticscience Integrated Ontology (SIO)](https://sio.semanticscience.org/)
+* [Open Biological and Biomedical Ontology (OBO)](https://obofoundry.org/)
+* [QUDT](https://qudt.org/)
+* [Ontology of Units of Measure (OM)](http://www.ontology-of-units-of-measure.org/resource/om-2/)
+* [PROV-O](https://www.w3.org/TR/prov-o/)
+* [Schema.org](https://schema.org/)
+* [SWEET ontology](http://sweetontology.net/)
+* [Wikidata](https://www.wikidata.org/)
+* [Biolink Model](https://biolink.github.io/biolink-model/)
+* [Allotrope Foundation Ontology](https://www.allotrope.org/ontologies)
+* [REPRODUCE-ME Ontology](https://w3id.org/reproduceme)
+* [BioAssay Ontology (BAO)](http://bioassayontology.org/)
+* [Time Ontology](https://www.w3.org/TR/owl-time/)
+
+## 🔗 Linked Vocabularies & Thesauri
+
+* [AGROVOC](http://aims.fao.org/aos/agrovoc)
+* [ISO 11074:2025](https://data.geoscience.earth/ncl/ISO11074v2025)
+* [GloSIS ontology](https://glosis-ld.github.io/glosis/)
+* [INRAE Thesaurus](http://opendata.inrae.fr/thesaurusINRAE/)
+* [GEMET Thesaurus](https://www.eionet.europa.eu/gemet/)
 
 ---
 
@@ -113,7 +145,11 @@ Our work produces an ontology‑compliant **Soil Health Knowledge Graph** (SHKG)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-Please see [CONTRIBUTING.md](./CONTRIBUTING.md) (if you add one) or open an issue.
+See [CONTRIBUTING.md](./CONTRIBUTING.md) or open an [issue](https://github.com/soilwise-he/soil-health-knowledge-graph/issues).
+
+## 📝 To-do
+
+See [Issues](https://github.com/soilwise-he/soil-health-knowledge-graph/issues) for planned tasks and enhancements.
 
 ---
 
@@ -121,12 +157,3 @@ Please see [CONTRIBUTING.md](./CONTRIBUTING.md) (if you add one) or open an issu
 
 * **Code**: MIT License  [See `LICENSE`](./LICENSE)
 * **Data & Ontologies**: CC BY 4.0  (Creative Commons Attribution 4.0 International)
-
----
-
-```
-
-**Next steps**  
-- Add a `CONTRIBUTING.md` if you expect outside collaborators.  
-- Embed badges (e.g. CI status, Python versions, code coverage) as you set up workflows.  
-- Update any paths or descriptions once you finalize scripts or data locations.
