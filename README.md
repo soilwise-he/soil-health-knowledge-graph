@@ -6,7 +6,7 @@
 
 <p>
 <a href="http://oops.linkeddata.es">
-<img src="http://oops.linkeddata.es/resource/image/oops_free.png"
+<img src="https://oops.linkeddata.es/images/conformance/oops_free.png"
 alt="free pitfalls were found" height="69.6" width="100" /></a>
 </p>
 
