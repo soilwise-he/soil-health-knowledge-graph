@@ -88,10 +88,12 @@ We utilized a pipeline that incorporates LLMs for the extraction of relevant inf
 4. **Run the pipeline**
    Open and run `KGC_pipeline.ipynb` to see:
 
-   * LLM‑driven triple extraction (via GPT‑4o prompts)
-   * Turtle repair & validation
+   * LLM‑driven triple generation (via GPT‑4o prompts)
+   * Turtle syntax check & repair
    * Ontology alignment, entity normalization & relation disambiguation
-   * KG enrichment (inverses, SKOS mappings, external vocabularies)
+   * KG enrichment (invertible relations, external vocabularies)
+   * KG validation
+   * Example SoilWise knowledge repository (interlink with 200 Zenodo metadata records)
 
 ---
 
@@ -141,7 +143,7 @@ The KG is enriched by interlinking to controlled vocabularies and thesauri in th
 
 ## 💡 Applications
 
-1. **Semantic Backbone** for a broader SoilWise knowledge repository, an example of interlinking with 200 Zenodo metadata records is provided ![here](example_SWR.trig).
+1. **Semantic Backbone** for a broader SoilWise knowledge repository, an [example](https://github.com/soilwise-he/soil-health-knowledge-graph/blob/main/example_SWR.trig) of interlinking with 200 Zenodo metadata records is provided.
 2. **Natural‑language Question Answering** over the KG via NL → SPARQL
 3. **Benchmark** for text2KG: converting scientific text → ontology‑compliant RDF
 
@@ -149,7 +151,7 @@ The KG is enriched by interlinking to controlled vocabularies and thesauri in th
 
 ## 🙏 Acknowledgements
 
-This work was supported by the EU's Horizon Europe research and innovation programme within the Soil Wise project (grant agreement ID: 101112838).
+This work was supported by the EU's Horizon Europe research and innovation programme within the [SoilWise](https://cordis.europa.eu/project/id/101112838) project (grant agreement ID: 101112838).
 
 ## 📝 To-do
 
