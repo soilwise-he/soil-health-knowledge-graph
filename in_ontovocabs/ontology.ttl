@@ -27,7 +27,6 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
 
-# Classes
 skos:Concept a rdfs:Class ;
     skos:prefLabel "Concept" .
 
@@ -88,7 +87,6 @@ af-p:AFP_0003730 a rdfs:Class ;
 obo:NCIT_C80234 a rdfs:Class ;
     skos:prefLabel "Municipality" .
 
-# Properties
 skos:broader a rdf:Property ;
     skos:prefLabel "has broader" ;
     owl:inverseOf skos:narrower .
