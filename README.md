@@ -44,7 +44,7 @@ We utilized a pipeline that incorporates LLMs for the extraction of relevant inf
 ├── requirements.txt          # Python dependencies
 ├── KGC_pipeline.ipynb        # Jupyter notebook demonstrating the full KG‑construction pipeline
 ├── uk2us.py                  # Utility script (UK ↔ US spelling normalizer)
-├── widoco.properties         # Configuration for generating ontology documentation
+├── widoco.properties
 │
 ├── top_level_KG.ttl          # Core concepts and their relationships in the SHKG (RDF/Turtle)
 ├── soil_health_KG.ttl        # Full Soil Health KG (RDF/Turtle)
@@ -52,7 +52,7 @@ We utilized a pipeline that incorporates LLMs for the extraction of relevant inf
 ├── example_SWR.trig          # Example SoilWise knowledge repository (TriG)
 │
 ├── example_sparql_queries/   # Example SPARQL queries
-├── ex_ontovocabs/            # Linked soil-related vocabularies & thesauri
+├── ex_ontovocabs/            # Linked external vocabularies & thesauri
 ├── in_ontovocabs/            # Imported ontologies & schemas
 ├── benchmarks/
 │   ├── text_RDF_gs.json       # Text-to-RDF gold standard benchmark
