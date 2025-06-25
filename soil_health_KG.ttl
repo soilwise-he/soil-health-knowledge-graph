@@ -3284,14 +3284,6 @@ she:PoreGeometry a skos:Concept ;
     agrontology:isIncludedIn she:SoilStructuralAttributes ;
     skos:prefLabel "pore geometry"@en .
 
-she:Porosity a skos:Concept ;
-    dcterms:source she:Johnannes2017 ;
-    skos:broader she:SoilStructuralParameters ;
-    skos:exactMatch agrovoc:c_13520,
-        inrae:c_13512,
-        iso11074:3.334 ;
-    skos:prefLabel "porosity"@en .
-
 she:Portugal a schema:Country ;
     skos:exactMatch agrovoc:c_6124 ;
     skos:prefLabel "Portugal"@en .
@@ -3490,12 +3482,6 @@ she:RockType a skos:Concept ;
 
 she:Romkens2018 a dcterms:BibliographicResource ;
     dcterms:date "2018" .
-
-she:Root a skos:Concept ;
-    skos:broader she:PlantPart ;
-    skos:exactMatch inrae:c_9503,
-        gemet:7312 ;
-    skos:prefLabel "root"@en .
 
 she:RootGrowth a skos:Concept ;
     dcterms:source she:Beylich2010,
@@ -4030,12 +4016,6 @@ she:SoilPollutionThresholds a skos:Concept ;
 she:SoilPoreFunctions a skos:Concept ;
     agrontology:isAffectedBy she:ParticleArrangement ;
     skos:prefLabel "soil pore functions"@en .
-
-she:SoilPorosity a skos:Concept ;
-    skos:broader she:DerivedSoilProperties ;
-    skos:exactMatch agrovoc:c_35320,
-        inrae:c_16324 ;
-    skos:prefLabel "soil porosity"@en .
 
 she:SoilProcessChanges a skos:Concept ;
     skos:prefLabel "soil process changes"@en .
@@ -6752,6 +6732,14 @@ she:SoilPenetrationResistance a skos:Concept ;
     skos:exactMatch agrovoc:c_d79c08d8 ;
     skos:prefLabel "soil penetration resistance"@en .
 
+she:SoilPorosity a skos:Concept ;
+    dcterms:source she:Johnannes2017 ;
+    skos:broader she:DerivedSoilProperties,
+        she:SoilStructuralParameters ;
+    skos:exactMatch agrovoc:c_35320,
+        inrae:c_16324 ;
+    skos:prefLabel "soil porosity"@en .
+
 she:SoilProcesses a skos:Concept ;
     obo:RO_0002327 she:EcosystemServices ;
     dcterms:source she:Buenemann2018,
@@ -7888,12 +7876,6 @@ she:RegulationEUNo13062013 a sohuj:Regulation ;
 
 she:Richter2020 a dcterms:BibliographicResource ;
     dcterms:date "2020" .
-
-she:Roots a skos:Concept ;
-    agrontology:hasProperty she:Abundance,
-        she:Size ;
-    skos:exactMatch agrovoc:c_6651 ;
-    skos:prefLabel "roots"@en .
 
 she:SOCTurnover a skos:Concept ;
     skos:prefLabel "SOC turnover"@en .
@@ -9043,6 +9025,16 @@ she:Respiration a skos:Concept ;
 she:Ritz2009 a dcterms:BibliographicResource ;
     dcterms:date "2009" .
 
+she:Roots a skos:Concept ;
+    agrontology:hasProperty she:Abundance,
+        she:Size ;
+    skos:altLabel "root"@en ;
+    skos:broader she:PlantPart ;
+    skos:exactMatch agrovoc:c_6651,
+        inrae:c_9503,
+        gemet:7312 ;
+    skos:prefLabel "roots"@en .
+
 she:SOCThresholds a skos:Concept ;
     agrontology:prevents she:NitrogendepletedSoils,
         she:SOCdepletedSoils ;
@@ -9209,8 +9201,8 @@ she:SoilStructuralParameters a skos:Concept ;
     dcterms:source she:Johnannes2017 ;
     skos:narrower she:AggregateStability,
         she:MechanicalProperties,
-        she:Porosity,
-        she:SoilPenetrationResistance ;
+        she:SoilPenetrationResistance,
+        she:SoilPorosity ;
     skos:prefLabel "soil structural parameters"@en .
 
 she:Strain a skos:Concept ;
@@ -9599,7 +9591,7 @@ she:PlantPart a skos:Concept ;
     skos:exactMatch inrae:c_26194 ;
     skos:narrower she:Leaf,
         she:Needle,
-        she:Root,
+        she:Roots,
         she:Wood ;
     skos:prefLabel "plant part"@en .
 
