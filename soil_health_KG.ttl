@@ -12019,7 +12019,7 @@ she:SoilQuality a skos:Concept ;
         she:Vogel2020 ;
     bao:BAO_0095002 she:SoilRespiration ;
     skos:definition "The definition of soil quality and soil health is the capacity of a soil to function within ecosystems and land-use boundaries to sustain biological productivity, maintain environmental quality, and promote plant and animal health."@en,
-        "soil quality is defined as the inherent capacity which provides the basic frame within which a soil evolves."@en ;
+        "Soil quality is defined as the inherent capacity which provides the basic frame within which a soil evolves."@en ;
     skos:exactMatch agrovoc:c_a9645d28,
         inrae:c_661,
         gemet:7884,
