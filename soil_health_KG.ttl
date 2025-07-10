@@ -8812,7 +8812,7 @@ she:MineralNTotalConcentration a skos:Concept ;
     agrontology:affects she:NMineralisationRate ;
     agrontology:hasComponent she:AmmoniumNitrogen,
         she:NitrateN ;
-    agrontology:hasSymbol "$N_{min}$"^^qudt:LatexString ;
+    qudt:symbol "$N_{min}$"^^qudt:LatexString ;
     agrontology:isUsedIn she:NFertiliserRecommendations ;
     skos:definition "The total concentration of mineral N is the sum of nitrate N and ammonium N."@en ;
     skos:prefLabel "mineral N total concentration"@en .
