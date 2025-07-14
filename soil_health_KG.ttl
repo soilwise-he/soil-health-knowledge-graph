@@ -2420,12 +2420,6 @@ she:LayerThickness a skos:Concept ;
     qudt:unit unit:M ;
     skos:prefLabel "layer thickness"@en .
 
-she:Leaf a skos:Concept ;
-    skos:broader she:PlantPart ;
-    skos:exactMatch inrae:c_9020,
-        gemet:4730 ;
-    skos:prefLabel "leaf"@en .
-
 she:Ledermann2008 a dcterms:BibliographicResource ;
     dcterms:date "2008" ;
     dcterms:source she:SchweizerBundesrat1998 .
@@ -2822,10 +2816,6 @@ she:Necromass a skos:Concept ;
     obo:RO_0002336 she:SoilBiologicalDegradation ;
     skos:definition "Necromass is the incompletely decomposed dead organic matter."@en ;
     skos:prefLabel "necromass"@en .
-
-she:Needle a skos:Concept ;
-    skos:broader she:PlantPart ;
-    skos:prefLabel "needle"@en .
 
 she:NematodeAmount a skos:Concept ;
     skos:broader she:PhenotypebasedIndicators ;
@@ -7543,11 +7533,6 @@ she:LandManagementIntensity a skos:Concept ;
 she:LandUseIntensity a skos:Concept ;
     skos:prefLabel "land use intensity"@en .
 
-she:Leaves a skos:Concept ;
-    skos:broader she:Foliage ;
-    skos:exactMatch agrovoc:c_4243 ;
-    skos:prefLabel "leaves"@en .
-
 she:Litter a skos:Concept ;
     skos:broader she:OrganicLayer,
         she:OrganicMaterial ;
@@ -7661,10 +7646,6 @@ she:NearinfraredLight a skos:Concept ;
     skos:prefLabel "near-infrared light"@en ;
     she:isReflectedBy she:HealthyVegetation,
         she:Vegetation .
-
-she:Needles a skos:Concept ;
-    skos:broader she:Foliage ;
-    skos:prefLabel "needles"@en .
 
 she:NitrogenAvailability a skos:Concept ;
     agrontology:measures she:NutrientCycling ;
@@ -8733,6 +8714,15 @@ she:LargeErosionEvents a skos:Concept ;
         she:OffsitePollution,
         she:RiverSedimentation .
 
+she:Leaves a skos:Concept ;
+    skos:altLabel "leaf"@en ;
+    skos:broader she:Foliage,
+        she:PlantPart ;
+    skos:exactMatch agrovoc:c_4243,
+        inrae:c_9020,
+        gemet:4730 ;
+    skos:prefLabel "leaves"@en .
+
 she:Level2SoilErosionMonitoring a skos:Concept ;
     agrontology:includes she:Mapping,
         she:Measurements,
@@ -8812,8 +8802,8 @@ she:MineralNTotalConcentration a skos:Concept ;
     agrontology:affects she:NMineralisationRate ;
     agrontology:hasComponent she:AmmoniumNitrogen,
         she:NitrateN ;
-    qudt:symbol "$N_{min}$"^^qudt:LatexString ;
     agrontology:isUsedIn she:NFertiliserRecommendations ;
+    qudt:symbol "$N_{min}$"^^qudt:LatexString ;
     skos:definition "The total concentration of mineral N is the sum of nitrate N and ammonium N."@en ;
     skos:prefLabel "mineral N total concentration"@en .
 
@@ -8858,6 +8848,12 @@ she:NatureOfHumusConstituents a skos:Concept ;
     agrontology:isPropertyOf she:FabricOfOrganicHorizons ;
     dcterms:source she:Green1993 ;
     skos:prefLabel "nature of humus constituents"@en .
+
+she:Needles a skos:Concept ;
+    skos:altLabel "needle"@en ;
+    skos:broader she:Foliage,
+        she:PlantPart ;
+    skos:prefLabel "needles"@en .
 
 she:Nitrate a skos:Concept ;
     agrontology:hasSymbol "NO₃⁻"@en ;
@@ -9589,8 +9585,8 @@ she:PlantHealth a skos:Concept ;
 she:PlantPart a skos:Concept ;
     agrontology:isPropertyOf she:TypeOfLitter ;
     skos:exactMatch inrae:c_26194 ;
-    skos:narrower she:Leaf,
-        she:Needle,
+    skos:narrower she:Leaves,
+        she:Needles,
         she:Roots,
         she:Wood ;
     skos:prefLabel "plant part"@en .
@@ -12018,8 +12014,8 @@ she:SoilQuality a skos:Concept ;
         she:EC2020a,
         she:Vogel2020 ;
     bao:BAO_0095002 she:SoilRespiration ;
-    skos:definition "The definition of soil quality and soil health is the capacity of a soil to function within ecosystems and land-use boundaries to sustain biological productivity, maintain environmental quality, and promote plant and animal health."@en,
-        "Soil quality is defined as the inherent capacity which provides the basic frame within which a soil evolves."@en ;
+    skos:definition "Soil quality is defined as the inherent capacity which provides the basic frame within which a soil evolves."@en,
+        "The definition of soil quality and soil health is the capacity of a soil to function within ecosystems and land-use boundaries to sustain biological productivity, maintain environmental quality, and promote plant and animal health."@en ;
     skos:exactMatch agrovoc:c_a9645d28,
         inrae:c_661,
         gemet:7884,
