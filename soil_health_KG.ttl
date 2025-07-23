@@ -1,4 +1,3 @@
-@prefix af-p: <http://purl.allotrope.org/ontologies/process#> .
 @prefix af-r: <http://purl.allotrope.org/ontologies/result#> .
 @prefix af-x: <http://purl.allotrope.org/ontologies/property#> .
 @prefix agrontology: <http://aims.fao.org/aos/agrontology#> .
@@ -9707,7 +9706,7 @@ she:ShearStrength a skos:Concept ;
     skos:exactMatch agrovoc:c_9d2ec51c ;
     skos:prefLabel "shear strength"@en .
 
-she:SoilBON a af-p:AFP_0003730 ;
+she:SoilBON a obo:NCIT_C61419 ;
     agrontology:isPartOf she:GEOBON ;
     dcterms:source she:Guerra2021 ;
     sio:SIO_000205 she:Guerra2021 ;
