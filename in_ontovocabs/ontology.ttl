@@ -2,7 +2,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix af-p: <http://purl.allotrope.org/ontologies/process#> .
 @prefix af-r: <http://purl.allotrope.org/ontologies/result#> .
 @prefix af-x: <http://purl.allotrope.org/ontologies/property#> .
 @prefix agrontology: <http://aims.fao.org/aos/agrontology#> .
@@ -106,9 +105,6 @@ schema:City a rdfs:Class ;
 
 qudt:Unit a rdfs:Class ;
     skos:prefLabel "Unit" .
-
-af-p:AFP_0003730 a rdfs:Class ;
-    skos:prefLabel "Project" .
 
 obo:NCIT_C80234 a rdfs:Class ;
     skos:prefLabel "Municipality" .
