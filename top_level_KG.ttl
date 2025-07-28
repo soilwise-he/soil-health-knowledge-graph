@@ -1,3 +1,4 @@
+@prefix af-x: <http://purl.allotrope.org/ontologies/property#> .
 @prefix agrontology: <http://aims.fao.org/aos/agrontology#> .
 @prefix bao: <http://www.bioassayontology.org/bao#> .
 @prefix schema: <https://schema.org/> .
