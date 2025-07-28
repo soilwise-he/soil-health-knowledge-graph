@@ -5,6 +5,7 @@
 @prefix she: <https://soilwise-he.github.io/soil-health#> .
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sorelm: <http://sweetontology.net/relaMath/> .
 
 she:EcosystemServices a skos:Concept ;
     agrontology:includes she:CulturalServices,
@@ -25,24 +26,6 @@ she:SoilDegradation a skos:Concept ;
         she:SoilPhysicalDegradation ;
     skos:prefLabel "soil degradation" .
 
-she:SoilFunctions a skos:Concept ;
-    agrontology:includes she:SoilBiologicalFunctions,
-        she:SoilChemicalFunctions,
-        she:SoilPhysicalFunctions ;
-    bao:BAO_0095002 she:SoilFunctionIndicators ;
-    skos:narrower she:CarbonPool,
-        she:ClimateRegulation,
-        she:FoodProduction,
-        she:Habitat,
-        she:NutrientDynamics,
-        she:WaterPurification,
-        she:WaterRegulation,
-        she:WaterRetention ;
-    skos:prefLabel "soil functions" .
-
-she:SoilHealth a skos:Concept ;
-    skos:prefLabel "soil health" .
-
 she:SoilProperties a skos:Concept ;
     agrontology:includes she:DerivedSoilProperties,
         she:ObservableSoilProperties ;
@@ -51,15 +34,8 @@ she:SoilProperties a skos:Concept ;
         she:SoilPhysicalProperties ;
     skos:prefLabel "soil properties" .
 
-she:SoilThreats a skos:Concept ;
-    bao:BAO_0095002 she:SoilThreatIndicators ;
-    skos:prefLabel "soil threats" .
-
 she:Adsorption a skos:Concept ;
     skos:prefLabel "adsorption" .
-
-she:SoilBiologicalFunctions a skos:Concept ;
-    skos:prefLabel "soil biological functions" .
 
 she:BiomassProductivity a skos:Concept ;
     skos:prefLabel "biomass productivity" .
@@ -75,9 +51,6 @@ she:CarbonStorageCapacity a skos:Concept ;
 
 she:CationExchangeCapacity a skos:Concept ;
     skos:prefLabel "cation exchange capacity" .
-
-she:SoilChemicalFunctions a skos:Concept ;
-    skos:prefLabel "soil chemical functions" .
 
 she:ClayMineralogy a skos:Concept ;
     skos:prefLabel "clay mineralogy" .
@@ -189,9 +162,6 @@ she:ObservableSoilProperties a skos:Concept ;
     skos:prefLabel "observable soil properties" ;
     schema:isBasedOn she:Measurements .
 
-she:SoilPhysicalFunctions a skos:Concept ;
-    skos:prefLabel "soil physical functions" .
-
 she:ProvisioningServices a skos:Concept ;
     skos:prefLabel "provisioning services" .
 
@@ -227,6 +197,9 @@ she:SoilBiodiversityLoss a skos:Concept ;
 she:SoilBiologicalDegradation a skos:Concept ;
     skos:prefLabel "soil biological degradation" .
 
+she:SoilBiologicalFunctions a skos:Concept ;
+    skos:prefLabel "soil biological functions" .
+
 she:SoilBiologicalProperties a skos:Concept ;
     skos:prefLabel "soil biological properties" ;
     skos:related she:SoilQuality .
@@ -248,6 +221,9 @@ she:SoilCationContent a skos:Concept ;
 she:SoilChemicalDegradation a skos:Concept ;
     skos:prefLabel "soil chemical degradation" .
 
+she:SoilChemicalFunctions a skos:Concept ;
+    skos:prefLabel "soil chemical functions" .
+
 she:SoilChemicalProperties a skos:Concept ;
     skos:prefLabel "soil chemical properties" ;
     skos:related she:SoilQuality .
@@ -264,16 +240,20 @@ she:SoilEcologicalDegradation a skos:Concept ;
 she:SoilErosion a skos:Concept ;
     skos:prefLabel "soil erosion" .
 
-she:SoilFunctionIndicators a skos:Concept ;
-    skos:narrower she:BiomassProductivity,
-        she:CarbonStorageCapacity,
-        she:GroundwaterReproduction,
-        she:HabitatProvisionCapacity,
-        she:NutrientBufferingCapacity,
-        she:NutrientMobilisationCapacity,
-        she:SoilMoistureDeficit,
-        she:WaterStorageCapacity ;
-    skos:prefLabel "soil function indicators" .
+she:SoilFunctions a skos:Concept ;
+    agrontology:includes she:SoilBiologicalFunctions,
+        she:SoilChemicalFunctions,
+        she:SoilPhysicalFunctions ;
+    bao:BAO_0095002 she:SoilFunctionIndicators ;
+    skos:narrower she:CarbonPool,
+        she:ClimateRegulation,
+        she:FoodProduction,
+        she:Habitat,
+        she:NutrientDynamics,
+        she:WaterPurification,
+        she:WaterRegulation,
+        she:WaterRetention ;
+    skos:prefLabel "soil functions" .
 
 she:SoilMoistureDeficit a skos:Concept ;
     skos:prefLabel "soil moisture deficit" .
@@ -306,6 +286,9 @@ she:SoilPhosphorus a skos:Concept ;
 she:SoilPhysicalDegradation a skos:Concept ;
     skos:prefLabel "soil physical degradation" .
 
+she:SoilPhysicalFunctions a skos:Concept ;
+    skos:prefLabel "soil physical functions" .
+
 she:SoilPhysicalProperties a skos:Concept ;
     skos:prefLabel "soil physical properties" ;
     skos:related she:SoilQuality .
@@ -328,17 +311,9 @@ she:SoilTemperature a skos:Concept ;
 she:SoilTexturalClasses a skos:Concept ;
     skos:prefLabel "soil textural classes" .
 
-she:SoilThreatIndicators a skos:Concept ;
-    skos:narrower she:SOCLoss,
-        she:Salinisation,
-        she:SoilAcidification,
-        she:SoilBiodiversityLoss,
-        she:SoilCompaction,
-        she:SoilErosion,
-        she:SoilNutrientLoss,
-        she:SoilPollution,
-        she:SoilSealing ;
-    skos:prefLabel "soil threat indicators" .
+she:SoilThreats a skos:Concept ;
+    bao:BAO_0095002 she:SoilThreatIndicators ;
+    skos:prefLabel "soil threats" .
 
 she:SoilWaterContent a skos:Concept ;
     skos:prefLabel "soil water content" .
@@ -382,8 +357,42 @@ she:Salts a skos:Concept ;
 she:SoilContaminants a skos:Concept ;
     skos:prefLabel "soil contaminants" .
 
+she:SoilFunctionIndicators a skos:Concept ;
+    agrontology:measures she:SoilThreats ;
+    sorelm:hasThreshold [ skos:related she:SoilHealth ] ;
+    skos:narrower she:BiomassProductivity,
+        she:CarbonStorageCapacity,
+        she:GroundwaterReproduction,
+        she:HabitatProvisionCapacity,
+        she:NutrientBufferingCapacity,
+        she:NutrientMobilisationCapacity,
+        she:SoilMoistureDeficit,
+        she:WaterStorageCapacity ;
+    skos:prefLabel "soil function indicators" .
+
+she:SoilHealth a skos:Concept ;
+    skos:definition "Soil health is the level to which soil functions are fulfilled." ;
+    skos:prefLabel "soil health" .
+
 she:SoilNutrients a skos:Concept ;
     skos:prefLabel "soil nutrients" .
 
+she:SoilThreatIndicators a skos:Concept ;
+    agrontology:affects she:SoilFunctions ;
+    sorelm:hasThreshold [ skos:related she:SoilHealth ] ;
+    skos:narrower she:SOCLoss,
+        she:Salinisation,
+        she:SoilAcidification,
+        she:SoilBiodiversityLoss,
+        she:SoilCompaction,
+        she:SoilErosion,
+        she:SoilNutrientLoss,
+        she:SoilPollution,
+        she:SoilSealing ;
+    skos:prefLabel "soil threat indicators" .
+
 she:SoilQuality a skos:Concept ;
+    af-x:AFX_0000355 she:SoilFunctionIndicators,
+        she:SoilThreatIndicators ;
     skos:prefLabel "soil quality" .
+

@@ -11783,20 +11783,6 @@ she:SoilNAvailability a skos:Concept ;
     skos:altLabel "N availability"@en ;
     skos:prefLabel "soil N availability"@en .
 
-she:SoilThreatIndicators a skos:Concept ;
-    bao:BAO_0002586 she:SoilThreats ;
-    skos:altLabel "soil threat indicator"@en ;
-    skos:narrower she:SOCLosses,
-        she:SoilAcidification,
-        she:SoilCompaction,
-        she:SoilErosion,
-        she:SoilNutrientLoss,
-        she:SoilPollution,
-        she:SoilSalinisation,
-        she:SoilSealing,
-        she:SoilSoilBiodiversityLoss ;
-    skos:prefLabel "soil threat indicators"@en .
-
 she:TolerableSoilLoss a skos:Concept ;
     af-x:AFX_0002843 she:GullyPrevention,
         she:InfieldSedimentProblems,
@@ -12160,25 +12146,6 @@ she:SoilFertility a skos:Concept ;
     skos:related she:SoilErosion,
         she:TolerableSoilLoss .
 
-she:SoilHealth a skos:Concept ;
-    agrontology:isBeneficialFor she:AnimalHealth,
-        she:BiologicalProductivity,
-        she:EnvironmentalQuality,
-        she:HumanHealth,
-        she:PlantHealth,
-        she:Productivity ;
-    obo:T4FS_0000577 she:LowestSOCContentThresholds ;
-    dcterms:source she:Bonfante2020,
-        she:Bunemann2018,
-        she:Vogel2020 ;
-    bao:BAO_0095002 she:SOCContents ;
-    skos:broader she:EcologicalIndicators ;
-    skos:closeMatch agrovoc:c_a9645d28 ;
-    skos:definition "Soil health is defined as the actual capacity of a soil to perform its core functions and to provide ecosystem services."@en,
-        "The definition of soil quality and soil health is the capacity of a soil to function within ecosystems and land-use boundaries to sustain biological productivity, maintain environmental quality, and promote plant and animal health."@en ;
-    skos:exactMatch inrae:c_2d69fde2 ;
-    skos:prefLabel "soil health"@en .
-
 she:SoilNutrientStatus a skos:Concept ;
     agrontology:affects [ obo:BFO_0000066 she:NaturalSoils ;
             rdf:object she:BiomassProduction ],
@@ -12219,6 +12186,23 @@ she:SoilParameters a skos:Concept ;
         she:SpecificSoilParameters ;
     skos:prefLabel "soil parameters"@en ;
     wdt:P1889 she:SoilIndicators .
+
+she:SoilThreatIndicators a skos:Concept ;
+    agrontology:affects she:SoilFunctions ;
+    af-x:AFX_0000408 she:SoilQuality ;
+    sorelm:hasThreshold [ skos:related she:SoilHealth ] ;
+    bao:BAO_0002586 she:SoilThreats ;
+    skos:altLabel "soil threat indicator"@en ;
+    skos:narrower she:SOCLosses,
+        she:SoilAcidification,
+        she:SoilCompaction,
+        she:SoilErosion,
+        she:SoilNutrientLoss,
+        she:SoilPollution,
+        she:SoilSalinisation,
+        she:SoilSealing,
+        she:SoilSoilBiodiversityLoss ;
+    skos:prefLabel "soil threat indicators"@en .
 
 she:Europe a schema:Continent ;
     af-x:AFX_0002727 [ agrontology:measures she:LandRecyclingPotential ] ;
@@ -12317,6 +12301,25 @@ she:Vogel2020 a dcterms:BibliographicResource ;
 
 she:Maes2020 a dcterms:BibliographicResource ;
     dcterms:date "2020" .
+
+she:SoilHealth a skos:Concept ;
+    agrontology:isBeneficialFor she:AnimalHealth,
+        she:BiologicalProductivity,
+        she:EnvironmentalQuality,
+        she:HumanHealth,
+        she:PlantHealth,
+        she:Productivity ;
+    obo:T4FS_0000577 she:LowestSOCContentThresholds ;
+    dcterms:source she:Bonfante2020,
+        she:Bunemann2018,
+        she:Vogel2020 ;
+    bao:BAO_0095002 she:SOCContents ;
+    skos:broader she:EcologicalIndicators ;
+    skos:closeMatch agrovoc:c_a9645d28 ;
+    skos:definition "Soil health is defined as the actual capacity of a soil to perform its core functions and to provide ecosystem services."@en,
+        "The definition of soil quality and soil health is the capacity of a soil to function within ecosystems and land-use boundaries to sustain biological productivity, maintain environmental quality, and promote plant and animal health."@en ;
+    skos:exactMatch inrae:c_2d69fde2 ;
+    skos:prefLabel "soil health"@en .
 
 she:SoilPhysicalDegradation a skos:Concept ;
     agrontology:includes she:SoilExcavation,
@@ -12610,55 +12613,6 @@ she:ObservableSoilProperties a skos:Concept ;
     skos:prefLabel "observable soil properties"@en ;
     schema:isBasedOn she:Measurements .
 
-she:SoilFunctionIndicators a skos:Concept ;
-    dcterms:source she:Pawar2017 ;
-    bao:BAO_0002586 she:SoilFunctions ;
-    skos:altLabel "soil function indicator"@en ;
-    skos:narrower she:BiomassProductivity,
-        she:CarbonStorageCapacity,
-        she:CationExchangeCapacity,
-        she:GroundwaterReproduction,
-        she:HabitatProvisionCapacity,
-        she:MicronutrientAvailability,
-        she:NutrientBufferingCapacity,
-        she:NutrientMobilisationCapacity,
-        she:SoilMoistureDeficit,
-        she:SoilStability,
-        she:WaterStorageCapacity,
-        she:WaterholdingCapacity,
-        she:WaterstableSoilAggregation ;
-    skos:prefLabel "soil function indicators"@en ;
-    skos:related she:SOCThresholds ;
-    she:indicates she:SoilDegradation .
-
-she:SoilThreats a skos:Concept ;
-    agrontology:affects she:SoilBiologicalProperties,
-        she:SoilChemicalProperties,
-        she:SoilPhysicalProperties,
-        she:SoilProperties ;
-    agrontology:isMeasuredBy she:SpatialData ;
-    agrontology:isPreventedBy she:SoilProtection ;
-    obo:OAE_0000025 she:SoilErosion ;
-    obo:RO_0002212 she:EcosystemServices ;
-    obo:RO_0002552 she:SoilProperties,
-        she:Soils ;
-    dcterms:source she:EUSoilThematicStrategy2006,
-        she:FAOITPS2015,
-        she:Huber2008,
-        she:VanCamp2004c ;
-    sio:equivalentTo she:LandDegradationProcesses ;
-    bao:BAO_0095002 she:SoilThreatIndicators ;
-    skos:altLabel "soil threat"@en ;
-    skos:definition "Soil threats are characterised by a negative trend in one or several soil properties, or are indicated directly by features observed in the field."@en,
-        "Soil threats are processes that damage soil and its functional properties, reducing the soil's capacity to provide ecosystem services."@en ;
-    skos:narrower she:IndustrialPollutantInputs,
-        she:SOCLosses ;
-    skos:prefLabel "soil threats"@en ;
-    she:indicates she:SoilDegradation ;
-    she:isCharacterisedBy [ obo:RO_0002212 she:SoilProperties ] ;
-    she:isIndicatedBy she:SoilErosion,
-        she:SoilSealing .
-
 she:EssentialBiodiversityVariables a skos:Concept ;
     dcterms:source she:Guerra2021 ;
     skos:altLabel "essential biodiversity variable"@en ;
@@ -12704,40 +12658,58 @@ she:SoilErosionByWater a skos:Concept ;
     skos:prefLabel "soil erosion by water"@en ;
     schema:isBasedOn she:Modelling .
 
-she:SoilQuality a skos:Concept ;
-    agrontology:isBeneficialFor she:AnimalHealth,
-        she:BiologicalProductivity,
-        she:EnvironmentalQuality,
-        she:HumanHealth,
-        she:PlantHealth,
-        she:Productivity ;
-    agrontology:isMeasuredBy she:SoilPollutantConcentrations ;
-    agrontology:isUsedAs she:InfrastructurePlatform ;
-    obo:RO_0002335 she:SoilErosion ;
-    dcterms:source she:Bone2010,
-        she:Bonfante2020,
-        she:Bunemann2018,
-        she:EC2020a,
-        she:Vogel2020 ;
-    bao:BAO_0095002 she:SoilRespiration ;
-    skos:definition "Soil quality is defined as the inherent capacity which provides the basic frame within which a soil evolves."@en,
-        "The definition of soil quality and soil health is the capacity of a soil to function within ecosystems and land-use boundaries to sustain biological productivity, maintain environmental quality, and promote plant and animal health."@en ;
-    skos:exactMatch agrovoc:c_a9645d28,
-        inrae:c_661,
-        gemet:7884,
-        iso11074:3.466 ;
-    skos:prefLabel "soil quality"@en ;
-    skos:related she:SoilBiologicalProperties,
-        she:SoilCapability,
+she:SoilThreats a skos:Concept ;
+    agrontology:affects she:SoilBiologicalProperties,
         she:SoilChemicalProperties,
-        she:SoilDegradation,
-        she:SoilPhysicalProperties ;
-    schema:isBasedOn she:ManageableSoilAttributes,
-        she:ResponsiveSoilAttributes,
-        she:SensitiveSoilAttributes ;
-    she:characterises she:StateOfSoils ;
-    she:indicates she:SoilRisk ;
-    she:isComparedWith she:SoilScreeningValues .
+        she:SoilPhysicalProperties,
+        she:SoilProperties ;
+    agrontology:isMeasuredBy she:SoilFunctionIndicators,
+        she:SpatialData ;
+    agrontology:isPreventedBy she:SoilProtection ;
+    obo:OAE_0000025 she:SoilErosion ;
+    obo:RO_0002212 she:EcosystemServices ;
+    obo:RO_0002552 she:SoilProperties,
+        she:Soils ;
+    dcterms:source she:EUSoilThematicStrategy2006,
+        she:FAOITPS2015,
+        she:Huber2008,
+        she:VanCamp2004c ;
+    sio:equivalentTo she:LandDegradationProcesses ;
+    bao:BAO_0095002 she:SoilThreatIndicators ;
+    skos:altLabel "soil threat"@en ;
+    skos:definition "Soil threats are characterised by a negative trend in one or several soil properties, or are indicated directly by features observed in the field."@en,
+        "Soil threats are processes that damage soil and its functional properties, reducing the soil's capacity to provide ecosystem services."@en ;
+    skos:narrower she:IndustrialPollutantInputs,
+        she:SOCLosses ;
+    skos:prefLabel "soil threats"@en ;
+    she:indicates she:SoilDegradation ;
+    she:isCharacterisedBy [ obo:RO_0002212 she:SoilProperties ] ;
+    she:isIndicatedBy she:SoilErosion,
+        she:SoilSealing .
+
+she:SoilFunctionIndicators a skos:Concept ;
+    agrontology:measures she:SoilThreats ;
+    af-x:AFX_0000408 she:SoilQuality ;
+    dcterms:source she:Pawar2017 ;
+    sorelm:hasThreshold [ skos:related she:SoilHealth ] ;
+    bao:BAO_0002586 she:SoilFunctions ;
+    skos:altLabel "soil function indicator"@en ;
+    skos:narrower she:BiomassProductivity,
+        she:CarbonStorageCapacity,
+        she:CationExchangeCapacity,
+        she:GroundwaterReproduction,
+        she:HabitatProvisionCapacity,
+        she:MicronutrientAvailability,
+        she:NutrientBufferingCapacity,
+        she:NutrientMobilisationCapacity,
+        she:SoilMoistureDeficit,
+        she:SoilStability,
+        she:WaterStorageCapacity,
+        she:WaterholdingCapacity,
+        she:WaterstableSoilAggregation ;
+    skos:prefLabel "soil function indicators"@en ;
+    skos:related she:SOCThresholds ;
+    she:indicates she:SoilDegradation .
 
 she:UrbanSoils a skos:Concept ;
     dcterms:source she:Reto2006 ;
@@ -12862,6 +12834,43 @@ she:SoilAttributes a skos:Concept ;
                 she:ManagementAttributes,
                 she:SiteAttributes ;
             rdf:object she:SoilFunctionalCapacity ] .
+
+she:SoilQuality a skos:Concept ;
+    agrontology:isBeneficialFor she:AnimalHealth,
+        she:BiologicalProductivity,
+        she:EnvironmentalQuality,
+        she:HumanHealth,
+        she:PlantHealth,
+        she:Productivity ;
+    agrontology:isMeasuredBy she:SoilPollutantConcentrations ;
+    agrontology:isUsedAs she:InfrastructurePlatform ;
+    af-x:AFX_0000355 she:SoilFunctionIndicators,
+        she:SoilThreatIndicators ;
+    obo:RO_0002335 she:SoilErosion ;
+    dcterms:source she:Bone2010,
+        she:Bonfante2020,
+        she:Bunemann2018,
+        she:EC2020a,
+        she:Vogel2020 ;
+    bao:BAO_0095002 she:SoilRespiration ;
+    skos:definition "Soil quality is defined as the inherent capacity which provides the basic frame within which a soil evolves."@en,
+        "The definition of soil quality and soil health is the capacity of a soil to function within ecosystems and land-use boundaries to sustain biological productivity, maintain environmental quality, and promote plant and animal health."@en ;
+    skos:exactMatch agrovoc:c_a9645d28,
+        inrae:c_661,
+        gemet:7884,
+        iso11074:3.466 ;
+    skos:prefLabel "soil quality"@en ;
+    skos:related she:SoilBiologicalProperties,
+        she:SoilCapability,
+        she:SoilChemicalProperties,
+        she:SoilDegradation,
+        she:SoilPhysicalProperties ;
+    schema:isBasedOn she:ManageableSoilAttributes,
+        she:ResponsiveSoilAttributes,
+        she:SensitiveSoilAttributes ;
+    she:characterises she:StateOfSoils ;
+    she:indicates she:SoilRisk ;
+    she:isComparedWith she:SoilScreeningValues .
 
 she:SoilSalinisation a skos:Concept ;
     agrontology:affects she:MediterraneanCountries ;
@@ -13391,6 +13400,7 @@ she:SoilFunctions a skos:Concept ;
         she:SoilPhysicalFunctions ;
     agrontology:isAffectedBy she:Pollutant,
         she:SoilAcidification,
+        she:SoilThreatIndicators,
         she:SubsoilCompaction ;
     agrontology:isPerformedBy she:Soils ;
     agrontology:makeUseOf she:SoilAttributes ;
