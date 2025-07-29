@@ -23,7 +23,7 @@ Soil health is fundamental to environmental sustainability and food security, ye
 
 ## 📈 Overview of Core Concepts
 
-Illustration of the core concepts and their relationships in the SHKG:
+Illustration of the high-level structure of the soil health KG:
 
 ![Soil Health KG overview](imgs/soil_health_KG.svg)
 
