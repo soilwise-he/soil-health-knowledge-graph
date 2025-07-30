@@ -25,8 +25,8 @@ Soil health is fundamental to environmental sustainability and food security, ye
 
 This work draws on the following primary resources:
 
-- **EEA (2023).** _Soil monitoring in Europe – Indicators and thresholds for soil health assessments_.  
-- **EEA (2024).** _The state of soils in Europe – Fully evidenced, spatially organised assessment of the pressures driving soil degradation_.
+* **EEA (2023).** *Soil monitoring in Europe – Indicators and thresholds for soil health assessments*.  
+* **EEA (2024).** *The state of soils in Europe – Fully evidenced, spatially organised assessment of the pressures driving soil degradation*.
 
 ---
 
@@ -36,11 +36,11 @@ The high‑level structure of the SHKG follows the conceptual model from the EEA
 
 ![Conceptual Model (EEA 2023 report Figure 1.1)](imgs/figure_1.1.jpg)
 
-- **RDF serialization**: see [`top_level_KG.ttl`](top_level_KG.ttl)
+* **RDF serialization**: see [`top_level_KG.ttl`](top_level_KG.ttl)
 
 ---
 
-## 📈 Overview of the soil health KG:
+## 📈 Overview of the soil health KG
 
 Illustration of the high-level structure of the soil health KG:
 
