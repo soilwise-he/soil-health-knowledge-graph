@@ -46,7 +46,7 @@ We utilized a pipeline that incorporates LLMs for the extraction of relevant inf
 ├── uk2us.py                  # Utility script (UK ↔ US spelling normalizer)
 ├── widoco.properties
 │
-├── top_level_KG.ttl          # Core concepts and their relationships in the SHKG (RDF/Turtle)
+├── top_level_KG.ttl          # High-level structure of the SHKG, derived from the conceptual model (RDF/Turtle)
 ├── soil_health_KG.ttl        # Full Soil Health KG (RDF/Turtle)
 ├── shKG_metadata.ttl         # Metadata describing the KG
 ├── example_SWR.trig          # Example SoilWise knowledge repository (TriG)
@@ -164,6 +164,8 @@ The KG is enriched by interlinking to controlled vocabularies and thesauri in th
 
 * **Missing concepts**  
   If you believe a soil‑health concept is missing from the SHKG, please open a new [GitHub issue](https://github.com/soilwise-he/soil-health-knowledge-graph/issues) to let us know.
+
+---
 
 ## 🙏 Acknowledgements
 
