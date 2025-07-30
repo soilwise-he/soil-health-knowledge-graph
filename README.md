@@ -21,6 +21,25 @@ Soil health is fundamental to environmental sustainability and food security, ye
 
 ---
 
+## 📚 Knowledge Sources
+
+This work draws on the following primary resources:
+
+- **EEA (2023).** _Soil monitoring in Europe – Indicators and thresholds for soil health assessments_.  
+- **EEA (2024).** _The state of soils in Europe – Fully evidenced, spatially organised assessment of the pressures driving soil degradation_.
+
+---
+
+## 🧩 Conceptual Model
+
+The high‑level structure of the SHKG follows the conceptual model from the EEA 2023 report (Figure 1.1). We have RDF‑ized this model into our top-level schema:
+
+![Conceptual Model (EEA 2023 report Figure 1.1)](imgs/figure_1.1.jpg)
+
+- **RDF serialization**: see [`top_level_KG.ttl`](top_level_KG.ttl)
+
+---
+
 ## 📈 Overview of the soil health KG:
 
 Illustration of the high-level structure of the soil health KG:
@@ -108,17 +127,6 @@ We utilized a pipeline that incorporates LLMs for the extraction of relevant inf
 * **Interactive Browser**:  [https://soilwise-he.github.io/soil-health](https://soilwise-he.github.io/soil-health)
 * **SPARQL Endpoint**:  [https://repository.soilwise-he.eu/sparql/](https://repository.soilwise-he.eu/sparql/)
 * **Searchable Vocabulary Browser**:  [https://voc.soilwise-he.containers.wur.nl/](https://voc.soilwise-he.containers.wur.nl/)
-
----
-
-## 🧩 Conceptual Model
-
-The high‑level structure of the SHKG follows the conceptual model from the EEA report *Soil monitoring in Europe – Indicators and thresholds for soil health assessments* (Figure 1.1). We have RDF‑ized this model into our top-level schema:
-
-![Conceptual Model (EEA Figure 1.1)](imgs/figure_1.1.jpg)
-
-* **Source**: EEA, *Soil monitoring in Europe – Indicators and thresholds for soil health assessments*  
-* **RDF serialization**: see [`top_level_KG.ttl`](top_level_KG.ttl)
 
 ---
 
