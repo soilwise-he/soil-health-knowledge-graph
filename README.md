@@ -36,7 +36,7 @@ The high‑level structure of the SHKG follows the conceptual model from the EEA
 
 ![Conceptual Model (EEA 2023 report Figure 1.1)](imgs/figure_1.1.jpg)
 
-* **RDF serialization**: see [`top_level_KG.ttl`](top_level_KG.ttl)
+* **RDF representation**: see [`top_level_KG.ttl`](top_level_KG.ttl)
 
 ---
 
