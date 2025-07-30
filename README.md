@@ -155,6 +155,16 @@ The KG is enriched by interlinking to controlled vocabularies and thesauri in th
 
 ---
 
+## 🗣️ Feedback
+
+* **Concept-specific comments**  
+  To leave comments on any individual concept, visit the [VocView portal](https://voc.soilwise-he.containers.wur.nl/), search for your concept of interest, then scroll down to the **Comments** section (as shown in the screenshot below) and post your feedback directly there.
+
+  ![VocView Comments Section](imgs/vocview_comments.png)
+
+* **Missing concepts**  
+  If you believe a soil‑health concept is missing from the SHKG, please open a new [GitHub issue](https://github.com/soilwise-he/soil-health-knowledge-graph/issues) to let us know.
+
 ## 🙏 Acknowledgements
 
 This work was supported by the EU's Horizon Europe research and innovation programme within the [SoilWise](https://cordis.europa.eu/project/id/101112838) project (grant agreement ID: 101112838).
