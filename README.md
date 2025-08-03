@@ -34,7 +34,7 @@ This work draws on the following primary resources:
 
 The high‑level structure of the SHKG follows the conceptual model from the EEA 2023 report (Figure 1.1). We have RDF‑ized this model into our top-level schema:
 
-![Conceptual Model (EEA 2023 report Figure 1.1)](imgs/figure_1.1.jpg)
+![Conceptual Model (EEA 2023 report Figure 1.1)](imgs/conceptual_model_EEA.jpg)
 
 * **RDF representation**: see [`top_level_KG.ttl`](top_level_KG.ttl)
 
@@ -152,7 +152,7 @@ To ensure our soil health KG aligns with recognized standards, we incorporate a 
 * [BioAssay Ontology (BAO)](http://bioassayontology.org/)
 * [Time Ontology](https://www.w3.org/TR/owl-time/)
 
-The KG leverages **20 classes** and **205 properties** drawn from above ontologies to formally define the types of entities and their relationships. All 20 classes come from existing ontologies, while **45** of the 205 properties are defined by us and the rest come from existing ontologies.
+The KG leverages **19 classes** and **205 properties** drawn from above ontologies to formally define the types of entities and their relationships. All 19 classes come from existing ontologies, while **45** of the 205 properties are defined by us and the rest come from existing ontologies.
 
 ## 🔗 Linked Vocabularies & Thesauri
 
@@ -179,7 +179,7 @@ The KG is enriched by interlinking to controlled vocabularies and thesauri in th
 * **Concept-specific comments**  
   To leave comments on any individual concept, visit the [VocView portal](https://voc.soilwise-he.containers.wur.nl/), search for your concept of interest, then scroll down to the **Comments** section (as shown in the screenshot below) and post your feedback directly there.
 
-  ![VocView Comments Section](imgs/vocview_comments.png)
+  ![VocView Comments Section](imgs/vocview_comments.jpg)
 
 * **Missing concepts**  
   If you believe a soil‑health concept is missing from the SHKG, please open a new [GitHub issue](https://github.com/soilwise-he/soil-health-knowledge-graph/issues) to let us know.
