@@ -70,7 +70,7 @@ We utilized a pipeline that incorporates LLMs for the extraction of relevant inf
 ├── shKG_metadata.ttl         # Metadata describing the KG
 ├── example_SWR.trig          # Example SoilWise knowledge repository (TriG)
 │
-├── example_sparql_queries/   # Example SPARQL queries
+├── CQs_sparql_queries/       # SPARQL queries translated from competency questions
 ├── ex_ontovocabs/            # Linked external vocabularies & thesauri
 ├── in_ontovocabs/            # Imported ontologies & schemas
 ├── benchmarks/
@@ -107,7 +107,7 @@ We utilized a pipeline that incorporates LLMs for the extraction of relevant inf
      print(len(g), "triples loaded")
      ```
 
-   * Run example SPARQL queries in `example_sparql_queries/` or via the public endpoint at:
+   * Run example SPARQL queries in `CQs_sparql_queries/` or via the public endpoint at:
      [https://repository.soilwise-he.eu/sparql/](https://repository.soilwise-he.eu/sparql/)
 
 4. **Run the pipeline**
@@ -177,7 +177,7 @@ The KG is enriched by interlinking to controlled vocabularies and thesauri in th
 ## 🗣️ Feedback
 
 * **Concept-specific comments**  
-  To leave comments on any individual concept, visit the [VocView portal](https://voc.soilwise-he.containers.wur.nl/), search for your concept of interest, then scroll down to the **Comments** section (as shown in the screenshot below) and post your feedback directly there.
+  To leave comments on any individual concept, visit the [Soilwise HE Data and Knowledge hub](https://voc.soilwise-he.containers.wur.nl/), search for your concept of interest, then scroll down to the **Comments** section (as shown in the screenshot below) and post your feedback directly there.
 
   ![VocView Comments Section](imgs/vocview_comments.jpg)
 
