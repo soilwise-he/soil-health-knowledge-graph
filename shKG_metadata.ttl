@@ -5,8 +5,20 @@
 @prefix schema: <https://schema.org/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix citedcat: <https://w3id.org/citedcat-ap/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix she: <https://soilwise-he.github.io/soil-health#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://soilwise-he.github.io/soil-health>
+        a skos:ConceptScheme ;
+        skos:hasTopConcept she:SoilHealth,
+            she:SoilThreats,
+            she:SoilFunctions,
+            she:SoilProperties,
+            she:SoilManagement,
+            she:SoilQuality,
+            she:Soils,
+            she:EcosystemServices ;
         owl:versionInfo  "v0.2.5" ;
         dcterms:creator [ schema:affiliation [ foaf:name "Wageningen University & Research" ;
                                                rdfs:seeAlso <https://www.wur.nl/> ] ;
@@ -29,10 +41,13 @@
                       foaf:name "Paul van Genuchten"
                     ] ;
         dcterms:title "Soil health knowledge graph"@en ;
-        dcterms:abstract "The soil health knowledge graph (KG) is designed to unify fragmented interpretations of soil health—a concept variably defined across research, policymaking, and agricultural practice—by structuring insights mainly from the European Environment Agency's report Soil Monitoring in Europe: Indicators and Thresholds for Soil Health Assessments. The KG leverages SKOS (Simple Knowledge Organization System) as its core framework to model soil health concepts, soil threat indicators and their critical thresholds, while Dublin Core standardizes metadata for references in the report. Relationships between entities are semantically defined using existing ontologies such as Agrontology and OBO Relation Ontology. The KG is linked to external vocabularies including AGROVOC, GloSIS, ISO 11074:2025, GEMET and INRAE Thesaurus. The soil health KG comprises a total of 11,715 RDF triples. These triples describe 2,018 distinct entities. The majority of these entities (1,786) represent soil-related concepts extracted from the knowledge sources. The remaining entities include 158 bibliographic references cited in the source text, along with other supportive entities such as relevant policies, standards, regulations, geographical regions (e.g., cities, continents), and mathematical or quantitative entities (including models, equations, and units of measure). Structurally, the KG leverages 19 classes and 205 properties drawn from the selected ontologies to formally define the types of entities and the relationships between them."@en ;
+        dcterms:abstract "The soil health knowledge graph (SHKG) is designed to unify fragmented interpretations of soil health—a concept variably defined across research, policymaking, and agricultural practice—by structuring insights mainly from the European Environment Agency's report Soil Monitoring in Europe: Indicators and Thresholds for Soil Health Assessments. The KG leverages SKOS (Simple Knowledge Organization System) as its core framework to model soil health concepts, soil threat indicators and their critical thresholds, while Dublin Core standardizes metadata for references in the report. Relationships between entities are semantically defined using existing ontologies such as Agrontology and OBO Relation Ontology. The KG is linked to external vocabularies including AGROVOC, GloSIS, ISO 11074:2025, GEMET and INRAE Thesaurus. The SHKG comprises a total of 11,715 RDF triples. These triples describe 2,018 distinct entities. The majority of these entities (1,786) represent soil-related concepts extracted from the knowledge sources. The remaining entities include 158 bibliographic references cited in the source text, along with other supportive entities such as relevant policies, standards, regulations, geographical regions (e.g., cities, continents), and mathematical or quantitative entities (including models, equations, and units of measure). Structurally, the KG leverages 19 classes and 205 properties drawn from the selected ontologies to formally define the types of entities and the relationships between them."@en ;
         dcterms:rights "This knowledge graph is distributed under Creative Commons Attribution 4.0 International - https://creativecommons.org/licenses/by/4.0/"@en ;
         citedcat:isFundedBy <https://doi.org/10.3030/101112838> ;
-        dcterms:isReferencedBy <https://doi.org/10.5281/zenodo.14936019> .
+        dcterms:isReferencedBy <https://doi.org/10.5281/zenodo.14936019> ;
+        dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+        dcterms:created "2024-09-30"^^xsd:date ;
+        dcterms:modified "2025-08-06"^^xsd:date .
 
 <https://doi.org/10.3030/101112838>
         a foaf:Project ;
