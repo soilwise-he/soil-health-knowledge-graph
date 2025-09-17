@@ -10,15 +10,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://soilwise-he.github.io/soil-health>
-        a skos:ConceptScheme ;
-        skos:hasTopConcept she:SoilHealth,
-            she:SoilThreats,
-            she:SoilFunctions,
-            she:SoilProperties,
-            she:SoilManagement,
-            she:SoilQuality,
-            she:Soils,
-            she:EcosystemServices ;
         owl:versionInfo  "v0.2.5" ;
         dcterms:creator [ schema:affiliation [ foaf:name "Wageningen University & Research" ;
                                                rdfs:seeAlso <https://www.wur.nl/> ] ;

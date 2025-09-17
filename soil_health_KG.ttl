@@ -33,6 +33,18 @@
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://soilwise-he.github.io/soil-health> a skos:ConceptScheme ;
+    skos:hasTopConcept she:SoilHealth,
+        she:SoilIndicators,
+        she:SoilThreats,
+        she:SoilFunctions,
+        she:SoilProperties,
+        she:SoilManagement,
+        she:SoilQuality,
+        she:Soils,
+        she:SoilDegradation,
+        she:EcosystemServices .
+
 she:AffectedLand a skos:Concept ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "affected land"@en ;
@@ -4926,6 +4938,7 @@ she:SoilLossRatesByWater a skos:Concept ;
     skos:prefLabel "soil loss rates by water"@en .
 
 she:SoilManagement a skos:Concept ;
+    skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     dcterms:source she:Vogel2020 ;
     skos:exactMatch agrovoc:c_7176,
         inrae:c_3542 ;
@@ -14051,6 +14064,7 @@ she:Maes2020 a dcterms:BibliographicResource ;
     dcterms:date "2020" .
 
 she:SoilHealth a skos:Concept ;
+    skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     agrontology:isBeneficialFor she:AnimalHealth,
         she:BiologicalProductivity,
         she:EnvironmentalQuality,
@@ -14423,6 +14437,7 @@ she:SoilErosionByWater a skos:Concept ;
     schema:isBasedOn she:Modelling .
 
 she:SoilThreats a skos:Concept ;
+    skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     agrontology:affects she:SoilBiologicalProperties,
         she:SoilChemicalProperties,
         she:SoilPhysicalProperties,
@@ -14607,6 +14622,7 @@ she:SoilAttributes a skos:Concept ;
             rdf:object she:SoilFunctionalCapacity ] .
 
 she:SoilQuality a skos:Concept ;
+    skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     agrontology:isBeneficialFor she:AnimalHealth,
         she:BiologicalProductivity,
         she:EnvironmentalQuality,
@@ -14792,6 +14808,7 @@ she:SoilErosion a skos:Concept ;
     she:isLimitedBy she:LandManagement .
 
 she:SoilIndicators a skos:Concept ;
+    skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     agrontology:isUsedIn [ schema:assesses she:SoilDegradation ] ;
     dcterms:source she:EC2017,
         she:MAES,
@@ -14864,6 +14881,7 @@ she:SoilSealing a skos:Concept ;
     she:isEssentialFor she:Soils .
 
 she:EcosystemServices a skos:Concept ;
+    skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     agrontology:benefitsFrom she:HealthySoils ;
     agrontology:includes she:CulturalServices,
         she:ProvisioningServices,
@@ -14899,6 +14917,7 @@ she:EcosystemServices a skos:Concept ;
     she:isEssentialFor she:HumanWellbeing .
 
 she:SoilProperties a skos:Concept ;
+    skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     agrontology:affects she:SoilPathway ;
     agrontology:includes she:DerivedSoilProperties,
         she:ObservableSoilProperties ;
@@ -14925,6 +14944,7 @@ she:SoilProperties a skos:Concept ;
         she:Urbanisation .
 
 she:SoilDegradation a skos:Concept ;
+    skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     agrontology:affects she:SoilBiologicalFunctions,
         she:SoilChemicalFunctions,
         she:SoilPhysicalFunctions ;
@@ -15115,6 +15135,7 @@ she:SoilCompaction a skos:Concept ;
         she:PrecompressionStress .
 
 she:Soils a skos:Concept ;
+    skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     agrontology:includes she:SoilSurface ;
     agrontology:isAffectedBy [ rdf:object she:PointSourceSoilPollution ;
             she:isCharacterisedBy she:HighPollutantConcentrations ],
@@ -15178,6 +15199,7 @@ she:Soils a skos:Concept ;
         she:Time .
 
 she:SoilFunctions a skos:Concept ;
+    skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     agrontology:includes she:SoilBiologicalFunctions,
         she:SoilChemicalFunctions,
         she:SoilEcologicalFunctions,
