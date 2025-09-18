@@ -5,8 +5,6 @@
 @prefix schema: <https://schema.org/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix citedcat: <https://w3id.org/citedcat-ap/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix she: <https://soilwise-he.github.io/soil-health#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://soilwise-he.github.io/soil-health>
@@ -43,7 +41,7 @@
 <https://doi.org/10.3030/101112838>
         a foaf:Project ;
         dcterms:title "An open access knowledge and data repository to safeguard soils"@en ;
-        citedcat:isAwardedBy [ foaf:Organization "European Commission" ] .
+        citedcat:isAwardedBy [ foaf:name "European Commission" ] .
 
 <https://doi.org/10.5281/zenodo.14936019>
         a dcat:Dataset ;
