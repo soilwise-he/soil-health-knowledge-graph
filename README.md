@@ -68,6 +68,7 @@ We utilized a pipeline that incorporates LLMs for the extraction of relevant inf
 │
 ├── top_level_KG.ttl          # High-level structure of the SHKG, derived from the conceptual model (RDF/Turtle)
 ├── soil_health_KG.ttl        # Full Soil Health KG (RDF/Turtle)
+├── soil_health_SKOS.ttl      # SKOS version of Soil Health KG for publishing on AgroPortal (RDF/Turtle)
 ├── shKG_metadata.ttl         # Metadata describing the KG
 ├── example_SWR.trig          # Example SoilWise knowledge repository (TriG)
 │
@@ -128,6 +129,7 @@ We utilized a pipeline that incorporates LLMs for the extraction of relevant inf
 * **Interactive Browser**:  [https://soilwise-he.github.io/soil-health](https://soilwise-he.github.io/soil-health)
 * **SPARQL Endpoint**:  [https://repository.soilwise-he.eu/sparql/](https://repository.soilwise-he.eu/sparql/)
 * **Searchable Vocabulary Browser**:  [https://voc.soilwise-he.containers.wur.nl/](https://voc.soilwise-he.containers.wur.nl/)
+* **AgroPortal Instance**:  [https://agroportal.lirmm.fr/ontologies/SHKG](https://agroportal.lirmm.fr/ontologies/SHKG)
 
 ---
 
