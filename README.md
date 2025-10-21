@@ -11,11 +11,6 @@
 alt="free pitfalls were found" height="69.6" width="100" /></a>
 </p>
 
-This repository contains the open‑source code, data, and examples supporting the paper:
-
-> **Make soil healthy again: Construction of ontology‑compliant soil health knowledge graph with large language models**
-> *B. Wang, L. Moreira de Sousa & A. Fensel*
-
 ## ✨ Abstract
 
 Soil health is fundamental to environmental sustainability and food security, yet relevant knowledge remains fragmented across diverse sources, hindering its effective application. Knowledge graphs (KGs) offer a robust solution by integrating disparate information into a structured, semantically rich format. Addressing this need, this paper presents an ontology-compliant **soil health knowledge graph** (SHKG) derived from domain literature, and the semi-automated, human-in-the-loop pipeline developed to construct it. Our pipeline leverages **large language models** (LLMs) to accelerate knowledge extraction, while incorporating expert oversight to ensure ontological compliance and accuracy. The resulting KG integrates unstructured knowledge into **11,715 RDF triples** representing **2,018 entities**, including **1,786 soil-related concepts**. The KG's fidelity was confirmed by soil scientists through a validation process involving competency questions. We demonstrate the KG's primary use case as the backbone for a knowledge discovery system in soil science. The KG, supporting ontology, and the source code of the pipeline are available here.
@@ -186,6 +181,20 @@ The KG is enriched by interlinking to controlled vocabularies and thesauri in th
 
 * **Missing concepts**  
   If you believe a soil‑health concept is missing from the SHKG, please open a new [GitHub issue](https://github.com/soilwise-he/soil-health-knowledge-graph/issues) to let us know.
+
+---
+
+## 📝 How to Cite
+
+```bibtex
+@inproceedings{wang2025soil,
+  author    = {Beichen Wang and Luís Moreira de Sousa and Anna Fensel},
+  title     = {Make soil healthy again: Construction of ontology-compliant soil health knowledge graph with large language models},
+  booktitle = {Proceedings of the 13th Knowledge Capture Conference 2025},
+  year      = {2025},
+  doi       = {10.1145/3731443.3771730}
+}
+```
 
 ---
 
