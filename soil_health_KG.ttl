@@ -4092,10 +4092,6 @@ she:SoilCrusting a skos:Concept ;
     obo:RO_0002336 she:SoilPhysicalDegradation ;
     skos:prefLabel "soil crusting"@en .
 
-she:SoilDegradationProcess a skos:Concept ;
-    skos:narrower she:SoilSalinisation ;
-    skos:prefLabel "soil degradation process"@en .
-
 she:SoilDistributions a skos:Concept ;
     sorelm:hasScale she:Continent,
         she:Country,
@@ -12905,8 +12901,7 @@ she:SoilSalinisation a skos:Concept ;
     obo:OAE_0000025 she:Human ;
     obo:RO_0002212 she:SoilFertility ;
     skos:altLabel "salinisation"@en ;
-    skos:broader she:SoilDegradationProcess,
-        she:SoilThreatIndicators ;
+    skos:broader she:SoilThreatIndicators ;
     skos:definition "Soil salinisation is the increase in soluble salt concentration in soil."@en ;
     skos:prefLabel "soil salinisation"@en ;
     skos:related she:SolubleSaltConcentration .

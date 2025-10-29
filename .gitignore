@@ -3,7 +3,7 @@ config
 
 # Ignore some csv file
 entity_similarity_*.csv
-kg_evaluation_results.csv
+kg_evaluation_*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
