@@ -1,16 +1,26 @@
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX agrontology: <http://aims.fao.org/aos/agrontology#>
 
-SELECT DISTINCT ?itemLabel ?predicate ?relatedItemLabel
+SELECT ?subjectLabel ?predicateLabel ?objectLabel
 WHERE {
   VALUES ?practiceLabelString { "sustainable soil management"@en "soil protection"@en }
-  ?practice skos:prefLabel ?practiceLabelString ;
-            skos:prefLabel ?itemLabel .
-
-  ?practice ?predicate ?targetOfPractice .
-  FILTER(?predicate = obo:T4FS_0000577)
-
-  ?targetOfPractice skos:prefLabel ?relatedItemLabel .
+  ?practice skos:prefLabel ?practiceLabelString .
+  
+  {
+    ?practice obo:T4FS_0000577 ?targetOfPractice .
+    ?practice skos:prefLabel ?subjectLabel .
+    BIND(obo:T4FS_0000577 AS ?predicateLabel)
+    ?targetOfPractice skos:prefLabel ?objectLabel .
+  }
+  
+  UNION
+  
+  {
+    ?practice obo:T4FS_0000577 ?targetOfPractice .
+    ?targetOfPractice agrontology:isAffectedBy ?affectedItem .
+    ?targetOfPractice skos:prefLabel ?subjectLabel .
+    BIND(agrontology:isAffectedBy AS ?predicateLabel)
+    ?affectedItem skos:prefLabel ?objectLabel .
+  }
 }
-
-ORDER BY ?itemLabel ?predicate ?relatedItemLabel

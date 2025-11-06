@@ -4168,6 +4168,7 @@ she:SoilLossRatesByWater a skos:Concept ;
     skos:prefLabel "soil loss rates by water"@en .
 
 she:SoilManagement a skos:Concept ;
+    agrontology:affects she:StateOfSoils ;
     dcterms:source she:Vogel2020 ;
     skos:exactMatch agrovoc:c_7176,
         inrae:c_3542 ;
@@ -10532,7 +10533,6 @@ she:Subsoil a skos:Concept ;
     skos:related she:FreezeThawCycles .
 
 she:SustainableSoilManagement a skos:Concept ;
-    agrontology:affects she:StateOfSoils ;
     obo:T4FS_0000577 she:StateOfSoils ;
     skos:definition "Sustainable soil management is the best use of its properties."@en ;
     skos:prefLabel "sustainable soil management"@en ;
@@ -11525,7 +11525,7 @@ she:SoilTexture a skos:Concept ;
 
 she:StateOfSoils a skos:Concept ;
     agrontology:isAffectedBy she:ClimaticConditions,
-        she:SustainableSoilManagement ;
+        she:SoilManagement ;
     sio:equivalentTo she:SoilConditions ;
     skos:altLabel "state of soil"@en ;
     skos:prefLabel "state of soils"@en ;
