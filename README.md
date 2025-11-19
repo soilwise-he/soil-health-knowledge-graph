@@ -184,6 +184,8 @@ The KG is enriched by interlinking to controlled vocabularies and thesauri in th
 
 ---
 
+<!--
+
 ## 📝 How to Cite
 
 ```bibtex
@@ -201,6 +203,8 @@ The KG is enriched by interlinking to controlled vocabularies and thesauri in th
 ## 🙏 Acknowledgements
 
 This work was supported by the EU's Horizon Europe research and innovation programme within the [SoilWise](https://cordis.europa.eu/project/id/101112838) project (grant agreement ID: 101112838).
+
+-->
 
 ## 📝 To-do
 
