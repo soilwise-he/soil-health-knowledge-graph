@@ -59,7 +59,6 @@ We utilized a pipeline that incorporates LLMs for the extraction of relevant inf
 ├── requirements.txt          # Python dependencies
 ├── KGC_pipeline.ipynb        # Jupyter notebook demonstrating the full KG‑construction pipeline
 ├── uk2us.py                  # Utility script (UK ↔ US spelling normalizer)
-├── widoco.properties
 │
 ├── top_level_KG.ttl          # High-level structure of the SHKG, derived from the conceptual model (RDF/Turtle)
 ├── soil_health_KG.ttl        # Full Soil Health KG (RDF/Turtle)
