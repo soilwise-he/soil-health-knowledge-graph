@@ -28,7 +28,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <> rdf:type owl:Ontology ;
-    owl:versionInfo "v0.2.5" ;
+    owl:versionInfo "v0.2.6" ;
     dcterms:description "This is the ontology that underpins the soil health knowledge graph."@en ;
     dcterms:creator [ schema:affiliation [ foaf:name "Wageningen University & Research" ;
                                            rdfs:seeAlso <https://www.wur.nl/> ] ;
