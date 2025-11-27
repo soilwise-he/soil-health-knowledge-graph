@@ -69,6 +69,7 @@ We utilized a pipeline that incorporates LLMs for the extraction of relevant inf
 ├── CQs_sparql_queries/       # SPARQL queries translated from competency questions
 ├── ex_ontovocabs/            # Linked external vocabularies & thesauri
 ├── in_ontovocabs/            # Imported ontologies & schemas
+├── kg_evaluation/            # Raw KG evaluation results
 ├── benchmarks/
 │   ├── text_RDF_gs.json       # Text-to-RDF gold standard benchmark
 │   └── CQs_SPARQL_ea.json     # Competency question, SPARQL query, and expected answer dataset for KG validation
