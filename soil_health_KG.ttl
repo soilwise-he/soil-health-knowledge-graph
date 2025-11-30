@@ -33,6 +33,791 @@
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+skos:Concept a rdfs:Class ;
+    rdfs:label "Concept" .
+
+dcterms:BibliographicResource a rdfs:Class ;
+    rdfs:label "Bibliographic Resource" .
+
+dcterms:Policy a rdfs:Class ;
+    rdfs:label "Policy" .
+
+dcterms:Standard a rdfs:Class ;
+    rdfs:label "Standard" .
+
+af-r:AFR_0000916 a rdfs:Class ;
+    rdfs:label "Classification" .
+
+sio:SIO_000510 a rdfs:Class ;
+    rdfs:label "Model" .
+
+sio:SIO_000368 a rdfs:Class ;
+    rdfs:label "Equation" .
+
+sohuj:Regulation a rdfs:Class ;
+    rdfs:label "Regulation" .
+
+sio:SIO_010423 a rdfs:Class ;
+    rdfs:label "Target" .
+
+schema:Continent a rdfs:Class ;
+    rdfs:label "Continent" .
+
+schema:Country a rdfs:Class ;
+    rdfs:label "Country" .
+
+sorepsg:Region a rdfs:Class ;
+    rdfs:label "Region" .
+
+sio:SIO_000999 a rdfs:Class ;
+    rdfs:label "Procedure" .
+
+obo:NCIT_C61419 a rdfs:Class ;
+    rdfs:label "Working Group" .
+
+obo:NCIT_C180602 a rdfs:Class ;
+    rdfs:label "Workshop" .
+
+sio:SIO_001246 a rdfs:Class ;
+    rdfs:label "Interval" .
+
+schema:City a rdfs:Class ;
+    rdfs:label "City" .
+
+qudt:Unit a rdfs:Class ;
+    rdfs:label "Unit" .
+
+obo:NCIT_C80234 a rdfs:Class ;
+    rdfs:label "Municipality" .
+
+skos:broader a rdf:Property ;
+    rdfs:label "has broader" ;
+    owl:inverseOf skos:narrower .
+
+skos:narrower a rdf:Property ;
+    rdfs:label "has narrower" ;
+    owl:inverseOf skos:broader .
+
+skos:related a rdf:Property ;
+    rdfs:label "has related" ;
+    owl:inverseOf skos:related .
+
+dcterms:date a rdf:Property ;
+    rdfs:label "date" .
+
+dcterms:source a rdf:Property ;
+    rdfs:label "source" .
+
+sio:SIO_000064 a rdf:Property ;
+    rdfs:label "is provider of" ;
+    owl:inverseOf sio:SIO_000066 .
+
+sio:SIO_000066 a rdf:Property ;
+    rdfs:label "has provider" ;
+    owl:inverseOf sio:SIO_000064 .
+
+she:variesIn a rdf:Property ;
+    rdfs:label "varies in" .
+
+agrontology:isComposedOf a rdf:Property ;
+    rdfs:label "is composed of" ;
+    owl:inverseOf agrontology:compose .
+
+agrontology:isPartOf a rdf:Property ;
+    rdfs:label "is part of" ;
+    owl:inverseOf agrontology:hasPart .
+
+agrontology:includes a rdf:Property ;
+    rdfs:label "includes" ;
+    owl:inverseOf agrontology:isIncludedIn .
+
+skos:definition a rdf:Property ;
+    rdfs:label "definition" .
+
+skos:prefLabel a rdf:Property ;
+    rdfs:label "preferred label" .
+
+agrontology:affects a rdf:Property ;
+    rdfs:label "affects" ;
+    owl:inverseOf agrontology:isAffectedBy .
+
+agrontology:hasAbbreviation a rdf:Property ;
+    rdfs:label "has abbreviation" .
+
+agrontology:measures a rdf:Property ;
+    rdfs:label "measures" ;
+    owl:inverseOf agrontology:isMeasuredBy .
+
+dcterms:replaces a rdf:Property ;
+    rdfs:label "replaces" ;
+    owl:inverseOf dcterms:isReplacedBy .
+
+agrontology:isAffectedBy a rdf:Property ;
+    rdfs:label "is affected by" ;
+    owl:inverseOf agrontology:affects .
+
+agrontology:benefitsFrom a rdf:Property ;
+    rdfs:label "benefits from" ;
+    owl:inverseOf agrontology:isBeneficialFor .
+
+agrontology:isBeneficialFor a rdf:Property ;
+    rdfs:label "is beneficial for" ;
+    owl:inverseOf agrontology:benefitsFrom .
+
+agrontology:isPreventedBy a rdf:Property ;
+    rdfs:label "is prevented by" ;
+    owl:inverseOf agrontology:prevents .
+
+agrontology:prevents a rdf:Property ;
+    rdfs:label "prevents" ;
+    owl:inverseOf agrontology:isPreventedBy .
+
+agrontology:isMeasuredBy a rdf:Property ;
+    rdfs:label "is measured by" ;
+    owl:inverseOf agrontology:measures .
+
+prov:atLocation a rdf:Property ;
+    rdfs:label "at location" .
+
+skos:note a rdf:Property ;
+    rdfs:label "note" .
+
+agrontology:compose a rdf:Property ;
+    rdfs:label "compose" ;
+    owl:inverseOf agrontology:isComposedOf .
+
+agrontology:isMadeFrom a rdf:Property ;
+    rdfs:label "is made from" ;
+    owl:inverseOf agrontology:isUsedToMake .
+
+agrontology:isUsedToMake a rdf:Property ;
+    rdfs:label "is used to make" ;
+    owl:inverseOf agrontology:isMadeFrom .
+
+agrontology:causes a rdf:Property ;
+    rdfs:label "causes" ;
+    owl:inverseOf agrontology:isCausedBy .
+
+agrontology:isCausedBy a rdf:Property ;
+    rdfs:label "is caused by" ;
+    owl:inverseOf agrontology:causes .
+
+qudt:unit a rdf:Property ;
+    rdfs:label "unit" .
+
+qudt:expression a rdf:Property ;
+    rdfs:label "expression" .
+
+agrontology:makeUseOf a rdf:Property ;
+    rdfs:label "make use of" ;
+    owl:inverseOf agrontology:isUsedIn .
+
+skos:altLabel a rdf:Property ;
+    rdfs:label "alternative label" .
+
+agrontology:isUsedIn a rdf:Property ;
+    rdfs:label "is used in" ;
+    owl:inverseOf agrontology:makeUseOf .
+
+agrontology:isProcessFor a rdf:Property ;
+    rdfs:label "is process for" ;
+    owl:inverseOf agrontology:usesProcess .
+
+agrontology:usesProcess a rdf:Property ;
+    rdfs:label "uses process" ;
+    owl:inverseOf agrontology:isProcessFor .
+
+agrontology:hasPart a rdf:Property ;
+    rdfs:label "has part" ;
+    owl:inverseOf agrontology:isPartOf .
+
+agrontology:follows a rdf:Property ;
+    rdfs:label "follows" ;
+    owl:inverseOf agrontology:precedes .
+
+agrontology:precedes a rdf:Property ;
+    rdfs:label "precedes" ;
+    owl:inverseOf agrontology:follows .
+
+qudt:numericValue a rdf:Property ;
+    rdfs:label "numeric value" .
+
+agrontology:isUsedAs a rdf:Property ;
+    rdfs:label "is used as" ;
+    owl:inverseOf agrontology:isUseOf .
+
+qudt:symbol a rdf:Property ;
+    rdfs:label "symbol" .
+
+agrontology:performs a rdf:Property ;
+    rdfs:label "performs" ;
+    owl:inverseOf agrontology:isPerformedBy .
+
+agrontology:isPerformedBy a rdf:Property ;
+    rdfs:label "is performed by" ;
+    owl:inverseOf agrontology:performs .
+
+agrontology:isIncludedIn a rdf:Property ;
+    rdfs:label "is included in" ;
+    owl:inverseOf agrontology:includes .
+
+agrontology:isDerivedFrom a rdf:Property ;
+    rdfs:label "is derived from" ;
+    owl:inverseOf agrontology:isSourceOf .
+
+agrontology:isSourceOf a rdf:Property ;
+    rdfs:label "is source of" ;
+    owl:inverseOf agrontology:isDerivedFrom .
+
+agrontology:isUseOf a rdf:Property ;
+    rdfs:label "is use of" ;
+    owl:inverseOf agrontology:isUsedAs .
+
+rdf:type a rdf:Property ;
+    rdfs:label "type" .
+
+dcterms:title a rdf:Property ;
+    rdfs:label "title" .
+
+obo:T4FS_0000577 a rdf:Property ;
+    rdfs:label "requires knowledge about" .
+
+obo:RO_0002212 a rdf:Property ;
+    rdfs:label "negatively regulates" ;
+    owl:inverseOf obo:RO_0002335 .
+
+obo:RO_0002335 a rdf:Property ;
+    rdfs:label "negatively regulated by" ;
+    owl:inverseOf obo:RO_0002212 .
+
+she:alters a rdf:Property ;
+    rdfs:label "alters" ;
+    owl:inverseOf she:isAlteredBy .
+
+she:isAlteredBy a rdf:Property ;
+    rdfs:label "is altered by" ;
+    owl:inverseOf she:alters .
+
+obo:RO_0002326 a rdf:Property ;
+    rdfs:label "contributes to" .
+
+schema:isBasedOn a rdf:Property ;
+    rdfs:label "is based on" .
+
+she:isIndicatedBy a rdf:Property ;
+    rdfs:label "is indicated by" ;
+    owl:inverseOf she:indicates .
+
+she:indicates a rdf:Property ;
+    rdfs:label "indicates" ;
+    owl:inverseOf she:isIndicatedBy .
+
+obo:OAE_0000186 a rdf:Property ;
+    rdfs:label "induces" ;
+    owl:inverseOf obo:OAE_0000025 .
+
+obo:OAE_0000025 a rdf:Property ;
+    rdfs:label "induced by" ;
+    owl:inverseOf obo:OAE_0000186 .
+
+obo:RO_0002327 a rdf:Property ;
+    rdfs:label "enables" ;
+    owl:inverseOf obo:RO_0002333 .
+
+obo:RO_0002333 a rdf:Property ;
+    rdfs:label "enabled by" ;
+    owl:inverseOf obo:RO_0002327 .
+
+af-x:AFX_0002806 a rdf:Property ;
+    rdfs:label "classifies" ;
+    owl:inverseOf af-x:AFX_0001154 .
+
+af-x:AFX_0001154 a rdf:Property ;
+    rdfs:label "has classification" ;
+    owl:inverseOf af-x:AFX_0002806 .
+
+wdt:P1889 a rdf:Property ;
+    rdfs:label "different from" ;
+    owl:inverseOf wdt:P1889 .
+
+obo:RO_0002502 a rdf:Property ;
+    rdfs:label "depends on" .
+
+she:characterises a rdf:Property ;
+    rdfs:label "characterises" .
+
+she:isCharacterisedBy a rdf:Property ;
+    rdfs:label "is characterised by" .
+
+schema:assesses a rdf:Property ;
+    rdfs:label "assesses" .
+
+obo:RO_0002213 a rdf:Property ;
+    rdfs:label "positively regulates" ;
+    owl:inverseOf obo:RO_0002336 .
+
+obo:RO_0002336 a rdf:Property ;
+    rdfs:label "positively regulated by" ;
+    owl:inverseOf obo:RO_0002213 .
+
+she:inputsFrom a rdf:Property ;
+    rdfs:label "inputs from" .
+
+obo:INO_0000082 a rdf:Property ;
+    rdfs:label "controls" ;
+    owl:inverseOf sorelpr:wasControlledBy .
+
+sorelpr:wasControlledBy a rdf:Property ;
+    rdfs:label "was controlled by" ;
+    owl:inverseOf obo:INO_0000082 .
+
+obo:RO_0002434 a rdf:Property ;
+    rdfs:label "interacts with" ;
+    owl:inverseOf obo:RO_0002434 .
+
+biolink:consumed_by a rdf:Property ;
+    rdfs:label "consumed by" ;
+    owl:inverseOf biolink:consumes .
+
+biolink:consumes a rdf:Property ;
+    rdfs:label "consumes" ;
+    owl:inverseOf biolink:consumed_by .
+
+agrontology:hasSymbol a rdf:Property ;
+    rdfs:label "has symbol" .
+
+sio:equivalentTo a rdf:Property ;
+    rdfs:label "equivalent to" ;
+    owl:inverseOf sio:equivalentTo .
+
+she:requires a rdf:Property ;
+    rdfs:label "requires" ;
+    owl:inverseOf she:isRequiredBy .
+
+she:isRequiredBy a rdf:Property ;
+    rdfs:label "is required by" ;
+    owl:inverseOf she:requires .
+
+sio:SIO_000563 a rdf:Property ;
+    rdfs:label "describes" ;
+    owl:inverseOf sio:SIO_000557 .
+
+sio:SIO_000557 a rdf:Property ;
+    rdfs:label "is described by" ;
+    owl:inverseOf sio:SIO_000563 .
+
+schema:inSupportOf a rdf:Property ;
+    rdfs:label "in support of" .
+
+sio:SIO_000202 a rdf:Property ;
+    rdfs:label "contains" ;
+    owl:inverseOf sio:SIO_000128 .
+
+sio:SIO_000128 a rdf:Property ;
+    rdfs:label "is contained in" ;
+    owl:inverseOf sio:SIO_000202 .
+
+obo:BFO_0000066 a rdf:Property ;
+    rdfs:label "occurs in" .
+
+sorelph:from a rdf:Property ;
+    rdfs:label "from" .
+
+obo:RO_0002331 a rdf:Property ;
+    rdfs:label "involved in" .
+
+sorelm:hasThreshold a rdf:Property ;
+    rdfs:label "has threshold" .
+
+af-x:AFX_0000408 a rdf:Property ;
+    rdfs:label "has condition" ;
+    owl:inverseOf af-x:AFX_0000355 .
+
+af-x:AFX_0000355 a rdf:Property ;
+    rdfs:label "is condition for" ;
+    owl:inverseOf af-x:AFX_0000408 .
+
+repr:storedAt a rdf:Property ;
+    rdfs:label "stored at" .
+
+she:bindsWith a rdf:Property ;
+    rdfs:label "binds with" .
+
+she:respondsTo a rdf:Property ;
+    rdfs:label "responds to" .
+
+she:sequesters a rdf:Property ;
+    rdfs:label "sequesters" .
+
+obo:RO_0017003 a rdf:Property ;
+    rdfs:label "positively correlated with" .
+
+obo:RO_0017004 a rdf:Property ;
+    rdfs:label "negatively correlated with" .
+
+rdf:object a rdf:Property ;
+    rdfs:label "object" .
+
+sorelm:hasInterval a rdf:Property ;
+    rdfs:label "has interval" .
+
+biolink:has_percentage a rdf:Property ;
+    rdfs:label "has percentage" .
+
+she:isConvertedTo a rdf:Property ;
+    rdfs:label "is converted to" ;
+    owl:inverseOf she:isConvertedFrom .
+
+she:isConvertedFrom a rdf:Property ;
+    rdfs:label "is converted from" ;
+    owl:inverseOf she:isConvertedTo .
+
+bao:BAO_0095002 a rdf:Property ;
+    rdfs:label "has indicator" ;
+    owl:inverseOf bao:BAO_0002586 .
+
+bao:BAO_0002586 a rdf:Property ;
+    rdfs:label "is indicator of" ;
+    owl:inverseOf bao:BAO_0095002 .
+
+sio:SIO_000635 a rdf:Property ;
+    rdfs:label "has trigger" ;
+    owl:inverseOf sio:SIO_000636 .
+
+sio:SIO_000636 a rdf:Property ;
+    rdfs:label "is trigger for" ;
+    owl:inverseOf sio:SIO_000635 .
+
+time:hasDuration a rdf:Property ;
+    rdfs:label "has duration" .
+
+obo:RO_0002610 a rdf:Property ;
+    rdfs:label "correlated with" .
+
+she:focusesOn a rdf:Property ;
+    rdfs:label "focuses on" .
+
+she:isAcceptedBy a rdf:Property ;
+    rdfs:label "is accepted by" ;
+    owl:inverseOf she:accepts .
+
+she:accepts a rdf:Property ;
+    rdfs:label "accepts" ;
+    owl:inverseOf she:isAcceptedBy .
+
+af-x:AFX_0002696 a rdf:Property ;
+    rdfs:label "has range" .
+
+agrontology:hasType a rdf:Property ;
+    rdfs:label "has type" ;
+    owl:inverseOf agrontology:typeOf .
+
+agrontology:typeOf a rdf:Property ;
+    rdfs:label "type of" ;
+    owl:inverseOf agrontology:hasType .
+
+she:appliesTo a rdf:Property ;
+    rdfs:label "applies to" .
+
+obo:RO_0002552 a rdf:Property ;
+    rdfs:label "results in ending of" .
+
+qudt:conversionMultiplier a rdf:Property ;
+    rdfs:label "conversion multiplier" .
+
+sorelm:hasUpperBound a rdf:Property ;
+    rdfs:label "has upper bound" .
+
+sorelm:hasLowerBound a rdf:Property ;
+    rdfs:label "has lower bound" .
+
+agrontology:greaterThan a rdf:Property ;
+    rdfs:label "greater than" ;
+    owl:inverseOf agrontology:smallerThan .
+
+agrontology:smallerThan a rdf:Property ;
+    rdfs:label "smaller than" ;
+    owl:inverseOf agrontology:greaterThan .
+
+obo:RO_0002508 a rdf:Property ;
+    rdfs:label "determines" ;
+    owl:inverseOf obo:RO_0002507 .
+
+obo:RO_0002507 a rdf:Property ;
+    rdfs:label "determined by" ;
+    owl:inverseOf obo:RO_0002508 .
+
+she:hasEquilibriumWith a rdf:Property ;
+    rdfs:label "has equilibrium with" ;
+    owl:inverseOf she:hasEquilibriumWith .
+
+af-x:AFX_0002727 a rdf:Property ;
+    rdfs:label "lacks" .
+
+she:isEmittedTo a rdf:Property ;
+    rdfs:label "is emitted to" .
+
+obo:RO_0002334 a rdf:Property ;
+    rdfs:label "regulated by" ;
+    owl:inverseOf obo:RO_0002211 .
+
+obo:RO_0002211 a rdf:Property ;
+    rdfs:label "regulates" ;
+    owl:inverseOf obo:RO_0002334 .
+
+she:isLimitedBy a rdf:Property ;
+    rdfs:label "is limited by" ;
+    owl:inverseOf she:limits .
+
+she:limits a rdf:Property ;
+    rdfs:label "limits" ;
+    owl:inverseOf she:isLimitedBy .
+
+agrontology:hasComponent a rdf:Property ;
+    rdfs:label "has component" ;
+    owl:inverseOf agrontology:isComponentOf .
+
+agrontology:isComponentOf a rdf:Property ;
+    rdfs:label "is component of" ;
+    owl:inverseOf agrontology:hasComponent .
+
+she:isRetainedBy a rdf:Property ;
+    rdfs:label "is retained by" .
+
+she:reflects a rdf:Property ;
+    rdfs:label "reflects" ;
+    owl:inverseOf she:isReflectedBy .
+
+she:isReflectedBy a rdf:Property ;
+    rdfs:label "is reflected by" ;
+    owl:inverseOf she:reflects .
+
+she:suffersFrom a rdf:Property ;
+    rdfs:label "suffers from" .
+
+af-x:AFX_0000388 a rdf:Property ;
+    rdfs:label "has scope" .
+
+sio:SIO_000205 a rdf:Property ;
+    rdfs:label "is represented by" ;
+    owl:inverseOf sio:SIO_000210 .
+
+sio:SIO_000210 a rdf:Property ;
+    rdfs:label "represents" ;
+    owl:inverseOf sio:SIO_000205 .
+
+she:isEssentialFor a rdf:Property ;
+    rdfs:label "is essential for" .
+
+she:isToxicTo a rdf:Property ;
+    rdfs:label "is toxic to" .
+
+she:isDevelopedFor a rdf:Property ;
+    rdfs:label "is developed for" .
+
+she:isAvailableFor a rdf:Property ;
+    rdfs:label "is available for" .
+
+obo:RO_0000053 a rdf:Property ;
+    rdfs:label "has characteristic" ;
+    owl:inverseOf obo:RO_0000052 .
+
+obo:RO_0000052 a rdf:Property ;
+    rdfs:label "characteristic of" ;
+    owl:inverseOf obo:RO_0000053 .
+
+agrontology:hasProperty a rdf:Property ;
+    rdfs:label "has property" ;
+    owl:inverseOf agrontology:isPropertyOf .
+
+agrontology:isPropertyOf a rdf:Property ;
+    rdfs:label "is property of" ;
+    owl:inverseOf agrontology:hasProperty .
+
+she:bioaccumulatesIn a rdf:Property ;
+    rdfs:label "bioaccumulates in" .
+
+sio:SIO_000291 a rdf:Property ;
+    rdfs:label "has target" ;
+    owl:inverseOf sio:SIO_000292 .
+
+sio:SIO_000292 a rdf:Property ;
+    rdfs:label "is target in" ;
+    owl:inverseOf sio:SIO_000291 .
+
+she:isComparedWith a rdf:Property ;
+    rdfs:label "is compared with" .
+
+sorelph:to a rdf:Property ;
+    rdfs:label "to" .
+
+sorelch:hasMedium a rdf:Property ;
+    rdfs:label "has medium" .
+
+obo:TXPO_0003500 a rdf:Property ;
+    rdfs:label "observed in" .
+
+af-x:AFX_0002843 a rdf:Property ;
+    rdfs:label "has definition" ;
+    owl:inverseOf af-x:AFX_0002842 .
+
+af-x:AFX_0002842 a rdf:Property ;
+    rdfs:label "defines" ;
+    owl:inverseOf af-x:AFX_0002843 .
+
+obo:SEPIO_0000151 a rdf:Property ;
+    rdfs:label "validated by" .
+
+om:hasFactor a rdf:Property ;
+    rdfs:label "has factor" .
+
+sio:SIO_000283 a rdf:Property ;
+    rdfs:label "is similar to" .
+
+qudt:valueSN a rdf:Property ;
+    rdfs:label "value scientific" .
+
+agrontology:hasTaxonomicConcept a rdf:Property ;
+    rdfs:label "has taxonomic concept" ;
+    owl:inverseOf agrontology:hasCommonNameConcept .
+
+agrontology:hasCommonNameConcept a rdf:Property ;
+    rdfs:label "has common name concept" ;
+    owl:inverseOf agrontology:hasTaxonomicConcept .
+
+obo:MICRO_0000105 a rdf:Property ;
+    rdfs:label "has size" .
+
+sorelsp:hasLength a rdf:Property ;
+    rdfs:label "has length" .
+
+sorelsp:diameter a rdf:Property ;
+    rdfs:label "diameter" .
+
+she:calculates a rdf:Property ;
+    rdfs:label "calculates" ;
+    owl:inverseOf she:isCalculatedBy .
+
+she:isCalculatedBy a rdf:Property ;
+    rdfs:label "is calculated by" ;
+    owl:inverseOf she:calculates .
+
+sorelm:hasAverage a rdf:Property ;
+    rdfs:label "has average" .
+
+she:isAccompaniedBy a rdf:Property ;
+    rdfs:label "is accompanied by" ;
+    owl:inverseOf she:accompanies .
+
+she:accompanies a rdf:Property ;
+    rdfs:label "accompanies" ;
+    owl:inverseOf she:isAccompaniedBy .
+
+sorelph:hasTransport a rdf:Property ;
+    rdfs:label "has transport" .
+
+obo:RO_0002339 a rdf:Property ;
+    rdfs:label "has target end location" .
+
+obo:RO_0002341 a rdf:Property ;
+    rdfs:label "results in transport along" .
+
+sio:SIO_000365 a rdf:Property ;
+    rdfs:label "is creator of" ;
+    owl:inverseOf sio:SIO_000364 .
+
+sio:SIO_000364 a rdf:Property ;
+    rdfs:label "has creator" ;
+    owl:inverseOf sio:SIO_000365 .
+
+af-x:AFX_0002717 a rdf:Property ;
+    rdfs:label "identifies" ;
+    owl:inverseOf af-x:AFX_0002716 .
+
+af-x:AFX_0002716 a rdf:Property ;
+    rdfs:label "has identifier" ;
+    owl:inverseOf af-x:AFX_0002717 .
+
+om:hasValue a rdf:Property ;
+    rdfs:label "has value" .
+
+time:years a rdf:Property ;
+    rdfs:label "years duration" .
+
+af-x:AFX_0002821 a rdf:Property ;
+    rdfs:label "proxy for" .
+
+sorelsp:hasMaximumDepth a rdf:Property ;
+    rdfs:label "has maximum depth" .
+
+she:isExceeded a rdf:Property ;
+    rdfs:label "is exceeded" .
+
+sorelsp:below a rdf:Property ;
+    rdfs:label "below" ;
+    owl:inverseOf sorelsp:above .
+
+obo:RO_0020202 a rdf:Property ;
+    rdfs:label "has numerator" .
+
+obo:RO_0020203 a rdf:Property ;
+    rdfs:label "has denominator" .
+
+sorelm:hasScale a rdf:Property ;
+    rdfs:label "has scale" .
+
+time:year a rdf:Property ;
+    rdfs:label "year" .
+
+sorelm:hasMinimum a rdf:Property ;
+    rdfs:label "has minimum" .
+
+she:isFormedBy a rdf:Property ;
+    rdfs:label "is formed by" .
+
+she:forms a rdf:Property ;
+    rdfs:label "forms" .
+
+sorelm:hasWeight a rdf:Property ;
+    rdfs:label "has weight" .
+
+she:absorbs a rdf:Property ;
+    rdfs:label "absorbs" ;
+    owl:inverseOf she:isAbsorbedBy .
+
+she:isAbsorbedBy a rdf:Property ;
+    rdfs:label "is absorbed by" ;
+    owl:inverseOf she:absorbs .
+
+obo:T4FS_0000560 a rdf:Property ;
+    rdfs:label "supports implementation of" .
+
+she:hasDensity a rdf:Property ;
+    rdfs:label "has density" .
+
+she:hasBiomass a rdf:Property ;
+    rdfs:label "has biomass" .
+
+she:hasFreshBiomass a rdf:Property ;
+    rdfs:label "has fresh biomass" .
+
+sio:SIO_000272 a rdf:Property ;
+    rdfs:label "is variant of" .
+
+sorelsp:above a rdf:Property ;
+    rdfs:label "above" ;
+    owl:inverseOf sorelsp:below .
+
+skos:exactMatch a rdf:Property ;
+    rdfs:label "has exact match" .
+
+skos:closeMatch a rdf:Property ;
+    rdfs:label "has close match" .
+
+dcterms:isReplacedBy a rdf:Property ;
+    rdfs:label "is replaced by" ;
+    owl:inverseOf dcterms:replaces .
+
 she:AffectedLand a skos:Concept ;
     skos:prefLabel "affected land"@en ;
     she:suffersFrom she:PollutantApplication,
