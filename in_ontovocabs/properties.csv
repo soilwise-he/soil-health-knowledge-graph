@@ -48,6 +48,7 @@ agrontology:isIncludedIn,http://aims.fao.org/aos/agrontology#isIncludedIn,is inc
 agrontology:isDerivedFrom,http://aims.fao.org/aos/agrontology#isDerivedFrom,is derived from
 agrontology:isSourceOf,http://aims.fao.org/aos/agrontology#isSourceOf,is source of
 agrontology:isUseOf,http://aims.fao.org/aos/agrontology#isUseOf,is use of
+rdf:type,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,type
 dcterms:title,http://purl.org/dc/terms/title,title
 obo:T4FS_0000577,http://purl.obolibrary.org/obo/T4FS_0000577,requires knowledge about
 obo:RO_0002212,http://purl.obolibrary.org/obo/RO_0002212,negatively regulates
@@ -200,4 +201,6 @@ she:hasBiomass,https://soilwise-he.github.io/soil-health#hasBiomass,has biomass
 she:hasFreshBiomass,https://soilwise-he.github.io/soil-health#hasFreshBiomass,has fresh biomass
 sio:SIO_000272,http://semanticscience.org/resource/SIO_000272,is variant of
 sorelsp:above,http://sweetontology.net/relaSpace/above,above
+skos:exactMatch,http://www.w3.org/2004/02/skos/core#exactMatch,has exact match
+skos:closeMatch,http://www.w3.org/2004/02/skos/core#closeMatch,has close match
 dcterms:isReplacedBy,http://purl.org/dc/terms/isReplacedBy,is replaced by
