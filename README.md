@@ -50,6 +50,31 @@ We utilized a pipeline that incorporates LLMs for the extraction of relevant inf
 
 ---
 
+## 📊 KG Evaluation
+
+To assess the quality of LLM-generated RDF triples, we compare them against human-labeled gold standard triples using a comprehensive set of graph-matching metrics. The evaluation compares:
+
+* **LLM-generated triples**: [`eval_graphs/RDF_LLMs_raw.json`](eval_graphs/RDF_LLMs_raw.json)
+* **Gold standard triples**: [`benchmarks/text_RDF_gs.json`](benchmarks/text_RDF_gs.json)
+
+### Evaluation Metrics
+
+The metrics are implemented in [`eval_graphs/graph_matching.py`](eval_graphs/graph_matching.py) and used in the pipeline notebook [`KGC_pipeline.ipynb`](KGC_pipeline.ipynb):
+
+| Metric | Description |
+| ------ | ----------- |
+| **Triple-Matching Precision** | Fraction of predicted triples that exactly match gold standard triples (case-insensitive) |
+| **Triple-Matching Recall** | Fraction of gold standard triples that are correctly predicted |
+| **Triple-Matching F1** | Harmonic mean of precision and recall for exact triple matches |
+| **G-ROUGE** | Graph-level ROUGE score treating each edge as a sentence; measures n-gram overlap between predicted and gold graphs |
+| **G-BLEU** | Graph-level BLEU score for evaluating the quality of generated triples using n-gram precision |
+| **G-BERTScore** | Semantic similarity between predicted and gold edges using contextualized BERT embeddings with optimal bipartite matching |
+| **Graph Edit Distance (GED)** | Minimum number of node/edge insertions, deletions, and substitutions needed to transform the predicted graph into the gold graph (normalized) |
+
+These metrics provide complementary views: exact matching (Precision/Recall/F1), surface-level similarity (ROUGE/BLEU), semantic similarity (BERTScore), and structural similarity (GED).
+
+---
+
 ## 📦 Repository Contents
 
 ```
@@ -73,6 +98,9 @@ We utilized a pipeline that incorporates LLMs for the extraction of relevant inf
 ├── benchmarks/
 │   ├── text_RDF_gs.json       # Text-to-RDF gold standard benchmark
 │   └── CQs_SPARQL_ea.json     # Competency question, SPARQL query, and expected answer dataset for KG validation
+├── eval_graphs/
+│   ├── graph_matching.py      # Graph matching metrics (P/R/F1, ROUGE, BLEU, BERTScore, GED)
+│   └── RDF_LLMs_raw.json      # Raw LLM-generated RDF triples for evaluation
 ├── imgs/
 └── …
 ```
@@ -114,6 +142,7 @@ We utilized a pipeline that incorporates LLMs for the extraction of relevant inf
    * Turtle syntax check & repair
    * Ontology alignment, entity normalization & relation disambiguation
    * KG enrichment (invertible relations, external vocabularies)
+   * KG evaluation (triple-matching P/R/F1, G-ROUGE, G-BLEU, G-BERTScore, GED)
    * KG validation
    * Example SoilWise knowledge repository (interlink with harvested Zenodo metadata records)
 
