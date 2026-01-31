@@ -94,7 +94,7 @@ These metrics provide complementary views: exact matching (Precision/Recall/F1),
 ├── CQs_sparql_queries/       # SPARQL queries translated from competency questions
 ├── ex_ontovocabs/            # Linked external vocabularies & thesauri
 ├── in_ontovocabs/            # Imported ontologies & schemas
-├── kg_evaluation/            # Raw KG evaluation results
+├── kg_validation/            # Raw KG validation results
 ├── benchmarks/
 │   ├── text_RDF_gs.json       # Text-to-RDF gold standard benchmark
 │   └── CQs_SPARQL_ea.json     # Competency question, SPARQL query, and expected answer dataset for KG validation
@@ -138,12 +138,12 @@ These metrics provide complementary views: exact matching (Precision/Recall/F1),
 4. **Run the pipeline**
    Open and run `KGC_pipeline.ipynb` to see:
 
-   * LLM‑driven triple generation (via GPT‑4o prompts)
+   * LLM‑driven triple generation (via GPT‑5 prompts)
    * Turtle syntax check & repair
    * Ontology alignment, entity normalization & relation disambiguation
    * KG enrichment (invertible relations, external vocabularies)
    * KG evaluation (triple-matching P/R/F1, G-ROUGE, G-BLEU, G-BERTScore, GED)
-   * KG validation
+   * KG validation (by competency questions)
    * Example SoilWise knowledge repository (interlink with harvested Zenodo metadata records)
 
 ---
