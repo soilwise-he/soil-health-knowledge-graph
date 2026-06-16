@@ -133,7 +133,7 @@ These metrics provide complementary views: exact matching (Precision/Recall/F1),
      ```
 
    * Run example SPARQL queries in `CQs_sparql_queries/` or via the public endpoint at:
-     [https://repository.soilwise-he.eu/sparql/](https://repository.soilwise-he.eu/sparql/)
+     [https://sparql.soilwise.wetransform.eu/sparql/](https://sparql.soilwise.wetransform.eu/sparql/)
 
 4. **Run the pipeline**
    Open and run `KGC_pipeline.ipynb` to see:
@@ -151,7 +151,7 @@ These metrics provide complementary views: exact matching (Precision/Recall/F1),
 ## 🔗 Resource Availability
 
 * **Interactive Browser**:  [https://soilwise-he.github.io/soil-health](https://soilwise-he.github.io/soil-health)
-* **SPARQL Endpoint**:  [https://repository.soilwise-he.eu/sparql/](https://repository.soilwise-he.eu/sparql/)
+* **SPARQL Endpoint**:  [https://sparql.soilwise.wetransform.eu/sparql/](https://sparql.soilwise.wetransform.eu/sparql/)
 * **Searchable Vocabulary Browser**:  [https://voc.soilwise-he.containers.wur.nl/](https://voc.soilwise-he.containers.wur.nl/)
 * **AgroPortal Instance**:  [https://agroportal.lirmm.fr/ontologies/SHKG](https://agroportal.lirmm.fr/ontologies/SHKG)
 
