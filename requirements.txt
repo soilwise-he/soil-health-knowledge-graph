@@ -4,7 +4,7 @@ ipython==8.24.0
 keybert==0.8.4
 lemminflect==0.2.2
 networkx==3.3
-nltk==3.9.1
+nltk==3.10.0
 numpy==1.24.3
 openai==1.98.0
 pandas==2.3.1
