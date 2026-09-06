@@ -4,12 +4,12 @@ ipython==8.24.0
 keybert==0.8.4
 lemminflect==0.2.2
 networkx==3.3
-nltk==3.10.0
+nltk==3.10.3
 numpy==1.24.3
 openai==1.98.0
 pandas==2.3.1
 pydotplus==2.0.2
 rdflib==7.1.4
-Requests==2.32.4
-scikit_learn==1.2.2
+Requests==2.33.0
+scikit_learn==1.5.0
 SPARQLWrapper==2.0.0
