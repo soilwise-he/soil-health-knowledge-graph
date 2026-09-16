@@ -1,7 +1,10 @@
-# Ignore config file
+# Coding agent
+AGENTS.md
+
+# Config file
 config
 
-# Ignore some csv file
+# csv file
 entity_similarity_*.csv
 
 # Byte-compiled / optimized / DLL files
