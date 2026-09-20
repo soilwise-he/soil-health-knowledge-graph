@@ -221,28 +221,6 @@ she:Buczko2018 a dcterms:BibliographicResource ;
     dcterms:publisher "Springer Science and Business Media LLC" ;
     dcterms:title "Re-evaluation of the yield response to phosphorus fertilization based on meta-analyses of long-term field experiments" .
 
-she:Buenemann2018 a dcterms:BibliographicResource ;
-    dcterms:creator "Bai, Zhanguo",
-        "Bongiorno, Giulia",
-        "Brussaard, Lijbert",
-        "Bünemann, Else K",
-        "Creamer, Rachel E",
-        "De Deyn, Gerlinde",
-        "Fleskens, Luuk",
-        "Geissen, Violette",
-        "Kuyper, Thom W",
-        "Mäder, Paul",
-        "Pulleman, Mirjam",
-        "Sukkel, Wijnand",
-        "de Goede, Ron",
-        "van Groenigen, Jan Willem" ;
-    dcterms:date "2018" ;
-    dcterms:identifier "https://doi.org/10.1016/j.soilbio.2018.01.030"^^xsd:anyURI ;
-    dcterms:isPartOf "Soil Biology and Biochemistry" ;
-    dcterms:issued "2018-05"^^xsd:gYearMonth ;
-    dcterms:publisher "Elsevier BV" ;
-    dcterms:title "Soil quality – A critical review" .
-
 she:Bunemann2018 a dcterms:BibliographicResource ;
     dcterms:creator "Bai, Zhanguo",
         "Bongiorno, Giulia",

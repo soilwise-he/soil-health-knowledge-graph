@@ -9047,9 +9047,6 @@ she:Brussels a schema:City ;
     agrontology:isPartOf she:Belgium ;
     skos:prefLabel "Brussels"@en .
 
-she:Buenemann2018 a dcterms:BibliographicResource ;
-    dcterms:date "2018" .
-
 she:Buildings a skos:Concept ;
     obo:RO_0002331 she:SoilSealing ;
     dcterms:source she:Verstraeten2006 ;
@@ -10961,7 +10958,7 @@ she:SoilPhysicalProperties a skos:Concept ;
 
 she:SoilProcesses a skos:Concept ;
     obo:RO_0002327 she:EcosystemServices ;
-    dcterms:source she:Buenemann2018,
+    dcterms:source she:Bunemann2018,
         she:Schwilch2016 ;
     skos:altLabel "soil process"@en ;
     skos:exactMatch iso11074:3.464 ;
@@ -17059,7 +17056,7 @@ she:EcosystemServices a skos:Concept ;
     obo:RO_0002335 she:DeterioratingSoilFunctions,
         she:LostSoilFunctions,
         she:SoilThreats ;
-    dcterms:source she:Buenemann2018,
+    dcterms:source she:Bunemann2018,
         she:CICES5.1,
         she:HainesYoungPotschin2018,
         she:Paul2020,
@@ -17376,7 +17373,7 @@ she:SoilFunctions a skos:Concept ;
     agrontology:makeUseOf she:SoilAttributes ;
     obo:RO_0002335 she:SoilErosion ;
     obo:T4FS_0000560 she:EcosystemServices ;
-    dcterms:source she:Buenemann2018,
+    dcterms:source she:Bunemann2018,
         she:Creamer2019,
         she:VanCamp2004c,
         she:Vogel2020 ;
