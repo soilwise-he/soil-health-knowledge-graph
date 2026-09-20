@@ -3843,7 +3843,7 @@ she:ScatteredSettlements a skos:Concept ;
 she:Schjonning2018 a dcterms:BibliographicResource ;
     dcterms:date "2018" .
 
-she:Schjonnning2012 a dcterms:BibliographicResource ;
+she:Schjonning2012 a dcterms:BibliographicResource ;
     dcterms:date "2012" .
 
 she:SealedAreaPerCapita a skos:Concept ;
@@ -9979,7 +9979,7 @@ she:ClayContent a skos:Concept ;
     agrontology:affects she:SoilNAvailability ;
     agrontology:isIncludedIn she:SoilParameters ;
     dcterms:source she:Dexter2008,
-        she:Schjonnning2012 ;
+        she:Schjonning2012 ;
     skos:broader she:SoilTexture ;
     skos:exactMatch inrae:c_18093,
         iso11074:3.74 ;

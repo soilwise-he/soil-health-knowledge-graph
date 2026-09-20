@@ -1,0 +1,1842 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix she: <https://soilwise-he.github.io/soil-health#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+she:AdHocAGBoden2005 a dcterms:BibliographicResource ;
+    dcterms:creator "Ad hoc AG Boden" ;
+    dcterms:date "2005" ;
+    dcterms:source <https://www.schweizerbart.de/publications/detail/isbn/9783510959204/Bodenkundliche_Kartieranleitung_5_Aufl> ;
+    dcterms:title "Bodenkundliche Kartieranleitung, 5. Auflage (KA5)" .
+
+she:Alaoui2018 a dcterms:BibliographicResource ;
+    dcterms:creator "Alaoui, Abdallah",
+        "Blöschl, Günter",
+        "Peth, Stephan",
+        "Rogger, Magdalena" ;
+    dcterms:date "2018" ;
+    dcterms:identifier "https://doi.org/10.1016/j.jhydrol.2017.12.052"^^xsd:anyURI ;
+    dcterms:isPartOf "Journal of Hydrology" ;
+    dcterms:issued "2018-02"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Does soil compaction increase floods? A review" .
+
+she:Amelung2020 a dcterms:BibliographicResource ;
+    dcterms:creator "Amelung, W",
+        "Amundson, R",
+        "Bol, R",
+        "Bossio, D",
+        "Chabbi, A",
+        "Collins, C",
+        "Kögel-Knabner, I",
+        "Lal, R",
+        "Lehmann, J",
+        "Leifeld, J",
+        "Minasny, B",
+        "Mooney, S",
+        "Pan, G",
+        "Paustian, K",
+        "Rumpel, C",
+        "Sanderman, J",
+        "Wander, M",
+        "de Vries, W",
+        "van Groenigen, J. W",
+        "van Wesemael, B" ;
+    dcterms:date "2020" ;
+    dcterms:identifier "https://doi.org/10.1038/s41467-020-18887-7"^^xsd:anyURI ;
+    dcterms:isPartOf "Nature Communications" ;
+    dcterms:issued "2020-10-27"^^xsd:date ;
+    dcterms:publisher "Springer Science and Business Media LLC" ;
+    dcterms:title "Towards a global-scale soil climate mitigation strategy" .
+
+she:Bakker2004 a dcterms:BibliographicResource ;
+    dcterms:creator "Bakker, Martha M",
+        "Govers, Gerard",
+        "Rounsevell, Mark D.A" ;
+    dcterms:date "2004" ;
+    dcterms:identifier "https://doi.org/10.1016/j.catena.2003.07.002"^^xsd:anyURI ;
+    dcterms:isPartOf "CATENA" ;
+    dcterms:issued "2004-06"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "The crop productivity–erosion relationship: an analysis based on experimental work" .
+
+she:Beylich2010 a dcterms:BibliographicResource ;
+    dcterms:creator "Beylich, Anneke",
+        "Höper, Heinrich",
+        "Oberholzer, Hans-Rudolf",
+        "Schrader, Stefan",
+        "Wilke, Berndt-Michael" ;
+    dcterms:date "2010" ;
+    dcterms:identifier "https://doi.org/10.1016/j.still.2010.05.010"^^xsd:anyURI ;
+    dcterms:isPartOf "Soil and Tillage Research" ;
+    dcterms:issued "2010-08"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Evaluation of soil compaction effects on soil biota and soil biological processes in soils" .
+
+she:Bispo2007 a dcterms:BibliographicResource ;
+    dcterms:creator "Bispo, A" ;
+    dcterms:date "2007" ;
+    dcterms:source <https://esdac.jrc.ec.europa.eu/Projects/Envasso/documents/ENV_Vol-I_Final2_web.pdf> ;
+    dcterms:title "Chapter 8 Decline in soil biodiversity" .
+
+she:Bispo2009 a dcterms:BibliographicResource ;
+    dcterms:creator "Bispo, A",
+        "Cluzeau, D",
+        "Creamer, R",
+        "Dombos, M",
+        "Graefe, U",
+        "Krogh, PH",
+        "Peres, G",
+        "Rutgers, M",
+        "Römbke, J",
+        "Sousa, JP",
+        "Winding, A" ;
+    dcterms:date "2009" ;
+    dcterms:identifier "https://doi.org/10.1897/ieam-2009-064.1"^^xsd:anyURI ;
+    dcterms:isPartOf "Integrated Environmental Assessment and Management" ;
+    dcterms:publisher "Oxford University Press (OUP)" ;
+    dcterms:title "Indicators for Monitoring Soil Biodiversity" .
+
+she:Black2011 a dcterms:BibliographicResource ;
+    dcterms:creator "Black, H. I. J",
+        "Cameron, C. M",
+        "Campbell, C. D",
+        "Chamberlain, P. M",
+        "Creamer, R",
+        "Harris, J. A",
+        "Pawlett, M",
+        "Ritz, K",
+        "Singh, B. K",
+        "Wood, C" ;
+    dcterms:date "2011" ;
+    dcterms:source <https://nora.nerc.ac.uk/id/eprint/503307/> ;
+    dcterms:title "Scoping biological indicators of soil quality: Phase II" .
+
+she:Blakemore2018 a dcterms:BibliographicResource ;
+    dcterms:creator "Blakemore, Robert" ;
+    dcterms:date "2018" ;
+    dcterms:identifier "https://doi.org/10.3390/soilsystems2020033"^^xsd:anyURI ;
+    dcterms:isPartOf "Soil Systems" ;
+    dcterms:issued "2018-06-01"^^xsd:date ;
+    dcterms:publisher "MDPI AG" ;
+    dcterms:title "Critical Decline of Earthworms from Organic Origins under Intensive, Humic SOM-Depleting Agriculture" .
+
+she:Bloem2006b a dcterms:BibliographicResource ;
+    dcterms:creator "Bloem, J",
+        "Breure, A. M",
+        "Rutgers, M",
+        "Schouten, A. J",
+        "SØrensen, S. J",
+        "Werf, A. van der" ;
+    dcterms:date "2006" ;
+    dcterms:identifier "https://doi.org/10.1079/9780851990989.0023"^^xsd:anyURI ;
+    dcterms:isPartOf "Microbiological methods for assessing soil quality" ;
+    dcterms:issued "2005-01"^^xsd:gYearMonth ;
+    dcterms:publisher "CABI Publishing" ;
+    dcterms:title "Monitoring and evaluating soil quality." .
+
+she:Blume2016 a dcterms:BibliographicResource ;
+    dcterms:creator "Blume, Hans-Peter",
+        "Brümmer, Gerhard W",
+        "Fleige, Heiner",
+        "Horn, Rainer",
+        "Kandeler, Ellen",
+        "Kretzschmar, Ruben",
+        "Kögel-Knabner, Ingrid",
+        "Stahr, Karl",
+        "Wilke, Berndt-Michael" ;
+    dcterms:date "2016" ;
+    dcterms:identifier "https://doi.org/10.1007/978-3-642-30942-7_3"^^xsd:anyURI ;
+    dcterms:isPartOf "Scheffer/SchachtschabelSoil Science" ;
+    dcterms:publisher "Springer Berlin Heidelberg" ;
+    dcterms:title "Soil Organic Matter" .
+
+she:Boardman2006 a dcterms:BibliographicResource ;
+    dcterms:creator "Boardman, John" ;
+    dcterms:date "2006" ;
+    dcterms:identifier "https://doi.org/10.1016/j.catena.2006.03.007"^^xsd:anyURI ;
+    dcterms:isPartOf "CATENA" ;
+    dcterms:issued "2006-12"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Soil erosion science: Reflections on the limitations of current approaches" .
+
+she:Bone2010 a dcterms:BibliographicResource ;
+    dcterms:creator "Archer, Michael",
+        "Barraclough, Declan",
+        "Bone, James",
+        "Flight, Dee",
+        "Head, Martin",
+        "Scheib, Catherine",
+        "Voulvoulis, Nikolaos" ;
+    dcterms:date "2010" ;
+    dcterms:identifier "https://doi.org/10.1016/j.envint.2010.04.010"^^xsd:anyURI ;
+    dcterms:isPartOf "Environment International" ;
+    dcterms:issued "2010-08"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Soil quality assessment under emerging regulatory requirements" .
+
+she:Bonfante2020 a dcterms:BibliographicResource ;
+    dcterms:creator "Basile, Angelo",
+        "Bonfante, Antonello",
+        "Bouma, Johan" ;
+    dcterms:date "2020" ;
+    dcterms:identifier "https://doi.org/10.5194/soil-6-453-2020"^^xsd:anyURI ;
+    dcterms:isPartOf "SOIL" ;
+    dcterms:issued "2020-10-05"^^xsd:date ;
+    dcterms:publisher "Copernicus GmbH" ;
+    dcterms:title "Targeting the soil quality and soil health concepts when aiming for the United Nations Sustainable Development Goals and the EU Green Deal" .
+
+she:Braun2010 a dcterms:BibliographicResource ;
+    dcterms:creator "Braun, Sabine",
+        "Flückiger, Walter",
+        "Quiring, Rebecca",
+        "Thomas, Vera F.D" ;
+    dcterms:date "2010" ;
+    dcterms:identifier "https://doi.org/10.1016/j.envpol.2009.11.030"^^xsd:anyURI ;
+    dcterms:isPartOf "Environmental Pollution" ;
+    dcterms:issued "2010-06"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Does nitrogen deposition increase forest production? The role of phosphorus" .
+
+she:Breure2004 a dcterms:BibliographicResource ;
+    dcterms:creator "Breure, Anton M" ;
+    dcterms:date "2004" ;
+    dcterms:source <https://www.fao.org/fileadmin/templates/soilbiodiversity/Downloadable_files/8.Breure.pdf> ;
+    dcterms:title "Soil biodiversity: measurements, indicators, threats and soil functions" .
+
+she:Buczko2018 a dcterms:BibliographicResource ;
+    dcterms:creator "Buczko, Uwe",
+        "Eichler-Löbermann, Bettina",
+        "Gans, Wolfgang",
+        "Merbach, Ines",
+        "Panten, Kerstin",
+        "Peiter, Edgar",
+        "Reitz, Thomas",
+        "Spiegel, Heide",
+        "van Laak, Michael",
+        "von Tucher, Sabine" ;
+    dcterms:date "2018" ;
+    dcterms:identifier "https://doi.org/10.1007/s13280-017-0971-1"^^xsd:anyURI ;
+    dcterms:isPartOf "Ambio" ;
+    dcterms:issued "2018-01"^^xsd:gYearMonth ;
+    dcterms:publisher "Springer Science and Business Media LLC" ;
+    dcterms:title "Re-evaluation of the yield response to phosphorus fertilization based on meta-analyses of long-term field experiments" .
+
+she:Buenemann2018 a dcterms:BibliographicResource ;
+    dcterms:creator "Bai, Zhanguo",
+        "Bongiorno, Giulia",
+        "Brussaard, Lijbert",
+        "Bünemann, Else K",
+        "Creamer, Rachel E",
+        "De Deyn, Gerlinde",
+        "Fleskens, Luuk",
+        "Geissen, Violette",
+        "Kuyper, Thom W",
+        "Mäder, Paul",
+        "Pulleman, Mirjam",
+        "Sukkel, Wijnand",
+        "de Goede, Ron",
+        "van Groenigen, Jan Willem" ;
+    dcterms:date "2018" ;
+    dcterms:identifier "https://doi.org/10.1016/j.soilbio.2018.01.030"^^xsd:anyURI ;
+    dcterms:isPartOf "Soil Biology and Biochemistry" ;
+    dcterms:issued "2018-05"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Soil quality – A critical review" .
+
+she:Bunemann2018 a dcterms:BibliographicResource ;
+    dcterms:creator "Bai, Zhanguo",
+        "Bongiorno, Giulia",
+        "Brussaard, Lijbert",
+        "Bünemann, Else K",
+        "Creamer, Rachel E",
+        "De Deyn, Gerlinde",
+        "Fleskens, Luuk",
+        "Geissen, Violette",
+        "Kuyper, Thom W",
+        "Mäder, Paul",
+        "Pulleman, Mirjam",
+        "Sukkel, Wijnand",
+        "de Goede, Ron",
+        "van Groenigen, Jan Willem" ;
+    dcterms:date "2018" ;
+    dcterms:identifier "https://doi.org/10.1016/j.soilbio.2018.01.030"^^xsd:anyURI ;
+    dcterms:isPartOf "Soil Biology and Biochemistry" ;
+    dcterms:issued "2018-05"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Soil quality – A critical review" .
+
+she:CICES5.1 a dcterms:BibliographicResource ;
+    dcterms:issued "2018"^^xsd:gYear ;
+    dcterms:source <https://cices.eu/content/uploads/sites/8/2018/01/Guidance-V51-01012018.pdf> ;
+    dcterms:title "Common International Classification of Ecosystem Services (CICES), version 5.1" .
+
+she:Chappell2016 a dcterms:BibliographicResource ;
+    dcterms:creator "Baldock, Jeffrey",
+        "Chappell, Adrian",
+        "Sanderman, Jonathan" ;
+    dcterms:date "2016" ;
+    dcterms:identifier "https://doi.org/10.1038/nclimate2829"^^xsd:anyURI ;
+    dcterms:isPartOf "Nature Climate Change" ;
+    dcterms:issued "2016-02"^^xsd:gYearMonth ;
+    dcterms:publisher "Springer Science and Business Media LLC" ;
+    dcterms:title "The global significance of omitting soil erosion from soil organic carbon cycling schemes" .
+
+she:Chartin2020 a dcterms:BibliographicResource ;
+    dcterms:creator "Chartin, C",
+        "Leydet, L",
+        "Marx, S",
+        "Steffen, M",
+        "van Wesemael, B" ;
+    dcterms:date "2020" ;
+    dcterms:source <https://eu-cap-network.ec.europa.eu/publications/evolution-soil-organic-carbon-grand-duchy-luxembourg_fr> ;
+    dcterms:title "Recent evolution of soil organic carbon in the Grand-Duchy of Luxembourg" .
+
+she:Chartin2022 a dcterms:BibliographicResource ;
+    dcterms:creator "Chartin, C. B" ;
+    dcterms:date "2022" ;
+    dcterms:title "Personal communication on SOC/clay ratios in Wallonia (August 2022)" .
+
+she:Cornu2021 a dcterms:BibliographicResource ;
+    dcterms:creator "Béchet, Béatrice",
+        "Cornu, Sophie",
+        "Delolme, Cécile",
+        "Keller, Catherine",
+        "Schwartz, Christophe",
+        "Vidal-Beaudet, Laure" ;
+    dcterms:date "2021" ;
+    dcterms:identifier "https://doi.org/10.1016/j.geoderma.2021.115321"^^xsd:anyURI ;
+    dcterms:isPartOf "Geoderma" ;
+    dcterms:issued "2021-11"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Pedological characteristics of artificialized soils: A snapshot" .
+
+she:Creamer2019 a dcterms:BibliographicResource ;
+    dcterms:creator "Adam Csorba",
+        "Arwyn Jones",
+        "Dick Brus",
+        "Erika Micheli",
+        "Henk Martens",
+        "Iolanda Simo Yosa",
+        "Jeroen van Leeuwen",
+        "Lia Hemerik",
+        "Marie Zwetsloot",
+        "Nicolas Saby",
+        "Rachel Creamer" ;
+    dcterms:date "2019" ;
+    dcterms:source <https://ec.europa.eu/research/participants/documents/downloadPublic?appId=PPGMS&documentIds=080166e5c8e7e2d9> ;
+    dcterms:title "Monitoring schema for regional and European application, testing and assessment of indicators for five soil functions" .
+
+she:Daliakopoulos2016 a dcterms:BibliographicResource ;
+    dcterms:creator "Daliakopoulos, I.N",
+        "Karatzas, G.P",
+        "Kourgialas, N.N",
+        "Koutroulis, A",
+        "Ritsema, C.J",
+        "Tsanis, I.K",
+        "Varouchakis, A.E" ;
+    dcterms:date "2016" ;
+    dcterms:identifier "https://doi.org/10.1016/j.scitotenv.2016.08.177"^^xsd:anyURI ;
+    dcterms:isPartOf "Science of The Total Environment" ;
+    dcterms:issued "2016-12"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "The threat of soil salinity: A European scale review" .
+
+she:DeVries2007 a dcterms:BibliographicResource ;
+    dcterms:creator "Römkens, Paul F. A. M",
+        "Schütze, Gudrun",
+        "de Vries, Wim" ;
+    dcterms:date "2007" ;
+    dcterms:identifier "https://doi.org/10.1007/978-0-387-69163-3_4"^^xsd:anyURI ;
+    dcterms:isPartOf "Reviews of Environmental Contamination and Toxicology" ;
+    dcterms:publisher "Springer New York" ;
+    dcterms:title "Critical Soil Concentrations of Cadmium, Lead, and Mercury in View of Health Effects on Humans and Animals" .
+
+she:DeVries2009 a dcterms:BibliographicResource ;
+    dcterms:creator "Dobbertin, M",
+        "Evans, C",
+        "Gundersen, P",
+        "Kros, J",
+        "Laubhann, D",
+        "Reinds, G.J",
+        "Solberg, S",
+        "Sterba, H",
+        "Sutton, M.A",
+        "Wamelink, G.W.W",
+        "de Vries, W",
+        "van Oijen, M" ;
+    dcterms:date "2009" ;
+    dcterms:identifier "https://doi.org/10.1016/j.foreco.2009.02.034"^^xsd:anyURI ;
+    dcterms:isPartOf "Forest Ecology and Management" ;
+    dcterms:issued "2009-09"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "The impact of nitrogen deposition on carbon sequestration by European forests and heathlands" .
+
+she:Dexter2008 a dcterms:BibliographicResource ;
+    dcterms:creator "Arrouays, D",
+        "Czyż, E.A",
+        "Dexter, A.R",
+        "Duval, O",
+        "Jolivet, C",
+        "Richard, G" ;
+    dcterms:date "2008" ;
+    dcterms:identifier "https://doi.org/10.1016/j.geoderma.2008.01.022"^^xsd:anyURI ;
+    dcterms:isPartOf "Geoderma" ;
+    dcterms:issued "2008-04"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Complexed organic matter controls soil physical properties" .
+
+she:Drexler2020 a dcterms:BibliographicResource ;
+    dcterms:creator "Broll, Gabriele",
+        "Don, Axel",
+        "Drexler, Sophie",
+        "Flessa, Heinz" ;
+    dcterms:date "2020" ;
+    dcterms:identifier "https://doi.org/10.3220/REP1583152694000"^^xsd:anyURI ;
+    dcterms:publisher "Johann Heinrich von Thünen-Institut" ;
+    dcterms:title "Standorttypische Humusgehalte landwirtschaftlich genutzter Böden Deutschlands" .
+
+she:Drexler2022 a dcterms:BibliographicResource ;
+    dcterms:creator "Broll, Gabriele",
+        "Don, Axel",
+        "Drexler, Sophie",
+        "Flessa, Heinz" ;
+    dcterms:date "2022" ;
+    dcterms:identifier "https://doi.org/10.1002/jpln.202200007"^^xsd:anyURI ;
+    dcterms:isPartOf "Journal of Plant Nutrition and Soil Science" ;
+    dcterms:issued "2022-06"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Benchmarking soil organic carbon to support agricultural carbon management: A German case study#" .
+
+she:EC2017 a dcterms:BibliographicResource ;
+    dcterms:creator "European Commission" ;
+    dcterms:date "2017" ;
+    dcterms:source <https://circabc.europa.eu/sd/a/a5932b69-ffa5-4d5f-a842-ead4bb8ba623/MAESconditionsBackgroundpaper11July.pdf> ;
+    dcterms:title "MAES workshop 'Assessing and mapping ecosystem condition': Background paper to support breakout group discussions, 27-28 June (version of 11 July)" .
+
+she:EC2020a a dcterms:BibliographicResource ;
+    dcterms:creator "European Commission" ;
+    dcterms:date "2020" ;
+    dcterms:identifier "https://doi.org/10.2777/918775"^^xsd:anyURI ;
+    dcterms:title "Caring for soil is caring for life" .
+
+she:EEA2021a a dcterms:BibliographicResource ;
+    dcterms:creator "Fons Esteve, Jaume",
+        "Gregor, Mirko",
+        "Ivits, Eva",
+        "Mancosu, Emanuele",
+        "Marín, Ana I",
+        "Milego Agràs, Roger",
+        "Schröder, Christoph",
+        "Tóth, Gergely" ;
+    dcterms:date "2021" ;
+    dcterms:identifier "https://doi.org/10.2800/714139"^^xsd:anyURI ;
+    dcterms:issued "2022"^^xsd:gYear ;
+    dcterms:title "Land take and land degradation in functional urban areas" .
+
+she:EEA2022c a dcterms:BibliographicResource ;
+    dcterms:creator "European Environment Agency" ;
+    dcterms:date "2022" ;
+    dcterms:source <https://www.eea.europa.eu/ims/progress-in-the-management-of> ;
+    dcterms:title "Progress in management of contaminated sites in Europe" .
+
+she:EEAIndicators a dcterms:BibliographicResource ;
+    dcterms:creator "European Environment Agency" ;
+    dcterms:source <https://www.eea.europa.eu/en/analysis/indicators> ;
+    dcterms:title "EEA indicators" .
+
+she:ETCULS2019 a dcterms:BibliographicResource ;
+    dcterms:creator "European Topic Centre on Urban, Land and Soil Systems" ;
+    dcterms:date "2019" ;
+    dcterms:source <https://land.copernicus.eu/user-corner/technical-library/corine-land-cover-nomenclature-guidelines/docs/pdf/CLC2018_Nomenclature_illustrated_guide_20190510.pdf> ;
+    dcterms:title "Updated CLC illustrated nomenclature guidelines" .
+
+she:EU2006 a dcterms:BibliographicResource ;
+    dcterms:creator "European Union" ;
+    dcterms:date "2006" ;
+    dcterms:source <https://eur-lex.europa.eu/eli/reg/2006/1881/oj/eng> ;
+    dcterms:title "Commission Regulation (EC) No 1881/2006 of 19 December 2006 setting maximum levels for certain contaminants in foodstuffs" .
+
+she:EU2009 a dcterms:BibliographicResource ;
+    dcterms:creator "European Union" ;
+    dcterms:date "2009" ;
+    dcterms:source <https://eur-lex.europa.eu/eli/reg/2009/1107/oj/eng> ;
+    dcterms:title "Regulation (EC) No 1107/2009 of the European Parliament and of the Council of 21 October 2009 concerning the placing of plant protection products on the market" .
+
+she:EU2013b a dcterms:BibliographicResource ;
+    dcterms:creator "European Union" ;
+    dcterms:date "2013" ;
+    dcterms:source <https://eur-lex.europa.eu/eli/reg/2013/1306/oj/eng> ;
+    dcterms:title "Regulation (EU) No 1306/2013 on the financing, management and monitoring of the common agricultural policy" .
+
+she:EU2021a a dcterms:BibliographicResource ;
+    dcterms:creator "European Union" ;
+    dcterms:date "2021a"@en ;
+    dcterms:issued "2021"^^xsd:gYear ;
+    dcterms:source <https://eur-lex.europa.eu/eli/reg/2021/1323/oj/eng> ;
+    dcterms:title "Commission Regulation 2021/1323 of 10 August 2021 amending Regulation (EC) No 1881/2006 as regards maximum levels of cadmium in certain foodstuffs" .
+
+she:EU2021b a dcterms:BibliographicResource ;
+    dcterms:creator "European Union" ;
+    dcterms:date "2021b"@en ;
+    dcterms:issued "2021"^^xsd:gYear ;
+    dcterms:source <https://eur-lex.europa.eu/eli/reg/2021/1317/oj/eng> ;
+    dcterms:title "Commission Regulation 2021/1317 of 9 August 2021 amending Regulation (EC) No 1881/2006 as regards maximum levels of lead in certain foodstuffs" .
+
+she:EUResearch a dcterms:BibliographicResource ;
+    dcterms:creator "European Union" ;
+    dcterms:source <https://research-and-innovation.ec.europa.eu/> ;
+    dcterms:title "EU research" .
+
+she:Egli2014 a dcterms:BibliographicResource ;
+    dcterms:creator "Dahms, Dennis",
+        "Egli, Markus",
+        "Norton, Kevin" ;
+    dcterms:date "2014" ;
+    dcterms:identifier "https://doi.org/10.1016/j.geoderma.2013.08.016"^^xsd:anyURI ;
+    dcterms:isPartOf "Geoderma" ;
+    dcterms:issued "2014-01"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Soil formation rates on silicate parent material in alpine environments: Different approaches–different results?" .
+
+she:Elser2007 a dcterms:BibliographicResource ;
+    dcterms:creator "Bracken, Matthew E.S",
+        "Cleland, Elsa E",
+        "Elser, James J",
+        "Gruner, Daniel S",
+        "Harpole, W. Stanley",
+        "Hillebrand, Helmut",
+        "Ngai, Jacqueline T",
+        "Seabloom, Eric W",
+        "Shurin, Jonathan B",
+        "Smith, Jennifer E" ;
+    dcterms:date "2007" ;
+    dcterms:identifier "https://doi.org/10.1111/j.1461-0248.2007.01113.x"^^xsd:anyURI ;
+    dcterms:isPartOf "Ecology Letters" ;
+    dcterms:issued "2007-12"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Global analysis of nitrogen and phosphorus limitation of primary producers in freshwater, marine and terrestrial ecosystems" .
+
+she:EurostatIndicators a dcterms:BibliographicResource ;
+    dcterms:creator "Eurostat" ;
+    dcterms:source <https://ec.europa.eu/eurostat/cache/metadata/en/aei_pr_gnb_esms.htm> ;
+    dcterms:title "Eurostat indicators" .
+
+she:FAO2019 a dcterms:BibliographicResource ;
+    dcterms:creator "Food and Agriculture Organization of the United Nations" ;
+    dcterms:date "2019" ;
+    dcterms:source <https://www.fao.org/3/ca4395en/ca4395en.pdf> ;
+    dcterms:title "Soil erosion: the greatest challenge to sustainable soil management" .
+
+she:FAOITPS2015 a dcterms:BibliographicResource ;
+    dcterms:creator "Food and Agriculture Organization of the United Nations",
+        "Intergovernmental Technical Panel on Soils" ;
+    dcterms:date "2015" ;
+    dcterms:source <https://www.fao.org/3/i5199e/I5199E.pdf> ;
+    dcterms:title "Status of the world's soil resources (SWSR)" .
+
+she:Freudenschuss2001 a dcterms:BibliographicResource ;
+    dcterms:creator "Alexandra Freudenschuss",
+        "Martha Wepner",
+        "Martin Schamann",
+        "Sigbert Huber" ;
+    dcterms:date "2001" ;
+    dcterms:issued "2002"^^xsd:gYear ;
+    dcterms:source <https://www.eea.europa.eu/en/analysis/publications/technical_report_2002_78> ;
+    dcterms:title "Eionet technical workshop on indicators for soil contamination: Workshop proceedings" .
+
+she:Gardi2015 a dcterms:BibliographicResource ;
+    dcterms:creator "Bosco, Claudio",
+        "De Brogniez, Delphine",
+        "Gardi, Ciro",
+        "Panagos, Panos",
+        "Van Liedekerke, Marc" ;
+    dcterms:date "2015" ;
+    dcterms:identifier "https://doi.org/10.1080/09640568.2014.899490"^^xsd:anyURI ;
+    dcterms:isPartOf "Journal of Environmental Planning and Management" ;
+    dcterms:issued "2015-05-04"^^xsd:date ;
+    dcterms:publisher "Informa UK Limited" ;
+    dcterms:title "Land take and food security: assessment of land take on the agricultural production in Europe" .
+
+she:Gaublomme2006 a dcterms:BibliographicResource ;
+    dcterms:creator "Bruno De Vos",
+        "Eva Gaublomme",
+        "Nathalie Cools" ;
+    dcterms:date "2006" ;
+    dcterms:source <https://purews.inbo.be/ws/files/5385511/Gaublomme_etal_2006_IndicatorMicrobialBiodiversityForestSoils.pdf> ;
+    dcterms:title "An indicator for microbial biodiversity in forest soils" .
+
+she:Green1993 a dcterms:BibliographicResource ;
+    dcterms:creator "Green, R. N",
+        "Klinka, K",
+        "Trowbridge, R. L" ;
+    dcterms:date "1993" ;
+    dcterms:identifier "https://doi.org/10.1093/forestscience/39.s1.a0001"^^xsd:anyURI ;
+    dcterms:isPartOf "Forest Science" ;
+    dcterms:issued "1993-02-01"^^xsd:date ;
+    dcterms:publisher "Springer Science and Business Media LLC" ;
+    dcterms:title "Towards a Taxonomic Classification of Humus Forms" .
+
+she:Gregory2006 a dcterms:BibliographicResource ;
+    dcterms:creator "Gregory, P.J" ;
+    dcterms:date "2006" ;
+    dcterms:identifier "https://doi.org/10.1111/j.1365-2389.2005.00778.x"^^xsd:anyURI ;
+    dcterms:isPartOf "European Journal of Soil Science" ;
+    dcterms:issued "2006-02"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Roots, rhizosphere and soil: the route to a better understanding of soil science?" .
+
+she:Grilli2021 a dcterms:BibliographicResource ;
+    dcterms:creator "Carvalho, Sílvia C.P",
+        "Castaldi, Simona",
+        "Chiti, Tommaso",
+        "Coppola, Elio",
+        "D'Ascoli, Rosaria",
+        "Grilli, Eleonora",
+        "La Mantia, Tommaso",
+        "Marzaioli, Rossana",
+        "Mastrocicco, Micòl",
+        "Pulido, Fernando",
+        "Quatrini, Paola",
+        "Rutigliano, Flora Angela" ;
+    dcterms:date "2021" ;
+    dcterms:identifier "https://doi.org/10.1016/j.jenvman.2021.112285"^^xsd:anyURI ;
+    dcterms:isPartOf "Journal of Environmental Management" ;
+    dcterms:issued "2021-06"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Critical range of soil organic carbon in southern Europe lands under desertification risk" .
+
+she:Guerra2021 a dcterms:BibliographicResource ;
+    dcterms:creator "Bardgett, Richard D",
+        "Briones, Maria J. I",
+        "Buscot, François",
+        "Cameron, Erin K",
+        "Caon, Lucrezia",
+        "Cesarz, Simone",
+        "Chatzinotas, Antonis",
+        "Cowan, Don A",
+        "Crowther, Thomas W",
+        "Delgado-Baquerizo, Manuel",
+        "Djukic, Ika",
+        "Eisenhauer, Nico",
+        "Guerra, Carlos A",
+        "Lehmann, Anika",
+        "Maestre, Fernando T",
+        "Marín, César",
+        "Montanarella, Luca",
+        "Navarro, Laetitia M",
+        "Orgiazzi, Alberto",
+        "Reitz, Thomas",
+        "Rillig, Matthias C",
+        "Singh, Brajesh K",
+        "Smith, Linnea C",
+        "Tedersoo, Leho",
+        "Vargas-Rojas, Ronald",
+        "Wall, Diana H",
+        "Weigelt, Alexandra",
+        "de Vries, Franciska T",
+        "van den Hoogen, Johan" ;
+    dcterms:date "2021" ;
+    dcterms:identifier "https://doi.org/10.1126/science.abd7926"^^xsd:anyURI ;
+    dcterms:isPartOf "Science" ;
+    dcterms:issued "2021-01-15"^^xsd:date ;
+    dcterms:publisher "American Association for the Advancement of Science (AAAS)" ;
+    dcterms:title "Tracking, targeting, and conserving soil biodiversity" .
+
+she:HaaseLathrop2003 a dcterms:BibliographicResource ;
+    dcterms:creator "Hasse, John E",
+        "Lathrop, Richard G" ;
+    dcterms:date "2003" ;
+    dcterms:identifier "https://doi.org/10.1016/j.apgeog.2003.08.002"^^xsd:anyURI ;
+    dcterms:isPartOf "Applied Geography" ;
+    dcterms:issued "2003-04"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Land resource impact indicators of urban sprawl" .
+
+she:HaaseNuissl2007 a dcterms:BibliographicResource ;
+    dcterms:creator "Haase, Dagmar",
+        "Nuissl, Henning" ;
+    dcterms:date "2007" ;
+    dcterms:identifier "https://doi.org/10.1016/j.landurbplan.2006.03.011"^^xsd:anyURI ;
+    dcterms:isPartOf "Landscape and Urban Planning" ;
+    dcterms:issued "2007-03"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Does urban sprawl drive changes in the water balance and policy? The case of Leipzig (Germany) 1870-2003" .
+
+she:HainesYoungPotschin2018 a dcterms:BibliographicResource ;
+    dcterms:creator "Haines-Young, R",
+        "Potschin, M. B" ;
+    dcterms:date "2018" ;
+    dcterms:source <https://cices.eu/content/uploads/sites/8/2018/01/Guidance-V51-01012018.pdf> ;
+    dcterms:title "Common International Classification of Ecosystem Services (CICES) V5.1: guidance on the application of the revised structure" .
+
+she:HartgeHorn2016 a dcterms:BibliographicResource ;
+    dcterms:creator "Hartge, K. H",
+        "Horn, R" ;
+    dcterms:date "2016" ;
+    dcterms:source <https://www.schweizerbart.de/publications/detail/isbn/9783510652884/Hartge_Horn_Essential_Soil_Physics_> ;
+    dcterms:title "Essential soil physics: an introduction to soil processes, functions, structure and mechanics" .
+
+she:Hijbeek2017a a dcterms:BibliographicResource ;
+    dcterms:creator "Gort, G",
+        "Hijbeek, R",
+        "Spiegel, H",
+        "Whitmore, A.P",
+        "ten Berge, H.F.M",
+        "van Ittersum, M.K" ;
+    dcterms:date "2017" ;
+    dcterms:identifier "https://doi.org/10.1007/s11104-016-3031-x"^^xsd:anyURI ;
+    dcterms:isPartOf "Plant and Soil" ;
+    dcterms:issued "2017-02"^^xsd:gYearMonth ;
+    dcterms:publisher "Springer Science and Business Media LLC" ;
+    dcterms:title "Do organic inputs matter – a meta-analysis of additional yield effects for arable crops in Europe" .
+
+she:Hogberg2007 a dcterms:BibliographicResource ;
+    dcterms:creator "Högberg, Peter" ;
+    dcterms:date "2007" ;
+    dcterms:identifier "https://doi.org/10.1038/447781a"^^xsd:anyURI ;
+    dcterms:isPartOf "Nature" ;
+    dcterms:issued "2007-06"^^xsd:gYearMonth ;
+    dcterms:publisher "Springer Science and Business Media LLC" ;
+    dcterms:title "Nitrogen impacts on forest carbon" .
+
+she:Holland2019 a dcterms:BibliographicResource ;
+    dcterms:creator "Glendining, M.J",
+        "Goulding, K.W.T",
+        "Holland, J.E",
+        "McGrath, S.P",
+        "White, P.J" ;
+    dcterms:date "2019" ;
+    dcterms:identifier "https://doi.org/10.1016/j.eja.2019.02.016"^^xsd:anyURI ;
+    dcterms:isPartOf "European Journal of Agronomy" ;
+    dcterms:issued "2019-04"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Yield responses of arable crops to liming – An evaluation of relationships between yields and soil pH from a long-term liming experiment" .
+
+she:Hopmans2021 a dcterms:BibliographicResource ;
+    dcterms:creator "Assouline, S",
+        "Ben-Gal, A",
+        "De Jong van Lier, Q",
+        "Grattan, S. R",
+        "Hopmans, J. W",
+        "Javaux, M",
+        "Jiao, H",
+        "Kisekka, I",
+        "Lavado, R. S",
+        "Lazarovitch, N",
+        "Li, B",
+        "Minhas, P. S",
+        "Munns, R",
+        "Qureshi, A. S",
+        "Raats, P. A. C",
+        "Rengasamy, P",
+        "Skaggs, T. H",
+        "Taleisnik, E",
+        "Wang, G" ;
+    dcterms:date "2021" ;
+    dcterms:identifier "https://doi.org/10.1016/bs.agron.2021.03.001"^^xsd:anyURI ;
+    dcterms:isPartOf "Advances in Agronomy" ;
+    dcterms:publisher "Elsevier" ;
+    dcterms:title "Critical knowledge gaps and research priorities in global soil salinity" .
+
+she:Horn2019 a dcterms:BibliographicResource ;
+    dcterms:creator "Burbaum, Bernd",
+        "Cordsen, Eckhard",
+        "Filipinski, Marek",
+        "Fleige, Heiner",
+        "Horn, Rainer",
+        "Mordhorst, Anneka",
+        "Zimmermann, Iris" ;
+    dcterms:date "2019" ;
+    dcterms:identifier "https://doi.org/10.1111/ejss.12864"^^xsd:anyURI ;
+    dcterms:isPartOf "European Journal of Soil Science" ;
+    dcterms:issued "2020-03"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Soil type and land use effects on tensorial properties of saturated hydraulic conductivity in northern Germany" .
+
+she:Horn2022 a dcterms:BibliographicResource ;
+    dcterms:creator "Fleige, Heiner",
+        "Horn, Rainer",
+        "Mordhorst, Anneka",
+        "Schrader, Stefan",
+        "Schroeder, Richard" ;
+    dcterms:date "2022" ;
+    dcterms:source <https://old.iuss.org/media/iuss_sustainable_soil_management_as_a_key_to_preserving_soil_biodiversity_and_stopping_its_degradation_book.pdf> ;
+    dcterms:title "Soil health and biodiversity: interactions with physical processes and functions" .
+
+she:HornFleige2003 a dcterms:BibliographicResource ;
+    dcterms:creator "Fleige, H",
+        "Horn, R" ;
+    dcterms:date "2003" ;
+    dcterms:identifier "https://doi.org/10.1016/s0167-1987(03)00102-8"^^xsd:anyURI ;
+    dcterms:isPartOf "Soil and Tillage Research" ;
+    dcterms:issued "2003-10"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "A method for assessing the impact of load on mechanical stability and on physical properties of soils" .
+
+she:HornFleige2009 a dcterms:BibliographicResource ;
+    dcterms:creator "Fleige, Heiner",
+        "Horn, Rainer" ;
+    dcterms:date "2009" ;
+    dcterms:identifier "https://doi.org/10.1016/j.still.2008.07.015"^^xsd:anyURI ;
+    dcterms:isPartOf "Soil and Tillage Research" ;
+    dcterms:issued "2009-03"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Risk assessment of subsoil compaction for arable soils in Northwest Germany at farm scale" .
+
+she:Huber2008 a dcterms:BibliographicResource ;
+    dcterms:creator "Huber, S" ;
+    dcterms:date "2008" ;
+    dcterms:identifier "https://doi.org/10.2788/93515"^^xsd:anyURI ;
+    dcterms:title "Environmental assessment of soil for monitoring. Volume I: Indicators and criteria" .
+
+she:IPCC2019b a dcterms:BibliographicResource ;
+    dcterms:creator "Intergovernmental Panel on Climate Change" ;
+    dcterms:date "2019" ;
+    dcterms:source <https://www.ipcc.ch/report/2019-refinement-to-the-2006-ipcc-guidelines-for-national-greenhouse-gas-inventories/> ;
+    dcterms:title "2019 Refinement to the 2006 IPCC guidelines for national greenhouse gas inventories" .
+
+she:ISO2006a a dcterms:BibliographicResource ;
+    dcterms:creator "International Organization for Standardization" ;
+    dcterms:date "2006" ;
+    dcterms:source <https://www.iso.org/standard/36914.html> ;
+    dcterms:title "ISO 23611-1: Soil quality — Sampling of soil invertebrates — Part 1: Hand-sorting and formalin extraction of earthworms" .
+
+she:ISO2006b a dcterms:BibliographicResource ;
+    dcterms:creator "International Organization for Standardization" ;
+    dcterms:date "2006" ;
+    dcterms:source <https://www.iso.org/standard/37027.html> ;
+    dcterms:title "ISO 23611-2: Soil quality — Sampling of soil invertebrates — Part 2: Sampling and extraction of microarthropods (Collembola and Acarina)" .
+
+she:ISO2007 a dcterms:BibliographicResource ;
+    dcterms:creator "International Organization for Standardization" ;
+    dcterms:date "2007" ;
+    dcterms:source <https://www.iso.org/standard/39246.html> ;
+    dcterms:title "ISO 23611-3: Soil quality — Sampling of soil invertebrates — Part 3: Sampling and soil extraction of enchytraeids" .
+
+she:ISO2016 a dcterms:BibliographicResource ;
+    dcterms:creator "International Organization for Standardization" ;
+    dcterms:date "2016" ;
+    dcterms:source <https://www.iso.org/standard/60106.html> ;
+    dcterms:title "ISO 17601: Soil quality — Estimation of abundance of selected microbial gene sequences by quantitative realtime PCR from DNA directly extracted from soil" .
+
+she:JRC2012 a dcterms:BibliographicResource ;
+    dcterms:creator "Joint Research Centre" ;
+    dcterms:date "2012" ;
+    dcterms:identifier "https://doi.org/10.2788/77361"^^xsd:anyURI ;
+    dcterms:title "The state of soil in Europe" .
+
+she:Janssens2010 a dcterms:BibliographicResource ;
+    dcterms:creator "Ceulemans, R",
+        "Ciais, P",
+        "Dieleman, W",
+        "Dolman, A. J",
+        "Grace, J",
+        "Janssens, I. A",
+        "Law, B.E",
+        "Luyssaert, S",
+        "Matteucci, G",
+        "Papale, D",
+        "Piao, S. L",
+        "Reichstein, M",
+        "Schulze, E-D",
+        "Subke, J-A",
+        "Tang, J" ;
+    dcterms:date "2010" ;
+    dcterms:identifier "https://doi.org/10.1038/ngeo844"^^xsd:anyURI ;
+    dcterms:isPartOf "Nature Geoscience" ;
+    dcterms:issued "2010-05"^^xsd:gYearMonth ;
+    dcterms:publisher "Springer Science and Business Media LLC" ;
+    dcterms:title "Reduction of forest soil respiration in response to nitrogen deposition" .
+
+she:Johannes2017 a dcterms:BibliographicResource ;
+    dcterms:creator "Baveye, Philippe C",
+        "Boivin, Pascal",
+        "Johannes, Alice",
+        "Matter, Adrien",
+        "Schulin, Rainer",
+        "Weisskopf, Peter" ;
+    dcterms:date "2017" ;
+    dcterms:identifier "https://doi.org/10.1016/j.geoderma.2017.04.021"^^xsd:anyURI ;
+    dcterms:isPartOf "Geoderma" ;
+    dcterms:issued "2017-09"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Optimal organic carbon values for soil structure quality of arable soils. Does clay content matter?" .
+
+she:Johnson1997 a dcterms:BibliographicResource ;
+    dcterms:creator "Ambrose, S. H",
+        "Bassett, T. J",
+        "Bowen, M. L",
+        "Crummey, D. E",
+        "Isaacson, J. S",
+        "Johnson, D. L",
+        "Johnson, D. N",
+        "Lamb, P",
+        "Saul, M",
+        "Winter‐Nelson, A. E" ;
+    dcterms:date "1997" ;
+    dcterms:identifier "https://doi.org/10.2134/jeq1997.00472425002600030002x"^^xsd:anyURI ;
+    dcterms:isPartOf "Journal of Environmental Quality" ;
+    dcterms:issued "1997-05"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Meanings of Environmental Terms" .
+
+she:Karimi2019 a dcterms:BibliographicResource ;
+    dcterms:creator "Arrouays, Dominique",
+        "Bispo, Antonio",
+        "Chemidlin Prévost-Bouré, Nicolas",
+        "Cruaud, Corinne",
+        "Dequiedt, Samuel",
+        "Jolivet, Claudy",
+        "Karimi, Battle",
+        "Ranjard, Lionel",
+        "Terrat, Sébastien",
+        "Wincker, Patrick" ;
+    dcterms:date "2019" ;
+    dcterms:identifier "https://doi.org/10.1038/s41598-019-40422-y"^^xsd:anyURI ;
+    dcterms:isPartOf "Scientific Reports" ;
+    dcterms:issued "2019-03-07"^^xsd:date ;
+    dcterms:publisher "Springer Science and Business Media LLC" ;
+    dcterms:title "Biogeography of Soil Bacterial Networks along a Gradient of Cropping Intensity" .
+
+she:KayAngers1999 a dcterms:BibliographicResource ;
+    dcterms:creator "Angers, D. A",
+        "Kay, B. D" ;
+    dcterms:date "1999" ;
+    dcterms:isPartOf "Handbook of Soil Science" ;
+    dcterms:title "Soil structure" .
+
+she:Keller2019 a dcterms:BibliographicResource ;
+    dcterms:creator "Colombi, Tino",
+        "Horn, Rainer",
+        "Keller, Thomas",
+        "Or, Dani",
+        "Sandin, Maria" ;
+    dcterms:date "2019" ;
+    dcterms:identifier "https://doi.org/10.1016/j.still.2019.104293"^^xsd:anyURI ;
+    dcterms:isPartOf "Soil and Tillage Research" ;
+    dcterms:issued "2019-11"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Historical increase in agricultural machinery weights enhanced soil stress levels and adversely affected soil functioning" .
+
+she:Kindler2011 a dcterms:BibliographicResource ;
+    dcterms:creator "BERNHOFER, CHRISTIAN",
+        "BUCHMANN, NINA",
+        "CELLIER, PIERRE",
+        "EUGSTER, WERNER",
+        "GLEIXNER, GERD",
+        "GRŨNWALD, THOMAS",
+        "HEIM, ALEXANDER",
+        "IBROM, ANDREAS",
+        "JONES, MIKE",
+        "JONES, STEPHANIE K",
+        "KAISER, KLAUS",
+        "KAUPENJOHANN, MARTIN",
+        "KINDLER, REIMO",
+        "KLUMPP, KATJA",
+        "KUTSCH, WERNER",
+        "LARSEN, KLAUS STEENBERG",
+        "LEHUGER, SIMON",
+        "LOUBET, BENJAMIN",
+        "MCKENZIE, REBECCA",
+        "MOORS, EDDY",
+        "OSBORNE, BRUCE",
+        "PILEGAARD, KIM",
+        "REBMANN, CORINNA",
+        "SAUNDERS, MATTHEW",
+        "SCHMIDT, MICHAEL W. I",
+        "SCHRUMPF, MARION",
+        "SEYFFERTH, JANINE",
+        "SIEMENS, JAN",
+        "SKIBA, UTE",
+        "SOUSSANA, JEAN‐FRANCOIS",
+        "SUTTON, MARK A",
+        "TEFS, CINDY",
+        "VOWINCKEL, BERNHARD",
+        "WALMSLEY, DAVID C",
+        "ZEEMAN, MATTHIAS J" ;
+    dcterms:date "2011" ;
+    dcterms:identifier "https://doi.org/10.1111/j.1365-2486.2010.02282.x"^^xsd:anyURI ;
+    dcterms:isPartOf "Global Change Biology" ;
+    dcterms:issued "2011-02"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Dissolved carbon leaching from soil is a crucial component of the net ecosystem carbon balance" .
+
+she:Korschens1998 a dcterms:BibliographicResource ;
+    dcterms:creator "Körschens, Martin",
+        "Schulz, Elke",
+        "Weigel, Annett" ;
+    dcterms:date "1998" ;
+    dcterms:identifier "https://doi.org/10.1002/jpln.1998.3581610409"^^xsd:anyURI ;
+    dcterms:isPartOf "Zeitschrift für Pflanzenernährung und Bodenkunde" ;
+    dcterms:issued "1998-08"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Turnover of soil organic matter (SOM) and long‐term balances — tools for evaluating sustainable productivity of soils" .
+
+she:LUCASSoilMeasurements a dcterms:BibliographicResource ;
+    dcterms:source <https://esdac.jrc.ec.europa.eu/projects/lucas> ;
+    dcterms:title "LUCAS soil measurements" .
+
+she:Lame2011 a dcterms:BibliographicResource ;
+    dcterms:creator "Lamé, Frank P.J" ;
+    dcterms:date "2011" ;
+    dcterms:identifier "https://doi.org/10.1007/978-90-481-9757-6_3"^^xsd:anyURI ;
+    dcterms:isPartOf "Dealing with Contaminated Sites" ;
+    dcterms:publisher "Springer Netherlands" ;
+    dcterms:title "A Practical Approach for Site Investigation" .
+
+she:Lang2016 a dcterms:BibliographicResource ;
+    dcterms:creator "Bauhus, Jürgen",
+        "Frossard, Emmanuel",
+        "George, Eckhard",
+        "Kaiser, Klaus",
+        "Kaupenjohann, Martin",
+        "Krüger, Jaane",
+        "Lang, Friederike",
+        "Matzner, Egbert",
+        "Polle, Andrea",
+        "Prietzel, Jörg",
+        "Rennenberg, Heinz",
+        "Wellbrock, Nicole" ;
+    dcterms:date "2016" ;
+    dcterms:identifier "https://doi.org/10.1002/jpln.201500541"^^xsd:anyURI ;
+    dcterms:isPartOf "Journal of Plant Nutrition and Soil Science" ;
+    dcterms:issued "2016-04"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Phosphorus in forest ecosystems: New insights from an ecosystem nutrition perspective" .
+
+she:Ledermann2008 a dcterms:BibliographicResource ;
+    dcterms:creator "Herweg, K",
+        "Hurni, H",
+        "Ledermann, T",
+        "Liniger, H",
+        "Prasuhn, V",
+        "Schneider, F" ;
+    dcterms:date "2008" ;
+    dcterms:title "Erosion damage mapping: assessing current soil erosion damage in Switzerland" .
+
+she:LeeJose2003 a dcterms:BibliographicResource ;
+    dcterms:creator "Jose, Shibu",
+        "Lee, Kye-Han" ;
+    dcterms:date "2003" ;
+    dcterms:identifier "https://doi.org/10.1016/s0378-1127(03)00164-6"^^xsd:anyURI ;
+    dcterms:isPartOf "Forest Ecology and Management" ;
+    dcterms:issued "2003-11"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Soil respiration, fine root production, and microbial biomass in cottonwood and loblolly pine plantations along a nitrogen fertilization gradient" .
+
+she:Li2009 a dcterms:BibliographicResource ;
+    dcterms:creator "Du, Shuhan",
+        "Li, Lan",
+        "Liu, Gangcai",
+        "Wu, Laoshen" ;
+    dcterms:date "2009" ;
+    dcterms:identifier "https://doi.org/10.1016/j.catena.2009.03.007"^^xsd:anyURI ;
+    dcterms:isPartOf "CATENA" ;
+    dcterms:issued "2009-08"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "An overview of soil loss tolerance" .
+
+she:Li2015 a dcterms:BibliographicResource ;
+    dcterms:creator "Li, Yong",
+        "Niu, Shuli",
+        "Yu, Guirui" ;
+    dcterms:date "2015" ;
+    dcterms:identifier "https://doi.org/10.1111/gcb.13125"^^xsd:anyURI ;
+    dcterms:isPartOf "Global Change Biology" ;
+    dcterms:issued "2016-02"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Aggravated phosphorus limitation on biomass production under increasing nitrogen loading: a meta‐analysis" .
+
+she:Lopes2013 a dcterms:BibliographicResource ;
+    dcterms:creator "Alves de Castro Lopes, André",
+        "Bueno dos Reis Junior, Fábio",
+        "Chaer, Guilherme Montandon",
+        "Goedert, Wenceslau J",
+        "Gomes de Sousa, Djalma Martinhão",
+        "de Carvalho Mendes, Iêda" ;
+    dcterms:date "2013" ;
+    dcterms:identifier "https://doi.org/10.2136/sssaj2012.0191"^^xsd:anyURI ;
+    dcterms:isPartOf "Soil Science Society of America Journal" ;
+    dcterms:issued "2013-03"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Interpretation of Microbial Soil Indicators as a Function of Crop Yield and Organic Carbon" .
+
+she:Lugato2016 a dcterms:BibliographicResource ;
+    dcterms:creator "Borrelli, Pasquale",
+        "Jones, Arwyn",
+        "Lugato, Emanuele",
+        "Panagos, Panos",
+        "Paustian, Keith" ;
+    dcterms:date "2016" ;
+    dcterms:identifier "https://doi.org/10.1111/gcb.13198"^^xsd:anyURI ;
+    dcterms:isPartOf "Global Change Biology" ;
+    dcterms:issued "2016-05"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Quantifying the erosion effect on current carbon budget of European agricultural soils at high spatial resolution" .
+
+she:Maes2020 a dcterms:BibliographicResource ;
+    dcterms:creator "Maes, J" ;
+    dcterms:date "2020" ;
+    dcterms:identifier "https://doi.org/10.2760/757183"^^xsd:anyURI ;
+    dcterms:title "Mapping and assessment of ecosystems and their services: an EU ecosystem assessment" .
+
+she:MellertGottlein2012 a dcterms:BibliographicResource ;
+    dcterms:creator "Göttlein, Axel",
+        "Mellert, Karl Heinz" ;
+    dcterms:date "2012" ;
+    dcterms:identifier "https://doi.org/10.1007/s10342-012-0615-8"^^xsd:anyURI ;
+    dcterms:isPartOf "European Journal of Forest Research" ;
+    dcterms:issued "2012-09"^^xsd:gYearMonth ;
+    dcterms:publisher "Springer Science and Business Media LLC" ;
+    dcterms:title "Comparison of new foliar nutrient thresholds derived from van den Burg’s literature compilation with established central European references" .
+
+she:Montgomery2007 a dcterms:BibliographicResource ;
+    dcterms:creator "Montgomery, David R" ;
+    dcterms:date "2007" ;
+    dcterms:identifier "https://doi.org/10.1073/pnas.0611508104"^^xsd:anyURI ;
+    dcterms:isPartOf "Proceedings of the National Academy of Sciences" ;
+    dcterms:issued "2007-08-14"^^xsd:date ;
+    dcterms:publisher "National Academy of Sciences" ;
+    dcterms:title "Soil erosion and agricultural sustainability" .
+
+she:MosimannSanders2004 a dcterms:BibliographicResource ;
+    dcterms:creator "Mosimann, T",
+        "Sanders, S" ;
+    dcterms:date "2004" ;
+    dcterms:title "Bodenerosion selber abschätzen: Ein Schlüssel für Betriebsleiter und Berater in Niedersachsen. Ackerbaugebiete im südlichen Niedersachsen" .
+
+she:Mu2009 a dcterms:BibliographicResource ;
+    dcterms:creator "Hatano, Ryusuke",
+        "Huang, Aiying",
+        "Jin, Tao",
+        "Kimura, Sonoko D",
+        "Mu, Zhijian",
+        "Wei, Shiqiang" ;
+    dcterms:date "2009" ;
+    dcterms:identifier "https://doi.org/10.1016/j.soilbio.2009.09.013"^^xsd:anyURI ;
+    dcterms:isPartOf "Soil Biology and Biochemistry" ;
+    dcterms:issued "2009-12"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Linking N2O emission to soil mineral N as estimated by CO2 emission and soil C/N ratio" .
+
+she:Musinguzi2013 a dcterms:BibliographicResource ;
+    dcterms:creator "Basamba, Twaha Ali",
+        "Ebanyat, Peter",
+        "Leip, Adrian",
+        "Mubiru, Drake N",
+        "Musinguzi, Patrick",
+        "Tenywa, John Stephen",
+        "Tenywa, Moses Makooma" ;
+    dcterms:date "2013" ;
+    dcterms:identifier "https://doi.org/10.5539/jsd.v6n12p31"^^xsd:anyURI ;
+    dcterms:isPartOf "Journal of Sustainable Development" ;
+    dcterms:issued "2013-11-06"^^xsd:date ;
+    dcterms:publisher "Canadian Center of Science and Education" ;
+    dcterms:title "Soil Organic Carbon Thresholds and Nitrogen Management in Tropical Agroecosystems: Concepts and Prospects" .
+
+she:Newman1995 a dcterms:BibliographicResource ;
+    dcterms:creator "Newman, E. I" ;
+    dcterms:date "1995" ;
+    dcterms:identifier "https://doi.org/10.2307/2261638"^^xsd:anyURI ;
+    dcterms:isPartOf "The Journal of Ecology" ;
+    dcterms:issued "1995-08"^^xsd:gYearMonth ;
+    dcterms:publisher "JSTOR" ;
+    dcterms:title "Phosphorus Inputs to Terrestrial Ecosystems" .
+
+she:NoeHupp2005 a dcterms:BibliographicResource ;
+    dcterms:creator "Hupp, Cliff R",
+        "Noe, Gregory B" ;
+    dcterms:date "2005" ;
+    dcterms:identifier "https://doi.org/10.1890/04-1677"^^xsd:anyURI ;
+    dcterms:isPartOf "Ecological Applications" ;
+    dcterms:issued "2005-08"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "CARBON, NITROGEN, AND PHOSPHORUS ACCUMULATION IN FLOODPLAINS OF ATLANTIC COASTAL PLAIN RIVERS, USA" .
+
+she:Olson2014 a dcterms:BibliographicResource ;
+    dcterms:creator "Al-Kaisi, Mahdi M",
+        "Lal, Rattan",
+        "Lowery, Birl",
+        "Olson, Kenneth R" ;
+    dcterms:date "2014" ;
+    dcterms:identifier "https://doi.org/10.2136/sssaj2013.09.0412"^^xsd:anyURI ;
+    dcterms:isPartOf "Soil Science Society of America Journal" ;
+    dcterms:issued "2014-03"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Experimental Consideration, Treatments, and Methods in Determining Soil Organic Carbon Sequestration Rates" .
+
+she:Orr2017 a dcterms:BibliographicResource ;
+    dcterms:creator "Orr, B. J" ;
+    dcterms:date "2017" ;
+    dcterms:source <https://library.unccd.int/Details/books/814> ;
+    dcterms:title "Scientific conceptual framework for land degradation neutrality. A report of the science-policy interface" .
+
+she:Panagos2018 a dcterms:BibliographicResource ;
+    dcterms:creator "Borrelli, Pasquale",
+        "Bosello, Francesco",
+        "Lugato, Emanuele",
+        "Montanarella, Luca",
+        "Panagos, Panos",
+        "Standardi, Gabriele" ;
+    dcterms:date "2018" ;
+    dcterms:identifier "https://doi.org/10.1002/ldr.2879"^^xsd:anyURI ;
+    dcterms:isPartOf "Land Degradation & Development" ;
+    dcterms:issued "2018-03"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Cost of agricultural productivity loss due to soil erosion in the European Union: From direct cost evaluation approaches to the use of macroeconomic models" .
+
+she:Panagos2020a a dcterms:BibliographicResource ;
+    dcterms:creator "Ballabio, Cristiano",
+        "Borrelli, Pasquale",
+        "Lugato, Emanuele",
+        "Montanarella, Luca",
+        "Panagos, Panos",
+        "Poesen, Jean",
+        "Scarpa, Simone" ;
+    dcterms:date "2020" ;
+    dcterms:identifier "https://doi.org/10.3390/rs12091365"^^xsd:anyURI ;
+    dcterms:isPartOf "Remote Sensing" ;
+    dcterms:issued "2020-04-26"^^xsd:date ;
+    dcterms:publisher "MDPI AG" ;
+    dcterms:title "A Soil Erosion Indicator for Supporting Agricultural, Environmental and Climate Policies in the European Union" .
+
+she:Paul2020 a dcterms:BibliographicResource ;
+    dcterms:creator "Helming, Katharina",
+        "Kuhn, Kristin",
+        "Paul, Carsten",
+        "Steinhoff‐Knopp, Bastian",
+        "Weißhuhn, Peter" ;
+    dcterms:date "2020" ;
+    dcterms:identifier "https://doi.org/10.1111/ejss.13022"^^xsd:anyURI ;
+    dcterms:isPartOf "European Journal of Soil Science" ;
+    dcterms:issued "2021-07"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Towards a standardization of soil‐related ecosystem service assessments" .
+
+she:Pawar2017 a dcterms:BibliographicResource ;
+    dcterms:creator "Anil, Ajin S",
+        "Kumawat, Chiranjeev",
+        "Meena, Ravi Kumar",
+        "Pawar, Atul Bhagawan",
+        "Raza, Md. Basit",
+        "Trivedi, V.K",
+        "Verma, Anil Kumar" ;
+    dcterms:date "2017" ;
+    dcterms:identifier "https://doi.org/10.20546/ijcmas.2017.605.256"^^xsd:anyURI ;
+    dcterms:isPartOf "International Journal of Current Microbiology and Applied Sciences" ;
+    dcterms:issued "2017-05-20"^^xsd:date ;
+    dcterms:publisher "Excellent Publishers" ;
+    dcterms:title "Threshold Limits of Soil in Relation to Various Soil Functions and Crop Productivity" .
+
+she:PerryNawaz2008 a dcterms:BibliographicResource ;
+    dcterms:creator "Nawaz, Rizwan",
+        "Perry, Thomas" ;
+    dcterms:date "2008" ;
+    dcterms:identifier "https://doi.org/10.1016/j.landurbplan.2007.12.004"^^xsd:anyURI ;
+    dcterms:isPartOf "Landscape and Urban Planning" ;
+    dcterms:issued "2008-05"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "An investigation into the extent and impacts of hard surfacing of domestic gardens in an area of Leeds, United Kingdom" .
+
+she:PickettCadenasso2009 a dcterms:BibliographicResource ;
+    dcterms:creator "Cadenasso, M. L",
+        "Pickett, S. T. A" ;
+    dcterms:date "2009" ;
+    dcterms:identifier "https://doi.org/10.1007/s11252-008-0047-x"^^xsd:anyURI ;
+    dcterms:isPartOf "Urban Ecosystems" ;
+    dcterms:issued "2009-03"^^xsd:gYearMonth ;
+    dcterms:publisher "Springer Science and Business Media LLC" ;
+    dcterms:title "Altered resources, disturbance, and heterogeneity: A framework for comparing urban and non-urban soils" .
+
+she:Poeplau2019 a dcterms:BibliographicResource ;
+    dcterms:creator "Don, Axel",
+        "Poeplau, Christopher",
+        "Vos, Cora" ;
+    dcterms:date "2019" ;
+    dcterms:identifier "https://doi.org/10.5194/soil-3-61-2017"^^xsd:anyURI ;
+    dcterms:isPartOf "SOIL" ;
+    dcterms:issued "2017-03-13"^^xsd:date ;
+    dcterms:publisher "Copernicus GmbH" ;
+    dcterms:title "Soil organic carbon stocks are systematically overestimated by misuse of the parameters bulk density and rock fragment content" .
+
+she:Poesen2018 a dcterms:BibliographicResource ;
+    dcterms:creator "Poesen, Jean" ;
+    dcterms:date "2018" ;
+    dcterms:identifier "https://doi.org/10.1002/esp.4250"^^xsd:anyURI ;
+    dcterms:isPartOf "Earth Surface Processes and Landforms" ;
+    dcterms:issued "2018-01"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Soil erosion in the Anthropocene: Research needs" .
+
+she:Posch2015 a dcterms:BibliographicResource ;
+    dcterms:creator "Posch, Maximilian",
+        "Sverdrup, Harald U",
+        "de Vries, Wim" ;
+    dcterms:date "2015" ;
+    dcterms:identifier "https://doi.org/10.1007/978-94-017-9508-1_6"^^xsd:anyURI ;
+    dcterms:isPartOf "Environmental Pollution Critical Loads and Dynamic Risk Assessments" ;
+    dcterms:publisher "Springer Netherlands" ;
+    dcterms:title "Mass Balance Models to Derive Critical Loads of Nitrogen and Acidity for Terrestrial and Aquatic Ecosystems" .
+
+she:Pouyat2006 a dcterms:BibliographicResource ;
+    dcterms:creator "Nowak, David J.",
+        "Pouyat, Richard V.",
+        "Yesilonis, Ian D." ;
+    dcterms:date "2006" ;
+    dcterms:identifier "https://doi.org/10.2134/jeq2005.0215"^^xsd:anyURI ;
+    dcterms:isPartOf "Journal of Environmental Quality" ;
+    dcterms:issued "2006-07-06"^^xsd:date ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Carbon Storage by Urban Soils in the United States" .
+
+she:Pribyl2010 a dcterms:BibliographicResource ;
+    dcterms:creator "Pribyl, Douglas W" ;
+    dcterms:date "2010" ;
+    dcterms:identifier "https://doi.org/10.1016/j.geoderma.2010.02.003"^^xsd:anyURI ;
+    dcterms:isPartOf "Geoderma" ;
+    dcterms:issued "2010-05"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "A critical review of the conventional SOC to SOM conversion factor" .
+
+she:Prokop2011 a dcterms:BibliographicResource ;
+    dcterms:creator "Prokop, G" ;
+    dcterms:date "2011" ;
+    dcterms:identifier "https://doi.org/10.2779/15146"^^xsd:anyURI ;
+    dcterms:title "Report on best practices for limiting soil sealing and mitigating its effects" .
+
+she:Prout2020 a dcterms:BibliographicResource ;
+    dcterms:creator "Haefele, Stephan M",
+        "Kirk, Guy J. D",
+        "McGrath, Steve P",
+        "Prout, Jonah M",
+        "Shepherd, Keith D" ;
+    dcterms:date "2020" ;
+    dcterms:identifier "https://doi.org/10.1111/ejss.13012"^^xsd:anyURI ;
+    dcterms:isPartOf "European Journal of Soil Science" ;
+    dcterms:issued "2021-11"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "What is a good level of soil organic matter? An index based on organic carbon to clay ratio" .
+
+she:RUSLEHandbook a dcterms:BibliographicResource ;
+    dcterms:creator "Foster, G. R",
+        "McCool, D. K",
+        "Renard, K. G",
+        "Weesies, G. A",
+        "Yoder, D. C" ;
+    dcterms:issued "1997"^^xsd:gYear ;
+    dcterms:source <https://www.tucson.ars.ag.gov/unit/publications/PDFfiles/717.pdf> ;
+    dcterms:title "Predicting soil erosion by water: a guide to conservation planning with the Revised Universal Soil Loss Equation (RUSLE)" .
+
+she:Renard1997 a dcterms:BibliographicResource ;
+    dcterms:creator "Foster, G. R",
+        "McCool, D. K",
+        "Renard, K. G",
+        "Weesies, G. A",
+        "Yoder, D. C" ;
+    dcterms:date "1997" ;
+    dcterms:source <https://www.tucson.ars.ag.gov/unit/publications/PDFfiles/717.pdf> ;
+    dcterms:title "Predicting soil erosion by water: a guide to conservation planning with the Revised Universal Soil Loss Equation (RUSLE)" .
+
+she:Reto2006 a dcterms:BibliographicResource ;
+    dcterms:creator "Reto, J. D" ;
+    dcterms:date "2006" ;
+    dcterms:title "Soil evaluation in spatial planning: a contribution to sustainable spatial development. Results of the EU-Interreg IIIB Alpine Space Project TUSEC-IP" .
+
+she:Richter2020 a dcterms:BibliographicResource ;
+    dcterms:creator "Haase, Dagmar",
+        "Makki, Mohsen",
+        "Richter, Scarlet",
+        "Thestorf, Kolja" ;
+    dcterms:date "2020" ;
+    dcterms:identifier "https://doi.org/10.1016/j.ufug.2020.126777"^^xsd:anyURI ;
+    dcterms:isPartOf "Urban Forestry & Urban Greening" ;
+    dcterms:issued "2020-10"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Carbon Pools of Berlin, Germany: Organic Carbon in Soils and Aboveground in Trees" .
+
+she:Ritz2009 a dcterms:BibliographicResource ;
+    dcterms:creator "Black, Helaina I.J",
+        "Campbell, Colin D",
+        "Harris, Jim A",
+        "Ritz, Karl",
+        "Wood, Claire" ;
+    dcterms:date "2009" ;
+    dcterms:identifier "https://doi.org/10.1016/j.ecolind.2009.02.009"^^xsd:anyURI ;
+    dcterms:isPartOf "Ecological Indicators" ;
+    dcterms:issued "2009-11"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Selecting biological indicators for monitoring soils: A framework for balancing scientific and technical opinion to assist policy development" .
+
+she:Romkens2018 a dcterms:BibliographicResource ;
+    dcterms:creator "Kros, Hans",
+        "Rietra, René",
+        "Römkens, Paul",
+        "Voogd, Jan Cees",
+        "de Vries, Wim" ;
+    dcterms:date "2018" ;
+    dcterms:identifier "https://doi.org/10.18174/451353"^^xsd:anyURI ;
+    dcterms:publisher "Wageningen Environmental Research" ;
+    dcterms:title "Impact of cadmium levels in fertilisers on cadmium accumulation in soil and uptake by food crops" .
+
+she:Rutgers2012 a dcterms:BibliographicResource ;
+    dcterms:creator "Breure, A.M",
+        "Brussaard, L",
+        "Kuiten, A.M.P",
+        "Mulder, C",
+        "Rutgers, M",
+        "Schouten, A.J",
+        "van Wijnen, H.J" ;
+    dcterms:date "2012" ;
+    dcterms:identifier "https://doi.org/10.1016/j.scitotenv.2011.04.041"^^xsd:anyURI ;
+    dcterms:isPartOf "Science of The Total Environment" ;
+    dcterms:issued "2012-01"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "A method to assess ecosystem services developed from soil attributes with stakeholders and data of four arable farms" .
+
+she:Schjonning2012 a dcterms:BibliographicResource ;
+    dcterms:creator "Christensen, B.T",
+        "Moldrup, P",
+        "Munkholm, L.J",
+        "Olesen, J.E",
+        "Schjønning, P",
+        "de Jonge, L.W" ;
+    dcterms:date "2012" ;
+    dcterms:identifier "https://doi.org/10.2136/vzj2011.0067"^^xsd:anyURI ;
+    dcterms:isPartOf "Vadose Zone Journal" ;
+    dcterms:issued "2012-02"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Clay Dispersibility and Soil Friability—Testing the Soil Clay‐to‐Carbon Saturation Concept" .
+
+she:Schjonning2018 a dcterms:BibliographicResource ;
+    dcterms:creator "Baby, Sanmohan",
+        "Bruun, Sander",
+        "Christensen, Bent T",
+        "Jensen, Johannes L",
+        "Jensen, Lars S",
+        "Knudsen, Leif",
+        "Munkholm, Lars J",
+        "Oelofse, Myles",
+        "Schjønning, Per" ;
+    dcterms:date "2018" ;
+    dcterms:identifier "https://doi.org/10.1016/bs.agron.2018.03.001"^^xsd:anyURI ;
+    dcterms:isPartOf "Advances in Agronomy" ;
+    dcterms:publisher "Elsevier" ;
+    dcterms:title "The Role of Soil Organic Matter for Maintaining Crop Yields: Evidence for a Renewed Conceptual Basis" .
+
+she:Schrader1999 a dcterms:BibliographicResource ;
+    dcterms:creator "Schrader, S" ;
+    dcterms:date "1999" ;
+    dcterms:title "Mechanische Belastung von Ackerböden: Einfluß auf ausgewählte Bodentiere und Mechanismen der zoogenen Gefügeregeneration" .
+
+she:SchweizerBundesrat1998 a dcterms:BibliographicResource ;
+    dcterms:creator "Schweizer Bundesrat" ;
+    dcterms:date "1998" ;
+    dcterms:source <https://fedlex.data.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/1998/1854_1854_1854/20160412/de/pdf-a/fedlex-data-admin-ch-eli-cc-1998-1854_1854_1854-20160412-de-pdf-a.pdf> ;
+    dcterms:title "Verordnung über Belastungen des Bodens (VBBo)" .
+
+she:Schwilch2016 a dcterms:BibliographicResource ;
+    dcterms:creator "Bernet, Lea",
+        "Fleskens, Luuk",
+        "Giannakis, Elias",
+        "Leventon, Julia",
+        "Marañón, Teodoro",
+        "Mills, Jane",
+        "Schwilch, Gudrun",
+        "Short, Chris",
+        "Stolte, Jannes",
+        "Verzandvoort, Simone",
+        "van Delden, Hedwig" ;
+    dcterms:date "2016" ;
+    dcterms:identifier "https://doi.org/10.1016/j.ecolind.2016.03.016"^^xsd:anyURI ;
+    dcterms:isPartOf "Ecological Indicators" ;
+    dcterms:issued "2016-08"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Operationalizing ecosystem services for the mitigation of soil threats: A proposed framework" .
+
+she:Simota2005 a dcterms:BibliographicResource ;
+    dcterms:creator "Czyz, E. A",
+        "Dexter, A",
+        "Díaz-Pereira, E",
+        "Fleige, H",
+        "Horn, R",
+        "Mayol, F",
+        "Rajkai, K",
+        "Simota, C",
+        "de la Rosa, D" ;
+    dcterms:date "2005" ;
+    dcterms:identifier "https://doi.org/10.1016/j.still.2005.01.003"^^xsd:anyURI ;
+    dcterms:title "SIDASS project part 1. A spatial distributed simulation model predicting the dynamics of agro-physical soil state for selection of management practices to prevent soil erosion" .
+
+she:Smith1941 a dcterms:BibliographicResource ;
+    dcterms:creator "Smith, D. D" ;
+    dcterms:date "1941" ;
+    dcterms:title "Interpretation of soil conservation data for field use" .
+
+she:Stolte2016 a dcterms:BibliographicResource ;
+    dcterms:creator "Ballabio, Cristiano",
+        "Hessel, Rudi",
+        "Keizer, Jacob",
+        "Kværnø, Sigrun",
+        "Panagos, Panos",
+        "Stolte, Jannes",
+        "Tesfai, Mehreteab",
+        "Verheijen, Frank",
+        "Øygarden, Lillian" ;
+    dcterms:date "2016" ;
+    dcterms:identifier "https://doi.org/10.2788/828742"^^xsd:anyURI ;
+    dcterms:issued "2015"^^xsd:gYear ;
+    dcterms:title "Soil threats in Europe" .
+
+she:Thomas2010 a dcterms:BibliographicResource ;
+    dcterms:creator "Canham, Charles D",
+        "Goodale, Christine L",
+        "Quinn Thomas, R",
+        "Weathers, Kathleen C" ;
+    dcterms:date "2010" ;
+    dcterms:identifier "https://doi.org/10.1038/ngeo721"^^xsd:anyURI ;
+    dcterms:isPartOf "Nature Geoscience" ;
+    dcterms:issued "2010-01"^^xsd:gYearMonth ;
+    dcterms:publisher "Springer Science and Business Media LLC" ;
+    dcterms:title "Increased tree carbon storage in response to nitrogen deposition in the US" .
+
+she:Tsiafouli2015 a dcterms:BibliographicResource ;
+    dcterms:creator "Bardgett, Richard D",
+        "Birkhofer, Klaus",
+        "Bjornlund, Lisa",
+        "Brady, Mark Vincent",
+        "Christensen, Sören",
+        "Frouz, Jan",
+        "Gera Hol, W.H",
+        "Hedlund, Katarina",
+        "Hemerik, Lia",
+        "Hertefeldt, Tina D’",
+        "Hotes, Stefan",
+        "Jørgensen, Helene Bracht",
+        "Liiri, Mira",
+        "Mortimer, Simon R",
+        "Pižl, Václav",
+        "Setälä, Heikki",
+        "Sgardelis, Stefanos P",
+        "Stary, Josef",
+        "Thébault, Elisa",
+        "Tsiafouli, Maria A",
+        "Tzanopoulos, Joseph",
+        "Uteseny, Karoline",
+        "Wolters, Volkmar",
+        "de Ruiter, Peter C",
+        "de Vries, Franciska T",
+        "van der Putten, Wim H" ;
+    dcterms:date "2015" ;
+    dcterms:identifier "https://doi.org/10.1111/gcb.12752"^^xsd:anyURI ;
+    dcterms:isPartOf "Global Change Biology" ;
+    dcterms:issued "2015-02"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Intensive agriculture reduces soil biodiversity across Europe" .
+
+she:USLEHandbook a dcterms:BibliographicResource ;
+    dcterms:creator "Smith, D. D",
+        "Wischmeier, W. H" ;
+    dcterms:issued "1978"^^xsd:gYear ;
+    dcterms:source <https://www.govinfo.gov/app/details/GOVPUB-A-PURL-gpo31516> ;
+    dcterms:title "Predicting rainfall erosion losses — a guide to conservation planning" .
+
+she:Ungaro2022 a dcterms:BibliographicResource ;
+    dcterms:creator "Baronti, S",
+        "Calzolari, C",
+        "Lanini, G.M",
+        "Maienza, A",
+        "Ugolini, F",
+        "Ungaro, F" ;
+    dcterms:date "2022" ;
+    dcterms:identifier "https://doi.org/10.1016/j.ufug.2021.127455"^^xsd:anyURI ;
+    dcterms:isPartOf "Urban Forestry & Urban Greening" ;
+    dcterms:issued "2022-01"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Assessment of joint soil ecosystem services supply in urban green spaces: A case study in Northern Italy" .
+
+she:VanCamp2004b a dcterms:BibliographicResource ;
+    dcterms:creator "Bujarrabal, Benilde",
+        "Gentile, Anna Rita",
+        "Jones, Robert J. A",
+        "Montanarella, Luca",
+        "Olazabal, Claudia",
+        "Selvaradjou, Senthil-Kumar",
+        "Van-Camp, Lieve" ;
+    dcterms:date "2004" ;
+    dcterms:source <https://esdac.jrc.ec.europa.eu/ESDB_Archive/Policies/STSWeb/Vol4.pdf> ;
+    dcterms:title "Reports of the technical working groups established under the thematic strategy for soil protection. Volume IV: Contamination and land management" .
+
+she:VanCamp2004c a dcterms:BibliographicResource ;
+    dcterms:creator "Bujarrabal, Benilde",
+        "Gentile, Anna Rita",
+        "Jones, Robert J. A",
+        "Montanarella, Luca",
+        "Olazabal, Claudia",
+        "Selvaradjou, Senthil-Kumar",
+        "Van-Camp, Lieve" ;
+    dcterms:date "2004" ;
+    dcterms:source <https://esdac.jrc.ec.europa.eu/ESDB_Archive/Policies/STSWeb/vol5.pdf> ;
+    dcterms:title "Reports of the technical working groups established under the thematic strategy for soil protection. Volume V: Monitoring" .
+
+she:VanDenAkker1998 a dcterms:BibliographicResource ;
+    dcterms:creator "Arvidsson, J",
+        "Horn, R",
+        "van den Akker, J. J. H" ;
+    dcterms:date "1998" ;
+    dcterms:issued "1999"^^xsd:gYear ;
+    dcterms:source <https://edepot.wur.nl/363806> ;
+    dcterms:title "Experiences with the impact and prevention of subsoil compaction in the European Community" .
+
+she:VanDerPloeg1999 a dcterms:BibliographicResource ;
+    dcterms:creator "Ehlers, Wilfried",
+        "Sieker, Friedhelm",
+        "van der Ploeg, Rienk R" ;
+    dcterms:date "1999" ;
+    dcterms:identifier "https://doi.org/10.1007/s001140050623"^^xsd:anyURI ;
+    dcterms:isPartOf "Naturwissenschaften" ;
+    dcterms:issued "1999-07-07"^^xsd:date ;
+    dcterms:publisher "Springer Science and Business Media LLC" ;
+    dcterms:title "Floods and Other Possible Adverse Environmental Effects of Meadowland Area Decline in Former West Germany" .
+
+she:VanDerPloeg2002 a dcterms:BibliographicResource ;
+    dcterms:creator "Bachmann, Joerg",
+        "Gieska, Matthias",
+        "Hermsmeyer, Dirk",
+        "Ilsemann, Jan",
+        "Machulla, Galina",
+        "Van Der Ploeg, Rienk R" ;
+    dcterms:date "2002" ;
+    dcterms:source <https://www.sustainability.uni-hannover.de/forschung/publikationen/detailansicht/fis-details/publ/780aafad-fd37-4b30-a3a4-c4ea63d44f86?cHash=253c83b37a8714b018f9985ef7419f48> ;
+    dcterms:title "Changes in land use and the growing number of flash floods in Germany" .
+
+she:VanGroenigen2015 a dcterms:BibliographicResource ;
+    dcterms:creator "Boeckx, P",
+        "Groffman, P. M",
+        "Huygens, D",
+        "Kuyper, Th. W",
+        "Lubbers, I. M",
+        "Rütting, T",
+        "van Groenigen, J. W" ;
+    dcterms:date "2015" ;
+    dcterms:identifier "https://doi.org/10.5194/soil-1-235-2015"^^xsd:anyURI ;
+    dcterms:isPartOf "SOIL" ;
+    dcterms:issued "2015-03-11"^^xsd:date ;
+    dcterms:publisher "Copernicus GmbH" ;
+    dcterms:title "The soil N cycle: new insights and key challenges" .
+
+she:VanGroenigen2017 a dcterms:BibliographicResource ;
+    dcterms:creator "Hungate, Bruce A",
+        "Oenema, Oene",
+        "Powlson, David S",
+        "van Groenigen, Jan Willem",
+        "van Groenigen, Kees Jan",
+        "van Kessel, Chris" ;
+    dcterms:date "2017" ;
+    dcterms:identifier "https://doi.org/10.1021/acs.est.7b01427"^^xsd:anyURI ;
+    dcterms:isPartOf "Environmental Science & Technology" ;
+    dcterms:issued "2017-05-02"^^xsd:date ;
+    dcterms:publisher "American Chemical Society (ACS)" ;
+    dcterms:title "Sequestering Soil Organic Carbon: A Nitrogen Dilemma" .
+
+she:VanLynden2004 a dcterms:BibliographicResource ;
+    dcterms:creator "Mantel, S",
+        "van Lynden, G. W. J",
+        "van Oostrum, A" ;
+    dcterms:date "2004" ;
+    dcterms:source <https://edepot.wur.nl/37442> ;
+    dcterms:title "Guiding principles for the quantitative assessment of soil degradation with a focus on salinization, nutrient decline and soil pollution" .
+
+she:Verheijen2005 a dcterms:BibliographicResource ;
+    dcterms:creator "Bellamy, P.H",
+        "Gaunt, J.L",
+        "Kibblewhite, M.G",
+        "Verheijen, F.G.A" ;
+    dcterms:date "2005" ;
+    dcterms:identifier "https://doi.org/10.1079/sum2005288"^^xsd:anyURI ;
+    dcterms:isPartOf "Soil Use and Management" ;
+    dcterms:issued "2005-03-01"^^xsd:date ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Organic carbon ranges in arable soils of England and Wales" .
+
+she:Verheijen2009 a dcterms:BibliographicResource ;
+    dcterms:creator "Jones, R.J.A",
+        "Rickson, R.J",
+        "Smith, C.J",
+        "Verheijen, F.G.A" ;
+    dcterms:date "2009" ;
+    dcterms:identifier "https://doi.org/10.1016/j.earscirev.2009.02.003"^^xsd:anyURI ;
+    dcterms:isPartOf "Earth-Science Reviews" ;
+    dcterms:issued "2009-05"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Tolerable versus actual soil erosion rates in Europe" .
+
+she:Verstraeten2006 a dcterms:BibliographicResource ;
+    dcterms:creator "Bazzoffi, Paolo",
+        "Lajczak, Adam",
+        "Poesen, Jean",
+        "Rey, Freddy",
+        "Rãdoane, Mariá",
+        "Verstraeten, Gert",
+        "de Vente, Joris" ;
+    dcterms:date "2006" ;
+    dcterms:identifier "https://doi.org/10.1002/0470859202.ch54"^^xsd:anyURI ;
+    dcterms:isPartOf "Soil Erosion in Europe" ;
+    dcterms:issued "2006-09-22"^^xsd:date ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Reservoir and Pond Sedimentation in Europe" .
+
+she:Vitousek2010 a dcterms:BibliographicResource ;
+    dcterms:creator "Chadwick, Oliver A",
+        "Houlton, Benjamin Z",
+        "Porder, Stephen",
+        "Vitousek, Peter M" ;
+    dcterms:date "2010" ;
+    dcterms:identifier "https://doi.org/10.1890/08-0127.1"^^xsd:anyURI ;
+    dcterms:isPartOf "Ecological Applications" ;
+    dcterms:issued "2010-01"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "Terrestrial phosphorus limitation: mechanisms, implications, and nitrogen–phosphorus interactions" .
+
+she:Vogel2020 a dcterms:BibliographicResource ;
+    dcterms:creator "Eberhardt, Einar",
+        "Franko, Uwe",
+        "Lang, Birgit",
+        "Ließ, Mareike",
+        "Vogel, Hans-Jörg",
+        "Weller, Ulrich",
+        "Wiesmeier, Martin",
+        "Wollschläger, Ute" ;
+    dcterms:date "2020" ;
+    dcterms:identifier "https://doi.org/10.3389/fenvs.2019.00164"^^xsd:anyURI ;
+    dcterms:isPartOf "Frontiers in Environmental Science" ;
+    dcterms:issued "2019-10-22"^^xsd:date ;
+    dcterms:publisher "Frontiers Media SA" ;
+    dcterms:title "Quantitative Evaluation of Soil Functions: Potential and State" .
+
+she:Vonk2020 a dcterms:BibliographicResource ;
+    dcterms:creator "Bechini, Luca",
+        "Guzmán, Gema",
+        "Hijbeek, Renske",
+        "Pronk, Annette",
+        "Reidsma, Pytrik",
+        "Ruysschaert, Greet",
+        "Spiegel, Heide",
+        "Steinmann, Horst H",
+        "Vonk, Wytse J",
+        "Zavattaro, Laura",
+        "van Ittersum, Martin K" ;
+    dcterms:date "2020" ;
+    dcterms:identifier "https://doi.org/10.1007/s10705-020-10098-2"^^xsd:anyURI ;
+    dcterms:isPartOf "Nutrient Cycling in Agroecosystems" ;
+    dcterms:issued "2020-12"^^xsd:gYearMonth ;
+    dcterms:publisher "Springer Science and Business Media LLC" ;
+    dcterms:title "European survey shows poor association between soil organic matter and crop yields" .
+
+she:WHO1991 a dcterms:BibliographicResource ;
+    dcterms:creator "World Health Organization" ;
+    dcterms:date "1991" ;
+    dcterms:source <https://iris.who.int/handle/10665/39775> ;
+    dcterms:title "Surface water drainage for low-income communities" .
+
+she:WRB a dcterms:BibliographicResource ;
+    dcterms:creator "IUSS Working Group WRB" ;
+    dcterms:source <https://wrb.isric.org/> ;
+    dcterms:title "World Reference Base for Soil Resources" .
+
+she:Wakatsuki1992 a dcterms:BibliographicResource ;
+    dcterms:creator "Rasyidin, Azwar",
+        "Wakatsuki, Toshiyuki" ;
+    dcterms:date "1992" ;
+    dcterms:identifier "https://doi.org/10.1016/0016-7061(92)90040-e"^^xsd:anyURI ;
+    dcterms:isPartOf "Geoderma" ;
+    dcterms:issued "1992-03"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Rates of weathering and soil formation" .
+
+she:Walker2011 a dcterms:BibliographicResource ;
+    dcterms:creator "Edwards, A. C",
+        "Walker, R. L",
+        "Watson, C. A" ;
+    dcterms:date "2011" ;
+    dcterms:title "The long-term effects of widely differing soil pH on the yields of an eight course crop rotation established in 1961" .
+
+she:Wessolek2008 a dcterms:BibliographicResource ;
+    dcterms:creator "Dominik, P",
+        "Düwel, O",
+        "Ellerbrock, R",
+        "Gahre, F",
+        "Ilg, K",
+        "Kaupenjohann, M",
+        "Schmitt, A",
+        "Siebner, C",
+        "Utermann, J",
+        "Wessolek, G",
+        "Zeitz, J" ;
+    dcterms:date "2008" ;
+    dcterms:publisher "Umweltbundesamt" ;
+    dcterms:source <https://www.umweltbundesamt.de/publikationen/ermittlung-von-optimalgehalten-an-organischer> ;
+    dcterms:title "Ermittlung von Optimalgehalten an organischer Substanz landwirtschaftlich genutzter Böden nach § 17 (2) Nr. 7 BBodSchG" .
+
+she:WischmeierSmith1978 a dcterms:BibliographicResource ;
+    dcterms:creator "Smith, D. D",
+        "Wischmeier, W. H" ;
+    dcterms:date "1978" ;
+    dcterms:source <https://www.govinfo.gov/app/details/GOVPUB-A-PURL-gpo31516> ;
+    dcterms:title "Predicting rainfall erosion losses — a guide to conservation planning" .
+
+she:Wong1990 a dcterms:BibliographicResource ;
+    dcterms:creator "Hughes, R",
+        "Rowell, D.L",
+        "Wong, M.T.F" ;
+    dcterms:date "1990" ;
+    dcterms:identifier "https://doi.org/10.1111/j.1475-2743.1990.tb00805.x"^^xsd:anyURI ;
+    dcterms:isPartOf "Soil Use and Management" ;
+    dcterms:issued "1990-06"^^xsd:gYearMonth ;
+    dcterms:publisher "Wiley" ;
+    dcterms:title "The retention of nitrate in acid soils from the tropics" .
+
+she:Wong2009 a dcterms:BibliographicResource ;
+    dcterms:creator "Wittwer, K",
+        "Wong, M. T. F" ;
+    dcterms:date "2009" ;
+    dcterms:identifier "https://doi.org/10.1071/sr08098"^^xsd:anyURI ;
+    dcterms:isPartOf "Soil Research" ;
+    dcterms:issued "2009-02-18"^^xsd:date ;
+    dcterms:publisher "CSIRO Publishing" ;
+    dcterms:title "Positive charge discovered across Western Australian wheatbelt soils challenges key soil and nitrogen management assumptions" .
+
+she:Wosten1999 a dcterms:BibliographicResource ;
+    dcterms:creator "Le Bas, C",
+        "Lilly, A",
+        "Nemes, A",
+        "Wösten, J.H.M" ;
+    dcterms:date "1999" ;
+    dcterms:identifier "https://doi.org/10.1016/s0016-7061(98)00132-3"^^xsd:anyURI ;
+    dcterms:isPartOf "Geoderma" ;
+    dcterms:issued "1999-07"^^xsd:gYearMonth ;
+    dcterms:publisher "Elsevier BV" ;
+    dcterms:title "Development and use of a database of hydraulic properties of European soils" .
+
+she:YoungCrawford2004 a dcterms:BibliographicResource ;
+    dcterms:creator "Crawford, J. W",
+        "Young, I. M" ;
+    dcterms:date "2004" ;
+    dcterms:identifier "https://doi.org/10.1126/science.1097394"^^xsd:anyURI ;
+    dcterms:isPartOf "Science" ;
+    dcterms:issued "2004-06-11"^^xsd:date ;
+    dcterms:publisher "American Association for the Advancement of Science (AAAS)" ;
+    dcterms:title "Interactions and Self-Organization in the Soil-Microbe Complex" .
+
+she:Zhao2012 a dcterms:BibliographicResource ;
+    dcterms:creator "Li, Feng",
+        "Ni, Hongshan",
+        "Wang, Rusong",
+        "Yang, Qingrui",
+        "Zhao, Dan" ;
+    dcterms:date "2012" ;
+    dcterms:identifier "https://doi.org/10.1007/s11368-012-0472-6"^^xsd:anyURI ;
+    dcterms:isPartOf "Journal of Soils and Sediments" ;
+    dcterms:issued "2012-04"^^xsd:gYearMonth ;
+    dcterms:publisher "Springer Science and Business Media LLC" ;
+    dcterms:title "Effect of soil sealing on the microbial biomass, N transformation and related enzyme activities at various depths of soils in urban area of Beijing, China" .
+
