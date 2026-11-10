@@ -1295,16 +1295,6 @@ she:Prout2020 a dcterms:BibliographicResource ;
     dcterms:publisher "Wiley" ;
     dcterms:title "What is a good level of soil organic matter? An index based on organic carbon to clay ratio" .
 
-she:RUSLEHandbook a dcterms:BibliographicResource ;
-    dcterms:creator "Foster, G. R",
-        "McCool, D. K",
-        "Renard, K. G",
-        "Weesies, G. A",
-        "Yoder, D. C" ;
-    dcterms:issued "1997"^^xsd:gYear ;
-    dcterms:source <https://www.tucson.ars.ag.gov/unit/publications/PDFfiles/717.pdf> ;
-    dcterms:title "Predicting soil erosion by water: a guide to conservation planning with the Revised Universal Soil Loss Equation (RUSLE)" .
-
 she:Renard1997 a dcterms:BibliographicResource ;
     dcterms:creator "Foster, G. R",
         "McCool, D. K",
@@ -1510,13 +1500,6 @@ she:Tsiafouli2015 a dcterms:BibliographicResource ;
     dcterms:issued "2015-02"^^xsd:gYearMonth ;
     dcterms:publisher "Wiley" ;
     dcterms:title "Intensive agriculture reduces soil biodiversity across Europe" .
-
-she:USLEHandbook a dcterms:BibliographicResource ;
-    dcterms:creator "Smith, D. D",
-        "Wischmeier, W. H" ;
-    dcterms:issued "1978"^^xsd:gYear ;
-    dcterms:source <https://www.govinfo.gov/app/details/GOVPUB-A-PURL-gpo31516> ;
-    dcterms:title "Predicting rainfall erosion losses — a guide to conservation planning" .
 
 she:Ungaro2022 a dcterms:BibliographicResource ;
     dcterms:creator "Baronti, S",
