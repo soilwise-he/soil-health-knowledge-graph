@@ -83,7 +83,7 @@ These metrics provide complementary views: exact matching (Precision/Recall/F1),
 ├── README.md
 ├── requirements.txt          # Python dependencies
 ├── KGC_pipeline.ipynb        # Jupyter notebook demonstrating the full KG‑construction pipeline
-├── uk2us.py                  # Utility script (UK ↔ US spelling normalizer)
+├── scripts/uk2us.py          # Utility script (UK ↔ US spelling normalizer)
 │
 ├── top_level_KG.ttl          # High-level structure of the SHKG, derived from the conceptual model (RDF/Turtle)
 ├── soil_health_KG.ttl        # Full Soil Health KG (RDF/Turtle)

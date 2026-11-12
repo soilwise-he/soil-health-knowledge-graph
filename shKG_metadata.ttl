@@ -9,7 +9,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://soilwise-he.github.io/soil-health>
-        owl:versionInfo  "v0.2.6" ;
+        owl:versionInfo  "v0.2.7" ;
         dcterms:creator [ schema:affiliation [ foaf:name "Wageningen University & Research" ;
                                                rdfs:seeAlso <https://www.wur.nl/> ] ;
                           rdfs:seeAlso <https://orcid.org/0009-0008-5213-5114> ;
@@ -38,7 +38,7 @@
                                 <https://agroportal.lirmm.fr/ontologies/SHKG> ;
         dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
         dcterms:created "2024-09-30"^^xsd:date ;
-        dcterms:modified "2025-11-27"^^xsd:date .
+        dcterms:modified "2026-11-12"^^xsd:date .
 
 <https://doi.org/10.3030/101112838>
         a foaf:Project ;

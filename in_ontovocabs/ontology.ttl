@@ -29,7 +29,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <> rdf:type owl:Ontology ;
-    owl:versionInfo "v0.2.6" ;
+    owl:versionInfo "v0.2.7" ;
     dcterms:description "This is the ontology that underpins the soil health knowledge graph."@en ;
     dcterms:creator [ schema:affiliation [ foaf:name "Wageningen University & Research" ;
                                            rdfs:seeAlso <https://www.wur.nl/> ] ;
