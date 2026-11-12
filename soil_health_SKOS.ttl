@@ -791,13 +791,6 @@ she:AffectedLand a skos:Concept ;
     she:suffersFrom she:PollutantApplication,
         she:PollutantDistribution .
 
-she:AggregateStability a skos:Concept ;
-    dcterms:source she:Johannes2017 ;
-    skos:broader she:SoilStructuralParameters ;
-    skos:exactMatch inrae:c_4714 ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "aggregate stability"@en .
-
 she:AgriculturalAreaUnderSevereErosion a skos:Concept ;
     dcterms:source she:Maes2020 ;
     skos:broader she:SoilIndicators ;
@@ -1241,7 +1234,7 @@ she:DiversityOfCollembolans a skos:Concept ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "diversity of collembolans"@en ;
     schema:assesses she:EcosystemFunctionLoss,
-        she:SoilSoilBiodiversityLoss .
+        she:SoilBiodiversityLoss .
 
 she:DiversityOfEarthworms a skos:Concept ;
     dcterms:source she:Bispo2007,
@@ -1252,7 +1245,7 @@ she:DiversityOfEarthworms a skos:Concept ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "diversity of earthworms"@en ;
     schema:assesses she:EcosystemFunctionLoss,
-        she:SoilSoilBiodiversityLoss .
+        she:SoilBiodiversityLoss .
 
 she:Drexler2020 a dcterms:BibliographicResource ;
     dcterms:creator "Broll, Gabriele",
@@ -1281,7 +1274,7 @@ she:DrinkingWaterQualityStandard a skos:Concept ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "drinking water quality standard"@en .
 
-she:DuffuseSoilPollution skos:narrower she:PollutedSedimentDeposition .
+she:DiffuseSoilPollution skos:narrower she:PollutedSedimentDeposition .
 
 she:DynamicSoilParameters a skos:Concept ;
     dcterms:source she:Vogel2020 ;
@@ -1669,7 +1662,7 @@ she:ImperviousSoils a skos:Concept ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:ImperviousSurfaces a skos:Concept ;
-    obo:RO_0017003 she:Runoff ;
+    obo:RO_0017003 she:WaterRunoff ;
     skos:altLabel "impervious surface"@en ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "impervious surfaces"@en ;
@@ -2082,7 +2075,7 @@ she:NDeposition a skos:Concept ;
             dcterms:source she:DeVries2009,
                 she:Hogberg2007,
                 she:Thomas2010 ;
-            rdf:object she:CSequestration,
+            rdf:object she:CarbonSequestration,
                 she:ForestGrowth ] ;
     obo:RO_0017004 [ obo:BFO_0000066 she:ForestEcosystems ;
             dcterms:source she:Janssens2010 ;
@@ -2591,7 +2584,7 @@ she:SealedSoilArea a skos:Concept ;
             prov:atLocation she:Leeds ;
             biolink:has_percentage "12.6"^^qudt:floatPercentage ] ;
     obo:RO_0017003 she:FlashFloods,
-        she:Runoff ;
+        she:WaterRunoff ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "sealed soil area"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
@@ -2626,12 +2619,19 @@ she:Sodium a skos:Concept ;
 
 she:SoilAcidNeutralisingCapacity a skos:Concept ;
     obo:RO_0017004 she:SoilAcidification ;
+    skos:altLabel "acid neutralization capacity"@en ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "soil acid neutralising capacity"@en ;
+    skos:related she:SoilBufferCapacity,
+        she:SoilCationExchangeProcesses ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:SoilAggregateStability a skos:Concept ;
-    skos:broader she:DerivedSoilProperties ;
+    dcterms:source she:Johannes2017 ;
+    skos:altLabel "aggregate stability"@en ;
+    skos:broader she:DerivedSoilProperties,
+        she:SoilStructuralParameters ;
+    skos:exactMatch inrae:c_4714 ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "soil aggregate stability"@en .
 
@@ -2743,7 +2743,7 @@ she:SoilMicrobialRespiration a skos:Concept ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "soil microbial respiration"@en ;
     schema:assesses she:EcosystemFunctionLoss,
-        she:SoilSoilBiodiversityLoss .
+        she:SoilBiodiversityLoss .
 
 she:SoilMoistureDeficit a skos:Concept ;
     skos:broader she:SoilFunctionIndicators ;
@@ -2814,15 +2814,13 @@ she:SoilSealingThresholds a skos:Concept ;
     schema:isBasedOn she:Policy .
 
 she:SoilTexturalClasses a skos:Concept ;
-    skos:altLabel "soil textural class"@en ;
+    af-x:AFX_0000355 she:SSVsForMetals ;
+    skos:altLabel "soil textural class"@en,
+        "texture class"@en,
+        "texture classes"@en ;
     skos:broader she:ObservableSoilProperties ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "soil textural classes"@en .
-
-she:SoilTopologicalClassification a skos:Concept ;
-    dcterms:source she:VanCamp2004c ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "soil topological classification"@en ;
+    skos:prefLabel "soil textural classes"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:SoilVariability a skos:Concept ;
@@ -3098,9 +3096,19 @@ she:WaterRetention a skos:Concept ;
     skos:prefLabel "water retention"@en .
 
 she:WaterRunoff a skos:Concept ;
+    obo:RO_0002336 [ dcterms:source she:PerryNawaz2008 ;
+            prov:atLocation she:Leeds ;
+            biolink:has_percentage "12"^^qudt:integerPercentage ],
+        [ dcterms:source she:HaaseNuissl2007 ;
+            time:hasDuration [ qudt:numericValue "63"^^xsd:int ;
+                    qudt:unit unit:YR ] ;
+            prov:atLocation she:Leipzig ;
+            biolink:has_percentage "200"^^qudt:integerPercentage ] ;
+    skos:altLabel "run-off"@en ;
     skos:broader she:DerivedSoilProperties ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "water runoff"@en .
+    skos:prefLabel "water runoff"@en ;
+    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:WaterStorage a skos:Concept ;
     agrontology:isAffectedBy [ rdf:object she:SoilPollution ;
@@ -3290,15 +3298,6 @@ she:AcceptableRiskLevels a skos:Concept ;
 she:AcidicpH a skos:Concept ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "acidic pH"@en ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
-she:Acidification a skos:Concept ;
-    agrontology:isIncludedIn she:SoilChemicalDegradation ;
-    skos:exactMatch agrovoc:c_90,
-        inrae:c_15791,
-        gemet:44 ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "acidification"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:Acidifiers a skos:Concept ;
@@ -3872,14 +3871,6 @@ she:CO2Loss a skos:Concept ;
     skos:prefLabel "CO₂ loss"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
-she:CSequestration a skos:Concept ;
-    dcterms:source she:DeVries2009,
-        she:Hogberg2007,
-        she:Thomas2010 ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "C sequestration"@en ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
 she:CalciumAvailability a skos:Concept ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "calcium availability"@en ;
@@ -3914,7 +3905,11 @@ she:CarbonInput a skos:Concept ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:CarbonSequestration a skos:Concept ;
-    dcterms:source she:Olson2014 ;
+    dcterms:source she:Olson2014,
+        she:DeVries2009,
+        she:Hogberg2007,
+        she:Thomas2010 ;
+    skos:altLabel "C sequestration"@en ;
     skos:definition "Carbon sequestration is the process of transferring CO₂ from the atmosphere into the soil of a land unit, through plants, plant residues and other organic solids which are stored or retained in the unit as part of the soil organic matter with a long residence time."@en ;
     skos:exactMatch agrovoc:c_331583,
         inrae:c_4684,
@@ -4083,7 +4078,7 @@ she:CollembolaFrequency a skos:Concept ;
         she:Gregory2006,
         she:Horn2022,
         she:Schrader1999 ;
-    skos:broader she:BiologicalActivity ;
+    skos:broader she:SoilBiologicalActivity ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "collembola frequency"@en .
 
@@ -4113,7 +4108,7 @@ she:CompletelySealedArea a skos:Concept ;
     skos:prefLabel "completely sealed area"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
-she:ConcentationRegulationProcesses a skos:Concept ;
+she:ConcentrationRegulationProcesses a skos:Concept ;
     obo:BFO_0000066 she:EnvironmentalCompartments,
         she:Soils,
         she:Water ;
@@ -4709,7 +4704,7 @@ she:EarthwormFrequency a skos:Concept ;
         she:Gregory2006,
         she:Horn2022,
         she:Schrader1999 ;
-    skos:broader she:BiologicalActivity ;
+    skos:broader she:SoilBiologicalActivity ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "earthworm frequency"@en .
 
@@ -5541,12 +5536,6 @@ she:HotSummers a skos:Concept ;
     skos:prefLabel "hot summers"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
-she:Human a skos:Concept ;
-    obo:OAE_0000186 she:SoilSalinisation ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "human"@en ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
 she:HumanExposure a skos:Concept ;
     agrontology:isCausedBy [ agrontology:isUsedAs she:DrinkingWater ;
             obo:BFO_0000066 she:Groundwater,
@@ -5856,7 +5845,7 @@ she:LabileFractionOfSOCContent a skos:Concept ;
     skos:prefLabel "labile fraction of SOC content"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     she:respondsTo [ obo:OAE_0000025 she:LandManagement ],
-        she:ClimaticChanges .
+        she:ClimateChange .
 
 she:Lakes a skos:Concept ;
     skos:altLabel "lake"@en ;
@@ -5989,7 +5978,7 @@ she:LegislativeFramework a skos:Concept ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:Leptosols a skos:Concept ;
-    obo:BFO_0000066 she:MountainousAreas ;
+    obo:BFO_0000066 she:MountainAreas ;
     dcterms:source she:WRB ;
     sio:equivalentTo she:Entisols ;
     skos:altLabel "Leptosol"@en ;
@@ -6243,7 +6232,7 @@ she:MassExchanges a skos:Concept ;
     skos:prefLabel "mass exchanges"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
-she:MeasureableSoilProperties a skos:Concept ;
+she:MeasurableSoilProperties a skos:Concept ;
     dcterms:source she:Vogel2020 ;
     sio:equivalentTo she:SoilAttributes ;
     skos:altLabel "measurable soil property"@en ;
@@ -6431,7 +6420,10 @@ she:MosimannSanders2004 a dcterms:BibliographicResource ;
     dcterms:title "Bodenerosion selber abschätzen: Ein Schlüssel für Betriebsleiter und Berater in Niedersachsen. Ackerbaugebiete im südlichen Niedersachsen" .
 
 she:MountainAreas a skos:Concept ;
-    skos:altLabel "mountain area"@en ;
+    obo:RO_0000053 she:SteepTopography ;
+    skos:altLabel "mountain area"@en,
+        "mountainous area"@en,
+        "mountainous areas"@en ;
     skos:closeMatch agrovoc:c_3614 ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "mountain areas"@en ;
@@ -6643,7 +6635,7 @@ she:NematodeFrequency a skos:Concept ;
         she:Gregory2006,
         she:Horn2022,
         she:Schrader1999 ;
-    skos:broader she:BiologicalActivity ;
+    skos:broader she:SoilBiologicalActivity ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "nematode frequency"@en .
 
@@ -6720,7 +6712,10 @@ she:NitrogenAmount a skos:Concept ;
     skos:prefLabel "nitrogen amount"@en .
 
 she:NitrogenDynamics a skos:Concept ;
-    dcterms:source she:VanGroenigen2015 ;
+    agrontology:isAffectedBy she:SOMContents ;
+    dcterms:source she:Korschens1998,
+        she:VanGroenigen2015 ;
+    skos:altLabel "N dynamics"@en ;
     skos:exactMatch inrae:c_15661 ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "nitrogen dynamics"@en ;
@@ -6996,11 +6991,6 @@ she:PPPThresholdLevel a skos:Concept ;
     skos:prefLabel "PPP threshold level"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
-she:PRunoff a skos:Concept ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "P runoff"@en ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
 she:Panagos2020a a dcterms:BibliographicResource ;
     dcterms:creator "Ballabio, Cristiano",
         "Borrelli, Pasquale",
@@ -7046,12 +7036,6 @@ she:PavingCracks a skos:Concept ;
     skos:altLabel "paving crack"@en ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "paving cracks"@en ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
-she:People a skos:Concept ;
-    agrontology:benefitsFrom she:Ecosystems ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "people"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:PerformanceMonitoringEvaluationFramework a skos:Concept ;
@@ -7100,8 +7084,9 @@ she:PhosphorusAmount a skos:Concept ;
     skos:prefLabel "phosphorus amount"@en .
 
 she:PhosphorusRunoff a skos:Concept ;
+    skos:altLabel "P runoff"@en ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "phosphorus run-off"@en ;
+    skos:prefLabel "phosphorus runoff"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:PhysicalCompressiveProcesses a skos:Concept ;
@@ -7322,18 +7307,15 @@ she:PollutionSources a skos:Concept ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:PoorDrainage a skos:Concept ;
-    agrontology:causes she:SoilSalinisation ;
-    skos:broader she:HumaninducedPractices ;
+    agrontology:causes she:SecondarySalinisation,
+        she:SoilSalinisation ;
+    dcterms:source she:FAOITPS2015 ;
+    skos:altLabel "poor drainage condition"@en,
+        "poor drainage conditions"@en ;
+    skos:broader she:HumanActivities,
+        she:HumaninducedPractices ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "poor drainage"@en .
-
-she:PoorDrainageConditions a skos:Concept ;
-    agrontology:causes she:SecondarySalinisation ;
-    dcterms:source she:FAOITPS2015 ;
-    skos:altLabel "poor drainage condition"@en ;
-    skos:broader she:HumanActivities ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "poor drainage conditions"@en .
 
 she:PoorDrainageMaintenance a skos:Concept ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
@@ -8027,11 +8009,15 @@ she:SoilBiodiversityBaselines a skos:Concept ;
 
 she:SoilBiodiversityLoss a skos:Concept ;
     agrontology:isCausedBy she:SoilSealing ;
+    agrontology:isPreventedBy she:AgriculturalPolicies ;
+    skos:altLabel "biodiversity loss"@en ;
+    skos:broader she:SoilThreatIndicators ;
     skos:exactMatch inrae:c_abeaf838,
         gemet:15074 ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "biodiversity loss"@en ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
+    skos:prefLabel "soil biodiversity loss"@en ;
+    skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
+    she:accompanies she:SoilBiologicalDegradation .
 
 she:SoilBiodiversityStatus a skos:Concept ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
@@ -8066,7 +8052,7 @@ she:SoilBiotaActivity a skos:Concept ;
 she:SoilBufferCapacity a skos:Concept ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "soil buffer capacity"@en ;
-    skos:related she:AcidNeutralizationCapacity ;
+    skos:related she:SoilAcidNeutralisingCapacity ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:SoilBuffering a skos:Concept ;
@@ -8242,6 +8228,7 @@ she:SoilLossRatesByWater a skos:Concept ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:SoilMatricPotential a skos:Concept ;
+    skos:altLabel "matric potential"@en ;
     skos:exactMatch inrae:c_5050 ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "soil matric potential"@en ;
@@ -8397,7 +8384,7 @@ she:SoilPollutionQuantification a skos:Concept ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:SoilPollutionThresholds a skos:Concept ;
-    obo:T4FS_0000577 she:ConcentationRegulationProcesses,
+    obo:T4FS_0000577 she:ConcentrationRegulationProcesses,
         she:PollutantEmissions,
         she:PollutantExposure,
         she:SoilInputs,
@@ -8603,9 +8590,9 @@ she:Spain a schema:Country ;
     skos:exactMatch agrovoc:c_7273 ;
     skos:prefLabel "Spain"@en .
 
-she:SpecficContaminantLoad a skos:Concept ;
+she:SpecificContaminantLoad a skos:Concept ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "specfic contaminant load"@en ;
+    skos:prefLabel "specific contaminant load"@en ;
     skos:related she:DirectIndicators ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
@@ -8639,7 +8626,7 @@ she:Spills a skos:Concept ;
     skos:prefLabel "spills"@en .
 
 she:Stabilisation a skos:Concept ;
-    agrontology:isIncludedIn she:BiochemicalProcesses ;
+    agrontology:isIncludedIn she:SoilBiochemicalProcesses ;
     obo:RO_0002331 she:SOCTurnover ;
     skos:closeMatch agrovoc:c_7353 ;
     skos:exactMatch iso11074:3.492 ;
@@ -8674,18 +8661,10 @@ she:StatisticalParameters a skos:Concept ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:SteepTopography a skos:Concept ;
-    obo:RO_0000052 she:MountainousAreas ;
+    obo:RO_0000052 she:MountainAreas ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "steep topography"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
-she:Stiffness a skos:Concept ;
-    sio:equivalentTo she:ShearStrength ;
-    skos:broader she:ComplexSoilPhysicalParameters ;
-    skos:closeMatch inrae:c_13416 ;
-    skos:exactMatch agrovoc:c_37a895ed ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "stiffness"@en .
 
 she:Stones a skos:Concept ;
     skos:altLabel "stone"@en ;
@@ -8833,13 +8812,6 @@ she:Tetrachloroethylene a skos:Concept ;
     agrontology:isIncludedIn she:VOCs ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "tetrachloroethylene"@en ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
-she:TextureClasses a skos:Concept ;
-    af-x:AFX_0000355 she:SSVsForMetals ;
-    skos:altLabel "texture class"@en ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "texture classes"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:TieredMonitoring a skos:Concept ;
@@ -9376,13 +9348,6 @@ she:AcidForestSoils a skos:Concept ;
     skos:prefLabel "acid forest soils"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
-she:AcidNeutralizationCapacity a skos:Concept ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "acid neutralization capacity"@en ;
-    skos:related she:SoilBufferCapacity,
-        she:SoilCationExchangeProcesses ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
 she:ActinomycetesAmount a skos:Concept ;
     obo:RO_0002507 she:DNAYield ;
     skos:altLabel "actinomycete amount"@en ;
@@ -9443,7 +9408,7 @@ she:AgriculturalLandUses a skos:Concept ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:AgriculturalPolicies a skos:Concept ;
-    agrontology:prevents she:SoilSoilBiodiversityLoss ;
+    agrontology:prevents she:SoilBiodiversityLoss ;
     sio:SIO_000291 she:SoilFertility ;
     skos:altLabel "agricultural policy"@en ;
     skos:exactMatch agrovoc:c_201 ;
@@ -9631,7 +9596,7 @@ she:CarbonAvailability a skos:Concept ;
 
 she:CationExchange a skos:Concept ;
     agrontology:isAffectedBy she:SOMContents ;
-    agrontology:isIncludedIn she:BiochemicalProcesses ;
+    agrontology:isIncludedIn she:SoilBiochemicalProcesses ;
     skos:exactMatch inrae:c_3a30d01b ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "cation exchange"@en ;
@@ -9679,12 +9644,6 @@ she:ClimateChangeMitigation a skos:Concept ;
         gemet:15032 ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "climate change mitigation"@en ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
-she:ClimaticChanges a skos:Concept ;
-    skos:altLabel "climatic change"@en ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "climatic changes"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:ClimaticConditions a skos:Concept ;
@@ -10034,7 +9993,7 @@ she:EcosystemDiversity a skos:Concept ;
     skos:prefLabel "ecosystem diversity"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     she:isIndicatedBy she:NematodeAbsoluteAbundance,
-        she:NematodeReletiveAbundance .
+        she:NematodeRelativeAbundance .
 
 she:EcosystemFunctioning a skos:Concept ;
     agrontology:isAffectedBy she:SoilPollution ;
@@ -10069,7 +10028,7 @@ she:EcosystemStability a skos:Concept ;
     skos:prefLabel "ecosystem stability"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     she:isIndicatedBy she:NematodeAbsoluteAbundance,
-        she:NematodeReletiveAbundance .
+        she:NematodeRelativeAbundance .
 
 she:EionetWorkshops a obo:NCIT_C180602 ;
     dcterms:source she:Freudenschuss2001 ;
@@ -10452,7 +10411,11 @@ she:HotWaterExtractableCarbon a skos:Concept ;
     skos:prefLabel "hot water extractable carbon"@en .
 
 she:HumanBeings a skos:Concept ;
-    skos:altLabel "human being"@en ;
+    agrontology:benefitsFrom she:Ecosystems ;
+    obo:OAE_0000186 she:SoilSalinisation ;
+    skos:altLabel "human"@en,
+        "human being"@en,
+        "people"@en ;
     skos:closeMatch agrovoc:c_4586 ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "human beings"@en ;
@@ -10697,8 +10660,6 @@ she:Lopes2013 a dcterms:BibliographicResource ;
     dcterms:publisher "Wiley" ;
     dcterms:title "Interpretation of Microbial Soil Indicators as a Function of Crop Yield and Organic Carbon" .
 
-she:LowestSOCContentThresholds a skos:Concept .
-
 she:LowestSOCContents a skos:Concept ;
     obo:RO_0002502 [ obo:BFO_0000066 she:AgriculturalSoils ;
             skos:related she:CropYieldResponse ],
@@ -10752,24 +10713,9 @@ she:MicrobialImmobilisation a skos:Concept ;
 
 she:MineralisationRate a skos:Concept ;
     agrontology:isAffectedBy she:SOMContents ;
-    agrontology:isIncludedIn she:BiochemicalProcesses ;
+    agrontology:isIncludedIn she:SoilBiochemicalProcesses ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "mineralisation rate"@en ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
-she:MountainousAreas a skos:Concept ;
-    obo:RO_0000053 she:SteepTopography ;
-    skos:altLabel "mountainous area"@en ;
-    skos:closeMatch agrovoc:c_3614 ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "mountainous areas"@en ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
-she:NDynamics a skos:Concept ;
-    agrontology:isAffectedBy she:SOMContents ;
-    dcterms:source she:Korschens1998 ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "N dynamics"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:NInputs a skos:Concept ;
@@ -10827,7 +10773,7 @@ she:NematodeAbsoluteAbundance a skos:Concept ;
     she:indicates she:EcosystemDiversity,
         she:EcosystemStability .
 
-she:NematodeReletiveAbundance a skos:Concept ;
+she:NematodeRelativeAbundance a skos:Concept ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "nematode relative abundance"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
@@ -11052,7 +10998,7 @@ she:PointSources a skos:Concept ;
 she:PollutedSedimentDeposition a skos:Concept ;
     agrontology:affects she:AreaBetweenDikes ;
     obo:BFO_0000066 she:RiverFloodplainSoils ;
-    skos:broader she:DuffuseSoilPollution ;
+    skos:broader she:DiffuseSoilPollution ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "polluted sediment deposition"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
@@ -11278,19 +11224,6 @@ she:RiverSedimentation a skos:Concept ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     she:accompanies she:LargeErosionEvents .
 
-she:Runoff a skos:Concept ;
-    obo:RO_0002336 [ dcterms:source she:PerryNawaz2008 ;
-            prov:atLocation she:Leeds ;
-            biolink:has_percentage "12"^^qudt:integerPercentage ],
-        [ dcterms:source she:HaaseNuissl2007 ;
-            time:hasDuration [ qudt:numericValue "63"^^xsd:int ;
-                    qudt:unit unit:YR ] ;
-            prov:atLocation she:Leipzig ;
-            biolink:has_percentage "200"^^qudt:integerPercentage ] ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "run-off"@en ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
 she:SOCClayRatio a skos:Concept ;
     af-x:AFX_0002696 [ af-x:AFX_0000408 she:TransitionalLand ;
             dcterms:source she:Chartin2022 ;
@@ -11464,7 +11397,7 @@ she:SoilCationExchangeProcesses a skos:Concept ;
     skos:altLabel "soil cation exchange process"@en ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "soil cation exchange processes"@en ;
-    skos:related she:AcidNeutralizationCapacity ;
+    skos:related she:SoilAcidNeutralisingCapacity ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:SoilEconomicFunctions a skos:Concept ;
@@ -11535,7 +11468,7 @@ she:SoilFormationRates a skos:Concept ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     she:calculates she:TolerableSoilLossRates .
 
-she:SoilFuntionalParameters a skos:Concept ;
+she:SoilFunctionalParameters a skos:Concept ;
     sio:SIO_000563 she:SoilMechanicalBehaviour ;
     skos:altLabel "soil functional parameter"@en ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
@@ -11573,7 +11506,7 @@ she:SoilManagement a skos:Concept ;
 
 she:SoilMechanicalBehaviour a skos:Concept ;
     sio:SIO_000557 she:PhysicalSoilParameters,
-        she:SoilFuntionalParameters ;
+        she:SoilFunctionalParameters ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "soil mechanical behaviour"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
@@ -11684,6 +11617,10 @@ she:SoilSolutionIons a skos:Concept ;
 she:SoilStiffness a skos:Concept ;
     obo:RO_0002508 she:BindingForces ;
     sio:equivalentTo she:ShearStrength ;
+    skos:altLabel "stiffness"@en ;
+    skos:broader she:ComplexSoilPhysicalParameters ;
+    skos:closeMatch inrae:c_13416 ;
+    skos:exactMatch agrovoc:c_37a895ed ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "soil stiffness"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
@@ -12048,7 +11985,7 @@ she:AirPermeability a skos:Concept ;
     agrontology:measures [ af-x:AFX_0000408 she:PoreDiameters ;
             rdf:object she:Fluxes ] ;
     obo:RO_0000053 she:SensitiveParameter ;
-    obo:RO_0002502 she:MatricPotential ;
+    obo:RO_0002502 she:SoilMatricPotential ;
     qudt:symbol "$K_l$"^^qudt:LatexString ;
     sio:SIO_000210 she:PoreContinuityFunctionalQuality,
         she:SoilStructureFunctionalQuality ;
@@ -12368,7 +12305,7 @@ she:DirectIndicators a skos:Concept ;
     skos:narrower she:AmountOfSewageSludgeAppliedPerUnitAreaOfAgriculturalLand,
         she:AveragePesticideConsumptionPerUnitAreaOfAgriculturalLand ;
     skos:prefLabel "direct indicators"@en ;
-    skos:related she:SpecficContaminantLoad .
+    skos:related she:SpecificContaminantLoad .
 
 she:EasternEurope a sorepsg:Region ;
     skos:exactMatch agrovoc:c_2448,
@@ -12789,11 +12726,6 @@ she:ManageableSoilAttributes a skos:Concept ;
     skos:prefLabel "manageable soil attributes"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
-she:MatricPotential a skos:Concept ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "matric potential"@en ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
 she:MeasuredSoilParameters a skos:Concept ;
     dcterms:source she:Vogel2020 ;
     sio:equivalentTo she:SoilAttributes ;
@@ -12886,7 +12818,7 @@ she:NLosses a skos:Concept ;
     she:respondsTo [ sorelph:to she:Air,
                 she:Water ;
             rdf:object she:NInputs ;
-            skos:related she:NDynamics,
+            skos:related she:NitrogenDynamics,
                 she:SoilProperties ] .
 
 she:NTransformationProcesses a skos:Concept ;
@@ -13080,7 +13012,7 @@ she:PhysicalSoilParameters a skos:Concept ;
     skos:broader she:BasicSoilParameters ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "soil physical parameters"@en ;
-    skos:related she:SoilFuntionalParameters ;
+    skos:related she:SoilFunctionalParameters ;
     she:isRequiredBy she:SoilTypologicalClassification .
 
 she:PickettCadenasso2009 a dcterms:BibliographicResource ;
@@ -13329,8 +13261,7 @@ she:ShearEffects a skos:Concept ;
 she:ShearStrength a skos:Concept ;
     obo:RO_0002508 she:BindingForces ;
     qudt:unit unit:KiloPA ;
-    sio:equivalentTo she:SoilStiffness,
-        she:Stiffness ;
+    sio:equivalentTo she:SoilStiffness ;
     skos:broader she:ComplexSoilPhysicalParameters ;
     skos:exactMatch agrovoc:c_9d2ec51c ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
@@ -13371,18 +13302,39 @@ she:SoilBON a obo:NCIT_C61419 ;
 
 she:SoilBiochemicalProcesses a skos:Concept ;
     agrontology:includes she:GreenhouseGasEmissions,
-        she:NutrientTurnover ;
-    agrontology:isAffectedBy she:SoilCompaction ;
-    skos:altLabel "soil biochemical process"@en ;
+        she:NutrientTurnover,
+        she:CationExchange,
+        she:Mineralisation,
+        she:MineralisationRate,
+        she:Stabilisation ;
+    agrontology:isAffectedBy she:SoilCompaction,
+        she:SOMContents ;
+    obo:RO_0002331 she:SOCTurnover ;
+    skos:altLabel "soil biochemical process"@en,
+        "biochemical process"@en,
+        "biochemical processes"@en ;
+    skos:exactMatch agrovoc:c_331094 ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "soil biochemical processes"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:SoilBiologicalActivity a skos:Concept ;
-    obo:RO_0002335 she:Waterlogging ;
+    obo:RO_0002335 she:Waterlogging,
+        she:SoilAcidification ;
+    dcterms:source she:Beylich2010,
+        she:Gregory2006,
+        she:Horn2022,
+        she:Schrader1999 ;
     bao:BAO_0095002 she:SoilRespiration ;
-    skos:exactMatch inrae:c_1492 ;
+    skos:altLabel "biological activity"@en ;
+    skos:closeMatch agrovoc:c_4b49522d ;
+    skos:exactMatch inrae:c_1492,
+        inrae:c_9720,
+        gemet:839 ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
+    skos:narrower she:CollembolaFrequency,
+        she:EarthwormFrequency,
+        she:NematodeFrequency ;
     skos:prefLabel "soil biological activity"@en ;
     skos:related she:SoilBiologicalDegradation ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
@@ -13608,7 +13560,7 @@ she:UnsaturatedHydraulicConductivity a skos:Concept ;
     agrontology:measures [ af-x:AFX_0000408 she:PoreDiameters ;
             rdf:object she:Fluxes ] ;
     obo:RO_0000053 she:SensitiveParameter ;
-    obo:RO_0002502 she:MatricPotential ;
+    obo:RO_0002502 she:SoilMatricPotential ;
     sio:SIO_000210 she:PoreContinuityFunctionalQuality,
         she:SoilStructureFunctionalQuality ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
@@ -13840,6 +13792,8 @@ she:ClimateChange a skos:Concept ;
     obo:OAE_0000186 she:SoilErosionRateAcceleration ;
     obo:RO_0002213 she:IntenseRainEvents,
         she:WeatherExtremes ;
+    skos:altLabel "climatic change"@en,
+        "climatic changes"@en ;
     skos:exactMatch agrovoc:c_1666,
         inrae:c_11564,
         gemet:1471 ;
@@ -14003,7 +13957,7 @@ she:Eutrophication a skos:Concept ;
 
 she:ExtensivelyManagedFarms a skos:Concept ;
     obo:RO_0002213 she:MicrobialBiomass,
-        she:Respiration,
+        she:SoilRespiration,
         she:SoilFaunaFunctionalGroups,
         she:SoilMicrobialActivity ;
     dcterms:source she:Bloem2006b ;
@@ -14301,7 +14255,7 @@ she:OffsiteDamage a skos:Concept ;
 
 she:OrganicFarms a skos:Concept ;
     obo:RO_0002213 she:MicrobialBiomass,
-        she:Respiration,
+        she:SoilRespiration,
         she:SoilFaunaFunctionalGroups,
         she:SoilMicrobialActivity ;
     dcterms:source she:Bloem2006b ;
@@ -14387,18 +14341,6 @@ she:Rearrangement a skos:Concept ;
     skos:prefLabel "rearrangement"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
-she:Respiration a skos:Concept ;
-    obo:RO_0002335 she:SoilBiologicalDegradation ;
-    obo:RO_0002336 she:ExtensivelyManagedFarms,
-        she:OrganicFarms ;
-    dcterms:source she:Bloem2006b ;
-    skos:exactMatch agrovoc:c_9421,
-        gemet:7176 ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "respiration"@en ;
-    skos:related she:SoilMicrobialActivity ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
 she:SDG a dcterms:Policy,
         sio:SIO_010423 ;
     agrontology:hasAbbreviation "SDG"@en ;
@@ -14440,8 +14382,8 @@ she:SOCdepletedSoils a skos:Concept ;
 
 she:SaturatedHydraulicConductivity a skos:Concept ;
     obo:RO_0000053 she:SensitiveParameter ;
-    obo:RO_0002502 she:MatricPotential,
-        she:SaturatedMacropores ;
+    obo:RO_0002502 she:SaturatedMacropores,
+        she:SoilMatricPotential ;
     qudt:symbol "$K_s$"^^qudt:LatexString ;
     sio:SIO_000210 she:PoreContinuityFunctionalQuality,
         she:SoilStructureFunctionalQuality ;
@@ -14562,7 +14504,7 @@ she:SoilMatrix a skos:Concept ;
 
 she:SoilPStatus a skos:Concept ;
     agrontology:greaterThan [ obo:RO_0002212 she:WaterQuality ;
-            obo:RO_0002213 she:PRunoff ;
+            obo:RO_0002213 she:PhosphorusRunoff ;
             sorelph:to she:SurfaceWater ;
             rdf:object she:PCriticalLevels ] ;
     agrontology:smallerThan [ obo:RO_0002212 she:CropGrowth ;
@@ -14611,8 +14553,8 @@ she:SoilStructuralParameters a skos:Concept ;
     dcterms:source she:Johannes2017 ;
     skos:altLabel "soil structural parameter"@en ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:narrower she:AggregateStability,
-        she:MechanicalProperties,
+    skos:narrower she:MechanicalProperties,
+        she:SoilAggregateStability,
         she:SoilPenetrationResistance,
         she:SoilPorosity ;
     skos:prefLabel "soil structural parameters"@en ;
@@ -14838,35 +14780,6 @@ she:Belgium a schema:Country ;
     obo:RO_0000053 she:ShallowGroundwaterTable ;
     skos:exactMatch agrovoc:c_870 ;
     skos:prefLabel "Belgium"@en .
-
-she:BiochemicalProcesses a skos:Concept ;
-    agrontology:includes she:CationExchange,
-        she:Mineralisation,
-        she:MineralisationRate,
-        she:Stabilisation ;
-    agrontology:isAffectedBy she:SOMContents ;
-    obo:RO_0002331 she:SOCTurnover ;
-    skos:altLabel "biochemical process"@en ;
-    skos:exactMatch agrovoc:c_331094 ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "biochemical processes"@en ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
-she:BiologicalActivity a skos:Concept ;
-    obo:RO_0002335 she:SoilAcidification ;
-    dcterms:source she:Beylich2010,
-        she:Gregory2006,
-        she:Horn2022,
-        she:Schrader1999 ;
-    skos:closeMatch agrovoc:c_4b49522d ;
-    skos:exactMatch inrae:c_9720,
-        gemet:839 ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:narrower she:CollembolaFrequency,
-        she:EarthwormFrequency,
-        she:NematodeFrequency ;
-    skos:prefLabel "biological activity"@en ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:CriticalLevel a skos:Concept ;
     skos:exactMatch gemet:1864 ;
@@ -15298,7 +15211,7 @@ she:SSVsForMetals a skos:Concept ;
         she:LandUses,
         she:ParentMaterial,
         she:SoilProperties,
-        she:TextureClasses ;
+        she:SoilTexturalClasses ;
     skos:altLabel "SSVs for metal"@en ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "SSVs for metals"@en ;
@@ -15386,7 +15299,7 @@ she:SoilMicrobialActivity a skos:Concept ;
     skos:exactMatch inrae:c_1144 ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "soil microbial activity"@en ;
-    skos:related she:Respiration ;
+    skos:related she:SoilRespiration ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:SoilNStatus a skos:Concept ;
@@ -15445,15 +15358,24 @@ she:SoilProtection a skos:Concept ;
 she:SoilRespiration a skos:Concept ;
     agrontology:isComponentOf she:SoilCarbonCycle ;
     agrontology:isMeasuredBy she:OxygenConsumedByMicrobialRespiration ;
-    dcterms:source she:LeeJose2003 ;
+    obo:RO_0002335 she:SoilBiologicalDegradation ;
+    obo:RO_0002336 she:ExtensivelyManagedFarms,
+        she:OrganicFarms ;
+    dcterms:source she:LeeJose2003,
+        she:Bloem2006b ;
     bao:BAO_0002586 she:SoilBiologicalActivity,
         she:SoilCarbonStorage,
         she:SoilQuality ;
+    skos:altLabel "respiration"@en ;
     skos:broader she:EssentialBiodiversityVariables ;
     skos:exactMatch agrovoc:c_33553,
-        inrae:c_7979 ;
+        inrae:c_7979,
+        agrovoc:c_9421,
+        gemet:7176 ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "soil respiration"@en .
+    skos:prefLabel "soil respiration"@en ;
+    skos:related she:SoilMicrobialActivity ;
+    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:SoilRisk a skos:Concept ;
     skos:definition "Soil risk is specific functions or services attributed to the soil are affected by the pollutant present."@en ;
@@ -15797,7 +15719,7 @@ she:HumanActivities a skos:Concept ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:narrower she:InappropriateCanalManagement,
         she:InappropriateWaterReservoirManagement,
-        she:PoorDrainageConditions,
+        she:PoorDrainage,
         she:SaltrichIrrigationWater,
         she:UnsustainableIrrigationPractices ;
     skos:prefLabel "human activities"@en ;
@@ -15861,7 +15783,7 @@ she:MicrobialBiomass a skos:Concept ;
     she:isIndicatedBy she:PotentialEnzymeActivity .
 
 she:Mineralisation a skos:Concept ;
-    agrontology:isIncludedIn she:BiochemicalProcesses ;
+    agrontology:isIncludedIn she:SoilBiochemicalProcesses ;
     obo:RO_0002331 she:SOCTurnover ;
     obo:RO_0002335 she:SoilBiologicalDegradation ;
     dcterms:source she:Pribyl2010 ;
@@ -16013,7 +15935,7 @@ she:SecondarySalinisation a skos:Concept ;
     agrontology:isCausedBy she:HumanActivities,
         she:InappropriateCanalManagement,
         she:InappropriateWaterReservoirManagement,
-        she:PoorDrainageConditions,
+        she:PoorDrainage,
         she:SaltrichIrrigationWater,
         she:UnsustainableIrrigationPractices ;
     dcterms:source she:Daliakopoulos2016 ;
@@ -16093,13 +16015,6 @@ she:SoilPollutingActivity a skos:Concept ;
         she:Waste ;
     skos:prefLabel "soil polluting activity"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
-
-she:SoilSoilBiodiversityLoss a skos:Concept ;
-    agrontology:isPreventedBy she:AgriculturalPolicies ;
-    skos:broader she:SoilThreatIndicators ;
-    skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "soil biodiversity loss"@en ;
-    she:accompanies she:SoilBiologicalDegradation .
 
 she:SurfaceRunoff a skos:Concept ;
     agrontology:causes she:EphemeralGullyErosion,
@@ -16366,7 +16281,7 @@ she:SoilBiologicalDegradation a skos:Concept ;
     obo:RO_0002212 [ obo:BFO_0000066 she:ForestTopsoils ;
             rdf:object she:SoilNutrientAvailability ],
         she:Mineralisation,
-        she:Respiration ;
+        she:SoilRespiration ;
     obo:RO_0002213 [ obo:BFO_0000066 she:ForestTopsoils ;
             rdf:object she:SoilOrganicMatter ],
         she:Necromass ;
@@ -16375,7 +16290,7 @@ she:SoilBiologicalDegradation a skos:Concept ;
     skos:prefLabel "soil biological degradation"@en ;
     skos:related she:SoilBiologicalActivity ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
-    she:isAccompaniedBy she:SoilSoilBiodiversityLoss ;
+    she:isAccompaniedBy she:SoilBiodiversityLoss ;
     she:isReflectedBy she:SoilEcologicalDegradation .
 
 she:SoilConditions a skos:Concept ;
@@ -16672,7 +16587,7 @@ she:SOCContents a skos:Concept ;
         she:Soils,
         she:Vegetation ;
     she:respondsTo [ obo:OAE_0000025 she:LandManagement ],
-        she:ClimaticChanges .
+        she:ClimateChange .
 
 she:SoilPhosphorus a skos:Concept ;
     agrontology:hasSymbol "P"@en ;
@@ -16803,7 +16718,7 @@ she:SoilBiodiversityIndicators a skos:Concept ;
     skos:prefLabel "soil biodiversity indicators"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     schema:assesses she:EcosystemFunctionLoss,
-        she:SoilSoilBiodiversityLoss ;
+        she:SoilBiodiversityLoss ;
     she:indicates she:EcosystemFunctions .
 
 she:VOCs a skos:Concept ;
@@ -17227,7 +17142,7 @@ she:SoilScreeningValues a skos:Concept ;
         she:PersistentOrganicPollutants .
 
 she:Ecosystems a skos:Concept ;
-    agrontology:isBeneficialFor she:People,
+    agrontology:isBeneficialFor she:HumanBeings,
         she:Societies ;
     dcterms:source she:Bunemann2018 ;
     sio:SIO_000064 she:CulturalServices,
@@ -17304,17 +17219,23 @@ she:SoilAcidification a skos:Concept ;
         she:SoilFunctions,
         she:SoilServices ;
     agrontology:isCausedBy she:AcidPrecipitation ;
+    agrontology:isIncludedIn she:SoilChemicalDegradation ;
     agrontology:isPreventedBy she:Liming ;
-    obo:RO_0002212 she:BiologicalActivity,
+    obo:RO_0002212 she:SoilBiologicalActivity,
         she:PlantGrowth,
         she:SoilpH,
         she:WaterQuality ;
+    skos:altLabel "acidification"@en ;
     skos:broader she:SoilThreatIndicators ;
     skos:definition "Soil acidification occurs when the acid neutralising capacity of the soil is reduced, which leads to a decrease in pH."@en ;
     skos:exactMatch inrae:c_900,
-        gemet:7844 ;
+        gemet:7844,
+        agrovoc:c_90,
+        inrae:c_15791,
+        gemet:44 ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
-    skos:prefLabel "soil acidification"@en .
+    skos:prefLabel "soil acidification"@en ;
+    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:SoilEcologicalFunctions a skos:Concept ;
     agrontology:includes she:BelowgroundBiologicalActivity,
@@ -17413,7 +17334,7 @@ she:SoilThreatIndicators a skos:Concept ;
         she:SoilPollution,
         she:SoilSalinisation,
         she:SoilSealing,
-        she:SoilSoilBiodiversityLoss ;
+        she:SoilBiodiversityLoss ;
     skos:prefLabel "soil threat indicators"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
@@ -17494,7 +17415,7 @@ she:SoilHealth a skos:Concept ;
         she:HumanHealth,
         she:PlantHealth,
         she:Productivity ;
-    obo:T4FS_0000577 she:LowestSOCContentThresholds ;
+    obo:T4FS_0000577 she:LowestSOCContents ;
     dcterms:source she:Bonfante2020,
         she:Bunemann2018,
         she:Vogel2020 ;
@@ -17710,7 +17631,7 @@ she:ComplexSoilPhysicalParameters a skos:Concept ;
         she:PrecompressionStress,
         she:ShearStrength,
         she:SoilRigidityRatio,
-        she:Stiffness ;
+        she:SoilStiffness ;
     skos:prefLabel "complex soil physical parameters"@en ;
     skos:related she:ActualSoilGasFluxes,
         she:ActualSoilHeatFluxes,
@@ -17740,12 +17661,12 @@ she:CropYields a skos:Concept ;
     she:respondsTo she:LongtermPhosphorousFertilisation .
 
 she:SOMContents a skos:Concept ;
-    agrontology:affects she:BiochemicalProcesses,
+    agrontology:affects she:SoilBiochemicalProcesses,
         she:CDynamics,
         she:CationExchange,
         she:GreenhouseGasEmissions,
         she:MineralisationRate,
-        she:NDynamics,
+        she:NitrogenDynamics,
         she:PoreVolume,
         she:SoilAggregation,
         she:SoilErodibility,
@@ -17777,7 +17698,7 @@ she:SOMContents a skos:Concept ;
 she:SoilChemicalDegradation a skos:Concept ;
     agrontology:causes she:NitrateNitrogenLeaching,
         she:PlantNutrientLeaching ;
-    agrontology:includes she:Acidification,
+    agrontology:includes she:SoilAcidification,
         she:Contamination,
         she:NutrientDepletion,
         she:SoilSalinisation ;
@@ -17969,7 +17890,7 @@ she:SoilSalinisation a skos:Concept ;
         she:TopographicOrigin ;
     agrontology:isIncludedIn she:SoilChemicalDegradation ;
     agrontology:isPreventedBy she:IntegratedManagementApproaches ;
-    obo:OAE_0000025 she:Human ;
+    obo:OAE_0000025 she:HumanBeings ;
     obo:RO_0002212 she:SoilFertility ;
     skos:altLabel "salinisation"@en ;
     skos:broader she:SoilThreatIndicators ;
@@ -18084,7 +18005,7 @@ she:SoilAttributes a skos:Concept ;
     obo:RO_0002508 she:SoilBiodiversity ;
     dcterms:source she:Bunemann2018,
         she:Vogel2020 ;
-    sio:equivalentTo she:MeasureableSoilProperties,
+    sio:equivalentTo she:MeasurableSoilProperties,
         she:MeasuredSoilParameters ;
     skos:altLabel "soil attribute"@en ;
     skos:definition "Soil attributes are measurable soil properties."@en ;
@@ -18549,7 +18470,7 @@ she:SoilCompaction a skos:Concept ;
     obo:RO_0002212 [ obo:RO_0002502 she:StressDuration,
                 she:StressIntensity,
                 she:StressKind ;
-            rdf:object she:BiologicalActivity,
+            rdf:object she:SoilBiologicalActivity,
                 she:CollembolaFrequency,
                 she:EarthwormFrequency,
                 she:NematodeFrequency,
@@ -18713,10 +18634,9 @@ she:SoilFunctions a skos:Concept ;
         she:AcceptableRiskLevels,
         she:AccumulationInSoil,
         she:AcidForestSoils,
-        she:AcidNeutralizationCapacity,
         she:AcidPrecipitation,
         she:AcidicpH,
-        she:Acidification,
+        she:SoilAcidification,
         she:Acids,
         she:Action,
         she:ActiveSoilLife,
@@ -18822,8 +18742,6 @@ she:SoilFunctions a skos:Concept ;
         she:BelowgroundCompartment,
         she:BelowgroundFoodWeb,
         she:BindingForces,
-        she:BiochemicalProcesses,
-        she:BiologicalActivity,
         she:BiologicalCompressiveProcesses,
         she:BiologicalIndicators,
         she:BiologicalProductivity,
@@ -18841,7 +18759,6 @@ she:SoilFunctions a skos:Concept ;
         she:CDynamics,
         she:CO2,
         she:CO2Loss,
-        she:CSequestration,
         she:CalciumAvailability,
         she:CambicLuvisols,
         she:Carbon,
@@ -18870,7 +18787,6 @@ she:SoilFunctions a skos:Concept ;
         she:ClimateChange,
         she:ClimateChangeMitigation,
         she:ClimateResilience,
-        she:ClimaticChanges,
         she:CoarseMineralFragmentContent,
         she:ColdWinters,
         she:CommercialAreas,
@@ -18884,7 +18800,7 @@ she:SoilFunctions a skos:Concept ;
         she:ComplexSoilPhysicalParameters,
         she:CompositeSampleAnalyses,
         she:Compost,
-        she:ConcentationRegulationProcesses,
+        she:ConcentrationRegulationProcesses,
         she:ConcentratedRunoffAreas,
         she:ConditionOfLands,
         she:ConiferousForestStands,
@@ -19180,7 +19096,6 @@ she:SoilFunctions a skos:Concept ;
         she:HorizontalFluxes,
         she:HotSpots,
         she:HotSummers,
-        she:Human,
         she:HumanActivities,
         she:HumanBeings,
         she:HumanExposure,
@@ -19314,9 +19229,8 @@ she:SoilFunctions a skos:Concept ;
         she:MassBalanceApproach,
         she:MassExchanges,
         she:MassSoilMovements,
-        she:MatricPotential,
         she:MatricPotentialValues,
-        she:MeasureableSoilProperties,
+        she:MeasurableSoilProperties,
         she:MeasuredConcentrationInSoil,
         she:MeasuredConcentrationInWater,
         she:MeasuredSoilParameters,
@@ -19364,14 +19278,12 @@ she:SoilFunctions a skos:Concept ;
         she:MonitoringApproaches,
         she:MonitoringScheme,
         she:MountainAreas,
-        she:MountainousAreas,
         she:MullHumusForm,
         she:Municipality,
         she:NCriticalLevels,
         she:NDVIMethod,
         she:NDeposition,
         she:NDissolution,
-        she:NDynamics,
         she:NFertilisation,
         she:NFertiliserInputs,
         she:NFertiliserRecommendations,
@@ -19410,7 +19322,7 @@ she:SoilFunctions a skos:Concept ;
         she:NearinfraredLight,
         she:Necromass,
         she:NematodeAbsoluteAbundance,
-        she:NematodeReletiveAbundance,
+        she:NematodeRelativeAbundance,
         she:NetBiomeProductivity,
         she:NetSpeciesNumbers,
         she:NinducedGrowthIncrease,
@@ -19493,7 +19405,6 @@ she:SoilFunctions a skos:Concept ;
         she:PPPLeaching,
         she:PPPLimitValues,
         she:PPPThresholdLevel,
-        she:PRunoff,
         she:PSupply,
         she:PTargetLevels,
         she:PWeathering,
@@ -19507,7 +19418,6 @@ she:SoilFunctions a skos:Concept ;
         she:PeatSoils,
         she:PedogenicProcesses,
         she:PedotransferFunctions,
-        she:People,
         she:PercolatingSoilSolution,
         she:PerformanceMonitoringEvaluationFramework,
         she:PermanentLoads,
@@ -19615,7 +19525,7 @@ she:SoilFunctions a skos:Concept ;
         she:RegulatingServices,
         she:RemoteLocations,
         she:ResidentialAreas,
-        she:Respiration,
+        she:SoilRespiration,
         she:ResponsiveSoilAttributes,
         she:ResultingLandform,
         she:RetentionProcesses,
@@ -19641,7 +19551,7 @@ she:SoilFunctions a skos:Concept ;
         she:RootGrowth,
         she:RootTurnover,
         she:Rooting,
-        she:Runoff,
+        she:WaterRunoff,
         she:RuralAreas,
         she:SOCChemicalComposition,
         she:SOCClayRatio,
@@ -19781,7 +19691,7 @@ she:SoilFunctions a skos:Concept ;
         she:SoilFunctionalCapacity,
         she:SoilFunctioning,
         she:SoilFunctions,
-        she:SoilFuntionalParameters,
+        she:SoilFunctionalParameters,
         she:SoilHorizons,
         she:SoilHydrology,
         she:SoilIndicators,
@@ -19875,7 +19785,6 @@ she:SoilFunctions a skos:Concept ;
         she:SoilThreatIndicators,
         she:SoilThreats,
         she:SoilThresholds,
-        she:SoilTopologicalClassification,
         she:SoilTypes,
         she:SoilTypologicalClassification,
         she:SoilVariability,
@@ -19888,7 +19797,7 @@ she:SoilFunctions a skos:Concept ;
         she:SpatialData,
         she:SpatialGradients,
         she:SpatialPlanners,
-        she:SpecficContaminantLoad,
+        she:SpecificContaminantLoad,
         she:SpeciesDiversity,
         she:SpeciesNumber,
         she:SpecificProductGroups,
@@ -19942,7 +19851,7 @@ she:SoilFunctions a skos:Concept ;
         she:TemperateContinentalClimate,
         she:TerrestrialLayer,
         she:Tetrachloroethylene,
-        she:TextureClasses,
+        she:SoilTexturalClasses,
         she:Thresholds,
         she:TieredMonitoring,
         she:Tillage,
