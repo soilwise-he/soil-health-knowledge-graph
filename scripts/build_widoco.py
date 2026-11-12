@@ -92,6 +92,9 @@ def main():
             check=True, timeout=600,
         )
 
+    # Publish the complete source graph alongside WIDOCO's RDF exports.
+    shutil.copyfile(ROOT / "soil_health_SKOS.ttl", output / "soil_health_SKOS.ttl")
+
     # Serve the English page at the site root without changing its contents.
     shutil.copyfile(output / "index-en.html", output / "index.html")
     (output / ".nojekyll").touch()
