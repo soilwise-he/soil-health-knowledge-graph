@@ -150,7 +150,7 @@ These metrics provide complementary views: exact matching (Precision/Recall/F1),
 
 ## 🔗 Resource Availability
 
-* **Interactive Browser**: [https://soilwise-he.github.io/soil-health-knowledge-graph/](https://soilwise-he.github.io/soil-health-knowledge-graph/) (the consolidated site, available after its first deployment; the [legacy site](https://soilwise-he.github.io/soil-health/) remains available during migration)
+* **Interactive Browser**: [https://soilwise-he.github.io/soil-health-knowledge-graph/](https://soilwise-he.github.io/soil-health-knowledge-graph/) (the [legacy site](https://soilwise-he.github.io/soil-health/) redirects here, preserving term fragments)
 * **SPARQL Endpoint**:  [https://sparql.soilwise.wetransform.eu/sparql/](https://sparql.soilwise.wetransform.eu/sparql/)
 * **Searchable Vocabulary Browser**:  [https://voc.soilwise-he.containers.wur.nl/](https://voc.soilwise-he.containers.wur.nl/)
 * **AgroPortal Instance**:  [https://agroportal.lirmm.fr/ontologies/SHKG](https://agroportal.lirmm.fr/ontologies/SHKG)
@@ -180,15 +180,20 @@ missing property entries and point five datatype targets to official documentati
 Use `--java PATH` for an existing Java executable or `--jar PATH` for the original
 WIDOCO 1.4.25 JDK 17 JAR.
 
+Edit `WIDOCO_PROPERTIES` near the top of `scripts/build_widoco.py` to update
+the website metadata, including the version and dates. Each build writes these
+settings to the ignored `build/widoco.properties` file for WIDOCO to read.
+Pushing changes to the builder on `main` triggers the documentation workflow.
+
 The generated site is in `build/site/`, with an unchanged copy of `index-en.html`
 as `index.html`; the build log is `build/widoco.log`. RDF downloads use WIDOCO's
 own serializations, whose current OWL conversion omits some general RDF
 statements. The complete source graph remains in `soil_health_SKOS.ttl`.
 
 To publish, set this repository's **Settings → Pages → Source** to **GitHub
-Actions**, then run the workflow on `main`. Deploy and verify the new site
-before switching `soilwise-he/soil-health` to its redirect-only workflow.
-That legacy site preserves browser paths, query strings, and term fragments;
+Actions**, then push a relevant change to `main` or run the workflow manually.
+The `soilwise-he/soil-health` repository only publishes redirects for legacy
+browser paths, query strings, and term fragments;
 GitHub Pages does not provide server-side HTTP redirects for RDF clients.
 This hosting migration does not change the RDF namespace. A future w3id
 registration should target the new documentation URL and its RDF downloads.

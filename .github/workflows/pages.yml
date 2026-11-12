@@ -5,14 +5,12 @@ on:
     branches: [main]
     paths:
       - soil_health_SKOS.ttl
-      - widoco.properties
       - scripts/build_widoco.py
       - scripts/patch_widoco_property_entries.py
       - .github/workflows/pages.yml
   pull_request:
     paths:
       - soil_health_SKOS.ttl
-      - widoco.properties
       - scripts/build_widoco.py
       - scripts/patch_widoco_property_entries.py
       - .github/workflows/pages.yml
