@@ -1,13 +1,11 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix af-r: <http://purl.allotrope.org/ontologies/result#> .
 @prefix af-x: <http://purl.allotrope.org/ontologies/property#> .
 @prefix agrontology: <http://aims.fao.org/aos/agrontology#> .
 @prefix agrovoc: <http://aims.fao.org/aos/agrovoc/> .
 @prefix bao: <http://www.bioassayontology.org/bao#> .
 @prefix biolink: <https://w3id.org/biolink/vocab/> .
-@prefix citedcat: <https://w3id.org/citedcat-ap/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix gemet: <http://www.eionet.europa.eu/gemet/concept/> .
 @prefix glosis_cm: <http://w3id.org/glosis/model/common/> .
 @prefix glosis_lh: <http://w3id.org/glosis/model/layerhorizon/> .
@@ -98,10 +96,12 @@ schema:Continent a rdfs:Class ;
 schema:Country a rdfs:Class ;
     rdfs:label "Country" .
 
-agrontology:hasAbbreviation a rdf:Property ;
+agrontology:hasAbbreviation a rdf:Property,
+        owl:ObjectProperty ;
     rdfs:label "has abbreviation" .
 
-agrontology:hasSymbol a rdf:Property ;
+agrontology:hasSymbol a rdf:Property,
+        owl:ObjectProperty ;
     rdfs:label "has symbol" .
 
 af-x:AFX_0000388 a rdf:Property ;
@@ -176,7 +176,8 @@ dcterms:source a rdf:Property ;
 dcterms:title a rdf:Property ;
     rdfs:label "title" .
 
-qudt:conversionMultiplier a rdf:Property ;
+qudt:conversionMultiplier a rdf:Property,
+        owl:DatatypeProperty ;
     rdfs:label "conversion multiplier" .
 
 qudt:expression a rdf:Property ;
@@ -206,10 +207,12 @@ sorelch:hasMedium a rdf:Property ;
 sorelm:hasAverage a rdf:Property ;
     rdfs:label "has average" .
 
-sorelm:hasInterval a rdf:Property ;
+sorelm:hasInterval a rdf:Property,
+        owl:ObjectProperty ;
     rdfs:label "has interval" .
 
-sorelm:hasLowerBound a rdf:Property ;
+sorelm:hasLowerBound a rdf:Property,
+        owl:DatatypeProperty ;
     rdfs:label "has lower bound" .
 
 sorelm:hasMinimum a rdf:Property ;
@@ -221,10 +224,12 @@ sorelm:hasScale a rdf:Property ;
 sorelm:hasThreshold a rdf:Property ;
     rdfs:label "has threshold" .
 
-sorelm:hasUpperBound a rdf:Property ;
+sorelm:hasUpperBound a rdf:Property,
+        owl:DatatypeProperty ;
     rdfs:label "has upper bound" .
 
-sorelm:hasWeight a rdf:Property ;
+sorelm:hasWeight a rdf:Property,
+        owl:DatatypeProperty ;
     rdfs:label "has weight" .
 
 sorelph:from a rdf:Property ;
@@ -242,7 +247,8 @@ sorelsp:diameter a rdf:Property ;
 sorelsp:hasLength a rdf:Property ;
     rdfs:label "has length" .
 
-sorelsp:hasMaximumDepth a rdf:Property ;
+sorelsp:hasMaximumDepth a rdf:Property,
+        owl:ObjectProperty ;
     rdfs:label "has maximum depth" .
 
 om:hasFactor a rdf:Property ;
@@ -419,7 +425,8 @@ agrontology:follows a rdf:Property ;
     rdfs:label "follows" ;
     owl:inverseOf agrontology:precedes .
 
-agrontology:greaterThan a rdf:Property ;
+agrontology:greaterThan a rdf:Property,
+        owl:ObjectProperty ;
     rdfs:label "greater than" ;
     owl:inverseOf agrontology:smallerThan .
 
@@ -547,7 +554,8 @@ agrontology:prevents a rdf:Property ;
     rdfs:label "prevents" ;
     owl:inverseOf agrontology:isPreventedBy .
 
-agrontology:smallerThan a rdf:Property ;
+agrontology:smallerThan a rdf:Property,
+        owl:ObjectProperty ;
     rdfs:label "smaller than" ;
     owl:inverseOf agrontology:greaterThan .
 
@@ -563,7 +571,8 @@ af-x:AFX_0000355 a rdf:Property ;
     rdfs:label "is condition for" ;
     owl:inverseOf af-x:AFX_0000408 .
 
-af-x:AFX_0000408 a rdf:Property ;
+af-x:AFX_0000408 a rdf:Property,
+        owl:ObjectProperty ;
     rdfs:label "has condition" ;
     owl:inverseOf af-x:AFX_0000355 .
 
@@ -719,9 +728,9 @@ sio:SIO_000636 a rdf:Property ;
     rdfs:label "is trigger for" ;
     owl:inverseOf sio:SIO_000635 .
 
-sio:equivalentTo a rdf:Property ;
-    rdfs:label "equivalent to" ;
-    owl:inverseOf sio:equivalentTo .
+sio:equivalentTo a rdf:Property,
+        owl:AnnotationProperty ;
+    rdfs:label "equivalent to" .
 
 sorelpr:wasControlledBy a rdf:Property ;
     rdfs:label "was controlled by" ;
@@ -767,19 +776,6 @@ wdt:P1889 a rdf:Property ;
     rdfs:label "different from" ;
     owl:inverseOf wdt:P1889 .
 
-<https://agroportal.lirmm.fr/ontologies/SHKG> a dcat:CatalogRecord ;
-    agrontology:hasAbbreviation "SHKG" ;
-    dcterms:title "Soil Health Knowledge Graph"@en ;
-    foaf:primaryTopic <https://soilwise-he.github.io/soil-health> .
-
-<https://doi.org/10.3030/101112838> a foaf:Project ;
-    dcterms:title "An open access knowledge and data repository to safeguard soils"@en ;
-    citedcat:isAwardedBy [ foaf:name "European Commission" ] .
-
-<https://doi.org/10.5281/zenodo.14936019> a dcat:Dataset ;
-    dcterms:title "Soil Health Knowledge Graph"@en ;
-    foaf:primaryTopic <https://soilwise-he.github.io/soil-health> .
-
 she:Adsorption a skos:Concept ;
     skos:broader she:DerivedSoilProperties ;
     skos:exactMatch agrovoc:c_137,
@@ -796,7 +792,7 @@ she:AffectedLand a skos:Concept ;
         she:PollutantDistribution .
 
 she:AggregateStability a skos:Concept ;
-    dcterms:source she:Johnannes2017 ;
+    dcterms:source she:Johannes2017 ;
     skos:broader she:SoilStructuralParameters ;
     skos:exactMatch inrae:c_4714 ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
@@ -1951,7 +1947,7 @@ she:MatricPotentialValues a skos:Concept ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:MechanicalProperties a skos:Concept ;
-    dcterms:source she:Johnannes2017 ;
+    dcterms:source she:Johannes2017 ;
     skos:altLabel "mechanical property"@en ;
     skos:broader she:SoilStructuralParameters ;
     skos:exactMatch agrovoc:c_4683 ;
@@ -3232,7 +3228,8 @@ she:isCalculatedBy a rdf:Property ;
     rdfs:label "is calculated by" ;
     owl:inverseOf she:calculates .
 
-she:isConvertedFrom a rdf:Property ;
+she:isConvertedFrom a rdf:Property,
+        owl:ObjectProperty ;
     rdfs:label "is converted from" ;
     owl:inverseOf she:isConvertedTo .
 
@@ -8353,7 +8350,7 @@ she:SoilPenetrationResistance a skos:Concept ;
     dcterms:source she:Beylich2010,
         she:Gregory2006,
         she:Horn2022,
-        she:Johnannes2017,
+        she:Johannes2017,
         she:Schrader1999 ;
     skos:altLabel "penetration resistance"@en ;
     skos:broader she:SoilStructuralParameters ;
@@ -8418,7 +8415,7 @@ she:SoilPoreFunctions a skos:Concept ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:SoilPorosity a skos:Concept ;
-    dcterms:source she:Johnannes2017 ;
+    dcterms:source she:Johannes2017 ;
     skos:broader she:DerivedSoilProperties,
         she:SoilStructuralParameters ;
     skos:exactMatch agrovoc:c_35320,
@@ -10699,6 +10696,8 @@ she:Lopes2013 a dcterms:BibliographicResource ;
     dcterms:issued "2013-03"^^xsd:gYearMonth ;
     dcterms:publisher "Wiley" ;
     dcterms:title "Interpretation of Microbial Soil Indicators as a Function of Crop Yield and Organic Carbon" .
+
+she:LowestSOCContentThresholds a skos:Concept .
 
 she:LowestSOCContents a skos:Concept ;
     obo:RO_0002502 [ obo:BFO_0000066 she:AgriculturalSoils ;
@@ -14609,7 +14608,7 @@ she:SoilPollutionIndicator a skos:Concept ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:SoilStructuralParameters a skos:Concept ;
-    dcterms:source she:Johnannes2017 ;
+    dcterms:source she:Johannes2017 ;
     skos:altLabel "soil structural parameter"@en ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:narrower she:AggregateStability,
@@ -16421,7 +16420,7 @@ she:SoilNutrients a skos:Concept ;
 she:SoilTexture a skos:Concept ;
     obo:RO_0002508 she:SoilBiodiversity ;
     dcterms:source she:Dexter2008,
-        she:Johnannes2017 ;
+        she:Johannes2017 ;
     skos:broader she:SoilAttributes,
         she:TopsoilCompactionParameters ;
     skos:exactMatch agrovoc:c_7199,
@@ -17275,7 +17274,7 @@ she:PrecompressionStress a skos:Concept ;
         she:SoilRigidity ;
     obo:RO_0000053 she:ScalespanningParameter,
         she:SensitiveParameter ;
-    obo:RO_0002502 she:AnthropogenicProcess,
+    obo:RO_0002502 she:AnthropogenicProcesses,
         she:PedogenicProcesses,
         she:SoilMatricPotential ;
     qudt:unit unit:KiloPA ;
@@ -18469,7 +18468,7 @@ she:SoilOrganicMatter a skos:Concept ;
         she:SoilBuffering ;
     obo:RO_0002508 she:SoilBiodiversity ;
     dcterms:source she:Blume2016,
-        she:Johnannes2017,
+        she:Johannes2017,
         she:Musinguzi2013,
         she:Olson2014,
         she:Pribyl2010 ;
@@ -18709,31 +18708,6 @@ she:SoilFunctions a skos:Concept ;
     she:isIndicatedBy she:SoilIndicators .
 
 <https://soilwise-he.github.io/soil-health> a skos:ConceptScheme ;
-    dcterms:abstract "The soil health knowledge graph (SHKG) is designed to unify fragmented interpretations of soil health—a concept variably defined across research, policymaking, and agricultural practice—by structuring insights mainly from the European Environment Agency's report Soil Monitoring in Europe: Indicators and Thresholds for Soil Health Assessments. The KG leverages SKOS (Simple Knowledge Organization System) as its core framework to model soil health concepts, soil threat indicators and their critical thresholds, while Dublin Core standardizes metadata for references in the report. Relationships between entities are semantically defined using existing ontologies such as Agrontology and OBO Relation Ontology. The KG is linked to external vocabularies including AGROVOC, GloSIS, ISO 11074:2025, GEMET and INRAE Thesaurus. The SHKG comprises a total of 11,719 RDF triples. These triples describe 2,017 distinct entities. The majority of these entities (1,785) represent soil-related concepts extracted from the knowledge sources. The remaining entities include 158 bibliographic references cited in the source text, along with other supportive entities such as relevant policies, standards, regulations, geographical regions (e.g., cities, continents), and mathematical or quantitative entities (including models, equations, and units of measure). Structurally, the KG leverages 19 classes and 205 properties drawn from the selected ontologies to formally define the types of entities and the relationships between them."@en ;
-    dcterms:contributor [ rdfs:seeAlso <https://orcid.org/0000-0002-1391-7104> ;
-            foaf:name "Anna Fensel" ;
-            schema:affiliation [ rdfs:seeAlso <https://www.wur.nl/> ;
-                    foaf:name "Wageningen University & Research" ] ],
-        [ rdfs:seeAlso <https://orcid.org/0000-0002-5851-2071/> ;
-            foaf:name "Luís Moreira de Sousa" ;
-            schema:affiliation [ rdfs:seeAlso <https://tecnico.ulisboa.pt/> ;
-                    foaf:name "Instituto Superior Técnico" ] ],
-        [ rdfs:seeAlso <https://orcid.org/0000-0002-4789-174X> ;
-            foaf:name "Paul van Genuchten" ;
-            schema:affiliation [ rdfs:seeAlso <https://www.isric.org/> ;
-                    foaf:name "ISRIC - World Soil Information" ] ] ;
-    dcterms:created "2024-09-30"^^xsd:date ;
-    dcterms:creator [ rdfs:seeAlso <https://orcid.org/0009-0008-5213-5114> ;
-            foaf:name "Beichen Wang" ;
-            schema:affiliation [ rdfs:seeAlso <https://www.wur.nl/> ;
-                    foaf:name "Wageningen University & Research" ] ] ;
-    dcterms:isReferencedBy <https://agroportal.lirmm.fr/ontologies/SHKG>,
-        <https://doi.org/10.5281/zenodo.14936019> ;
-    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2025-11-27"^^xsd:date ;
-    dcterms:rights "This knowledge graph is distributed under Creative Commons Attribution 4.0 International - https://creativecommons.org/licenses/by/4.0/"@en ;
-    dcterms:title "Soil health knowledge graph"@en ;
-    owl:versionInfo "v0.2.6" ;
     skos:hasTopConcept she:AbioticEnvironment,
         she:Abundance,
         she:AcceptableRiskLevels,
@@ -20065,6 +20039,288 @@ she:SoilFunctions a skos:Concept ;
         she:YieldBenefits,
         she:YieldDevelopment,
         she:YieldResponse,
-        she:YoungSoils ;
-    citedcat:isFundedBy <https://doi.org/10.3030/101112838> .
+        she:YoungSoils .
 
+
+
+# Ontology term declarations from in_ontovocabs/ontology.ttl (excluding KG metadata).
+
+rdf:Property a rdfs:Class ;
+    rdfs:label "Property" .
+
+rdfs:Class a rdfs:Class ;
+    rdfs:label "Class" .
+
+rdfs:Datatype a rdfs:Class ;
+    rdfs:label "Datatype" .
+
+dcterms:creator a rdf:Property ;
+    rdfs:label "creator" .
+
+dcterms:identifier a rdf:Property ;
+    rdfs:label "identifier" .
+
+dcterms:isPartOf a rdf:Property ;
+    rdfs:label "is part of" .
+
+dcterms:issued a rdf:Property ;
+    rdfs:label "date issued" .
+
+dcterms:publisher a rdf:Property ;
+    rdfs:label "publisher" .
+
+qudt:LatexString a rdfs:Datatype ;
+    rdfs:label "Latex String" .
+
+qudt:floatPercentage a rdfs:Datatype ;
+    rdfs:label "float percentage" .
+
+qudt:integerPercentage a rdfs:Datatype ;
+    rdfs:label "integer percentage" .
+
+rdf:langString a rdfs:Datatype ;
+    rdfs:label "language-tagged string" .
+
+rdfs:label a rdf:Property ;
+    rdfs:label "label" .
+
+xsd:anyURI a rdfs:Datatype ;
+    rdfs:label "anyURI" .
+
+xsd:date a rdfs:Datatype ;
+    rdfs:label "date" .
+
+xsd:float a rdfs:Datatype ;
+    rdfs:label "float" .
+
+xsd:gYear a rdfs:Datatype ;
+    rdfs:label "gYear" .
+
+xsd:gYearMonth a rdfs:Datatype ;
+    rdfs:label "gYearMonth" .
+
+xsd:int a rdfs:Datatype ;
+    rdfs:label "int" .
+
+xsd:string a rdfs:Datatype ;
+    rdfs:label "string" .
+
+owl:inverseOf a rdf:Property ;
+    rdfs:label "inverse of" .
+
+# Reviewed OWL property types (historical audit: tmp/owl_property_type_audit.md).
+# External OWL kinds follow the cited vocabulary versions; DCMI/Schema.org
+# and SHKG kinds are explicit local profile decisions. Existing usage/model
+# conflicts remain deferred; RDF/OWL structural predicates are not redeclared
+# as application properties. Existing assertions are unchanged.
+agrontology:affects a owl:ObjectProperty .
+agrontology:benefitsFrom a owl:ObjectProperty .
+agrontology:causes a owl:ObjectProperty .
+agrontology:compose a owl:ObjectProperty .
+agrontology:follows a owl:ObjectProperty .
+agrontology:hasCommonNameConcept a owl:ObjectProperty .
+agrontology:hasComponent a owl:ObjectProperty .
+agrontology:hasPart a owl:ObjectProperty .
+agrontology:hasProperty a owl:ObjectProperty .
+agrontology:hasTaxonomicConcept a owl:ObjectProperty .
+agrontology:hasType a owl:ObjectProperty .
+agrontology:includes a owl:ObjectProperty .
+agrontology:isAffectedBy a owl:ObjectProperty .
+agrontology:isBeneficialFor a owl:ObjectProperty .
+agrontology:isCausedBy a owl:ObjectProperty .
+agrontology:isComponentOf a owl:ObjectProperty .
+agrontology:isComposedOf a owl:ObjectProperty .
+agrontology:isDerivedFrom a owl:ObjectProperty .
+agrontology:isIncludedIn a owl:ObjectProperty .
+agrontology:isMadeFrom a owl:ObjectProperty .
+agrontology:isMeasuredBy a owl:ObjectProperty .
+agrontology:isPartOf a owl:ObjectProperty .
+agrontology:isPerformedBy a owl:ObjectProperty .
+agrontology:isPreventedBy a owl:ObjectProperty .
+agrontology:isProcessFor a owl:ObjectProperty .
+agrontology:isPropertyOf a owl:ObjectProperty .
+agrontology:isSourceOf a owl:ObjectProperty .
+agrontology:isUseOf a owl:ObjectProperty .
+agrontology:isUsedAs a owl:ObjectProperty .
+agrontology:isUsedIn a owl:ObjectProperty .
+agrontology:isUsedToMake a owl:ObjectProperty .
+agrontology:makeUseOf a owl:ObjectProperty .
+agrontology:measures a owl:ObjectProperty .
+agrontology:performs a owl:ObjectProperty .
+agrontology:precedes a owl:ObjectProperty .
+agrontology:prevents a owl:ObjectProperty .
+agrontology:typeOf a owl:ObjectProperty .
+agrontology:usesProcess a owl:ObjectProperty .
+af-x:AFX_0000355 a owl:ObjectProperty .
+af-x:AFX_0000388 a owl:ObjectProperty .
+af-x:AFX_0001154 a owl:ObjectProperty .
+af-x:AFX_0002696 a owl:ObjectProperty .
+af-x:AFX_0002716 a owl:ObjectProperty .
+af-x:AFX_0002717 a owl:ObjectProperty .
+af-x:AFX_0002727 a owl:ObjectProperty .
+af-x:AFX_0002806 a owl:ObjectProperty .
+af-x:AFX_0002821 a owl:ObjectProperty .
+af-x:AFX_0002842 a owl:ObjectProperty .
+af-x:AFX_0002843 a owl:ObjectProperty .
+obo:BFO_0000066 a owl:ObjectProperty .
+obo:INO_0000082 a owl:ObjectProperty .
+obo:MICRO_0000105 a owl:ObjectProperty .
+obo:OAE_0000025 a owl:ObjectProperty .
+obo:OAE_0000186 a owl:ObjectProperty .
+obo:RO_0000052 a owl:ObjectProperty .
+obo:RO_0000053 a owl:ObjectProperty .
+obo:RO_0002211 a owl:ObjectProperty .
+obo:RO_0002212 a owl:ObjectProperty .
+obo:RO_0002213 a owl:ObjectProperty .
+obo:RO_0002326 a owl:ObjectProperty .
+obo:RO_0002327 a owl:ObjectProperty .
+obo:RO_0002331 a owl:ObjectProperty .
+obo:RO_0002333 a owl:ObjectProperty .
+obo:RO_0002334 a owl:ObjectProperty .
+obo:RO_0002335 a owl:ObjectProperty .
+obo:RO_0002336 a owl:ObjectProperty .
+obo:RO_0002339 a owl:ObjectProperty .
+obo:RO_0002341 a owl:ObjectProperty .
+obo:RO_0002434 a owl:ObjectProperty .
+obo:RO_0002502 a owl:ObjectProperty .
+obo:RO_0002507 a owl:ObjectProperty .
+obo:RO_0002508 a owl:ObjectProperty .
+obo:RO_0002552 a owl:ObjectProperty .
+obo:RO_0002610 a owl:ObjectProperty .
+obo:RO_0017003 a owl:ObjectProperty .
+obo:RO_0017004 a owl:ObjectProperty .
+obo:RO_0020202 a owl:ObjectProperty .
+obo:RO_0020203 a owl:ObjectProperty .
+obo:SEPIO_0000151 a owl:ObjectProperty .
+obo:T4FS_0000560 a owl:ObjectProperty .
+obo:T4FS_0000577 a owl:ObjectProperty .
+obo:TXPO_0003500 a owl:ObjectProperty .
+dcterms:contributor a rdf:Property, owl:AnnotationProperty ;
+    rdfs:label "contributor" .
+dcterms:creator a owl:AnnotationProperty .
+dcterms:date a owl:AnnotationProperty .
+dcterms:description a rdf:Property, owl:AnnotationProperty ;
+    rdfs:label "description" .
+dcterms:identifier a owl:AnnotationProperty .
+dcterms:isPartOf a owl:AnnotationProperty .
+dcterms:isReplacedBy a owl:ObjectProperty .
+dcterms:issued a owl:AnnotationProperty .
+dcterms:license a rdf:Property, owl:AnnotationProperty ;
+    rdfs:label "license" .
+dcterms:publisher a owl:AnnotationProperty .
+dcterms:replaces a owl:ObjectProperty .
+dcterms:source a owl:AnnotationProperty .
+dcterms:title a owl:AnnotationProperty .
+qudt:expression a owl:AnnotationProperty .
+qudt:numericValue a owl:AnnotationProperty .
+qudt:symbol a owl:AnnotationProperty .
+qudt:unit a owl:ObjectProperty .
+qudt:valueSN a owl:AnnotationProperty .
+sio:SIO_000064 a owl:ObjectProperty .
+sio:SIO_000066 a owl:ObjectProperty .
+sio:SIO_000128 a owl:ObjectProperty .
+sio:SIO_000202 a owl:ObjectProperty .
+sio:SIO_000205 a owl:ObjectProperty .
+sio:SIO_000210 a owl:ObjectProperty .
+sio:SIO_000272 a owl:ObjectProperty .
+sio:SIO_000283 a owl:ObjectProperty .
+sio:SIO_000291 a owl:ObjectProperty .
+sio:SIO_000292 a owl:ObjectProperty .
+sio:SIO_000364 a owl:ObjectProperty .
+sio:SIO_000365 a owl:ObjectProperty .
+sio:SIO_000557 a owl:ObjectProperty .
+sio:SIO_000563 a owl:ObjectProperty .
+sio:SIO_000635 a owl:ObjectProperty .
+sio:SIO_000636 a owl:ObjectProperty .
+sorelch:hasMedium a owl:ObjectProperty .
+sorelm:hasAverage a owl:ObjectProperty .
+sorelm:hasMinimum a owl:ObjectProperty .
+sorelm:hasScale a owl:ObjectProperty .
+sorelm:hasThreshold a owl:ObjectProperty .
+sorelph:from a owl:ObjectProperty .
+sorelph:hasTransport a owl:ObjectProperty .
+sorelph:to a owl:ObjectProperty .
+sorelpr:wasControlledBy a owl:ObjectProperty .
+sorelsp:above a owl:ObjectProperty .
+sorelsp:below a owl:ObjectProperty .
+sorelsp:diameter a owl:ObjectProperty .
+sorelsp:hasLength a owl:ObjectProperty .
+bao:BAO_0002586 a owl:ObjectProperty .
+bao:BAO_0095002 a owl:ObjectProperty .
+om:hasFactor a owl:DatatypeProperty .
+om:hasValue a owl:ObjectProperty .
+rdfs:label a owl:AnnotationProperty .
+rdfs:seeAlso a rdf:Property, owl:AnnotationProperty ;
+    rdfs:label "seeAlso" .
+owl:versionInfo a rdf:Property, owl:AnnotationProperty ;
+    rdfs:label "versionInfo" .
+skos:altLabel a owl:AnnotationProperty .
+skos:broader a owl:ObjectProperty .
+skos:closeMatch a owl:ObjectProperty .
+skos:definition a owl:AnnotationProperty .
+skos:exactMatch a owl:ObjectProperty .
+skos:hasTopConcept a owl:ObjectProperty .
+skos:inScheme a owl:ObjectProperty .
+skos:narrower a owl:ObjectProperty .
+skos:note a owl:AnnotationProperty .
+skos:prefLabel a owl:AnnotationProperty .
+skos:related a owl:ObjectProperty .
+skos:topConceptOf a owl:ObjectProperty .
+time:hasDuration a owl:ObjectProperty .
+time:year a owl:DatatypeProperty .
+time:years a owl:DatatypeProperty .
+prov:atLocation a owl:ObjectProperty .
+wdt:P1889 a owl:ObjectProperty .
+foaf:name a rdf:Property, owl:DatatypeProperty ;
+    rdfs:label "name" .
+schema:affiliation a rdf:Property, owl:ObjectProperty ;
+    rdfs:label "affiliation" .
+schema:isBasedOn a owl:ObjectProperty .
+she:absorbs a owl:ObjectProperty .
+she:accepts a owl:ObjectProperty .
+she:accompanies a owl:ObjectProperty .
+she:alters a owl:ObjectProperty .
+she:appliesTo a owl:ObjectProperty .
+she:bindsWith a owl:ObjectProperty .
+she:bioaccumulatesIn a owl:ObjectProperty .
+she:calculates a owl:ObjectProperty .
+she:characterises a owl:ObjectProperty .
+she:focusesOn a owl:ObjectProperty .
+she:forms a owl:ObjectProperty .
+she:hasBiomass a owl:ObjectProperty .
+she:hasDensity a owl:ObjectProperty .
+she:hasEquilibriumWith a owl:ObjectProperty .
+she:hasFreshBiomass a owl:ObjectProperty .
+she:indicates a owl:ObjectProperty .
+she:inputsFrom a owl:ObjectProperty .
+she:isAbsorbedBy a owl:ObjectProperty .
+she:isAcceptedBy a owl:ObjectProperty .
+she:isAccompaniedBy a owl:ObjectProperty .
+she:isAlteredBy a owl:ObjectProperty .
+she:isAvailableFor a owl:ObjectProperty .
+she:isCalculatedBy a owl:ObjectProperty .
+she:isCharacterisedBy a owl:ObjectProperty .
+she:isComparedWith a owl:ObjectProperty .
+she:isConvertedTo a owl:ObjectProperty .
+she:isDevelopedFor a owl:ObjectProperty .
+she:isEmittedTo a owl:ObjectProperty .
+she:isEssentialFor a owl:ObjectProperty .
+she:isExceeded a owl:ObjectProperty .
+she:isFormedBy a owl:ObjectProperty .
+she:isIndicatedBy a owl:ObjectProperty .
+she:isLimitedBy a owl:ObjectProperty .
+she:isReflectedBy a owl:ObjectProperty .
+she:isRequiredBy a owl:ObjectProperty .
+she:isRetainedBy a owl:ObjectProperty .
+she:isToxicTo a owl:ObjectProperty .
+she:limits a owl:ObjectProperty .
+she:reflects a owl:ObjectProperty .
+she:requires a owl:ObjectProperty .
+she:respondsTo a owl:ObjectProperty .
+she:sequesters a owl:ObjectProperty .
+she:suffersFrom a owl:ObjectProperty .
+she:variesIn a owl:ObjectProperty .
+biolink:consumed_by a owl:ObjectProperty .
+biolink:consumes a owl:ObjectProperty .
+biolink:has_percentage a owl:DatatypeProperty .
+repr:storedAt a owl:ObjectProperty .

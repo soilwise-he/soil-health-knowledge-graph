@@ -13,6 +13,7 @@
 @prefix iso11074: <https://data.geoscience.earth/ncl/ISO11074v2025/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -895,7 +896,7 @@ she:Agent a skos:Concept ;
     skos:prefLabel "agent"@en .
 
 she:AggregateStability a skos:Concept ;
-    dcterms:source she:Johnannes2017 ;
+    dcterms:source she:Johannes2017 ;
     skos:broader she:SoilStructuralParameters ;
     skos:exactMatch inrae:c_4714 ;
     skos:prefLabel "aggregate stability"@en .
@@ -3020,7 +3021,7 @@ she:MeasuredConcentrationInWater a skos:Concept ;
     skos:prefLabel "measured concentration in water"@en .
 
 she:MechanicalProperties a skos:Concept ;
-    dcterms:source she:Johnannes2017 ;
+    dcterms:source she:Johannes2017 ;
     skos:altLabel "mechanical property"@en ;
     skos:broader she:SoilStructuralParameters ;
     skos:exactMatch agrovoc:c_4683 ;
@@ -6757,6 +6758,8 @@ she:Loosening a skos:Concept ;
     skos:prefLabel "loosening"@en ;
     skos:related she:NaturalDecompression .
 
+she:LowestSOCContentThresholds a skos:Concept .
+
 she:LowestSOCContents a skos:Concept ;
     obo:RO_0002502 [ obo:BFO_0000066 she:AgriculturalSoils ;
             skos:related she:CropYieldResponse ],
@@ -7765,7 +7768,7 @@ she:SoilPenetrationResistance a skos:Concept ;
     dcterms:source she:Beylich2010,
         she:Gregory2006,
         she:Horn2022,
-        she:Johnannes2017,
+        she:Johannes2017,
         she:Schrader1999 ;
     skos:altLabel "penetration resistance"@en ;
     skos:broader she:SoilStructuralParameters ;
@@ -7773,7 +7776,7 @@ she:SoilPenetrationResistance a skos:Concept ;
     skos:prefLabel "soil penetration resistance"@en .
 
 she:SoilPorosity a skos:Concept ;
-    dcterms:source she:Johnannes2017 ;
+    dcterms:source she:Johannes2017 ;
     skos:broader she:DerivedSoilProperties,
         she:SoilStructuralParameters ;
     skos:exactMatch agrovoc:c_35320,
@@ -10724,7 +10727,7 @@ she:SoilPollutionIndicator a skos:Concept ;
         she:CriticalLevel .
 
 she:SoilStructuralParameters a skos:Concept ;
-    dcterms:source she:Johnannes2017 ;
+    dcterms:source she:Johannes2017 ;
     skos:altLabel "soil structural parameter"@en ;
     skos:narrower she:AggregateStability,
         she:MechanicalProperties,
@@ -12738,7 +12741,7 @@ she:SoilNutrients a skos:Concept ;
 she:SoilTexture a skos:Concept ;
     obo:RO_0002508 she:SoilBiodiversity ;
     dcterms:source she:Dexter2008,
-        she:Johnannes2017 ;
+        she:Johannes2017 ;
     skos:broader she:SoilAttributes,
         she:TopsoilCompactionParameters ;
     skos:exactMatch agrovoc:c_7199,
@@ -13506,7 +13509,7 @@ she:PrecompressionStress a skos:Concept ;
         she:SoilRigidity ;
     obo:RO_0000053 she:ScalespanningParameter,
         she:SensitiveParameter ;
-    obo:RO_0002502 she:AnthropogenicProcess,
+    obo:RO_0002502 she:AnthropogenicProcesses,
         she:PedogenicProcesses,
         she:SoilMatricPotential ;
     qudt:unit unit:KiloPA ;
@@ -14542,7 +14545,7 @@ she:SoilOrganicMatter a skos:Concept ;
         she:SoilBuffering ;
     obo:RO_0002508 she:SoilBiodiversity ;
     dcterms:source she:Blume2016,
-        she:Johnannes2017,
+        she:Johannes2017,
         she:Musinguzi2013,
         she:Olson2014,
         she:Pribyl2010 ;
@@ -14774,3 +14777,17 @@ she:SoilFunctions a skos:Concept ;
         she:SoilRisk ;
     she:isIndicatedBy she:SoilIndicators .
 
+# Explicit OWL property types; existing usage conflicts remain deferred.
+agrontology:greaterThan a owl:ObjectProperty .
+agrontology:smallerThan a owl:ObjectProperty .
+agrontology:hasAbbreviation a owl:ObjectProperty .
+agrontology:hasSymbol a owl:ObjectProperty .
+af-x:AFX_0000408 a owl:ObjectProperty .
+qudt:conversionMultiplier a owl:DatatypeProperty .
+sio:equivalentTo a owl:AnnotationProperty .
+sorelm:hasInterval a owl:ObjectProperty .
+sorelm:hasLowerBound a owl:DatatypeProperty .
+sorelm:hasUpperBound a owl:DatatypeProperty .
+sorelm:hasWeight a owl:DatatypeProperty .
+sorelsp:hasMaximumDepth a owl:ObjectProperty .
+she:isConvertedFrom a owl:ObjectProperty .

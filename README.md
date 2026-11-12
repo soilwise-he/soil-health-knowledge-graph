@@ -150,10 +150,48 @@ These metrics provide complementary views: exact matching (Precision/Recall/F1),
 
 ## 🔗 Resource Availability
 
-* **Interactive Browser**:  [https://soilwise-he.github.io/soil-health](https://soilwise-he.github.io/soil-health)
+* **Interactive Browser**: [https://soilwise-he.github.io/soil-health-knowledge-graph/](https://soilwise-he.github.io/soil-health-knowledge-graph/) (the consolidated site, available after its first deployment; the [legacy site](https://soilwise-he.github.io/soil-health/) remains available during migration)
 * **SPARQL Endpoint**:  [https://sparql.soilwise.wetransform.eu/sparql/](https://sparql.soilwise.wetransform.eu/sparql/)
 * **Searchable Vocabulary Browser**:  [https://voc.soilwise-he.containers.wur.nl/](https://voc.soilwise-he.containers.wur.nl/)
 * **AgroPortal Instance**:  [https://agroportal.lirmm.fr/ontologies/SHKG](https://agroportal.lirmm.fr/ontologies/SHKG)
+
+---
+
+## Build and publish the documentation
+
+The `.github/workflows/pages.yml` workflow builds documentation from
+`soil_health_SKOS.ttl`, which includes the complete SHKG ontology, using
+WIDOCO 1.4.25 and publishes it from this repository. It runs on relevant pushes
+to `main`, pull requests (build only), and manual dispatch. No external
+`widoco-action` repository or `gh-pages` branch is required.
+
+For a local build, install Java 17 and Python 3.10 or newer. No additional
+Python packages are required:
+
+```sh
+python scripts/build_widoco.py
+python -m http.server 8000 --directory build/site
+```
+
+Open `http://localhost:8000/`. The builder downloads a checksum-verified WIDOCO
+JAR into `.cache/widoco/`, applies the two rendering fixes in
+`scripts/patch_widoco_property_entries.py`, and runs WIDOCO. These fixes restore
+missing property entries and point five datatype targets to official documentation.
+Use `--java PATH` for an existing Java executable or `--jar PATH` for the original
+WIDOCO 1.4.25 JDK 17 JAR.
+
+The generated site is in `build/site/`, with an unchanged copy of `index-en.html`
+as `index.html`; the build log is `build/widoco.log`. RDF downloads use WIDOCO's
+own serializations, whose current OWL conversion omits some general RDF
+statements. The complete source graph remains in `soil_health_SKOS.ttl`.
+
+To publish, set this repository's **Settings → Pages → Source** to **GitHub
+Actions**, then run the workflow on `main`. Deploy and verify the new site
+before switching `soilwise-he/soil-health` to its redirect-only workflow.
+That legacy site preserves browser paths, query strings, and term fragments;
+GitHub Pages does not provide server-side HTTP redirects for RDF clients.
+This hosting migration does not change the RDF namespace. A future w3id
+registration should target the new documentation URL and its RDF downloads.
 
 ---
 
