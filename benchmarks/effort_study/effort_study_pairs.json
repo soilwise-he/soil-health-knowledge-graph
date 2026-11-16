@@ -1,0 +1,981 @@
+{
+  "description": "Twenty paragraphs in ten matched pairs for the annotation-effort study; each also fills a gap in the soil health KG.",
+  "selected_on": "2026-11-15",
+  "revised_on": "2026-11-16",
+  "revision": "Seven paragraphs were replaced after the author's review because they carried little information or were hard to express as RDF triples. No new paragraph comes from chapter 10 of the Monitoring report.",
+  "replaced": [
+    {
+      "id": "S1120",
+      "opening": "Coastal waterlogging. In coastal areas, saltwater intrusion"
+    },
+    {
+      "id": "S697",
+      "opening": "Fire. Wildfires on peatlands are becoming a common phenomenon"
+    },
+    {
+      "id": "S693",
+      "opening": "Drainage. Drainage is the key driver of the degradation of peat soils"
+    },
+    {
+      "id": "S345",
+      "opening": "Protecting soil cultural heritage is crucial for enhancing soil security"
+    },
+    {
+      "id": "M32",
+      "opening": "Previously a distinction between soil threat indicators and soil functional indicators"
+    },
+    {
+      "id": "M512",
+      "opening": "Three sampling intensities can be distinguished"
+    },
+    {
+      "id": "M230",
+      "opening": "Soil and groundwater quality assessment is, at present, largely based"
+    }
+  ],
+  "kg_snapshot": "soil_health_KG.ttl at commit 2c00a83 (13,040 triples, 1,765 concepts)",
+  "design": "Within each pair one paragraph is annotated from scratch and the other from an LLM draft; assign arms and task order with a seeded script before any draft is generated.",
+  "selection_rule": [
+    "Not among the 105 benchmark paragraphs and not among the texts the LLM was run on in eval_graphs/RDF_LLMs_raw.json (5-word-shingle overlap <= 0.05).",
+    "One paragraph or one list as printed, 85-185 words, at most one figure/table reference, not a case-study box.",
+    "Fills a documented gap in the KG snapshot (kg_evidence).",
+    "States concrete domain relations (mechanisms, definitions, thresholds, classifications) that map onto subject-predicate-object triples.",
+    "Pairs come from the same report and must pass every comparability limit below; exceptions are listed per pair under outside_limits."
+  ],
+  "comparability_limits": {
+    "predicted_triples_pct": 15,
+    "predicted_entities": "15% or 3",
+    "predicted_relations": "20% or 6",
+    "words_ratio": 1.25,
+    "citations": 3,
+    "numbers": 3,
+    "list_structure": "same"
+  },
+  "size_predictor": {
+    "trained_on": "105 gold paragraphs in benchmarks/text_RDF_gs.json",
+    "features": "words, author-year citations, numbers, enumeration marks (commas, semicolons, and/or), content chunks (runs of non-stopwords)",
+    "leave_one_out": {
+      "triples": {
+        "rmse": 18.3,
+        "mae": 14.1
+      },
+      "entities": {
+        "rmse": 4.7,
+        "mae": 3.5
+      },
+      "relations": {
+        "rmse": 11.6,
+        "mae": 9.1
+      }
+    },
+    "coefficients": {
+      "triples": {
+        "words": -0.311,
+        "cit": 3.142,
+        "num": 1.264,
+        "enum": 2.496,
+        "chunks": 2.008,
+        "intercept": -2.09
+      },
+      "entities": {
+        "words": -0.112,
+        "cit": 0.791,
+        "num": -0.117,
+        "enum": 0.613,
+        "chunks": 0.703,
+        "intercept": -0.41
+      },
+      "relations": {
+        "words": -0.065,
+        "cit": 1.384,
+        "num": 1.457,
+        "enum": 1.348,
+        "chunks": 0.512,
+        "intercept": -2.65
+      }
+    },
+    "note": "Uses no KG-dependent feature, so it is not biased by the fact that the 105 paragraphs built the KG."
+  },
+  "pairs": [
+    {
+      "pair": "P01",
+      "label": "Impacts and feedbacks",
+      "kind": "causal prose, about 100 words",
+      "members": [
+        {
+          "id": "S1128",
+          "status": "kept",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "4.7.3 Impacts",
+          "printed_page": 67,
+          "source_index": "markdown line 1128",
+          "words": 101,
+          "predicted": {
+            "triples": 76.5,
+            "entities": 22.2,
+            "relations": 30.7
+          },
+          "counts": {
+            "citations": 2,
+            "numbers": 0,
+            "bullets": 0
+          },
+          "gap": "Ecological impacts of salinisation",
+          "kg_evidence": "'soil salinisation' has no link to habitats, biodiversity or soil organisms.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {},
+          "text": "Environmental degradation. Soil salinisation can lead to the degradation of natural habitats, including wetlands, grasslands and forests, as salt-tolerant species may outcompete native vegetation. The loss of habitat diversity and ecosystem services can further exacerbate the impacts of soil salinisation on overall ecosystem health and resilience (Daliakopoulos et al., 2016). Increasing salinity can alter soil microbial communities and inhibit the growth of native plant species, leading to reduced biodiversity and ecosystem resilience. Changes in soil salinity can also impact soil-dwelling organisms, such as earthworms and beneficial microbes, which play crucial roles in nutrient cycling and soil health (Saviozzi et al., 2011)."
+        },
+        {
+          "id": "S419",
+          "status": "kept",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "3.5 Disturbances (wildfires, droughts and windstorms)",
+          "printed_page": 24,
+          "source_index": "markdown line 419",
+          "words": 105,
+          "predicted": {
+            "triples": 70.0,
+            "entities": 19.7,
+            "relations": 29.5
+          },
+          "counts": {
+            "citations": 2,
+            "numbers": 1,
+            "bullets": 0
+          },
+          "gap": "Wildfire and soil degradation feedback",
+          "kg_evidence": "No wildfire concept (only 'soils subject to forest fires'); 'desertification' has 3 relations.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {},
+          "text": "Soil degradation can significantly influence fire activity. Degraded soils are often less able to retain moisture, leading to drier conditions that can contribute to the flammability of vegetation (O et al., 2020). Conversely, fires themselves can exacerbate soil degradation by reducing organic matter, altering soil structure and increasing erosion risk (McGuire et al., 2024). In doing so, they create a feedback loop originating from multiple disturbances, leading to further soil degradation, limited ecosystem recovery and eventually desertification (Neary, 2009). To mitigate these impacts, adjusting land management practices is crucial. Therefore, the implementation of effective adaptation strategies by the EU and its Member States is vital."
+        }
+      ],
+      "comparability": {
+        "words_ratio": 1.04,
+        "predicted_triples_difference_pct": 8.9,
+        "predicted_entities_difference": 2.5,
+        "predicted_relations_difference": 1.2,
+        "citations_difference": 0,
+        "numbers_difference": 1,
+        "outside_limits": []
+      },
+      "assigned_conditions": null
+    },
+    {
+      "pair": "P02",
+      "label": "Soil inorganic carbon",
+      "kind": "causal prose, about 100 words",
+      "members": [
+        {
+          "id": "S735",
+          "status": "kept",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "4.3.3.3 Impacts",
+          "printed_page": 42,
+          "source_index": "markdown line 735",
+          "words": 103,
+          "predicted": {
+            "triples": 81.5,
+            "entities": 23.4,
+            "relations": 33.3
+          },
+          "counts": {
+            "citations": 3,
+            "numbers": 0,
+            "bullets": 0
+          },
+          "gap": "Inorganic carbon and carbon sequestration",
+          "kg_evidence": "No concept for soil inorganic carbon or carbonates.",
+          "overlap_with_105": 0.01,
+          "overlap_with_llm_predictions": 0.01,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {
+            "SIC": "Soil Inorganic Carbon",
+            "SOC": "Soil organic carbon"
+          },
+          "text": "Carbon sequestration. The retention of SIC helps maintain the soil's capacity to sequester carbon, potentially mitigating increases in atmospheric CO₂ levels and alleviating the effects of global warming. In addition, because of the role of SIC in organic matter stabilisation, changes in SIC concentration, typology and physical distribution in soils can have consequences for SOC storage and protection in agricultural soils (Raza et al., 2021). Fertiliser-induced soil acidity and leaching loss in agricultural ecosystems may cause irreversable changes in soil carbon (e.g. organic and inorganic) levels, and SIC stocks could be lost entirely as CO₂ (Zamanian et al., 2018; Zamanian and Kuzyakov, 2019).",
+          "source_note": "'irreversable' is spelled this way in the published report."
+        },
+        {
+          "id": "S729",
+          "status": "kept",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "4.3.3.2 Drivers",
+          "printed_page": 42,
+          "source_index": "markdown line 729",
+          "words": 94,
+          "predicted": {
+            "triples": 76.7,
+            "entities": 21.5,
+            "relations": 32.6
+          },
+          "counts": {
+            "citations": 3,
+            "numbers": 0,
+            "bullets": 0
+          },
+          "gap": "Irrigation and inorganic-carbon cycling",
+          "kg_evidence": "No concept for soil inorganic carbon, bicarbonate or pedogenic carbonates.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {
+            "SIC": "Soil Inorganic Carbon"
+          },
+          "text": "Irrigation. By changing the soil water regime, affecting primary productivity and biological activity, and acting as a source of calcium and/or bicarbonate, irrigation interferes with many aspects of SIC cycling. In addition, the partial pressure of CO₂ in soil solution is affected by irrigation, which influences bicarbonate leaching (Greenway et al., 2006). Thus, irrigation has been observed to increase the emission of CO₂ from soils (Hannam et al., 2016), and to reduce the amount of carbonates in the silt and clay fractions, while increasing the proportion of pedogenic carbonates (de Soto et al., 2017)."
+        }
+      ],
+      "comparability": {
+        "words_ratio": 1.1,
+        "predicted_triples_difference_pct": 6.1,
+        "predicted_entities_difference": 1.9,
+        "predicted_relations_difference": 0.7,
+        "citations_difference": 0,
+        "numbers_difference": 0,
+        "outside_limits": []
+      },
+      "assigned_conditions": null
+    },
+    {
+      "pair": "P03",
+      "label": "Short definitional and pathway accounts",
+      "kind": "short prose, about 87 words",
+      "members": [
+        {
+          "id": "S587",
+          "status": "new",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "4.3 Soil carbon change (in mineral soils, organic soils and inorganic carbon)",
+          "printed_page": 34,
+          "source_index": "markdown line 587",
+          "words": 87,
+          "predicted": {
+            "triples": 61.0,
+            "entities": 16.8,
+            "relations": 26.2
+          },
+          "counts": {
+            "citations": 2,
+            "numbers": 1,
+            "bullets": 0
+          },
+          "gap": "Mineral soils versus organic soils",
+          "kg_evidence": "'mineral soils' has 2 relations (only Regosols as narrower); organic soils have no definition or criteria.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {
+            "GHG": "Greenhouse gases",
+            "IPCC": "Intergovernmental Panel on Climate Change"
+          },
+          "text": "Mineral soils form most of the world's cultivated land and may contain a trace of or up to 20 % organic matter. Organic soils are naturally rich in organic matter, principally due to vegetation and climate, and are distinguished from mineral soils by meeting specific criteria outlined in the IPCC guidelines for national GHG inventories (Drösler et al., 2014) and Food and Agriculture Organization (FAO) guidelines (FAO, 2006). These criteria include a thick organic horizon, a high organic carbon content, and the possibility of water saturation episodes."
+        },
+        {
+          "id": "S1026",
+          "status": "new",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "4.6.2 Drivers",
+          "printed_page": 61,
+          "source_index": "markdown line 1026",
+          "words": 86,
+          "predicted": {
+            "triples": 61.9,
+            "entities": 17.3,
+            "relations": 25.7
+          },
+          "counts": {
+            "citations": 4,
+            "numbers": 0,
+            "bullets": 0
+          },
+          "gap": "Antibiotics and antimicrobial resistance",
+          "kg_evidence": "'antibiotics' has 4 relations, all taxonomic; no concept for antibiotic resistance genes or antimicrobial resistance.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {},
+          "text": "The release of antibiotics and other pharmaceuticals to soils tends to result from the spreading of manure (de la Torre et al., 2012), the discharge of effluent from manufacturing plants, the spreading of sewage sludge or grazing livestock (European Parliament, 2021). The release of these pharmaceuticals results, among other things, in the development of antibiotic resistance genes in soil (Delgado-Baquerizo et al., 2020). Similarly, heavy metals and biocides have been described as factors promoting the development of antimicrobial resistance by selective pressure (Cycoń et al., 2019)."
+        }
+      ],
+      "comparability": {
+        "words_ratio": 1.01,
+        "predicted_triples_difference_pct": 1.5,
+        "predicted_entities_difference": 0.5,
+        "predicted_relations_difference": 0.5,
+        "citations_difference": 2,
+        "numbers_difference": 1,
+        "outside_limits": []
+      },
+      "assigned_conditions": null
+    },
+    {
+      "pair": "P04",
+      "label": "Quantified status with thresholds or rates",
+      "kind": "figures with units, 3 to 5 citations",
+      "members": [
+        {
+          "id": "S496",
+          "status": "kept",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "4.1.1 Status and trends",
+          "printed_page": 29,
+          "source_index": "markdown line 496",
+          "words": 128,
+          "predicted": {
+            "triples": 85.0,
+            "entities": 20.4,
+            "relations": 43.2
+          },
+          "counts": {
+            "citations": 3,
+            "numbers": 7,
+            "bullets": 0
+          },
+          "gap": "Potassium status and thresholds",
+          "kg_evidence": "'potassium' has 11 relations, all taxonomic or its symbol; no potassium threshold.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {
+            "K": "potassium"
+          },
+          "text": "Available K concentrations, determined using ammonium acetate, vary across the EU and the United Kingdom depending on parent material, soil clay content and manuring history, with higher concentrations in clay-rich soils (Ballabio et al., 2019). K inputs are usually higher in countries or regions with intensive animal husbandry. For example, in France, the exchangeable K thresholds (ARVALIS, 2020) defining the risk of K deficiency vary from 49 mg kg⁻¹ to 247 mg kg⁻¹ (with an average of 123 mg kg⁻¹) depending on soil type (Comifer, 2019). Using these threshold values, 16 % and 68 % of EU and UK agricultural soils have exchangeable K concentrations of below 123 mg kg⁻¹ and 247 mg kg⁻¹, respectively. They can therefore be considered soils with low K levels for biomass production."
+        },
+        {
+          "id": "S771",
+          "status": "new",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "4.4.1 Status and trends",
+          "printed_page": 45,
+          "source_index": "markdown line 771",
+          "words": 146,
+          "predicted": {
+            "triples": 78.1,
+            "entities": 18.7,
+            "relations": 40.0
+          },
+          "counts": {
+            "citations": 4,
+            "numbers": 5,
+            "bullets": 0
+          },
+          "gap": "Piping erosion: mechanism and soil-loss rates",
+          "kg_evidence": "'piping erosion' has 6 relations (caused by subsurface flow, broader water erosion); no definition and no soil-loss figures.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 2,
+          "abbreviations": {},
+          "text": "Piping erosion is the removal of soil particles by concentrated subsurface flows, leading to the formation of underground channels called pipes (Bernatek-Jakiel and Poesen, 2018). The occurrence of this process becomes visible at the surface when the roof of a pipe collapses and thus transforms the pipe into a gully. As such, piping erosion may accelerate gully erosion by stimulating the formation of new gullies and intensifying gully headcut retreating rates. Piping erosion leads to soil losses with significant variability; in affected areas of Europe, they have been estimated to range from 1.3 t ha⁻¹ yr⁻¹ to 15 t ha⁻¹ yr⁻¹ in grasslands (Verachtert et al., 2011; Bernatek-Jakiel and Poesen, 2018), and they can even reach 120 t ha⁻¹ yr⁻¹ in Spanish farmlands (Díaz and Sinoga, 2015). It is estimated that the area threatened by piping erosion in the EU exceeds 260 000 km² (Faulkner, 2006)."
+        }
+      ],
+      "comparability": {
+        "words_ratio": 1.14,
+        "predicted_triples_difference_pct": 8.5,
+        "predicted_entities_difference": 1.7,
+        "predicted_relations_difference": 3.2,
+        "citations_difference": 1,
+        "numbers_difference": 2,
+        "outside_limits": []
+      },
+      "assigned_conditions": null
+    },
+    {
+      "pair": "P05",
+      "label": "Quantified findings with many citations",
+      "kind": "figures plus six citations each",
+      "members": [
+        {
+          "id": "S977",
+          "status": "kept",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "4.6.1 Status and trends",
+          "printed_page": 58,
+          "source_index": "markdown line 977",
+          "words": 118,
+          "predicted": {
+            "triples": 99.2,
+            "entities": 23.5,
+            "relations": 51.5
+          },
+          "counts": {
+            "citations": 6,
+            "numbers": 6,
+            "bullets": 0
+          },
+          "gap": "Pesticide residues",
+          "kg_evidence": "No concept for pesticide residues, glyphosate or AMPA.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {},
+          "text": "Pesticide residues are commonly found in European agricultural soils (74.5 %), whereas most samples (57.1 %) present mixtures of residues across crops and farming systems (Vieira et al., 2023b). In organically managed soils, mostly long-banned substances are found, while conventionally managed soils host mostly a mix of compounds currently in use and recently or long banned. Glyphosate and its main metabolite aminomethylphosphonic acid, and dichlorodiphenyltrichloroethane, are the compounds most frequently found in soils (Geissen et al., 2021; Riedo et al., 2021; Knuth et al., 2024). Comparison with past assessments (Silva et al., 2019) indicates a higher prevalence of pesticides residues, and a higher toxicity risk, in 2018 than in 2015 (Vieira et al., 2023b; Franco et al., 2024)."
+        },
+        {
+          "id": "S708",
+          "status": "kept",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "4.3.2.3 Impacts",
+          "printed_page": 40,
+          "source_index": "markdown line 708",
+          "words": 136,
+          "predicted": {
+            "triples": 99.7,
+            "entities": 25.5,
+            "relations": 47.5
+          },
+          "counts": {
+            "citations": 6,
+            "numbers": 4,
+            "bullets": 0
+          },
+          "gap": "Peatlands and water quality",
+          "kg_evidence": "No 'peatlands' concept; peat is not linked to water quality or nitrate.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {},
+          "text": "Reduced water quality. Peatlands play a crucial role in regulating water flow, filtering pollutants and maintaining water quality (Holden et al., 2004; Millennium Ecosystem Assessment, 2005; Zedler and Kercher, 2005). The loss of carbon from soil in peatlands can degrade water quality by increasing sedimentation, nutrient run-off and contamination from agricultural chemicals (Clutterbuck and Yallop, 2010). Drained peatlands with agricultural uses in the EU are also a source of 1-5 Mt of NO₃ annually (Tanneberger et al., 2021b). This can harm aquatic ecosystems, reduce water quality for human consumption and increase treatment costs for water utilities. Further negative consequences of drainage are a reduction in water quality through the discharge of nutrients to ground and surface water (Tanneberger et al., 2021b), and increasing water acidity in the case of sulphide-bearing peat drainage (Saarinen et al., 2013)."
+        }
+      ],
+      "comparability": {
+        "words_ratio": 1.15,
+        "predicted_triples_difference_pct": 0.5,
+        "predicted_entities_difference": 2.0,
+        "predicted_relations_difference": 4.0,
+        "citations_difference": 0,
+        "numbers_difference": 2,
+        "outside_limits": []
+      },
+      "assigned_conditions": null
+    },
+    {
+      "pair": "P06",
+      "label": "Mechanisms, longest",
+      "kind": "long mechanistic prose, 8 citations each",
+      "members": [
+        {
+          "id": "S367",
+          "status": "kept",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "3.1 Climate change",
+          "printed_page": 21,
+          "source_index": "markdown line 367",
+          "words": 166,
+          "predicted": {
+            "triples": 152.1,
+            "entities": 42.0,
+            "relations": 67.2
+          },
+          "counts": {
+            "citations": 8,
+            "numbers": 0,
+            "bullets": 0
+          },
+          "gap": "Climate change as a driver",
+          "kg_evidence": "'climate change' has 9 relations, none to decomposition, compaction, salinisation or desertification.",
+          "overlap_with_105": 0.01,
+          "overlap_with_llm_predictions": 0.01,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {},
+          "text": "Climate change is one of the primary drivers of soil degradation (Banerjee and van der Heijden, 2023), exerting significant influence through various mechanisms. Prolonged periods of drought and rising temperatures exert significant pressure on soil resources such as water and nutrients. Rising temperatures affect soil condition by altering heterotrophic activity, organic matter decomposition rates and nutrient cycling processes. Warmer temperatures can accelerate soil organic matter decomposition, leading to carbon loss and reduced soil fertility (Wang et al., 2021). In addition, extreme temperature fluctuations can affect soil structure and stability, increasing the risk of soil erosion, compaction and salinisation (Daliakopoulos et al., 2016; Kelishadi et al., 2018; Panagos et al., 2021; Kaushal et al., 2023). Changes in precipitation patterns, including the frequency, intensity and distribution of rainfall events, can have a profound impact on soil (Meng et al., 2021). Excessive rainfall can cause soil erosion, nutrient leaching and waterlogging, while drought can lead to soil moisture depletion, increasing susceptibility to erosion and desertification (Ferreira et al., 2022)."
+        },
+        {
+          "id": "S531",
+          "status": "kept",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "4.2 Soil acidification",
+          "printed_page": 31,
+          "source_index": "markdown line 531",
+          "words": 173,
+          "predicted": {
+            "triples": 138.9,
+            "entities": 36.8,
+            "relations": 65.3
+          },
+          "counts": {
+            "citations": 8,
+            "numbers": 0,
+            "bullets": 0
+          },
+          "gap": "Acidification and buffer capacity",
+          "kg_evidence": "'soil acid neutralising capacity' has 5 relations and 'soil buffer capacity' 2; no concept for calcareous soils.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {},
+          "text": "Soil acidification, defined as a decrease in the acid neutralisation capacity of the soil (De Vries and Breeuwsma, 1987; Guo et al., 2010) is a major issue all around the world. In calcareous soils with a high natural buffer capacity, there is little concern, as the pH remains stable and slightly alkaline until all carbonates are depleted. This depletion depends on their dissolution rate. However, in non-calcareous soils, with a low buffer capacity, especially sandy soils with low organic matter content, soil acidification may cause a relatively fast decline in soil pH and base saturation. Soil pH is an important indicator of soil health, as it affects the availability and mobility of nutrients and toxic elements (e.g. aluminium, cadmium and other heavy metals). As a consequence, it affects primary productivity (Bolan et al., 2003; Pagani and Mallarino, 2012; Hartemink and Barrow, 2023), the quality of surrounding water bodies (Haynes and Swift, 1986; Dijkstra et al., 2004), and the functioning of soil as a habitat for organisms and hence biodiversity (Siciliano et al., 2014)."
+        }
+      ],
+      "comparability": {
+        "words_ratio": 1.04,
+        "predicted_triples_difference_pct": 9.1,
+        "predicted_entities_difference": 5.2,
+        "predicted_relations_difference": 1.9,
+        "citations_difference": 0,
+        "numbers_difference": 0,
+        "outside_limits": []
+      },
+      "assigned_conditions": null
+    },
+    {
+      "pair": "P07",
+      "label": "Drivers and susceptibility, long",
+      "kind": "long causal prose, 4 to 5 citations",
+      "members": [
+        {
+          "id": "S389",
+          "status": "kept",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "3.3 Socioeconomic drivers",
+          "printed_page": 22,
+          "source_index": "markdown line 389",
+          "words": 143,
+          "predicted": {
+            "triples": 127.4,
+            "entities": 35.6,
+            "relations": 55.2
+          },
+          "counts": {
+            "citations": 5,
+            "numbers": 0,
+            "bullets": 0
+          },
+          "gap": "Socioeconomic drivers",
+          "kg_evidence": "No concept for socioeconomic factors, population growth as a driver, monoculture or deforestation.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {},
+          "text": "Socioeconomic factors play a crucial role in driving soil degradation, reflecting complex interactions between human activities and environmental dynamics (Gambella et al., 2021). Rapid population growth and urbanisation exert pressure on agricultural land, leading to intensified farming practices and expansion into marginal areas (Beckers et al., 2020). Intensive agriculture, driven by the demand for food and commodities, often involves the excessive use of chemical inputs, extensive tillage and monoculture cropping, which degrade soil and reduce biodiversity (Emmerson et al., 2016). Land use changes, driven by economic incentives and policies, such as deforestation for agriculture or infrastructure development, further exacerbate soil degradation by disrupting natural ecosystems and increasing erosion rates (Olsson et al., 2019). In addition, socioeconomic inequalities and lack of access to resources and knowledge can limit sustainable land management practices, leading to land degradation and loss of livelihoods (Schuh et al., 2022)."
+        },
+        {
+          "id": "S896",
+          "status": "new",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "4.5 Soil compaction",
+          "printed_page": 53,
+          "source_index": "markdown line 896",
+          "words": 185,
+          "predicted": {
+            "triples": 127.2,
+            "entities": 34.9,
+            "relations": 56.8
+          },
+          "counts": {
+            "citations": 4,
+            "numbers": 2,
+            "bullets": 0
+          },
+          "gap": "Compaction: definition and susceptibility",
+          "kg_evidence": "'soil compaction' is well connected, but there is no concept for field capacity or stocking density and no bulk-density limit for root development by texture.",
+          "overlap_with_105": 0.01,
+          "overlap_with_llm_predictions": 0.01,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 2,
+          "abbreviations": {},
+          "text": "Compaction is defined as the densification of soil due to the application of mechanical stresses that exceed soils' internal strength. These stresses can be applied by natural processes (overbearing weight from upper layers of soil or thick layers of ice) and by human activities (construction of infrastructures, frequent traffic on pathways, high animal stocking densities). Therefore, soil compaction is not a recent phenomenon, and its natural or anthropogenic origin can be identified (Schneider and Don, 2019). Soils with high clay and low organic matter content are more prone to compaction due to their tendency to form hard, dense layers when subjected to high surface pressures. In fact, sandy and clay-rich soils with a bulk density (BD) above 1.80 g cm⁻³ and 1.47 g cm⁻³ respectively, could constrain root development (USDA, 1987). Soils are more susceptible to compaction in wet conditions (Greenwood and McKenzie, 2001; Hamza and Anderson, 2005). Under such conditions, the risk of compaction increases as soil clay content increases and soil organic matter content decreases. When soil moisture reaches or exceeds field capacity, there is greater potential for soil compaction, particularly in topsoil.",
+          "source_note": "Exceeds the word-ratio limit with its partner S389 (185 against 143 words) while predicted triples, entities and relations agree within 2%. The within-limits alternative is to keep S389 with S531 and pair S367 with the erosion overview on State p. 43 ('Erosion is considered one of the most significant threats'), half of which is about monitoring programmes."
+        }
+      ],
+      "comparability": {
+        "words_ratio": 1.29,
+        "predicted_triples_difference_pct": 0.2,
+        "predicted_entities_difference": 0.7,
+        "predicted_relations_difference": 1.6,
+        "citations_difference": 1,
+        "numbers_difference": 2,
+        "outside_limits": [
+          "word ratio"
+        ]
+      },
+      "assigned_conditions": null
+    },
+    {
+      "pair": "P08",
+      "label": "Definitions and functions",
+      "kind": "short prose, about 95 words",
+      "members": [
+        {
+          "id": "M313",
+          "status": "kept",
+          "report": "Soil monitoring in Europe - Indicators and thresholds for soil health assessments (EEA, 2023)",
+          "section": "6.2 Soil biological indicators: state of the art",
+          "printed_page": 93,
+          "source_index": "soil_report.json[313]",
+          "words": 98,
+          "predicted": {
+            "triples": 69.5,
+            "entities": 20.0,
+            "relations": 28.0
+          },
+          "counts": {
+            "citations": 3,
+            "numbers": 0,
+            "bullets": 0
+          },
+          "gap": "Definition of soil biodiversity loss",
+          "kg_evidence": "'soil biodiversity loss' has no skos:definition; no concept for species richness.",
+          "overlap_with_105": 0.01,
+          "overlap_with_llm_predictions": 0.01,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {},
+          "text": "'Loss of soil biodiversity' means that species richness (presence and relative abundance) and activity levels are reduced, so that soil processes (e.g. organic matter decomposition) and consequently soil functions (e.g. nutrient provision) are hampered. This requires an indicator that could monitor the presence (diversity) and amount (abundance) of key species and/or functional groups in the soil (based on Bispo et al., 2009; Rutgers et al., 2009, Bouchez et al., 2016). Accordingly, high species diversity combined with high species abundance within functional groups would then provide a greater contribution from organisms to ecosystem services in a spatially diverse habitat."
+        },
+        {
+          "id": "M462",
+          "status": "new",
+          "report": "Soil monitoring in Europe - Indicators and thresholds for soil health assessments (EEA, 2023)",
+          "section": "9.1.4 Sealing and ecosystem services",
+          "printed_page": 130,
+          "source_index": "soil_report.json[462]",
+          "words": 92,
+          "predicted": {
+            "triples": 64.6,
+            "entities": 19.2,
+            "relations": 24.8
+          },
+          "counts": {
+            "citations": 1,
+            "numbers": 0,
+            "bullets": 0
+          },
+          "gap": "Permeable and porous pavements",
+          "kg_evidence": "No concept for permeable or porous pavements; the only pavement concept is 'pavement lifetime' with 1 relation.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {},
+          "text": "However, in reality, in a mosaic of different constructions, spatial arrangements and materials, sealed soils can still maintain some functions, for example the storage of water after infiltration from adjacent permeable fabric (Morgenroth, 2013). Porous pavements allow both higher infiltration and higher evaporation of water and have significantly cooler surfaces than fully sealed surfaces. Permeable pavements (e.g. concrete pavers with voids) and porous pavements (which are permeable over their entire surface) are increasingly used in spatial planning, as such materials help to mitigate the impact of paving on water and carbon cycles.",
+          "source_note": "Opens with 'However, in reality,' because it follows a list of soil functions that sealing reduces (nutrient availability, below-ground biological activity, cooling)."
+        }
+      ],
+      "comparability": {
+        "words_ratio": 1.07,
+        "predicted_triples_difference_pct": 7.3,
+        "predicted_entities_difference": 0.8,
+        "predicted_relations_difference": 3.2,
+        "citations_difference": 2,
+        "numbers_difference": 0,
+        "outside_limits": []
+      },
+      "assigned_conditions": null
+    },
+    {
+      "pair": "P09",
+      "label": "Assessment frameworks",
+      "kind": "about 165 words; one is a nested list",
+      "members": [
+        {
+          "id": "M496",
+          "status": "kept",
+          "report": "Soil monitoring in Europe - Indicators and thresholds for soil health assessments (EEA, 2023)",
+          "section": "10.1.1 Risk-based soil health assessment using critical limits",
+          "printed_page": 141,
+          "source_index": "soil_report.json[496]",
+          "words": 163,
+          "predicted": {
+            "triples": 88.5,
+            "entities": 26.1,
+            "relations": 35.6
+          },
+          "counts": {
+            "citations": 0,
+            "numbers": 0,
+            "bullets": 5
+          },
+          "gap": "Kinds of critical limits",
+          "kg_evidence": "'critical limits' has 10 relations, all generic; no concept for back-calculation.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 2,
+          "abbreviations": {},
+          "text": "Thresholds are given as critical limits once a specific protection target is involved, such as ecosystems and human health. The approaches to risk and thresholds depend on the underlying soil processes, available policy targets, land use, etc. Therefore, different kinds of operational critical limits were found:\n•\tcritical limits that relate to a complex soil threat indicator directly: erosion;\n•\tcritical limits that refer to measured parameters that comprise a composite indicator — soil pollution, nutrient loss, acidification, compaction and soil biodiversity — which can be derived in two ways:\n\t•\tback-calculation of policy thresholds/targets (nitrate in groundwater, drinking quality standards) into critical limits in soils (the maximum acceptable concentration at the point of sampling in the soil, so that the threshold in the groundwater or surface water is not exceeded);\n\t•\tscience-based functional limits of soil parameters (e.g. acidification, soil biodiversity);\n•\tcritical limits that refer to a single parameter that is at the same time an indicator: soil organic carbon (SOC).",
+          "source_note": "This paragraph is from chapter 10 of the Monitoring report. It was not among the seven rejected paragraphs, and the author confirmed on 2026-11-16 that it stays; the chapter 10 exclusion applies to newly selected paragraphs only."
+        },
+        {
+          "id": "M358",
+          "status": "kept",
+          "report": "Soil monitoring in Europe - Indicators and thresholds for soil health assessments (EEA, 2023)",
+          "section": "7.1.2 Soil erosion and ecosystem services",
+          "printed_page": 105,
+          "source_index": "soil_report.json[358]",
+          "words": 167,
+          "predicted": {
+            "triples": 88.9,
+            "entities": 26.7,
+            "relations": 34.2
+          },
+          "counts": {
+            "citations": 1,
+            "numbers": 0,
+            "bullets": 0
+          },
+          "gap": "Erosion and ecosystem-service indicators",
+          "kg_evidence": "No concept for pedotransfer functions, water filtration or water flow regulation.",
+          "overlap_with_105": 0.01,
+          "overlap_with_llm_predictions": 0.01,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {},
+          "text": "The impacts of soil erosion on soil-related ecosystem services can be assessed to estimate its negative effects on the provision of such services. Soil erosion causes the thinning of topsoil, with direct decreases in soil organic matter and water-holding capacity and subsequent negative long-term effects on various biological and chemical soil processes. Maintaining soil volume and topsoil is key to sustaining soil-related ecosystem services. This is also reflected in the study of the effects of erosion on ecosystem services by Steinhoff-Knopp et al. (2020) in northern Germany. There, sub-indicators for soil-related ecosystem services were quantified (crop provision, water filtration, water flow regulation, freshwater provisioning), using pedotransfer functions based on local soil properties, management and climate. The approach is site specific and considers the spatial variability of covariates that determine the degree of soil erosion. With the help of an evaluation matrix, the authors were able to quantify the potential supply of soil-related ecosystem services from degraded soils and evaluate the impact of soil erosion on such services."
+        }
+      ],
+      "comparability": {
+        "words_ratio": 1.02,
+        "predicted_triples_difference_pct": 0.5,
+        "predicted_entities_difference": 0.6,
+        "predicted_relations_difference": 1.4,
+        "citations_difference": 1,
+        "numbers_difference": 0,
+        "outside_limits": [
+          "list structure"
+        ]
+      },
+      "assigned_conditions": null
+    },
+    {
+      "pair": "P10",
+      "label": "Mechanisms in carbon and nitrogen cycling",
+      "kind": "mechanistic prose, about 145 words",
+      "members": [
+        {
+          "id": "M86",
+          "status": "new",
+          "report": "Soil monitoring in Europe - Indicators and thresholds for soil health assessments (EEA, 2023)",
+          "section": "2.2.1 Fractions relevant for characterising SOC dynamics",
+          "printed_page": 33,
+          "source_index": "soil_report.json[86]",
+          "words": 149,
+          "predicted": {
+            "triples": 86.4,
+            "entities": 24.7,
+            "relations": 35.7
+          },
+          "counts": {
+            "citations": 4,
+            "numbers": 0,
+            "bullets": 0
+          },
+          "gap": "Organic matter fractions (POM and MAOM)",
+          "kg_evidence": "No concept for particulate or mineral-associated organic matter.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {
+            "MAOM": "Mineral-associated organic matter",
+            "POM": "Particulate organic matter",
+            "SOC": "Soil organic carbon"
+          },
+          "text": "It must also be considered that SOC storage and accumulation requires a specific amount of nitrogen (nitrogen efficiency of carbon sequestration). According to Cotrufo et al. (2019), this amount of nitrogen depends on the share of MAOM and POM, and their respective C/N ratios. POM consists of partly decomposed plant origin (with low nitrogen content), while MAOM is mostly of microbial origin and is chemically bound to minerals and thus physically protected in small aggregates. Cotrufo et al. (2019) hypothesise that any additional carbon storage in soil is realised only through POM accrual. As POM is more susceptible to decomposition and thus loss, assessing these SOC pools helps in determining C sequestration potential and in monitoring SOC in response to management actions (see also Christensen, 1992; Lavallee et al., 2020). However, there is indication that also the MAOM fraction can also be responsive to management (Trigalet et al., 2014)."
+        },
+        {
+          "id": "M147",
+          "status": "new",
+          "report": "Soil monitoring in Europe - Indicators and thresholds for soil health assessments (EEA, 2023)",
+          "section": "3.1.3 Impact of N and P on biodiversity and water quality",
+          "printed_page": 50,
+          "source_index": "soil_report.json[147]",
+          "words": 140,
+          "predicted": {
+            "triples": 98.1,
+            "entities": 27.8,
+            "relations": 41.4
+          },
+          "counts": {
+            "citations": 2,
+            "numbers": 1,
+            "bullets": 0
+          },
+          "gap": "Nitrogen deposition and soil life",
+          "kg_evidence": "'N deposition' has 2 relations, both to blank nodes; no concept for mycorrhizal fungi.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {},
+          "text": "In terrestrial ecosystems, including forests, N deposition increases not only N availability but also soil acidification, thereby changing soil life, including fungi and bacteria, nematodes and springtails. N specifically reduces the occurrence and activity of certain soil fungi. For example, Van Geel et al. (2020) observed a 40% potential loss of mycorrhizal fungal species richness along an N deposition gradient in western Europe in both dry and moist heathlands. Such decreases have implications for nutrient acquisition from recalcitrant organic sources and for pathogen resistance, while plants invest less in root growth and collaborations with microorganisms, as ample N is available. Soil acidification does not so much affect soil fungi but decreases bacterial community richness and diversity, as observed in long-term N and sulphur manipulation experiments (Choma et al., 2020). Overall, nitrogen input and related soil acidification negatively affects soil life."
+        }
+      ],
+      "comparability": {
+        "words_ratio": 1.06,
+        "predicted_triples_difference_pct": 12.7,
+        "predicted_entities_difference": 3.1,
+        "predicted_relations_difference": 5.7,
+        "citations_difference": 2,
+        "numbers_difference": 1,
+        "outside_limits": []
+      },
+      "assigned_conditions": null
+    }
+  ],
+  "reserve_pairs": [
+    {
+      "pair": "R01",
+      "label": "Reserve: drivers and impacts (State)",
+      "kind": "causal prose with run-in heading",
+      "members": [
+        {
+          "id": "S703",
+          "status": "reserve",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "4.3.2.3 Impacts",
+          "printed_page": 40,
+          "source_index": "markdown line 703",
+          "words": 127,
+          "predicted": {
+            "triples": 85.0,
+            "entities": 24.1,
+            "relations": 35.9
+          },
+          "counts": {
+            "citations": 3,
+            "numbers": 0,
+            "bullets": 0
+          },
+          "gap": "Peat decomposition and rewetting",
+          "kg_evidence": "No concept for peatlands or rewetting.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 2,
+          "abbreviations": {
+            "SOC": "Soil organic carbon"
+          },
+          "text": "Climate change. Loss of carbon through drainage, degradation and fires accelerates climate change in a positive feedback loop. Changes in temperature and precipitation patterns associated with climate change can alter soil carbon dynamics. Warmer temperatures can enhance heterotrophic activity and accelerate decomposition rates (Briones et al., 2022), while changes in precipitation patterns can influence soil moisture levels, affecting decomposition rates and carbon storage. Drainage of wetlands and peatlands for agriculture, forestry or development purposes accelerates decomposition of organic matter by increasing oxygen availability. This process enhances biological activity, leading to increased decomposition rates and loss of soil carbon (Ma, Zhu et al., 2022). Without rewetting, drained peatlands will continue to lose SOC and climate change will induce further peat loss from undrained peatlands (Tanneberger et al., 2022)."
+        },
+        {
+          "id": "S1184",
+          "status": "reserve",
+          "report": "The state of soils in Europe (JRC and EEA, 2024)",
+          "section": "4.8.2 Drivers",
+          "printed_page": 70,
+          "source_index": "markdown line 1184",
+          "words": 120,
+          "predicted": {
+            "triples": 83.3,
+            "entities": 22.6,
+            "relations": 37.4
+          },
+          "counts": {
+            "citations": 4,
+            "numbers": 0,
+            "bullets": 0
+          },
+          "gap": "Land use change and soil biodiversity",
+          "kg_evidence": "No concept for deforestation; 'urbanisation' has 4 relations.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {},
+          "text": "Land use change. Land use changes, including urbanisation, agricultural intensification and deforestation, have profound impacts on soil biodiversity and ecosystems. Urban expansion converts natural habitats into impervious surfaces, reducing soil organism habitats. Population growth, and subsequent urbanisation of green spaces, has increased soil sealing, and decreased soil biodiversity by impeding organic matter inputs and water infiltration (Tibbett et al., 2020). The effects of agriculture may be contrasting depending on whether taxonomical diversity or functional diversity is considered. Intensive practices tend to affect larger-bodied soil organisms negatively and alter soil food webs (Tsiafouli et al., 2015). Deforestation for conversion to agricultural land or for other uses also eliminates habitats supporting diverse soil communities (Nielsen et al., 2015; Wachira et al., 2015)."
+        }
+      ],
+      "comparability": {
+        "words_ratio": 1.06,
+        "predicted_triples_difference_pct": 2.0,
+        "predicted_entities_difference": 1.5,
+        "predicted_relations_difference": 1.5,
+        "citations_difference": 1,
+        "numbers_difference": 0,
+        "outside_limits": []
+      },
+      "assigned_conditions": null
+    },
+    {
+      "pair": "R02",
+      "label": "Reserve: definitions and procedures (Monitoring)",
+      "kind": "prose, about 155 words",
+      "members": [
+        {
+          "id": "M153",
+          "status": "reserve",
+          "report": "Soil monitoring in Europe - Indicators and thresholds for soil health assessments (EEA, 2023)",
+          "section": "3.2.1 Indicators of the N status of soils",
+          "printed_page": 51,
+          "source_index": "soil_report.json[153]",
+          "words": 163,
+          "predicted": {
+            "triples": 85.5,
+            "entities": 25.6,
+            "relations": 33.4
+          },
+          "counts": {
+            "citations": 0,
+            "numbers": 0,
+            "bullets": 0
+          },
+          "gap": "Balanced nitrogen fertilisation",
+          "kg_evidence": "'N fertiliser recommendations' and 'N uptake' have 2 relations each; no concept for N fixation.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 2,
+          "abbreviations": {
+            "N": "nitrogen"
+          },
+          "text": "Advice about N fertilisation aims to achieve 'balanced N fertilisation'. Based on a target crop yield and the N content in the harvested crop, the required N uptake in plants is derived. Then, the effective N input is calculated to achieve the required uptake, taking into account not only N fertiliser but also other N sources. This includes mineralisation of mineral soil N, as explained above, and external N inputs from manure, crop residues, N fixation and atmospheric N deposition. 'Effective' relates to the fact that the availability of N for plant uptake from other N sources is lower than from N fertilizer, since there are larger unavoidable losses of N to air and water, for example because N that is mineralised or comes in from manure and deposition becomes available partly outside the growing season. The gap between the required N uptake and the effective N input from sources other than fertiliser is then used to calculate a site-specific N fertiliser recommendation."
+        },
+        {
+          "id": "M272",
+          "status": "reserve",
+          "report": "Soil monitoring in Europe - Indicators and thresholds for soil health assessments (EEA, 2023)",
+          "section": "5.3.1 Knowledge base on thresholds for soil pollution",
+          "printed_page": 81,
+          "source_index": "soil_report.json[272]",
+          "words": 146,
+          "predicted": {
+            "triples": 88.7,
+            "entities": 24.7,
+            "relations": 38.0
+          },
+          "counts": {
+            "citations": 3,
+            "numbers": 2,
+            "bullets": 0
+          },
+          "gap": "Background values and concentrations",
+          "kg_evidence": "'background concentrations' has 1 relation; the ISO 19258 definition is absent.",
+          "overlap_with_105": 0.0,
+          "overlap_with_llm_predictions": 0.0,
+          "text_verified_against_pdf": true,
+          "pdf_segments": 1,
+          "abbreviations": {},
+          "text": "According to Reimann et al. (2005), the 'background value' is often used as a base value to evaluate whether a specific soil has been under the influence of anthropogenic pollution. The initial definition of background values refers only to concentrations defined by parent materials (Hawkes and Webb, 1962), which means it applies only to metals, not organic pollutants. ISO 19258 (ISO, 2018b), however, defines background concentration as 'concentration of an element or a substance characteristic of a soil type in an area or region arising from both natural sources and anthropogenic diffuse sources such as atmospheric deposition'. It thus also includes contributions from agriculture and even inputs to soils in urban areas and also relates to organic pollutants. Clearly, this distinction between a definition based on pristine, pre-industrial levels versus anthropogenic ally affected soils (agriculture, urban) can lead to large variation in what is considered background."
+        }
+      ],
+      "comparability": {
+        "words_ratio": 1.12,
+        "predicted_triples_difference_pct": 3.7,
+        "predicted_entities_difference": 0.9,
+        "predicted_relations_difference": 4.6,
+        "citations_difference": 3,
+        "numbers_difference": 2,
+        "outside_limits": []
+      },
+      "assigned_conditions": null
+    }
+  ]
+}

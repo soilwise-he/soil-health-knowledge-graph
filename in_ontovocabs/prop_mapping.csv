@@ -23,7 +23,7 @@ http://purl.obolibrary.org/obo/OAE_0000025,http://purl.obolibrary.org/obo/OAE_00
 http://purl.obolibrary.org/obo/RO_0002327,http://purl.obolibrary.org/obo/RO_0002333
 http://purl.allotrope.org/ontologies/property#AFX_0001154,http://purl.allotrope.org/ontologies/property#AFX_0002806
 http://www.wikidata.org/prop/direct/P1889,http://www.wikidata.org/prop/direct/P1889
-https://soilwise-he.github.io/soil-health#characterizes,https://soilwise-he.github.io/soil-health#isCharacterizedBy
+https://soilwise-he.github.io/soil-health#characterises,https://soilwise-he.github.io/soil-health#isCharacterisedBy
 http://purl.obolibrary.org/obo/RO_0002213,http://purl.obolibrary.org/obo/RO_0002336
 http://purl.obolibrary.org/obo/INO_0000082,http://sweetontology.net/relaProvenance/wasControlledBy
 https://w3id.org/biolink/vocab/consumed_by,https://w3id.org/biolink/vocab/consumes
@@ -59,3 +59,14 @@ http://purl.obolibrary.org/obo/RO_0002211,http://purl.obolibrary.org/obo/RO_0002
 http://purl.obolibrary.org/obo/RO_0002508,http://purl.obolibrary.org/obo/RO_0002507
 http://aims.fao.org/aos/agrontology#hasType,http://aims.fao.org/aos/agrontology#typeOf
 http://purl.org/dc/terms/replaces,http://purl.org/dc/terms/isReplacedBy
+https://soilwise-he.github.io/soil-health#forms,https://soilwise-he.github.io/soil-health#isFormedBy
+http://purl.obolibrary.org/obo/RO_0017003,http://purl.obolibrary.org/obo/RO_0017003
+http://purl.obolibrary.org/obo/RO_0017004,http://purl.obolibrary.org/obo/RO_0017004
+http://semanticscience.org/resource/SIO_000283,http://semanticscience.org/resource/SIO_000283
+http://purl.obolibrary.org/obo/BFO_0000066,http://purl.obolibrary.org/obo/BFO_0000067
+http://www.w3.org/ns/prov#atLocation,http://www.w3.org/ns/prov#locationOf
+http://www.w3.org/2004/02/skos/core#exactMatch,http://www.w3.org/2004/02/skos/core#exactMatch
+http://www.w3.org/2004/02/skos/core#closeMatch,http://www.w3.org/2004/02/skos/core#closeMatch
+http://www.w3.org/2004/02/skos/core#hasTopConcept,http://www.w3.org/2004/02/skos/core#topConceptOf
+http://aims.fao.org/aos/agrontology#hasAbbreviation,http://aims.fao.org/aos/agrontology#isAbbreviationOf
+http://aims.fao.org/aos/agrontology#hasSymbol,http://aims.fao.org/aos/agrontology#isSymbolFor
