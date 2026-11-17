@@ -1,7 +1,5 @@
 # Coding agent
 AGENTS.md
-.playwright-cli/
-output/playwright/
 
 # Config file
 config
