@@ -183,3 +183,4 @@ she:hasFreshBiomass,https://soilwise-he.github.io/soil-health#hasFreshBiomass,ha
 sio:SIO_000272,http://semanticscience.org/resource/SIO_000272,is variant of
 sorelsp:above,http://sweetontology.net/relaSpace/above,above
 dcterms:isReplacedBy,http://purl.org/dc/terms/isReplacedBy,is replaced by
+she:retains,https://soilwise-he.github.io/soil-health#retains,retains

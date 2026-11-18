@@ -70,3 +70,4 @@ http://www.w3.org/2004/02/skos/core#closeMatch,http://www.w3.org/2004/02/skos/co
 http://www.w3.org/2004/02/skos/core#hasTopConcept,http://www.w3.org/2004/02/skos/core#topConceptOf
 http://aims.fao.org/aos/agrontology#hasAbbreviation,http://aims.fao.org/aos/agrontology#isAbbreviationOf
 http://aims.fao.org/aos/agrontology#hasSymbol,http://aims.fao.org/aos/agrontology#isSymbolFor
+https://soilwise-he.github.io/soil-health#retains,https://soilwise-he.github.io/soil-health#isRetainedBy
