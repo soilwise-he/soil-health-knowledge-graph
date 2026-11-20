@@ -2072,14 +2072,14 @@ she:Musinguzi2013 a dcterms:BibliographicResource ;
 
 she:NDeposition a skos:Concept ;
     obo:RO_0017003 [ obo:BFO_0000066 she:ForestEcosystems ;
-            dcterms:source she:DeVries2009,
-                she:Hogberg2007,
-                she:Thomas2010 ;
             rdf:object she:CarbonSequestration,
                 she:ForestGrowth ] ;
     obo:RO_0017004 [ obo:BFO_0000066 she:ForestEcosystems ;
-            dcterms:source she:Janssens2010 ;
             rdf:object she:SOCDecomposition ] ;
+    dcterms:source she:DeVries2009,
+        she:Hogberg2007,
+        she:Janssens2010,
+        she:Thomas2010 ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "N deposition"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
@@ -2475,10 +2475,10 @@ she:SOCThresholdDerivation a skos:Concept ;
         she:YieldBenefits .
 
 she:SOCToSOMConversion a skos:Concept ;
+    dcterms:source she:Pribyl2010 ;
     qudt:conversionMultiplier [ qudt:numericValue "1.724"^^xsd:float ;
             skos:definition "Historically, a factor of 1.724 has been used to convert SOC to SOM, based on the assumption that organic matter is 58% carbon."@en ],
-        [ dcterms:source she:Pribyl2010 ;
-            qudt:numericValue "2"^^xsd:int ;
+        [ qudt:numericValue "2"^^xsd:int ;
             skos:definition "A factor of 2 would often be more accurate, especially in the case of soil layers rich in organic matter, such as on forest floors, because of differences related to the different stages of decomposition and mineralisation."@en ;
             she:appliesTo she:ForestFloors ] ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
@@ -2580,11 +2580,11 @@ she:SealedSoil a skos:Concept ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:SealedSoilArea a skos:Concept ;
-    obo:RO_0002336 [ dcterms:source she:PerryNawaz2008 ;
-            prov:atLocation she:Leeds ;
+    obo:RO_0002336 [ prov:atLocation she:Leeds ;
             biolink:has_percentage "12.6"^^qudt:floatPercentage ] ;
     obo:RO_0017003 she:FlashFloods,
         she:WaterRunoff ;
+    dcterms:source she:PerryNawaz2008 ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "sealed soil area"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
@@ -11226,19 +11226,16 @@ she:RiverSedimentation a skos:Concept ;
 
 she:SOCClayRatio a skos:Concept ;
     af-x:AFX_0002696 [ af-x:AFX_0000408 she:TransitionalLand ;
-            dcterms:source she:Chartin2022 ;
             sorelm:hasInterval "0.08-0.1" ;
             prov:atLocation she:Wallonia ] ;
+    dcterms:source she:Chartin2022 ;
     sorelm:hasLowerBound [ af-x:AFX_0000408 she:FavourableLand ;
-            dcterms:source she:Chartin2022 ;
             qudt:numericValue "0.1"^^xsd:float ;
             prov:atLocation she:Wallonia ],
         [ af-x:AFX_0000408 she:HighlyFavourableLand ;
-            dcterms:source she:Chartin2022 ;
             qudt:numericValue "0.12"^^xsd:float ;
             prov:atLocation she:Wallonia ] ;
     sorelm:hasUpperBound [ af-x:AFX_0000408 she:DegradedLand ;
-            dcterms:source she:Chartin2022 ;
             qudt:numericValue "0.08"^^xsd:float ;
             prov:atLocation she:Wallonia ] ;
     bao:BAO_0002586 she:SoilStructure ;
@@ -11486,13 +11483,13 @@ she:SoilInvertebrateFeedingActivities a skos:Concept ;
 
 she:SoilLoss a skos:Concept ;
     agrontology:isCausedBy she:SoilSealing ;
+    dcterms:source she:Montgomery2007 ;
     qudt:unit unit:TONNE-PER-HA ;
     skos:exactMatch agrovoc:c_8dab65bc ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "soil loss"@en ;
     skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
     she:isConvertedTo [ agrontology:makeUseOf she:BulkDensity ;
-            dcterms:source she:Montgomery2007 ;
             rdf:object she:SoilLossInDepth ] .
 
 she:SoilManagement a skos:Concept ;
@@ -13505,21 +13502,20 @@ she:TolerableSoilLossRates a skos:Concept ;
             time:years "1959-1962" ;
             prov:atLocation she:UnitedStates ;
             she:isConvertedFrom "1-5 t/acre/year"@en ],
-        [ dcterms:source she:Verheijen2009 ;
-            qudt:unit unit:MilliM-PER-YR ;
+        [ qudt:unit unit:MilliM-PER-YR ;
             sorelm:hasInterval "0.02-0.11" ;
             prov:atLocation she:Europe ],
-        [ dcterms:source she:Verheijen2009 ;
-            qudt:unit unit:TONNE-PER-HA-YR ;
+        [ qudt:unit unit:TONNE-PER-HA-YR ;
             sorelm:hasInterval "0.3-1.4" ;
             prov:atLocation she:Europe ] ;
+    dcterms:source she:Ledermann2008,
+        she:SchweizerBundesrat1998,
+        she:Verheijen2009 ;
     sorelm:hasThreshold [ agrontology:isUsedIn she:ShallowSoils ;
             qudt:unit unit:TONNE-PER-HA-YR ;
             sorelm:hasUpperBound "2"^^xsd:int ;
             prov:atLocation she:Switzerland ],
         [ agrontology:isUsedIn she:DeeplyDevelopedSoils ;
-            dcterms:source she:Ledermann2008,
-                she:SchweizerBundesrat1998 ;
             qudt:unit unit:TONNE-PER-HA-YR ;
             sorelm:hasUpperBound "4"^^xsd:int ;
             prov:atLocation she:Switzerland ] ;
@@ -17516,8 +17512,7 @@ she:SoilOrganicCarbon a skos:Concept ;
         she:WaterQuality,
         she:WaterSecurity ;
     agrontology:hasAbbreviation "SOC"@en ;
-    agrontology:isUsedAs [ dcterms:source she:Richter2020 ;
-            rdf:object she:EcosystemServices ;
+    agrontology:isUsedAs [ rdf:object she:EcosystemServices ;
             prov:atLocation she:Berlin ] ;
     agrontology:measures she:SoilOrganicMatter ;
     obo:RO_0002331 she:StructuralSoilStability ;
@@ -17525,6 +17520,7 @@ she:SoilOrganicCarbon a skos:Concept ;
         she:SoilFertility,
         she:SoilNitrogen ;
     dcterms:source she:Cornu2021,
+        she:Richter2020,
         she:VanGroenigen2017 ;
     bao:BAO_0002586 she:NitrogenousFertiliserNeed ;
     skos:broader she:ObservableSoilProperties,
