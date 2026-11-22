@@ -6,10 +6,10 @@ step,pair,id,condition,words,active_time_mm:ss
 5,P03,S1026,llm_draft,86,10:00.27
 6,P03,S587,from_scratch,87,23:58.62
 7,P04,S771,llm_draft,146,18:22.30
-8,P04,S496,from_scratch,128,
-9,P05,S708,llm_draft,136,
-10,P05,S977,from_scratch,118,
-11,P06,S367,llm_draft,166,
+8,P04,S496,from_scratch,128,32:41.83
+9,P05,S708,llm_draft,136,15:02.82
+10,P05,S977,from_scratch,118,24:37.89
+11,P06,S367,llm_draft,166,12:59.50
 12,P06,S531,from_scratch,173,
 13,P07,S389,llm_draft,143,
 14,P07,S896,from_scratch,185,
