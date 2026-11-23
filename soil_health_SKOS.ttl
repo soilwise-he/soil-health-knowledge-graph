@@ -375,9 +375,6 @@ she:isEmittedTo a rdf:Property ;
 she:isEssentialFor a rdf:Property ;
     rdfs:label "is essential for" .
 
-she:isExceeded a rdf:Property ;
-    rdfs:label "is exceeded" .
-
 she:isFormedBy a rdf:Property ;
     rdfs:label "is formed by" .
 
@@ -10491,7 +10488,11 @@ she:InternalSoilStrength a skos:Concept ;
             she:hasEquilibriumWith she:ExternalStress ] ;
     agrontology:smallerThan [ agrontology:causes she:PlasticSoilDeformation,
                 she:SoilCompaction ;
-            rdf:object she:AdditionalStress ] ;
+            rdf:object she:AdditionalStress ],
+        [ agrontology:isCausedBy she:AnimalTrampling,
+                she:ContinuousLoading,
+                she:Wheeling ;
+            rdf:object she:ExternalStress ] ;
     obo:RO_0017004 [ she:suffersFrom she:AdditionalMechanicalStress,
                 she:SoilStructureDegradation ] ;
     dcterms:source she:HornFleige2003,
@@ -10501,10 +10502,7 @@ she:InternalSoilStrength a skos:Concept ;
         she:PrecompressionStress ;
     skos:inScheme <https://soilwise-he.github.io/soil-health> ;
     skos:prefLabel "internal soil strength"@en ;
-    skos:topConceptOf <https://soilwise-he.github.io/soil-health> ;
-    she:isExceeded [ agrontology:isCausedBy she:AnimalTrampling,
-                she:ContinuousLoading,
-                she:Wheeling ] .
+    skos:topConceptOf <https://soilwise-he.github.io/soil-health> .
 
 she:InterrillErosionExtent a skos:Concept ;
     agrontology:isMeasuredBy she:ModellingApproaches,
@@ -20210,7 +20208,6 @@ she:isConvertedTo a owl:ObjectProperty .
 she:isDevelopedFor a owl:ObjectProperty .
 she:isEmittedTo a owl:ObjectProperty .
 she:isEssentialFor a owl:ObjectProperty .
-she:isExceeded a owl:ObjectProperty .
 she:isFormedBy a owl:ObjectProperty .
 she:isIndicatedBy a owl:ObjectProperty .
 she:isLimitedBy a owl:ObjectProperty .

@@ -10,9 +10,9 @@ step,pair,id,condition,words,active_time_mm:ss
 9,P05,S708,llm_draft,136,15:02.82
 10,P05,S977,from_scratch,118,24:37.89
 11,P06,S367,llm_draft,166,12:59.50
-12,P06,S531,from_scratch,173,
-13,P07,S389,llm_draft,143,
-14,P07,S896,from_scratch,185,
+12,P06,S531,from_scratch,173,27:54.06
+13,P07,S389,llm_draft,143,15:14.30
+14,P07,S896,from_scratch,185,36:07.69
 15,P08,M313,llm_draft,98,
 16,P08,M462,from_scratch,92,
 17,P09,M358,llm_draft,167,

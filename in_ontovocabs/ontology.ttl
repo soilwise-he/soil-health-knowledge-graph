@@ -538,10 +538,6 @@ she:isEssentialFor a rdf:Property,
         owl:ObjectProperty ;
     rdfs:label "is essential for" .
 
-she:isExceeded a rdf:Property,
-        owl:ObjectProperty ;
-    rdfs:label "is exceeded" .
-
 she:isFormedBy a rdf:Property,
         owl:ObjectProperty ;
     rdfs:label "is formed by" .

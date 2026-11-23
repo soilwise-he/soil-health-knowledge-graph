@@ -7455,7 +7455,11 @@ she:metadata {
                 she:hasEquilibriumWith she:ExternalStress ] ;
         agrontology:smallerThan [ agrontology:causes she:PlasticSoilDeformation,
                     she:SoilCompaction ;
-                rdf:object she:AdditionalStress ] ;
+                rdf:object she:AdditionalStress ],
+            [ agrontology:isCausedBy she:AnimalTrampling,
+                    she:ContinuousLoading,
+                    she:Wheeling ;
+                rdf:object she:ExternalStress ] ;
         obo:RO_0017004 [ she:suffersFrom she:AdditionalMechanicalStress,
                     she:SoilStructureDegradation ] ;
         dcterms:source she:HornFleige2003,
@@ -7463,10 +7467,7 @@ she:metadata {
             she:VanDenAkker1998 ;
         sio:equivalentTo she:ActualPrecompressionStress,
             she:PrecompressionStress ;
-        skos:prefLabel "internal soil strength"@en ;
-        she:isExceeded [ agrontology:isCausedBy she:AnimalTrampling,
-                    she:ContinuousLoading,
-                    she:Wheeling ] .
+        skos:prefLabel "internal soil strength"@en .
 
     she:InterrillErosionExtent a skos:Concept ;
         agrontology:isMeasuredBy she:ModellingApproaches,

@@ -165,7 +165,6 @@ om:hasValue,http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue,h
 time:years,http://www.w3.org/2006/time#years,years duration
 af-x:AFX_0002821,http://purl.allotrope.org/ontologies/property#AFX_0002821,proxy for
 sorelsp:hasMaximumDepth,http://sweetontology.net/relaSpace/hasMaximumDepth,has maximum depth
-she:isExceeded,https://soilwise-he.github.io/soil-health#isExceeded,is exceeded
 sorelsp:below,http://sweetontology.net/relaSpace/below,below
 obo:RO_0020202,http://purl.obolibrary.org/obo/RO_0020202,has numerator
 obo:RO_0020203,http://purl.obolibrary.org/obo/RO_0020203,has denominator
@@ -184,3 +183,4 @@ sio:SIO_000272,http://semanticscience.org/resource/SIO_000272,is variant of
 sorelsp:above,http://sweetontology.net/relaSpace/above,above
 dcterms:isReplacedBy,http://purl.org/dc/terms/isReplacedBy,is replaced by
 she:retains,https://soilwise-he.github.io/soil-health#retains,retains
+she:isAppliedBy,https://soilwise-he.github.io/soil-health#isAppliedBy,is applied by
