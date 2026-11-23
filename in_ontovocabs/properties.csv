@@ -184,3 +184,6 @@ sorelsp:above,http://sweetontology.net/relaSpace/above,above
 dcterms:isReplacedBy,http://purl.org/dc/terms/isReplacedBy,is replaced by
 she:retains,https://soilwise-he.github.io/soil-health#retains,retains
 she:isAppliedBy,https://soilwise-he.github.io/soil-health#isAppliedBy,is applied by
+agrontology:isAchievedByMeansOf,http://aims.fao.org/aos/agrontology#isAchievedByMeansOf,is achieved by means of
+she:tendsTo,https://soilwise-he.github.io/soil-health#tendsTo,tends to
+she:involves,https://soilwise-he.github.io/soil-health#involves,involves

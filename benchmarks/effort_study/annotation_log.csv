@@ -13,9 +13,9 @@ step,pair,id,condition,words,active_time_mm:ss
 12,P06,S531,from_scratch,173,27:54.06
 13,P07,S389,llm_draft,143,15:14.30
 14,P07,S896,from_scratch,185,36:07.69
-15,P08,M313,llm_draft,98,
-16,P08,M462,from_scratch,92,
-17,P09,M358,llm_draft,167,
-18,P09,M496,from_scratch,163,
-19,P10,M86,llm_draft,149,
-20,P10,M147,from_scratch,140,
+15,P08,M313,llm_draft,98,22:02.85
+16,P08,M462,from_scratch,92,15:16.40
+17,P09,M358,llm_draft,167,22:01.07
+18,P09,M496,from_scratch,163,35:41.22
+19,P10,M86,llm_draft,149,19:23.57
+20,P10,M147,from_scratch,140,28:16.63

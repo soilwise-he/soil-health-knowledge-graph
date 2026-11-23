@@ -72,3 +72,4 @@ http://aims.fao.org/aos/agrontology#hasAbbreviation,http://aims.fao.org/aos/agro
 http://aims.fao.org/aos/agrontology#hasSymbol,http://aims.fao.org/aos/agrontology#isSymbolFor
 https://soilwise-he.github.io/soil-health#retains,https://soilwise-he.github.io/soil-health#isRetainedBy
 https://soilwise-he.github.io/soil-health#appliesTo,https://soilwise-he.github.io/soil-health#isAppliedBy
+http://purl.obolibrary.org/obo/RO_0002331,https://soilwise-he.github.io/soil-health#involves
