@@ -6,10 +6,12 @@ from typing import NamedTuple
 import numpy as np
 from rdflib import BNode
 import torch
+from torch.nn.utils.rnn import pad_sequence
 import time
 import threading
 from rouge_score import rouge_scorer
-from bert_score import score as score_bert
+from bert_score.utils import get_model, get_tokenizer, lang2model, model2layers, sent_encode
+from transformers import RobertaTokenizer
 from nltk.translate.bleu_score import sentence_bleu
 from nltk.translate.bleu_score import SmoothingFunction
 from scipy.optimize import Bounds, LinearConstraint, linear_sum_assignment, milp
@@ -261,62 +263,128 @@ def legacy_character_edges(graphs):
     return [[";".join(str(triple)).lower().strip() for triple in graph] for graph in graphs]
 
 
-def get_bert_score(all_gold_edges, all_pred_edges, model_type=None, *, batch_size=None):
+def _token_batches(edges, length, max_edges, max_tokens):
+    """Group similar lengths and bound the number of padded tokens per batch."""
+    ordered = sorted(edges, key=length, reverse=True)
+    start = 0
+    while start < len(ordered):
+        count = min(max_edges, max(1, max_tokens // length(ordered[start])))
+        yield ordered[start:start + count]
+        start += count
+
+
+class GraphBERTScorer:
+    """Reuse a BERTScore model and its CPU cache of edge embeddings across graph sets.
+
+    'auto' selects FP16 on CUDA compute capability 7.0+ and FP32 elsewhere.
+    'mixed' uses CUDA autocast for the encoder and FP32 for token similarities.
+    'fp32' uses reference precision throughout. The cache belongs to this instance.
     """
-    Compute BERT score for gold and predicted edges.
-    
-    Parameters:
-    - all_gold_edges: List of gold edges
-    - all_pred_edges: List of predicted edges
-    - model_type: BERT model to use (default: roberta-large for English)
-    - batch_size: Edges per batch (default: 8 on CUDA for 4 GB GPUs, 64 on CPU)
-    
-    Returns:
-    - precisions: Precision scores
-    - recalls: Recall scores
-    - f1s: F1 scores
+
+    def __init__(self, model_type=None, *, batch_size=None, precision='auto', device=None):
+        self.device = torch.device(device or ('cuda' if torch.cuda.is_available() else 'cpu'))
+        if precision == 'auto':
+            use_half = self.device.type == 'cuda' and torch.cuda.get_device_capability(self.device)[0] >= 7
+            precision = 'fp16' if use_half else 'fp32'
+        if precision not in ('fp16', 'mixed', 'fp32') or (self.device.type != 'cuda' and precision != 'fp32'):
+            raise ValueError("Use 'auto' or 'fp32' on any device, or 'fp16' or 'mixed' on CUDA.")
+        self.mixed_precision = precision == 'mixed'
+        self.dtype = torch.float16 if precision == 'fp16' else torch.float32
+        self.batch_size = batch_size if batch_size is not None else (512 if self.device.type == 'cuda' else 64)
+        if self.batch_size < 1:
+            raise ValueError('batch_size must be positive')
+        model_type = model_type or lang2model['en']
+        layers = model2layers[model_type]
+        print(f'G-BERTScore uses {model_type} layer {layers} on {self.device} ({precision}).')
+        self.tokenizer = get_tokenizer(model_type, use_fast=False)
+        self.model = get_model(model_type, layers).to(self.device, dtype=self.dtype)
+        self.embeddings = {}
+
+    def _tokenize(self, batch):
+        if isinstance(self.tokenizer, RobertaTokenizer) and self.tokenizer.is_fast:
+            # Match BERTScore's RoBERTa prefix-space and truncation rules with the same tokenizer.
+            return self.tokenizer(
+                [edge.strip() for edge in batch], add_special_tokens=True, add_prefix_space=True,
+                max_length=self.tokenizer.model_max_length, truncation=True, return_attention_mask=False,
+            ).input_ids
+        # Transformers 5 removed the special-token builder used by BERTScore for empty text.
+        return [sent_encode(self.tokenizer, e) if e.strip() else self.tokenizer.encode('') for e in batch]
+
+    def _encode_missing(self, edges):
+        tokens = {}
+        missing = list(edges.difference(self.embeddings))
+        for start in range(0, len(missing), 2048):
+            batch = missing[start:start + 2048]
+            for edge, ids in zip(batch, self._tokenize(batch)):
+                tokens[edge] = torch.tensor(ids, dtype=torch.long)
+        pad = self.tokenizer.pad_token_id
+        for batch in _token_batches(tokens, lambda edge: len(tokens[edge]), self.batch_size, 4096):
+            ids = pad_sequence([tokens[e] for e in batch], batch_first=True, padding_value=pad)
+            lengths = [len(tokens[e]) for e in batch]
+            mask = torch.arange(ids.shape[1]) < torch.tensor(lengths)[:, None]
+            hidden = self.model(ids.to(self.device), attention_mask=mask.to(self.device))[0]
+            vectors = torch.nn.functional.normalize(hidden.float(), dim=-1).to(self.dtype).cpu()
+
+            # CLS and SEP can be the best matching token, but have zero averaging weight.
+            weights = mask.clone()
+            for special in (self.tokenizer.cls_token_id, self.tokenizer.sep_token_id):
+                if special is not None:
+                    weights &= ids != special
+            weights = weights.float()
+            weights /= weights.sum(dim=1, keepdim=True).clamp_min(1)
+            for i, (edge, length) in enumerate(zip(batch, lengths)):
+                self.embeddings[edge] = vectors[i, :length], weights[i, :length]
+
+    def _blocks(self, edges):
+        # Tile the token similarity matrix independently of the number of edge pairs.
+        batches = _token_batches(edges, lambda e: len(self.embeddings[e][0]), len(edges), 4096)
+        blocks = []
+        start = 0
+        for batch in batches:
+            vectors, weights = zip(*(self.embeddings[e] for e in batch))
+            vectors = pad_sequence(vectors, batch_first=True).to(self.device)
+            weights = pad_sequence(weights, batch_first=True).to(self.device)
+            blocks.append((slice(start, start + len(batch)), vectors, weights))
+            start += len(batch)
+        return blocks
+
+    def _matched_total(self, gold, pred):
+        gold_blocks, pred_blocks = self._blocks(gold), self._blocks(pred)
+        scores = torch.empty((len(gold), len(pred)), device=self.device, dtype=torch.float32)
+        for rows, g, gw in gold_blocks:
+            for cols, p, pw in pred_blocks:
+                cosines = (g.flatten(0, 1) @ p.flatten(0, 1).T).view(*g.shape[:2], *p.shape[:2])
+                recall = (cosines.amax(dim=3).float() * gw[:, :, None]).sum(dim=1)
+                precision = (cosines.amax(dim=1).float() * pw[None, :, :]).sum(dim=2)
+                f1 = 2 * precision * recall / (precision + recall)
+                scores[rows, cols] = f1.nan_to_num(nan=0.0)
+        scores = scores.cpu().numpy()
+        rows, cols = linear_sum_assignment(scores, maximize=True)
+        return scores[rows, cols].sum(dtype=np.float64)
+
+    @torch.inference_mode()
+    def __call__(self, all_gold_edges, all_pred_edges):
+        graphs = list(zip(all_gold_edges, all_pred_edges))
+        edges = {edge for gold, pred in graphs for side in (gold, pred) for edge in side}
+        with torch.autocast(self.device.type, dtype=torch.float16, enabled=self.mixed_precision):
+            self._encode_missing(edges)
+        values = np.zeros((3, len(graphs)), dtype=np.float64)
+        with torch.autocast(self.device.type, enabled=False):
+            for i, (gold, pred) in enumerate(graphs):
+                if len(gold) and len(pred):
+                    total = self._matched_total(gold, pred)
+                    values[:, i] = total / len(pred), total / len(gold), 2 * total / (len(pred) + len(gold))
+        return tuple(values)
+
+
+def get_bert_score(all_gold_edges, all_pred_edges, model_type=None, *, batch_size=None, precision='fp32'):
+    """Return per-graph precision, recall and F1 using BERTScore and optimal edge matching.
+
+    For multiple prediction sets, pass a single GraphBERTScorer to show_edge_metric.
+    batch_size caps the number of unique edge texts per encoder batch.
     """
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    if batch_size is None:
-        batch_size = 8 if device == "cuda" else 64
-    print(f"BERTScore device: {device} (batch size {batch_size})")
-
-    references = []
-    candidates = []
-
-    ref_cand_index = {}
-    for (gold_edges, pred_edges) in zip(all_gold_edges, all_pred_edges):
-        for (i, gold_edge) in enumerate(gold_edges):
-            for (j, pred_edge) in enumerate(pred_edges):
-                references.append(gold_edge)
-                candidates.append(pred_edge)
-                ref_cand_index[(gold_edge, pred_edge)] = len(references) - 1
-
-    model_args = {"model_type": model_type} if model_type else {"lang": "en"}
-    _, _, bs_F1 = score_bert(
-        cands=candidates, refs=references, idf=False,
-        device=device, batch_size=batch_size, **model_args,
-    )
-
-    print("Computed bert scores for all pairs")
-
-    precisions, recalls, f1s = [], [], []
-    for (gold_edges, pred_edges) in zip(all_gold_edges, all_pred_edges):
-        score_matrix = np.zeros((len(gold_edges), len(pred_edges)))
-        for (i, gold_edge) in enumerate(gold_edges):
-            for (j, pred_edge) in enumerate(pred_edges):
-                score_matrix[i][j] = bs_F1[ref_cand_index[(gold_edge, pred_edge)]]
-
-        row_ind, col_ind = linear_sum_assignment(score_matrix, maximize=True)
-
-        sample_precision = score_matrix[row_ind, col_ind].sum() / len(pred_edges)
-        sample_recall = score_matrix[row_ind, col_ind].sum() / len(gold_edges)
-
-        precisions.append(sample_precision)
-        recalls.append(sample_recall)
-        f1s.append(2 * sample_precision * sample_recall / (sample_precision + sample_recall))
-
-    return np.array(precisions), np.array(recalls), np.array(f1s)
+    scorer = GraphBERTScorer(model_type, batch_size=batch_size, precision=precision)
+    return scorer(all_gold_edges, all_pred_edges)
 
 
 def _edge_match_prf(gold_graphs, pred_graphs, score_pair):
