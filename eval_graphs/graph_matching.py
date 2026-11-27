@@ -1,13 +1,19 @@
 # refer to https://github.com/ChristopheCruz/LLM4KGC/blob/main/Evaluate_graphs/graph_matching.py
 
+from collections import Counter, defaultdict
+from typing import NamedTuple
+
 import numpy as np
+from rdflib import BNode
+import torch
 import time
 import threading
 from rouge_score import rouge_scorer
 from bert_score import score as score_bert
 from nltk.translate.bleu_score import sentence_bleu
 from nltk.translate.bleu_score import SmoothingFunction
-from scipy.optimize import linear_sum_assignment
+from scipy.optimize import Bounds, LinearConstraint, linear_sum_assignment, milp
+from scipy.sparse import lil_matrix
 from spacy.tokenizer import Tokenizer
 from spacy.lang.en import English
 import re
@@ -31,58 +37,145 @@ def modify_graph(original_graph):
     return modified_graph
 
 
+class TripleMatchCounts(NamedTuple):
+    """Distinct triple counts for P/R/F1 and predicted occurrence counts for accuracy."""
+    matched: int
+    predicted: int
+    gold: int
+    matched_occurrences: int
+    predicted_occurrences: int
+
+
+def _match_triple(triple):
+    # Keep graph-local blank identity separate from ordinary text, even a literal like "<blank1>".
+    return tuple(term if isinstance(term, BNode) else str(term).strip().lower() for term in triple)
+
+
+def _blank_pattern(triple):
+    """Give each blank endpoint a slot within the triple. A self-loop repeats its slot."""
+    subject, predicate, obj = triple
+    slots = {}
+
+    def endpoint(term):
+        if isinstance(term, BNode):
+            return slots.setdefault(term, len(slots))
+        return term
+
+    pattern = (endpoint(subject), predicate, endpoint(obj))
+    return pattern, tuple(slots)
+
+
+def _solve_blank_assignment(single, linked):
+    """Choose an injective prediction-to-gold mapping maximizing the supplied rewards."""
+    candidates = set(single)
+    for first, second in linked:
+        candidates.update((first, second))
+    if not candidates:
+        return {}
+
+    pairs = sorted(candidates)
+    pred_nodes = sorted({p for p, _ in pairs})
+    gold_nodes = sorted({g for _, g in pairs})
+    pred_index = {node: i for i, node in enumerate(pred_nodes)}
+    gold_index = {node: i for i, node in enumerate(gold_nodes)}
+
+    if not linked:
+        weights = np.zeros((len(pred_nodes), len(gold_nodes)), dtype=np.int64)
+        for (p, g), weight in single.items():
+            weights[pred_index[p], gold_index[g]] = weight
+        rows, cols = linear_sum_assignment(weights, maximize=True)
+        return {pred_nodes[i]: gold_nodes[j] for i, j in zip(rows, cols) if weights[i, j]}
+
+    # A blank-to-blank triple earns its reward only when both endpoint pairs are chosen.
+    # Constrain its reward variable y by each binary assignment variable (y <= x1 and y <= x2).
+    pair_index = {pair: i for i, pair in enumerate(pairs)}
+    node_rows = len(pred_nodes) + len(gold_nodes)
+    constraints = lil_matrix((node_rows + 2 * len(linked), len(pairs) + len(linked)))
+    upper = np.ones(constraints.shape[0])
+    upper[node_rows:] = 0
+    rewards = np.zeros(constraints.shape[1])
+    for (p, g), col in pair_index.items():
+        constraints[pred_index[p], col] = 1
+        constraints[len(pred_nodes) + gold_index[g], col] = 1
+        rewards[col] = single.get((p, g), 0)
+    for i, (endpoints, weight) in enumerate(linked.items()):
+        bonus_col = len(pairs) + i
+        rewards[bonus_col] = weight
+        for offset, pair in enumerate(endpoints):
+            row = node_rows + 2 * i + offset
+            constraints[row, bonus_col] = 1
+            constraints[row, pair_index[pair]] = -1
+
+    result = milp(
+        c=-rewards, integrality=np.ones(len(rewards)), bounds=Bounds(0, 1),
+        constraints=LinearConstraint(constraints.tocsc(), -np.inf, upper),
+        options={'mip_rel_gap': 0.0},
+    )
+    if not result.success:
+        raise RuntimeError(f'Blank-node alignment did not reach an optimum: {result.message}')
+    return {p: g for (p, g), col in pair_index.items() if result.x[col] > 0.5}
+
+
+def _blank_mapping(gold, predicted):
+    gold_by_pattern = defaultdict(list)
+    for triple in gold:
+        pattern, blanks = _blank_pattern(triple)
+        if blanks:
+            gold_by_pattern[pattern].append(blanks)
+    if not gold_by_pattern:
+        return {}
+
+    single, linked = Counter(), Counter()
+    # One extra distinct match outweighs every possible gain in predicted occurrences.
+    distinct_weight = sum(predicted.values()) + 1
+    for triple, occurrences in predicted.items():
+        pattern, pred_blanks = _blank_pattern(triple)
+        for gold_blanks in gold_by_pattern.get(pattern, ()):
+            pairs = tuple(zip(pred_blanks, gold_blanks))
+            weight = distinct_weight + occurrences
+            if len(pairs) == 1:
+                single[pairs[0]] += weight
+            else:
+                linked[pairs] += weight
+    return _solve_blank_assignment(single, linked)
+
+
+def get_triple_match_counts(gold_graph, pred_graph):
+    """Match one normalized paragraph pair, preserving RDFLib BNodes for structural alignment."""
+    gold = {_match_triple(triple) for triple in gold_graph}
+    predicted = Counter(_match_triple(triple) for triple in pred_graph)
+    mapping = _blank_mapping(gold, predicted)
+    matched = matched_occurrences = 0
+    for (subject, predicate, obj), count in predicted.items():
+        if isinstance(subject, BNode) and subject not in mapping:
+            continue
+        if isinstance(obj, BNode) and obj not in mapping:
+            continue
+        aligned = (mapping.get(subject, subject), predicate, mapping.get(obj, obj))
+        if aligned in gold:
+            matched += 1
+            matched_occurrences += count
+    return TripleMatchCounts(
+        matched, len(predicted), len(gold), matched_occurrences, sum(predicted.values())
+    )
+
+
 def get_triple_match_prf(gold_graphs, pred_graphs):
-    """
-    Compute micro-averaged Precision, Recall, and F1 over exact triple matches (case-insensitive).
-    
-    Parameters:
-    - gold_graphs: List of gold graphs (each graph is a list of triples)
-    - pred_graphs: List of predicted graphs (each graph is a list of triples)
-    
-    Returns:
-    - precision: Micro-averaged precision
-    - recall: Micro-averaged recall
-    - f1: Micro-averaged F1 score
-    """
-
-    def _norm_triple(triple):
-        return tuple(str(t).lower().strip() for t in triple)
-
-    gold_sets = [set(_norm_triple(t) for t in graph) for graph in gold_graphs]
-    pred_sets = [set(_norm_triple(t) for t in graph) for graph in pred_graphs]
-
-    tp = sum(len(g & p) for g, p in zip(gold_sets, pred_sets))
-    fp = sum(len(p - g) for g, p in zip(gold_sets, pred_sets))
-    fn = sum(len(g - p) for g, p in zip(gold_sets, pred_sets))
-
-    if tp == 0:
+    """Micro-average exact triple matches, aligning blank nodes independently in each graph pair."""
+    counts = [get_triple_match_counts(g, p) for g, p in zip(gold_graphs, pred_graphs)]
+    matched = sum(c.matched for c in counts)
+    if not matched:
         return 0.0, 0.0, 0.0
-    precision = tp / (tp + fp) if (tp + fp) else 0.0
-    recall = tp / (tp + fn) if (tp + fn) else 0.0
-    if precision + recall == 0:
-        return precision, recall, 0.0
-    f1 = 2 * precision * recall / (precision + recall)
-    return precision, recall, f1
+    predicted = sum(c.predicted for c in counts)
+    gold = sum(c.gold for c in counts)
+    return matched / predicted, matched / gold, 2 * matched / (predicted + gold)
+
 
 def get_triple_match_accuracy(pred_graph, gold_graph):
-    """
-    Compute accuracy for triple matches between gold and predicted graphs.
-    
-    Parameters:
-    - pred_graph: Predicted graph
-    - gold_graph: Gold graph
-    
-    Returns:
-    - acc: Accuracy for triple matches
-    """
-    pred = modify_graph(pred_graph)
-    gold = modify_graph(gold_graph)    
-    matchs = 0
-    for x in pred:
-        if x in gold:
-            matchs += 1
-    acc = matchs/len(pred)
-    return acc
+    """Fraction of predicted triple occurrences matched under the same blank-node alignment."""
+    counts = get_triple_match_counts(gold_graph, pred_graph)
+    return counts.matched_occurrences / counts.predicted_occurrences if counts.predicted_occurrences else 0.0
+
 
 def get_graph_match_accuracy(pred_graphs, gold_graphs):
     """
@@ -127,7 +220,8 @@ def get_graph_match_accuracy(pred_graphs, gold_graphs):
 
 def get_tokens(gold_edges, pred_edges):
     """
-    Tokenize gold and predicted edges using SpaCy.
+    Tokenize edge text for G-BLEU. Spaces separate words, and any semicolons
+    already present in the input are treated as punctuation.
     
     Parameters:
     - gold_edges: List of gold edges
@@ -158,24 +252,16 @@ def get_tokens(gold_edges, pred_edges):
 
 
 def split_to_edges(graphs):
-    """
-    Convert graphs into a list of processed edges.
-    
-    Parameters:
-    - graphs: List of graphs
-    
-    Returns:
-    - processed_graphs: List of processed edges
-    """
-    
-    processed_graphs = []
-    for graph in graphs:
-        #print(graph)
-        processed_graphs.append([";".join(str(triple)).lower().strip() for triple in graph])
-    return processed_graphs
+    """Return one subject predicate object string per triple for G-BLEU and G-ROUGE."""
+    return [[" ".join(terms) for terms in modify_graph(graph)] for graph in graphs]
 
 
-def get_bert_score(all_gold_edges, all_pred_edges, model_type=None):
+def legacy_character_edges(graphs):
+    """Reproduce the character-separated input used by the existing BERTScore baseline."""
+    return [[";".join(str(triple)).lower().strip() for triple in graph] for graph in graphs]
+
+
+def get_bert_score(all_gold_edges, all_pred_edges, model_type=None, *, batch_size=None):
     """
     Compute BERT score for gold and predicted edges.
     
@@ -183,12 +269,18 @@ def get_bert_score(all_gold_edges, all_pred_edges, model_type=None):
     - all_gold_edges: List of gold edges
     - all_pred_edges: List of predicted edges
     - model_type: BERT model to use (default: roberta-large for English)
+    - batch_size: Edges per batch (default: 8 on CUDA for 4 GB GPUs, 64 on CPU)
     
     Returns:
     - precisions: Precision scores
     - recalls: Recall scores
     - f1s: F1 scores
     """
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    if batch_size is None:
+        batch_size = 8 if device == "cuda" else 64
+    print(f"BERTScore device: {device} (batch size {batch_size})")
+
     references = []
     candidates = []
 
@@ -200,11 +292,11 @@ def get_bert_score(all_gold_edges, all_pred_edges, model_type=None):
                 candidates.append(pred_edge)
                 ref_cand_index[(gold_edge, pred_edge)] = len(references) - 1
 
-    # Pass model_type if specified
-    if model_type:
-        _, _, bs_F1 = score_bert(cands=candidates, refs=references, model_type=model_type, idf=False, device='cpu')
-    else:
-        _, _, bs_F1 = score_bert(cands=candidates, refs=references, lang='en', idf=False, device='cpu')
+    model_args = {"model_type": model_type} if model_type else {"lang": "en"}
+    _, _, bs_F1 = score_bert(
+        cands=candidates, refs=references, idf=False,
+        device=device, batch_size=batch_size, **model_args,
+    )
 
     print("Computed bert scores for all pairs")
 
@@ -227,64 +319,49 @@ def get_bert_score(all_gold_edges, all_pred_edges, model_type=None):
     return np.array(precisions), np.array(recalls), np.array(f1s)
 
 
-# Note: These graph matching metrics are computed by considering each graph as a set of edges and each edge as a
-# sentence
+def _edge_match_prf(gold_graphs, pred_graphs, score_pair):
+    """Match edges by maximum total score and return per-graph precision, recall and F1."""
+    precisions, recalls, f1s = [], [], []
+    for gold_edges, pred_edges in zip(gold_graphs, pred_graphs):
+        scores = np.zeros((len(pred_edges), len(gold_edges)))
+        for pred_idx, pred_edge in enumerate(pred_edges):
+            for gold_idx, gold_edge in enumerate(gold_edges):
+                scores[pred_idx, gold_idx] = score_pair(gold_edge, pred_edge)
+
+        rows, cols = linear_sum_assignment(scores, maximize=True)
+        matched = scores[rows, cols].sum()
+        precision = matched / len(pred_edges)
+        recall = matched / len(gold_edges)
+        f1 = 2 * precision * recall / (precision + recall) if precision + recall > 0 else 0
+        precisions.append(precision)
+        recalls.append(recall)
+        f1s.append(f1)
+    return np.array(precisions), np.array(recalls), np.array(f1s)
+
+
+def get_graph_bleu(gold_tokens, pred_tokens):
+    """Score graphs by sentence BLEU between tokenized edges."""
+    def score_pair(gold, pred):
+        return sentence_bleu([gold], pred, smoothing_function=SmoothingFunction().method1)
+
+    return _edge_match_prf(gold_tokens, pred_tokens, score_pair)
+
+
+def get_graph_rouge(gold_sent, pred_sent):
+    """Score graphs by ROUGE-2 precision between edge strings."""
+    scorer_rouge = rouge_scorer.RougeScorer(['rouge2'], use_stemmer=True)
+
+    def score_pair(gold, pred):
+        return scorer_rouge.score(gold, pred)['rouge2'].precision
+
+    return _edge_match_prf(gold_sent, pred_sent, score_pair)
+
+
 def get_bleu_rouge(gold_tokens, pred_tokens, gold_sent, pred_sent):
-    """
-    Compute BLEU and ROUGE scores for tokenized sentences.
-    
-    Parameters:
-    - gold_tokens: Tokenized gold sentences
-    - pred_tokens: Tokenized predicted sentences
-    - gold_sent: Gold sentences
-    - pred_sent: Predicted sentences
-    
-    Returns:
-    - precisions_rouge: Precision scores for ROUGE
-    - recalls_rouge: Recall scores for ROUGE
-    - f1s_rouge: F1 scores for ROUGE
-    - precisions_bleu: Precision scores for BLEU
-    - recalls_bleu: Recall scores for BLEU
-    - f1s_bleu: F1 scores for BLEU
-    """
-    scorer_rouge = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rouge3', 'rougeL'], use_stemmer=True)
-
-    precisions_bleu = []
-    recalls_bleu = []
-    f1s_bleu = []
-
-    precisions_rouge = []
-    recalls_rouge = []
-    f1s_rouge = []
-
-    for graph_idx in range(len(gold_tokens)):
-        score_bleu = np.zeros((len(pred_tokens[graph_idx]), len(gold_tokens[graph_idx])))
-        score_rouge = np.zeros((len(pred_tokens[graph_idx]), len(gold_tokens[graph_idx])))
-        for p_idx in range(len(pred_tokens[graph_idx])):
-            for g_idx in range(len(gold_tokens[graph_idx])):
-                score_bleu[p_idx, g_idx] = sentence_bleu([gold_tokens[graph_idx][g_idx]], pred_tokens[graph_idx][p_idx], smoothing_function=SmoothingFunction().method1)
-                score_rouge[p_idx, g_idx] = \
-                    scorer_rouge.score(gold_sent[graph_idx][g_idx], pred_sent[graph_idx][p_idx])['rouge2'].precision
-
-        def _scores(cost_matrix):
-            row_ind, col_ind = linear_sum_assignment(cost_matrix, maximize=True)
-            precision = cost_matrix[row_ind, col_ind].sum() / cost_matrix.shape[0]
-            recall = cost_matrix[row_ind, col_ind].sum() / cost_matrix.shape[1]
-            f1 = (2 * precision * recall) / (precision + recall) if precision + recall > 0 else 0
-            return precision, recall, f1
-
-        precision_bleu, recall_bleu, f1_bleu = _scores(score_bleu)
-        precisions_bleu.append(precision_bleu)
-        recalls_bleu.append(recall_bleu)
-        f1s_bleu.append(f1_bleu)
-
-        precision_rouge, recall_rouge, f1_rouge = _scores(score_rouge)
-        precisions_rouge.append(precision_rouge)
-        recalls_rouge.append(recall_rouge)
-        f1s_rouge.append(f1_rouge)
-
-    return np.array(precisions_rouge), np.array(recalls_rouge), np.array(f1s_rouge), np.array(
-        precisions_bleu), np.array(recalls_bleu), np.array(f1s_bleu)
+    """Return ROUGE precision, recall and F1 followed by the same three BLEU arrays."""
+    rouge = get_graph_rouge(gold_sent, pred_sent)
+    bleu = get_graph_bleu(gold_tokens, pred_tokens)
+    return rouge + bleu
 
 
 def return_eq_node(node1, node2):
