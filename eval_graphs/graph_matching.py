@@ -1,25 +1,174 @@
 # refer to https://github.com/ChristopheCruz/LLM4KGC/blob/main/Evaluate_graphs/graph_matching.py
 
 from collections import Counter, defaultdict
+from concurrent.futures import CancelledError, ThreadPoolExecutor, as_completed
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+import threading
+from time import monotonic
 from typing import NamedTuple
 
+import networkx as nx
+from scipy.optimize import linear_sum_assignment
+
+
+_GED_WORKER_ARG = '--ged-worker'
+
+
+def _make_graph(triples, *, pad_prediction=False):
+    graph = nx.MultiDiGraph()
+    for triple in triples:
+        if pad_prediction and len(triple) in (1, 2):
+            triple = list(triple) + ['NULL'] * (3 - len(triple))
+        subject, predicate, obj = (str(term).lower().strip() for term in triple[:3])
+        graph.add_node(subject, label=subject)
+        graph.add_node(obj, label=obj)
+        graph.add_edge(subject, obj, label=predicate)
+    return graph
+
+
+def _label_matches(first, second):
+    return first['label'] == second['label']
+
+
+def _neighborhoods(graph, nodes, shared):
+    profiles = []
+    for node in nodes:
+        counts = Counter(('out', edge['label'], v if v in shared else None)
+                         for _, v, edge in graph.out_edges(node, data=True))
+        counts.update(('in', edge['label'], u if u in shared else None)
+                      for u, _, edge in graph.in_edges(node, data=True))
+        profiles.append(counts)
+    return profiles
+
+
+def _initial_edit_cost(g1, g2, denominator):
+    """Produce one complete NetworkX edit path and price it with the original unit costs."""
+    shared = g1.nodes & g2.nodes
+    pairing = {node: node for node in shared}
+    left = [node for node in g1 if node not in shared]
+    right = [node for node in g2 if node not in shared]
+    if left and right:
+        a = _neighborhoods(g1, left, shared)
+        b = _neighborhoods(g2, right, shared)
+        overlap = [[sum((first & second).values()) for second in b] for first in a]
+        rows, cols = linear_sum_assignment(overlap, maximize=True)
+        pairing.update((left[i], right[j]) for i, j in zip(rows, cols))
+
+    def proposed_substitution(first, second):
+        u, v = first['label'], second['label']
+        return int(u != v) if pairing.get(u) == v else denominator + 1
+
+    # The proposal guides only this first path. Price the actual edits, including
+    # insertions, deletions and parallel edge keys, before using the cost as a bound.
+    paths = nx.optimize_edit_paths(g1, g2, node_subst_cost=proposed_substitution, edge_match=_label_matches)
+    try:
+        nodes, edges, _ = next(paths)
+        node_cost = sum(u != v for u, v in nodes)
+        edge_cost = sum(e is None or f is None or not _label_matches(g1.edges[e], g2.edges[f])
+                        for e, f in edges)
+        return node_cost + edge_cost
+    finally:
+        paths.close()
+
+
+def _distance(gold, pred, check_interval, stable_threshold, max_time, verbose):
+    g1 = _make_graph(gold)
+    g2 = _make_graph(pred, pad_prediction=True)
+    denominator = len(g1) + g1.number_of_edges() + len(g2) + g2.number_of_edges()
+    finished = threading.Event()
+    lock = threading.Lock()
+    best = None
+
+    def log(message):
+        if verbose:
+            print(f'[GED] {message}', file=sys.stderr, flush=True)
+
+    def search():
+        nonlocal best
+        try:
+            try:
+                seed = _initial_edit_cost(g1, g2, denominator)
+            except Exception as exc:
+                log(f'Could not construct an initial path: {exc}')
+                seed = None
+            if seed is not None:
+                with lock:
+                    best = seed
+                if seed == 0:
+                    return
+            # All edit costs are integers. A better path must cost at most seed - 1.
+            limit = None if seed is None else seed - 1
+            for cost in nx.optimize_graph_edit_distance(g1, g2, node_match=_label_matches,
+                                                        edge_match=_label_matches, upper_bound=limit):
+                with lock:
+                    best = cost
+        except Exception as exc:
+            log(f'Optimizer error: {exc}')
+        finally:
+            finished.set()
+
+    log(f'Searching graphs with {len(g1)} nodes/{g1.number_of_edges()} edges and '
+        f'{len(g2)} nodes/{g2.number_of_edges()} edges')
+    previous = None
+    stable = 0
+    deadline = monotonic() + max_time
+    threading.Thread(target=search, daemon=True).start()
+    while True:
+        done = finished.wait(min(check_interval, max(0, deadline - monotonic())))
+        with lock:
+            current = best
+        if done:
+            log('Optimizer finished')
+            break
+        if monotonic() >= deadline:
+            log(f'Reached the {max_time}s limit')
+            break
+        if current is not None and current == previous:
+            stable += 1
+            if stable >= stable_threshold:
+                log(f'Best GED stayed at {current} for {stable} checks')
+                break
+        else:
+            stable = 0
+        previous = current
+        log(f'Best GED {current}, stable checks {stable}/{stable_threshold}')
+
+    raw = denominator if current is None else current
+    log(f'Final GED {raw}/{denominator}')
+    return raw / denominator
+
+
+if __name__ == '__main__' and sys.argv[1:] == [_GED_WORKER_ARG]:
+    try:
+        result = _distance(**json.load(sys.stdin.buffer))
+    except Exception as exc:
+        print(f'{type(exc).__name__}: {exc}', file=sys.stderr)
+        sys.exit(1)
+    print(result, flush=True)
+    # NetworkX may still be inside a branch after a cutoff. Only this dedicated
+    # worker exits, after flushing its result. The parent waits for the process.
+    os._exit(0)
+
+
+# Notebook metrics load after the standalone GED worker has handled its job.
 import numpy as np
 from rdflib import BNode
 import torch
 from torch.nn.utils.rnn import pad_sequence
-import time
-import threading
 from rouge_score import rouge_scorer
 from bert_score.utils import get_model, get_tokenizer, lang2model, model2layers, sent_encode
 from transformers import RobertaTokenizer
 from nltk.translate.bleu_score import sentence_bleu
 from nltk.translate.bleu_score import SmoothingFunction
-from scipy.optimize import Bounds, LinearConstraint, linear_sum_assignment, milp
+from scipy.optimize import Bounds, LinearConstraint, milp
 from scipy.sparse import lil_matrix
 from spacy.tokenizer import Tokenizer
 from spacy.lang.en import English
 import re
-import networkx as nx
 from sklearn import preprocessing
 from sklearn.metrics import precision_score, recall_score, f1_score
 
@@ -459,150 +608,81 @@ def return_eq_edge(edge1, edge2):
     """
     return edge1['label'] == edge2['label']
 
-def get_ged(gold_graph, pred_graph=None, check_interval=10.0, stable_threshold=5, max_time=300.0, verbose=False):
-    """
-    Compute approximate graph edit distance (GED) between gold and predicted graphs
-    using iterative optimization with early stopping when the value stabilizes.
-    
-    Uses a background thread for the optimizer so that time monitoring works reliably
-    even when the optimizer takes a long time between yielding values.
-    
-    Parameters:
-    - gold_graph: Gold graph (list of triples)
-    - pred_graph: Predicted graph (default is None)
-    - check_interval: Time interval (seconds) between stability checks (default: 10.0)
-    - stable_threshold: Number of consecutive unchanged checks before stopping (default: 5)
-    - max_time: Maximum total computation time in seconds as safety net (default: 300.0)
-    - verbose: If True, print progress information (default: False)
-    
-    Returns:
-    - ged: Graph edit distance normalized by a constant
-    """
-    g1 = nx.MultiDiGraph()
-    g2 = nx.MultiDiGraph()
-
-    for edge in gold_graph:
-        g1.add_node(str(edge[0]).lower().strip(), label=str(edge[0]).lower().strip())
-        g1.add_node(str(edge[2]).lower().strip(), label=str(edge[2]).lower().strip())
-        g1.add_edge(str(edge[0]).lower().strip(), str(edge[2]).lower().strip(), label=str(edge[1]).lower().strip())
-    
-
-    if pred_graph is None:
+def _run_ged(gold, pred, check_interval, stable_threshold, max_time, verbose, cancel=None):
+    if pred is None:
         return 1
-
-    for edge in pred_graph:
-        if len(edge) == 2:
-            edge.append('NULL')
-        elif len(edge) == 1:
-            edge.append('NULL')
-            edge.append('NULL')
-        g2.add_node(str(edge[0]).lower().strip(), label=str(edge[0]).lower().strip())
-        g2.add_node(str(edge[2]).lower().strip(), label=str(edge[2]).lower().strip())
-        g2.add_edge(str(edge[0]).lower().strip(), str(edge[2]).lower().strip(), label=str(edge[1]).lower().strip())
-
-    normalizing_constant = g1.number_of_nodes() + g1.number_of_edges() + g2.number_of_nodes() + g2.number_of_edges()
-
-    if verbose:
-        print(f"[GED] Graph sizes: g1({g1.number_of_nodes()} nodes, {g1.number_of_edges()} edges), "
-              f"g2({g2.number_of_nodes()} nodes, {g2.number_of_edges()} edges)")
-        print(f"[GED] Starting iterative optimization (check every {check_interval}s, "
-              f"stable threshold={stable_threshold}, max time={max_time}s)")
-
-    # Shared state between main thread and optimizer thread
-    state = {
-        'best_ged': None,
-        'finished': False,
-        'lock': threading.Lock()
-    }
-    stop_event = threading.Event()
-    
-    def optimizer_worker():
-        """Run optimizer in background, updating best_ged as improvements are found."""
+    if cancel is not None and cancel.is_set():
+        raise CancelledError()
+    # A standalone interpreter works from a Windows notebook without importing the
+    # notebook or the NLP models. Only the edge strings and settings cross the boundary.
+    job = dict(gold=[[str(x) for x in edge[:3]] for edge in gold],
+               pred=[[str(x) for x in edge[:3]] for edge in pred],
+               check_interval=check_interval, stable_threshold=stable_threshold,
+               max_time=max_time, verbose=verbose)
+    data = json.dumps(job).encode('utf-8')
+    worker_command = [sys.executable, str(Path(__file__).resolve()), _GED_WORKER_ARG]
+    with subprocess.Popen(
+        worker_command, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+        stderr=None if verbose else subprocess.PIPE, creationflags=getattr(subprocess, 'CREATE_NO_WINDOW', 0),
+    ) as process:
         try:
-            optimizer = nx.optimize_graph_edit_distance(
-                g1, g2, node_match=return_eq_node, edge_match=return_eq_edge
-            )
-            for ged in optimizer:
-                if stop_event.is_set():
+            while True:
+                if cancel is not None and cancel.is_set():
+                    raise CancelledError()
+                try:
+                    output, errors = process.communicate(data, timeout=1 if cancel is not None else None)
                     break
-                with state['lock']:
-                    state['best_ged'] = ged
-        except Exception as e:
-            if verbose:
-                print(f"[GED] Optimizer error: {e}")
+                except subprocess.TimeoutExpired:
+                    # communicate retains the pending I/O across retries.
+                    data = None
+            if process.returncode:
+                detail = errors.decode(errors='replace').strip() if errors else f'worker exit {process.returncode}'
+                raise RuntimeError(detail)
+            return float(output)
         finally:
-            with state['lock']:
-                state['finished'] = True
-    
-    # Start optimizer in background thread
-    worker_thread = threading.Thread(target=optimizer_worker, daemon=True)
-    worker_thread.start()
-    
-    # Main thread: monitor progress with time-based checks
-    start_time = time.time()
-    last_checked_ged = None
-    stable_count = 0
-    check_count = 0
-    
-    while True:
-        time.sleep(check_interval)
-        elapsed = time.time() - start_time
-        check_count += 1
-        
-        with state['lock']:
-            current_ged = state['best_ged']
-            is_finished = state['finished']
-        
-        # Check if optimizer finished naturally
-        if is_finished:
-            if verbose:
-                print(f"[GED] Optimizer finished after {elapsed:.1f}s with GED={current_ged}")
-            break
-        
-        # Print progress
-        if verbose:
-            print(f"[GED] Check #{check_count} at {elapsed:.1f}s: GED={current_ged}, "
-                  f"Stable count={stable_count}/{stable_threshold}")
-        
-        # Check stability
-        if current_ged is not None:
-            if last_checked_ged is not None and current_ged == last_checked_ged:
-                stable_count += 1
-                if stable_count >= stable_threshold:
-                    if verbose:
-                        print(f"[GED] Converged (stable for {stable_count} checks) with GED={current_ged}")
-                    stop_event.set()
-                    break
-            else:
-                stable_count = 0
-            last_checked_ged = current_ged
-        
-        # Check timeout
-        if elapsed >= max_time:
-            if verbose:
-                print(f"[GED] Max time ({max_time}s) reached, returning best GED={current_ged}")
-            stop_event.set()
-            break
-    
-    # Wait briefly for thread to acknowledge stop (don't block forever)
-    worker_thread.join(timeout=2.0)
-    
-    with state['lock']:
-        best_ged = state['best_ged']
-    
-    # Fallback if no result was obtained
-    if best_ged is None:
-        if verbose:
-            print("[GED] No result obtained, using simple upper bound")
-        # Simple upper bound: delete all from g1, insert all to g2
-        best_ged = g1.number_of_nodes() + g1.number_of_edges() + g2.number_of_nodes() + g2.number_of_edges()
+            if process.poll() is None:
+                process.kill()
 
-    normalized_ged = best_ged / normalizing_constant
-    
-    if verbose:
-        print(f"[GED] Final: raw GED={best_ged}, normalized={normalized_ged:.4f}")
-    
-    return normalized_ged
+
+def get_ged(gold_graph, pred_graph=None, check_interval=10.0, stable_threshold=5, max_time=300.0, verbose=False):
+    """Return the best unit-cost NetworkX edit distance found, divided by both graphs' total nodes and edges.
+
+    A complete edit path gives the search an initial upper bound. Stop when the search finishes,
+    the best observed cost is unchanged for stable_threshold successive checks, or max_time expires.
+    check_interval and max_time are seconds per graph pair. A missing prediction has distance 1.
+    """
+    return _run_ged(gold_graph, pred_graph, check_interval, stable_threshold, max_time, verbose)
+
+
+def iter_ged(jobs, *, check_interval=10.0, stable_threshold=5, max_time=300.0, verbose=False, max_workers=None):
+    """Score (key, gold, predicted) jobs and yield (key, distance, error) as they finish.
+
+    Each search has its own CPU process and starts its clock after initialization. The default is up to four workers.
+    Closing the iterator cancels pending jobs and stops active searches.
+    """
+    if max_workers is None:
+        max_workers = min(4, os.cpu_count() or 1)
+    cancel = threading.Event()
+
+    def score(job):
+        key, gold, pred = job
+        try:
+            distance = _run_ged(gold, pred, check_interval, stable_threshold, max_time, verbose, cancel)
+            return key, distance, None
+        except Exception as exc:
+            return key, None, exc
+
+    with ThreadPoolExecutor(max_workers=max_workers) as pool:
+        futures = []
+        try:
+            for job in jobs:
+                futures.append(pool.submit(score, job))
+            for future in as_completed(futures):
+                yield future.result()
+        finally:
+            cancel.set()
+            for future in futures:
+                future.cancel()
 
 
 def get_oep(gold_graph, pred_graph=None):
